@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Complex Numbers &mdash; Theoretical Physics Reference 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
+    <link rel="up" title="Mathematics" href="main.html" />
+    <link rel="next" title="Residue Theorem" href="residue.html" />
+    <link rel="prev" title="Integration" href="integration.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="residue.html" title="Residue Theorem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="integration.html" title="Integration"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="complex-numbers">
+<span id="index-0"></span><h1>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this headline">¶</a></h1>
+<p>We start by defining <img class="math" src="../_images/math/591939135854d44f9c7f8b6bb6008a8a4d0f4236.png" alt="\arg(z)"/> by its principal value, then everything else
+follows from this definition.  We could have also used any other branch, but
+then most results in this chapter would need to be updated with the new
+convention.</p>
+<p>Then we define exponential, logarithm, power and so on using simple natural
+formulas. From these definitions, everything else follows using a very simple
+algebra manipulation, all the &#8220;messy&#8221; features are hidden in the definition and
+properties of the real <img class="math" src="../_images/math/4c1eb49801726429256e90669692e180312e7d9d.png" alt="\atan2"/> function. In the derivation of each formula,
+only formulas introduced before (above) are used.</p>
+<p>Every formula in this chapter holds for all complex numbers, unless explicitly
+specified otherwise.</p>
+<div class="section" id="real-and-imaginary-part">
+<h2>Real and Imaginary Part<a class="headerlink" href="#real-and-imaginary-part" title="Permalink to this headline">¶</a></h2>
+<p>A complex number <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/> can be written using its real and imaginary parts:</p>
+<div class="math">
+<p><img src="../_images/math/7c3c5fbe4d420987478cade6d4267b693128d29b.png" alt="z = \Re z + i \Im z"/></p>
+</div><p>The absolute value <img class="math" src="../_images/math/77888cf7d3c4635b8bc8c06ee89dc2a2d2f86538.png" alt="|z|"/> is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/e356129634401e1205726973b95d224537856719.png" alt="|z| = \sqrt{\Re^2 z + \Im^2 z}"/></p>
+</div></div>
+<div class="section" id="argument-function">
+<h2>Argument Function<a class="headerlink" href="#argument-function" title="Permalink to this headline">¶</a></h2>
+<p>Principal value of <img class="math" src="../_images/math/591939135854d44f9c7f8b6bb6008a8a4d0f4236.png" alt="\arg(z)"/> is defined as</p>
+<div class="math">
+<p><img src="../_images/math/f42ab0b1d444e8b8482f311d9f81f11a51071d44.png" alt="\arg z = \atan2(\Im z, \Re z)"/></p>
+</div><p>Thus we have <img class="math" src="../_images/math/3d8d476dfa771bd47b14d7f15811145fcf50f4ca.png" alt="-\pi &lt; \arg z \le \pi"/>. All operations with <img class="math" src="../_images/math/ff384734af3c135f660303a3b612c4513cf4b435.png" alt="\arg z"/> are then
+derived using the properties of the real <img class="math" src="../_images/math/4c1eb49801726429256e90669692e180312e7d9d.png" alt="\atan2"/> function.</p>
+</div>
+<div class="section" id="exponential">
+<h2>Exponential<a class="headerlink" href="#exponential" title="Permalink to this headline">¶</a></h2>
+<p>Exponential is defined using:</p>
+<div class="math">
+<p><img src="../_images/math/3b2ef7273d0c2e6145daa6a47cd145d3797cc057.png" alt="e^z = e^{\Re z + i\Im z} = e^{\Re z} (\cos\Im z + i \sin \Im z)"/></p>
+</div><p>It follows:</p>
+<div class="math">
+<p><img src="../_images/math/1227129d4f1c660d5660bbe71a3673934426ad41.png" alt="e^{a+b}
+    = e^{\Re(a+b)} (\cos\Im(a+b) + i \sin \Im(a+b)) =
+
+    = e^{\Re a}e^{\Re b} \left(
+        \cos(\Im a)\cos(\Im b) - \sin(\Im a)\sin(\Im b)
+        + i \sin(\Im a)\cos(\Im b) + i\cos(\Im a) \sin(\Im b)\right) =
+
+    = e^{\Re a} (\cos\Im a + i \sin \Im a)
+      e^{\Re b} (\cos\Im b + i \sin \Im b) =
+
+    = e^a e^b"/></p>
+</div><p>Any complex number can be written in a polar form as follows:</p>
+<div class="math">
+<p><img src="../_images/math/7fc91d63dc6f0de9a3a263f5745d57e7eb237920.png" alt="z = \Re z + i \Im z = |z| \left( {\Re z \over |z|} + i {\Im z\over
+    |z|}\right) =
+
+= |z| \left( {\Re z \over\sqrt{\Re^2 z + \Im^2 z}}
+    + i {\Im z\over\sqrt{\Re^2 z + \Im^2 z}}\right) =
+
+= |z| \left(\cos\atan2(\Im z, \Re z) + i \sin\atan2(\Im z, \Re z)\right) =
+
+= |z| \left(\cos\arg z + i \sin\arg z\right) =
+
+= |z| e^{i\arg z}"/></p>
+</div><p>The following formula holds:</p>
+<div class="math">
+<p><img src="../_images/math/54c4af912b398171111c482d7b175927684e75e0.png" alt="\arg e^z = \arg e^{\Re z} e^{i\Im z} = \arg e^{i\Im z} =
+
+    = \arg(\cos\Im z + i\sin\Im z) =
+
+    = \atan2(\sin\Im z, \cos\Im z) =
+
+    = \Im z + 2\pi \left\lfloor \pi-\Im z \over 2\pi \right\rfloor"/></p>
+</div><p>and also:</p>
+<div class="math">
+<p><img src="../_images/math/3836633e3dd8f2ec365c52c540bc130a43d6f4bb.png" alt="\arg ab
+    = \arg(|a| e^{i\arg a} |b| e^{i\arg b}) =
+
+    = \arg(|a| |b| e^{i(\arg a+\arg b)}) =
+
+    = \arg(e^{i(\arg a+\arg b)}) =
+
+    = \arg(\cos(\arg a+\arg b) + i\sin(\arg a + \arg b)) =
+
+    = \atan2(\sin(\arg a+\arg b), \cos(\arg a + \arg b)) =
+
+    = \arg a + \arg b + 2\pi
+        \left\lfloor \pi-\arg a-\arg b\over 2\pi \right\rfloor"/></p>
+</div></div>
+<div class="section" id="logarithm">
+<h2>Logarithm<a class="headerlink" href="#logarithm" title="Permalink to this headline">¶</a></h2>
+<p>The logarithm is defined as:</p>
+<div class="math" id="equation-def_log">
+<p><span class="eqno">(1)</span><img src="../_images/math/84d3ca3141b61c4b95de1ac3e2533264995a8937.png" alt="\log z = \log|z| + i \arg z"/></p>
+</div><p>The motivation is from the following formula:</p>
+<div class="math">
+<p><img src="../_images/math/575d3a906eddf86adb1953adc261a7d9dc890c8e.png" alt="z = |z| e^{i\arg z} = e^{\log |z|} e^{i\arg z} = e^{\log|z| + i \arg z}"/></p>
+</div><p>which using our definition becomes:</p>
+<div class="math" id="equation-elog">
+<p><span class="eqno">(2)</span><img src="../_images/math/39515d31616bd80ba1f37d99ea990fe703c9dc78.png" alt="z = e^{\log|z| + i \arg z} = e^{\log z}"/></p>
+</div><p>so a logarithm is an inverse function to an exponential. The formula <a href="#equation-elog">(2)</a>
+would be satisfied even if we add a factor of <img class="math" src="../_images/math/449302115a629765b38d8d771f5289597e27d1fe.png" alt="2\pi i n"/> (where <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> is an
+integer) to the right hand side of <a href="#equation-def_log">(1)</a>. However, the convention is to
+define logarithm using the equation <a href="#equation-def_log">(1)</a> exactly.</p>
+<p>We can now derive a few important formulas:</p>
+<div class="math">
+<p><img src="../_images/math/64758eec47b7a71428238613e65e3a78cc009780.png" alt="\log | e^z | = \log | e^{\Re z} e^{i \Im z} | = \log | e^{\Re z} | = \Re z
+
+\log e^z = \log | e^z | + i \arg e^z = \Re z + i \left(
+    \Im z + 2\pi \left\lfloor \pi-\Im z \over 2\pi \right\rfloor
+    \right)
+    = z + 2\pi i \left\lfloor \pi-\Im z \over 2\pi \right\rfloor"/></p>
+</div><p>and</p>
+<div class="math" id="equation-log(ab)">
+<p><span class="eqno">(3)</span><img src="../_images/math/b174e5bf10c6355e7a55cc745ccc085e7b175742.png" alt="\log ab = \log |ab| + i\arg ab =
+
+= \log |a| + \log |b| + i\arg a + i\arg b + 2\pi i
+        \left\lfloor \pi-\arg a-\arg b \over 2\pi \right\rfloor =
+
+= \log a + \log b + 2\pi i
+        \left\lfloor \pi-\arg a-\arg b \over 2\pi \right\rfloor"/></p>
+</div></div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p>A power of two complex numbers is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/3b42604199f9989446ef1dbf0550dece9efcbf70.png" alt="z^a = e^{a\log z}"/></p>
+</div><p>From above we can also write the power <img class="math" src="../_images/math/749a0692516f7ee1d17a6fab110dbed8e0927b12.png" alt="z^a"/> in two different ways:</p>
+<div class="math">
+<p><img src="../_images/math/7f60a265dabc071d914360a6e7d95a248c002117.png" alt="z^a = \left(e^{\log z}\right)^a = e^{\log z^a}"/></p>
+</div><p>But these two cannot be used as a definition of a power, because both require
+the knowledge of <img class="math" src="../_images/math/8b7a83b6eb16f8e9a1207bb0cf5f3fbcfa4b6f23.png" alt="x^a"/>, which we are trying to define, where <img class="math" src="../_images/math/b0b4a78db8f086f7169b9a0cc443e0b9ee0224ab.png" alt="x=z"/> or <img class="math" src="../_images/math/a7403cfba82d219872c804c270a4006c5c1e3844.png" alt="x=e^{\log
+z}"/>.</p>
+<p>It follows:</p>
+<div class="math">
+<p><img src="../_images/math/2c91a984e0679d539b203fa1fbca4f03d0fe84aa.png" alt="\log x^a = \log e^{a\log x} = a\log x
+    + 2\pi i \left\lfloor \pi-\Im a\log x \over 2\pi \right\rfloor"/></p>
+</div><p>and</p>
+<div class="math" id="equation-(x^a)^b">
+<p><span class="eqno">(4)</span><img src="../_images/math/52c380c1c29b2e19f5c75b0bacc235baa6888d83.png" alt="(x^a)^b = e^{b \log x^a} = e^{b \left(
+    a\log x
+    + 2\pi i \left\lfloor \pi-\Im a\log x \over 2\pi \right\rfloor
+\right)} =
+
+= e^{a b \log x} e^{
+    2\pi i b\left\lfloor \pi-\Im a\log x \over 2\pi \right\rfloor
+} =
+
+= x^{a b} e^{
+    2\pi i b\left\lfloor \pi-\Im a\log x \over 2\pi \right\rfloor
+}"/></p>
+</div><p>As a special case for <img class="math" src="../_images/math/212f6aa15ffcb2c3d4a360521fb6fb1d01c2020b.png" alt="x=e"/> one gets:</p>
+<div class="math" id="equation-(e^a)^b">
+<p><span class="eqno">(5)</span><img src="../_images/math/79f8f562ac2091f50d3b4e79a0a8572d8f82c5c8.png" alt="(e^a)^b = e^{a b} e^{
+    2\pi i b\left\lfloor \pi-\Im a \over 2\pi \right\rfloor
+}"/></p>
+</div><p>Similarly:</p>
+<div class="math">
+<p><img src="../_images/math/df5aa2aae88c230d77318bdd7e06993cf4c549b6.png" alt="(xy)^a = e^{a\log xy}
+    = e^{a\log x + a\log y + 2\pi i a
+        \left\lfloor \pi-\arg x-\arg y \over 2\pi \right\rfloor
+        } =
+
+= x^a y^a e^{2\pi i a
+        \left\lfloor \pi-\arg x-\arg y \over 2\pi \right\rfloor
+        }"/></p>
+</div></div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>For integer <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> we get from <a href="#equation-(x^a)^b">(4)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/684a857ba9c6a5d745f6567862c26d84200ef55e.png" alt="(x^a)^n
+= x^{a n} e^{
+    2\pi i n\left\lfloor \pi-\Im a\log x \over 2\pi \right\rfloor
+} = x^{a n}"/></p>
+</div><p>Using <a href="#equation-(x^a)^b">(4)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/cdacd4434742fb6680f957fa7b2102f7407fc57c.png" alt="\sqrt{x^2} = (x^2)^{1\over 2} = x^{{1\over 2}\cdot 2}
+        e^{
+        2\pi i {1\over 2}
+        \left\lfloor \pi-\Im 2\log x \over 2\pi \right\rfloor}
+    = x e^{
+        \pi i
+        \left\lfloor \pi-2\arg x \over 2\pi \right\rfloor}
+    = (-1)^{\left\lfloor \pi-2\arg x \over 2\pi \right\rfloor} x"/></p>
+</div><p>Using <a href="#equation-(e^a)^b">(5)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/a72895e0065e4ca026d50b77e9185499e682483d.png" alt="\sqrt {e^x} = (e^x)^{1\over 2} = e^{x\over 2} e^{
+    \pi i\left\lfloor \pi-\Im x \over 2\pi \right\rfloor
+} =
+    (-1)^{\left\lfloor \pi-\Im x \over 2\pi \right\rfloor}
+    e^{x\over 2}"/></p>
+</div><p>Using <a href="#equation-log(ab)">(3)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/249ff03df0d360917f0d0628fd49d98b01a9223c.png" alt="0 = \log 1 = \log(-1)(-1) =
+    \log(-1) + \log(-1) + 2\pi i
+        \left\lfloor \pi-\pi-\pi \over 2\pi \right\rfloor =
+
+  = i\pi + i\pi + 2\pi i \left\lfloor-\half\right\rfloor
+  = i\pi + i\pi - 2\pi i = 0"/></p>
+</div><p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span><span class="p">,</span> <span class="n">pi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">log</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">log</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="go">0j</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="mi">1j</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">pi</span><span class="o">-</span><span class="n">pi</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))</span>
+<span class="go">0j</span>
+</pre></div>
+</div>
+<p>Another example:</p>
+<div class="math">
+<p><img src="../_images/math/014cf3f52f2e9b2671f0f69fc66149e8ad5dbce1.png" alt="i^i = e^{i \log i} = e^{i^2 \arg i} = e^{-{\pi\over 2}}"/></p>
+</div><p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">pi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1j</span><span class="o">**</span><span class="mi">1j</span>
+<span class="go">(0.20787957635076193+0j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">0.20787957635076193</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-identities-using-computer-code">
+<h2>Testing Identities Using Computer Code<a class="headerlink" href="#testing-identities-using-computer-code" title="Permalink to this headline">¶</a></h2>
+<p>All the complex identities in this chapter can be tested using the following
+code (<a class="reference download internal" href="../_downloads/test_complex.py"><tt class="xref download docutils literal"><span class="pre">spherical_harmonics.py</span></tt></a>):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The argument function.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">log</span>
+    <span class="k">return</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
+
+<span class="k">def</span> <span class="nf">generate_values</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create values to test the function at.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
+    <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
+    <span class="c"># Generate 3 circles in complex plane, with diameters 0.5, 1 and 2. We</span>
+    <span class="c"># avoid special values like -1, +/- i, etc., because they typically send</span>
+    <span class="c"># the numerical values close to the branch cut, and numerical errors then</span>
+    <span class="c"># flip the sign, e.g.:</span>
+    <span class="c">#    In [1]: sqrt((-0.5j)**2)</span>
+    <span class="c">#    Out[1]: -0.5j</span>
+    <span class="c">#</span>
+    <span class="c">#    In [2]: (-0.5j)**2</span>
+    <span class="c">#    Out[2]: (-0.25-0j)</span>
+    <span class="c">#</span>
+    <span class="c">#    In [3]: sqrt(-0.25)</span>
+    <span class="c">#    Out[3]: 0.5j</span>
+    <span class="c"># Here [3] is the correct value and [1] is incorrect, but that happens due</span>
+    <span class="c"># to the round off errors in [2] (the small negative imaginary part makes</span>
+    <span class="c"># sqrt() return -0.5j instead of +0.5j).</span>
+    <span class="c">#</span>
+    <span class="c"># For this reason, we chose N=7.</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">7</span>
+    <span class="n">circle</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">circle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">))</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+    <span class="c"># Add some random points:</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
+        <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="p">(</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">values</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">generate_values</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">feq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">max_relative_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">,</span> <span class="n">max_absolute_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns True if a==b to the given relative and absolute errors, otherwise</span>
+<span class="sd">    False.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c"># if the numbers are close enough (absolutely), then they are equal</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">max_absolute_error</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+    <span class="c"># if not, they can still be equal if their relative error is small</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+        <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="c">#print abs(a-b), relative_error</span>
+    <span class="k">return</span> <span class="n">relative_error</span> <span class="o">&lt;=</span> <span class="n">max_relative_error</span>
+
+<span class="k">def</span> <span class="nf">test_zero1</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests that a complex function f(x) of one complex variable is zero.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;x lhs(x) rhs(x)&quot;</span>
+            <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">test_zero2</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests that a complex function f(x, y) of two complex variables is zero.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
+                <span class="k">print</span> <span class="s">&quot;x y lhs(x, y) rhs(x, y)&quot;</span>
+                <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+                <span class="k">assert</span> <span class="bp">False</span>
+
+<span class="k">def</span> <span class="nf">test_zero3</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tests that a complex function f(x, y, z) of three complex variables is zero.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">))</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
+                    <span class="k">print</span> <span class="s">&quot;x y z lhs(x, y, z) rhs(x, y, z)&quot;</span>
+                    <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+                    <span class="k">assert</span> <span class="bp">False</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span><span class="p">,</span> <span class="n">pi</span>
+<span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">log</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mi">1j</span>
+
+<span class="c"># Test the various identities</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">arg</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">x</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">x</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">))),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">real</span><span class="p">)</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">z</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="n">I</span><span class="o">*</span><span class="n">arg</span><span class="p">(</span><span class="n">z</span><span class="p">)))</span>
+<span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">arg</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">z</span><span class="p">)),</span> <span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">z</span><span class="o">.</span><span class="n">imag</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
+
+<span class="n">test_zero2</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">exp</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="n">b</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">exp</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">a</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))))</span>
+<span class="n">test_zero2</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="n">a</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
+<span class="n">test_zero2</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="n">log</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">b</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
+<span class="n">test_zero2</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">arg</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">arg</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="n">arg</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">b</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
+
+<span class="n">test_zero3</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="n">b</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))))</span>
+<span class="n">test_zero3</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="n">a</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">a</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="o">**</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">arg</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))))</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Complex Numbers</a><ul>
+<li><a class="reference internal" href="#real-and-imaginary-part">Real and Imaginary Part</a></li>
+<li><a class="reference internal" href="#argument-function">Argument Function</a></li>
+<li><a class="reference internal" href="#exponential">Exponential</a></li>
+<li><a class="reference internal" href="#logarithm">Logarithm</a></li>
+<li><a class="reference internal" href="#power">Power</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#testing-identities-using-computer-code">Testing Identities Using Computer Code</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="integration.html"
+                        title="previous chapter">Integration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="residue.html"
+                        title="next chapter">Residue Theorem</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/math/complex.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="residue.html" title="Residue Theorem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="integration.html" title="Integration"
+             >previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

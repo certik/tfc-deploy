@@ -527,18 +527,26 @@ Euler equations (for perfect fluid):</p>
 </div><p>But also <a href="#equation-div_free">(14)</a> implies <a href="#equation-mat_deriv_zero">(13)</a>, so these two equations
 are equivalent: the divergence of the velocity field is zero if and only if the
 material derivative of the density is zero.</p>
-<p>Using the condition <img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/> and <img class="math" src="../_images/math/c1189b06e963b1d9e8e8a075f5f813e30ba94678.png" alt="\rho=\rm const."/> in
-<a href="#equation-euler_continuity">(9)</a> and <a href="#equation-euler_momentum2">(12)</a> we obtain:</p>
+<p>Using the condition <img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/> in <a href="#equation-euler_continuity">(9)</a> and
+<a href="#equation-euler_momentum2">(12)</a> we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/7372f3790788b402270301994d330111ba392064.png" alt="\rho=\mathrm{const.}
+<p><img src="../_images/math/54d43755fe4297247927b392a3dc3601a6cb480b.png" alt="\nabla\cdot{\bf v}=0\,,
 
-\nabla\cdot{\bf v}=0
+{\partial \rho\over \partial t} + {\bf v}\cdot\nabla\rho = 0\,,
 
 \rho\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
-    + \nabla p = \mu\nabla^2{\bf v}"/></p>
-</div><p>These are incompressible Navier-Stokes equations, for <img class="math" src="../_images/math/6fb9784238a0e8caf96b491ddba1749e92a41490.png" alt="\mu=0"/> they become the
-incompressible Euler equations.</p>
+    + \nabla p = \mu\nabla^2{\bf v}\,."/></p>
+</div><p>In addition to incompressibility, we can also assume a constant density
+<img class="math" src="../_images/math/6d63730de992acfe88a67f1a7351611184d839d9.png" alt="\rho(x, y, z)=\rho_0"/>, then we obtain the incompressible Navier-Stokes
+equations:</p>
+<div class="math">
+<p><img src="../_images/math/082a19311b20fcc46dce9db17711e1fba488ca1c.png" alt="\nabla\cdot{\bf v}=0\,,
+
+\rho_0\left({\partial {\bf v}\over\partial t}
+    + {\bf v}\cdot \nabla{\bf v}\right)
+    + \nabla p = \mu\nabla^2{\bf v}\,."/></p>
+</div><p>For <img class="math" src="../_images/math/6fb9784238a0e8caf96b491ddba1749e92a41490.png" alt="\mu=0"/> they become the incompressible Euler equations.</p>
 </div>
 <div class="section" id="bernoulli-s-principle">
 <h2>Bernoulli&#8217;s Principle<a class="headerlink" href="#bernoulli-s-principle" title="Permalink to this headline">¶</a></h2>

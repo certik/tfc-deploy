@@ -262,30 +262,37 @@ nonrelativistic equation of continuity).  Their Newtonian limit is obtained by
 
 \partial_t E + \partial_j\left(v^j\left(E + p \right)\right) = 0"/></p>
 </div><p>those are the Euler equations, also sometimes written as:</p>
-<div class="math">
-<p><img src="../_images/math/9d73d9110e778ffd2db3ef287d71b64f3db30020.png" alt="{\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v}) = 0
-
-{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
-    (\rho {\bf v}{\bf v}^T) + \nabla p = 0
-
-{\partial E\over\partial t}
+<div class="math" id="equation-euler_continuity">
+<p><span class="eqno">(9)</span><img src="../_images/math/95065b6b0324d984538a8c85694fe4be487466ff.png" alt="{\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v}) = 0"/></p>
+</div><div class="math" id="equation-euler_momentum">
+<p><span class="eqno">(10)</span><img src="../_images/math/43cc7a0b17051add7a6e0a4f8a8cfdb08d2b73e0.png" alt="{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
+    (\rho {\bf v}{\bf v}^T) + \nabla p = 0"/></p>
+</div><div class="math" id="equation-euler_energy">
+<p><span class="eqno">(11)</span><img src="../_images/math/665e4607de501123fc11c1e04026fce8cb1c8328.png" alt="{\partial E\over\partial t}
     + \nabla\cdot\left({\bf v}\left(E + p \right)\right) = 0"/></p>
 </div><p>The momentum equation can be further simplified by expanding the parentheses
 and using the continuity equation:</p>
 <div class="math">
-<p><img src="../_images/math/a8814a87e8bd51fda2ed345f11df570aa0d3e990.png" alt="{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
+<p><img src="../_images/math/8c8f4c165b59a6b9e13d7eb95ab86fde82502af6.png" alt="{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
     (\rho {\bf v}{\bf v}^T) + \nabla p = 0
 
 \underbrace{\left(
 {\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v})\right)}_0
 {\bf v} +
-\rho\left({\partial {\bf v}\over\partial t} + {\bf v}\nabla \cdot
-    {\bf v}\right)
-    + \nabla p = 0
-
-\rho\left({\partial {\bf v}\over\partial t} + {\bf v}\nabla \cdot
+\rho\left({\partial {\bf v}\over\partial t} + {\bf v}\cdot \nabla
     {\bf v}\right)
     + \nabla p = 0"/></p>
+</div><div class="math" id="equation-euler_momentum2">
+<p><span class="eqno">(12)</span><img src="../_images/math/4eebd08e226ce6febaf5e48ee37168206e6ed1c8.png" alt="\rho\left({\partial {\bf v}\over\partial t}
+    + {\bf v}\cdot \nabla{\bf v}\right)
+    + \nabla p = 0"/></p>
+</div><p>Where we used:</p>
+<div class="math">
+<p><img src="../_images/math/3328763850055067f678fc8743aa025d0dc3e392.png" alt="\left[\nabla \cdot (\rho {\bf v}{\bf v}^T)\right]^i
+    = \partial_j (\rho v^iv^j)
+    = v^i \partial_j (\rho v^j) + \rho v^j \partial_j v^i
+    = \left[{\bf v}\nabla \cdot (\rho {\bf v})
+        + \rho {\bf v}\cdot\nabla{\bf v}\right]^i"/></p>
 </div><div class="section" id="alternative-derivation">
 <h4>Alternative Derivation<a class="headerlink" href="#alternative-derivation" title="Permalink to this headline">¶</a></h4>
 <p>We can also take the non-relativistic limit in the stress energy tensor:</p>
@@ -481,6 +488,16 @@ to write the tensor under these conditions is:</p>
 </div><p>where the strain rate is:</p>
 <div class="math">
 <p><img src="../_images/math/431be86047dd07481b80752748a12f06f27ad434.png" alt="\epsilon_{ij}={1\over 2}\left(\partial_j v_i+\partial_i v_j\right)"/></p>
+</div><p>The trace of <img class="math" src="../_images/math/4576a14f9aac382d8d9d781b7df05bc91062581d.png" alt="\mathds{T}"/> is:</p>
+<div class="math">
+<p><img src="../_images/math/85756e319cca223b31683132b7056061052c216e.png" alt="\Tr \mathds{T} = T_{ii}
+    = 2\mu\epsilon_{ii} + \delta_{ii} \lambda \nabla\cdot{\bf v}
+    = (2\mu + 3 \lambda) \nabla\cdot{\bf v}"/></p>
+</div><p>Note that <img class="math" src="../_images/math/4576a14f9aac382d8d9d781b7df05bc91062581d.png" alt="\mathds{T}"/> has zero trace, which is automatically satisfied for
+incompressible flow (<img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/>), but for compressible flow this
+imposes:</p>
+<div class="math">
+<p><img src="../_images/math/54b7a65186e1e536c786cbea1c9f694e3abd635e.png" alt="\lambda = -{2\over 3}\mu"/></p>
 </div><p>The divergence of the tensor is:</p>
 <div class="math">
 <p><img src="../_images/math/baaf871080f845d2074fe2365f5da388da5c0723.png" alt="\partial_j T_{ij} =2\mu\partial_j\epsilon_{ij} + \partial_j\delta_{ij} \lambda \nabla\cdot{\bf v} =\mu\partial_j\partial_j v_i+\mu\partial_i \nabla\cdot{\bf v} + \lambda \partial_i  \nabla\cdot{\bf v} =\mu\partial_j\partial_j v_i+(\mu+\lambda)\partial_i \nabla\cdot{\bf v}"/></p>
@@ -497,6 +514,32 @@ Euler equations (for perfect fluid):</p>
 <div class="math">
 <p><img src="../_images/math/95726c37fa3d33c2ab8b4989be5a79e56f3f46fa.png" alt="\nabla \cdot \mathds{T}=0"/></p>
 </div></div>
+<div class="section" id="incompressible-equations">
+<h2>Incompressible Equations<a class="headerlink" href="#incompressible-equations" title="Permalink to this headline">¶</a></h2>
+<p>Incompressible flow means that the material derivative of density is zero:</p>
+<div class="math" id="equation-mat_deriv_zero">
+<p><span class="eqno">(13)</span><img src="../_images/math/3d1adbff357793216e0df3ff6b9cdda6273e57ba.png" alt="{\d \rho\over\d t} = {\partial \rho\over \partial t}
+    + {\bf v}\cdot\nabla\rho = 0\,."/></p>
+</div><p>Putting this into the equation of continuity <a href="#equation-euler_continuity">(9)</a> one obtains
+<img class="math" src="../_images/math/b1cb02879913565596e3cac70943917ba50ff9a5.png" alt="\rho\nabla\cdot{\bf v}=0"/> or equivalently:</p>
+<div class="math" id="equation-div_free">
+<p><span class="eqno">(14)</span><img src="../_images/math/7d07aeb82b1ca099bc438931fb4f0e89afbdcae3.png" alt="\nabla\cdot{\bf v}=0\,."/></p>
+</div><p>But also <a href="#equation-div_free">(14)</a> implies <a href="#equation-mat_deriv_zero">(13)</a>, so these two equations
+are equivalent: the divergence of the velocity field is zero if and only if the
+material derivative of the density is zero.</p>
+<p>Using the condition <img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/> and <img class="math" src="../_images/math/c1189b06e963b1d9e8e8a075f5f813e30ba94678.png" alt="\rho=\rm const."/> in
+<a href="#equation-euler_continuity">(9)</a> and <a href="#equation-euler_momentum2">(12)</a> we obtain:</p>
+<div class="math">
+<p><img src="../_images/math/7372f3790788b402270301994d330111ba392064.png" alt="\rho=\mathrm{const.}
+
+\nabla\cdot{\bf v}=0
+
+\rho\left({\partial {\bf v}\over\partial t}
+    + {\bf v}\cdot \nabla{\bf v}\right)
+    + \nabla p = \mu\nabla^2{\bf v}"/></p>
+</div><p>These are incompressible Navier-Stokes equations, for <img class="math" src="../_images/math/6fb9784238a0e8caf96b491ddba1749e92a41490.png" alt="\mu=0"/> they become the
+incompressible Euler equations.</p>
+</div>
 <div class="section" id="bernoulli-s-principle">
 <h2>Bernoulli&#8217;s Principle<a class="headerlink" href="#bernoulli-s-principle" title="Permalink to this headline">¶</a></h2>
 <p>Bernoulli&#8217;s principle works for a perfect fluid, so we take the Euler equations:</p>
@@ -634,6 +677,7 @@ Hagen-Poiseuille law.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#navier-stokes-equations">Navier-Stokes Equations</a></li>
+<li><a class="reference internal" href="#incompressible-equations">Incompressible Equations</a></li>
 <li><a class="reference internal" href="#bernoulli-s-principle">Bernoulli&#8217;s Principle</a><ul>
 <li><a class="reference internal" href="#hydrostatic-pressure">Hydrostatic Pressure</a></li>
 <li><a class="reference internal" href="#torricelli-s-law">Torricelli&#8217;s Law</a></li>

@@ -588,14 +588,15 @@ Apply divergence to <a href="#equation-incomp_euler_2">(16)</a>:</p>
 that is not divergence free. To make it so, we minimize the following
 functional:</p>
 <div class="math">
-<p><img src="../_images/math/d6bcc7d362e0e4fdfdcfcbfd985f3ee1bead33b5.png" alt="R[{\bf v}] = \int \half({\bf v}-{\bf v}^*)^2
+<p><img src="../_images/math/4bc06782f0ec79310695bb2697b08f9652eb864d.png" alt="R[{\bf v}, \lambda] = \int \half({\bf v}-{\bf v}^*)^2
     - \lambda \nabla\cdot{\bf v}\, \d^3 x\,,"/></p>
-</div><p>where we used a Langrange multiplier <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> in the second term to impose the
-zero divergence on <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> and in the first term we ensure that <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> is
-as close as possible to the original field <img class="math" src="../_images/math/3e8179257718a0d538e7d8837e30b2bfc3293d82.png" alt="{\bf v}^*"/>. Let&#8217;s calculate the
-variation:</p>
+</div><p>where we used a Langrange multiplier <img class="math" src="../_images/math/7f6ea0d3b8a42106668b65dee1650c23089e917d.png" alt="\lambda=\lambda({\bf x})"/> in the second
+term to impose the zero divergence on <img class="math" src="../_images/math/09ef2774a2f6f00290c74ceb264d19e3eebdf0e1.png" alt="{\bf v}={\bf v}({\bf x})"/> for all points
+<img class="math" src="../_images/math/81be9c56d3b198d87b4049cff4e32bb5c187c52d.png" alt="{\bf x}"/> (that is why <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> is a function of <img class="math" src="../_images/math/81be9c56d3b198d87b4049cff4e32bb5c187c52d.png" alt="{\bf x}"/> and not a constant)
+and in the first term we ensure that <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> is as close as possible to the
+original field <img class="math" src="../_images/math/3e8179257718a0d538e7d8837e30b2bfc3293d82.png" alt="{\bf v}^*"/>. Let&#8217;s calculate the variation:</p>
 <div class="math">
-<p><img src="../_images/math/a80b26696f8916c61c640da006a854d30b391a08.png" alt="\delta R[{\bf v}] = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
+<p><img src="../_images/math/b2b153233f833341af4661449c36055bc2ef5e00.png" alt="\delta R[{\bf v}, \lambda] = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
         - \lambda \nabla\cdot \delta{\bf v}\, \d^3 x =
 
     = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
@@ -603,19 +604,23 @@ variation:</p>
      +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S =
 
     = \int ({\bf v}-{\bf v}^* + \nabla\lambda)\cdot\delta {\bf v}\, \d^3 x
-     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S"/></p>
-</div><p>From the condition <img class="math" src="../_images/math/89ab3fffd981fb607d0a446af9fa0049891b629d.png" alt="\delta R[{\bf v}]=0"/> and assuming the surface integral
-vanishes (i.e. either <img class="math" src="../_images/math/ab8ccbedc8ad9dd3e5fb8e654b94ee38f70f19e9.png" alt="\lambda=0"/> or <img class="math" src="../_images/math/50bd978aae0a3bc159b937d7c3517f0d15e31efc.png" alt="\delta{\bf v}\cdot{\bf n}=0"/> everywhere
-on the boundary) we obtain:</p>
-<div class="math" id="equation-lambda_eq1">
-<p><span class="eqno">(18)</span><img src="../_images/math/8b86466409ad4dd3c08c31fd6b5f4c36d061dce5.png" alt="{\bf v}-{\bf v}^* + \nabla\lambda = 0"/></p>
-</div><p>Applying divergence and using <img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/> we obtain:</p>
+     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S\,."/></p>
+</div><p>From the condition <img class="math" src="../_images/math/7290702cd3941020858e68ec5f20a951317758b0.png" alt="\delta R[{\bf v}, \lambda]=0"/> and assuming the surface
+integral vanishes (i.e. either <img class="math" src="../_images/math/ab8ccbedc8ad9dd3e5fb8e654b94ee38f70f19e9.png" alt="\lambda=0"/> or <img class="math" src="../_images/math/50bd978aae0a3bc159b937d7c3517f0d15e31efc.png" alt="\delta{\bf v}\cdot{\bf n}=0"/>
+everywhere on the boundary) we obtain the two Euler-Lagrange equations:</p>
+<div class="math" id="equation-lambda_eq1a">
+<p><span class="eqno">(18)</span><img src="../_images/math/6b01ec6b036d0ce9e7fafaebaf0ffeb0ce811082.png" alt="{\delta R[{\bf v}, \lambda] \over \delta {\bf v}}
+    = {\bf v}-{\bf v}^* + \nabla\lambda = 0\,,"/></p>
+</div><div class="math" id="equation-lambda_eq1b">
+<p><span class="eqno">(19)</span><img src="../_images/math/8794d7b0ee86092308d7d169a1ea0131d42d1ba5.png" alt="{\delta R[{\bf v}, \lambda] \over \delta \lambda}
+    = \nabla\cdot{\bf v} = 0\,."/></p>
+</div><p>Applying divergence to <a href="#equation-lambda_eq1a">(18)</a> and using <a href="#equation-lambda_eq1b">(19)</a> we obtain:</p>
 <div class="math" id="equation-lambda_eq2">
-<p><span class="eqno">(19)</span><img src="../_images/math/da3111925e38e765b36886ee523d25c39438e2c2.png" alt="\nabla^2\lambda = \nabla\cdot{\bf v}^*"/></p>
+<p><span class="eqno">(20)</span><img src="../_images/math/96d78259e3f82408c010f4b9edece1aab4e26d0a.png" alt="\nabla^2\lambda = \nabla\cdot{\bf v}^*\,."/></p>
 </div><p>After solving this Poisson equation for <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> we can calculate the
-divergence free <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> from <a href="#equation-lambda_eq1">(18)</a>:</p>
+divergence free <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> from <a href="#equation-lambda_eq1a">(18)</a>:</p>
 <div class="math" id="equation-lambda_eq3">
-<p><span class="eqno">(20)</span><img src="../_images/math/876bc8e56c415ba3ad5dabc85efbf6b1aefc011a.png" alt="{\bf v} = {\bf v}^* - \nabla\lambda"/></p>
+<p><span class="eqno">(21)</span><img src="../_images/math/6d7d2241421c79a19833f7e74196a4db1861f6f6.png" alt="{\bf v} = {\bf v}^* - \nabla\lambda\,."/></p>
 </div></div>
 </div>
 <div class="section" id="bernoulli-s-principle">
@@ -626,21 +631,21 @@ divergence free <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19
 </div><p>and put it into a vertical gravitational field <img class="math" src="../_images/math/1e8875477dcea491c345a48d234ad68ec91f3159.png" alt="{\bf f} = (0, 0, -\rho g)=-\rho
 g\nabla z"/>, so:</p>
 <div class="math">
-<p><img src="../_images/math/76ea63ab36754aec3b5fd87337b64523d8d8cffd.png" alt="\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p - \rho g\nabla z"/></p>
+<p><img src="../_images/math/cee5bf887cb17f172791ab373f39da03f14e3de4.png" alt="\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p - \rho g\nabla z\,,"/></p>
 </div><p>we divide by <img class="math" src="../_images/math/0027034d8a10372a06deaf4f4084c01956587479.png" alt="\rho"/>:</p>
 <div class="math">
 <p><img src="../_images/math/d0cecc4ba38226b65913be9b9655613826f8dc1d.png" alt="{\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} = -\nabla \left({p\over\rho} + g z\right)"/></p>
 </div><p>and use the identity <img class="math" src="../_images/math/de194ce7e510d2d3055425c57dfa1c070afe5ca5.png" alt="{\bf v}\cdot\nabla{\bf v}={1\over 2}\nabla v^2
 + (\nabla \times {\bf v})\times{\bf v}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/375afdc1391b8013a800b28d3029cb23012ad526.png" alt="{\partial {\bf v}\over\partial t} +{1\over 2}\nabla v^2+(\nabla \times {\bf v})\times{\bf v} +\nabla \left({p\over\rho} + g z\right)=0"/></p>
+<p><img src="../_images/math/10154c1c594e8625f943cfca0c57b810f071c92a.png" alt="{\partial {\bf v}\over\partial t} +{1\over 2}\nabla v^2+(\nabla \times {\bf v})\times{\bf v} +\nabla \left({p\over\rho} + g z\right)=0\,,"/></p>
 </div><p>so:</p>
 <div class="math">
-<p><img src="../_images/math/7951ada230d2702707a20e44e8fbe6560b4f04a8.png" alt="{\partial {\bf v}\over\partial t} +(\nabla \times {\bf v})\times{\bf v} +\nabla \left({v^2\over 2} + gz + {p\over\rho} \right)=0"/></p>
+<p><img src="../_images/math/d793657126977152ab1bae6d0474cb517a76e879.png" alt="{\partial {\bf v}\over\partial t} +(\nabla \times {\bf v})\times{\bf v} +\nabla \left({v^2\over 2} + gz + {p\over\rho} \right)=0\,."/></p>
 </div><p>If the fluid is moving, we integrate this along a streamline from the point <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/>
 to <img class="math" src="../_images/math/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="B"/>:</p>
 <div class="math">
-<p><img src="../_images/math/ed384b2c8b9985d9a9b74c872174d0f686c19b7f.png" alt="\int {\partial {\bf v}\over\partial t} \cdot \d {\bf l} +\left[{v^2\over 2} + gz + {p\over\rho} \right]_A^B=0"/></p>
+<p><img src="../_images/math/2a0c282ab5096fc64b596431a1acdfcaa2d447d2.png" alt="\int {\partial {\bf v}\over\partial t} \cdot \d {\bf l} +\left[{v^2\over 2} + gz + {p\over\rho} \right]_A^B=0\,."/></p>
 </div><p>So far we didn&#8217;t do any approximation (besides having a perfect fluid in a
 vertical gravitation field).
 Now we assume a steady flow, so <img class="math" src="../_images/math/07d6c70c2a821eea9e80cf1d99db191b465e0577.png" alt="{\partial {\bf

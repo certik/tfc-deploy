@@ -540,13 +540,83 @@ material derivative of the density is zero.</p>
 </div><p>In addition to incompressibility, we can also assume a constant density
 <img class="math" src="../_images/math/6d63730de992acfe88a67f1a7351611184d839d9.png" alt="\rho(x, y, z)=\rho_0"/>, then we obtain the incompressible Navier-Stokes
 equations:</p>
-<div class="math">
-<p><img src="../_images/math/082a19311b20fcc46dce9db17711e1fba488ca1c.png" alt="\nabla\cdot{\bf v}=0\,,
-
-\rho_0\left({\partial {\bf v}\over\partial t}
+<div class="math" id="equation-incomp_euler_1">
+<p><span class="eqno">(15)</span><img src="../_images/math/fc2c77e3d38f88a15391e7025566d9d14124a8e5.png" alt="\nabla\cdot{\bf v}=0\,,"/></p>
+</div><div class="math" id="equation-incomp_euler_2">
+<p><span class="eqno">(16)</span><img src="../_images/math/91aabed527f5fa2bb439a4dc293f9b13eb27d162.png" alt="\rho_0\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
     + \nabla p = \mu\nabla^2{\bf v}\,."/></p>
-</div><p>For <img class="math" src="../_images/math/6fb9784238a0e8caf96b491ddba1749e92a41490.png" alt="\mu=0"/> they become the incompressible Euler equations.</p>
+</div><p>For <img class="math" src="../_images/math/6fb9784238a0e8caf96b491ddba1749e92a41490.png" alt="\mu=0"/> they become the incompressible Euler equations. At the given time
+step with known <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> and <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/>, the equation <a href="#equation-incomp_euler_2">(16)</a> is solved
+for <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> at the new time step. Then we solve for new <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/> as follows.
+Apply divergence to <a href="#equation-incomp_euler_2">(16)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/2fe31b7848995926b1924c86d3d4efe1c6b14827.png" alt="\rho_0\nabla\cdot\left({\partial {\bf v}\over\partial t}
+    + {\bf v}\cdot \nabla{\bf v}\right)
+    + \nabla\cdot\nabla p = \mu\nabla\cdot\nabla^2{\bf v}\,,
+
+\rho_0\left({\partial (\nabla\cdot{\bf v})\over\partial t}
+    + \nabla\cdot({\bf v}\cdot \nabla{\bf v})\right)
+    + \nabla^2 p = \mu\nabla\cdot\nabla^2{\bf v}\,,"/></p>
+</div><p>now we use the following identities:</p>
+<div class="math">
+<p><img src="../_images/math/2a489ec718ed5bfdb271d0abde55c7d49f136d28.png" alt="\nabla\cdot({\bf v}\cdot \nabla{\bf v})
+    = \partial_i(v^j \partial_j v^i)
+    = (\partial_i v^j) (\partial_j v^i)
+        + v^j \partial_j \partial_i v^i
+    = \Tr (\nabla {\bf v})^2 + {\bf v}\cdot\nabla(\nabla\cdot{\bf v})\,,
+
+\nabla\cdot\nabla^2{\bf v}
+    = \partial_i\partial^j\partial_j v^i
+    = \partial^j\partial_j \partial_i v^i
+    = \nabla^2(\nabla\cdot {\bf v})\,,"/></p>
+</div><p>to get:</p>
+<div class="math">
+<p><img src="../_images/math/5f188456e1999fe95c149fbd4caf54398ea4701d.png" alt="\rho_0\left({\partial (\nabla\cdot{\bf v})\over\partial t}
+    + \Tr (\nabla {\bf v})^2 + {\bf v}\cdot\nabla(\nabla\cdot{\bf v})
+      \right)
+    + \nabla^2 p = \mu \nabla^2(\nabla\cdot {\bf v}) \,."/></p>
+</div><p>Finally we use the equation <a href="#equation-incomp_euler_1">(15)</a> to simplify:</p>
+<div class="math" id="equation-incomp_euler_3">
+<p><span class="eqno">(17)</span><img src="../_images/math/a9115a368f465f02c9487165529186be6b5d4743.png" alt="-\nabla^2 p = \rho_0\Tr (\nabla {\bf v})^2\,,"/></p>
+</div><p>which is a Poisson equation for <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/>. Note again that
+<img class="math" src="../_images/math/7f81ee7873007bc6d4235ee408396b656dfc4807.png" alt="\Tr (\nabla {\bf v})^2 = (\partial_i v^j) (\partial_j v^i)"/>. The equation
+<a href="#equation-incomp_euler_3">(17)</a> is then used to solve for <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/> at the new time step.</p>
+<div class="section" id="divergence-free-velocity">
+<h3>Divergence Free Velocity<a class="headerlink" href="#divergence-free-velocity" title="Permalink to this headline">¶</a></h3>
+<p>Typically by propagating <a href="#equation-incomp_euler_2">(16)</a>, we obtain a velocity <img class="math" src="../_images/math/3e8179257718a0d538e7d8837e30b2bfc3293d82.png" alt="{\bf v}^*"/>
+that is not divergence free. To make it so, we minimize the following
+functional:</p>
+<div class="math">
+<p><img src="../_images/math/d6bcc7d362e0e4fdfdcfcbfd985f3ee1bead33b5.png" alt="R[{\bf v}] = \int \half({\bf v}-{\bf v}^*)^2
+    - \lambda \nabla\cdot{\bf v}\, \d^3 x\,,"/></p>
+</div><p>where we used a Langrange multiplier <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> in the second term to impose the
+zero divergence on <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> and in the first term we ensure that <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> is
+as close as possible to the original field <img class="math" src="../_images/math/3e8179257718a0d538e7d8837e30b2bfc3293d82.png" alt="{\bf v}^*"/>. Let&#8217;s calculate the
+variation:</p>
+<div class="math">
+<p><img src="../_images/math/a80b26696f8916c61c640da006a854d30b391a08.png" alt="\delta R[{\bf v}] = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
+        - \lambda \nabla\cdot \delta{\bf v}\, \d^3 x =
+
+    = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
+        + (\nabla\lambda) \cdot \delta{\bf v}\, \d^3 x
+     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S =
+
+    = \int ({\bf v}-{\bf v}^* + \nabla\lambda)\cdot\delta {\bf v}\, \d^3 x
+     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S"/></p>
+</div><p>From the condition <img class="math" src="../_images/math/89ab3fffd981fb607d0a446af9fa0049891b629d.png" alt="\delta R[{\bf v}]=0"/> and assuming the surface integral
+vanishes (i.e. either <img class="math" src="../_images/math/ab8ccbedc8ad9dd3e5fb8e654b94ee38f70f19e9.png" alt="\lambda=0"/> or <img class="math" src="../_images/math/50bd978aae0a3bc159b937d7c3517f0d15e31efc.png" alt="\delta{\bf v}\cdot{\bf n}=0"/> everywhere
+on the boundary) we obtain:</p>
+<div class="math" id="equation-lambda_eq1">
+<p><span class="eqno">(18)</span><img src="../_images/math/8b86466409ad4dd3c08c31fd6b5f4c36d061dce5.png" alt="{\bf v}-{\bf v}^* + \nabla\lambda = 0"/></p>
+</div><p>Applying divergence and using <img class="math" src="../_images/math/e7ae27a2da76725dea672f83157240bb3a3940ed.png" alt="\nabla\cdot{\bf v}=0"/> we obtain:</p>
+<div class="math" id="equation-lambda_eq2">
+<p><span class="eqno">(19)</span><img src="../_images/math/da3111925e38e765b36886ee523d25c39438e2c2.png" alt="\nabla^2\lambda = \nabla\cdot{\bf v}^*"/></p>
+</div><p>After solving this Poisson equation for <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> we can calculate the
+divergence free <img class="math" src="../_images/math/54c725b9ffee3760029f9fc19c8783ca23da6f93.png" alt="{\bf v}"/> from <a href="#equation-lambda_eq1">(18)</a>:</p>
+<div class="math" id="equation-lambda_eq3">
+<p><span class="eqno">(20)</span><img src="../_images/math/876bc8e56c415ba3ad5dabc85efbf6b1aefc011a.png" alt="{\bf v} = {\bf v}^* - \nabla\lambda"/></p>
+</div></div>
 </div>
 <div class="section" id="bernoulli-s-principle">
 <h2>Bernoulli&#8217;s Principle<a class="headerlink" href="#bernoulli-s-principle" title="Permalink to this headline">¶</a></h2>
@@ -685,7 +755,10 @@ Hagen-Poiseuille law.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#navier-stokes-equations">Navier-Stokes Equations</a></li>
-<li><a class="reference internal" href="#incompressible-equations">Incompressible Equations</a></li>
+<li><a class="reference internal" href="#incompressible-equations">Incompressible Equations</a><ul>
+<li><a class="reference internal" href="#divergence-free-velocity">Divergence Free Velocity</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#bernoulli-s-principle">Bernoulli&#8217;s Principle</a><ul>
 <li><a class="reference internal" href="#hydrostatic-pressure">Hydrostatic Pressure</a></li>
 <li><a class="reference internal" href="#torricelli-s-law">Torricelli&#8217;s Law</a></li>

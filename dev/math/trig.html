@@ -305,7 +305,7 @@ Some people might interchange <img class="math" src="../_images/math/26eeb5258ca
 y)= \Arg(y+ix)"/>), but it is not very common.</p>
 <p>The following useful relations hold:</p>
 <div class="math">
-<p><img src="../_images/math/5367c51495d1fd354c337ba31fa7675e20d4cadb.png" alt="\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
+<p><img src="../_images/math/95fcb86d3e9dde6fbafc97664de0cc417501b4b1.png" alt="\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
     \quad\quad\quad\mbox{except $x=y=0$}
 
 \cos\atan2(y, x) = {x\over \sqrt{x^2+y^2}}
@@ -318,7 +318,13 @@ y)= \Arg(y+ix)"/>), but it is not very common.</p>
     \quad\quad\quad\mbox{for $k&gt;0$}
 
 \atan2(\sin x, \cos x) = x + 2\pi
-    \left\lfloor \pi-x \over 2\pi \right\rfloor"/></p>
+    \left\lfloor \pi-x \over 2\pi \right\rfloor
+
+{\partial \over \partial y} \atan2(y, x)
+    = {x\over x^2 + y^2}
+
+{\partial \over \partial x} \atan2(y, x)
+    = -{y\over x^2 + y^2}"/></p>
 </div><p>We now prove them. The following works for all <img class="math" src="../_images/math/32581661cddf01ad30c1e36efe72f99eb0a0adca.png" alt="x, y"/> except for <img class="math" src="../_images/math/08cc55a3a19c9f8cf005f17391db8ed355d2909c.png" alt="x=y=0"/>:</p>
 <div class="math">
 <p><img src="../_images/math/708dc04823619641f1026d08832b162bad459691.png" alt="\sin\atan2(y, x)
@@ -469,7 +475,26 @@ following works for all <img class="math" src="../_images/math/7470aeade5f47b768
 =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
     2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}
 = \Arg(x+iy) = \atan2(y, x)"/></p>
-</div><p>An example of an application:</p>
+</div><p>To prove the derivatives, we do:</p>
+<div class="math">
+<p><img src="../_images/math/491708e7e66c3cacc84e522c6aebc8862c0f09f3.png" alt="{\partial \over \partial y} \atan2(y, x)
+    = 2{\partial \over \partial y} \atan{y\over\sqrt{x^2+y^2}+x}
+    = {x\over x^2 + y^2}
+
+{\partial \over \partial x} \atan2(y, x)
+    = 2{\partial \over \partial x} \atan{y\over\sqrt{x^2+y^2}+x}
+    = -{y\over x^2 + y^2}"/></p>
+</div><p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">var</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;x y&quot;</span><span class="p">)</span>
+<span class="go">(x, y)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">atan</span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+<span class="go">x/(x**2 + y**2)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">atan</span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+<span class="go">-y/(x**2 + y**2)</span>
+</pre></div>
+</div>
+<p>An example of an application:</p>
 <div class="math">
 <p><img src="../_images/math/9ac6e020d27b2d43ca97348676425e2647262e88.png" alt="A\sin x + B\cos x = \sqrt{A^2+B^2}\left(
     {A\over\sqrt{A^2+B^2}}\sin x + {B\over\sqrt{A^2+B^2}}\cos x\right)

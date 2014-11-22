@@ -498,7 +498,30 @@ only if:</p>
     = {\partial f \over \partial g} {\d g \over \d z}
     +
       {\partial f \over \partial \bar g} {\d \bar g \over \d z}"/></p>
-</div><div class="section" id="id2">
+</div><p>Another useful formula is the derivative of a conjugate function:</p>
+<div class="math" id="equation-deriv_conj">
+<p><span class="eqno">(13)</span><img src="../_images/math/bc71a81f7296d7c06c807ebd6a0289109462f350.png" alt="{\d \bar f \over \d z}
+    = {\partial \bar f \over \partial z}
+        + {\partial \bar f \over \partial \bar z} e^{-2i\theta}
+    = \overline{\partial f \over \partial \bar z}
+        + \overline{\partial f \over \partial z} e^{-2i\theta} =
+
+    = \left(\overline{{\partial f \over \partial \bar z} e^{-2i\theta}
+        + {\partial f \over \partial z}}\right) e^{-2i\theta}
+    = \overline{\d f \over \d z} e^{-2i\theta}"/></p>
+</div><p>Using <a href="#equation-deriv_conj">(13)</a>, the chain rule <a href="#equation-chain_rule">(12)</a> can also be written as:</p>
+<div class="math" id="equation-chain_rule2">
+<p><span class="eqno">(14)</span><img src="../_images/math/9236c7bc7cbaddf516c8b7cb8ba98d23384ccac3.png" alt="{\d f(g) \over \d z}
+    = {\partial f \over \partial g} {\d g \over \d z}
+    + {\partial f \over \partial \bar g} {\d \bar g \over \d z}
+    = {\partial f \over \partial g} {\d g \over \d z}
+    + {\partial f \over \partial \bar g} \overline {\d g \over \d z}
+        e^{-2i\theta}"/></p>
+</div><p>Which has the advantage that only the <img class="math" src="../_images/math/d07b5366d7dc2d3c533dbeaec346a528a2796792.png" alt="{\d g \over \d z}"/> derivative is needed,
+the rest is just conjugation and multiplication. If <img class="math" src="../_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f"/> is analytic, then
+<img class="math" src="../_images/math/d5a418957de6dd320c7c5d8f0829a94d4267b4ba.png" alt="{\partial f \over \partial \bar g}=0"/>, the second term vanishes and the chain
+rule is analogous to real functions.</p>
+<div class="section" id="id2">
 <h3>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/1f7255b2323096a2d9ab81f50e0b5f8977abad99.png" alt="{\d z \over \d z}

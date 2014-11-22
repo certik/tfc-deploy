@@ -350,14 +350,25 @@ f(\Re z, \Im z)"/> or using <img class="math" src="../_images/math/b13f21416d84e
 <div class="section" id="id1">
 <h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/b80ed77a715817a86ec5f05c1eb917a8c5c6f14d.png" alt="|z| = \sqrt{\Re^2 z + \Im^2 z} = \sqrt{
+<p><img src="../_images/math/65b73012b8d7b5b56684fd1f9eb2f6eea164be61.png" alt="|z| = \sqrt{\Re^2 z + \Im^2 z} = \sqrt{
     \left({1\over 2}(z + \bar z)\right)^2 +
     \left({i\over 2}(-z + \bar z)\right)^2}
     =\sqrt{z\bar z}
 
 \arg z = \atan2(\Im z, \Re z)
     =\atan2\left({i\over 2}(-z + \bar z), {1\over 2}(z + \bar z)\right)
-    =\atan2\left(i(-z + \bar z), z + \bar z\right)"/></p>
+    =\atan2\left(i(-z + \bar z), z + \bar z\right)
+
+\arg \bar z = \atan2(-\Im z, \Re z)
+    =-\atan2(\Im z, \Re z) + 2\pi
+        \left\lfloor \atan2(\Im z, \Re z)+\pi \over 2\pi \right\rfloor
+    =-\arg z + 2\pi \left\lfloor \arg z+\pi \over 2\pi \right\rfloor
+
+\overline{\log z} = \log|z| -i\arg z
+    = \log|\bar z| +i\arg \bar z -2\pi i
+        \left\lfloor \arg z+\pi \over 2\pi \right\rfloor
+    = \log \bar z -2\pi i
+        \left\lfloor \arg z+\pi \over 2\pi \right\rfloor"/></p>
 </div></div>
 </div>
 <div class="section" id="complex-derivatives">
@@ -370,20 +381,13 @@ f(\Re z, \Im z)"/> or using <img class="math" src="../_images/math/b13f21416d84e
 we use <img class="math" src="../_images/math/aff95d1ee1b2968831771526b7d9a50394600cf9.png" alt="h=te^{i\theta}"/> with real <img class="math" src="../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/> and we introduce <img class="math" src="../_images/math/b8dc2a44d4b5ece0f230f190b0e183746a43fc13.png" alt="f=f(x, y)"/> with <img class="math" src="../_images/math/3aaf498130d1066b3f14c9acc9052c8ea96954ba.png" alt="x=\Re
 z"/>, <img class="math" src="../_images/math/33c34d50877d413ab7b6751cf1fd72d2ab0e0c2b.png" alt="y=\Im z"/> to simplify the notation:</p>
 <div class="math">
-<p><img src="../_images/math/3a9bd6595e48ea7fc6faffd209988dea12bf8232.png" alt="{\d f \over \d z}
+<p><img src="../_images/math/cfef76bf5246481cba57ad8a21d05fcc0a6a08a5.png" alt="{\d f \over \d z}
     = \lim_{t\to0} {f(z+t e^{i\theta})-f(z) \over t e^{i\theta}} =
 
     = \lim_{t\to0} {f(x+t\cos\theta, y+t\sin\theta)-f(x, y) \over t}
         e^{-i\theta} =
 
-    = \left(\lim_{t\to0} {f(x+t\cos\theta, y+t\sin\theta)
-        -f(x, y+t\sin\theta) \over t}
-    + \lim_{t\to0} {f(x, y+t\sin\theta)-f(x, y) \over t}
-      \right) e^{-i\theta} =
-
-    = \left(\lim_{t\to0} {f(x+t, y) -f(x, y) \over t} \cos\theta
-    + \lim_{t\to0} {f(x, y+t)-f(x, y) \over t} \sin\theta
-      \right) e^{-i\theta} =
+    = {\d \over \d t} f(x+t\cos\theta, y+t\sin\theta) e^{-i\theta} =
 
     = \left({\partial f \over \partial x} \cos\theta
     + {\partial f \over \partial y} \sin\theta \right) e^{-i\theta} =
@@ -434,14 +438,15 @@ terms of derivatives with respect to <img class="math" src="../_images/math/b13f
 </div><p>The equation <a href="#equation-complex_deriv">(11)</a> states that the complex derivative along the
 direction <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/> of any function can be calculated, but the result in general
 depends on <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/>. The derivatives for all possible angles <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/> lie on a
-circle, with the center <img class="math" src="../_images/math/5569910b348853d8220ddcaf8a0700c29ed8e78d.png" alt="{\partial f \over \partial z}"/> and radius
-<img class="math" src="../_images/math/66fb4cccc898fc1f6c98964dbb553c0b9eeb2f1a.png" alt="{\partial f \over \partial \bar z}"/>. When the derivative has different values
+circle, with the center <img class="math" src="../_images/math/5569910b348853d8220ddcaf8a0700c29ed8e78d.png" alt="{\partial f \over \partial z}"/> and the radius
+<img class="math" src="../_images/math/457f9ef0be67567a77cc2ebe8a4450a43e6449c2.png" alt="\left|{\partial f \over \partial \bar z}\right|"/>.
+When the derivative has different values
 for different <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/>, i.e. when <img class="math" src="../_images/math/415b19e06cb35524b492c0e5fc2e9f5bdea5786c.png" alt="{\partial f \over \partial \bar z}\neq0"/>, it
 means that the complex limit <a href="#equation-complex_deriv_lim">(8)</a> does not exist. On the
 other hand, if the derivative does not depend on <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd413406475a689.png" alt="\theta"/>, i.e.
 when <img class="math" src="../_images/math/89feb854bdabc220b4d7d96fcbc23518bae6afce.png" alt="{\partial f \over \partial \bar z}=0"/>, then the complex limit
 <a href="#equation-complex_deriv_lim">(8)</a> exists, and the function has a complex derivative &#8212;
-such functions are called analytic. Analytic functions thus does not depend on
+such functions are called analytic. Analytic functions thus do not depend on
 <img class="math" src="../_images/math/3dd7a11f37726441f347af6b98d5801f47d0bdd6.png" alt="\bar z"/> and we can write just <img class="math" src="../_images/math/7794549c2021d57b52b955b2fa1d393eda4ec361.png" alt="f = f(z)"/> for those.</p>
 <p>The <img class="math" src="../_images/math/5569910b348853d8220ddcaf8a0700c29ed8e78d.png" alt="{\partial f \over \partial z}"/> and <img class="math" src="../_images/math/66fb4cccc898fc1f6c98964dbb553c0b9eeb2f1a.png" alt="{\partial f \over \partial \bar z}"/>
 are called Wirtinger derivatives.</p>
@@ -496,7 +501,7 @@ only if:</p>
 </div><div class="section" id="id2">
 <h3>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/4d6b4e3c78c1a6f0fbc9c04eea9062f84111878d.png" alt="{\d z \over \d z}
+<p><img src="../_images/math/1f7255b2323096a2d9ab81f50e0b5f8977abad99.png" alt="{\d z \over \d z}
      = {\partial z \over \partial z}
      + {\partial z \over \partial \bar z} e^{-2i\theta}
      = 1
@@ -524,6 +529,11 @@ only if:</p>
     = {\bar z + z e^{-2i\theta}\over 2\sqrt{z\bar z}}
     = {\bar z + z e^{-2i\theta}\over 2|z|}
 
+{\d |f(z)| \over \d z}
+    = {\partial |f| \over \partial f} {\d f \over \d z}
+    + {\partial |f| \over \partial \bar f} {\d \bar f \over \d z}
+    = {\bar f{\d f\over\d z} + f{\d \bar f\over\d z}\over 2|f|}
+
 {\d \arg z \over \d z}
     ={\d\, \atan2\left(i(-z + \bar z), z + \bar z\right) \over \d z}
     ={\partial\, \atan2\left(i(-z + \bar z), z + \bar z\right) \over
@@ -537,15 +547,34 @@ only if:</p>
     = {i\over2}\left( -{1\over z} + {1\over \bar z} e^{-2i\theta} \right)
     = {i\over2}\left( -\bar z + z e^{-2i\theta} \over | z|^2 \right)
 
+{\d \log|z| \over \d z}
+    = {1\over|z|} {\bar z + z e^{-2i\theta}\over 2|z|}
+    = {\bar z + z e^{-2i\theta}\over 2|z|^2}
+
 {\d \log z \over \d z}
     = {\d (\log|z| +i\arg z) \over \d z}
-    = {1\over|z|} {\bar z + z e^{-2i\theta}\over 2|z|}
+    = {\bar z + z e^{-2i\theta}\over 2|z|^2}
     +i {i\over2}\left( -\bar z + z e^{-2i\theta} \over | z|^2 \right)
-    = {\bar z \over | z|^2} = {\bar z\over z\bar z} = {1\over z}"/></p>
+    = {\bar z \over | z|^2} = {\bar z\over z\bar z} = {1\over z}
+
+{\d \overline{\log z} \over \d z}
+    = {\partial \overline{\log z} \over \partial z}
+    + {\partial \overline{\log z} \over \partial \bar z} e^{-2i\theta}
+    = \overline{\partial \log z \over \partial \bar z}
+    + \overline{\partial \log z \over \partial z} e^{-2i\theta}
+    = {1\over\bar z} e^{-2i\theta}
+
+{\d |\log z| \over \d z}
+    = {\overline{\log z}{\d \log z\over\d z}
+        + \log z{\d \overline{\log z}\over\d z}\over 2|\log z|}
+    = {{1\over z}\overline{\log z}
+        + {1\over\bar z}(\log z) e^{-2i\theta}\over 2|\log z|}
+    = {\bar z\overline{\log z}
+        + z (\log z) e^{-2i\theta}\over 2z\bar z|\log z|}"/></p>
 </div><p>Note that if <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/> is real, i.e. <img class="math" src="../_images/math/a08eecf231ddf73c14ee79f0d212dd0977004820.png" alt="z = \bar z"/>, we recover the real derivative
 results by setting <img class="math" src="../_images/math/422d8671db62ffe3adc0d7dff74aa73630061d8f.png" alt="\theta=0"/>, i.e. taking the derivative along the <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/>-axis:</p>
 <div class="math">
-<p><img src="../_images/math/dda05bd4019d590bb492fd5ed5b0f493e4b0e11a.png" alt="{\d x \over \d x} = 1
+<p><img src="../_images/math/0555117d65a5f97d94396b10098a3178cb6c3180.png" alt="{\d x \over \d x} = 1
 
 {\d \Re x \over \d x} = \half + \half = 1
 
@@ -553,9 +582,21 @@ results by setting <img class="math" src="../_images/math/422d8671db62ffe3adc0d7
 
 {\d |x| \over \d x} = {x + x \over 2|x|} = {x \over |x|}
 
+{\d |f(x)| \over \d x}
+    = {f{\d f\over\d x} + f{\d f\over\d z}\over 2|f|}
+    = {f{\d f\over\d x} \over |f|}
+
 {\d \arg x \over \d x} = {i\over2}\left( -{1\over x} + {1\over x}\right) = 0
 
-{\d \log x \over \d x} = {1\over x}"/></p>
+{\d \log|x| \over \d x}
+    = {x + x \over 2|x|^2}
+    = {x \over | x|^2}
+
+{\d \log x \over \d x} = {1\over x}
+
+{\d |\log x| \over \d x}
+    = {x\log x + x \log x\over 2x^2|\log x|}
+    = {\log x\over x|\log x|}"/></p>
 </div></div>
 </div>
 <div class="section" id="testing-identities-using-computer-code">

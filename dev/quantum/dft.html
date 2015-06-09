@@ -956,27 +956,41 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
 <p><img src="../_images/math/8a6b7d48acc763f0f7e1f6521b717026ae408d67.png" alt="F_e[n_e] = T_0[n_e] + U_{en}[n_e] + U_{ee}[n_e] + F_{xc}[n_e]\,,"/></p>
 </div><p>where the kinetic energy can be written in a few different equivalent ways as</p>
 <div class="math">
-<p><img src="../_images/math/a64310534fcd7228329245252aab9c7661504361.png" alt="T_0[n_e] =
+<p><img src="../_images/math/03dea7c867d1f803b4928dafe87b73c93c6e98c9.png" alt="T_0[n_e] =
 
 = {\sqrt 2\over\pi^2 \beta^{5\over2}}
-  \int\!\! \left(\!
+  \int \left(
             I_{1\over2}\left(\beta(\mu - V)\right)
 \beta(\mu-V) -
 {2\over 3} I_{3\over2}(\beta(\mu-V))
-\!\!\right) \!\d^3 x =
+\right) \d^3 x =
 
-= {1\over\beta}\!\! \int\!\! \left(\!
+= {1\over\beta} \int \left(
 n_e(\mathbf{x}) \beta(\mu-V) -
 {2\sqrt2\over 3\pi^2 \beta^{3\over2}} I_{3\over2}(\beta(\mu-V))
-\!\!\right) \!\d^3 x =
+\right) \d^3 x =
 
-= {1\over\beta}\!\! \int\!\! \left(\!
+= {1\over\beta} \int \left(
 n_e(\mathbf{x}) \Phi(n_e(\mathbf{x})) -
 {2\sqrt2\over 3\pi^2 \beta^{3\over2}} I_{3\over2}(\Phi(n_e(\mathbf{x})))
-\!\!\right) \!\d^3 x =
+\right) \d^3 x =
+
+= {1\over\beta} \int \left(
+n_e(\mathbf{x}) I_{1\over2}^{-1}(y) -
+{2n_e(\mathbf{x})\over 3 y} I_{3\over2}(I_{1\over2}^{-1}(y))
+\right) \d^3 x =
+
+= {1\over\beta} \int
+n_e(\mathbf{x}) \left( I_{1\over2}^{-1}(y) -
+{2\over 3 y} I_{3\over2}(I_{1\over2}^{-1}(y))\right)
+\d^3 x =
 
 ={1\over\beta} \int n_e(\mathbf{x}) f(y) \d^3 x\,;\quad\quad
 y={\pi^2\over\sqrt2}\beta^{3\over2} n_e\,,"/></p>
+</div><p>where <img class="math" src="../_images/math/55d2d6ae8dc42c453e185eb15218630a292c6e60.png" alt="f(y)"/> is a special function of one variable, composed of a
+<a class="reference internal" href="../math/other.html#fermi-integral"><em>Fermi-Dirac Integral</em></a> of order <img class="math" src="../_images/math/030f2beff594f2c236e279ffcda966c447353595.png" alt="3\over2"/> and its inverse of order <img class="math" src="../_images/math/7c898f70b8158d263cd2e14c124f0bf32542a453.png" alt="1\over2"/>:</p>
+<div class="math">
+<p><img src="../_images/math/b5aac3c12443a413a5e5144cb6f6627fb7de22b8.png" alt="f(y) = I_{1\over2}^{-1}(y) - {2\over 3 y} I_{3\over2}(I_{1\over2}^{-1}(y))"/></p>
 </div><p>the electron-nuclei term has the form</p>
 <div class="math">
 <p><img src="../_images/math/abf4ccb0c505b546ec7e5fe3a3c1acc33b7acf51.png" alt="U_{en}[n_e]

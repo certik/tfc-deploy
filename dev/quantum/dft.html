@@ -948,6 +948,43 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
 
 = {\sqrt 2 \over \pi^2 \beta^{5\over2}}
     \int I_{3\over2}\left(\beta(\mu - V)\right) d^3 x"/></p>
+</div><p>Another way to derive the quantities above is to start with a grand canonical
+potential:</p>
+<div class="math">
+<p><img src="../_images/math/aa92659eeb1f9dfb75bf3c900c13c70d79dbbfb3.png" alt="\Omega[\beta, \mu] = -{1\over \pi^2 \beta}
+    \int_0^\infty p^2 \log\left(1 +
+        e^{-\beta\left({p^2\over 2} - \mu\right)}\right) \d p =
+
+= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+    \int_0^\infty {u^{3\over2} \over
+        1 + e^{u-\beta\mu}} \d u =
+
+= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+    I_{3\over2}(\beta\mu)"/></p>
+</div><p>The density is:</p>
+<div class="math">
+<p><img src="../_images/math/2b4cd4414d25b41f9f6e715cdeca8919ffc4a32e.png" alt="n_e = - {\partial \Omega[\beta, \mu] \over \partial \mu}
+    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        {\partial \over \partial \mu} I_{3\over2}(\beta\mu)
+    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        \beta {3\over 2} I_{1\over2}(\beta\mu) =
+
+    = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}(\beta\mu)"/></p>
+</div><p>By defining the function <img class="math" src="../_images/math/43bdfce054c79e5535e24d0af7a9be223a4cf19d.png" alt="\Phi(n_e) = \beta\mu"/> we can express the grand
+canonical potential using <img class="math" src="../_images/math/7c7f00bc80e2109607bfec4d35ea6c31e0e23cbe.png" alt="n_e"/> as follows:</p>
+<div class="math">
+<p><img src="../_images/math/4014b458489359f7d1b1e9f2514a13eae39598ba.png" alt="\Omega[\beta, n_e]
+    = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        I_{3\over2}(\Phi(n_e))"/></p>
+</div><p>Now we can calculate the free energy (per unit volume):</p>
+<div class="math">
+<p><img src="../_images/math/13074d0f1b5eef38bffaf224a52e8730ff6f186b.png" alt="F_e[\beta, n_e] = \Omega[\beta, n_e] + \mu n_e
+    = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}} I_{3\over2}(\Phi(n_e))
+        + {1\over \beta} n_e \Phi(n_e)"/></p>
+</div><p>and pressure:</p>
+<div class="math">
+<p><img src="../_images/math/4fc7812278ec5f953a39fbd3717e924400161927.png" alt="P = -\Omega[\beta, n_e] = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        I_{3\over2}(\Phi(n_e))"/></p>
 </div></div>
 <div class="section" id="orbital-free-density-functional-theory">
 <h2>Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this headline">¶</a></h2>

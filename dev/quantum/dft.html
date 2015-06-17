@@ -876,7 +876,74 @@ making the Jacobian <img class="math" src="../_images/math/f54abaaa7e2a86fbbd85f
 </div>
 <div class="section" id="thomas-fermi-dirac-theory">
 <h2>Thomas-Fermi-Dirac Theory<a class="headerlink" href="#thomas-fermi-dirac-theory" title="Permalink to this headline">¶</a></h2>
-<p>The number of states in a box of side <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is given by:</p>
+<p>There are two ways to derive equations for Thomas-Fermi-Dirac theory. One way
+is to start from grand potential and derive all equations from it. The other
+way is to start with low level equations and build our way up. Will start with
+the former.</p>
+<div class="section" id="top-down-approach">
+<h3>Top Down Approach<a class="headerlink" href="#top-down-approach" title="Permalink to this headline">¶</a></h3>
+<p>We start with a grand potential:</p>
+<div class="math">
+<p><img src="../_images/math/5ef0e273447f1523314270a5b35903db4a253254.png" alt="\Omega[\beta, \mu] = -{1\over \pi^2 \beta}
+    \int \d^3 x \int_0^\infty p^2 \log\left(1 +
+        e^{-\beta\left({p^2\over 2} + V({\bf x}) - \mu\right)}\right) \d p =
+
+= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+    \int \d^3 x \int_0^\infty {u^{3\over2} \over
+        1 + e^{u-\beta\left(\mu-V({\bf x})\right)}} \d u =
+
+= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+    \int I_{3\over2}\left(\beta\left(\mu-V({\bf x})\right)\right) \,\d^3 x"/></p>
+</div><p>The potential <img class="math" src="../_images/math/c97e664d2dddaf540d130f5030a27c2049ad9135.png" alt="V({\bf x})"/> is the total potential that the electrons
+experience (it contains Hartree, nuclear and XC terms)
+The density is a functional derivative with respect to <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>:</p>
+<div class="math">
+<p><img src="../_images/math/88aa48f2469ca5147e3b700d4f715a8c4b92ddd4.png" alt="n_e({\bf x}) = - {\delta \Omega[\beta, \mu] \over \delta \mu}
+    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        {\partial \over \partial \mu}
+            I_{3\over2}\left(\beta\left(\mu-V({\bf x})\right)\right)
+    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        \beta {3\over 2} I_{1\over2}
+            \left(\beta\left(\mu-V({\bf x})\right)\right) =
+
+    = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
+            \left(\beta\left(\mu-V({\bf x})\right)\right)"/></p>
+</div><p>By defining the function <img class="math" src="../_images/math/72d1afa5297b7c508bd0197028e8a1a0ecbdca6a.png" alt="\Phi(n_e({\bf x}))"/>:</p>
+<div class="math">
+<p><img src="../_images/math/5073f63db5cb209399068bfa7440a1dcb1801a70.png" alt="\Phi(n_e({\bf x})) = \beta\left(\mu-V({\bf x})\right)
+    = I_{1\over2}^{-1}\left(
+            {\pi^2 \beta^{3\over2} \over \sqrt 2} n_e({\bf x})
+        \right)"/></p>
+</div><p>we can express the grand potential using <img class="math" src="../_images/math/7c7f00bc80e2109607bfec4d35ea6c31e0e23cbe.png" alt="n_e"/> as follows:</p>
+<div class="math">
+<p><img src="../_images/math/d1795d7abae020fe962fbf00fde4da1f3c8384b6.png" alt="\Omega[\beta, n_e]
+    = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        \int I_{3\over2}(\Phi(n_e({\bf x}))) \, \d^3 x"/></p>
+</div><p>Now we can calculate the free energy:</p>
+<div class="math">
+<p><img src="../_images/math/21b6c5ade855e84a77afe1e7d5c536ec79c975b0.png" alt="F_e[\beta, n_e] = \Omega[\beta, n_e] + \mu N
+    = \Omega[\beta, n_e] + \mu \int n_e({\bf x}) \,\d^3 x
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+        + \mu n_e({\bf x}) \right)\d^3 x =
+
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+        + {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))
+            + n_e({\bf x}) V({\bf x}) \right)\d^3 x"/></p>
+</div><p>where we used the fact that <img class="math" src="../_images/math/53f574f57e125d48ad58c75f5f23a607b670ef6e.png" alt="\mu = {1\over \beta} \Phi(n_e({\bf x})) + V({\bf
+x})"/>, i.e. the left hand side <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> is a constant, thus the sum of the terms on
+the right hand side is also constant (even though the individual terms are
+not).</p>
+<p>We can calculate pressure:</p>
+<div class="math">
+<p><img src="../_images/math/114b1cadfe70d30ed0590a0e700ec09cc3b2f06e.png" alt="P = -\Omega[\beta, n_e] = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+        \int I_{3\over2}(\Phi(n_e({\bf x}))) \,\d^3 x"/></p>
+</div></div>
+<div class="section" id="bottom-up-approach">
+<h3>Bottom Up Approach<a class="headerlink" href="#bottom-up-approach" title="Permalink to this headline">¶</a></h3>
+<p>The other way to derive these equations is to use the following considerations.
+The number of states in a box of side <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is given by:</p>
 <div class="math">
 <p><img src="../_images/math/cd3d2705469a9324b59818cc933df75074f4a800.png" alt="N = \int {\d^3 p \over h^3} 2 L^3
   = \int {\d^3 p \over (2\pi\hbar)^3} 2 L^3
@@ -886,50 +953,52 @@ making the Jacobian <img class="math" src="../_images/math/f54abaaa7e2a86fbbd85f
 </div><p>We use atomic units, so <img class="math" src="../_images/math/ed569ff537c0c175847d3c6052d99f4194bba470.png" alt="\hbar=1"/>.
 The electronic particle density is:</p>
 <div class="math" id="equation-tf_low">
-<p><span class="eqno">(17)</span><img src="../_images/math/fd205e35c51127ce79ce87023574c3029d7cc816.png" alt="n_e = {N \over L^3}
+<p><span class="eqno">(17)</span><img src="../_images/math/6c8f92c52a09ed7df87ba13122510f9415b0c7c4.png" alt="n_e({\bf x}) = {N \over L^3}
   = {1\over\pi^2} \int_0^{p_f} p^2 \d p
   = {p_f^3 \over 3\pi^2}
-  = {\left[2(E_f - V)\right]^{3\over2} \over 3\pi^2}"/></p>
-</div><p>where we used the relation for Fermi energy <img class="math" src="../_images/math/5df8bc3283c4d161273a98ec1d51b83b84c7a239.png" alt="E_f = {p_f^2\over 2} + V"/>.
+  = {\left[2(E_f - V({\bf x}))\right]^{3\over2} \over 3\pi^2}"/></p>
+</div><p>where we used the relation for Fermi energy <img class="math" src="../_images/math/ed629a4a44e0ae0baa6690adac78d05413cc2821.png" alt="E_f = {p_f^2\over 2} + V({\bf
+x})"/>. The potential <img class="math" src="../_images/math/c97e664d2dddaf540d130f5030a27c2049ad9135.png" alt="V({\bf x})"/> is the total potential that the electrons
+experience (it contains Hartree, nuclear and XC terms).
 At finite temperature <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/> we need to use the Fermi distribution and this
 generalizes to:</p>
 <div class="math">
-<p><img src="../_images/math/df68ec1aabf0dcbd050614428befca1aa3e55ad2.png" alt="n_e
+<p><img src="../_images/math/b3cc9562b49d28a8e6ec6127d919ab3e5acf82f3.png" alt="n_e({\bf x})
   = {1\over\pi^2} \int_0^{\infty} {p^2 \d p \over
         e^{\beta(E-\mu)} + 1}"/></p>
-</div><p>Now we use the relation <img class="math" src="../_images/math/9ee8d196f29e6fa673f4be8d561bd5237e579d73.png" alt="E = {p^2\over 2} + V"/> and substitutions
+</div><p>Now we use the relation <img class="math" src="../_images/math/06f698557aa5157d0506652a344d1088b0ff63bf.png" alt="E = {p^2\over 2} + V({\bf x})"/> and substitutions
 <img class="math" src="../_images/math/28867e06913dfc3965651ede001a351c8947b2a3.png" alt="\epsilon={p^2\over 2}"/>, <img class="math" src="../_images/math/262166c4f716c6441dc5f4508924022860478c6b.png" alt="y = \beta \epsilon"/> to rewrite this using the
 <a class="reference internal" href="../math/other.html#fermi-integral"><em>Fermi-Dirac Integral</em></a>:</p>
 <div class="math">
-<p><img src="../_images/math/23a0555bbc9645d7b0ff3b2e8adf706f1a135e08.png" alt="n_e
+<p><img src="../_images/math/eced3f8bcfb3777ec3cfc9dfaf453621851ab295.png" alt="n_e({\bf x})
   = {1\over\pi^2} \int_0^{\infty} {p^2 \d p \over
         e^{\beta(E-\mu)} + 1}
   = {1\over\pi^2} \int_0^{\infty} {p^2 \d p \over
-        e^{\beta({p^2\over 2} + V-\mu)} + 1}
+        e^{\beta({p^2\over 2} + V({\bf x})-\mu)} + 1}
   = {\sqrt 2\over\pi^2} \int_0^{\infty} {\sqrt\epsilon \d \epsilon \over
-        e^{\beta(\epsilon + V-\mu)} + 1}
+        e^{\beta(\epsilon + V({\bf x})-\mu)} + 1}
   =
 
   = {\sqrt 2\over\pi^2 \beta^{3\over2}} \int_0^{\infty} {\sqrt y \d y \over
-        e^{y - \beta(\mu - V)} + 1}
+        e^{y - \beta(\mu - V({\bf x}))} + 1}
   = {\sqrt 2\over\pi^2 \beta^{3\over2}}
-        I_{1\over2}\left(\beta(\mu - V)\right)"/></p>
+        I_{1\over2}\left(\beta(\mu - V({\bf x}))\right)"/></p>
 </div><p>At low temperature (<img class="math" src="../_images/math/45ee3b5608f160813948b8f46e4b136d2b870d29.png" alt="T\to0"/>) we have
 <img class="math" src="../_images/math/a46f79fb206a0f1c0fdccde6d69c05ea25653f3a.png" alt="\beta \to \infty"/>, <img class="math" src="../_images/math/63671688c6e98210b24e72360a1f758438d6bce8.png" alt="I_{1\over2}(x) \to {2\over3} x^{3\over 2}"/> and we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/1e17c181a41e06742f7f9d857aac1f2134a543f0.png" alt="n_e \to
+<p><img src="../_images/math/832179ebedff05a2f38e8881b2576a0be2235016.png" alt="n_e({\bf x}) \to
   {2\sqrt 2\over 3\pi^2 \beta^{3\over2}}
-        \left(\beta(\mu - V)\right)^{3\over2}
-  ={\left[2(\mu - V)\right]^{3\over2} \over 3\pi^2}"/></p>
+        \left(\beta(\mu - V({\bf x}))\right)^{3\over2}
+  ={\left[2(\mu - V({\bf x}))\right]^{3\over2} \over 3\pi^2}"/></p>
 </div><p>Identical with <a href="#equation-tf_low">(17)</a>. We can see that the chemical potential <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>
 becomes the Fermi energy <img class="math" src="../_images/math/d8a32d7a83907b7b58a17afe106d2d8dd6a0afbf.png" alt="E_f"/> in the limit <img class="math" src="../_images/math/45ee3b5608f160813948b8f46e4b136d2b870d29.png" alt="T\to0"/>. In the finite-temperature
 case, <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> is determined from the normalization condition for the number of
 electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>:</p>
 <div class="math">
-<p><img src="../_images/math/761b1c694a5465e463013e06a0e55fde2bec4d24.png" alt="N = \int n_e\, d^3 x"/></p>
+<p><img src="../_images/math/f39fc5072981cf3b9ae3acd11c6d7257cc3c2201.png" alt="N = \int n_e({\bf x})\, d^3 x"/></p>
 </div><p>The kinetic energy is</p>
 <div class="math">
-<p><img src="../_images/math/a0076b4d09959c2f7e023eb37ee381ae8f5ac999.png" alt="E_{kin} = \int d^3 x \int 2 {\d^3p\over (2\pi)^3} {p^2\over 2}
+<p><img src="../_images/math/34309586b74a942306fcc6e70ad39f4e06adebc4.png" alt="E_{kin} = \int d^3 x \int 2 {\d^3p\over (2\pi)^3} {p^2\over 2}
     {1\over e^{\beta(E-\mu)}+1}
 =
 
@@ -937,55 +1006,19 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
     {1\over e^{\beta(E-\mu)}+1} =
 
 = \int d^3 x \int_0^\infty 2 {4\pi \sqrt 2\sqrt \epsilon \d \epsilon \over
-    (2\pi)^3} \epsilon {1\over e^{\beta(\epsilon + V-\mu)}+1} =
+    (2\pi)^3} \epsilon {1\over e^{\beta(\epsilon + V({\bf x})-\mu)}+1} =
 
 = {\sqrt 2 \over \pi^2} \int d^3 x \int_0^\infty
     {\epsilon^{3\over2} \d \epsilon \over
-    e^{\beta(\epsilon + V-\mu)}+1} =
+    e^{\beta(\epsilon + V({\bf x})-\mu)}+1} =
 
 = {\sqrt 2 \over \pi^2 \beta^{5\over2}} \int d^3 x \int_0^\infty
-    {y^{3\over2} \d y \over e^{y - \beta(\mu -V)}+1} =
+    {y^{3\over2} \d y \over e^{y - \beta(\mu -V({\bf x}))}+1} =
 
 = {\sqrt 2 \over \pi^2 \beta^{5\over2}}
-    \int I_{3\over2}\left(\beta(\mu - V)\right) d^3 x"/></p>
-</div><p>Another way to derive the quantities above is to start with a grand
-potential:</p>
-<div class="math">
-<p><img src="../_images/math/aa92659eeb1f9dfb75bf3c900c13c70d79dbbfb3.png" alt="\Omega[\beta, \mu] = -{1\over \pi^2 \beta}
-    \int_0^\infty p^2 \log\left(1 +
-        e^{-\beta\left({p^2\over 2} - \mu\right)}\right) \d p =
-
-= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-    \int_0^\infty {u^{3\over2} \over
-        1 + e^{u-\beta\mu}} \d u =
-
-= -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-    I_{3\over2}(\beta\mu)"/></p>
-</div><p>The density is:</p>
-<div class="math">
-<p><img src="../_images/math/2b4cd4414d25b41f9f6e715cdeca8919ffc4a32e.png" alt="n_e = - {\partial \Omega[\beta, \mu] \over \partial \mu}
-    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        {\partial \over \partial \mu} I_{3\over2}(\beta\mu)
-    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        \beta {3\over 2} I_{1\over2}(\beta\mu) =
-
-    = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}(\beta\mu)"/></p>
-</div><p>By defining the function <img class="math" src="../_images/math/43bdfce054c79e5535e24d0af7a9be223a4cf19d.png" alt="\Phi(n_e) = \beta\mu"/> we can express the grand
-potential using <img class="math" src="../_images/math/7c7f00bc80e2109607bfec4d35ea6c31e0e23cbe.png" alt="n_e"/> as follows:</p>
-<div class="math">
-<p><img src="../_images/math/4014b458489359f7d1b1e9f2514a13eae39598ba.png" alt="\Omega[\beta, n_e]
-    = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        I_{3\over2}(\Phi(n_e))"/></p>
-</div><p>Now we can calculate the free energy (per unit volume):</p>
-<div class="math">
-<p><img src="../_images/math/13074d0f1b5eef38bffaf224a52e8730ff6f186b.png" alt="F_e[\beta, n_e] = \Omega[\beta, n_e] + \mu n_e
-    = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}} I_{3\over2}(\Phi(n_e))
-        + {1\over \beta} n_e \Phi(n_e)"/></p>
-</div><p>and pressure:</p>
-<div class="math">
-<p><img src="../_images/math/4fc7812278ec5f953a39fbd3717e924400161927.png" alt="P = -\Omega[\beta, n_e] = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        I_{3\over2}(\Phi(n_e))"/></p>
+    \int I_{3\over2}\left(\beta(\mu - V({\bf x}))\right) d^3 x"/></p>
 </div></div>
+</div>
 <div class="section" id="orbital-free-density-functional-theory">
 <h2>Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this headline">¶</a></h2>
 <p>The orbital-free electronic free energy is given by:</p>
@@ -993,18 +1026,18 @@ potential using <img class="math" src="../_images/math/7c7f00bc80e2109607bfec4d3
 <p><img src="../_images/math/8a6b7d48acc763f0f7e1f6521b717026ae408d67.png" alt="F_e[n_e] = T_0[n_e] + U_{en}[n_e] + U_{ee}[n_e] + F_{xc}[n_e]\,,"/></p>
 </div><p>where the kinetic energy can be written in a few different equivalent ways as</p>
 <div class="math">
-<p><img src="../_images/math/03dea7c867d1f803b4928dafe87b73c93c6e98c9.png" alt="T_0[n_e] =
+<p><img src="../_images/math/8955521dde38fe660d46ff9cc487fe85a1792db4.png" alt="T_0[n_e] =
 
 = {\sqrt 2\over\pi^2 \beta^{5\over2}}
   \int \left(
-            I_{1\over2}\left(\beta(\mu - V)\right)
-\beta(\mu-V) -
-{2\over 3} I_{3\over2}(\beta(\mu-V))
+            I_{1\over2}\left(\beta(\mu - V({\bf x}))\right)
+\beta(\mu-V({\bf x})) -
+{2\over 3} I_{3\over2}(\beta(\mu-V({\bf x})))
 \right) \d^3 x =
 
 = {1\over\beta} \int \left(
-n_e(\mathbf{x}) \beta(\mu-V) -
-{2\sqrt2\over 3\pi^2 \beta^{3\over2}} I_{3\over2}(\beta(\mu-V))
+n_e(\mathbf{x}) \beta(\mu-V({\bf x})) -
+{2\sqrt2\over 3\pi^2 \beta^{3\over2}} I_{3\over2}(\beta(\mu-V({\bf x})))
 \right) \d^3 x =
 
 = {1\over\beta} \int \left(
@@ -1249,7 +1282,11 @@ a function of <img class="math" src="../_images/math/52e8ed7a3ba22130ad3984eb2cd
 <li><a class="reference internal" href="#jacobian">Jacobian</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#thomas-fermi-dirac-theory">Thomas-Fermi-Dirac Theory</a></li>
+<li><a class="reference internal" href="#thomas-fermi-dirac-theory">Thomas-Fermi-Dirac Theory</a><ul>
+<li><a class="reference internal" href="#top-down-approach">Top Down Approach</a></li>
+<li><a class="reference internal" href="#bottom-up-approach">Bottom Up Approach</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#orbital-free-density-functional-theory">Orbital Free Density Functional Theory</a><ul>
 <li><a class="reference internal" href="#free-energy-minimization">Free Energy Minimization</a></li>
 </ul>

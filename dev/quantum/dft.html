@@ -894,9 +894,11 @@ the former.</p>
 
 = -{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     \int I_{3\over2}\left(\beta\left(\mu-V({\bf x})\right)\right) \,\d^3 x"/></p>
-</div><p>The potential <img class="math" src="../_images/math/c97e664d2dddaf540d130f5030a27c2049ad9135.png" alt="V({\bf x})"/> is the total potential that the electrons
-experience (it contains Hartree, nuclear and XC terms)
-The density is a functional derivative with respect to <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>:</p>
+</div><p>The potential
+<img class="math" src="../_images/math/049a223eb58a347dff2936cf49547bad0ad65d2a.png" alt="V({\bf x}) = V_{en}({\bf x}) + V_{ee}({\bf x}) + V_{xc}({\bf x})"/>
+is the total potential that the electrons experience (it contains nuclear,
+Hartree, and XC terms) The density is a functional derivative with respect to
+<img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>:</p>
 <div class="math">
 <p><img src="../_images/math/88aa48f2469ca5147e3b700d4f715a8c4b92ddd4.png" alt="n_e({\bf x}) = - {\delta \Omega[\beta, \mu] \over \delta \mu}
     = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
@@ -1017,6 +1019,63 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
 
 = {\sqrt 2 \over \pi^2 \beta^{5\over2}}
     \int I_{3\over2}\left(\beta(\mu - V({\bf x}))\right) d^3 x"/></p>
+</div><p>From the last formula it can be shown that the kinetic energy is equal to</p>
+<div class="math">
+<p><img src="../_images/math/8252d10d79a6ce00d6b1d2fe841b56fd69bc7ceb.png" alt="E_{kin} = {3\over 2} P V - {1\over 2} E_{en} - {1\over 2} E_{ee}"/></p>
+</div><p>The potential energy is equal to:</p>
+<div class="math">
+<p><img src="../_images/math/0a68143e43bb8c502c43380b9517eab866afd56f.png" alt="E_{pot} = E_{en} + E_{ee}"/></p>
+</div><p>The internal energy <img class="math" src="../_images/math/fa2fa899f0afb05d6837885523503a2d4df434f9.png" alt="E"/> is equal to:</p>
+<div class="math">
+<p><img src="../_images/math/3c417656cc3330de392b398504f16af53a38f555.png" alt="E = E_{kin} + E_{pot}
+    = E_{kin} + E_{en} + E_{ee} =
+
+    = {3\over 2} P V + {1\over 2} E_{en} + {1\over 2} E_{ee}"/></p>
+</div><p>The entropy <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> is equal to:</p>
+<div class="math">
+<p><img src="../_images/math/fcee14adaef2f8bf0a60148e3adfeee1788e526e.png" alt="TS = {5\over3}E_{kin} + E_{en} + 2 E_{ee} -\mu N =
+
+   = {5\over2}P V + {1\over6}E_{en} + {7\over6}E_{ee} -\mu N"/></p>
+</div><p>The free energy is equal to:</p>
+<div class="math">
+<p><img src="../_images/math/a37f6ee56bbd554c7189de1cdfb4000de0a18a1d.png" alt="F = E - TS = -{2\over3}E_{kin} - E_{ee} + \mu N =
+
+    = -PV + {1\over3}E_{en} - {2\over3}E_{ee} +\mu N"/></p>
+</div><p>We can now express the free energy functional <img class="math" src="../_images/math/3952b40b9b9ddd1fbb084eb6a7d930c80e7e83f0.png" alt="F_e[\beta, n_e]"/> as a function
+of the density:</p>
+<div class="math">
+<p><img src="../_images/math/ed806b278b638a33c4f6155e0d3ae5141dcee8ec.png" alt="F_e[\beta, n_e] = -{2\over3}E_{kin} - E_{ee} + \mu N =
+
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+          -\half n_e({\bf x}) V_{ee}({\bf x})
+        + \mu n_e({\bf x}) \right)\d^3 x =
+
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+          -\half n_e({\bf x}) V_{ee}({\bf x})
+        + {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))
+            + n_e({\bf x}) V({\bf x}) \right)\d^3 x =
+
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+          -\half n_e({\bf x}) V_{ee}({\bf x})
+        + {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))
+            + n_e({\bf x}) (V_{en}({\bf x}) + V_{ee}({\bf x})
+                + V_{xc}({\bf x}))
+              \right)\d^3 x =
+
+    = \int \left(-{2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+          I_{3\over2}(\Phi(n_e({\bf x})))
+        + {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))
+            + n_e({\bf x}) (V_{en}({\bf x}) +\half V_{ee}({\bf x})
+                + V_{xc}({\bf x}))
+              \right)\d^3 x =
+
+    = \left( -{2\over3}E_{kin}
+        + \int {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))\, \d^3 x
+          \right)
+        + E_{en} + E_{ee} + E_{xc}"/></p>
 </div></div>
 </div>
 <div class="section" id="orbital-free-density-functional-theory">

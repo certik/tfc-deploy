@@ -93,24 +93,29 @@ def test_zero3(lhs, rhs):
                     print x, y, z, lhs(x, y, z), rhs(x, y, z)
                     assert False
 
+def diff(f, z0, theta, eps=1e-8):
+    h = eps*exp(I*theta)
+    return (f(z0+h)-f(z0)) / h
+
+def diff2(dfdz, dfdconjz, z0, theta):
+    return dfdz(z0) + dfdconjz(z0)*exp(-2*I*theta)
+
+def test_zero(f, dfdz, dfdconjz, z0, theta, eps=1e-8):
+    assert feq(diff(f, z0, theta, eps), diff2(dfdz, dfdconjz, z0, theta),
+            max_relative_error=eps*1e2, max_absolute_error=eps*1e2)
+
 from math import floor, pi
 from cmath import sqrt, exp, log
 I = 1j
 
-# Test the various identities
-test_zero1(lambda x: sqrt(x**2), lambda x: (-1)**floor((pi-2*arg(x))/(2*pi))*x)
-test_zero1(lambda x: sqrt(exp(x)), lambda x: (-1)**floor((pi-x.imag)/(2*pi))*exp(x/2))
-test_zero1(lambda x: log(exp(x)), lambda x: x+2*pi*I*floor((pi-x.imag)/(2*pi)))
-test_zero1(lambda x: log(abs(exp(x))), lambda x: x.real)
-test_zero1(lambda z: z, lambda z: abs(z)*exp(I*arg(z)))
-test_zero1(lambda z: arg(exp(z)), lambda z: z.imag + 2*pi*floor((pi-z.imag)/(2*pi)))
-test_zero1(lambda z: sqrt(z).conjugate(), lambda z: (-1)**floor((arg(z)+pi)/(2*pi))*sqrt(z.conjugate()))
-test_zero1(lambda z: arg(z.conjugate()), lambda z: -arg(z) + 2*pi*floor((arg(z)+pi)/(2*pi)))
+angles = [0, pi/7, pi/4, pi/2, 3*pi/4, pi]
 
-test_zero2(lambda a,b: exp(a)**b, lambda a,b: exp(a*b)*exp(2*pi*I*b*floor((pi-a.imag)/(2*pi))))
-test_zero2(lambda x,a: log(x**a), lambda x,a: a*log(x)+2*pi*I*floor((pi-(a*log(x)).imag)/(2*pi)))
-test_zero2(lambda a,b: log(a*b), lambda a,b: log(a)+log(b)+2*pi*I*floor((pi-arg(a)-arg(b))/(2*pi)))
-test_zero2(lambda a,b: arg(a*b), lambda a,b: arg(a)+arg(b)+2*pi*floor((pi-arg(a)-arg(b))/(2*pi)))
-
-test_zero3(lambda x,a,b: (x**a)**b, lambda x,a,b: x**(a*b)*exp(2*pi*I*b*floor((pi-(a*log(x)).imag)/(2*pi))))
-test_zero3(lambda x,y,a: (x*y)**a, lambda x,y,a: (x**a)*(y**a)*exp(2*pi*I*a*floor((pi-arg(x)-arg(y))/(2*pi))))
+for x in values:
+    for theta in angles:
+        test_zero(lambda x: abs(x), lambda x: x.conjugate()/(2*abs(x)),
+                lambda x: x/(2*abs(x)), x, theta)
+        test_zero(lambda x: log(x), lambda x: 1/x, lambda x: 0, x, theta)
+        test_zero(lambda x: log(exp(x-x.conjugate())), lambda x: 1,
+                lambda x: -1, x, theta)
+        test_zero(lambda x: sqrt(x**2), lambda x: sqrt(x**2)/x, lambda x: 0, x, theta)
+        test_zero(lambda x: sqrt(x**2), lambda x: x/sqrt(x**2), lambda x: 0, x, theta)

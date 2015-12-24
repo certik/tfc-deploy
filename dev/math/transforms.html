@@ -150,6 +150,47 @@ flip the sign for the inverse transform.</p>
 
     = e^{i\bomega\cdot \mathbf{b}} F[f(\mathbf{x})]"/></p>
 </div></div>
+<div class="section" id="derivative">
+<h2>Derivative<a class="headerlink" href="#derivative" title="Permalink to this headline">¶</a></h2>
+<p>The Fourier transform of a derivative, in 3D:</p>
+<div class="math">
+<p><img src="../_images/math/0cb5e9c85a58490fba5c2e903e14677a5598b8dc.png" alt="F[\partial_i f(\mathbf{x})]
+    = \int_{-\infty}^{\infty} (\partial_i f(\mathbf{x})) e^{-i\bomega \cdot
+        \mathbf{x}}\,\d^3 x =
+
+    = \left[f(\mathbf{x}) e^{-i\bomega \cdot
+            \mathbf{x}}\right]_{-\infty}^{\infty}
+      -\int_{-\infty}^{\infty} f(\mathbf{x}) \partial_i e^{-i\bomega \cdot
+        \mathbf{x}}\,\d^3 x =
+
+    = -\int_{-\infty}^{\infty} f(\mathbf{x}) \partial_i e^{-i\omega_j
+        x^j}\,\d^3 x =
+
+    = -(-i\omega_i)\int_{-\infty}^{\infty} f(\mathbf{x})
+        e^{-i\bomega \cdot \mathbf{x}}\,\d^3 x =
+
+    = i\omega_i F[f(\mathbf{x})]\,."/></p>
+</div><p>An alternative derivation is to start from:</p>
+<div class="math">
+<p><img src="../_images/math/8da845b564e841c586b345cff39c1f7dbb9917f9.png" alt="f(\mathbf{x}) = F^{-1}[\tilde f(\bomega)]
+    = {1\over(2\pi)^3}\int_{-\infty}^{\infty}
+    \tilde f(\bomega) e^{+i\bomega \cdot \mathbf{x}}\,\d^3 \omega"/></p>
+</div><p>and differentiate both sides:</p>
+<div class="math">
+<p><img src="../_images/math/5bb3944ec8cfbde2761e1dbb8d51fbb1db2694d7.png" alt="\partial_i f(\mathbf{x})
+    = {1\over(2\pi)^3}\int_{-\infty}^{\infty}
+    \tilde f(\bomega) \partial_i e^{+i\bomega \cdot \mathbf{x}}\,\d^3 \omega
+
+\partial_i f(\mathbf{x})
+    = {1\over(2\pi)^3}\int_{-\infty}^{\infty}
+    i\omega_i \tilde f(\bomega) e^{+i\bomega \cdot \mathbf{x}}\,\d^3 \omega
+    \,,"/></p>
+</div><p>from which:</p>
+<div class="math">
+<p><img src="../_images/math/43f7c7c8db8ec06838b8802c42b0b28d221efb98.png" alt="F[\partial_i f(\mathbf{x})]
+    = i\omega_i \tilde f(\bomega)
+    = i\omega_i F[f(\mathbf{x})]\,."/></p>
+</div></div>
 <div class="section" id="radial-fourier-transform">
 <h2>Radial Fourier Transform<a class="headerlink" href="#radial-fourier-transform" title="Permalink to this headline">¶</a></h2>
 <p>As a special case when the function <img class="math" src="../_images/math/c9392fa3753b06b346e51952e909adf296a14453.png" alt="f(\mathbf{x})=f(r)"/> is spherically symmetric,
@@ -311,7 +352,7 @@ inverse transform in <a href="#equation-fourier1">(1)</a> by <img class="math" s
 transformation works, one can directly substitute the direct formula
 <a href="#equation-fourier2b">(4)</a> into <a href="#equation-fourier2b_inv">(5)</a> as follows:</p>
 <div class="math">
-<p><img src="../_images/math/9bb4f6f1007a99bdad9b92ae9628963a2438096d.png" alt="F^{-1}[\tilde f(\mathbf{G})] = \sum_{\mathbf{G}}
+<p><img src="../_images/math/680a061bf5dadb822706f4f22f931e3a3925e337.png" alt="F^{-1}[\tilde f(\mathbf{G})] = \sum_{\mathbf{G}}
     \tilde f(\mathbf{G}) e^{+i\mathbf{G} \cdot \mathbf{x}} =
 
 = \sum_{\mathbf{G}}
@@ -333,63 +374,145 @@ transformation works, one can directly substitute the direct formula
     (2\pi)^3 {\Omega_\mathrm{cell}\over (2\pi)^3}
     \delta(\mathbf{x}-\mathbf{x'}) \,d^3 x' =
 
-=f(\mathbf{x})"/></p>
+=f(\mathbf{x})\,,"/></p>
+</div><p>where we used the fact that:</p>
+<div class="math">
+<p><img src="../_images/math/f95e140c68ba3b5a9cd37416661c0965e5de67bb.png" alt="\sum_{n=-\infty}^\infty e^{inx} = 2\pi\delta(x)\,."/></p>
 </div><p>Thus we have shown that <img class="math" src="../_images/math/096ef7faa82ab2fce9f269e4e625fd7f8dced3ce.png" alt="F^{-1}[\tilde f(\mathbf{G})] = f(\mathbf{x})"/>.</p>
 <div class="section" id="one-dimension-fourier-series">
 <h2>One Dimension (Fourier Series)<a class="headerlink" href="#one-dimension-fourier-series" title="Permalink to this headline">¶</a></h2>
 <p>In one dimension with a periodic function <img class="math" src="../_images/math/c07f2792470f5cc757767d0ef7585533665f3276.png" alt="f(x+L)=f(x)"/>,
 the volume of a unit cell is <img class="math" src="../_images/math/5883634311503d62c53079edc560e3ef81a14910.png" alt="\Omega_\mathrm{cell}=L"/>
 and the reciprocal space vectors <img class="math" src="../_images/math/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" alt="G"/> are defined using
-<img class="math" src="../_images/math/a5296d39bc0b0abfa0a875f4b2a865ddf9ce7a4b.png" alt="e^{iGL}=1"/> from which <img class="math" src="../_images/math/8d8e4a9ae3a2c572ba06c0760c6f50b9ea49eac5.png" alt="G_n = {2\pi\over L} n"/>.
+<img class="math" src="../_images/math/a5296d39bc0b0abfa0a875f4b2a865ddf9ce7a4b.png" alt="e^{iGL}=1"/> from which <img class="math" src="../_images/math/91caf48ac43dfb3a5e11db79a931705309181128.png" alt="G_k = {2\pi\over L} k"/>.
 The equation <a href="#equation-fourier2b">(4)</a> then becomes:</p>
 <div class="math" id="equation-fourier2b_1d">
-<p><span class="eqno">(6)</span><img src="../_images/math/bd0fa329d463781518f493ff76378f4980734bb8.png" alt="F[f(x)] \equiv \tilde f(G_n) \equiv c_n
+<p><span class="eqno">(6)</span><img src="../_images/math/e82fdf5867cecce4b739b2ec87d630cdddccf742.png" alt="F[f(x)] \equiv \tilde f(G_k) \equiv c_k
     = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
-    e^{-i G_n x}\,\d x
+    e^{-i G_k x}\,\d x
     = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
-    e^{-i(2\pi n x/L)}\,\d x"/></p>
-</div><p>This is exactly the definition of a Fourier series (<img class="math" src="../_images/math/73dad573cdaca95ffccd89d8931d5c1f85c4186a.png" alt="c_n"/> are the Fourier
+    e^{-i(2\pi k x/L)}\,\d x"/></p>
+</div><p>This is exactly the definition of a Fourier series (<img class="math" src="../_images/math/3bd87559f4e4c9af40246a0fdbafe6feab507414.png" alt="c_k"/> are the Fourier
 coefficients). The inverse transform follows from <a href="#equation-fourier2b_inv">(5)</a>:</p>
-<div class="math">
-<p><img src="../_images/math/b9742e31c2be895de052f377891aabe01a2d917f.png" alt="f(x) = \sum_{n=-\infty}^\infty \tilde f(G_n) e^{i G_n x}
-    = \sum_{n=-\infty}^\infty c_n e^{i(2\pi nx/L)}"/></p>
+<div class="math" id="equation-fourier2b_1d_inv">
+<p><span class="eqno">(7)</span><img src="../_images/math/00466c51c884eff8e20249205ec08488313281f1.png" alt="f(x) = \sum_{k=-\infty}^\infty \tilde f(G_k) e^{i G_k x}
+    = \sum_{k=-\infty}^\infty c_k e^{i(2\pi kx/L)}"/></p>
 </div></div>
 </div>
 <div class="section" id="discrete-fourier-transform">
 <h1>Discrete Fourier Transform<a class="headerlink" href="#discrete-fourier-transform" title="Permalink to this headline">¶</a></h1>
-<p>Starting from</p>
+<p>In the discrete case, we only have a finite
+number <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> of reciprocal points:</p>
 <div class="math">
-<p><img src="../_images/math/02fb9f7f85ce4cd08f84a50dd38eb1f40e04c3c9.png" alt="\tilde f(\nu)
-    = \int_{-\infty}^{\infty} f(x) e^{-2\pi i\nu x}\,\d x
+<p><img src="../_images/math/848d9d361c09bff72a0eabc9442ca6e29f55fb6b.png" alt="k=0, 1, \dots, N/2-1, -N/2, -N/2+1, \dots, -1 \quad\mbox{if $N$ is even}
 
-f(x) = \int_{-\infty}^{\infty} \tilde f(\nu) e^{+2\pi i\nu x}\,\d \nu"/></p>
-</div><p>When the <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/> space is discrete, that is <img class="math" src="../_images/math/53a7737fd23ad1594b5a6a73430980b21f866358.png" alt="f(x)\to f(x_k)\equiv f_k"/>, where
-<img class="math" src="../_images/math/140526fab2317adbf819d480b059136f3ac53a42.png" alt="x_k = k\Delta"/> and <img class="math" src="../_images/math/4658918b7798dcce82deb53bfb45f6dcb68857f5.png" alt="k=0, 1, \cdots, N-1"/>, we obtain:</p>
+k=0, 1, \dots, (N-1)/2, -(N-1)/2, -(N-1)/2+1, \dots, -1 \quad\mbox{if $N$ is odd}"/></p>
+</div><p>E.g. for:</p>
 <div class="math">
-<p><img src="../_images/math/00df0dafb6f52e208a63a4b16f49aac6b2d0428d.png" alt="\tilde f(\nu)
-    = \int_0^{(N-1)\Delta} f(x) e^{-2\pi i\nu x}\,\d x
-    = \sum_{k=0}^{N-1} f_k e^{-2\pi i\nu x_k}
-    = \sum_{k=0}^{N-1} f_k e^{-2\pi i\nu k \Delta}"/></p>
-</div><p>We only need to sample the reciprocal space at the intervals
-<img class="math" src="../_images/math/072a4548568e9d98ac82e0fb5049b87115293746.png" alt="\nu = {n\over N \Delta}"/> where <img class="math" src="../_images/math/5679149c91ecd0814c39918f732437caca82da1c.png" alt="n=0, 1, \cdots, N-1"/>. We finally get:</p>
+<p><img src="../_images/math/629ad56cea884d661b312137bf0ce7dc0c63fbbe.png" alt="N=8 \quad \mbox{we get} \quad k=0, 1, 2, 3, -4, -3, -2, -1
+
+N=9 \quad \mbox{we get} \quad k=0, 1, 2, 3, 4, -4, -3, -2, -1"/></p>
+</div><p>The real space function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> is sampled at points <img class="math" src="../_images/math/173a8b9a8b7af48f153fa5eef0aa0534d51a1b2a.png" alt="x_n={L\over N}n"/> for
+<img class="math" src="../_images/math/6b5569bde634dd283ce1bd02f8cea61a6df55da1.png" alt="n=-N/2,\dots,N/2-1"/> and the equation <a href="#equation-fourier2b_1d">(6)</a> becomes:</p>
+<div class="math">
+<p><img src="../_images/math/df90794583716e6e7642056738d13ba1dd64f77d.png" alt="c_k
+    = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
+    e^{-i(2\pi k x/L)}\,\d x =
+
+    = \lim_{N\to\infty}
+    {1\over L}\sum_{n=-N/2}^{N/2-1}
+    f(x_n)
+    e^{-i(2\pi k x_n/L)}\,{L\over N} =
+
+    = \lim_{N\to\infty}
+    {1\over N}\sum_{n=-N/2}^{N/2-1}
+    f(x_n)
+    e^{-2\pi i {k\over N} n}"/></p>
+</div><p>The equation <a href="#equation-fourier2b_1d_inv">(7)</a> becomes:</p>
+<div class="math">
+<p><img src="../_images/math/f4a50e44d8358b38a1c994c1ea2d7c0ca97d2457.png" alt="f(x_n) = \sum_{k=-\infty}^\infty c_k e^{i(2\pi kx_n/L)} =
+
+    = \lim_{N\to\infty}
+    \sum_{k=-N/2}^{N/2-1} c_k e^{i(2\pi kx_n/L)} =
+
+    = \lim_{N\to\infty}
+    \sum_{k=-N/2}^{N/2-1} c_k e^{2\pi i {k\over N} n}"/></p>
+</div><p>Using the fact</p>
+<div class="math">
+<p><img src="../_images/math/33c6c1e2f49f8a7200ea72503e42a360ae3a3027.png" alt="x_n + L = {L\over N}n + L = {L\over N}(n + N) = x_{n+N}\,,"/></p>
+</div><p>we can express the periodicity <img class="math" src="../_images/math/a0638517509cde5b988047fab5624c6e1e0cd1e4.png" alt="f(x_n+L)=f(x_n)"/> as <img class="math" src="../_images/math/fc2a2f467e26c4d293145abf40e2cfe9ef5364c7.png" alt="f(x_{n+N})=f(x_n)"/>. The
+sums can then be rearranged:</p>
+<div class="math">
+<p><img src="../_images/math/b6b6b5e71a95a0031d2beb5845408c3d1c75af80.png" alt="c_k
+    = \lim_{N\to\infty}
+    {1\over N}\sum_{n=-N/2}^{N/2-1}
+    f(x_n)
+    e^{-2\pi i {k\over N} n} =
+
+    = \lim_{N\to\infty} {1\over N} \left(
+    \sum_{n=-N/2}^{-1}
+    f(x_n)
+    e^{-2\pi i {k\over N} n}
+        +
+    \sum_{n=0}^{N/2-1}
+    f(x_n)
+    e^{-2\pi i {k\over N} n} \right) =
+
+    = \lim_{N\to\infty} {1\over N} \left(
+    \sum_{n=N/2}^{N-1}
+    f(x_{n-N})
+    e^{-2\pi i {k\over N} (n-N)}
+        +
+    \sum_{n=0}^{N/2-1}
+    f(x_n)
+    e^{-2\pi i {k\over N} n} \right) =
+
+    = \lim_{N\to\infty} {1\over N}
+    \sum_{n=0}^{N-1} f(x_n) e^{-2\pi i {k\over N} n}"/></p>
+</div><p>and if we drop the limit and consider a finite <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> only:</p>
+<div class="math">
+<p><img src="../_images/math/eccc97bac175c48a835fa8a4db27ce92596f0bcd.png" alt="f(x_n)
+    = \sum_{k=-N/2}^{N/2-1} c_k e^{2\pi i {k\over N} n} =
+
+    = \left(
+    \sum_{k=-N/2}^{-1} c_k e^{2\pi i {k\over N} n}
+    +
+    \sum_{k=0}^{N/2-1} c_k e^{2\pi i {k\over N} n}
+    \right) =
+
+    = \left(
+    \sum_{k=N/2}^{N-1} c_{k-N} e^{2\pi i {(k-N)\over N} n}
+    +
+    \sum_{k=0}^{N/2-1} c_k e^{2\pi i {k\over N} n}
+    \right) =
+
+    = \sum_{k=0}^{N-1} c_k e^{2\pi i {k\over N} n}"/></p>
+</div><p>Summary, the direct transform:</p>
 <div class="math" id="equation-dft">
-<p><span class="eqno">(7)</span><img src="../_images/math/e69f965d73c74fcbdb658b60be174579b747e980.png" alt="\tilde f(\nu_n) \equiv \tilde f_n
-    = \sum_{k=0}^{N-1} f_k e^{-2\pi i {n\over N} k}"/></p>
-</div><p>For the inverse transform, we obtain:</p>
+<p><span class="eqno">(8)</span><img src="../_images/math/f7b1656063139d37df79227d807e2a9f355c941d.png" alt="c_k
+    = {1\over N} \sum_{n=0}^{N-1} f(x_n) e^{-2\pi i {k\over N} n}"/></p>
+</div><p>and inverse transform:</p>
 <div class="math" id="equation-idft">
-<p><span class="eqno">(8)</span><img src="../_images/math/cba2bf74306153824da682a96c345e3b714caacd.png" alt="f_k
-    = {1\over N} \sum_{n=0}^{N-1} \tilde f_n e^{2\pi i {n\over N} k}"/></p>
-</div></div>
+<p><span class="eqno">(9)</span><img src="../_images/math/835b270923781b5ac60d13aab058abfb1429a283.png" alt="f(x_n)
+    = \sum_{k=0}^{N-1} c_k e^{2\pi i {k\over N} n}\,,"/></p>
+</div><p>with <img class="math" src="../_images/math/173a8b9a8b7af48f153fa5eef0aa0534d51a1b2a.png" alt="x_n={L\over N}n"/>. In the limit <img class="math" src="../_images/math/f296b863454e7f6b2fd20ff63cab1fff689db3d1.png" alt="N\to\infty"/>, the equation <a href="#equation-dft">(8)</a>
+becomes <a href="#equation-fourier2b_1d">(6)</a> and equation <a href="#equation-idft">(9)</a> becomes
+<a href="#equation-fourier2b_1d_inv">(7)</a> and as we increase <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>, the discrete Fourier
+transform numerically converges towards the Fourier series results.</p>
+<p>The <img class="math" src="../_images/math/788e13fd256ea8c4554d7b13d017b2b514638fdc.png" alt="{1\over N}"/> factor is sometimes moved from the direct to the inverse
+transform, but then the correspondence with Fourier series is broken (one has
+to divide and multiply by <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> appropriately to recover it).</p>
+</div>
 <div class="section" id="fast-fourier-transform-fft">
 <h1>Fast Fourier Transform (FFT)<a class="headerlink" href="#fast-fourier-transform-fft" title="Permalink to this headline">¶</a></h1>
-<p>We write the discrete Fourier transform <a href="#equation-dft">(7)</a> using a notation more commonly
+<p>We write the discrete Fourier transform <a href="#equation-dft">(8)</a> using a notation more commonly
 used for FFTs:</p>
 <div class="math">
 <p><img src="../_images/math/4f6233b578704b6685d646e5664167fed8539951.png" alt="X(k) = \sum_{n=0}^{N-1} x(n) W_N^{kn}"/></p>
 </div><p>where:</p>
 <div class="math">
 <p><img src="../_images/math/59e19e3e5b04cc3683febe481557c473338d4f82.png" alt="W_N = e^{-2\pi i / N}"/></p>
-</div><p>Similarly, the inverse discrete Fourier transform <a href="#equation-idft">(8)</a> becomes:</p>
+</div><p>Similarly, the inverse discrete Fourier transform <a href="#equation-idft">(9)</a> becomes:</p>
 <div class="math">
 <p><img src="../_images/math/c6720f4aa318c671a63540fc298eb9e268000680.png" alt="x(n) = {1\over N} \sum_{k=0}^{N-1} X(k) W_N^{-kn}"/></p>
 </div><div class="section" id="decimation-in-frequency-dif">
@@ -653,6 +776,7 @@ means the Fourier transform.</p>
   <ul>
 <li><a class="reference internal" href="#">Fourier Transform</a><ul>
 <li><a class="reference internal" href="#shift-theorem">Shift Theorem</a></li>
+<li><a class="reference internal" href="#derivative">Derivative</a></li>
 <li><a class="reference internal" href="#radial-fourier-transform">Radial Fourier Transform</a></li>
 </ul>
 </li>

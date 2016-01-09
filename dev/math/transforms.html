@@ -150,6 +150,17 @@ flip the sign for the inverse transform.</p>
 
     = e^{i\bomega\cdot \mathbf{b}} F[f(\mathbf{x})]"/></p>
 </div></div>
+<div class="section" id="scaling">
+<h2>Scaling<a class="headerlink" href="#scaling" title="Permalink to this headline">¶</a></h2>
+<p>For <img class="math" src="../_images/math/4c28242522f23e896074dc89612847f8317911d7.png" alt="a&gt;0"/>:</p>
+<div class="math">
+<p><img src="../_images/math/b30472f26cfaf5684af83a308189f42449fa5543.png" alt="F[f(ax)](\omega)
+    = \int_{-\infty}^{\infty} f(ax) e^{-i\omega x}\,\d x =
+
+    = {1\over a}\int_{-\infty}^{\infty} f(y) e^{-i{\omega\over a} y}\,\d y =
+
+    = {1\over a}F[f(x)]\left({\omega\over a}\right)"/></p>
+</div></div>
 <div class="section" id="derivative">
 <h2>Derivative<a class="headerlink" href="#derivative" title="Permalink to this headline">¶</a></h2>
 <p>The Fourier transform of a derivative, in 3D:</p>
@@ -191,13 +202,64 @@ flip the sign for the inverse transform.</p>
     = i\omega_i \tilde f(\bomega)
     = i\omega_i F[f(\mathbf{x})]\,."/></p>
 </div></div>
+<div class="section" id="convolution">
+<h2>Convolution<a class="headerlink" href="#convolution" title="Permalink to this headline">¶</a></h2>
+<p>The convolution of two functions <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> and <img class="math" src="../_images/math/659a6a2610357101d77dbae8eb9bf0b3100c08fd.png" alt="g(x)"/> is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/f5c00ad26cba4da23e44a33a10a2d9b0e2eba663.png" alt="f(x) * g(x) = \int_{-\infty}^\infty f(y) g(x-y) \,\d y"/></p>
+</div><p>The Fourier transform of a convolution is:</p>
+<div class="math">
+<p><img src="../_images/math/dd3edf6b86de4f09137b534a7df87a5467dad01d.png" alt="F[f(x) * g(x)](\omega)
+    = \int_{-\infty}^\infty \int_{-\infty}^\infty
+        f(y) g(x-y) \,\d y\, e^{-i\omega x}\d x =
+
+    = \int_{-\infty}^\infty \int_{-\infty}^\infty
+        g(x-y) e^{-i\omega x} \d x\, f(y) \,\d y =
+
+    = \int_{-\infty}^\infty \int_{-\infty}^\infty
+        g(u) e^{-i\omega (u+y)} \d u\, f(y) \,\d y =
+
+    = \int_{-\infty}^\infty g(u) e^{-i\omega u} \d u
+    \int_{-\infty}^\infty f(y) e^{-i\omega y} \d y
+
+    = F[f(x)](\omega)\ F[g(x)](\omega)"/></p>
+</div><p>And for the inverse transform:</p>
+<div class="math">
+<p><img src="../_images/math/aba621187df346913c1e5f156056513be3c3604b.png" alt="F^{-1}[f(\omega) * g(\omega)](x)
+    = {1\over 2\pi} \int_{-\infty}^\infty \int_{-\infty}^\infty
+        f(y) g(\omega-y) \,\d y\, e^{i\omega x}\d \omega =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty \int_{-\infty}^\infty
+        g(\omega-y) e^{i\omega x} \d \omega\, f(y) \,\d y =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty \int_{-\infty}^\infty
+        g(u) e^{ix (u+y)} \d u\, f(y) \,\d y =
+
+    = 2\pi {1\over 2\pi} \int_{-\infty}^\infty g(u) e^{ix u} \d u
+    {1\over 2\pi}
+    \int_{-\infty}^\infty f(y) e^{ix y} \d y
+
+    = 2\pi F^{-1}[f(\omega)](x)\ F^{-1}[g(\omega)](x)"/></p>
+</div><p>Fourier transform of a function multiplication is:</p>
+<div class="math">
+<p><img src="../_images/math/ba18a58671c841db2bb9a8903fcaf98d78f61d41.png" alt="F [ f g ]
+    = F [\ F^{-1}[ F[f] ]\quad  F^{-1}[ F[g] ]\ ]
+    = {1\over 2\pi} F [ F^{-1} [ F[f] * F[g] ]]
+    = {1\over 2\pi} F[f] * F[g]"/></p>
+</div><p>and for the inverse transform:</p>
+<div class="math">
+<p><img src="../_images/math/a30989b80393687eb5fdb965425008b4539d9c17.png" alt="F^{-1} [ f g ]
+    = F^{-1} [\ F[ F^{-1}[f] ]\quad  F[ F^{-1}[g] ]\ ]
+    = F^{-1} [ F [ F^{-1}[f] * F^{-1}[g] ]]
+    = F^{-1}[f] * F^{-1}[g]"/></p>
+</div></div>
 <div class="section" id="radial-fourier-transform">
 <h2>Radial Fourier Transform<a class="headerlink" href="#radial-fourier-transform" title="Permalink to this headline">¶</a></h2>
 <p>As a special case when the function <img class="math" src="../_images/math/c9392fa3753b06b346e51952e909adf296a14453.png" alt="f(\mathbf{x})=f(r)"/> is spherically symmetric,
 we introduce spherical coordinates such that the <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/>-axis is along the
 <img class="math" src="../_images/math/3d60306d6601bee96e70de9d22d49cc5d09e76e0.png" alt="\bomega"/> vector and calculate (we use <img class="math" src="../_images/math/66230c4dd11be2e3bb614402f3d6426a53fed467.png" alt="r=|\mathbf{x}|"/> and <img class="math" src="../_images/math/9dea4929d6effd73252a857f75396a3d6e236abe.png" alt="\omega=|\bomega|"/>):</p>
 <div class="math">
-<p><img src="../_images/math/5d50740835b11f1df1ce6e1aa48ee46dde030cb5.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\bomega)
+<p><img src="../_images/math/6761093fe7cfa0dddc81ce7b96dd09f16309a254.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\bomega)
     = \int_{-\infty}^{\infty} f(\mathbf{x}) e^{-i\bomega \cdot
         \mathbf{x}}\,\d^3 x
     = \int_{-\infty}^{\infty} f(r) e^{-i\bomega \cdot
@@ -209,18 +271,20 @@ we introduce spherical coordinates such that the <img class="math" src="../_imag
     = 2\pi \int_0^\infty\d r \int_0^\pi\d\theta f(r)
         e^{-i \omega r \cos\theta}\,r^2\sin\theta =
 
-    = 4\pi \int_0^\infty f(r) j_0(\omega r) \,r^2 \d r =
+    = 4\pi \int_0^\infty f(r) \sinc(\omega r) \,r^2 \d r =
 
     = 4\pi \int_0^\infty f(r) {\sin\omega r \over \omega r}\,r^2 \d r =
 
     = {4\pi\over\omega} \int_0^\infty r\sin(\omega r) f(r) \,\d r\,,"/></p>
 </div><p>where we used:</p>
 <div class="math">
-<p><img src="../_images/math/30217556dc4e8dbedc0a422fca42e4fb2106f3fb.png" alt="\int_0^\pi e^{-i \omega r \cos\theta}\,\sin\theta \d\theta
+<p><img src="../_images/math/1b9a3b164e907abe44320b6578bc04319b0b8230.png" alt="\int_0^\pi e^{-i \omega r \cos\theta}\,\sin\theta \d\theta
     = \int_{-1}^1 e^{i\omega r u} \d u
     = \left[e^{i\omega r u} \over i\omega r\right]_{-1}^1
-    = {e^{i\omega r} - e^{-i\omega r} \over i \omega r}
-    = 2 {\sin \omega r \over \omega r} = 2 j_0(\omega r)\,."/></p>
+    = {e^{i\omega r} - e^{-i\omega r} \over i \omega r} =
+
+    = 2 {\sin(\omega r) \over \omega r}
+    = 2 \sinc(\omega r) = 2 j_0(\omega r)\,."/></p>
 </div><p>So the transform is real and spherically symmetric, since the result only
 depends on <img class="math" src="../_images/math/54d7d48553f4d9e7ab418118607ea324cbfddfda.png" alt="\omega"/>.</p>
 <p>Similarly, for the inverse transform:</p>
@@ -239,6 +303,411 @@ depends on <img class="math" src="../_images/math/54d7d48553f4d9e7ab418118607ea3
     = {1\over 2\pi^2 r}
     \int_0^\infty \omega\sin(\omega r) f(\omega) \,\d \omega"/></p>
 </div></div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="rectangular-function">
+<h3>Rectangular Function<a class="headerlink" href="#rectangular-function" title="Permalink to this headline">¶</a></h3>
+<p>The rectangular function is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/e8ba4a9969a93e87ba6683901c7ec9f487537338.png" alt="\Pi(x) = H(x+\half) - H(x-\half)"/></p>
+</div><p>The Fourier transform is:</p>
+<div class="math">
+<p><img src="../_images/math/df94e3d8bb95c2aee6c03dd404d12c031982e6a2.png" alt="F[\Pi(x)] \equiv \tilde \Pi(\omega)
+    = \int_{-\infty}^{\infty} \Pi(x) e^{-i\omega x}\,\d x
+    = \int_{-\half}^{\half} e^{-i\omega x}\,\d x =
+
+    = \left[e^{-i\omega x} \over -i\omega x\right]_{x=-\half}^\half
+    = {e^{i{\omega\over 2}} - e^{-i{\omega \over 2}} \over i
+        {\omega\over2}}
+    = 2{\sin({\omega \over 2}) \over {\omega \over 2}}
+    = 2\sinc\left({\omega\over 2}\right)\,."/></p>
+</div></div>
+<div class="section" id="dirichlet-kernel">
+<h3>Dirichlet Kernel<a class="headerlink" href="#dirichlet-kernel" title="Permalink to this headline">¶</a></h3>
+<p>The Dirichlet kernel <img class="math" src="../_images/math/706c4d79e7a0c1f08e4b1d7c2dcdd91290c00724.png" alt="D_N(x)"/> is a partial sum of complex exponentials:</p>
+<div class="math">
+<p><img src="../_images/math/2f510dadd0ec199ab9b3ef2ae88f4a6da29582fd.png" alt="D_N(x) = {1\over 2\pi}\sum_{n=-N}^N e^{inx} =
+
+= {1\over 2\pi}\left(1+2\sum_{n=1}^N \cos(nx)\right) =
+
+= {1\over 2\pi \sin\left(x\over2\right)}\left(\sin\left(x\over2\right)
+    +2\sum_{n=1}^N \cos(nx)\sin\left(x\over2\right)\right) =
+
+= {1\over 2\pi \sin\left(x\over2\right)}\left(\sin\left(x\over2\right)
+    +\sum_{n=1}^N\left(
+    \sin\left(\left(n+\half\right)x\right)
+    -\sin\left(\left(n-\half\right)x\right)
+    \right)\right) =
+
+= {\sin\left(\left(N+\half\right)x\right)
+    \over 2\pi \sin\left(x\over2\right)}"/></p>
+</div><p>From the definition, it is a periodic function with period <img class="math" src="../_images/math/709acef3551b886e6754de72d59a88f00660f0d3.png" alt="2\pi"/>.</p>
+<p>Integral of it is equal to one:</p>
+<div class="math">
+<p><img src="../_images/math/6fccfc71841dcbf5d5cf757e7819b2c6eaf77ed0.png" alt="\int_{-\pi}^\pi D_N(x) \d x
+= \int_{-\pi}^\pi {1\over 2\pi}\left(1+2\sum_{n=1}^N \cos(nx)\right) \d x =
+
+= 1 + {1\over \pi}\sum_{n=1}^N \int_{-\pi}^\pi  \cos(nx)\, \d x = 1"/></p>
+</div><p>also</p>
+<div class="math">
+<p><img src="../_images/math/f5fe6b506fb5df3f7a6b1492b42de0df7311d3d9.png" alt="\int_{-\pi}^\pi D_N(x-y) \d y = 1"/></p>
+</div><p>The Dirichlet kernel <img class="math" src="../_images/math/706c4d79e7a0c1f08e4b1d7c2dcdd91290c00724.png" alt="D_N(x)"/> converges towards a train of delta functions
+(called Dirac comb, see the equation <a href="#equation-delta_exp2">(3)</a> in the next section):</p>
+<div class="math" id="equation-delta_exp">
+<p><span class="eqno">(2)</span><img src="../_images/math/b170db33c59c47b0372b4ad35bf7b06d528df95c.png" alt="{1\over 2\pi}\sum_{n=-\infty}^\infty e^{inx}
+    = \lim_{N\to\infty} {1\over 2\pi}\sum_{n=-N}^N e^{inx}
+    = \lim_{N\to\infty} D_N(x) =
+
+    = \lim_{N\to\infty} {\sin\left(\left(N+\half\right)x\right)
+        \over 2\pi \sin\left(x\over2\right)}
+    = \sum_{n=-\infty}^\infty \delta(x-2\pi n)"/></p>
+</div><p>Let us do the crucial step in more details using distributions:</p>
+<div class="math">
+<p><img src="../_images/math/a09059a9e7062ac97da758a44b20630b2ae2351d.png" alt="\int_{-\infty}^\infty
+    \lim_{N\to\infty} {\sin\left(\left(N+\half\right)x\right)
+        \over 2\pi \sin\left(x\over2\right)}
+    \varphi(x) \,\d x =
+
+= \sum_{n=-\infty}^\infty \lim_{N\to\infty} \int_{-\pi}^\pi
+    {\sin\left(\left(N+\half\right)(x+2\pi n)\right)
+        \over 2\pi \sin\left(x+2\pi n\over2\right)}
+    \varphi(x+2\pi n) \,\d x =
+
+= \sum_{n=-\infty}^\infty \varphi(2\pi n) =
+
+=\int_{-\infty}^\infty \sum_{n=-\infty}^\infty \delta(x-2\pi n)
+    \varphi(x)\,\d x"/></p>
+</div><p>Where we used the fact that</p>
+<div class="math">
+<p><img src="../_images/math/7f18fea17060a4ff52ca44263c66787e4e174dfb.png" alt="\left[\lim_{N\to\infty} \int_{-\pi}^\pi
+    {\sin\left(\left(N+\half\right)(x+2\pi n)\right)
+        \over 2\pi \sin\left(x+2\pi n\over2\right)}
+    \varphi(x+2\pi n) \,\d x \right] - \varphi(2\pi n) =
+
+= \left[\lim_{N\to\infty} \int_{-\pi}^\pi
+    D_N(x+2\pi n)
+    \varphi(x+2\pi n) \,\d x \right] - \varphi(2\pi n) =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi
+    D_N(x+2\pi n)
+    \left(\varphi(x+2\pi n)-\varphi(2\pi n)\right) \,\d x =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi
+    {\varphi(x+2\pi n)-\varphi(2\pi n)
+    \over 2\pi\sin\left(x+2\pi n\over 2\right)}
+    \sin\left(\left(N+\half\right)(x+2\pi n)\right)
+    \,\d x =
+
+= 0"/></p>
+</div></div>
+<div class="section" id="dirac-comb-shah-function">
+<h3>Dirac Comb (Shah) Function<a class="headerlink" href="#dirac-comb-shah-function" title="Permalink to this headline">¶</a></h3>
+<p>The Dirac comb function, also called the Shah function, is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/9058618bed4e6e9f14091e6decd807a8067122aa.png" alt="\Sh(x) = \sum_{n=-\infty}^\infty \delta(x-n)"/></p>
+</div><p>It has the following scaling property:</p>
+<div class="math">
+<p><img src="../_images/math/5cb397390937f582baaddb8d7357ee9b0fa1c6e3.png" alt="\Sh(ax) = \sum_{n=-\infty}^\infty \delta(ax-n)
+= \sum_{n=-\infty}^\infty \delta\left(a\left(x-{n\over a}\right)\right)
+= \sum_{n=-\infty}^\infty {1\over|a|}\delta\left(x-{n\over a}\right)"/></p>
+</div><p>and for <img class="math" src="../_images/math/2727ced38c0550882672a66bd08810b27ecf4668.png" alt="a={1\over L}"/> with <img class="math" src="../_images/math/770fcb6144b56caa2e6b9574dc1a13c0d1353bd7.png" alt="L&gt;0"/>:</p>
+<div class="math">
+<p><img src="../_images/math/4714e47e15213264906fda1096b42559d7950220.png" alt="\Sh\left({x\over L}\right) = \sum_{n=-\infty}^\infty L\delta(x-nL)"/></p>
+</div><p>From which a train of delta functions <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> distance apart is expressed using a
+Dirac comb as:</p>
+<div class="math">
+<p><img src="../_images/math/0c6483b63a3eb8ead6858cdcf25435c4edac9c42.png" alt="\sum_{n=-\infty}^\infty \delta(x-nL) = {1\over L}\Sh\left({x\over L}\right)"/></p>
+</div><p>Using the identity <a href="#equation-delta_exp">(2)</a>, the infinite sum of complex exponentials is
+also equal to a Dirac comb:</p>
+<div class="math" id="equation-delta_exp2">
+<p><span class="eqno">(3)</span><img src="../_images/math/918bc39d0b6b95ab6b58e3d3430c317ce6328eb1.png" alt="{1\over 2\pi}\sum_{n=-\infty}^\infty e^{inx}
+    = \lim_{N\to\infty} {1\over 2\pi}\sum_{n=-N}^N e^{inx}
+    = \lim_{N\to\infty} D_N(x) =
+
+    = \lim_{N\to\infty} {\sin\left(\left(N+\half\right)x\right)
+        \over 2\pi \sin\left(x\over2\right)}
+    = \sum_{n=-\infty}^\infty \delta(x-2\pi n)
+    = {1\over 2\pi}\Sh\left({x\over 2\pi}\right)"/></p>
+</div><p>Using <a href="#equation-delta_exp2">(3)</a> we can now calculate the Fourier transform:</p>
+<div class="math">
+<p><img src="../_images/math/1ba97a583034738bb26b8724d8c308c68146d3a4.png" alt="F[\Sh(x)](\omega) \equiv \tilde \Sh(\omega)
+    = \int_{-\infty}^{\infty} \Sh(x) e^{-i\omega x}\,\d x =
+
+    = \int_{-\infty}^{\infty} \sum_{n=-\infty}^\infty \delta(x-n)
+        e^{-i\omega x}\,\d x =
+
+    = \sum_{n=-\infty}^\infty \int_{-\infty}^{\infty} \delta(x-n)
+        e^{-i\omega x}\,\d x =
+
+    = \sum_{n=-\infty}^\infty e^{-i\omega n} =
+
+    = 2\pi \sum_{n=-\infty}^\infty \delta(\omega-2\pi n) =
+
+    = \Sh\left({\omega\over 2\pi}\right)"/></p>
+</div><p>For the inverse Fourier transform we get (using the previous result):</p>
+<div class="math">
+<p><img src="../_images/math/effa806c18a88b95e7c5a91d1feb6b0a9b044b88.png" alt="F^{-1}[\Sh(\omega)](x)
+    = F^{-1}\left[\ \Sh\left({(2\pi\omega)\over2\pi}\right) \ \right](x)
+    = F^{-1}[\ F[\Sh(x)](2\pi\omega) \ ](x)
+    = F^{-1}\left[\ F\left[{1\over2\pi}\Sh\left({x\over2\pi}\right)\right](\omega) \ \right](x)
+    = {1\over2\pi}\Sh\left({x\over2\pi}\right)"/></p>
+</div><p>The following Fourier transform is also useful:</p>
+<div class="math">
+<p><img src="../_images/math/654f463e994a80685101a7044c0883690fbcb288.png" alt="F\left[\sum_{n=-\infty}^\infty \delta(x-nL)\right](\omega)
+    = F\left[{1\over L}\Sh\left({x\over L}\right)\right](\omega)
+    = F[\Sh(x)](L\omega) =
+
+    = \Sh\left({L\over 2\pi}\omega\right)
+    = \sum_{n=-\infty}^\infty {2\pi\over L}
+        \delta\left(x-{2\pi n\over L}\right)"/></p>
+</div></div>
+<div class="section" id="periodic-summation">
+<h3>Periodic Summation<a class="headerlink" href="#periodic-summation" title="Permalink to this headline">¶</a></h3>
+<p>The convolution <img class="math" src="../_images/math/9c353e99913c16556e7fdcca77a0a0085b39e174.png" alt="f(x) * g(x) = \int_{-\infty}^\infty f(y) g(x-y) \,\d y"/> of a
+Dirac comb <img class="math" src="../_images/math/b943c628469da05b0a9f242b3576f1282539988a.png" alt="\Sh(x)"/> and an arbitrary function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> is called a periodic
+summation:</p>
+<div class="math">
+<p><img src="../_images/math/13892e637fd75b23e5a9a96e3187e05742b7704b.png" alt="f(x) * \Sh(x)
+    = \int_{-\infty}^\infty f(y) \Sh(x-y) \,\d y
+    = \int_{-\infty}^\infty f(y)
+        \sum_{n=-\infty}^\infty \delta(x-y-n) \,\d y =
+
+    = \sum_{n=-\infty}^\infty f(x-n)
+    = \sum_{n=-\infty}^\infty f(x+n)"/></p>
+</div><p>because the result is a periodic function with period 1:</p>
+<div class="math">
+<p><img src="../_images/math/56ae3431ae3b152ddcf3126092328eb39e40a94a.png" alt="(f * \Sh)(x+1)
+    = \sum_{n=-\infty}^\infty f(x+n+1)
+    = \sum_{m=-\infty}^\infty f(x+m)
+    = (f * \Sh)(x)"/></p>
+</div></div>
+<div class="section" id="poisson-summation-formula">
+<h3>Poisson Summation Formula<a class="headerlink" href="#poisson-summation-formula" title="Permalink to this headline">¶</a></h3>
+<p>The Poisson summation formula:</p>
+<div class="math" id="equation-poisson_summation_formula">
+<p><span class="eqno">(4)</span><img src="../_images/math/78e3c287c1542ae92f30b1d84b29d228466941bc.png" alt="\sum_{n=-\infty}^\infty f(2\pi n)
+    = {1\over 2\pi} \sum_{n=-\infty}^\infty \tilde f(n)"/></p>
+</div><p>can be derived using a Dirac comb:</p>
+<div class="math">
+<p><img src="../_images/math/0747a51b125f6fb0efb8fcd775015f469430667a.png" alt="\sum_{n=-\infty}^\infty f(2\pi n)
+    = \int_{-\infty}^\infty f(x) \sum_{n=-\infty}^\infty
+        \delta(x-2\pi n) \,\d x =
+
+    = \int_{-\infty}^\infty f(x) {1\over 2\pi}
+        \Sh\left(x\over2\pi\right) \,\d x =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty f(x) \cdot
+        F[\Sh(\omega)](x) \,\d x =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty F[f(x)](\omega) \cdot
+        \Sh(\omega) \,\d \omega =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty \tilde f(\omega) \cdot
+        \sum_{n=-\infty}^\infty \delta(\omega-n) \,\d \omega =
+
+    = {1\over 2\pi} \sum_{n=-\infty}^\infty \tilde f(x)"/></p>
+</div><p>An alternative derivation using Fourier series (see next sections):</p>
+<div class="math">
+<p><img src="../_images/math/283c1e260fa4e1ca808ebb438e1a98a1cea93e72.png" alt="\sum_{n=-\infty}^\infty f(x+2\pi n)
+    = g(x)
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}\int_{-\pi}^\pi
+        g(y) e^{-iny} \d y\,  e^{inx} =
+
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}\int_{-\pi}^\pi
+        \sum_{m=-\infty}^\infty f(y+2\pi m)
+        e^{-iny} \d y\,  e^{inx} =
+
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}
+        \sum_{m=-\infty}^\infty
+        \int_{-\pi}^\pi
+        f(y+2\pi m)
+        e^{-in(y+2\pi m)} \d y\,  e^{inx} =
+
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}
+        \int_{-\infty}^\infty
+        f(y) e^{-iny} \d y\,  e^{inx} =
+
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}
+        \tilde f(n) \,  e^{inx}"/></p>
+</div><p>And setting <img class="math" src="../_images/math/34ea5b6f6de584d56d19a89cc4923a9d9a5cfa41.png" alt="x=0"/> we get the Poisson summation formula
+<a href="#equation-poisson_summation_formula">(4)</a>.</p>
+<p>The last derivation can actually also be done using a Dirac comb function as
+follows:</p>
+<div class="math">
+<p><img src="../_images/math/929ada035b54721fa194d854b7fe66b43f5798ea.png" alt="\sum_{n=-\infty}^\infty f(x+2\pi n)
+    = f(x) * {1\over2\pi}\Sh\left(x \over 2\pi \right ) =
+
+    = F^{-1}\left[\ F\left[f(x) * {1\over2\pi}\Sh\left(x \over
+        2\pi \right ) \right](\omega)\ \right](x) =
+
+    = F^{-1}\left[\ F[f(x)](\omega)\ F\left[{1\over2\pi}\Sh\left(x \over
+        2\pi \right )\right](\omega)\ \right](x) =
+
+    = F^{-1}[\ F[f(x)](\omega)\ \Sh(\omega)\ ](x) =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty
+        F[f(x)](\omega) \Sh(\omega) e^{i\omega x} \d x =
+
+    = \sum_{n=-\infty}^\infty {1\over 2\pi}
+        F[f(x)](n) \,  e^{inx}"/></p>
+</div></div>
+<div class="section" id="fourier-series">
+<h3>Fourier Series<a class="headerlink" href="#fourier-series" title="Permalink to this headline">¶</a></h3>
+<p>Consider a periodic function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> with a period <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> and let us calculate the
+Fourier transform of it. We define a new function <img class="math" src="../_images/math/1db7d6021cb24727678d977098f6564454ebd0e1.png" alt="f_0(x)=f(x)"/> in the
+<img class="math" src="../_images/math/80f2ae2aa16e68770e1f91f01945fdca941e0dd1.png" alt="[0, L]"/> interval and zero otherwise. Then:</p>
+<div class="math">
+<p><img src="../_images/math/6b9ec5f4f035bcaedee3f4a7ea7b1b4679b30097.png" alt="f(x) = f_0(x) * {1\over L}\Sh\left(x\over L\right)
+    = \sum_{n=-\infty}^\infty f_0(x+Ln)"/></p>
+</div><p>Apply Fourier transform:</p>
+<div class="math" id="equation-ffrelation">
+<p><span class="eqno">(5)</span><img src="../_images/math/d3c3336c74fb2f904330960d4d6b08ba9c19176a.png" alt="F[f(x)](\omega)
+    = F\left[f_0(x)
+        * {1\over L}\Sh\left(x\over L\right)\right](\omega) =
+
+    = F[f_0(x)](\omega)\ F\left[{1\over L}\Sh\left(x\over L\right)\                    \right](\omega)
+    = F[f_0(x)](\omega)\ \Sh\left({L\over2\pi}\omega\right) =
+
+    = \sum_{n=-\infty}^\infty F[f_0(x)]\left({2\pi n\over L}\right)
+        \ {2\pi\over L}\delta\left(\omega-{2\pi n\over L}\right)=
+
+    = \sum_{n=-\infty}^\infty
+        \int_0^L f(x) e^{-i 2\pi n x / L} \d x
+            \ {2\pi\over L}\delta\left(\omega-{2\pi n\over L}\right)=
+
+    = 2\pi \sum_{n=-\infty}^\infty f_n
+        \delta\left(\omega-{2\pi n\over L}\right)"/></p>
+</div><p>where <img class="math" src="../_images/math/fc19ca9685e2dcc4316b6dda7d448dad7254d724.png" alt="f_n"/> are called Fourier coefficients:</p>
+<div class="math">
+<p><img src="../_images/math/1ec6a7a12bd70b1bf569446362102b433e2a86fc.png" alt="f_n = {1\over L} \int_0^L f(x) e^{-i2\pi n x / L} \d x"/></p>
+</div><p>We can see that the Fourier transform is zero for <img class="math" src="../_images/math/d2603ceb93353a327fde69acab45a12dcaa4f8ea.png" alt="\omega \neq {2\pi n\over
+L}"/>. For <img class="math" src="../_images/math/5e064d9307f862b0ce5e24a04df2f8a430b7eb10.png" alt="\omega={2\pi n\over L}"/> it is equal to a delta function times a
+<img class="math" src="../_images/math/709acef3551b886e6754de72d59a88f00660f0d3.png" alt="2\pi"/> multiple of a Fourier series coefficient. The delta functions structure
+is given by the period <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> of the function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/>. All the information that is
+stored in the answer is inside the <img class="math" src="../_images/math/fc19ca9685e2dcc4316b6dda7d448dad7254d724.png" alt="f_n"/> coefficients, so those are the only
+ones that we need to calculate and store.</p>
+<p>The function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> is calculated from the <img class="math" src="../_images/math/fc19ca9685e2dcc4316b6dda7d448dad7254d724.png" alt="f_n"/> coefficients by applying the
+inverse Fourier transform to the final result of <a href="#equation-ffrelation">(5)</a> as follows:</p>
+<div class="math" id="equation-ffrelation2">
+<p><span class="eqno">(6)</span><img src="../_images/math/86661aff45b19d14dd96293be1b120812ec6c93e.png" alt="f(x)
+    = F^{-1} [F[f(x)](\omega)](x) =
+
+    = F^{-1}\left[
+    2\pi \sum_{n=-\infty}^\infty f_n
+        \delta\left(\omega-{2\pi n\over L}\right)
+        \right](x) =
+
+    = {1\over 2\pi} \int_{-\infty}^\infty
+    2\pi \sum_{n=-\infty}^\infty f_n
+        \delta\left(\omega-{2\pi n\over L}\right)
+    e^{i\omega x}
+    \d \omega
+    =
+
+    = \sum_{n=-\infty}^\infty f_n e^{i 2\pi n x / L}"/></p>
+</div><p>The expansion <a href="#equation-ffrelation2">(6)</a> is called a Fourier series. It is given by the
+Fourier coefficients <img class="math" src="../_images/math/fc19ca9685e2dcc4316b6dda7d448dad7254d724.png" alt="f_n"/>. The equation <a href="#equation-ffrelation">(5)</a> provides the relation
+between a Fourier transform and a Fourier series.</p>
+<p>For example for <img class="math" src="../_images/math/e951389c2c1dc9c5eac287704b5f8f9269b0932f.png" alt="f(x) = \sin(x)"/>, the only nonzero Fourier coefficients for
+<img class="math" src="../_images/math/16013db56a2ab4d27336df055bb0a1552b55acd5.png" alt="L=2\pi"/> are <img class="math" src="../_images/math/453b063f8ef03990f59268a0f8ace9599eef66cb.png" alt="f_{-1} = {i\over2}"/> and <img class="math" src="../_images/math/e071b82ddada2ef9f256ad9f2374363d64e56b2b.png" alt="f_1 = -{i\over2}"/>. The Fourier transform
+then is:</p>
+<div class="math">
+<p><img src="../_images/math/56f4e8a95e2d87b85025b160a3f3e34086c5cf25.png" alt="F[\sin(x)](\omega)
+    = 2\pi\left(f_{-1}\delta(\omega-(-1)) + f_1\delta(\omega-1)\right) =
+
+    = 2\pi\left({i\over 2}\delta(\omega+1))
+        -{i\over2}\delta(\omega-1)\right)
+    = i\pi\delta(\omega+1) - i\pi\delta(\omega-1)"/></p>
+</div><p>For <img class="math" src="../_images/math/39d2a273ecd239f0cc9334d3134539a0174b4df7.png" alt="f(x) = 1"/> the only nonzero Fourier coefficient is <img class="math" src="../_images/math/8a371843f5a2fa6847f0d0a3fcda0cbe7eb49ee7.png" alt="f_0=1"/>, the Fourier
+transform then is:</p>
+<div class="math">
+<p><img src="../_images/math/e131a9b3cff79b5ede1a4bc7c1253278cd83ef35.png" alt="F[1](\omega)
+    = 2\pi f_0 \delta(\omega-0)
+    = 2\pi \delta(\omega)"/></p>
+</div><p>For <img class="math" src="../_images/math/cf6ea09902f7c3e0f1901e7ba0e43d022b0e9296.png" alt="f(x) = e^{3ix}"/> the only nonzero Fourier coefficient for <img class="math" src="../_images/math/16013db56a2ab4d27336df055bb0a1552b55acd5.png" alt="L=2\pi"/> is
+<img class="math" src="../_images/math/f11a507581268dc7f19b5c0faae3f7243fa3dadd.png" alt="f_3=1"/>, the Fourier transform then is:</p>
+<div class="math">
+<p><img src="../_images/math/e720b82559eee974e2f8f08da39804fb07556d1c.png" alt="F[e^{3ix}](\omega)
+    = 2\pi f_3 \delta(\omega-3)
+    = 2\pi \delta(\omega-3)"/></p>
+</div><p>For <img class="math" src="../_images/math/5d15a88558b93b8404ff4f99caa726cd6465f9b5.png" alt="f(x) = \sum_{n=-\infty}^\infty \delta(x-2\pi n)"/> the Fourier coefficients
+for <img class="math" src="../_images/math/16013db56a2ab4d27336df055bb0a1552b55acd5.png" alt="L=2\pi"/> are all equal to <img class="math" src="../_images/math/06b0f6a384e7bef1c4be6508bd32b473df56cbcd.png" alt="f_n={1\over 2\pi}"/> and the Fourier transform is:</p>
+<div class="math">
+<p><img src="../_images/math/fe3435ce01a2350d706d3fd27a223ea814445183.png" alt="F[f(x)](\omega)
+    = 2\pi \sum_{n=-\infty}^\infty f_n \delta(\omega-n)
+    = \sum_{n=-\infty}^\infty \delta(\omega-n)"/></p>
+</div><p>Note: if we start from <a href="#equation-ffrelation2">(6)</a>, for simplicity on an interval <img class="math" src="../_images/math/408a8d27794555e3c2cc5b670e16cb1d157ff655.png" alt="[-\pi,
+\pi]"/>:</p>
+<div class="math" id="equation-fs1">
+<p><span class="eqno">(7)</span><img src="../_images/math/fbe20aeb7598f1b58ac786ee6d4a193ffc443c71.png" alt="f(x) = \sum_{n=-\infty}^\infty f_n e^{inx}"/></p>
+</div><p>To calculate the Fourier coefficients <img class="math" src="../_images/math/fc19ca9685e2dcc4316b6dda7d448dad7254d724.png" alt="f_n"/>, we can just multiply both sides of
+<a href="#equation-fs1">(7)</a> by <img class="math" src="../_images/math/48512d8b517b6567e639a75b37eb0edb34d81a89.png" alt="e^{-imx}"/> and integrate:</p>
+<div class="math">
+<p><img src="../_images/math/1b3da9f53667deb33a646b498d5e9e3a39b0cb3f.png" alt="\int_{-\pi}^\pi f(x) e^{-imx} \d x
+    = \int_{-\pi}^\pi \sum_{n=-\infty}^\infty f_n e^{inx} e^{-imx} \d x =
+
+    = \sum_{n=-\infty}^\infty f_n \int_{-\pi}^\pi e^{i(n-m)x} \d x =
+
+    = \sum_{n=-\infty}^\infty f_n 2\pi\delta_{nm} =
+
+    = 2\pi f_m \,,"/></p>
+</div><p>so</p>
+<div class="math" id="equation-fs2">
+<p><span class="eqno">(8)</span><img src="../_images/math/2d86b339da6a563774c9c12b13f8a7af5596b0d3.png" alt="f_n = {1\over2\pi} \int_{-\pi}^\pi f(x) e^{-inx} \d x"/></p>
+</div></div>
+<div class="section" id="convergence-of-fourier-series">
+<h3>Convergence of Fourier Series<a class="headerlink" href="#convergence-of-fourier-series" title="Permalink to this headline">¶</a></h3>
+<p>To see what conditions the function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> must satisfy in order for the
+Fourier series to converge towards it, we can do the following analysis.
+Substituting <a href="#equation-fs2">(8)</a> into <a href="#equation-fs1">(7)</a> yields:</p>
+<div class="math">
+<p><img src="../_images/math/06eb3bdddfa93ee231498245bbbaf2b8373c12ff.png" alt="f(x) = \sum_{n=-\infty}^\infty {1\over 2\pi}\int_{-\pi}^\pi
+    f(y) e^{-iny} \d y\,  e^{inx} =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi
+    {1\over 2\pi}\sum_{n=-N}^N e^{in(x-y)} f(y) \d y =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi D_N(x-y) f(y) \d y"/></p>
+</div><p>We can now calculate the difference between the Fourier series and the function
+value:</p>
+<div class="math">
+<p><img src="../_images/math/da781f6cf0fa81740f2a253d54c1269a5e816dee.png" alt="\lim_{N\to\infty} \int_{-\pi}^\pi D_N(x-y) f(y) \d y - f(x) =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi D_N(x-y) \left(f(y)-f(x)\right) \d y =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi
+    {\sin\left(\left(N+\half\right)(x-y)\right)
+        \over 2\pi \sin\left(x-y\over2\right)}
+    \left(f(y)-f(x)\right) \d y =
+
+= \lim_{N\to\infty} \int_{-\pi}^\pi {f(y)-f(x)\over
+    2\pi\sin\left(x-y\over 2\right)}
+    \sin\left(\left(N+\half\right)(x-y)\right) \d y =
+
+= \lim_{N\to\infty} \int_{x-\pi}^{x+\pi} {f(x-u)-f(x)\over
+    2\pi\sin\left(u\over 2\right)}
+    \sin\left(\left(N+\half\right)u\right) \d u =
+
+= \lim_{N\to\infty} \int_{x-\pi}^{x+\pi} h(u)
+    \sin\left(\left(N+\half\right)u\right) \d u = 0"/></p>
+</div><p>where <img class="math" src="../_images/math/6e6b2694da022bcca7f48f95fa09c497b834794c.png" alt="h(u)"/> is finite and well behaved at the origin <img class="math" src="../_images/math/2f1894187e6fd29288de8ed222f4587b87d2bfa1.png" alt="u=0"/>:</p>
+<div class="math">
+<p><img src="../_images/math/e1556cecb100d323a57e5b23fba1b578ce4a67fd.png" alt="h(u) = {f(x-u)-f(x)\over 2\pi\sin\left(u\over 2\right)}
+    = - {f'(x)\over \pi} + {f''(x)\over 2\pi} u + O(u^2)"/></p>
+</div><p>The integral is zero because the more and more oscillating <img class="math" src="../_images/math/6fb300dacfcde1b57ad070409262b1743e0cd966.png" alt="\sin"/> function
+cancels the contributions of positive and negative parts of the integrand. This
+can be proven explicitly as follows using the fact that <img class="math" src="../_images/math/1f745cf4286f88b236750e1e9a8abe3dacd9dc39.png" alt="h(x)"/>, <img class="math" src="../_images/math/2d1dba65e36bca89a1631f098f9c6ae226671ba6.png" alt="h'(x)"/> and
+<img class="math" src="../_images/math/a6cbf7394f27b67ed6f8f6edf2b34b3bf4c258dd.png" alt="\cos(Nx)"/> is bounded as <img class="math" src="../_images/math/f296b863454e7f6b2fd20ff63cab1fff689db3d1.png" alt="N\to\infty"/>:</p>
+<div class="math">
+<p><img src="../_images/math/ebf0c87fa0c5340dfcea6a5f442fda843606c221.png" alt="\lim_{N\to\infty} \int_a^b h(x) \sin(Nx)\,\d x =
+
+= \lim_{N\to\infty}{1\over N} \left(\left[-h(x)\cos(Nx)\right]_a^b
++ \int_a^b h'(x) \cos(Nx)\,\d x \right) = 0"/></p>
+</div><p>The conditions that we used are that the function <img class="math" src="../_images/math/6e6b2694da022bcca7f48f95fa09c497b834794c.png" alt="h(u)"/> can be integrated,
+which is satisfied if e.g. <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> has derivatives. These conditions can be
+loosened in various ways.</p>
+</div>
+</div>
 </div>
 <div class="section" id="fourier-transform-of-a-periodic-function-e-g-in-a-crystal">
 <h1>Fourier Transform of a Periodic Function (e.g. in a Crystal)<a class="headerlink" href="#fourier-transform-of-a-periodic-function-e-g-in-a-crystal" title="Permalink to this headline">¶</a></h1>
@@ -253,7 +722,7 @@ n_3)=n_1\mathbf{a}_1+n_2\mathbf{a}_2+n_3\mathbf{a}_3"/> are the crystal
 translation vectors. As such, the Fourier transform in <a href="#equation-fourier1">(1)</a> is
 infinite, but it can be made finite by the following definition:</p>
 <div class="math" id="equation-fourier2">
-<p><span class="eqno">(2)</span><img src="../_images/math/32bd4ecf75020161f9e3e1727ef1326c814164a2.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\bomega)
+<p><span class="eqno">(9)</span><img src="../_images/math/32bd4ecf75020161f9e3e1727ef1326c814164a2.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\bomega)
     = {1\over\Omega_\mathrm{crystal}}\int_{\Omega_\mathrm{crystal}} f(\mathbf{x}) e^{-i\bomega \cdot
         \mathbf{x}}\,\d^3 x =
 
@@ -275,7 +744,7 @@ infinite, but it can be made finite by the following definition:</p>
 </div><p>This assumes that the wave vector <img class="math" src="../_images/math/4c4f42d087c7349c44f73af6a2af9458633332f8.png" alt="\bomega=\mathbf{G}"/> is equal to the
 reciprocal space vectors <img class="math" src="../_images/math/597c852cd8d4be79f01a80b6317d2096dd10c544.png" alt="\mathbf{G}"/>, defined by</p>
 <div class="math" id="equation-G">
-<p><span class="eqno">(3)</span><img src="../_images/math/3c13d5c59aafdeec5682eed26a72ab37187bd70c.png" alt="e^{i\mathbf{G} \cdot \mathbf{T}(\mathbf{n})} = 1\,,"/></p>
+<p><span class="eqno">(10)</span><img src="../_images/math/3c13d5c59aafdeec5682eed26a72ab37187bd70c.png" alt="e^{i\mathbf{G} \cdot \mathbf{T}(\mathbf{n})} = 1\,,"/></p>
 </div><p>because then <img class="math" src="../_images/math/70b793518ba7d407408ba9bb3c4504bc3aaa6847.png" alt="\sum_\mathbf{n} e^{-i\bomega \cdot \mathbf{T}(\mathbf{n})} =
 \sum_\mathbf{n} 1 = N_\mathrm{cell}"/>.</p>
 <p>For <img class="math" src="../_images/math/9538fa0648d848bccec22a5a3e49d7d5233362aa.png" alt="\bomega\neq\mathbf{G}"/>, the expression <img class="math" src="../_images/math/0cdd003ae40e0bcabf8783d55978587e15cff6ea.png" alt="{1\over\Omega_\mathrm{crystal}}
@@ -287,11 +756,11 @@ only non-zero Fourier components <img class="math" src="../_images/math/122d4fd9
 Fourier components of a given function are non-zero for some
 <img class="math" src="../_images/math/9538fa0648d848bccec22a5a3e49d7d5233362aa.png" alt="\bomega\neq\mathbf{G}"/>, then the function is not periodic.</p>
 <p>Summary: the only difference between the crystal Fourier transform
-<a href="#equation-fourier2">(2)</a> and the usual Fourier transform <a href="#equation-fourier1">(1)</a> is the
-<img class="math" src="../_images/math/567f4bec3bb3c201050a68653a0daaecc25ea049.png" alt="\Omega_\mathrm{crystal}"/> factor. The Fourier transform <a href="#equation-fourier2">(2)</a> of a
+<a href="#equation-fourier2">(9)</a> and the usual Fourier transform <a href="#equation-fourier1">(1)</a> is the
+<img class="math" src="../_images/math/567f4bec3bb3c201050a68653a0daaecc25ea049.png" alt="\Omega_\mathrm{crystal}"/> factor. The Fourier transform <a href="#equation-fourier2">(9)</a> of a
 periodic function is nonzero only for <img class="math" src="../_images/math/400fcf5ba719b5d0f22ef845317f14bb5d75762a.png" alt="\omega=\mathbf{G}"/> and is equal to:</p>
 <div class="math" id="equation-fourier2b">
-<p><span class="eqno">(4)</span><img src="../_images/math/1a3afbe2f0e43382ad62b5ed586698bc1615b1ce.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\mathbf{G})
+<p><span class="eqno">(11)</span><img src="../_images/math/1a3afbe2f0e43382ad62b5ed586698bc1615b1ce.png" alt="F[f(\mathbf{x})] \equiv \tilde f(\mathbf{G})
     = {1\over\Omega_\mathrm{cell}} \int_{\Omega_\mathrm{cell}} f(\mathbf{x})
     e^{-i\mathbf{G} \cdot \mathbf{x}}\,\d^3 x"/></p>
 </div><p>Note: the fact that the sum is bounded follows from:</p>
@@ -309,10 +778,10 @@ does not converge, because it oscillates, but the point is that the partial sum
 is always bounded). For <img class="math" src="../_images/math/119e65d218eae53f30bc36405bb491214aa2ce16.png" alt="k=2\pi"/>, the sum is infinite, because <img class="math" src="../_images/math/53ba5cb41fcf1e1b153125a504aab4fd130fd33d.png" alt="e^{i2\pi n} =
 1"/>.</p>
 <p>Since we divided the direct Fourier transform in <a href="#equation-fourier1">(1)</a> by
-<img class="math" src="../_images/math/567f4bec3bb3c201050a68653a0daaecc25ea049.png" alt="\Omega_\mathrm{crystal}"/> to obtain <a href="#equation-fourier2">(2)</a>, we need to multiply the
+<img class="math" src="../_images/math/567f4bec3bb3c201050a68653a0daaecc25ea049.png" alt="\Omega_\mathrm{crystal}"/> to obtain <a href="#equation-fourier2">(9)</a>, we need to multiply the
 inverse transform in <a href="#equation-fourier1">(1)</a> by <img class="math" src="../_images/math/567f4bec3bb3c201050a68653a0daaecc25ea049.png" alt="\Omega_\mathrm{crystal}"/>:</p>
 <div class="math" id="equation-fourier2b_inv">
-<p><span class="eqno">(5)</span><img src="../_images/math/a08ab937558651e45b27e1b9b4034d46568bce14.png" alt="F^{-1}[\tilde f(\bomega)] = f(\mathbf{x})
+<p><span class="eqno">(12)</span><img src="../_images/math/a08ab937558651e45b27e1b9b4034d46568bce14.png" alt="F^{-1}[\tilde f(\bomega)] = f(\mathbf{x})
     = {\Omega_\mathrm{crystal}\over(2\pi)^3}\int_{-\infty}^{\infty}
     \tilde f(\bomega) e^{+i\bomega \cdot \mathbf{x}}\,\d^3 \omega
     =
@@ -350,7 +819,7 @@ inverse transform in <a href="#equation-fourier1">(1)</a> by <img class="math" s
 =\tilde f(\mathbf{G})\delta(\boldsymbol\omega) \,."/></p>
 </div><p>Alternatively, if one is only interested to show that the inverse
 transformation works, one can directly substitute the direct formula
-<a href="#equation-fourier2b">(4)</a> into <a href="#equation-fourier2b_inv">(5)</a> as follows:</p>
+<a href="#equation-fourier2b">(11)</a> into <a href="#equation-fourier2b_inv">(12)</a> as follows:</p>
 <div class="math">
 <p><img src="../_images/math/680a061bf5dadb822706f4f22f931e3a3925e337.png" alt="F^{-1}[\tilde f(\mathbf{G})] = \sum_{\mathbf{G}}
     \tilde f(\mathbf{G}) e^{+i\mathbf{G} \cdot \mathbf{x}} =
@@ -385,17 +854,17 @@ transformation works, one can directly substitute the direct formula
 the volume of a unit cell is <img class="math" src="../_images/math/5883634311503d62c53079edc560e3ef81a14910.png" alt="\Omega_\mathrm{cell}=L"/>
 and the reciprocal space vectors <img class="math" src="../_images/math/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" alt="G"/> are defined using
 <img class="math" src="../_images/math/a5296d39bc0b0abfa0a875f4b2a865ddf9ce7a4b.png" alt="e^{iGL}=1"/> from which <img class="math" src="../_images/math/91caf48ac43dfb3a5e11db79a931705309181128.png" alt="G_k = {2\pi\over L} k"/>.
-The equation <a href="#equation-fourier2b">(4)</a> then becomes:</p>
+The equation <a href="#equation-fourier2b">(11)</a> then becomes:</p>
 <div class="math" id="equation-fourier2b_1d">
-<p><span class="eqno">(6)</span><img src="../_images/math/e82fdf5867cecce4b739b2ec87d630cdddccf742.png" alt="F[f(x)] \equiv \tilde f(G_k) \equiv c_k
+<p><span class="eqno">(13)</span><img src="../_images/math/e82fdf5867cecce4b739b2ec87d630cdddccf742.png" alt="F[f(x)] \equiv \tilde f(G_k) \equiv c_k
     = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
     e^{-i G_k x}\,\d x
     = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
     e^{-i(2\pi k x/L)}\,\d x"/></p>
 </div><p>This is exactly the definition of a Fourier series (<img class="math" src="../_images/math/3bd87559f4e4c9af40246a0fdbafe6feab507414.png" alt="c_k"/> are the Fourier
-coefficients). The inverse transform follows from <a href="#equation-fourier2b_inv">(5)</a>:</p>
+coefficients). The inverse transform follows from <a href="#equation-fourier2b_inv">(12)</a>:</p>
 <div class="math" id="equation-fourier2b_1d_inv">
-<p><span class="eqno">(7)</span><img src="../_images/math/00466c51c884eff8e20249205ec08488313281f1.png" alt="f(x) = \sum_{k=-\infty}^\infty \tilde f(G_k) e^{i G_k x}
+<p><span class="eqno">(14)</span><img src="../_images/math/00466c51c884eff8e20249205ec08488313281f1.png" alt="f(x) = \sum_{k=-\infty}^\infty \tilde f(G_k) e^{i G_k x}
     = \sum_{k=-\infty}^\infty c_k e^{i(2\pi kx/L)}"/></p>
 </div></div>
 </div>
@@ -413,7 +882,7 @@ k=0, 1, \dots, (N-1)/2, -(N-1)/2, -(N-1)/2+1, \dots, -1 \quad\mbox{if $N$ is odd
 
 N=9 \quad \mbox{we get} \quad k=0, 1, 2, 3, 4, -4, -3, -2, -1"/></p>
 </div><p>The real space function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> is sampled at points <img class="math" src="../_images/math/173a8b9a8b7af48f153fa5eef0aa0534d51a1b2a.png" alt="x_n={L\over N}n"/> for
-<img class="math" src="../_images/math/6b5569bde634dd283ce1bd02f8cea61a6df55da1.png" alt="n=-N/2,\dots,N/2-1"/> and the equation <a href="#equation-fourier2b_1d">(6)</a> becomes:</p>
+<img class="math" src="../_images/math/6b5569bde634dd283ce1bd02f8cea61a6df55da1.png" alt="n=-N/2,\dots,N/2-1"/> and the equation <a href="#equation-fourier2b_1d">(13)</a> becomes:</p>
 <div class="math">
 <p><img src="../_images/math/df90794583716e6e7642056738d13ba1dd64f77d.png" alt="c_k
     = {1\over L} \int_{-{L\over2}}^{L\over2} f(x)
@@ -428,7 +897,7 @@ N=9 \quad \mbox{we get} \quad k=0, 1, 2, 3, 4, -4, -3, -2, -1"/></p>
     {1\over N}\sum_{n=-N/2}^{N/2-1}
     f(x_n)
     e^{-2\pi i {k\over N} n}"/></p>
-</div><p>The equation <a href="#equation-fourier2b_1d_inv">(7)</a> becomes:</p>
+</div><p>The equation <a href="#equation-fourier2b_1d_inv">(14)</a> becomes:</p>
 <div class="math">
 <p><img src="../_images/math/f4a50e44d8358b38a1c994c1ea2d7c0ca97d2457.png" alt="f(x_n) = \sum_{k=-\infty}^\infty c_k e^{i(2\pi kx_n/L)} =
 
@@ -489,15 +958,15 @@ sums can then be rearranged:</p>
     = \sum_{k=0}^{N-1} c_k e^{2\pi i {k\over N} n}"/></p>
 </div><p>Summary, the direct transform:</p>
 <div class="math" id="equation-dft">
-<p><span class="eqno">(8)</span><img src="../_images/math/f7b1656063139d37df79227d807e2a9f355c941d.png" alt="c_k
+<p><span class="eqno">(15)</span><img src="../_images/math/f7b1656063139d37df79227d807e2a9f355c941d.png" alt="c_k
     = {1\over N} \sum_{n=0}^{N-1} f(x_n) e^{-2\pi i {k\over N} n}"/></p>
 </div><p>and inverse transform:</p>
 <div class="math" id="equation-idft">
-<p><span class="eqno">(9)</span><img src="../_images/math/835b270923781b5ac60d13aab058abfb1429a283.png" alt="f(x_n)
+<p><span class="eqno">(16)</span><img src="../_images/math/835b270923781b5ac60d13aab058abfb1429a283.png" alt="f(x_n)
     = \sum_{k=0}^{N-1} c_k e^{2\pi i {k\over N} n}\,,"/></p>
-</div><p>with <img class="math" src="../_images/math/173a8b9a8b7af48f153fa5eef0aa0534d51a1b2a.png" alt="x_n={L\over N}n"/>. In the limit <img class="math" src="../_images/math/f296b863454e7f6b2fd20ff63cab1fff689db3d1.png" alt="N\to\infty"/>, the equation <a href="#equation-dft">(8)</a>
-becomes <a href="#equation-fourier2b_1d">(6)</a> and equation <a href="#equation-idft">(9)</a> becomes
-<a href="#equation-fourier2b_1d_inv">(7)</a> and as we increase <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>, the discrete Fourier
+</div><p>with <img class="math" src="../_images/math/173a8b9a8b7af48f153fa5eef0aa0534d51a1b2a.png" alt="x_n={L\over N}n"/>. In the limit <img class="math" src="../_images/math/f296b863454e7f6b2fd20ff63cab1fff689db3d1.png" alt="N\to\infty"/>, the equation <a href="#equation-dft">(15)</a>
+becomes <a href="#equation-fourier2b_1d">(13)</a> and equation <a href="#equation-idft">(16)</a> becomes
+<a href="#equation-fourier2b_1d_inv">(14)</a> and as we increase <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>, the discrete Fourier
 transform numerically converges towards the Fourier series results.</p>
 <p>The <img class="math" src="../_images/math/788e13fd256ea8c4554d7b13d017b2b514638fdc.png" alt="{1\over N}"/> factor is sometimes moved from the direct to the inverse
 transform, but then the correspondence with Fourier series is broken (one has
@@ -505,14 +974,14 @@ to divide and multiply by <img class="math" src="../_images/math/fc97ef67268cd4e
 </div>
 <div class="section" id="fast-fourier-transform-fft">
 <h1>Fast Fourier Transform (FFT)<a class="headerlink" href="#fast-fourier-transform-fft" title="Permalink to this headline">¶</a></h1>
-<p>We write the discrete Fourier transform <a href="#equation-dft">(8)</a> using a notation more commonly
+<p>We write the discrete Fourier transform <a href="#equation-dft">(15)</a> using a notation more commonly
 used for FFTs:</p>
 <div class="math">
 <p><img src="../_images/math/4f6233b578704b6685d646e5664167fed8539951.png" alt="X(k) = \sum_{n=0}^{N-1} x(n) W_N^{kn}"/></p>
 </div><p>where:</p>
 <div class="math">
 <p><img src="../_images/math/59e19e3e5b04cc3683febe481557c473338d4f82.png" alt="W_N = e^{-2\pi i / N}"/></p>
-</div><p>Similarly, the inverse discrete Fourier transform <a href="#equation-idft">(9)</a> becomes:</p>
+</div><p>Similarly, the inverse discrete Fourier transform <a href="#equation-idft">(16)</a> becomes:</p>
 <div class="math">
 <p><img src="../_images/math/c6720f4aa318c671a63540fc298eb9e268000680.png" alt="x(n) = {1\over N} \sum_{k=0}^{N-1} X(k) W_N^{-kn}"/></p>
 </div><div class="section" id="decimation-in-frequency-dif">
@@ -776,8 +1245,20 @@ means the Fourier transform.</p>
   <ul>
 <li><a class="reference internal" href="#">Fourier Transform</a><ul>
 <li><a class="reference internal" href="#shift-theorem">Shift Theorem</a></li>
+<li><a class="reference internal" href="#scaling">Scaling</a></li>
 <li><a class="reference internal" href="#derivative">Derivative</a></li>
+<li><a class="reference internal" href="#convolution">Convolution</a></li>
 <li><a class="reference internal" href="#radial-fourier-transform">Radial Fourier Transform</a></li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#rectangular-function">Rectangular Function</a></li>
+<li><a class="reference internal" href="#dirichlet-kernel">Dirichlet Kernel</a></li>
+<li><a class="reference internal" href="#dirac-comb-shah-function">Dirac Comb (Shah) Function</a></li>
+<li><a class="reference internal" href="#periodic-summation">Periodic Summation</a></li>
+<li><a class="reference internal" href="#poisson-summation-formula">Poisson Summation Formula</a></li>
+<li><a class="reference internal" href="#fourier-series">Fourier Series</a></li>
+<li><a class="reference internal" href="#convergence-of-fourier-series">Convergence of Fourier Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#fourier-transform-of-a-periodic-function-e-g-in-a-crystal">Fourier Transform of a Periodic Function (e.g. in a Crystal)</a><ul>

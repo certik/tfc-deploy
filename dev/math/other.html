@@ -49,6 +49,7 @@
         \newcommand{\d}{\mathrm{d}}
         \newcommand{\bomega}{\vec\omega}
         \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
 
         %operators
         \newcommand{\diag}{\mathrm{diag}}
@@ -134,6 +135,11 @@ complex expressions involving the delta function like <img class="math" src="../
 <p><img src="../_images/math/5407a657d8bdebc4aac76dd8ca5a000b51a43dc6.png" alt="\theta(b-t) \to \theta(\infty - t) = 1
 
 \theta(t-a) \to \theta(t - (-\infty)) = \theta(t+\infty) = 1"/></p>
+</div><p>Another integral that converges to a delta function is:</p>
+<div class="math">
+<p><img src="../_images/math/7fe8e46a38659b03ba8ea5c742ea07bfef8255dd.png" alt="{1\over 2\pi} \int_{-\infty}^\infty e^{i\omega x} \d x
+    = \lim_{L\to\infty} {1\over 2\pi} \int_{-L}^L e^{i\omega x} \d x
+    = \lim_{L\to\infty} {\sin \omega L \over \pi \omega} = \delta(\omega)"/></p>
 </div></div>
 <div class="section" id="distributions">
 <h1>Distributions<a class="headerlink" href="#distributions" title="Permalink to this headline">¶</a></h1>
@@ -230,7 +236,26 @@ c}\right)\d x
 =\mathnot{{\delta(\varphi(x))\over|c|}}
 =
 \int {\delta(x)\over |c|}\varphi(x)\d x"/></p>
-</div></div>
+</div><p>To prove that <img class="math" src="../_images/math/cf6dbe16831e74cd346cddfbc05d8aeb9facbc2d.png" alt="\lim_{L\to\infty} {1\over\pi x}\sin(L x)=\delta(x)"/> we do the
+following calculation:</p>
+<div class="math">
+<p><img src="../_images/math/a55ee2fd473ee555b72026dbaeda176bd873c781.png" alt="\left[\int_{-\infty}^\infty \lim_{L\to\infty} {1\over\pi x}\sin(L x)
+    \varphi(x) \d x\right] - \varphi(0) =
+
+= \lim_{L\to\infty} \int_{-\infty}^\infty {1\over\pi x}\sin(L x)
+    (\varphi(x)-\varphi(0)) \d x =
+
+= \lim_{L\to\infty} {1\over\pi} \int_{-\infty}^\infty
+    {\varphi(x)-\varphi(0)\over x} \sin(L x) \d x =
+
+= \lim_{L\to\infty} {1\over\pi} \int_{-\infty}^\infty
+    h(x) \sin(L x) \d x = 0"/></p>
+</div><p>where the function <img class="math" src="../_images/math/a62cf3d1951aa21dbe0bfa4d291b542382932462.png" alt="h(x) = {\varphi(x)-\varphi(0)\over x}"/> is bounded and <img class="math" src="../_images/math/4007aeb1bb20bf66f6a5a303cec2c20a64fb3b56.png" alt="h(0)
+=\lim_{x\to0}{\varphi(x)-\varphi(0)\over x}=\varphi'(0)"/> is finite since the
+test function <img class="math" src="../_images/math/5b6475d5b6b7e8f05c0d5fee775ef5053fe89d79.png" alt="\varphi(x)"/> is infinitely differentiable. From the
+Riemann–Lebesgue lemma, the integral then converges towards zero as
+<img class="math" src="../_images/math/a14b5226c31a66aa82c3b8ee37d5d459a1814f8e.png" alt="L\to\infty"/>.</p>
+</div>
 <div class="section" id="variations-and-functional-derivatives">
 <span id="index-0"></span><h1>Variations and Functional Derivatives<a class="headerlink" href="#variations-and-functional-derivatives" title="Permalink to this headline">¶</a></h1>
 <p>Variations and functional derivatives are generalization of differentials and

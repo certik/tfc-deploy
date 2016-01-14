@@ -1,0 +1,1594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Delta Function &mdash; Theoretical Physics Reference 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
+    <link rel="up" title="Mathematics" href="main.html" />
+    <link rel="next" title="Legendre Polynomials" href="spherical-harmonics.html" />
+    <link rel="prev" title="Periodic Functions" href="trig.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28893880-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+    <div style="display:none">
+    \(
+        \newcommand{\d}{\mathrm{d}}
+        \newcommand{\bomega}{\vec\omega}
+        \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
+
+        %operators
+        \newcommand{\diag}{\mathrm{diag}}
+        \newcommand{\sinc}{\mathrm{sinc}}
+        \newcommand{\Sh}{ {\large\style{font-family:Times}{\text{Ш}}} }
+        \newcommand{\res}{\mathrm{Res}}
+    \)
+    </div>
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="trig.html" title="Periodic Functions"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="delta-function">
+<h1>Delta Function<a class="headerlink" href="#delta-function" title="Permalink to this headline">¶</a></h1>
+<p>Delta function <span class="math">\(\delta(x)\)</span> is defined such that this relation holds:</p>
+<div class="math" id="equation-deltadef">
+<span class="eqno">(1)</span>\[   \int f(x)\delta(x-t)\d x=f(t)\]</div>
+<p>No such function exists, but one can find many sequences &#8220;converging&#8221; to a delta function:</p>
+<div class="math" id="equation-deltalim">
+<span class="eqno">(2)</span>\[   \lim_{\alpha\to\infty}\delta_\alpha(x) = \delta(x)\]</div>
+<p>more precisely:</p>
+<div class="math" id="equation-deltaprec">
+<span class="eqno">(3)</span>\[   \lim_{\alpha\to\infty}\int f(x)\delta_\alpha(x)\d x = \int f(x)\lim_{\alpha\to\infty}\delta_\alpha(x)\d x = f(0)\]</div>
+<p>one example of such a sequence is:</p>
+<div class="math">
+\[\delta_\alpha(x) = {1\over\pi x}\sin(\alpha x)\]</div>
+<p>It&#8217;s clear that <a href="#equation-deltaprec">(3)</a> holds for any well behaved function <span class="math">\(f(x)\)</span>.
+Some mathematicians like to say that it&#8217;s incorrect to use such a notation when
+in fact the integral <a href="#equation-deltadef">(1)</a> doesn&#8217;t &#8220;exist&#8221;, but we will not follow
+their approach, because it is not important if something &#8220;exists&#8221; or not,
+but rather if it is clear what we mean by our notation: <a href="#equation-deltadef">(1)</a> is a
+shorthand for <a href="#equation-deltaprec">(3)</a> and <a href="#equation-deltalim">(2)</a> gets a mathematically rigorous
+meaning when you integrate both sides and use <a href="#equation-deltadef">(1)</a> to arrive at
+<a href="#equation-deltaprec">(3)</a>.  Thus one uses the relations <a href="#equation-deltadef">(1)</a>, <a href="#equation-deltalim">(2)</a>,
+<a href="#equation-deltaprec">(3)</a> to derive all properties of the delta function.</p>
+<p>Let&#8217;s give an example. Let <span class="math">\({\bf\hat r}\)</span> be the unit vector in 3D and we can
+label it using spherical coordinates <span class="math">\({\bf\hat r}={\bf\hat r}(\theta,\phi)\)</span>.
+We can also express it in cartesian coordinates as <span class="math">\({\bf\hat
+r}(\theta,\phi)=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)\)</span>.</p>
+<div class="math" id="equation-deltar">
+<span class="eqno">(4)</span>\[   f({\bf\hat r'})=\int\delta({\bf\hat r}-{\bf\hat r'})f({\bf\hat r})\,\d {\bf\hat r}\]</div>
+<p>Expressing <span class="math">\(f({\bf\hat r})=f(\theta,\phi)\)</span> as a function of <span class="math">\(\theta\)</span> and
+<span class="math">\(\phi\)</span> we have</p>
+<div class="math" id="equation-deltaangles">
+<span class="eqno">(5)</span>\[   f(\theta',\phi')=\int\delta(\theta-\theta')\delta(\phi-\phi') f(\theta,\phi)\,\d\theta\d\phi\]</div>
+<p>Expressing <a href="#equation-deltar">(4)</a> in spherical coordinates we get</p>
+<div class="math">
+\[f(\theta',\phi')=\int\delta({\bf\hat r}-{\bf\hat r'}) f(\theta,\phi)\sin\theta\,\d\theta\d\phi\]</div>
+<p>and comparing to <a href="#equation-deltaangles">(5)</a> we finally get</p>
+<div class="math">
+\[\delta({\bf\hat r}-{\bf\hat r'})={1\over\sin\theta} \delta(\theta-\theta')\delta(\phi-\phi')\]</div>
+<p>In exactly the same manner we get</p>
+<div class="math">
+\[\delta({\bf r}-{\bf r'})=\delta({\bf\hat r}-{\bf\hat r'}) {\delta(\rho-\rho')\over\rho^2}\]</div>
+<p>See also <a href="#equation-functionalderdel">(8)</a> for an example of how to deal with more
+complex expressions involving the delta function like <span class="math">\(\delta^2(x)\)</span>.</p>
+<p>When integrating over finite interval, this formula is very useful:</p>
+<div class="math">
+\[\int_a^b f(x)\delta(x-t)\d x = f(t) \theta(b-t) \theta(t-a)\]</div>
+<p>in other words, the integral vanishes unless <span class="math">\(a &lt; t &lt; b\)</span>. In the limit <span class="math">\(a\to
+-\infty\)</span> and <span class="math">\(b\to\infty\)</span> we get:</p>
+<div class="math">
+\[\theta(b-t) \to \theta(\infty - t) = 1\]\[\theta(t-a) \to \theta(t - (-\infty)) = \theta(t+\infty) = 1\]</div>
+<p>Another integral that converges to a delta function is:</p>
+<div class="math">
+\[{1\over 2\pi} \int_{-\infty}^\infty e^{i\omega x} \d x
+    = \lim_{L\to\infty} {1\over 2\pi} \int_{-L}^L e^{i\omega x} \d x
+    = \lim_{L\to\infty} {\sin \omega L \over \pi \omega} = \delta(\omega)\]</div>
+</div>
+<div class="section" id="distributions">
+<h1>Distributions<a class="headerlink" href="#distributions" title="Permalink to this headline">¶</a></h1>
+<p>Some mathematicians like to use distributions and a mathematical notation for
+that, which I think is making things less clear, but nevertheless it&#8217;s
+important to understand it too, so the notation is explained in this section,
+but I discourage to use it &#8211; I suggest to only use the physical notation as
+explained below. The math notation below is put into quotation marks, so that
+it&#8217;s not confused with the physical notation.</p>
+<p>The distribution is a functional and each function <span class="math">\(f(x)\)</span> can be identified
+with a distribution <span class="math">\(\mathnot{T_f}\)</span> that it generates using this definition
+(<span class="math">\(\varphi(x)\)</span>
+is a test function):</p>
+<div class="math">
+\[\mathnot{T_f(\phi(x))} \equiv \int f(x)\varphi(x) \d x \equiv
+\mathnot{f(\varphi(x))} \equiv \mathnot{(f(x), \varphi(x))}\]</div>
+<p>besides that, one can also define distributions that can&#8217;t be identified with
+regular functions, one example is a delta distribution (Dirac delta function):</p>
+<div class="math">
+\[\mathnot{\delta(\phi(x))} \equiv \phi(0) \equiv \int \delta(x) \phi(x) \d x\]</div>
+<p>The last integral is not used in mathematics, in physics on the other hand, the
+first expressions (<span class="math">\(\mathnot{\delta(\phi(x))}\)</span>) is not used, so <span class="math">\(\delta(x)\)</span> always means
+that you have to integrate it, as explained in the previous section, so it
+behaves like a regular function (except that such a function doesn&#8217;t exist and
+the precise mathematical meaning is only after you integrate it, or through the
+identification above with distributions).</p>
+<p>One then defines common operations via acting on the generating function, then
+observes the pattern and defines it for all distributions. For example
+differentiation:</p>
+<div class="math">
+\[\mathnot{{\d\over\d x}T_f(\varphi)} =
+\mathnot{T_{f'}(\varphi)} =
+\int f'\varphi \d x =
+-\int f\varphi' \d x =
+\mathnot{-T_f(\varphi')}\]</div>
+<p>so:</p>
+<div class="math">
+\[\mathnot{{\d\over\d x}T(\varphi)} =
+\mathnot{-T(\varphi')}\]</div>
+<p>Multiplication:</p>
+<div class="math">
+\[\mathnot{gT_f(\varphi)} =
+\mathnot{T_{gf}(\varphi)} =
+\int gf\varphi \d x =
+\mathnot{T_f(g\varphi)}\]</div>
+<p>so:</p>
+<div class="math">
+\[\mathnot{gT(\varphi)} =
+\mathnot{T(g\varphi)}\]</div>
+<p>Fourier transform:</p>
+<div class="math">
+\[\mathnot{FT_f(\varphi)} =
+\mathnot{T_{Ff}(\varphi)} =
+\int F(f)\varphi \d x =\]\[=\int\left[\int e^{-ikx} f(k) \d k\right] \varphi(x) \d x
+=\int f(k)\left[\int e^{-ikx} \varphi(x) \d x\right] \d k
+=\int f(x)\left[\int e^{-ikx} \varphi(k) \d k\right] \d x
+=\]\[=
+\int f F(\varphi) \d x =
+\mathnot{T_f(F\varphi)}\]</div>
+<p>so:</p>
+<div class="math">
+\[\mathnot{FT(\varphi)} =
+\mathnot{T(F\varphi)}\]</div>
+<p>But as you can see, the notation is just making things more complex, since it&#8217;s
+enough to just work with the integrals and forget about the rest. One can then
+even omit the integrals, with the understanding that they are implicit.</p>
+<p>Some more examples:</p>
+<div class="math">
+\[\int \delta(x-x_0)\varphi(x) \d x = \int \delta(x)\varphi(x+x_0) \d x
+= \varphi(x_0) \equiv \mathnot{\delta(\varphi(x+x_0))}\]</div>
+<p>Proof of <span class="math">\(\delta(-x) = \delta(x)\)</span>:</p>
+<div class="math">
+\[\int_{-\infty}^\infty \delta(-x)\varphi(x)\d x =
+-\int_{\infty}^{-\infty} \delta(y)\varphi(-y)\d y =
+\int_{-\infty}^\infty \delta(x)\varphi(-x)\d x
+\equiv \mathnot{\delta(\varphi(-x))} = \varphi(0)
+=\mathnot{\delta(\phi(x))}
+\equiv
+\int_{-\infty}^\infty \delta(x)\varphi(x)\d x\]</div>
+<p>Proof of <span class="math">\(x\delta(x) = 0\)</span>:</p>
+<div class="math">
+\[\int x\delta(x)\varphi(x)\d x = \mathnot{\delta(x\varphi(x))}
+= 0 \cdot \varphi(0) = 0\]</div>
+<p>Proof of <span class="math">\(\delta(cx) = {\delta(x)\over |c|}\)</span>:</p>
+<div class="math">
+\[\int \delta(cx)\varphi(x)\d x = {1\over|c|}\int\delta(x)\varphi\left({x\over
+c}\right)\d x
+=\mathnot{\delta\left(\varphi\left({x\over c}\right)\over|c|\right)}
+={\delta(0)\over|c|}
+=\mathnot{{\delta(\varphi(x))\over|c|}}
+=
+\int {\delta(x)\over |c|}\varphi(x)\d x\]</div>
+<p>To prove that <span class="math">\(\lim_{L\to\infty} {1\over\pi x}\sin(L x)=\delta(x)\)</span> we do the
+following calculation:</p>
+<div class="math">
+\[\left[\int_{-\infty}^\infty \lim_{L\to\infty} {1\over\pi x}\sin(L x)
+    \varphi(x) \d x\right] - \varphi(0) =\]\[= \lim_{L\to\infty} \int_{-\infty}^\infty {1\over\pi x}\sin(L x)
+    (\varphi(x)-\varphi(0)) \d x =\]\[= \lim_{L\to\infty} {1\over\pi} \int_{-\infty}^\infty
+    {\varphi(x)-\varphi(0)\over x} \sin(L x) \d x =\]\[= \lim_{L\to\infty} {1\over\pi} \int_{-\infty}^\infty
+    h(x) \sin(L x) \d x = 0\]</div>
+<p>where the function <span class="math">\(h(x) = {\varphi(x)-\varphi(0)\over x}\)</span> is bounded and <span class="math">\(h(0)
+=\lim_{x\to0}{\varphi(x)-\varphi(0)\over x}=\varphi'(0)\)</span> is finite since the
+test function <span class="math">\(\varphi(x)\)</span> is infinitely differentiable. From the
+Riemann–Lebesgue lemma, the integral then converges towards zero as
+<span class="math">\(L\to\infty\)</span>.</p>
+</div>
+<div class="section" id="variations-and-functional-derivatives">
+<span id="index-0"></span><h1>Variations and Functional Derivatives<a class="headerlink" href="#variations-and-functional-derivatives" title="Permalink to this headline">¶</a></h1>
+<p>Variations and functional derivatives are generalization of differentials and
+partial derivatives to functionals. It is important to master this subject just
+like regular differentials/derivatives in calculus.</p>
+<div class="section" id="functions-of-one-variable">
+<h2>Functions of One Variable<a class="headerlink" href="#functions-of-one-variable" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s first review differentials and derivatives of functions of one variable.
+We will use an approach that directly generalizes to multivariable functions
+and functionals.
+The differential <span class="math">\(\d f\)</span> is defined as:</p>
+<div class="math">
+\[\d f
+    \equiv \lim_{\varepsilon\to0} {f(x+\varepsilon h)
+        -f(x)\over\varepsilon}
+    = a h\]</div>
+<p>Last equality follows from the fact, that the limit is a linear function of
+<span class="math">\(h\)</span>:</p>
+<div class="math">
+\[\lim_{\varepsilon\to0} {f(x+\varepsilon h) -f(x)\over\varepsilon}
+    = \lim_{\eta\to0} {f(x+\eta) -f(x)\over\left(\eta\over h\right)}
+    = \left(\lim_{\eta\to0} {f(x+\eta) -f(x)\over\eta}\right) h\]</div>
+<p>Where we used the substitution <span class="math">\(\eta = \varepsilon h\)</span>.
+We define the derivative <span class="math">\(\d f\over \d x\)</span> as:</p>
+<div class="math">
+\[{\d f\over \d x} = a\]</div>
+<p>To get a formula for <span class="math">\({\d f\over \d x}\)</span>, we set <span class="math">\(h=1\)</span> and get:</p>
+<div class="math">
+\[{\d f\over \d x} = a = a \cdot 1
+    = \lim_{\varepsilon\to0} {f(x+\varepsilon \cdot 1)-f(x)\over\varepsilon}
+    = \lim_{\varepsilon\to0} {f(x+\varepsilon)-f(x)\over\varepsilon}\]</div>
+<p>Using the formulas above we get an equivalent expression for the
+differential:</p>
+<div class="math">
+\[\left.{\d\over\d\varepsilon}f(x+\varepsilon h) \right|_{\varepsilon=0}
+    = \left.\lim_{\eta\to0} {f(x+(\varepsilon+\eta) h)
+        -f(x+\varepsilon h)\over\eta}\right|_{\varepsilon=0} =\]\[    = \lim_{\eta\to0} {f(x+\eta h) -f(x)\over\eta} =\]\[    = \lim_{\varepsilon\to0} {f(x+\varepsilon h) -f(x)\over\varepsilon}\]</div>
+<p>So we get a general formula (the analogy of which we will use later):</p>
+<div class="math">
+\[\d f
+    \equiv\left.{\d\over\d\varepsilon}f(x+\varepsilon h)
+        \right|_{\varepsilon=0}
+    = \lim_{\varepsilon\to0} {f(x+\varepsilon h)
+        -f(x)\over\varepsilon}
+    = a h\]</div>
+<p>The variable <span class="math">\(x\)</span> can be treated as a function (a very simple one):</p>
+<div class="math">
+\[x = g(x)\]</div>
+<p>So we define <span class="math">\(\d x\)</span> as:</p>
+<div class="math">
+\[\d x \equiv \d g = {\d g\over\d x} h = h\]</div>
+<p>As such, <span class="math">\(\d x\)</span> can have two meanings: either <span class="math">\(\d x = h = x-x_0\)</span> (a finite
+change in the variable <span class="math">\(x\)</span>) or a differential (if <span class="math">\(x\)</span> depends on another
+variable, thanks to the chain rule everything will work).
+With this understanding,
+for all calculations, we only need the following two formulas &#8212;
+the definition of the differential (using a limit):</p>
+<div class="math">
+\[\d f = \lim_{\varepsilon\to0} {f(x+\varepsilon \d x) -f(x)\over\varepsilon}\]</div>
+<p>and the definition of the derivative (using the differential):</p>
+<div class="math">
+\[\d f = {\d f\over \d x} \d x\]</div>
+<p>where <span class="math">\(\d x\)</span> is either a differential or a finite change in the variable <span class="math">\(x\)</span>.</p>
+<p>If for example <span class="math">\(x=p(y)\)</span> is a function of <span class="math">\(y\)</span> then in the above <span class="math">\(\d x\)</span> is a
+differential and we get:</p>
+<div class="math">
+\[\d f = {\d f\over \d x} \d x = {\d f\over \d x}{\d x\over \d y} \d y\]</div>
+<p>Thanks to the chain rule, this can also be written as:</p>
+<div class="math">
+\[\d f = {\d f\over \d y} \d y\]</div>
+<p>and so the notation is consistent.</p>
+</div>
+<div class="section" id="functions-of-several-variables">
+<h2>Functions of several variables<a class="headerlink" href="#functions-of-several-variables" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s have <span class="math">\(\x=(x_1,x_2,\dots,x_N)\)</span>. The function <span class="math">\(f(\x)\)</span> assigns a number to
+each <span class="math">\(\x\)</span>. We define a differential of <span class="math">\(f\)</span> in the direction of <span class="math">\({\bf h}\)</span> as:</p>
+<div class="math">
+\[\d f
+    \equiv\left.{\d\over\d\varepsilon}f({\bf x}+\varepsilon{\bf h})
+        \right|_{\varepsilon=0}
+    = \lim_{\varepsilon\to0} {f({\bf x}+\varepsilon{\bf h})
+        -f(\x)\over\varepsilon}
+    = {\bf a} \cdot {\bf h}\]</div>
+<p>The last equality follows from the fact, that
+<span class="math">\(\left.{\d\over\d\varepsilon}f({\bf x}+\varepsilon{\bf h}) \right|_{\varepsilon=0}\)</span> is a
+linear function of <span class="math">\({\bf h}\)</span>. We define the partial derivative <span class="math">\({\partial
+f\over\partial x_i}\)</span> of <span class="math">\(f\)</span> with respect to <span class="math">\(x_i\)</span> as the <span class="math">\(i\)</span>-th component of
+the vector <span class="math">\({\bf a}\)</span>:</p>
+<div class="math">
+\[{\bf a}
+    \equiv \left({\partial f\over\partial x_1},
+        {\partial f\over\partial x_2}, \dots,
+        {\partial f\over\partial x_N}\right)
+    \equiv \nabla f\]</div>
+<p>This also gives a formula for computing <span class="math">\({\partial f\over\partial x_i}\)</span>: we set <span class="math">\(h_j=\delta_{ij}h_i\)</span> and</p>
+<div class="math">
+\[{\partial f\over\partial x_i}
+    = a_i
+    = {\bf a}\cdot{\bf h}
+    = \left.{\d\over\d\varepsilon} f(\x+\varepsilon(0,0,\dots,1,\dots,0))
+        \right|_{\varepsilon=0} =\]\[    = \lim_{\varepsilon\to0} {f(x_1,x_2,\dots,x_i+\varepsilon,\dots,x_N)
+        -f(x_1,x_2,\dots,x_i,\dots,x_N) \over\varepsilon}\]</div>
+<p>The usual way to define partial derivatives is to use the last formula as the
+definition, but here this formula is a consequence of our definition in terms
+of the components of <span class="math">\({\bf a}\)</span>.
+Every variable can be treated as a function (very simple one):</p>
+<div class="math">
+\[x_i=g(x_1,\dots,x_N)=\delta_{ij}x_j\]</div>
+<p>and so we define</p>
+<div class="math">
+\[\d x_i\equiv\d g=\d(\delta_{ij}x_j)=h_i\]</div>
+<p>and thus we write <span class="math">\(h_i=\d x_i\)</span> and <span class="math">\({\bf h}=\d\x\)</span> and</p>
+<div class="math">
+\[\d f={\d f\over\d x_i}\d x_i = (\nabla f) \cdot \d {\bf x}\]</div>
+<p>So <span class="math">\(\d{\bf x}\)</span> has two meanings &#8212; it&#8217;s either <span class="math">\({\bf h}={\bf x}-{\bf x}_0\)</span> (a
+finite change in the independent variable <span class="math">\({\bf x}\)</span>) or a differential,
+depending on the context. The above is a detailed explanation why things
+are defined the way they are and what the exact meaning is. With this
+understanding, the only things that are actually needed for any calculations
+are the following &#8211; the definition of a differential:</p>
+<div class="math">
+\[\d f = \left.{\d\over\d\varepsilon}f({\bf x}+\varepsilon\d {\bf x})
+        \right|_{\varepsilon=0}\]</div>
+<p>Only a regular derivative (defined in the previous section) is needed for this
+definition. The definition of a partial derivative (and a gradient):</p>
+<div class="math">
+\[\d f={\d f\over\d x_i}\d x_i = (\nabla f) \cdot \d {\bf x}\]</div>
+<p>And finally the understanding that <span class="math">\(\d{\bf x}\)</span> means
+either <span class="math">\({\bf h}={\bf x}-{\bf x}_0\)</span> or a differential depending on the context.
+That&#8217;s all there is to it.</p>
+</div>
+<div class="section" id="functionals">
+<h2>Functionals<a class="headerlink" href="#functionals" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s now define functional derivatives and variations.
+Functional <span class="math">\(F[f]\)</span> assigns a number to each function <span class="math">\(f(x)\)</span>. The variation is
+defined as</p>
+<div class="math">
+\[\delta F[f]\equiv\left.{\d\over\d\varepsilon}F[f+\varepsilon h] \right|_{\varepsilon=0}=\lim_{\epsilon\to0}{F[f+\epsilon h]-F[f]\over\epsilon}= \int a(x)h(x)\d x\]</div>
+<p>We define <span class="math">\({\delta F\over\delta f(x)}\)</span> as</p>
+<div class="math">
+\[a(x)\equiv{\delta F\over\delta f(x)}\]</div>
+<p>This also gives a formula for computing <span class="math">\({\delta F\over\delta f(x)}\)</span>: we set
+<span class="math">\(h(y)=\delta(x-y)\)</span> and</p>
+<div class="math" id="equation-functional_derivative_def">
+<span class="eqno">(6)</span>\[   {\delta F\over\delta f(x)}=a(x)=\int a(y)\delta(x-y)\d y= \left.{\d\over\d\varepsilon}F[f(y)+\varepsilon\delta(x-y)] \right|_{\varepsilon=0}=\]\[   =\lim_{\varepsilon\to0} {F[f(y)+\varepsilon\delta(x-y)]-F[f(y)]\over\varepsilon}\]</div>
+<p>Sometimes the functional derivative is defined using the last formula, here
+this formula just follows from our definition.
+Every function can be treated as a functional (although a very simple one):</p>
+<div class="math">
+\[f(x)=G[f]=\int f(y)\delta(x-y)\d y\]</div>
+<p>and so we define</p>
+<div class="math">
+\[\delta f\equiv\delta G[f]= \left.{\d\over\d\varepsilon}G[f(x)+\varepsilon h(x)] \right|_{\varepsilon=0}= \left.{\d\over\d\varepsilon}(f(x)+\varepsilon h(x)) \right|_{\varepsilon=0}= h(x)\]</div>
+<p>thus we write <span class="math">\(h=\delta f\)</span> and</p>
+<div class="math">
+\[\delta F[f]=\int {\delta F\over\delta f(x)}\delta f(x)\d x\]</div>
+<p>so <span class="math">\(\delta f\)</span> have two meanings &#8212; it&#8217;s either
+<span class="math">\(h(x)=f(x) - f_0(x)\)</span> (a finite change in the function <span class="math">\(f\)</span>) or a variation
+of a functional, depending on the context.
+It is completely analogous to <span class="math">\(\d\x\)</span>. Let&#8217;s summarize the only formulas needed
+in actual calculations &#8211; the definition of a variation (using a regular
+derivative):</p>
+<div class="math" id="equation-functional_deriv">
+<span class="eqno">(7)</span>\[\delta F[f] = \left.{\d\over\d\varepsilon}F[f+\varepsilon \delta f]
+    \right|_{\varepsilon=0}\]</div>
+<p>the definition of the functional derivative:</p>
+<div class="math">
+\[\delta F[f]=\int {\delta F\over\delta f(x)} \delta f(x) \d x\]</div>
+<p>and the understanding that <span class="math">\(\delta f\)</span> means either
+<span class="math">\(h(x)=f(x) - f_0(x)\)</span> or a variation. The last equation is the best way to
+calculate functional derivative &#8212; apply <span class="math">\(\delta\)</span> variation, until you get the
+integral into the form <span class="math">\(\int \big(\ \ \big) \delta f(x) \d x\)</span> and then you read off
+the functional derivative from the expression in the parentheses.</p>
+<p>The correspondence between the finite and infinite dimensional case can be
+summarized using a functional <span class="math">\(F[n]\)</span>, function <span class="math">\(n({\bf x})\)</span> of continuous
+parameter <span class="math">\({\bf x}\)</span> (which can be a scalar or a vector) and its discretized
+version <span class="math">\(n_i \equiv n({\bf x}_i)\)</span>, together with a function <span class="math">\(F(n)\)</span>:</p>
+<div class="math">
+\[\begin{split}i \quad &amp; \Longleftrightarrow \quad {\bf x} \\
+n_i \quad &amp; \Longleftrightarrow \quad n({\bf x}) \\
+F(n_i) \quad &amp; \Longleftrightarrow \quad F[n] \\
+\d F = 0 \quad &amp; \Longleftrightarrow \quad \delta F = 0 \\
+{\partial F\over\partial n_i} = 0 \quad &amp; \Longleftrightarrow \quad
+    {\delta F \over \delta n({\bf x})} = 0 \\\end{split}\]</div>
+<p>In other words, the basic difference is that the continuous parameter <span class="math">\({\bf x}\)</span>
+has been replaced with a discrete parameter <span class="math">\(i\)</span>. Then the function <span class="math">\(n({\bf x})\)</span>
+becomes a vector of values <span class="math">\(n_i\)</span>, variation becomes a differential and
+functional derivative becomes a partial derivative. To minimize a functional,
+one must search for zero functional derivative, while in the discrete case one
+searches for zero partial derivatives (gradient).</p>
+<p>We now extend the <span class="math">\(\delta\)</span>-variation notation to any any function <span class="math">\(g\)</span> which
+contains the function <span class="math">\(f(x)\)</span> being varied, you just need to replace <span class="math">\(f\)</span> by
+<span class="math">\(f+\epsilon \delta f\)</span> and apply <span class="math">\({\d\over\d\epsilon}\)</span> to the whole <span class="math">\(g\)</span>, for
+example (here <span class="math">\(g=\partial_\mu\phi\)</span> and <span class="math">\(f=\phi\)</span>):</p>
+<div class="math">
+\[\delta\partial_\mu\phi
+    = \left.{\d\over\d\varepsilon}\partial_\mu(\phi+\varepsilon \delta\phi) \right|_{\varepsilon=0}
+    = \partial_\mu\left.{\d\over\d\varepsilon}(\phi+\varepsilon \delta\phi) \right|_{\varepsilon=0}
+    =\partial_\mu \delta\phi\]</div>
+<p>As such, the <span class="math">\(F\)</span> in <a href="#equation-functional_deriv">(7)</a> can be either a functional or any
+expression that contains the function <span class="math">\(f\)</span>.
+This notation allows us a very convenient computation, as shown in the
+following examples.</p>
+<p>First, when computing a variation of some integral, we
+can interchange <span class="math">\(\delta\)</span> and <span class="math">\(\int\)</span>:</p>
+<div class="math">
+\[F[f]=\int K(x) f(x) \d x\]</div>
+<div class="math">
+\[\delta F=\delta \int K(x) f(x) \d x = \left.{\d\over\d\varepsilon}\int K(x) (f+\varepsilon h)\d x\right|_{\varepsilon=0}= \left.\int{\d\over\d\varepsilon} (K(x) (f+\varepsilon h))\d x\right|_{\varepsilon=0}=\]</div>
+<div class="math">
+\[=\int\delta(K(x) f(x))\d x\]</div>
+<p>In the expression <span class="math">\(\delta(K(x) f(x))\)</span> we must understand from the context if
+we are treating it as a functional of <span class="math">\(f\)</span> or <span class="math">\(K\)</span>. In our case it&#8217;s a
+functional of <span class="math">\(f\)</span>, so we have <span class="math">\(\delta(K f)=K\delta f\)</span>.</p>
+<p>The second very important note is when taking variation of expression like:</p>
+<div class="math">
+\[\delta \int f(t_1)f(t_2) \d t_1 \d t_2 =\]\[= \int \delta (f(t_1)f(t_2)) \d t_1 \d t_2 =\]\[= \int \left.{\d\over\d\varepsilon}(f(t_1)+\varepsilon\delta f(t_1))
+    (f(t_2)+\varepsilon\delta f(t_2)) \right|_{\varepsilon=0}
+    \d t_1 \d t_2 =\]\[= \int (\delta f(t_1))f(t_2)+f(t_1)(\delta f(t_2)) \d t_1 \d t_2 =\]\[= \int (\delta f(t_1))f(t_2)+f(t_2)(\delta f(t_1)) \d t_1 \d t_2 =\]\[= 2 \int f(t_2) \delta f(t_1) \d t_1 \d t_2\]</div>
+<p>then when <span class="math">\(f\)</span> is replaced by <span class="math">\(f+\epsilon \delta f\)</span>, one has to keep track of
+the independent variable, so <span class="math">\(f(t_1)\)</span> gets replaced by <span class="math">\(f(t_1)+\epsilon \delta
+f(t_1)\)</span> and <span class="math">\(f(t_2)\)</span> gets replaced by <span class="math">\(f(t_2)+\epsilon \delta f(t_2)\)</span>. Thus the
+two variations <span class="math">\(\delta f(t_1)\)</span> and <span class="math">\(\delta f(t_2)\)</span> are different (independent).
+If there is only one indepenent variable, one can simply write <span class="math">\(\delta f\)</span> as it
+is clear what the independent variable is. This is analogous to using
+differentials, e.g. <span class="math">\(\d (f(x) f(y)) = (\d f(x)) f(y) + f(x) \d f(y)
+=f'(x) \d x f(y) + f(x) f'(y) \d y\)</span>, where one has to keep track of the
+independent variable as well for each <span class="math">\(\d f\)</span>.</p>
+<p>Another useful formula is differentiation of a functional <span class="math">\(F[\psi(\theta)]\)</span>
+where the function <span class="math">\(\psi(\theta)\)</span> depends on a parameter <span class="math">\(\theta\)</span>:</p>
+<div class="math">
+\[{\d F[\psi(\theta)] \over \d \theta}
+=\left.{\d\over\d\epsilon} F[\psi(\theta+\epsilon)] \right|_{\epsilon=0}
+=\left.{\d\over\d\epsilon} F\left[\psi(\theta)+\epsilon {d \psi(\theta)
+    \over d \theta} + O(\epsilon^2)\right] \right|_{\epsilon=0}
+=\left.{\d\over\d\epsilon} F\left[\psi(\theta)+\epsilon {d \psi(\theta)
+    \over d \theta}\right] \right|_{\epsilon=0}
+= \int {\delta F[\psi] \over \delta \psi} {\d\psi(\theta)\over\d\theta}\d x\]</div>
+<p>where we used the definition of a variation and a functional derivative with
+<span class="math">\(\delta\psi={\d\psi(\theta) \over\d\theta}\)</span>:</p>
+<div class="math">
+\[\delta F = \left.{\d\over\d\epsilon}
+    F[\psi+\epsilon\delta\psi]\right|_{\epsilon=0}
+= \int{\delta F\over\delta\psi}\delta\psi\d x\]</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Some of these examples show how to use the delta function definition of the
+functional derivative in equation <a href="#equation-functional_derivative_def">(6)</a>. However, the
+simplest way is to calculate variation first and then read off the functional
+derivative from the result, as explained above.</p>
+<div class="math">
+\[{\delta\over\delta f(t)}\int\d t'f(t')g(t')= \left.{\d\over\d\varepsilon}\int\d t'(f(t')+\varepsilon\delta(t-t'))g(t') \right|_{\varepsilon=0}=g(t)\]\[\delta \int \d t f(t)g(t) = \left.{\d\over\d\varepsilon}\int\d
+    t(f(t)+\varepsilon \delta f(t))g(t) \right|_{\varepsilon=0}
+ = \int g(t) (\delta f(t)) \d t\]</div>
+<div class="math">
+\[{\delta f(t')\over\delta f(t)}= \left.{\d\over\d\varepsilon}(f(t')+\varepsilon\delta(t-t')) \right|_{\varepsilon=0}=\delta(t-t')\]</div>
+<div class="math">
+\[{\delta f(t_1)f(t_2)\over\delta f(t)}= \left.{\d\over\d\varepsilon}(f(t_1)+\varepsilon\delta(t-t_1)) (f(t_2)+\varepsilon\delta(t-t_2)) \right|_{\varepsilon=0}=\delta(t-t_1)f(t_2)+f(t_1)\delta(t-t_2)\]</div>
+<p>The next example shows that when taking variation of an expression containing
+the function <span class="math">\(f\)</span> of different independent variables, one has to keep track of
+these variables in the variations:</p>
+<div class="math">
+\[\delta (f(t_1)f(t_2))
+    = \left.{\d\over\d\varepsilon}(f(t_1)+\varepsilon\delta f(t_1))
+        (f(t_2)+\varepsilon\delta f(t_2)) \right|_{\varepsilon=0}
+    =(\delta f(t_1))f(t_2)+f(t_1)(\delta f(t_2))\]</div>
+<div class="math">
+\[{\delta\over\delta f(t)}\half\int\d t_1\d t_2K(t_1,t_2)f(t_1)f(t_2)= \half\int\d t_1\d t_2K(t_1,t_2){\delta f(t_1)f(t_2)\over\delta f(t)}=\]\[=\half\left(\int\d t_1 K(t_1,t)f(t_1)+\int\d t_2 K(t,t_2)f(t_2)\right) =\int\d t_2 K(t,t_2)f(t_2)\]</div>
+<div class="math">
+\[\delta \half\int\d t_1\d t_2K(t_1,t_2)f(t_1)f(t_2)= \half\int\d t_1\d
+t_2K(t_1,t_2)(\delta f(t_1)f(t_2))=\]\[= \half\int\d t_1\d t_2K(t_1,t_2) ((\delta f(t_1))f(t_2)
+    +f(t_1)(\delta f(t_2))=\]\[= \int\d t_1\d t_2 K(t_1,t_2) f(t_2) (\delta f(t_1))\]</div>
+<p>The last equality follows from <span class="math">\(K(t_1,t_2)=K(t_2,t_1)\)</span> (any antisymmetrical
+part of a <span class="math">\(K\)</span> would not contribute to the symmetrical integration).</p>
+<p>Another example is the derivation of Euler-Lagrange equations for the
+Lagrangian density <span class="math">\(\L=\L(\eta_\rho, \partial_\nu \eta_\rho, x^\nu)\)</span>:</p>
+<div class="math">
+\[0 = \delta S = \delta \int \L \,\d^4x^\mu
+= \int \delta \L \,\d^4x^\mu
+= \int { \partial \L\over\partial \eta_\rho}\delta\eta_\rho
+    +
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \delta(\partial_\nu\eta_\rho)
+    \,\d^4x^\mu
+=\]\[= \int { \partial \L\over\partial \eta_\rho}\delta\eta_\rho
+    +
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \partial_\nu(\delta\eta_\rho)
+    \,\d^4x^\mu
+=\]\[= \int { \partial \L\over\partial \eta_\rho}\delta\eta_\rho
+    -
+    \partial_\nu\left(
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \right)
+    \delta\eta_\rho
+    \,\d^4x^\mu
+    +\int \partial_\nu \left(
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \delta\eta_\rho
+    \right)
+    \,\d^4x^\mu
+=\]\[= \int \left[{ \partial \L\over\partial \eta_\rho}
+    -
+    \partial_\nu\left(
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \right)
+    \right]
+    \delta\eta_\rho
+    \,\d^4x^\mu\]</div>
+<p>We can also write it using a functional derivative <span class="math">\({\delta
+S\over\delta\eta_\rho}\)</span> as:</p>
+<div class="math">
+\[{\delta S\over\delta\eta_\rho}
+    = { \partial \L\over\partial \eta_\rho}
+    -
+    \partial_\nu\left(
+    { \partial \L\over\partial (\partial_\nu \eta_\rho)}
+    \right)\]</div>
+<p>Another example:</p>
+<div class="math">
+\[{\delta\over\delta f(t)}\int f^3(x)\d x= \left.{\d\over\d\varepsilon}\int(f(x)+\varepsilon\delta(x-t))^3\d x \right|_{\varepsilon=0}=\]</div>
+<div class="math">
+\[=\left.\int3(f(x)+\varepsilon\delta(x-t))^2\delta(x-t)\d x \right|_{\varepsilon=0}=\int3f^2(x)\delta(x-t)\d x=3f^2(t)\]</div>
+<p>One might think that the above calculation is incorrect, because
+<span class="math">\(\delta^2(x-t)\)</span> is undefined. In case of
+such problems the above notation automatically implies working with some
+sequence <span class="math">\(\delta_\alpha(x) \to \delta(x)\)</span> (for example <span class="math">\(\delta_\alpha(x) =
+{1\over\pi x}\sin(\alpha x)\)</span>) and taking the limit <span class="math">\(\alpha\to\infty\)</span>:</p>
+<div class="math">
+\[{\delta\over\delta f(t)}\int f^3(x)\d x= \left.\lim_{\alpha\to\infty}{\d\over\d\varepsilon}\int(f(x)+\varepsilon\delta_\alpha(x-t))^3\d x \right|_{\varepsilon=0}=\]</div>
+<div class="math">
+\[=\left.\lim_{\alpha\to\infty}\int3(f(x)+\varepsilon\delta_\alpha(x-t))^2\delta_\alpha(x-t)\d x \right|_{\varepsilon=0}=\lim_{\alpha\to\infty}\int3f^2(x)\delta_\alpha(x-t)\d x=\]</div>
+<div class="math" id="equation-functionalderdel">
+<span class="eqno">(8)</span>\[   =\int3f^2(x)\lim_{\alpha\to\infty}\delta_\alpha(x-t)\d x= \int3f^2(x)\delta(x-t)\d x=3f^2(t)\]</div>
+<p>As you can see, we got the same result, with the same rigor, but using an
+obfuscating notation. That&#8217;s why such obvious manipulations with
+<span class="math">\(\delta_\alpha\)</span> are tacitly implied. However, the best method is to first
+calculate the variation:</p>
+<div class="math">
+\[\delta \int f^3(x) \d x = \int \delta f^3(x) \d x
+=\int 3 f^2(x) \delta f(x) \d x\]</div>
+<p>and immediately read off the functional derivative:</p>
+<div class="math">
+\[{\delta\over\delta f(t)} \int f^3(x) \d x = 3 f^2(t)\]</div>
+<p>Another example with a metric as a function of coordinates
+<span class="math">\(g_{\mu\nu} = g_{\mu\nu}(x^\mu)\)</span>:</p>
+<div class="math">
+\[\delta g_{\mu\nu}
+    = \delta g_{\mu\nu}(x^\mu)
+    = \left.{\d\over\d\varepsilon} g_{\mu\nu}(x^\mu+\varepsilon
+            (\delta x^\mu)) \right|_{\varepsilon=0}
+    = \left.{\d\over\d\varepsilon}
+            (x^\sigma+\varepsilon(\delta x^\sigma)) \right|_{\varepsilon=0}
+        \partial_\sigma g_{\mu\nu}
+    = (\delta x^\sigma) \partial_\sigma g_{\mu\nu}\]</div>
+<p>And an example of varying with respect to a metric:</p>
+<div class="math">
+\[\delta \sqrt{ |\det g_{\mu\nu}| }
+    =\sqrt{ |\det g_{\mu\nu}| }\, \delta \log \sqrt{ |\det g_{\mu\nu}| }
+    =\half \sqrt{ |\det g_{\mu\nu}| }\, \delta \log |\det g_{\mu\nu}| =\]\[    =\half \sqrt{ |\det g_{\mu\nu}| }\, \delta \Tr \log g_{\mu\nu}
+    =\half \sqrt{ |\det g_{\mu\nu}| }\, \Tr \delta \log g_{\mu\nu} =\]\[    =\half \sqrt{ |\det g_{\mu\nu}| }\, \Tr g^{\mu\nu} \delta g_{\mu\nu}
+    =\half \sqrt{ |\det g_{\mu\nu}| }\, g^{\mu\nu} \delta g_{\mu\nu} =\]\[    =-\half \sqrt{ |\det g_{\mu\nu}| }\, g_{\mu\nu} \delta g^{\mu\nu}\]</div>
+<p>Another example (varying energy functional):</p>
+<div class="math">
+\[E[\rho] = 4\pi\int {a \rho(r)\over b + r_s(r)} r^2 \d r\]\[r_s(r) = \left(3\over 4\pi (-\rho)\right)^{1\over 3}\]\[{\d r_s\over\d \rho} =
+        {1\over 3}\left(3\over 4\pi (-\rho)\right)^{-{2\over 3}}
+        {3\over 4\pi \rho^2}
+    =
+        -{1\over 3\rho}\left(3\over 4\pi (-\rho)\right)^{1\over 3}
+    =
+        -{r_s\over 3\rho}\]\[\delta E[\rho] = 4\pi \delta \int {a \rho\over b + r_s} r^2 \d r =\]\[    = 4\pi \int\left({a \delta \rho\over b + r_s}
+        - {a \rho\over (b + r_s)^2 }\delta r_s\right) r^2 \d r =\]\[    = 4\pi \int\left({a \delta \rho\over b + r_s}
+        - {a \rho\over (b + r_s)^2 }\left(-{r_s\over 3\rho}\right)
+          \delta\rho\right)
+          r^2 \d r =\]\[    = 4\pi \int\left({a \over b + r_s}
+        +{1\over3} {a r_s\over (b + r_s)^2 }\right) (\delta\rho) r^2 \d r\]\[{\delta E[\rho]\over\delta\rho}
+    = 4\pi r^2 \left({a \over b + r_s}
+        +{1\over3} {a r_s\over (b + r_s)^2 }\right)\]</div>
+<p>Another example (Hartree energy):</p>
+<div class="math">
+\[E[n] = \half \int {n({\bf r}') n({\bf r}'')\over
+    | {\bf r}' - {\bf r}''| } \d^3 r' \d^3 r''\]</div>
+<p>we calculate the variation first:</p>
+<div class="math">
+\[\delta E[n] = \half \delta \int {n({\bf r}') n({\bf r}'')\over
+    | {\bf r}' - {\bf r}''| } \d^3 r' \d^3 r'' =\]\[    = \half \int { (\delta n({\bf r}')) n({\bf r}'')
+        + n({\bf r}') (\delta n({\bf r}''))\over
+    | {\bf r}' - {\bf r}''| } \d^3 r' \d^3 r'' =\]\[    = \int { n({\bf r}') \over | {\bf r}' - {\bf r}''| }
+        (\delta n({\bf r}'')) \d^3 r' \d^3 r'' =\]\[    = \int { n({\bf r}') \over | {\bf r} - {\bf r}'| }
+        (\delta n({\bf r})) \d^3 r' \d^3 r\]</div>
+<p>so the functional derivative is:</p>
+<div class="math">
+\[{\delta E[n]\over \delta n({\bf r})}
+    = \int { n({\bf r}') \over | {\bf r} - {\bf r}'| } \d^3 r'\]</div>
+<p>Another example (functional with gradients):</p>
+<div class="math">
+\[F[n] = \int h(n) {| \nabla n|^2 \over n} \d^3 r\]</div>
+<p>the variation is:</p>
+<div class="math">
+\[\delta F[n]
+    = \int \delta \left( h(n) {| \nabla n|^2 \over n} \right) \d^3 r =\]\[    = \int {\d h \over \d n} {| \nabla n|^2 \over n} \delta n
+        + h(n)\left(2n\nabla n \cdot \nabla \delta n - | \nabla n|^2
+          \delta n
+          \over n^2\right) \d^3 r =\]\[    = \int \left({\d h \over \d n} - {h(n)\over n}\right)
+        {| \nabla n|^2 \over n}
+        \delta n
+        + 2 h(n){\nabla n \cdot \nabla \delta n \over n} \d^3 r =\]\[    = \int \left({\d h \over \d n} - {h(n)\over n} \right)
+        {| \nabla n|^2 \over n}
+        \delta n
+        - 2 \nabla\cdot\left(h(n){\nabla n \over n}\right)\delta n\ \d^3 r =\]\[    = \int \left({\d h \over \d n} - {h(n)\over n} \right)
+        {| \nabla n|^2 \over n}
+        \delta n
+        - 2 \left({\d h \over \d n}{| \nabla n|^2 \over n}
+          +h(n){\nabla^2 n \over n}
+          -h(n){| \nabla n|^2 \over n^2}
+          \right)\delta n\ \d^3 r =\]\[    = \int \left[ \left({h(n)\over n} - {\d h \over \d n}\right)
+        {| \nabla n|^2 \over n}
+        - 2 h(n){\nabla^2 n \over n}\right]
+          \delta n\ \d^3 r\]</div>
+<p>from which we read off the functional derivative:</p>
+<div class="math">
+\[{\delta F[n] \over \delta n({\bf r})}
+    = \left({h(n)\over n} - {\d h \over \d n}\right)
+        {| \nabla n|^2 \over n}
+        - 2 h(n){\nabla^2 n \over n}\]</div>
+</div>
+</div>
+<div class="section" id="dirac-notation">
+<span id="index-1"></span><h1>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">¶</a></h1>
+<p>The Dirac notation allows a very compact and powerful way of writing
+equations that describe a function expansion into a basis, both discrete
+(e.g. a Fourier series expansion) and continuous (e.g. a Fourier transform)
+and related things. The notation is designed so that it is very easy to
+remember and it just guides you to write the correct equation.</p>
+<p>Let&#8217;s have a function <span class="math">\(f(x)\)</span>. We define</p>
+<div class="math">
+\[\begin{eqnarray*} \braket{x|f}&\equiv& f(x) \\ \braket{x'|f}&\equiv& f(x') \\ \braket{x'|x}&\equiv&\delta(x'-x) \\ \int\ket{x}\bra{x}\d x&\equiv&\one \\ \end{eqnarray*}\]</div><p>The following equation</p>
+<div class="math">
+\[f(x')=\int\delta(x'-x)f(x)\d x\]</div>
+<p>then becomes</p>
+<div class="math">
+\[\braket{x'|f}=\int\braket{x'|x}\braket{x|f}\d x\]</div>
+<p>and thus we can interpret <span class="math">\(\ket{f}\)</span> as a vector, <span class="math">\(\ket{x}\)</span> as a basis and <span class="math">\(\braket{x|f}\)</span> as the coefficients in the basis expansion:</p>
+<div class="math">
+\[\ket{f}=\one\ket{f}=\int\ket{x}\bra{x}\d x\ket{f}= \int\ket{x}\braket{x|f}\d x\]</div>
+<p>That&#8217;s all there is to it. Take the above rules as the operational definition
+of the Dirac notation. It&#8217;s like with the delta function - written alone it
+doesn&#8217;t have any meaning, but there are clear and non-ambiguous rules to
+convert any expression with <span class="math">\(\delta\)</span> to an expression which even mathematicians
+understand (i.e. integrating, applying test functions and using other relations
+to get rid of all <span class="math">\(\delta\)</span> symbols in the expression &#8211; but the result is
+usually much more complicated than the original formula). It&#8217;s the same with
+the ket <span class="math">\(\ket{f}\)</span>: written alone it doesn&#8217;t have any meaning, but you can
+always use the above rules to get an expression that make sense to everyone
+(i.e. attaching any bra to the left and rewriting all brackets <span class="math">\(\braket{a|b}\)</span>
+with their equivalent expressions) &#8211; but it will be more complex and harder to
+remember and &#8211; that is important &#8211; less general.</p>
+<p>Now, let&#8217;s look at the spherical harmonics:</p>
+<div class="math">
+\[Y_{lm}({\bf\hat r})\equiv\braket{{\bf\hat r}|lm}\]</div>
+<p>on the unit sphere, we have</p>
+<div class="math">
+\[\int\ket{\bf\hat r}\bra{\bf\hat r}\d{\bf\hat r}= \int\ket{\bf\hat r}\bra{\bf\hat r}\d\Omega=\one\]</div>
+<div class="math">
+\[\delta({\bf\hat r}-{\bf\hat r'})=\braket{{\bf\hat r}|{\bf\hat r'}}\]</div>
+<p>thus</p>
+<div class="math">
+\[\int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \int\braket{l'm'|{\bf\hat r}}\braket{{\bf\hat r}|lm}\d\Omega= \braket{l'm'|lm}\]</div>
+<p>and from <a href="#equation-Yorto">(?)</a> we get</p>
+<div class="math">
+\[\braket{l'm'|lm}=\delta_{mm'}\delta_{ll'}\]</div>
+<p>now</p>
+<div class="math">
+\[\sum_{lm}Y_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= \sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}\]</div>
+<p>from <a href="#equation-Ycomplete">(?)</a> we get</p>
+<div class="math">
+\[\sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}= \braket{{\bf\hat r}|{\bf\hat r'}}\]</div>
+<p>so we have</p>
+<div class="math">
+\[\sum_{lm}\ket{lm}\bra{lm}=\one\]</div>
+<p>so <span class="math">\(\ket{lm}\)</span> forms an orthonormal basis. Any function defined on the sphere <span class="math">\(f({\bf\hat r})\)</span> can be written using this basis:</p>
+<div class="math">
+\[f({\bf\hat r}) =\braket{{\bf\hat r}|f} =\sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|f} =\sum_{lm}Y_{lm}({\bf\hat r})f_{lm}\]</div>
+<p>where</p>
+<div class="math">
+\[f_{lm}=\braket{lm|f}=\int\braket{lm|{\bf\hat r}}\braket{{\bf\hat r}|f}\d\Omega =\int Y_{lm}^*({\bf\hat r}) f({\bf\hat r})\d\Omega\]</div>
+<p>If we have a function <span class="math">\(f({\bf r})\)</span> in 3D, we can write it as a function of <span class="math">\(\rho\)</span> and <span class="math">\({\bf\hat r}\)</span> and expand only with respect to the variable <span class="math">\({\bf\hat r}\)</span>:</p>
+<div class="math">
+\[f({\bf r})=f(\rho{\bf\hat r})\equiv g(\rho,{\bf\hat r})= \sum_{lm}Y_{lm}({\bf\hat r})g_{lm}(\rho)\]</div>
+<p>In Dirac notation we are doing the following: we decompose the space into the angular and radial part</p>
+<div class="math">
+\[\ket{{\bf r}}=\ket{{\bf\hat r}}\otimes\ket{\rho} \equiv\ket{{\bf\hat r}}\ket{\rho}\]</div>
+<p>and write</p>
+<div class="math">
+\[f({\bf r})=\braket{{\bf r}|f}=\bra{{\bf\hat r}}\braket{\rho|f}= \sum_{lm}Y_{lm}({\bf\hat r})\bra{lm}\braket{\rho|f}\]</div>
+<p>where</p>
+<div class="math">
+\[\bra{lm}\braket{\rho|f}= \int\braket{lm|{\bf\hat r}}\bra{{\bf\hat r}}\braket{\rho|f}\d\Omega =\int Y_{lm}^*({\bf\hat r}) f({\bf r})\d\Omega\]</div>
+<p>Let&#8217;s calculate <span class="math">\(\braket{\rho|\rho'}\)</span></p>
+<div class="math">
+\[\braket{{\bf r}|{\bf r'}}=\bra{\bf\hat r}\braket{\rho|\rho'}\ket{{\bf\hat r'}} =\braket{{\bf\hat r}|{\bf\hat r'}}\braket{\rho|\rho'}\]</div>
+<p>so</p>
+<div class="math">
+\[\braket{\rho|\rho'} ={\braket{{\bf r}|{\bf r'}}\over\braket{{\bf\hat r}|{\bf\hat r'}}} ={\delta(\rho-\rho')\over\rho^2}\]</div>
+<p>We must stress that <span class="math">\(\ket{lm}\)</span> only acts in the <span class="math">\(\ket{{\bf\hat r}}\)</span> space
+(not the <span class="math">\(\ket\rho\)</span> space) which means that</p>
+<div class="math">
+\[\braket{{\bf r}|lm} =\bra{\bf\hat r}\braket{\rho|lm} =\braket{{\bf\hat r}|lm}\bra{\rho} =Y_{lm}({\bf\hat r})\bra{\rho}\]</div>
+<p>and <span class="math">\(V\ket{lm}\)</span> leaves <span class="math">\(V\ket\rho\)</span> intact. Similarly,</p>
+<div class="math">
+\[\sum_{lm} \ket{lm}\bra{lm}=\one\]</div>
+<p>is a unity in the <span class="math">\(\ket{\bf\hat r}\)</span> space only (i.e. on the unit sphere).</p>
+<p>Let&#8217;s rewrite the equation <a href="#equation-lsum">(?)</a>:</p>
+<div class="math">
+\[\sum_m\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}= {4\pi\over 2l+1} \braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}\]</div>
+<p>Using the completeness relation <a href="#equation-Lorto">(?)</a>:</p>
+<div class="math">
+\[\sum_l {2l+1\over2}\braket{x'|P_l}\braket{P_l|x}=\braket{x'|x}\]</div>
+<div class="math">
+\[\sum_l \ket{P_l}{2l+1\over2}\bra{P_l}=\one\]</div>
+<p>we can now derive a very important formula true for every function <span class="math">\(f({\bf\hat r}\cdot{\bf\hat r'})\)</span>:</p>
+<div class="math">
+\[f({\bf\hat r}\cdot{\bf\hat r'})=\braket{{\bf\hat r}\cdot{\bf\hat r'}|f}= \sum_l \braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}{2l+1\over2}\braket{P_l|f}= \sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}{(2l+1)^2\over8\pi} \braket{P_l|f}=\]</div>
+<div class="math">
+\[=\sum_{lm}\braket{{\bf\hat r}|lm}f_l \braket{lm|{\bf\hat r'}}\]</div>
+<p>where</p>
+<div class="math">
+\[f_l={(2l+1)^2\over8\pi}\braket{P_l|f} ={(2l+1)^2\over8\pi}\int_{-1}^1 \braket{P_l|x}\braket{x|f}\d x ={(2l+1)^2\over8\pi}\int_{-1}^1 P_l(x)f(x)\d x\]</div>
+<p>or written explicitly</p>
+<div class="math" id="equation-fylm">
+<span class="eqno">(9)</span>\[   f({\bf\hat r}\cdot{\bf\hat r'})= \sum_{l=0}^\infty\sum_{m=-l}^l Y_{lm}({\bf\hat r}) f_l Y_{lm}^*({\bf\hat r'})\]</div>
+</div>
+<div class="section" id="homogeneous-functions">
+<span id="index-2"></span><h1>Homogeneous functions<a class="headerlink" href="#homogeneous-functions" title="Permalink to this headline">¶</a></h1>
+<p>A function of several variables <span class="math">\(f(x_1, x_2, \dots) \equiv f(x_i)\)</span> is
+homogeneous of degree <span class="math">\(k\)</span> if</p>
+<div class="math">
+\[f(\lambda x_i) = \lambda^k f(x_i)\]</div>
+<p>By differentiating with respect to <span class="math">\(\lambda\)</span>:</p>
+<div class="math">
+\[x_i {\partial f(\lambda x_i)\over\partial x_i} = k\lambda^{k-1} f(x_i)\]</div>
+<p>and setting <span class="math">\(\lambda=1\)</span> we get the so called Euler equation:</p>
+<div class="math">
+\[x_i {\partial f(x_i)\over\partial x_i} = k f(x_i)\]</div>
+<p>in 3D this can also be written as:</p>
+<div class="math">
+\[{\bf x} \cdot \nabla f({\bf x}) = k f({\bf x})\]</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>The function <span class="math">\(f(x, y, z) = {xy\over z}\)</span> is homogeneous of degree 1, because:</p>
+<div class="math">
+\[f(\lambda x, \lambda y, \lambda z) = {\lambda x\lambda y\over \lambda z}
+= \lambda {xy\over z}
+= \lambda f(x, y, z)\]</div>
+<p>and the Euler equation is:</p>
+<div class="math">
+\[x{\partial f\over\partial x} +
+y{\partial f\over\partial y} +
+z{\partial f\over\partial z}
+=
+f\]</div>
+<p>or</p>
+<div class="math">
+\[x{y\over z} +
+y{x\over z} +
+z\left(-{xy\over z^2}\right)
+={xy\over z}\]</div>
+<p>Which is true.</p>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>The function <span class="math">\(V(r) = -{Z \over r}\)</span> is homogeneous of degree -1, because:</p>
+<div class="math">
+\[V(\lambda r) = -{Z\over \lambda r} = \lambda^{-1} V(r)\]</div>
+<p>and the Euler equation is:</p>
+<div class="math">
+\[r{\d V\over\d r} = -V\]</div>
+<p>or</p>
+<div class="math">
+\[r{Z\over r^2} = -\left(-{Z\over r}\right)\]</div>
+<p>Which is true.</p>
+</div>
+</div>
+<div class="section" id="green-functions">
+<h1>Green Functions<a class="headerlink" href="#green-functions" title="Permalink to this headline">¶</a></h1>
+<p>Green functions are an excellent tool for working with a solution to any ODE or
+PDE. In this text we explain how it works and then show how one can calculate
+them using FEM.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s put any ODE or PDE in the form:</p>
+<div class="math" id="equation-pde">
+<span class="eqno">(10)</span>\[Lu(x)=f(x)\]</div>
+<p>Here <span class="math">\(L\)</span> is a differential operator and <span class="math">\(x\)</span> can have any dimension, e.g. 1D
+(ODE), 2D, 3D or more (PDE). Then we can express the solution as</p>
+<div class="math" id="equation-solution">
+<span class="eqno">(11)</span>\[u(x) = L^{-1}f(x) = \int G(x, x')f(x')\d x'\]</div>
+<p>where <span class="math">\(G(x, x')\)</span> is a Green function, that needs to satisfy the equation:</p>
+<div class="math" id="equation-green">
+<span class="eqno">(12)</span>\[LG(x, x')=\delta(x-x')\]</div>
+<p>Remember, that <span class="math">\(L\)</span> acts on <span class="math">\(x\)</span> only, so we can check, that <a href="#equation-solution">(11)</a>
+indeed solves the PDE <a href="#equation-pde">(10)</a>:</p>
+<div class="math">
+\[Lu(x)
+= L\int G(x, x')f(x')\d x'
+= \int LG(x, x')f(x')\d x'
+= \int \delta(x-x')f(x')\d x'
+= f(x)\]</div>
+</div>
+<div class="section" id="boundary-conditions">
+<h2>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
+<p>The equation <a href="#equation-green">(12)</a> doesn&#8217;t determine the Green function uniquely,
+because one can add to it any solution of the homogeneous equation <span class="math">\(Lu(x)=0\)</span>.
+We can use this freedom to solve <a href="#equation-green">(12)</a> for any boundary condition.
+So we prescribe a boundary condition
+and find the Green function (by solving <a href="#equation-green">(12)</a>) that satisfies the
+boundary condition. It can be shown, that <span class="math">\(u(x)\)</span> determined from
+<a href="#equation-solution">(11)</a> then also needs to satisfy the same boundary condition.</p>
+</div>
+<div class="section" id="symmetry">
+<h2>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">¶</a></h2>
+<p>We write the equation for Green functions at two different points <span class="math">\(x_1\)</span>
+and <span class="math">\(x_2\)</span>:</p>
+<div class="math">
+\[L G(x, x_1) = \delta(x-x_1)\]\[L G(x, x_2) = \delta(x-x_2)\]</div>
+<p>and multiply the first equation by <span class="math">\(G(x, x_2)\)</span>, second by <span class="math">\(G(x, x_1)\)</span>:</p>
+<div class="math">
+\[G(x, x_2) L G(x, x_1) = \delta(x-x_1) G(x, x_2)\]\[G(x, x_1) L G(x, x_2) = \delta(x-x_2) G(x, x_1)\]</div>
+<p>substract them and integrate over <span class="math">\(x\)</span>:</p>
+<div class="math">
+\[G(x, x_2) L G(x, x_1) - G(x, x_1) L G(x, x_2)
+    = \delta(x-x_1) G(x, x_2) - \delta(x-x_2) G(x, x_1)\]\[\int \left(G(x, x_2) L G(x, x_1) - G(x, x_1) L G(x, x_2) \right) \d x
+    = \int \left(\delta(x-x_1) G(x, x_2) - \delta(x-x_2) G(x, x_1)
+        \right)\d x\]\[\int \left(G(x, x_2) L G(x, x_1) - G(x, x_1) L G(x, x_2) \right) \d x
+    = G(x_1, x_2) - G(x_2, x_1)\]</div>
+<p>Assuming that the operator <span class="math">\(L\)</span> is Hermitean, we get:</p>
+<div class="math">
+\[\int \left((L G(x, x_2)) G(x, x_1) - G(x, x_1) L G(x, x_2) \right) \d x
+    = G(x_1, x_2) - G(x_2, x_1)\]\[0 = G(x_1, x_2) - G(x_2, x_1)\]</div>
+<p>So the Green function is symmetric for Hermitean operators <span class="math">\(L\)</span>.</p>
+</div>
+<div class="section" id="id1">
+<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="poisson-equation-in-1d">
+<h3>Poisson Equation in 1D<a class="headerlink" href="#poisson-equation-in-1d" title="Permalink to this headline">¶</a></h3>
+<p>Poisson equation:</p>
+<div class="math">
+\[-{\d^2\over\d x^2} u(x) = f(x)\]</div>
+<p>We calculate the Green function using the Fourier transform:</p>
+<div class="math">
+\[-{\partial^2\over\partial x^2} G(x, x') = \delta(x-x')\]\[-(ik)^2 \tilde G(k, x') = {e^{ikx'}\over\sqrt{2\pi}}\]\[\tilde G(k, x') = {e^{ikx'}\over\sqrt{2\pi}\,k^2}\]\[G(x, x') = -\half (x-x') \sign(x-x')
+    = -\half (x-x') (2H(x-x')-1)
+    = H(x-x') (x'-x) +\half(x-x')\]</div>
+<p>Check:</p>
+<div class="math">
+\[{\partial\over\partial x} G(x, x')
+    = \delta(x-x') (x'-x) + H(x-x') (-1) + \half
+    = - H(x-x') + \half\]\[{\partial^2\over\partial x^2} G(x, x')
+    = - \delta(x-x')\]</div>
+<p>Then:</p>
+<div class="math">
+\[u(x) = \int G(x, x') f(x') \d x'
+    = \int \left(H(x-x') (x'-x) +\half(x-x')\right) f(x') \d x'\]</div>
+<p>The green function can also be written using <span class="math">\(x_&lt;=\min(x, x')\)</span> and
+<span class="math">\(x_&gt; = \max(x, x')\)</span>:</p>
+<div class="math">
+\[\begin{split}G(x, x') = H(x-x') (x'-x) +\half(x-x')
+    = \half(x_&lt; - x_&gt;)\end{split}\]</div>
+</div>
+<div class="section" id="radial-poisson-equation">
+<h3>Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this headline">¶</a></h3>
+<p>Let&#8217;s write <span class="math">\(r_&gt;\)</span> and <span class="math">\(r_&lt;\)</span> using the Heaviside step function:</p>
+<div class="math">
+\[\begin{split}r_&gt; = \max(r, r')
+    =
+\begin{cases}
+r&amp;\quad\mbox{for $r&gt;r'$}\cr
+r'&amp;\quad\mbox{for $r&lt;r'$}\cr
+\end{cases}
+= H(r-r') r + H(r'-r)r' =\end{split}\]\[= H(r-r') r + (1-H(r-r'))r'
+= H(r-r') (r-r') + r'\]</div>
+<p>and:</p>
+<div class="math">
+\[\begin{split}r_&lt; = \min(r, r')
+    =
+\begin{cases}
+r'&amp;\quad\mbox{for $r&gt;r'$}\cr
+r&amp;\quad\mbox{for $r&lt;r'$}\cr
+\end{cases}
+= H(r-r') r' + H(r'-r)r =\end{split}\]\[= H(r-r') r' + (1-H(r-r'))r
+= H(r-r') (r'-r) + r\]</div>
+<p>Then we can differentiate:</p>
+<div class="math">
+\[\begin{split}{\partial\over\partial r} r_&gt;
+    = \delta(r-r')(r-r') + H(r-r')
+    = H(r-r')\end{split}\]\[\begin{split}{\partial^2\over\partial r^2} r_&gt;
+    = \delta(r-r')\end{split}\]\[\begin{split}{\partial\over\partial r} r_&lt;
+    = \delta(r-r')(r'-r) - H(r-r') + 1
+    = 1-H(r-r') = H(r'-r)\end{split}\]\[\begin{split}{\partial^2\over\partial r^2} r_&lt;
+    = -\delta(r-r')\end{split}\]</div>
+<p>Given:</p>
+<div class="math" id="equation-rad_integral_u">
+<span class="eqno">(13)</span>\[\begin{split}u(r) = \int_0^\infty {f(r') r'^2 \over r_&gt;} \d r'\end{split}\]</div>
+<p>The Green function is</p>
+<div class="math">
+\[\begin{split}G(r, r') = {r'^2\over r_&gt;}\end{split}\]</div>
+<p>Let&#8217;s differentiate:</p>
+<div class="math">
+\[\begin{split}{\partial\over\partial r} G(r, r') = -{r'^2\over r_&gt;^2}
+        {\partial\over\partial r} r_&gt;
+= -{r'^2\over r_&gt;^2} H(r-r')
+= -{r'^2\over r^2} H(r-r')\end{split}\]</div>
+<p>and</p>
+<div class="math">
+\[{\partial^2\over\partial r^2} G(r, r') = +{2\over r}{r'^2\over r^2}
+    H(r-r') -{r'^2\over r^2} \delta(r-r')\]</div>
+<p>So we get:</p>
+<div class="math">
+\[-{\partial^2\over\partial r^2} G(r, r')
+    -{2\over r}{\partial\over\partial r} G(r, r')
+    =-{2\over r}{r'^2\over r^2} H(r-r') +{r'^2\over r^2} \delta(r-r')
+        +{2\over r}{r'^2\over r^2} H(r-r')
+    ={r'^2\over r^2} \delta(r-r') = \delta(r-r')\]</div>
+<p>So <span class="math">\(u(r)\)</span> from <a href="#equation-rad_integral_u">(13)</a> is a solution to the radial Poisson
+equation:</p>
+<div class="math">
+\[-{\d^2\over\d r^2} u(r) - {2\over r}{\d\over\d r}u(r) = f(r)\]</div>
+</div>
+<div class="section" id="helmholtz-equation-in-1d">
+<h3>Helmholtz Equation in 1D<a class="headerlink" href="#helmholtz-equation-in-1d" title="Permalink to this headline">¶</a></h3>
+<div class="math">
+\[\left({\d^2\over\d x^2}+1\right)u(x)=f(x)\]\[\left({\d^2\over\d x^2}+1\right)G(x, x')=\delta(x-x')\]</div>
+<p>with boundary conditions <span class="math">\(u(0)=u({\pi\over2})=0\)</span>.
+We use the Fourier transform:</p>
+<div class="math">
+\[\left((ik)^2+1\right)\tilde G(k, x')={e^{ikx'}\over\sqrt{2\pi}}\]\[\tilde G(k, x')={e^{ikx'}\over \sqrt{2\pi} (1-k^2)}\]\[G(x, x') = \half\sign(x-x')\sin(x-x')\]</div>
+<p>Check:</p>
+<div class="math">
+\[{\partial\over\partial x} G(x, x') = \delta(x-x')\sin(x-x')
+    +\half\sign(x-x')\cos(x-x') =\]\[    = \half\sign(x-x')\cos(x-x')\]\[{\partial^2\over\partial x^2} G(x, x') = \delta(x-x')\cos(x-x')
+    -\half\sign(x-x')\sin(x-x') =\]\[    = -\half\sign(x-x')\sin(x-x') + \delta(x-x')\]\[{\partial^2\over\partial x^2} G(x, x')
++{\partial\over\partial x} G(x, x') = \delta(x-x')\]</div>
+<p>The general solution of the homogeneous equation is:</p>
+<div class="math">
+\[u(x) = C_1 \sin x + C_2 \cos x\]</div>
+<p>so the general Green function is:</p>
+<div class="math">
+\[G(x, x') = \half\sign(x-x')\sin(x-x') + C_1 \sin (x+x')
+    + C_2 \cos (x+x')\]</div>
+<p>Satisfying the boundary conditions (for all <span class="math">\(x' \ne 0\)</span>):</p>
+<div class="math">
+\[G(0, x') = G({\pi\over 2}, x') = 0\]</div>
+<p>we get:</p>
+<div class="math">
+\[\begin{split}C_1 &amp; = -\half \\
+C_2 &amp; = 0\end{split}\]</div>
+<p>and:</p>
+<div class="math">
+\[G(x, x') = \half\sign(x-x')\sin(x-x') -\half \sin (x+x') =\]\[=-H(x'-x)\sin x\cos x' - H(x - x') \cos x \sin x' =\]\[\begin{split}=
+\begin{cases}
+-\sin x\cos x'&amp;\quad x&lt;x'\cr
+-\cos x\sin x'&amp;\quad x&gt;x'\cr
+\end{cases}
+=-\sin x_&lt; \cos x_&gt;\end{split}\]</div>
+<p>and</p>
+<div class="math">
+\[ u(x) = \int G(x, x')f(x')\d x'
+=-\cos x\int_0^xf(x')\sin x'\d x'
+-\sin x\int_x^{\pi\over2}f(x')\cos x'\d x'\]</div>
+<p>To show that this really works, let&#8217;s take for example <span class="math">\(f(x)=3\sin2x\)</span>. Then</p>
+<div class="math">
+\[u(x)
+=-\cos x\int_0^x3\sin 2x'\sin x'\d x'
+-\sin x\int_x^{\pi\over2}3\sin 2x'\cos x'\d x'\]</div>
+<p>We can use SymPy to evaluate the integrals:</p>
+<div class="highlight-python"><pre>In [1]: u = -cos(x)*integrate(3*sin(2*y)*sin(y), (y, 0, x)) - \
+    sin(x)*integrate(3*sin(2*y)*cos(y), (y, x, pi/2))
+
+In [2]: u
+Out[2]:
+-(cos(x)*sin(2*x) - 2*cos(2*x)*sin(x))*cos(x) - (sin(x)*sin(2*x)
+    + 2*cos(x)*cos(2*x))*sin(x)
+
+In [3]: simplify(u)
+Out[3]:
+     2                  2
+- cos (x)*sin(2*x) - sin (x)*sin(2*x)
+
+In [4]: trigsimp(_)
+Out[4]: -sin(2*x)</pre>
+</div>
+<p>And we get</p>
+<div class="math">
+\[u(x)=-\sin 2x\]</div>
+<p>We can easily check, that <span class="math">\(u''+u=3\sin2x\)</span>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">u</span>
+<span class="go">3*sin(2*x)</span>
+</pre></div>
+</div>
+<p>and since <span class="math">\(f(x) = 3\sin2x\)</span>, we have verified, that <span class="math">\(u(x)=-\sin 2x\)</span> is the correct
+solution.</p>
+</div>
+<div class="section" id="poisson-equation-in-2d">
+<h3>Poisson Equation in 2D<a class="headerlink" href="#poisson-equation-in-2d" title="Permalink to this headline">¶</a></h3>
+<p>Let <span class="math">\({\bf x}=(x, y)\)</span> and we want to solve:</p>
+<div class="math">
+\[\nabla^2u({\bf x})=f({\bf x})\]</div>
+<p>So we have:</p>
+<div class="math">
+\[\nabla^2G({\bf x}, {\bf x'})=\delta({\bf x}-{\bf x'})\]</div>
+<p>The solution is:</p>
+<div class="math">
+\[G({\bf x}, {\bf x'})
+={1\over2\pi}\log|{\bf x}-{\bf x'}|
+={1\over4\pi}\log|{\bf x}-{\bf x'}|^2
+={1\over4\pi}\log((x-x')^2+(y-y')^2)\]</div>
+</div>
+<div class="section" id="poisson-equation-in-3d">
+<h3>Poisson Equation in 3D<a class="headerlink" href="#poisson-equation-in-3d" title="Permalink to this headline">¶</a></h3>
+<div class="math">
+\[\nabla^2u(x)=f(x)\]\[\nabla^2G(x, x')=\delta(x-x')\]</div>
+<p>with boundary condition <span class="math">\(G(x) = 0\)</span> at infinity. Then:</p>
+<div class="math">
+\[G(x, x')=-{1\over4\pi}{1\over|x-x'| }\]</div>
+<p>and</p>
+<div class="math">
+\[u(x) = -{1\over4\pi}\int {f(x')\over|x-x'| }\d x'\]</div>
+</div>
+<div class="section" id="helmholtz-equation-in-3d">
+<h3>Helmholtz Equation in 3D<a class="headerlink" href="#helmholtz-equation-in-3d" title="Permalink to this headline">¶</a></h3>
+<div class="math">
+\[(\nabla^2+k^2)u(x)=f(x)\]\[(\nabla^2+k^2)G(x, x')=\delta(x-x')\]</div>
+<p>with boundary condition <span class="math">\(G(x) = 0\)</span> at infinity. Then:</p>
+<div class="math">
+\[G(x, x')=-{1\over4\pi}{e^{ik|x-x'| }\over|x-x'| }\]\[u(x) = -{1\over4\pi}\int {f(x')e^{ik|x-x'| }\over|x-x'| }\d x'\]</div>
+</div>
+<div class="section" id="finite-element-method">
+<h3>Finite Element Method<a class="headerlink" href="#finite-element-method" title="Permalink to this headline">¶</a></h3>
+<p>Let&#8217;s show it on the Laplace equation. We want to solve:</p>
+<div class="math">
+\[\nabla^2G(x, x')=\delta(x-x')\]</div>
+<p>We will treat <span class="math">\(x'\)</span> as a parameter, so we define <span class="math">\(g_{x'}(x)\equiv G(x, x')\)</span>:</p>
+<div class="math">
+\[\nabla^2g_{x'}(x)=\delta(x-x')\]</div>
+<p>We set <span class="math">\(g_{x'}(x)=0\)</span> on the boundary and we get:</p>
+<div class="math">
+\[-\int\nabla g_{x'}(x) \cdot \nabla v(x) \d x = \int v(x)\delta(x-x')\d x\]\[-\int\nabla g_{x'}(x) \cdot \nabla v(x) \d x = v(x')\]</div>
+<p>So we choose <span class="math">\(x'\)</span> and then solve for <span class="math">\(g_{x'}(x)\)</span> using FEM and we get the
+Green function <span class="math">\(G(x, x')\)</span> for all <span class="math">\(x\)</span> and one particular <span class="math">\(x'\)</span>. We can then
+evaluate the integral <a href="#equation-solution">(11)</a> numerically &#8211; one would have to use FEM
+for all <span class="math">\(x'\)</span> that are needed in the integral, so that is not efficient, but it
+should work. One will then be able to play with Green functions and be able to
+calculate them numerically for any boundary condition (which is not possible
+analytically).</p>
+</div>
+</div>
+</div>
+<div class="section" id="binomial-coefficients">
+<h1>Binomial Coefficients<a class="headerlink" href="#binomial-coefficients" title="Permalink to this headline">¶</a></h1>
+<p>For <span class="math">\(n\)</span> and <span class="math">\(k\)</span> integers, the binomial coefficients are defined by:</p>
+<div class="math">
+\[\binom{n}{k} = {n!\over k! (n-k)!} =
+    {n (n-1) \cdots (n-k+1)\over k!}\]</div>
+<p>For <span class="math">\(r\)</span> real, one just uses the second formula as a definition:</p>
+<div class="math">
+\[\binom{r}{k} = {r (r-1) \cdots (r-k+1)\over k!}\]</div>
+<p>Example I:</p>
+<div class="math">
+\[\binom{-n}{k}
+    = {(-n) (-n-1) \cdots (-n-k+1)\over k!}
+    = (-1)^{k} {n (n+1) \cdots (n+k-1)\over k!}
+    = (-1)^{k}\binom{n+k-1}{k}\]</div>
+<p>Example II:</p>
+<div class="math">
+\[\binom{k-\half}{k}
+    = {(k-\half) (k-\half-1) \cdots (k-\half-k+1)\over k!}
+    = {(k-\half) (k-\half-1) \cdots \half\over k!} =\]\[    = {(2k-1) (2k-3) \cdots 1\over 2^k k!}
+    = {(2k-1)!!\over 2^k k!}
+    = {(2k)!\over (2^k k!)^2}
+    = {1\over 4^k}\binom{2k}{k}\]</div>
+<p>The binomial formula is for <span class="math">\(n\)</span> integer:</p>
+<div class="math">
+\[(x+y)^n = \sum_{k=0}^n \binom{n}{k} x^k y^{n-k}\]</div>
+<p>and for <span class="math">\(r\)</span> real and <span class="math">\(|x| &lt; |y|\)</span> this can be generalized to:</p>
+<div class="math">
+\[(x+y)^r = \sum_{k=0}^\infty \binom{r}{k} x^k y^{r-k}\]</div>
+<p>Example: (for <span class="math">\(|x| &lt; 1\)</span>)</p>
+<div class="math">
+\[(1 + x)^{-n} = \sum_{k=0}^\infty \binom{-n}{k} x^k
+    = \sum_{k=0}^\infty (-1)^k\binom{n+k-1}{k} x^k
+    = \sum_{k=0}^\infty \binom{n+k-1}{k} (-x)^k\]</div>
+<p>so:</p>
+<div class="math">
+\[(1 - x)^{-n} = \sum_{k=0}^\infty \binom{n+k-1}{k} x^k\]\[(1 - x)^{-1} = \sum_{k=0}^\infty \binom{1+k-1}{k} x^k
+    = \sum_{k=0}^\infty \binom{k}{k} x^k
+    = \sum_{k=0}^\infty x^k\]\[(1 - x)^{-\half} = \sum_{k=0}^\infty \binom{\half+k-1}{k} x^k
+= \sum_{k=0}^\infty \binom{k-\half}{k} x^k
+= \sum_{k=0}^\infty {1\over 4^k}\binom{2k}{k} x^k\]</div>
+<p>Another example:</p>
+<div class="math">
+\[{1\over\sqrt{1-2xt+t^2}} = \left(1-(2xt-t^2)\right)^{-\half}
+    = \sum_{n=0}^\infty {1\over 4^n}\binom{2n}{n} (2xt-t^2)^n =\]\[    = \sum_{n=0}^\infty {1\over 4^n}\binom{2n}{n} \sum_{k=0}^n
+        \binom{n}{k} (-t^2)^k (2xt)^{n-k} =\]\[    = \sum_{n=0}^\infty {1\over 4^n}\binom{2n}{n} \sum_{k=0}^n
+        \binom{n}{k} (-1)^k t^{2k} (2x)^{n-k} t^{n-k} =\]\[    = \sum_{n=0}^\infty {1\over 4^n}\binom{2n}{n} \sum_{k=0}^n
+        \binom{n}{k} (-1)^k t^{n+k} (2x)^{n-k} =\]\[    = \sum_{n=0}^\infty \sum_{k=0}^{\left\lfloor n\over 2 \right\rfloor}
+        {1\over 4^{n-k}}\binom{2n-2k}{n-k}
+        \binom{n-k}{k} (-1)^k t^{n} (2x)^{n-2k} =\]\[    = \sum_{n=0}^\infty \left(
+        {1\over 2^n}
+        \sum_{k=0}^{\left\lfloor n\over 2 \right\rfloor}
+        (-1)^k
+        \binom{n}{k}
+        \binom{2n-2k}{n}
+        x^{n-2k} \right) t^{n} =\]\[    = \sum_{n=0}^\infty \left(
+        {1\over 2^n}
+        \sum_{k=0}^{\left\lfloor n\over 2 \right\rfloor}
+        (-1)^k
+        \binom{n}{k}
+        {1\over n!}{\d^n \over \d x^n} x^{2n-2k}
+        \right) t^{n} =\]\[    = \sum_{n=0}^\infty \left(
+        {1\over 2^n}
+        \sum_{k=0}^n
+        (-1)^k
+        \binom{n}{k}
+        {1\over n!}{\d^n \over \d x^n} x^{2n-2k}
+        \right) t^{n} =\]\[    = \sum_{n=0}^\infty \left(
+        {1\over 2^n n!}
+        {\d^n \over \d x^n} (x^2 - 1)^n
+        \right) t^{n} =\]\[    = \sum_{n=0}^\infty P_n(x) t^{n}\]</div>
+<p>where we used <a href="#equation-double_sum_2">(15)</a> and</p>
+<div class="math">
+\[\binom{2n-2k}{n-k} \binom{n-k}{k} = \binom{2n-2k}{n} \binom{n}{k}\]</div>
+<p>The <span class="math">\(P_n(x)\)</span> are <a class="reference internal" href="spherical-harmonics.html#legendre-polynomials"><em>Legendre Polynomials</em></a>.</p>
+</div>
+<div class="section" id="double-sums">
+<h1>Double Sums<a class="headerlink" href="#double-sums" title="Permalink to this headline">¶</a></h1>
+<p>When evaluating double sums, one can use triangular summation to reorder them:</p>
+<div class="math" id="equation-double_sum_1">
+<span class="eqno">(14)</span>\[\sum_{n=0}^\infty \sum_{k=0}^\infty a_{n k} =
+\sum_{n=0}^\infty \sum_{k=0}^n a_{n-k, k}\]</div>
+<p>Also it holds</p>
+<div class="math" id="equation-double_sum_2">
+<span class="eqno">(15)</span>\[\sum_{n=0}^\infty \sum_{k=0}^n a_{n k} =
+    \sum_{n=0}^\infty \sum_{k=0}^{\left\lfloor n\over 2 \right\rfloor}
+        a_{n-k, k}\]</div>
+</div>
+<div class="section" id="triangle-inequality">
+<h1>Triangle Inequality<a class="headerlink" href="#triangle-inequality" title="Permalink to this headline">¶</a></h1>
+<p>Triangle inequality (condition) means that none of the three
+quantities <span class="math">\(a\)</span>, <span class="math">\(b\)</span>, <span class="math">\(c\)</span> is greater than the sum of the other two:</p>
+<div class="math" id="equation-trig_three">
+<span class="eqno">(16)</span>\[a + b \ge c\]\[b + c \ge a\]\[c + a \ge b\]</div>
+<p>This is equivalent to just one equation:</p>
+<div class="math" id="equation-trig_one">
+<span class="eqno">(17)</span>\[|a-b| \le c \le a+b\]</div>
+<p>we can do any permutation of the symbols, i.e. the above equation is equivalent
+to any of these:</p>
+<div class="math">
+\[|b-c| \le a \le b+c\]\[|c-a| \le b \le c+a\]</div>
+<p>So instead of stating the three inequalities <a href="#equation-trig_three">(16)</a> it is more
+convenient to just write <a href="#equation-trig_one">(17)</a>, using any permutation that we like.</p>
+<p>To show, that <a href="#equation-trig_three">(16)</a> implies <a href="#equation-trig_one">(17)</a> we rewrite
+<a href="#equation-trig_three">(16)</a>:</p>
+<div class="math">
+\[a + b \ge c\]\[c \ge a-b\]\[c \ge b-a\]</div>
+<p>so</p>
+<div class="math">
+\[a + b \ge c\]\[c \ge |a-b|\]</div>
+<p>and we get <a href="#equation-trig_one">(17)</a>.
+To show, that <a href="#equation-trig_one">(17)</a> implies <a href="#equation-trig_three">(16)</a> we rewrite
+<a href="#equation-trig_one">(17)</a> for <span class="math">\(a\ge b\)</span> first:</p>
+<div class="math">
+\[a \ge b\]\[|a-b| \le c \le a+b\]</div>
+<p>so:</p>
+<div class="math">
+\[a \ge b\]\[a-b \le c \le a+b\]</div>
+<p>rearranging:</p>
+<div class="math">
+\[a + b \ge c\]\[b + c \ge a\]\[a \ge b\]</div>
+<p>since <span class="math">\(c\)</span> is positive, if <span class="math">\(a\ge b\)</span> then also <span class="math">\(c+a\ge b\)</span> and we get
+<a href="#equation-trig_three">(16)</a>. Finally, for <span class="math">\(a &lt; b\)</span>:</p>
+<div class="math">
+\[\begin{split}a &lt; b\end{split}\]\[|a-b| \le c \le a+b\]</div>
+<p>so:</p>
+<div class="math">
+\[\begin{split}a &lt; b\end{split}\]\[-(a-b) \le c \le a+b\]</div>
+<p>rearranging:</p>
+<div class="math">
+\[a + b \ge c\]\[\begin{split}b &gt; a\end{split}\]\[c + a \ge b\]</div>
+<p>since <span class="math">\(c\)</span> is positive, if <span class="math">\(b &gt; a\)</span> then also <span class="math">\(b+c\ge a\)</span> and we get
+<a href="#equation-trig_three">(16)</a>.</p>
+</div>
+<div class="section" id="gamma-function">
+<h1>Gamma Function<a class="headerlink" href="#gamma-function" title="Permalink to this headline">¶</a></h1>
+<p>The Gamma function <span class="math">\(\Gamma(x)\)</span> is defined by the following properties
+for <span class="math">\(x &gt; 0\)</span>:</p>
+<div class="math" id="equation-gamma1">
+<span class="eqno">(18)</span>\[\Gamma(1) = 1\]</div>
+<div class="math" id="equation-gamma2">
+<span class="eqno">(19)</span>\[\Gamma(x+1) = x \Gamma(x)\]</div>
+<div class="math" id="equation-gamma3">
+<span class="eqno">(20)</span>\[\log\Gamma(x) \quad\mbox{is convex}\]</div>
+<p>It can be shown that this determines the function uniquely for <span class="math">\(x &gt; 0\)</span> (this is
+called the Bohr-Mollerup theorem) and then it can be extended analytically to
+the whole complex plane.</p>
+<p>The most common formula for <span class="math">\(\Gamma(z)\)</span> that satisfies <a href="#equation-gamma1">(18)</a>,
+<a href="#equation-gamma2">(19)</a> and <a href="#equation-gamma3">(20)</a>
+is:</p>
+<div class="math" id="equation-gamma_int">
+<span class="eqno">(21)</span>\[\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \d t\]</div>
+<p>It satisfies <a href="#equation-gamma1">(18)</a> because:</p>
+<div class="math">
+\[\Gamma(1)
+    = \int_0^\infty t^{1-1} e^{-t} \d t
+    = \int_0^\infty e^{-t} \d t
+    = [-e^{-t}]_0^\infty
+    = 1\]</div>
+<p>It satisfies <a href="#equation-gamma2">(19)</a> by integrating by parts:</p>
+<div class="math">
+\[\Gamma(z)
+    = \int_0^\infty t^{z-1} e^{-t} \d t
+    = (z-1)\int_0^\infty t^{z-2} e^{-t} \d t-[t^{z-1}e^{-t}]_0^\infty
+    = (z-1)\Gamma(z-1)\]</div>
+<p>Finally it satisfies <a href="#equation-gamma3">(20)</a> by verifying the convex condition
+directly (<span class="math">\(x, y &gt; 0\)</span> and <span class="math">\(0\le \lambda \le 1\)</span>):</p>
+<div class="math">
+\[\log\Gamma(\lambda x + (1-\lambda) y)
+    = \log\int_0^\infty t^{\lambda x + (1-\lambda) y - 1} e^{-t} \d t =\]\[    = \log \int_0^\infty (t^{x-1} e^{-t})^\lambda
+        (t^{y-1} e^{-t})^{1-\lambda} \d t \le\]\[    \le \log \left(
+        \left(\int_0^\infty t^{x-1} e^{-t} \d t\right)^\lambda
+        \left(\int_0^\infty t^{y-1} e^{-t} \d t\right)^{1-\lambda}\right) =\]\[    = \lambda \log\Gamma(x) + (1-\lambda) \log \Gamma(y)\]</div>
+<p>And thus <a href="#equation-gamma_int">(21)</a> uniquely determines the Gamma function.
+We can use <a href="#equation-gamma_int">(21)</a> to calculate <span class="math">\(\Gamma(\half)\)</span>:</p>
+<div class="math">
+\[\Gamma(\half)
+    = \int_0^\infty t^{{1\over2}-1} e^{-t} \d t
+    = \int_0^\infty {e^{-t}\over\sqrt t} \d t
+    = \int_0^\infty {e^{-x^2}\over x} 2x\, \d x
+    = 2\int_0^\infty e^{-x^2} \d x =\]\[    = \int_{-\infty}^\infty e^{-x^2} \d x
+    = \sqrt{
+        \int_{-\infty}^\infty e^{-x^2} \d x
+        \int_{-\infty}^\infty e^{-y^2} \d y
+        }
+    = \sqrt{2\pi \int_0^\infty e^{-r^2} r\d r} =\]\[    = \sqrt{2\pi \int_0^\infty e^{-u} \half\d u}
+    = \sqrt\pi\]</div>
+<p>From this and the definition of the Gamma function we get
+for integer <span class="math">\(n\)</span>:</p>
+<div class="math" id="equation-gamma_fact">
+<span class="eqno">(22)</span>\[\Gamma(n+1) = n\Gamma(n) = n(n-1)\Gamma(n-1)
+    = n(n-1)(n-2)\cdots 2\cdot1\cdot\Gamma(1) =\]\[    = n(n-1)(n-2)\cdots 1
+    = n!\]</div>
+<p>and</p>
+<div class="math" id="equation-gamma_double_fact">
+<span class="eqno">(23)</span>\[\Gamma(n+\half) = (n-\half)\Gamma(n-\half)
+    = (n-\half)(n-1-\half)\Gamma(n-1-\half)
+    = (n-\half)(n-1-\half)\cdots\half\Gamma(\half) =\]\[    = {2n-1\over2}{2n-3\over2}{2n-5\over2}\cdots{1\over2}\Gamma(\half)
+    = {(2n-1)!!\over 2^n}\Gamma(\half)
+    = {(2n-1)!!\over 2^n}\sqrt\pi\]</div>
+</div>
+<div class="section" id="incomplete-gamma-function">
+<h1>Incomplete Gamma Function<a class="headerlink" href="#incomplete-gamma-function" title="Permalink to this headline">¶</a></h1>
+<p>The upper incomplete gamma function is defined by:</p>
+<div class="math">
+\[\Gamma(z, x) = \int_x^\infty t^{z-1} e^{-t} \d t\]</div>
+<p>Integrating by parts we get:</p>
+<div class="math">
+\[\Gamma(z+1, x)
+    = \int_x^\infty t^z e^{-t} \d t
+    = z\int_x^\infty t^{z-1} e^{-t} \d t-[t^ze^{-t}]_x^\infty
+    = z\Gamma(z, x) + x^z e^{-x}\]</div>
+<p>Some special values are:</p>
+<div class="math">
+\[\Gamma(z, 0) = \int_0^\infty t^{z-1} e^{-t} \d t = \Gamma(z)\]\[\Gamma(1, x) = \int_x^\infty e^{-t} \d t = -[e^{-t}]_x^\infty = e^{-x}\]\[\Gamma(\half, x)
+    = \int_x^\infty t^{-\half} e^{-t} \d t
+    = 2\int_{\sqrt{x}}^\infty e^{-s^2} \d s
+    = \sqrt{\pi} \mbox{erfc}(\sqrt{x})\]</div>
+<p>For integer <span class="math">\(n\)</span> we get:</p>
+<div class="math">
+\[\Gamma(n+1, x)
+    = n\Gamma(n, x) + x^n e^{-x}
+    = n(n-1)\Gamma(n-1, x) + (n x^{n-1} + x^n) e^{-x} =\]\[    = n(n-1)(n-2)\Gamma(n-2, x) + (n (n-1) x^{n-2}
+        + n x^{n-1} + x^n) e^{-x} =\]\[    = n(n-1)(n-2)\cdots 2\cdot 1\cdot \Gamma(1, x)
+        + (n(n-1)\cdots 2 x^1 + \cdots
+          + n (n-1) x^{n-2} + n x^{n-1} + x^n) e^{-x} =\]\[    = n! e^{-x} + (n(n-1)\cdots 2 x^1 + \cdots
+          + n (n-1) x^{n-2} + n x^{n-1} + x^n) e^{-x} =\]\[    = n! e^{-x}\sum_{\nu=0}^n {x^\nu\over\nu!}\]</div>
+<p>and</p>
+<div class="math">
+\[\Gamma(n+\half, x)
+    = (n-\half)\Gamma(n-\half, x) + x^{n-\half} e^{-x}
+    = (n-\half)(n-1-\half)\Gamma(n-1-\half, x)
+        + ((n-\half) x^{n-1-\half} + x^{n-\half})) e^{-x} =\]\[    = (n-\half)(n-1-\half)\cdots\half\Gamma(\half, x)
+        + ((n-\half)(n-1-\half)\cdots(1+\half) x^\half + \cdots +
+            (n-\half) x^{n-1-\half} + x^{n-\half})) e^{-x} =\]\[    = {(2n-1)!!\over 2^n}\Gamma(\half, x)
+        +
+        {(2n-1)!!\over 2^n} e^{-x}\sum_{\nu=1}^n
+            {2^\nu x^{\nu-\half}\over(2\nu-1)!!} =\]\[    = {(2n-1)!!\over 2^n}\left(\sqrt\pi \mbox{erfc}(\sqrt x)
+        +
+        e^{-x}\sum_{\nu=1}^n
+            {2^\nu x^{\nu-\half}\over(2\nu-1)!!} \right)\]</div>
+<p>The lower incomplete gamma function is defined by:</p>
+<div class="math">
+\[\gamma(z, x) = \int_0^x t^{z-1} e^{-t} \d t = \Gamma(z) - \Gamma(z, x)\]</div>
+<p>and as such all expressions can be easily derived using the gamma and upper
+incomplete gamma functions.
+The recursion relation is then:</p>
+<div class="math">
+\[\gamma(z+1, x) = \Gamma(z+1) - \Gamma(z+1, x)
+    = z \Gamma(z) - (z\Gamma(z, x) + x^z e^{-x})
+    = z \gamma(z, x) - x^z e^{-x}\]</div>
+<p>Some special values are:</p>
+<div class="math">
+\[\gamma(z, 0) = \Gamma(z) - \Gamma(z, 0) = \Gamma(z) - \Gamma(z) = 0\]\[\gamma(1, x) = \Gamma(1) - \Gamma(1, x) = 1 - e^{-x}\]\[\gamma(\half, x) = \Gamma(\half) - \Gamma(\half, x)
+    = \sqrt\pi - \sqrt\pi \mbox{erfc}(\sqrt x)
+    = \sqrt\pi \mbox{erf}(\sqrt x)\]</div>
+<p>By repeated application of the recursion formula we get:</p>
+<div class="math">
+\[\gamma(z, x)
+    = {1\over z}\gamma(z+1, x) + e^{-x} {x^z\over z}
+    = {1\over z(z+1)}\gamma(z+2, x) + e^{-x} \left({x^z\over z}
+        + {x^{z+1}\over z(z+1)}\right) =\]\[    = {1\over z(z+1)\cdots(z+n)}\gamma(z+n+1, x) + e^{-x}
+        \sum_{k=0}^n {x^{z+k}\over z(z+1)\cdots(z+k)} =\]\[    = {\Gamma(z)\over \Gamma(z+n+1)}\gamma(z+n+1, x) + x^z
+        \Gamma(z) e^{-x} \sum_{k=0}^n {x^k\over \Gamma(z+k+1)} =\]</div>
+<div class="math" id="equation-gamma_series">
+<span class="eqno">(24)</span>\[    = x^z \Gamma(z) e^{-x} \sum_{k=0}^\infty {x^k\over \Gamma(z+k+1)}\]</div>
+<p>where we used:</p>
+<div class="math">
+\[\lim_{z\to\infty} {\gamma(z, x)\over\Gamma(z)} = 0\]</div>
+<p>which can be proven by the following inequality which uses the fact that the
+function <span class="math">\(f(t) = t^{z-1} e^{-t}\)</span> is an increasing function for <span class="math">\(t &lt; z-1\)</span>, so as
+long as <span class="math">\(x &lt; z-1\)</span> we get:</p>
+<div class="math">
+\[\begin{split}\gamma(z, x)
+    = \int_0^x t^{z-1} e^{-t} \d t
+    = \int_0^x f(t) \d t &lt;\end{split}\]\[\begin{split}    &lt; \int_0^x f(x) \d t = x f(x) =\end{split}\]\[\begin{split}    = {x \over z - 1 - x} \int_x^{z-1} f(x) \d t &lt;\end{split}\]\[\begin{split}    &lt; {x \over z - 1 - x} \int_x^{z-1} f(t) \d t &lt;\end{split}\]\[\begin{split}    &lt; {x \over z - 1 - x} \int_0^\infty f(t) \d t =\end{split}\]\[    = {x \over z - 1 - x} \Gamma(z)\]</div>
+<p>Using <a href="#equation-gamma_series">(24)</a> we can now write <span class="math">\(\gamma(z, x)\)</span> using the Kummer
+confluent hypergeometric function <span class="math">\({}_1F_1(a, b, z)\)</span> as follows:</p>
+<div class="math">
+\[\gamma(z, x)
+    = x^z \Gamma(z) e^{-x} \sum_{k=0}^\infty {x^k\over \Gamma(z+k+1)}
+    = x^z z^{-1} e^{-x}\, {}_1F_1(1, z+1, x)
+    = x^z z^{-1}\, {}_1F_1(z, z+1, -x)\]</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Consider the class of integrals:</p>
+<div class="math">
+\[\begin{split}F_m(t) = \int_0^1 u^{2m} e^{-tu^2} \d u, \quad\quad
+    \mbox{($t&gt;0$; $m=0,1,2,\dots$)}\end{split}\]</div>
+<p>We write them using the lower incomplete gamma function as:</p>
+<div class="math">
+\[F_m(t) = \int_0^t \left(v\over t\right)^m e^{-v}
+        \left(v\over t\right)^{-\half}{\d v\over 2 t}
+    = {1\over 2 t^{m+\half}}\int_0^t v^{m-\half} e^{-v} \d v
+    = {\gamma(m+\half, t)\over 2 t^{m+\half}}\]</div>
+<p>We can also write it using the confluent hypergeometric function as follows:</p>
+<div class="math">
+\[F_m(t) = {\gamma(m+\half, t)\over 2 t^{m+\half}}
+    = {t^{m+\half}(m+\half)^{-1} \over 2 t^{m+\half}}
+        \,{}_1F_1(m+\half, m+{\textstyle{3\over2}}, -t)
+    = {{}_1F_1(m+\half, m+{\textstyle{3\over2}}, -t)\over 2m+1}\]</div>
+<p>For <span class="math">\(m=0\)</span> we get:</p>
+<div class="math">
+\[F_0(t) = {\gamma(\half, t)\over 2 t^{\half}}
+    = \half \sqrt{\pi\over t} \mbox{erf}(\sqrt t)\]</div>
+<p>Using the recursion relation we get:</p>
+<div class="math">
+\[F_{m+1}(t)
+    = {\gamma(m+\half+1, t)\over 2 t^{m+\half+1}}
+    = {(m+\half)\gamma(m+\half, t)-t^{m+\half}e^{-t}\over 2 t^{m+\half} t}
+    = {(m+\half)\over t}F_m(t)-{e^{-t}\over 2 t} =\]\[    = {(2m+1) F_m(t)-e^{-t}\over 2 t}\]</div>
+<p>By expressing <span class="math">\(F_m(t)\)</span> from the equation we obtain the inverse relation:</p>
+<div class="math">
+\[F_m(t) = {2t F_{m+1}(t) + e^{-t}\over 2m+1}\]</div>
+<p>From <a href="#equation-gamma_series">(24)</a> we get:</p>
+<div class="math">
+\[F_m(t)
+    = {\gamma(m+\half, t)\over 2 t^{m+\half}}
+    = {1\over 2 t^{m+\half}}
+    t^{m+\half} \Gamma(m+\half) e^{-t} \sum_{k=0}^\infty {t^k\over
+        \Gamma(m+\half+k+1)} =\]\[    = \half \Gamma(m+\half) e^{-t} \sum_{k=0}^\infty {t^k\over
+        \Gamma(m+k+{3\over2})} =\]\[    = \half {(2m-1)!! \sqrt\pi\over 2^m} e^{-t} \sum_{k=0}^\infty {t^k\over
+        {(2m+2k+1)!!\sqrt\pi\over 2^{m+k+1}}} =\]\[    = e^{-t} \sum_{k=0}^\infty {(2m-1)!! (2t)^k\over (2m+2k+1)!!} =\]\[    = e^{-t} \sum_{k=0}^\infty {(2t)^k\over (2m+1)(2m+3)\cdots(2m+2k+1)}\]</div>
+</div>
+</div>
+<div class="section" id="factorial">
+<h1>Factorial<a class="headerlink" href="#factorial" title="Permalink to this headline">¶</a></h1>
+<p>The factorial <span class="math">\(n!\)</span> is defined as</p>
+<div class="math">
+\[n! = n(n-1)(n-2)\cdots 3\cdot2\cdot 1\]</div>
+<p>By <a href="#equation-gamma_fact">(22)</a> it can be written using the Gamma function as:</p>
+<div class="math">
+\[n! = \Gamma(n+1)\]</div>
+</div>
+<div class="section" id="double-factorial">
+<h1>Double Factorial<a class="headerlink" href="#double-factorial" title="Permalink to this headline">¶</a></h1>
+<p>The double factorial <span class="math">\(n!!\)</span> is defined as:</p>
+<div class="math">
+\[\begin{split}n!! = \begin{cases}
+    n(n-2)(n-4)(n-6)\cdots 5\cdot3\cdot1\quad\quad\mbox{for odd $n=2k+1$} \\
+    n(n-2)(n-4)(n-6)\cdots 6\cdot4\cdot2\quad\quad\mbox{for even $n=2k$}
+\end{cases}\end{split}\]</div>
+<p>One can rewrite double factorial using a factorial as:</p>
+<div class="math">
+\[(2k)!! = 2\cdot4\cdot6\cdots (2k)
+    = 2^k (1\cdot2\cdot3\cdots k)
+    = 2^k k!\]\[(2k-1)!!
+    = 1\cdot3\cdot5\cdots(2k-1)
+    = {1\cdot2\cdot3\cdot4\cdot5\cdots(2k) \over 2\cdot4\cdot6\cdots (2k)}
+    = {(2k)!\over (2k)!!} = {(2k)!\over 2^k k!}\]</div>
+<p>For odd <span class="math">\(n\)</span> it can be written using the Gamma function, see <a href="#equation-gamma_double_fact">(23)</a>:</p>
+<div class="math">
+\[(2k-1)!! = {1\over\sqrt\pi} 2^k \Gamma\left(k+\half\right)\]</div>
+<div class="section" id="id2">
+<h2>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="math">
+\[A(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
+    1\cdot 2\cdot 3\cdot \dots \cdot n}
+    = {(2n-1)!!\over n!}
+    = {(2n)!\over 2^n (n!)^2}
+    = {1\over 2^n}\binom{2n}{n}\]\[B(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
+    2\cdot 4\cdot\cdot6 \dots \cdot 2n}
+    = {(2n-1)!!\over (2n)!!}
+    = {(2n)!\over (2^n n!)^2}
+    = {1\over 4^n}\binom{2n}{n}\]</div>
+</div>
+</div>
+<div class="section" id="fermi-dirac-integral">
+<span id="fermi-integral"></span><h1>Fermi-Dirac Integral<a class="headerlink" href="#fermi-dirac-integral" title="Permalink to this headline">¶</a></h1>
+<p>The Fermi-Dirac integral (sometimes just called a Fermi integral) is defined
+as:</p>
+<div class="math">
+\[I_\alpha(\mu) = \int_0^\infty {\epsilon^\alpha \d\epsilon \over
+    e^{\epsilon-\mu} + 1}\]</div>
+<p>Examples:</p>
+<div class="math">
+\[I_{1\over 2}(\mu) = \int_0^\infty {\sqrt \epsilon \d\epsilon \over
+    e^{\epsilon-\mu} + 1}\]\[I_{3\over 2}(\mu) = \int_0^\infty {\epsilon^{3\over2} \d\epsilon \over
+    e^{\epsilon-\mu} + 1}\]</div>
+<p>The Fermi-Dirac integral can also be written using the polylogarithm, see
+<a class="reference internal" href="hyper.html#fermi-dirac-poly"><em>The Series pFq</em></a> for details.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Delta Function</a></li>
+<li><a class="reference internal" href="#distributions">Distributions</a></li>
+<li><a class="reference internal" href="#variations-and-functional-derivatives">Variations and Functional Derivatives</a><ul>
+<li><a class="reference internal" href="#functions-of-one-variable">Functions of One Variable</a></li>
+<li><a class="reference internal" href="#functions-of-several-variables">Functions of several variables</a></li>
+<li><a class="reference internal" href="#functionals">Functionals</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dirac-notation">Dirac Notation</a></li>
+<li><a class="reference internal" href="#homogeneous-functions">Homogeneous functions</a><ul>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#green-functions">Green Functions</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#boundary-conditions">Boundary Conditions</a></li>
+<li><a class="reference internal" href="#symmetry">Symmetry</a></li>
+<li><a class="reference internal" href="#id1">Examples</a><ul>
+<li><a class="reference internal" href="#poisson-equation-in-1d">Poisson Equation in 1D</a></li>
+<li><a class="reference internal" href="#radial-poisson-equation">Radial Poisson Equation</a></li>
+<li><a class="reference internal" href="#helmholtz-equation-in-1d">Helmholtz Equation in 1D</a></li>
+<li><a class="reference internal" href="#poisson-equation-in-2d">Poisson Equation in 2D</a></li>
+<li><a class="reference internal" href="#poisson-equation-in-3d">Poisson Equation in 3D</a></li>
+<li><a class="reference internal" href="#helmholtz-equation-in-3d">Helmholtz Equation in 3D</a></li>
+<li><a class="reference internal" href="#finite-element-method">Finite Element Method</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#binomial-coefficients">Binomial Coefficients</a></li>
+<li><a class="reference internal" href="#double-sums">Double Sums</a></li>
+<li><a class="reference internal" href="#triangle-inequality">Triangle Inequality</a></li>
+<li><a class="reference internal" href="#gamma-function">Gamma Function</a></li>
+<li><a class="reference internal" href="#incomplete-gamma-function">Incomplete Gamma Function</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#factorial">Factorial</a></li>
+<li><a class="reference internal" href="#double-factorial">Double Factorial</a><ul>
+<li><a class="reference internal" href="#id2">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fermi-dirac-integral">Fermi-Dirac Integral</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="trig.html"
+                        title="previous chapter">Periodic Functions</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="spherical-harmonics.html"
+                        title="next chapter">Legendre Polynomials</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/math/other.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="trig.html" title="Periodic Functions"
+             >previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

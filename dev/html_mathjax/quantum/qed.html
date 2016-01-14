@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quantum Electrodynamics (QED) &mdash; Theoretical Physics Reference 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
+    <link rel="up" title="Quantum Field Theory and Quantum Mechanics" href="main.html" />
+    <link rel="next" title="Quantum Mechanics" href="qm.html" />
+    <link rel="prev" title="Introduction" href="qft.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28893880-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+    <div style="display:none">
+    \(
+        \newcommand{\d}{\mathrm{d}}
+        \newcommand{\bomega}{\vec\omega}
+        \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
+
+        %operators
+        \newcommand{\diag}{\mathrm{diag}}
+        \newcommand{\sinc}{\mathrm{sinc}}
+        \newcommand{\Sh}{ {\large\style{font-family:Times}{\text{Ш}}} }
+        \newcommand{\res}{\mathrm{Res}}
+    \)
+    </div>
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="qm.html" title="Quantum Mechanics"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qft.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="quantum-electrodynamics-qed">
+<span id="index-0"></span><h1>Quantum Electrodynamics (QED)<a class="headerlink" href="#quantum-electrodynamics-qed" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="qed-lagrangian">
+<h2>QED Lagrangian<a class="headerlink" href="#qed-lagrangian" title="Permalink to this headline">¶</a></h2>
+<p>The QED Lagrangian density is</p>
+<div class="math">
+\[\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}\]</div>
+<p>where</p>
+<div class="math">
+\[\begin{split}\psi=\left( \begin{array}{c} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4 \\ \end{array}\right)\end{split}\]</div>
+<p>and</p>
+<div class="math">
+\[D_\mu=\partial_\mu+{i\over \hbar}eA_\mu\]</div>
+<p>is the gauge covariant derivative and (<span class="math">\(e\)</span> is the elementary charge, which is <span class="math">\(1\)</span> in atomic units, i.e. the electron has a charge <span class="math">\(-e\)</span>)</p>
+<div class="math">
+\[F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu\]</div>
+<p>is the electromagnetic field tensor. It&#8217;s astonishing, that this simple Lagrangian can account for all phenomena from macroscopic scales down to something like <span class="math">\(10^{-13}\rm\,cm\)</span>. So it&#8217;s not a surprise that Feynman, Schwinger and Tomonaga received the 1965 Nobel Prize in Physics for such a fantastic achievement.</p>
+<p>Plugging this Lagrangian into the Euler-Lagrange equation of motion for a field, we get:</p>
+<div class="math">
+\[(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=0\]</div>
+<div class="math">
+\[\partial_\nu F^{\nu\mu}=-ec\bar\psi\gamma^\mu\psi\]</div>
+<p>The first equation is the Dirac equation in the electromagnetic field and the
+second equation is a set of Maxwell equations (<span class="math">\(\partial_\nu
+F^{\nu\mu}=-ej^\mu\)</span>) with a source <span class="math">\(j^\mu=c\bar\psi\gamma^\mu\psi\)</span>, which is a
+4-current comming from the Dirac equation.</p>
+</div>
+<div class="section" id="magnetic-moment-of-an-electron">
+<h2>Magnetic moment of an electron<a class="headerlink" href="#magnetic-moment-of-an-electron" title="Permalink to this headline">¶</a></h2>
+<p>In this section we derive the order-<span class="math">\(\alpha\)</span> correction to the magnetic moment
+of an electron.</p>
+<p>We start by computing the electron vertex function for the process
+<span class="math">\(\gamma(q)\to e^+(p) + e^-(p')\)</span>:</p>
+<div class="math">
+\[i M = i e^2 \left(\bar u(p')\Gamma^\mu(p', p)u(p)\right) {1\over q^2}
+    \left(\bar u(k') \gamma_\mu u(k)\right)\]</div>
+<p>where <span class="math">\(k\)</span> corresponds to some heavy target. If <span class="math">\(A_\mu^{\rm cl}\)</span> is a fixed
+classical potential, we get:</p>
+<div class="math">
+\[i M 2\pi \delta(p^{0'} - p^0) =
+    -i e \bar u(p')\Gamma^\mu(p', p)u(p) A_\mu^{\rm cl}\]</div>
+<p>Using general arguments (Lorentz invariance, parity-conservation, Ward
+identity) we can always write <span class="math">\(\Gamma^\mu\)</span> as:</p>
+<div class="math">
+\[\Gamma^\mu(p', p) = \gamma^\mu F_1(q^2) + {i\sigma^{\mu\nu} q_\nu \over
+    2m} F_2(q^2)\]</div>
+<p>where <span class="math">\(F_1\)</span> and <span class="math">\(F_2\)</span> ar unknown functions of <span class="math">\(q^2 = (p'-p)^2 = -2p'\cdot p +
+2m^2\)</span> called form factors. As we will see below, in the lowest order we get
+<span class="math">\(F_1 = 1\)</span> and <span class="math">\(F_2 = 0\)</span>.</p>
+<p>We can calculate the amplitude for elastic Coulomb scattering of a
+nonrelativistic electron from a region of nonzero electrostatic potential by
+setting <span class="math">\(A_\mu^{\rm cl}(x)=(\phi({\bf x}), 0)\)</span>, then:</p>
+<div class="math">
+\[A_\mu^{\rm cl}(q)=(2\pi\delta(q^0)\tilde\phi({\bf q}), 0)\]\[i M 2\pi \delta(p^{0'} - p^0) =
+    -i e \bar u(p')\Gamma^0(p', p)u(p) 2\pi\delta(q^0)\tilde\phi({\bf q})\]\[i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\]</div>
+<p>If the electrostatic field is very slowly varying over a large (even
+macroscopic) region, <span class="math">\(\tilde\phi({\bf q})\)</span> will be concentrated about <span class="math">\({\bf q}
+= 0\)</span>, then we can take the limit <span class="math">\({\bf q}\to 0\)</span>:</p>
+<div class="math">
+\[i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\]\[i M = -i e \bar u(p')
+    \left(\gamma^0 F_1(q^2) + {i\sigma^{0\nu} q_\nu \over 2m} F_2(q^2)
+        \right)u(p) \tilde\phi({\bf q})\]\[i M = -i e \bar u(p') \gamma^0 u(p) F_1(0) \tilde\phi({\bf q})\]\[i M = -i e 2m\xi^{'\dag}\xi F_1(0) \tilde\phi({\bf q})\]\[i M = -i \left( e F_1(0) \tilde\phi({\bf q})\right) 2m\xi^{'\dag}\xi\]</div>
+<p>This corresponds to the Born approximation for scattering from a potential</p>
+<div class="math">
+\[V({\bf x}) = e F_1(0) \phi({\bf x})\]</div>
+<p>Thus <span class="math">\(F_1(0)\)</span> is the electric charge of the electron, in units of <span class="math">\(e\)</span>. Since
+<span class="math">\(F_1(0) = 1\)</span> already in the first order of perturbation theory, radiative
+corrections to <span class="math">\(F_1(q^2)\)</span> must vanish at <span class="math">\(q^2=0\)</span>.</p>
+<p>Now we calculate the scattering from a static vector potential by setting
+<span class="math">\(A_\mu^{\rm cl}(x)=(0, {\bf A}_\mu^{\rm cl}({\bf x}))\)</span>, then:</p>
+<div class="math">
+\[A^\mu_{\rm cl}(q)=(0, 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q}))\]\[i M 2\pi \delta(p^{'i} - p^i) =
+    i e \bar u(p')\Gamma^i(p', p)u(p) 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q})\]\[i M = i e \bar u(p')\Gamma^i(p', p)u(p) \tilde A^i_{\rm cl}({\bf q})\]\[i M = i e \bar u(p')\left(\gamma^i F_1(q^2) + {i\sigma^{i\nu} q_\nu \over 2m} F_2(q^2) \right)
+u(p) \tilde A^i_{\rm cl}({\bf q})\]</div>
+<p>In the limit <span class="math">\(q\to0\)</span> this becomes:</p>
+<div class="math">
+\[i M = i e
+    2m\xi^{'\dag}\left(-i\epsilon^{ijk}{q^j\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
+\tilde A^i_{\rm cl}({\bf q})\]\[i M = -i e
+    2m\xi^{'\dag}\left(-{\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
+\left(-i\epsilon^{ijk}q^j\tilde A^i_{\rm cl}({\bf q})\right)\]\[i M = -i e
+    2m\xi^{'\dag}\left(-{\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
+    \tilde B^k({\bf q})\]\[i M = -i \left(-{e\over m} (F_1(0) + F_2(0))
+    2m\xi^{'\dag}{\sigma^k\over 2}\xi
+    \tilde B^k({\bf q})\right)\]</div>
+<p>where</p>
+<div class="math">
+\[\tilde B^k({\bf q}) =
+\left(-i\epsilon^{ijk}q^j\tilde A^i_{\rm cl}({\bf q})\right)\]</div>
+<p>is the Fourier transform of the magnetic field produced by <span class="math">\({\bf A}^{\rm
+cl}({\bf x})\)</span>.</p>
+<p>This corresponds to the Born approximation for scattering from a potential</p>
+<div class="math">
+\[V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
+    \xi^{'\dag}{\sigma^k\over 2}\xi
+    B^k({\bf x})\]\[V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
+    \xi^{'\dag}{\bsigma\over 2}\xi\cdot {\bf B}({\bf x})\]\[\begin{split}V({\bf x}) = -&lt;{\bmu}&gt;\cdot {\bf B}({\bf x})\end{split}\]</div>
+<p>where</p>
+<div class="math">
+\[\begin{split}&lt;{\bmu}&gt; = {e\over m} (F_1(0) + F_2(0)) \xi^{'\dag}{\bsigma\over 2}\xi\end{split}\]\[\begin{split}&lt;{\bmu}&gt; = g {e\over 2m} {\bf S}\end{split}\]</div>
+<p>where</p>
+<div class="math">
+\[g = 2(F_1(0) + F_2(0))\]\[{\bf S} = \xi^{'\dag}{\bsigma\over 2}\xi\]</div>
+<p>The coefficient <span class="math">\(g\)</span> is called the Landé g-factor, and since the leading order
+of perturbation theory gives <span class="math">\(F_2(0)=0\)</span> (and we know that <span class="math">\(F_1(0)=1\)</span> to all
+orders), we get:</p>
+<div class="math">
+\[g = 2(F_1(0) + F_2(0)) = 2 + 2F_2(0) = 2 + O(\alpha)\]</div>
+<p>This is the standard prediction of the Dirac equation. The anomalous magnetic
+moment is then:</p>
+<div class="math">
+\[a_e = {g - 2\over 2} = F_2(0)\]</div>
+<p>To calculate that, we need to evaluate the one-loop correction to the vertex
+function, so we start by deriving the appropriate Green function for the
+process <span class="math">\(\gamma(q) + e^+(p) \to e^+(p')\)</span>:</p>
+<div class="math">
+\[\ket{i} = a^{r\dag}_{\bf q} b^{t\dag}_{\bf p} \ket{\Omega}\]\[\ket{f} = b^{s\dag}_{\bf p'} \ket{\Omega}\]\[\braket{f|i} =\bra{\Omega} b^s_{\bf p'} a^{r\dag}_{\bf q}
+     b^{t\dag}_{\bf p} \ket{\Omega} =\]\[    =\bra{\Omega}T b^s_{\bf p'} a^{r\dag}_{\bf q}
+         b^{t\dag}_{\bf p} \ket{\Omega} =\]\[    =\bra{\Omega}T
+         \bar u^s({\bf p'}){1\over\tilde S(p')}\tilde \psi(p')
+         \epsilon_\mu^{r*}({\bf q}){q^2\over i} \tilde A^\mu(-q)
+         \tilde{\bar\psi}(-p){1\over\tilde S(-p)}u^t({\bf p})
+         \ket{\Omega} =\]\[    =\bar u^s({\bf p'}){1\over\tilde S(p')}
+        \epsilon_\mu^{r*}({\bf q}){q^2\over i}
+         \bra{\Omega}T
+         \tilde \psi(p')
+         \tilde A^\mu(-q)
+         \tilde{\bar\psi}(-p)
+         \ket{\Omega}{1\over\tilde S(-p)}u^t({\bf p}) =\]\[    =\bar u^s({\bf p'}){1\over\tilde S(p')}
+        \epsilon_\mu^{r*}({\bf q}){q^2\over i}
+         \tilde G(p, p', q)
+         {1\over\tilde S(-p)}u^t({\bf p}) =\]</div>
+<p>where:</p>
+<div class="math">
+\[\tilde G(p, p', q) = \bra{\Omega}T \tilde \psi(p') \tilde A^\mu(-q)
+         \tilde{\bar\psi}(-p)
+         \ket{\Omega}\]</div>
+<p>is the interacting Green function for the Lagrangian
+<span class="math">\(-\lambda \bar e \gamma^\mu e A_\mu\)</span>. In the first order:</p>
+<div class="math">
+\[\tilde G(p, p', q) = \bra{\Omega}T \tilde\psi(p') \tilde A^\mu(-q)
+         \tilde{\bar\psi}(-p)
+         \ket{\Omega} =\]\[    = \int \d^4 x \bra{0}T \tilde\psi(p') \tilde A^\mu(-q)
+         \tilde{\bar\psi}(-p)
+         (-\lambda)\bar e(x) \gamma^\rho e(x) A_\rho(x)
+         \ket{0} =\]\[    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
+        e^{i\hat p'p' - \hat q q
+        -\hat pp}
+        \bra{0}T \psi(\hat p') A^\mu(\hat q)
+         {\bar\psi}(\hat p)
+         \bar e(x) \gamma^\rho e(x) A_\rho(x)
+         \ket{0} =\]\[    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
+        e^{i\hat p'p' - \hat q q
+        -\hat pp}
+        D^\mu_\rho(\hat q-x) S(\hat p' - x)\gamma^\rho S(\hat p-x)
+        =\]\[    = (-\lambda)(2\pi)^4\delta(p'-q-p)
+        \tilde D^\mu_\rho(q) \tilde S(p')\gamma^\rho \tilde S(p)\]</div>
+<p>so the amplitude is:</p>
+<div class="math">
+\[\braket{f|i}=\bar u^s({\bf p'}){1\over\tilde S(p')}
+    \epsilon_\mu^{r*}({\bf q}){q^2\over i}
+ (-\lambda)(2\pi)^4\delta(p'-q-p)
+    \tilde D^\mu_\rho(q) \tilde S(p')\gamma^\rho \tilde S(p)
+     {1\over\tilde S(-p)}u^t({\bf p}) =\]\[=(-\lambda)(2\pi)^4\delta(p'-q-p)\epsilon_\mu^{r*}({\bf q})
+        u^s({\bf p'})\gamma^\mu u^t({\bf p})\]</div>
+<p>and we got <span class="math">\(\Gamma^\mu = \gamma^\mu\)</span>, so <span class="math">\(F_1=1\)</span> and <span class="math">\(F_2=0\)</span> in the lowest
+order. In the next order we get:</p>
+<div class="math">
+\[\tilde G(p, p', q)
+    = (-\lambda)(2\pi)^4\delta(p'-q-p)
+        \tilde D^\mu_\rho(q) \tilde S(p')\delta\Gamma^\rho \tilde S(p)\]\[\delta\Gamma^\mu =
+    \int {\d^4 k\over (2\pi)^4} \tilde D_{\nu\rho}(k-p)
+        (-ie\gamma^\nu)
+        \tilde S(k')
+        \gamma^\mu
+        \tilde S(k)
+        (-ie\gamma^\rho)\]</div>
+<p>Now we can write:</p>
+<div class="math">
+\[\bar u(p')\Gamma^\mu(p', p) u(p) =
+    \bar u(p')(\gamma^\mu + \delta\Gamma^\mu) u(p)\]\[\bar u(p')\delta\Gamma^\mu(p', p) u(p) =
+    \int {\d^4 k\over (2\pi)^4} \tilde D_{\nu\rho}(k-p)
+        \bar u(p')
+        (-ie\gamma^\nu)
+        \tilde S(k')
+        \gamma^\mu
+        \tilde S(k)
+        (-ie\gamma^\rho)
+        u(p) =\]\[    =
+    \int {\d^4 k\over (2\pi)^4} {-ig_{\nu\rho}\over (k-p)^2 +i\epsilon}
+        \bar u(p')
+        (-ie\gamma^\nu)
+        {i(\fslash k' + m)\over k'^2-m^2 +i\epsilon}
+        \gamma^\mu
+        {i(\fslash k + m)\over k^2-m^2 +i\epsilon}
+        (-ie\gamma^\rho)
+        u(p) =\]\[= 2ie^2\int {\d^4 k\over (2\pi)^4}
+    {\bar u(p') \left(
+        \fslash k \gamma^mu \fslash k' + m^2\gamma^\mu - 2m(k+k')^\mu
+        \right) u(p) \over
+    ((k-p)^2 + i\epsilon)(k'^2 - m^2 + i\epsilon)(k^2-m^2+i\epsilon)
+        }=\]\[= \cdots =\]\[= 2i e^2 \int {\d^4 l\over (2\pi)^4} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    {2\over D^3} \bar u(p') \left(
+    \gamma^\mu (-\half l^2+ (1-x)(1-y)q^2 + (1-4z+z^2)m^2)
+        + {i\sigma^{\mu\nu}q_\nu\over 2m} (2m^2 z(1-z))
+    \right)u(p) =\]\[= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    \bar u(p') \left(
+    \gamma^\mu \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
+        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)\right]
+        + {i\sigma^{\mu\nu}q_\nu\over 2m}\left[{1\over\Delta}2m^2 z(1-z)
+            \right] \right)u(p)\]</div>
+<p>where</p>
+<div class="math">
+\[k' = k + q\]\[D = l^2 - \Delta + i\epsilon\]\[\begin{split}\Delta = -xyq^2 + (1-z)^2 m^2 &gt; 0\end{split}\]</div>
+<p>So the expressions for the form factors are:</p>
+<div class="math">
+\[F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
+        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)\right]
+        +O(\alpha^2)\]\[F_2(q^2) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+     \left[{1\over\Delta}2m^2 z(1-z) \right]
+        +O(\alpha^2) =\]\[= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+     \left[2m^2 z(1-z)\over m^2(1-z)^2 - q^2 xy \right]
+        +O(\alpha^2)\]</div>
+<p><span class="math">\(F_1\)</span> contains both ultraviolet and infrared divergencies. To cure the infrared
+divergence, we add a term <span class="math">\(\mu^2 z\)</span> to <span class="math">\(\Delta\)</span>. To cure the ultraviolet
+divergence, we make the substitution:</p>
+<div class="math">
+\[F_1(q^2) \to F_1(q^2) - \delta F_1(0)\]</div>
+<p>where <span class="math">\(\delta F_1\)</span> is the first order (in <span class="math">\(\alpha\)</span>) correction to <span class="math">\(F_1\)</span> (i.e.
+<span class="math">\(F_1 = 1 + \delta F_1 + O(\alpha^2)\)</span>):</p>
+<div class="math">
+\[\delta F_1(0) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    \left[\log {z \Lambda^2\over\Delta (q^2=0)} + {1\over\Delta (q^2=0)}
+        (1-4z+z^2)m^2\right]\]</div>
+<p>so the corrected <span class="math">\(F_1\)</span> is:</p>
+<div class="math">
+\[F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
+        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)+\right.\]\[    \left.-\log {z \Lambda^2\over\Delta (q^2=0)} - {1\over\Delta (q^2=0)}
+    (1-4z+z^2)m^2\right]
+    +O(\alpha^2) =\]\[= 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+    \left[\log {m^2 (1-z)^2\over m^2(1-z)^2 - q^2 x y} +
+        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\over
+        m^2(1-z)^2 - q^2 x y +\mu^2z
+        \right)+\right.\]\[    \left.-{(1-4z+z^2)m^2\over m^2 (1-z)^2 + \mu^2 z}\right]
+    +O(\alpha^2)\]</div>
+<p>Neither the ultraviolet nor the infrared
+divergence affects <span class="math">\(F_2(q^2)\)</span>, so we just set <span class="math">\(q=0\)</span>:</p>
+<div class="math">
+\[F_2(0) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+     \left[2m^2 z(1-z)\over m^2(1-z)^2 \right] +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \delta(x+y+z-1)
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+    \theta(1-(1-y-z))\theta((1-y-z)-0)
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+    \theta(y+z)\theta(1-y-z)
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+    \theta(1-y-z)
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z \int_0^{1-z} \,\d y
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z (1-z)
+     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z 2z + O(\alpha^2) =\]\[= {\alpha\over 2\pi} + O(\alpha^2)\]</div>
+<p>Thus we get the correction to the <span class="math">\(g\)</span>-factor of the electron:</p>
+<div class="math">
+\[a_e = {g - 2\over 2} = F_2(0) = {\alpha\over 2\pi} \approx 0.0011614\]</div>
+<p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span>
+<span class="go">0.0011614097335977778</span>
+</pre></div>
+</div>
+<p>Experiments give <span class="math">\(a_e = 0.00115965218073\pm0.00000000000028\)</span>.</p>
+<p>Higher order corrections from QED can also be calculated:</p>
+<div class="math">
+\[a_e = A_1 \left({\alpha\over \pi}\right) +
+      A_2 \left({\alpha\over \pi}\right)^2 +
+      A_3 \left({\alpha\over \pi}\right)^3 +
+      A_4 \left({\alpha\over \pi}\right)^4 + \cdots\]</div>
+<p>we already know that <span class="math">\(A_1 = \half\)</span>. See for example <a class="reference external" href="http://arxiv.org/abs/hep-ph/9410248">hep-ph/9410248</a> for the expression for <span class="math">\(A_2\)</span>:</p>
+<div class="math">
+\[A_2 = \frac{197}{144} + \frac{3}{4} \zeta\left(3\right) - \frac{1}{2}
+    \pi^{2} \operatorname{log}\left(2\right) + \frac{1}{12} \pi^{2} =\]\[= -0.328478965579\dots\]</div>
+<p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">197</span><span class="p">)</span><span class="o">/</span><span class="mi">144</span> <span class="o">+</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
+<span class="go">-0.328478965579194</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="http://arxiv.org/abs/hep-ph/9602417">hep-ph/9602417</a>, where the author
+obtains the following expression for the coefficient <span class="math">\(A_3\)</span>:</p>
+<div class="math">
+\[A_3 = \frac{28259}{5184} - \frac{215}{24} \zeta\left(5\right)
++ \frac{100}{3} \left(\sum_{n=1}^{\infty} \frac{1}{2^{n} n^{4}} -
+  \frac{1}{24} \pi^{2} \operatorname{log}^{2}\left(2\right) + \frac{1}{24}
+  \operatorname{log}^{4}\left(2\right)\right) +\]\[+\frac{139}{18}
+\zeta\left(3\right) - \frac{298}{9} \pi^{2}
+\operatorname{log}\left(2\right) + \frac{83}{72} \pi^{2}
+\zeta\left(3\right) + \frac{17101}{810} \pi^{2} -
+\frac{239}{2160} \pi^{4} =\]\[= 1.181241456\dots\]</div>
+<p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;n&quot;</span><span class="p">)</span>
+<span class="go">n</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a4</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_3</span> <span class="o">=</span> <span class="mi">83</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">72</span> <span class="o">-</span> <span class="mi">215</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">24</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">a4</span> <span class="o">+</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">24</span> <span class="o">-</span> \
+<span class="gp">... </span>        <span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> \
+<span class="gp">... </span>        <span class="mi">239</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2160</span> <span class="o">+</span> <span class="mi">139</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">18</span> <span class="o">-</span> <span class="mi">298</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span> <span class="o">+</span> \
+<span class="gp">... </span>        <span class="mi">17101</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">810</span> <span class="o">+</span> <span class="n">S</span><span class="p">(</span><span class="mi">28259</span><span class="p">)</span><span class="o">/</span><span class="mi">5184</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_3</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
+<span class="go">1.18124145658720</span>
+</pre></div>
+</div>
+<p>Numerical approximation for <span class="math">\(A_4\)</span> can be found in
+<a class="reference external" href="http://arxiv.org/abs/hep-ph/0507249">hep-ph/0507249</a>:</p>
+<div class="math">
+\[A_4=-1.7283(35)\]</div>
+<p>So the total value of <span class="math">\(a_e\)</span> is:</p>
+<div class="math">
+\[a_e = 0.00115965223273643 + O(\alpha^4)\]\[a_e = 0.00115965218242334 + O(\alpha^5)\]</div>
+<p>Let&#8217;s state the experimental value again for comparison (see above):</p>
+<div class="math">
+\[a_e = 0.00115965218073\pm0.00000000000028\]</div>
+<p>At this level of accuracy, the uncertainty of the exact value of <span class="math">\(\alpha\)</span> as
+well as other corrections coming from the Standar Model come into play, so one
+should not take the numbers above too seriously, but one can roughly say, that
+the agreement between the QED prediction and experiment is about 8 significant
+figures.</p>
+<p>Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;n&quot;</span><span class="p">)</span>
+<span class="go">n</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a4</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_1</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">197</span><span class="p">)</span><span class="o">/</span><span class="mi">144</span> <span class="o">+</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_3</span> <span class="o">=</span> <span class="mi">83</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">72</span> <span class="o">-</span> <span class="mi">215</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">24</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">a4</span> <span class="o">+</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">24</span> <span class="o">-</span> \
+<span class="gp">... </span>        <span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> \
+<span class="gp">... </span>        <span class="mi">239</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2160</span> <span class="o">+</span> <span class="mi">139</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">18</span> <span class="o">-</span> <span class="mi">298</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span> <span class="o">+</span> \
+<span class="gp">... </span>        <span class="mi">17101</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">810</span> <span class="o">+</span> <span class="n">S</span><span class="p">(</span><span class="mi">28259</span><span class="p">)</span><span class="o">/</span><span class="mi">5184</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span> <span class="o">=</span> <span class="n">A_1</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span> <span class="o">+</span> <span class="n">A_2</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">A_3</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
+<span class="go">0.00115965223273643</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A_4</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.7283</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">a_e</span> <span class="o">+</span> <span class="n">A_4</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
+<span class="go">0.00115965218242334</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quantum Electrodynamics (QED)</a><ul>
+<li><a class="reference internal" href="#qed-lagrangian">QED Lagrangian</a></li>
+<li><a class="reference internal" href="#magnetic-moment-of-an-electron">Magnetic moment of an electron</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qft.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="qm.html"
+                        title="next chapter">Quantum Mechanics</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/quantum/qed.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="qm.html" title="Quantum Mechanics"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qft.html" title="Introduction"
+             >previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

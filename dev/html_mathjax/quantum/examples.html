@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Examples &mdash; Theoretical Physics Reference 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
+    <link rel="up" title="Quantum Field Theory and Quantum Mechanics" href="main.html" />
+    <link rel="next" title="Radial Schrödinger and Dirac Equations" href="radial.html" />
+    <link rel="prev" title="Quantum Mechanics" href="qm.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28893880-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+    <div style="display:none">
+    \(
+        \newcommand{\d}{\mathrm{d}}
+        \newcommand{\bomega}{\vec\omega}
+        \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
+
+        %operators
+        \newcommand{\diag}{\mathrm{diag}}
+        \newcommand{\sinc}{\mathrm{sinc}}
+        \newcommand{\Sh}{ {\large\style{font-family:Times}{\text{Ш}}} }
+        \newcommand{\res}{\mathrm{Res}}
+    \)
+    </div>
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="radial.html" title="Radial Schrödinger and Dirac Equations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qm.html" title="Quantum Mechanics"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="two-particles-in-harmonic-potential">
+<h2>Two Particles in Harmonic Potential<a class="headerlink" href="#two-particles-in-harmonic-potential" title="Permalink to this headline">¶</a></h2>
+<p>It is a 1D, two-body problem with an interacting Hamiltonian</p>
+<div class="math">
+\[H(x_1, x_2) = -\half{\partial^2\over\partial x_1^2}
+-\half{\partial^2\over\partial x_2^2}
+    +{1\over|x_1 - x_2|} + \half\omega^2 x_1^2 + \half\omega^2 x_2^2\]</div>
+<p>and it can be solved analytically. The Schrödinger equation is</p>
+<div class="math">
+\[\left(-\half{\partial^2\over\partial x_1^2} -\half{\partial^2\over\partial x_2^2}
+    +{1\over|x_1 - x_2|} + \half\omega^2 x_1^2 + \half\omega^2 x_2^2
+\right)\Psi(x_1, x_2) = E \Psi(x_1, x_2)\]</div>
+<p>we use the substitution:</p>
+<div class="math">
+\[u = {1\over\sqrt2}(x_1 - x_2)\]\[v = {1\over\sqrt2}(x_1 + x_2)\]</div>
+<p>then</p>
+<div class="math">
+\[{\partial^2\over\partial x_1^2} + {\partial^2\over\partial x_2^2}=
+{\partial^2\over\partial u^2} + {\partial^2\over\partial v^2}\]\[|x_1 - x_2| = \sqrt2|u|\]\[x_1^2 + x_2^2 = u^2 + v^2\]</div>
+<p>and</p>
+<div class="math">
+\[\left(-\half{\partial^2\over\partial u^2} -\half{\partial^2\over\partial v^2}
+    +{1\over\sqrt2 |u|} + \half\omega^2 u^2 + \half\omega^2 v^2
+\right)\Psi(u, v) = E \Psi(u, v)\]</div>
+<p>Note also the symmetry of the Hamiltonian <span class="math">\(H(x_1, x_2) = H(x_2, x_1)\)</span> which
+after substitution is equivalent to <span class="math">\(H(u, v) = H(-u, v)\)</span>.
+Now we can separate the equation:</p>
+<div class="math">
+\[\Psi(u, v) = f(u)g(v)\]\[\left(-\half{\d^2\over\d u^2} +{1\over\sqrt2 |u|} + \half\omega^2 u^2
+\right)f_k(u) = \epsilon_k f_k(u)\]\[\left(-\half{\d^2\over\d v^2} + \half\omega^2 v^2
+\right)g_l(v) = \epsilon_l g_l(v)\]\[E_{kl} = \epsilon_k + \epsilon_l\]</div>
+<p>the solution of the second equation is:</p>
+<div class="math">
+\[g_l(v) = {1\over\sqrt{2^l l!}} \left(\omega\over\pi\right)^{1\over4}
+    e^{-{\omega v^2\over2}} H_l(\sqrt\omega v)\]\[\epsilon_l = \omega(l+\half)\quad\mbox{for $l=0, 1, 2, \dots$}\]</div>
+<p>where <span class="math">\(H_n(x)\)</span> are the Hermite polynomials:</p>
+<div class="math">
+\[H_n(x) = (-1)^n e^{x^2} {\d^n\over\d x^n} e^{-x^2}\]</div>
+<p>The solution to the first equation can be approximated around the minimum of
+the potential, which occurs at point <span class="math">\(u=u_0\)</span> (since the potential is symmetric
+with respect to <span class="math">\(u\)</span>, we only treat the branch <span class="math">\(u&gt;0\)</span>):</p>
+<div class="math">
+\[V(u) = {1\over\sqrt2 |u|} + \half\omega^2 u^2 =
+    \left(2^{-{1\over 3}} + 2^{-{4\over3}}\right) \omega^{2\over3}
+    +{3\over 2}\omega^2(u-u_0)^2
+    +O\left((u-u_0)^3\right)\]\[u_0 = 2^{-{1\over6}}\omega^{-{2\over3}}\]</div>
+<p>So the first few states can be approximated by the harmonic oscillator
+solution with frequency <span class="math">\(\sqrt3\omega\)</span>:</p>
+<div class="math">
+\[f_k(u) = {1\over\sqrt{2^k k!}} \left(\sqrt3\omega\over\pi\right)^{1\over4}
+    e^{-{\sqrt3\omega (u-u_0)^2\over2}} H_k(3^{1\over4}\sqrt\omega (u-u_0))\]\[\epsilon_k =
+    \left(2^{-{1\over 3}} + 2^{-{4\over3}}\right) \omega^{2\over3}
+    +
+    \sqrt3\omega(k+\half)\quad\mbox{for $k=0, 1, 2, \dots$}\]</div>
+<p>The final solution is then:</p>
+<div class="math">
+\[\Psi_{kl}(u, v) = f_k(u) g_l(v) =\]\[    =
+    {1\over\sqrt{2^k k!}} \left(\sqrt3\omega\over\pi\right)^{1\over4}
+    e^{-{\sqrt3\omega (u-u_0)^2\over2}} H_k(3^{1\over4}\sqrt\omega (u-u_0))
+    {1\over\sqrt{2^l l!}} \left(\omega\over\pi\right)^{1\over4}
+    e^{-{\omega v^2\over2}} H_l(\sqrt\omega v)\]\[E_{kl} = \epsilon_k + \epsilon_l =
+    \left(2^{-{1\over 3}} + 2^{-{4\over3}}\right) \omega^{2\over3}
+    +
+    \sqrt3\omega(k+\half)
+    +
+    \omega(l+\half)\]</div>
+</div>
+<div class="section" id="quantum-harmonic-oscillator">
+<h2>Quantum Harmonic Oscillator<a class="headerlink" href="#quantum-harmonic-oscillator" title="Permalink to this headline">¶</a></h2>
+<p>The quantum
+harmonic oscillator for one particle in 1D is:</p>
+<div class="math">
+\[i\hbar{\partial\over\partial t}\psi(x, t)= -{\hbar^2\over2m}{\partial^2\over\partial x^2}\psi(x,t)+V(x)\psi(x,t)\]</div>
+<div class="math">
+\[V(x)={1\over2}m\omega^2x^2\]</div>
+<p>This is a partial differential equation for the time evolution of the wave
+function <span class="math">\(\psi(x, t)\)</span>, but one method to solve it is the
+eigenvalues expansion:</p>
+<div class="math">
+\[\psi(x,t) = \sum_E c_E\psi_E(x)e^{-{i\over\hbar}Et}\]</div>
+<p>where the sum goes over the whole spectrum (for continuous spectrum the sum
+turns into an integral), the <span class="math">\(c_E\)</span> coefficients are determined from the initial condition
+and <span class="math">\(\psi_E(x)\)</span> satisfies the one dimensional one particle time independent
+Schrödinger equation:</p>
+<div class="math">
+\[-{\hbar^2\over2m}{\d^2\over\d x^2}\psi_E(x)+V(x)\psi_E(x)=E\psi_E(x)\]</div>
+<p>and this is just an ODE and thus can be solved with Hermes1D. There can be many
+types of boundary conditions for this equation, depending on the physical
+problem, but in our case we simply have <span class="math">\(\lim_{x\to\pm\infty}\psi_E(x)=0\)</span> and
+the normalization condition <span class="math">\(\int_{-\infty}^\infty|\psi_E(x)|^2\d x=1\)</span>.</p>
+<p>We can set <span class="math">\(m=\hbar=1\)</span> and from now on we&#8217;ll just write <span class="math">\(\psi(x)\)</span> instead of
+<span class="math">\(\psi_E(x)\)</span>:</p>
+<div class="math">
+\[-{1\over2}{\d^2\over\d x^2}\psi(x)+V(x)\psi(x)=E\psi(x)\]</div>
+<p>and we will solve it on the interval <span class="math">\((a, b)\)</span> with the boundary condition
+<span class="math">\(\psi(a)=\psi(b)=0\)</span>. The weak formulation is</p>
+<div class="math">
+\[\int_a^b{1\over2}{\d\psi(x)\over\d x}{\d v(x)\over\d x}+V(x)\psi(x)v(x)\,\d x -\left[{\d\psi(x)\over\d x}v(x)\right]^a_b =E\int_a^b\psi(x)v(x)\,\d x\]</div>
+<p>but due to the boundary condition <span class="math">\(v(a)=v(b)=0\)</span> so
+<span class="math">\(\left[\psi'(x)v(x)\right]^a_b=0\)</span> and we get</p>
+<div class="math">
+\[\int_a^b{1\over2}{\d\psi(x)\over\d x}{\d v(x)\over\d x}+V(x)\psi(x)v(x)\,\d x =E\int_a^b\psi(x)v(x)\,\d x\]</div>
+<p>And the finite element formulation is then <span class="math">\(\psi(x)=\sum_j y_j\phi_j(x)\)</span> and
+<span class="math">\(v=\phi_i(x)\)</span>:</p>
+<div class="math">
+\[\left(\int_a^b{1\over2}\phi_i'(x)\phi_j'(x)+V(x)\phi_i(x)\phi_j(x)\,\d x\right) y_j =E\int_a^b\phi_i(x)\phi_j(x)\,\d x\ y_j\]</div>
+<p>which is a generalized eigenvalue problem:</p>
+<div class="math">
+\[A_{ij}y_j=EB_{ij}y_j\]</div>
+<p>with</p>
+<div class="math">
+\[A_{ij}=\int_a^b{1\over2}\phi_i'(x)\phi_j'(x)+V(x)\phi_i(x)\phi_j(x)\,\d x\]</div>
+<div class="math">
+\[B_{ij}=\int_a^b\phi_i(x)\phi_j(x)\,\d x\]</div>
+</div>
+<div class="section" id="radial-schrodinger-equation">
+<h2>Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<p>Another important example is the three dimensional one particle time
+independent Schrödinger equation for a spherically symmetric potential:</p>
+<div class="math">
+\[-{1\over2}\nabla^2\psi({\bf x})+V(r)\psi({\bf x})=E\psi({\bf x})\]</div>
+<p>The way to solve it is to separate the equation into radial and angular parts
+by writing the Laplace operator in spherical coordinates as:</p>
+<div class="math">
+\[\nabla^2f =  {\partial^2 f\over\partial\rho^2} +{2\over \rho}{\partial^2 f\over\partial\rho^2} -{L^2\over \rho^2}\]</div>
+<div class="math">
+\[L^2= -{\partial^2 f\over\partial\theta^2} -{1\over\sin^2\theta}{\partial^2 f\over\partial\phi^2} -{1\over\tan\theta}{\partial f\over\partial\theta}\]</div>
+<p>Substituting <span class="math">\(\psi({\bf x})=R(\rho)Y(\theta,\phi)\)</span> into the Schrödinger equation
+yields:</p>
+<div class="math">
+\[-{1\over2}\nabla^2(RY)+VRY=ERY\]</div>
+<div class="math">
+\[-{1\over2}R''Y-{1\over\rho}R'Y+{L^2RY\over2\rho^2}+VRY=ERY\]</div>
+<p>Using the fact that <span class="math">\(L^2Y=l(l+1)Y\)</span> we can cancel <span class="math">\(Y\)</span> and we get the radial
+Schrödinger equation:</p>
+<div class="math">
+\[-{1\over2}R''-{1\over\rho}R'+{l(l+1)R\over2\rho^2}+VR=ER\]</div>
+<p>The solution is then:</p>
+<div class="math">
+\[\psi({\bf x})=\sum_{nlm}c_{nlm}R_{nl}(r)Y_{lm}\left({\bf x}\over r\right)\]</div>
+<p>where <span class="math">\(R_{nl}(r)\)</span> satisfies the radial Schrödinger equation (from now on we
+just write <span class="math">\(R(r)\)</span>):</p>
+<div class="math">
+\[-{1\over2}R''(r)-{1\over r}R'(r)+\left(V+{l(l+1)\over2r^2}\right)R(r)=ER(r)\]</div>
+<p>Again there are many types of boundary conditions, but the most common case is
+<span class="math">\(\lim_{r\to\infty}R(r)=0\)</span> and <span class="math">\(R(0)=1\)</span> or <span class="math">\(R(0)=0\)</span>. One solves this equation on
+the interval <span class="math">\((0, a)\)</span> for large enough <span class="math">\(a\)</span>.</p>
+<p>The procedure is similar to the previous example, only we need to remember that
+we always have to use covariant integration (in the previous example the
+covariant integration was the same as the coordinate integration),
+in this case <span class="math">\(r^2\sin\theta \d
+r\d\theta\d\phi\)</span>, so the weak formulation is:</p>
+<div class="math">
+\[\int \left(-{1\over2}R''(r)-{1\over r}R'(r)+\left(V+{l(l+1)\over2r^2}\right)R(r)\right)v(r)r^2\sin\theta \d r\d\theta\d\phi=\]</div>
+<div class="math">
+\[=\int ER(r) v(r)r^2\sin\theta \d r\d\theta\d\phi\]</div>
+<p>Integrating over the angles gives <span class="math">\(4\pi\)</span> which we cancel out at both sides and
+we get:</p>
+<div class="math">
+\[\int_0^a \left(-{1\over2}R''(r)-{1\over r}R'(r)+\left(V+{l(l+1)\over2r^2}\right)R(r)\right)v(r)r^2 \d r=\]</div>
+<div class="math">
+\[=E\int_0^a R(r) v(r)r^2 \d r\]</div>
+<p>We apply per partes to the first two terms on the left hand side:</p>
+<div class="math">
+\[\int_0^a \left(-{1\over2}R''(r)-{1\over r}R'(r)\right)v(r)r^2 \d r =\int_0^a -{1\over2r^2}\left(r^2 R'(r)\right)'v(r)r^2 \d r=\]</div>
+<div class="math">
+\[=\int_0^a -{1\over2}\left(r^2 R'(r)\right)'v(r) \d r =\int_0^a {1\over2}r^2 R'(r)v'(r) \d r-{1\over2} [r^2R'(r)v(r)]_0^a=\]</div>
+<div class="math">
+\[=\int_0^a {1\over2} R'(r)v'(r) r^2\d r -{1\over2} a^2R'(a)v(a)\]</div>
+<p>We used the fact that <span class="math">\(\lim_{r\to0} r^2 R'(r) = 0\)</span>. If we also prescribe the
+boundary condition <span class="math">\(R'(a)=0\)</span>, then the boundary term vanishes completely. The
+weak formulation is then:</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(r)v'(r)r^2+ \left(V+{l(l+1)\over2r^2}\right)R(r)v(r)r^2\,\d r = E\int_0^aR(r)v(r)r^2\,\d r\]</div>
+<p>or</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(r)v'(r)r^2+ V(r)R(r)v(r)r^2+{l(l+1)\over2} R(r)v(r)\,\d r = E\int_0^aR(r)v(r)r^2\,\d r\]</div>
+<div class="section" id="another-approach">
+<h3>Another approach<a class="headerlink" href="#another-approach" title="Permalink to this headline">¶</a></h3>
+<p>Another (equivalent) approach is to write a weak formulation for
+the 3D problem in cartesian coordinates:</p>
+<div class="math">
+\[\int_\Omega{1\over2}\nabla\psi({\bf x})\nabla v({\bf x})+V(r)\psi({\bf x})v({\bf x})\,\d^3 x =E\int_\Omega\psi({\bf x})v({\bf x})\,\d^3 x\]</div>
+<p>and only then transform to spherical coordinates:</p>
+<div class="math">
+\[\int_0^{2\pi}\d\varphi\int_0^\pi\d\theta\int_0^a\d r \left({1\over2}\nabla\psi({\bf x})\nabla v({\bf x})+V(r)\psi({\bf x})v({\bf x})\right)r^2\sin\theta=\]</div>
+<div class="math">
+\[= E\int_0^{2\pi}\d\varphi\int_0^\pi\d\theta\int_0^a\d r\, \psi({\bf x})v({\bf x})r^2\sin\theta\]</div>
+<p>The 3d eigenvectors <span class="math">\(\psi({\bf x})\)</span> however are not spherically symmetric.
+Nevertheless we can still proceed by choosing our basis as</p>
+<div class="math">
+\[v_{ilm}({\bf x})=\phi_{il}(r)Y_{lm}(\theta, \varphi)\]</div>
+<p>and seek our solution as</p>
+<div class="math">
+\[\psi({\bf x})=\sum_{jlm}y_{jlm}\phi_{jl}(r)Y_{lm}(\theta, \varphi)\]</div>
+<p>Using the properties of spherical harmonics and the gradient:</p>
+<div class="math">
+\[\int Y_{lm} Y_{l'm'} \sin\theta\,\d\theta\,\d\varphi= \delta_{ll'}\delta_{mm'}\]</div>
+<div class="math">
+\[\int r^2\nabla Y_{lm} \nabla Y_{l'm'} \sin\theta\,\d\theta\,\d\varphi= l(l+1)\delta_{ll'}\delta_{mm'}\]</div>
+<div class="math">
+\[\nabla f = {\partial f\over \partial r}\boldsymbol{\hat r} + {1\over r} {\partial f\over\partial\theta}\boldsymbol{\hat\theta}+{1\over r\sin\theta} {\partial f\over\partial\phi}\boldsymbol{\hat\phi}\]</div>
+<p>the weak formulation becomes:</p>
+<div class="math">
+\[\left(\int_0^a {1\over2}r^2\phi_{il}'(r)\phi_{jl}'(r)+ {1\over2}X+ {l(l+1)\over2}\phi_{il}(r)\phi_{jl}(r)+ r^2V(r)\phi_{il}(r)\phi_{jl}(r)\,\d r\right)y_{jlm}=\]</div>
+<div class="math">
+\[= E\int_0^ar^2 \phi_{il}(r)\phi_{jl}(r)\,\d r\ y_{jlm}\]</div>
+<p>where both <span class="math">\(l\)</span> and <span class="math">\(m\)</span> indices are given by the indices of the particular base
+function <span class="math">\(v_{ilm}\)</span>. The <span class="math">\(X\)</span> term is (schematically):</p>
+<div class="math">
+\[X=\int r^2\sin\theta(r)Y_{lm}(\theta,\varphi) (\phi_{il}\nabla\phi_{jl}+\nabla\phi_{il}\phi_{jl}) \nabla Y_{lm}\]</div>
+<p>There is an interesting identity:</p>
+<div class="math">
+\[\int r{\bf \hat r} Y_{lm} \nabla Y_{l'm'} \sin\theta\,\d\theta\,\d\varphi= 0\]</div>
+<p>But it cannot be applied, because we have one more <span class="math">\(r\)</span> in the expression.
+Nevertheless the term is probably zero, as can be seen when we compare the weak
+formulation to the one we got directly from the radial equation.</p>
+</div>
+<div class="section" id="how-not-to-derive-the-weak-formulation">
+<h3>How Not To Derive The Weak Formulation<a class="headerlink" href="#how-not-to-derive-the-weak-formulation" title="Permalink to this headline">¶</a></h3>
+<p>If we forgot that we have to integrate covariantly, this section is devoted
+to what happens if we integrate using the coordinate integration. We would get:</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(x)v'(x)-{1\over r}R'(x)v(x)+ \left(V+{l(l+1)\over2r^2}\right)R(x)v(x)\,\d x = E\int_0^aR(x)v(x)\,\d x\]</div>
+<p>Notice the matrix on the left hand side is not symmetric. There is another way
+of writing the weak formulation by applying per-partes to the <span class="math">\(R'(r)v(r)\)</span> term:</p>
+<div class="math">
+\[-\int_0^a{1\over r}R'(x)v(x)\d x=\]</div>
+<div class="math">
+\[=\int_0^a{1\over r}R(x)v'(x)\d x -\int_0^a{1\over r^2}R(x)v(x)\d x -\left[{1\over r}R'(x)v'(x)\right]_0^a +\left[{1\over r^2}R'(x)v(x)\right]_0^a\]</div>
+<p>We can use <span class="math">\(v(a)=0\)</span> and <span class="math">\(R'(a)=0\)</span> to simplify a bit:</p>
+<div class="math">
+\[-\int_0^a{1\over r}R'(x)v(x)\d x=\]</div>
+<div class="math">
+\[=\int_0^a{1\over r}R(x)v'(x)\d x -\int_0^a{1\over r^2}R(x)v(x)\d x +\lim_{r\to0}\left({R'(x)v'(x)\over r}-{R'(x)v(x)\over r^2}\right)\]</div>
+<p>Since <span class="math">\(R(x)\sim r^l\)</span> near <span class="math">\(r=0\)</span>, we can see that for <span class="math">\(l\ge3\)</span> the limits
+on the right hand side are zero, but for <span class="math">\(l=0, 1, 2\)</span> they are not zero and need
+to be taken into account. Let&#8217;s assume <span class="math">\(l\ge3\)</span> for now, then our weak formulation looks like:</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(x)v'(x)+{1\over r}R(x)v'(x)+ \left(V+{l(l+1)\over2r^2}-{1\over r^2}\right)R(x)v(x)\,\d x = E\int_0^aR(x)v(x)\,\d x\]</div>
+<p>or</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(x)v'(x)+{1\over r}R(x)v'(x)+ \left(V+{(l-2)(l+1)\over2r^2}\right)R(x)v(x)\,\d x = E\int_0^aR(x)v(x)\,\d x\]</div>
+<p>The left hand side is also not symmetric, however we can now take an average of
+our both weak formulations to get a symmetric weak formulation:</p>
+<div class="math">
+\[\int_0^a {1\over2}R'(x)v'(x)+{R(x)v'(x)-R'(x)v(x)\over 2r}+ \left(V+{l(l+1)-1\over2r^2}\right)R(x)v(x)\,\d x =\]</div>
+<div class="math">
+\[= E\int_0^aR(x)v(x)\,\d x\]</div>
+<p>Keep in mind, that this symmetric version is only correct for <span class="math">\(l\ge3\)</span>. For
+<span class="math">\(l&lt;3\)</span> we need to use our first nonsymmetric version.</p>
+<p>As you can see, this is something very different to what we got in the previous
+section. First there were lots of technical difficulties and second the final
+result is wrong, since it doesn&#8217;t correspond to the 3D Schrödinger equation.</p>
+</div>
+<div class="section" id="scattering-in-radial-potential">
+<h3>Scattering in radial potential<a class="headerlink" href="#scattering-in-radial-potential" title="Permalink to this headline">¶</a></h3>
+<p>If <span class="math">\(V=0\)</span>, the radial equation is:</p>
+<div class="math">
+\[-{1\over2}R_{El}''(r)-{1\over r}R_{El}'(r)+{l(l+1)\over2r^2} R_{El}(r)
+    = E R_{El}(r)\]</div>
+<p>The general solution is a linear combination of the spherical Bessel functions
+<span class="math">\(j_l(kr)\)</span> and <span class="math">\(n_l(kr)\)</span>:</p>
+<div class="math">
+\[R_{El}(r) = A_l j_l(kr) + B_l n_l(kr)\]</div>
+<p>where <span class="math">\(k=\sqrt{2E}\)</span> and <span class="math">\(E &gt; 0\)</span> is a continuous spectrum. The asymptotic expansion for <span class="math">\(r\to\infty\)</span> is:</p>
+<div class="math">
+\[j_l(kr)\to{1\over kr}\sin\left(kr-{l\pi\over 2}\right)\]\[n_l(kr)\to{1\over kr}\cos\left(kr-{l\pi\over 2}\right)\]</div>
+<p>so we get for large <span class="math">\(r\)</span>:</p>
+<div class="math">
+\[R_{El}(r) = A_l j_l(kr) + B_l n_l(kr) \to\]\[\to A_l {1\over kr}\sin\left(kr-{l\pi\over 2}\right)
+    + B_l{1\over kr}\cos\left(kr-{l\pi\over 2}\right) =\]\[= \sqrt{A_l^2 + B_l^2} {1\over kr}\sin\left(kr-{l\pi\over 2}
+    +\atan2(B_l, A_l)\right)
+= C_l {1\over kr}\sin\left(kr-{l\pi\over 2}+\delta_l\right)\]</div>
+<p>where</p>
+<div class="math" id="equation-deltaCeq">
+<span class="eqno">(1)</span>\[\delta_l = \atan2(B_l, A_l)\]\[C_l = \sqrt{A_l^2 + B_l^2}\]</div>
+<p>The <span class="math">\(C_l\)</span> and <span class="math">\(\delta_l\)</span> are physical variables, so we express <span class="math">\(A_l\)</span> and <span class="math">\(B_l\)</span>
+using them:</p>
+<div class="math" id="equation-ABeq">
+<span class="eqno">(2)</span>\[A_l = C_l \cos\delta_l\]\[B_l = C_l \sin\delta_l\]</div>
+<p>and write the exact solution <span class="math">\(R_{El}\)</span> as:</p>
+<div class="math" id="equation-Rnlas">
+<span class="eqno">(3)</span>\[R_{El}(r) = C_l (\cos\delta_l\, j_l(kr) + \sin\delta_l\, n_l(kr))\]</div>
+<p>We can then compare this to <span class="math">\(\phi \approx e^{ikz} + f(\theta, \phi)
+{e^{ikr}\over r}\)</span>, by expanding <span class="math">\(e^{ikz} = e^{ikr\cos\theta}=
+\sum (2l+1) i^l j_l(kr)P_l(\cos\theta)\)</span>:</p>
+<div class="math">
+\[C_l = {e^{i\delta_l}\over k}\]\[f(\theta, \phi) = {1\over 2ik} \sum (2l+1)(e^{2i\delta_l}-1)P_l(\cos\theta)\]</div>
+<p>Since <span class="math">\(\sigma(\theta) = |f(\theta)|^2\)</span> and integrating over <span class="math">\(\omega\)</span> we get the
+total cross section:</p>
+<div class="math">
+\[\sigma = {4\pi\over k}\sum (2l+1)\sin^2\delta_l\]</div>
+<p>In order to find the phase shifts <span class="math">\(\delta_l\)</span>, we solve the radial equation for
+the full potential</p>
+<div class="math">
+\[-{1\over2}R_{nl}''(r)-{1\over r}R_{nl}'(r)+\left(V+{l(l+1)\over2r^2}\right)
+    R_{nl}(r)=ER_{nl}(r)\]</div>
+<p>and then fit it to the above asymptotic solution for V=0. We require that the
+value and the slope must be continuous, so we use <a href="#equation-Rnlas">(3)</a> and <span class="math">\(R_{nl}\)</span> must
+satisfy the following two equations (for the value and the derivative)
+at the point <span class="math">\(r=a\)</span>:</p>
+<div class="math" id="equation-R_conditions">
+<span class="eqno">(4)</span>\[R_{El}(a)
+    = A j_l(ka) + B n_l(ka))
+    = C_l (\cos\delta_l\, j_l(ka) + \sin\delta_l\, n_l(ka))\]\[R_{El}'(a)
+    = k A j_l'(ka) + k B n_l'(ka))
+    = C_l k (\cos\delta_l\, j_l'(ka) + \sin\delta_l\, n_l'(ka))\]</div>
+<p>This is a set of two equations for two unknowns <span class="math">\(C_l\)</span> and <span class="math">\(\delta_l\)</span>.
+The solution is:</p>
+<div class="math" id="equation-ABsol">
+<span class="eqno">(5)</span>\[D = k(j_l(ka) n_l'(ka) - j_l'(ka) n_l(ka))\]\[A = {R_{El}(a) k n_l'(ka) - R_{El}'(a) n_l(ka) \over D}\]\[B = -{R_{El}(a) k j_l'(ka) - R_{El}'(a) j_l(ka) \over D}\]</div>
+<p>And one can calculate <span class="math">\(C_l\)</span> and <span class="math">\(\delta_l\)</span> from <a href="#equation-deltaCeq">(1)</a>.
+Code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;R Rp j jp n np A B k&quot;</span><span class="p">)</span>
+<span class="go">(R, Rp, j, jp, n, np, A, B, k)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eq1</span> <span class="o">=</span> <span class="n">R</span> <span class="o">-</span> <span class="n">A</span><span class="o">*</span><span class="n">j</span> <span class="o">-</span> <span class="n">B</span><span class="o">*</span><span class="n">n</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eq2</span> <span class="o">=</span> <span class="n">Rp</span> <span class="o">-</span> <span class="n">k</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">jp</span> <span class="o">-</span> <span class="n">k</span><span class="o">*</span><span class="n">B</span><span class="o">*</span><span class="n">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">solve</span><span class="p">([</span><span class="n">eq1</span><span class="p">,</span> <span class="n">eq2</span><span class="p">],</span> <span class="p">[</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">])</span>
+<span class="go">{A: (R*k*np - Rp*n)/(k*(j*np - jp*n)), B: (-R*jp*k + Rp*j)/(k*(j*np - jp*n))}</span>
+</pre></div>
+</div>
+<p>Another approach to calculate <span class="math">\(\delta_l\)</span> is to
+take the logarithmic
+derivative (<span class="math">\((\log |u|)'={u'\over u}\)</span>) at the point <span class="math">\(r=a\)</span>:</p>
+<div class="math">
+\[\gamma_l \equiv \left.{\d\over\d r} \log |R_l(r)|\right|_{r=a}
+= {R_{El}'(a)\over R_{El}(a)}
+    = {C_l k (\cos\delta_l\, j_l'(ka) + \sin\delta_l\, n_l'(ka)) \over
+            C_l (\cos\delta_l\, j_l(ka) + \sin\delta_l\, n_l(ka)) }
+    =\]</div>
+<div class="math" id="equation-gamma_xx">
+<span class="eqno">(6)</span>\[= k {j_l'(ka) + \tan\delta_l\, n_l'(ka) \over
+        j_l(ka) + \tan\delta_l\, n_l(ka) }\]</div>
+<p>and solving for <span class="math">\(\delta_l\)</span> we get:</p>
+<div class="math">
+\[\tan\delta_l
+    = -{k j_l'(ka) - \gamma_l j_l(ka)\over k n_l'(ka)-\gamma_l n_l(ka)}
+    = -{-k j_{l+1}(ka) +kl{j_l(ka)\over ka} - \gamma_l j_l(ka)
+        \over -k n_{l+1}(ka)+kl{n_l(ka)\over ka} - \gamma_l n_l(ka)}
+    =\]</div>
+<div class="math" id="equation-delta_l">
+<span class="eqno">(7)</span>\[= -{ka j_{l+1}(ka) -l j_l(ka) + a j_l(ka) \gamma_l
+    \over ka n_{l+1}(ka) -l n_l(ka) + a n_l(ka) \gamma_l}\]</div>
+<p>where we used the following relations:</p>
+<div class="math">
+\[j_l'(z) = -j_{l+1}(z) + l{j_l(z)\over z}\]\[n_l'(z) = -n_{l+1}(z) + l{n_l(z)\over z}\]</div>
+<p>The disadvantage of <a href="#equation-delta_l">(7)</a> is that we only know <span class="math">\(\tan\delta_l\)</span>, while in
+<a href="#equation-ABsol">(5)</a> we know <span class="math">\(\delta_l\)</span> directly using the <span class="math">\(\atan2\)</span> function.</p>
+<p>Now we can use these <span class="math">\(\delta_l\)</span> in the formula for the total cross section. We
+can define a reduced phase-shift <span class="math">\(\eta_l\)</span> by</p>
+<div class="math">
+\[\delta_l = (n-l-1) \pi + \eta_l\]</div>
+<p>where <span class="math">\(n-l-1\)</span> is the number of radial nodes and <span class="math">\(0 \le \eta_l \le \pi\)</span>.</p>
+<p>The problem can now be formulated in two ways. Either to solve the radial
+equation for a potential with finite reach and then &#8220;measure&#8221; those phase
+shifts in the solution. Or by prescribing those phase shifts and we now need to
+calculate the solutions (e.g. the energies) from the radial equation.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Examples</a><ul>
+<li><a class="reference internal" href="#two-particles-in-harmonic-potential">Two Particles in Harmonic Potential</a></li>
+<li><a class="reference internal" href="#quantum-harmonic-oscillator">Quantum Harmonic Oscillator</a></li>
+<li><a class="reference internal" href="#radial-schrodinger-equation">Radial Schrödinger Equation</a><ul>
+<li><a class="reference internal" href="#another-approach">Another approach</a></li>
+<li><a class="reference internal" href="#how-not-to-derive-the-weak-formulation">How Not To Derive The Weak Formulation</a></li>
+<li><a class="reference internal" href="#scattering-in-radial-potential">Scattering in radial potential</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qm.html"
+                        title="previous chapter">Quantum Mechanics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="radial.html"
+                        title="next chapter">Radial Schrödinger and Dirac Equations</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/quantum/examples.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="radial.html" title="Radial Schrödinger and Dirac Equations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qm.html" title="Quantum Mechanics"
+             >previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

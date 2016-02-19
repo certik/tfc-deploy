@@ -552,8 +552,8 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
   E    &amp; 2 &amp;  -1   &amp;  0 \\
 \end{array}\end{split}\]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
-<span class="n">var</span><span class="p">(</span><span class="s">&quot;a, b, c, d&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
+<span class="n">var</span><span class="p">(</span><span class="s2">&quot;a, b, c, d&quot;</span><span class="p">)</span>
 <span class="n">g</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">M</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -576,48 +576,48 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
         <span class="n">eq</span> <span class="o">-=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="o">/</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">eq</span>
 
-<span class="k">print</span> <span class="s">&quot;Character table:&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;Character table:&quot;</span>
 <span class="k">print</span> <span class="n">M</span>
-<span class="k">print</span> <span class="s">&quot;Rows conditions:&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;Rows conditions:&quot;</span>
 <span class="n">eqs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">mu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">nu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
         <span class="n">eq</span> <span class="o">=</span> <span class="n">rows</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">nu</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
         <span class="n">eqs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
-        <span class="k">print</span> <span class="n">mu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
-<span class="k">print</span> <span class="s">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
-<span class="k">print</span> <span class="s">&quot;Columns conditions:&quot;</span>
+        <span class="k">print</span> <span class="n">mu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
+<span class="k">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
+<span class="k">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
 <span class="n">eqs2</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
         <span class="n">eq</span> <span class="o">=</span> <span class="n">cols</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
         <span class="n">eqs2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
-        <span class="k">print</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
-<span class="k">print</span> <span class="s">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
-<span class="k">print</span> <span class="s">&quot;Solving the 1, 2, 4, 5 equations out of 0..5 from the rows conditions&quot;</span>
+        <span class="k">print</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
+<span class="k">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
+<span class="k">print</span> <span class="s2">&quot;Solving the 1, 2, 4, 5 equations out of 0..5 from the rows conditions&quot;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">eqs</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="n">eqs</span><span class="p">[</span><span class="mi">4</span><span class="p">:],</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">])</span>
 <span class="k">print</span> <span class="n">s</span>
-<span class="k">print</span> <span class="s">&quot;Test that all the solutions satisfy the rest of the equations:&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;Test that all the solutions satisfy the rest of the equations:&quot;</span>
 <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
     <span class="k">print</span>
-    <span class="k">print</span> <span class="s">&quot;Solution:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span>
+    <span class="k">print</span> <span class="s2">&quot;Solution:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">eqs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span>
-        <span class="s">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
-        <span class="s">&quot;b&quot;</span><span class="p">:</span> <span class="n">b</span><span class="p">,</span>
-        <span class="s">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
-        <span class="s">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
+        <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
+        <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="n">b</span><span class="p">,</span>
+        <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
+        <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
         <span class="p">})</span>
-    <span class="k">print</span> <span class="s">&quot;Equation 3 from rows conditions, result: &quot;</span><span class="p">,</span> <span class="n">r</span>
+    <span class="k">print</span> <span class="s2">&quot;Equation 3 from rows conditions, result: &quot;</span><span class="p">,</span> <span class="n">r</span>
     <span class="k">assert</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">print</span> <span class="s">&quot;Columns conditions:&quot;</span>
+    <span class="k">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">eq</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">eqs2</span><span class="p">):</span>
         <span class="n">r</span> <span class="o">=</span> <span class="n">eq</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span>
-                <span class="s">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
-                <span class="s">&quot;b&quot;</span><span class="p">:</span> <span class="n">b</span><span class="p">,</span>
-                <span class="s">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
-                <span class="s">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
+                <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
+                <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="n">b</span><span class="p">,</span>
+                <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
+                <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
                 <span class="p">})</span>
-        <span class="k">print</span> <span class="s">&quot;Equation </span><span class="si">%i</span><span class="s"> from columns conditions, result: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">&quot;Equation </span><span class="si">%i</span><span class="s2"> from columns conditions, result: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
         <span class="k">assert</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">0</span>
 </pre></div>
 </div>

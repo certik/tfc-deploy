@@ -310,7 +310,7 @@ z}"/>.</p>
   = i\pi + i\pi + 2\pi i \left\lfloor-\half\right\rfloor
   = i\pi + i\pi - 2\pi i = 0"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span><span class="p">,</span> <span class="n">pi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">floor</span><span class="p">,</span> <span class="n">pi</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">log</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">log</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="go">0j</span>
@@ -322,7 +322,7 @@ z}"/>.</p>
 <div class="math">
 <p><img src="../_images/math/014cf3f52f2e9b2671f0f69fc66149e8ad5dbce1.png" alt="i^i = e^{i \log i} = e^{i^2 \arg i} = e^{-{\pi\over 2}}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">pi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">pi</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">1j</span><span class="o">**</span><span class="mi">1j</span>
 <span class="go">(0.20787957635076193+0j)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
@@ -687,7 +687,7 @@ we want. For example the derivative of <img class="math" src="../_images/math/77
 <h2>Testing Identities Using Computer Code<a class="headerlink" href="#testing-identities-using-computer-code" title="Permalink to this headline">¶</a></h2>
 <p>All the complex identities in this chapter can be tested using the following
 codes. <a class="reference download internal" href="../_downloads/test_complex.py"><tt class="xref download docutils literal"><span class="pre">test_complex.py</span></tt></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    The argument function.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -700,23 +700,23 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
     <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
-    <span class="c"># Generate 3 circles in complex plane, with diameters 0.5, 1 and 2. We</span>
-    <span class="c"># avoid special values like -1, +/- i, etc., because they typically send</span>
-    <span class="c"># the numerical values close to the branch cut, and numerical errors then</span>
-    <span class="c"># flip the sign, e.g.:</span>
-    <span class="c">#    In [1]: sqrt((-0.5j)**2)</span>
-    <span class="c">#    Out[1]: -0.5j</span>
-    <span class="c">#</span>
-    <span class="c">#    In [2]: (-0.5j)**2</span>
-    <span class="c">#    Out[2]: (-0.25-0j)</span>
-    <span class="c">#</span>
-    <span class="c">#    In [3]: sqrt(-0.25)</span>
-    <span class="c">#    Out[3]: 0.5j</span>
-    <span class="c"># Here [3] is the correct value and [1] is incorrect, but that happens due</span>
-    <span class="c"># to the round off errors in [2] (the small negative imaginary part makes</span>
-    <span class="c"># sqrt() return -0.5j instead of +0.5j).</span>
-    <span class="c">#</span>
-    <span class="c"># For this reason, we chose N=7.</span>
+    <span class="c1"># Generate 3 circles in complex plane, with diameters 0.5, 1 and 2. We</span>
+    <span class="c1"># avoid special values like -1, +/- i, etc., because they typically send</span>
+    <span class="c1"># the numerical values close to the branch cut, and numerical errors then</span>
+    <span class="c1"># flip the sign, e.g.:</span>
+    <span class="c1">#    In [1]: sqrt((-0.5j)**2)</span>
+    <span class="c1">#    Out[1]: -0.5j</span>
+    <span class="c1">#</span>
+    <span class="c1">#    In [2]: (-0.5j)**2</span>
+    <span class="c1">#    Out[2]: (-0.25-0j)</span>
+    <span class="c1">#</span>
+    <span class="c1">#    In [3]: sqrt(-0.25)</span>
+    <span class="c1">#    Out[3]: 0.5j</span>
+    <span class="c1"># Here [3] is the correct value and [1] is incorrect, but that happens due</span>
+    <span class="c1"># to the round off errors in [2] (the small negative imaginary part makes</span>
+    <span class="c1"># sqrt() return -0.5j instead of +0.5j).</span>
+    <span class="c1">#</span>
+    <span class="c1"># For this reason, we chose N=7.</span>
     <span class="n">N</span> <span class="o">=</span> <span class="mi">7</span>
     <span class="n">circle</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">circle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">))</span>
@@ -724,7 +724,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
-    <span class="c"># Add some random points:</span>
+    <span class="c1"># Add some random points:</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
         <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="p">(</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">values</span>
@@ -735,15 +735,15 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 <span class="sd">    Returns True if a==b to the given relative and absolute errors, otherwise</span>
 <span class="sd">    False.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c"># if the numbers are close enough (absolutely), then they are equal</span>
+    <span class="c1"># if the numbers are close enough (absolutely), then they are equal</span>
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">max_absolute_error</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">True</span>
-    <span class="c"># if not, they can still be equal if their relative error is small</span>
+    <span class="c1"># if not, they can still be equal if their relative error is small</span>
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
         <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-    <span class="c">#print abs(a-b), relative_error</span>
+    <span class="c1">#print abs(a-b), relative_error</span>
     <span class="k">return</span> <span class="n">relative_error</span> <span class="o">&lt;=</span> <span class="n">max_relative_error</span>
 
 <span class="k">def</span> <span class="nf">test_zero1</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
@@ -753,7 +753,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
         <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-            <span class="k">print</span> <span class="s">&quot;x lhs(x) rhs(x)&quot;</span>
+            <span class="k">print</span> <span class="s2">&quot;x lhs(x) rhs(x)&quot;</span>
             <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="k">assert</span> <span class="bp">False</span>
 
@@ -765,7 +765,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
             <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-                <span class="k">print</span> <span class="s">&quot;x y lhs(x, y) rhs(x, y)&quot;</span>
+                <span class="k">print</span> <span class="s2">&quot;x y lhs(x, y) rhs(x, y)&quot;</span>
                 <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
                 <span class="k">assert</span> <span class="bp">False</span>
 
@@ -778,7 +778,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
             <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
                 <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">))</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-                    <span class="k">print</span> <span class="s">&quot;x y z lhs(x, y, z) rhs(x, y, z)&quot;</span>
+                    <span class="k">print</span> <span class="s2">&quot;x y z lhs(x, y, z) rhs(x, y, z)&quot;</span>
                     <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
                     <span class="k">assert</span> <span class="bp">False</span>
 
@@ -786,7 +786,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 <span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">log</span>
 <span class="n">I</span> <span class="o">=</span> <span class="mi">1j</span>
 
-<span class="c"># Test the various identities</span>
+<span class="c1"># Test the various identities</span>
 <span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">arg</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
 <span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">x</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">))</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
 <span class="n">test_zero1</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">log</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">I</span><span class="o">*</span><span class="n">floor</span><span class="p">((</span><span class="n">pi</span><span class="o">-</span><span class="n">x</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)))</span>
@@ -806,7 +806,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 </pre></div>
 </div>
 <p><a class="reference download internal" href="../_downloads/test_complex_diff.py"><tt class="xref download docutils literal"><span class="pre">test_complex_diff.py</span></tt></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    The argument function.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -819,23 +819,23 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
     <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
-    <span class="c"># Generate 3 circles in complex plane, with diameters 0.5, 1 and 2. We</span>
-    <span class="c"># avoid special values like -1, +/- i, etc., because they typically send</span>
-    <span class="c"># the numerical values close to the branch cut, and numerical errors then</span>
-    <span class="c"># flip the sign, e.g.:</span>
-    <span class="c">#    In [1]: sqrt((-0.5j)**2)</span>
-    <span class="c">#    Out[1]: -0.5j</span>
-    <span class="c">#</span>
-    <span class="c">#    In [2]: (-0.5j)**2</span>
-    <span class="c">#    Out[2]: (-0.25-0j)</span>
-    <span class="c">#</span>
-    <span class="c">#    In [3]: sqrt(-0.25)</span>
-    <span class="c">#    Out[3]: 0.5j</span>
-    <span class="c"># Here [3] is the correct value and [1] is incorrect, but that happens due</span>
-    <span class="c"># to the round off errors in [2] (the small negative imaginary part makes</span>
-    <span class="c"># sqrt() return -0.5j instead of +0.5j).</span>
-    <span class="c">#</span>
-    <span class="c"># For this reason, we chose N=7.</span>
+    <span class="c1"># Generate 3 circles in complex plane, with diameters 0.5, 1 and 2. We</span>
+    <span class="c1"># avoid special values like -1, +/- i, etc., because they typically send</span>
+    <span class="c1"># the numerical values close to the branch cut, and numerical errors then</span>
+    <span class="c1"># flip the sign, e.g.:</span>
+    <span class="c1">#    In [1]: sqrt((-0.5j)**2)</span>
+    <span class="c1">#    Out[1]: -0.5j</span>
+    <span class="c1">#</span>
+    <span class="c1">#    In [2]: (-0.5j)**2</span>
+    <span class="c1">#    Out[2]: (-0.25-0j)</span>
+    <span class="c1">#</span>
+    <span class="c1">#    In [3]: sqrt(-0.25)</span>
+    <span class="c1">#    Out[3]: 0.5j</span>
+    <span class="c1"># Here [3] is the correct value and [1] is incorrect, but that happens due</span>
+    <span class="c1"># to the round off errors in [2] (the small negative imaginary part makes</span>
+    <span class="c1"># sqrt() return -0.5j instead of +0.5j).</span>
+    <span class="c1">#</span>
+    <span class="c1"># For this reason, we chose N=7.</span>
     <span class="n">N</span> <span class="o">=</span> <span class="mi">7</span>
     <span class="n">circle</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">circle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="n">N</span><span class="p">))</span>
@@ -843,7 +843,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">circle</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
-    <span class="c"># Add some random points:</span>
+    <span class="c1"># Add some random points:</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>
         <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="p">(</span><span class="n">random</span><span class="p">()</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">values</span>
@@ -854,15 +854,15 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
 <span class="sd">    Returns True if a==b to the given relative and absolute errors, otherwise</span>
 <span class="sd">    False.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c"># if the numbers are close enough (absolutely), then they are equal</span>
+    <span class="c1"># if the numbers are close enough (absolutely), then they are equal</span>
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">max_absolute_error</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">True</span>
-    <span class="c"># if not, they can still be equal if their relative error is small</span>
+    <span class="c1"># if not, they can still be equal if their relative error is small</span>
     <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
         <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">relative_error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-    <span class="c">#print abs(a-b), relative_error</span>
+    <span class="c1">#print abs(a-b), relative_error</span>
     <span class="k">return</span> <span class="n">relative_error</span> <span class="o">&lt;=</span> <span class="n">max_relative_error</span>
 
 <span class="k">def</span> <span class="nf">test_zero1</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
@@ -872,7 +872,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
         <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-            <span class="k">print</span> <span class="s">&quot;x lhs(x) rhs(x)&quot;</span>
+            <span class="k">print</span> <span class="s2">&quot;x lhs(x) rhs(x)&quot;</span>
             <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
             <span class="k">assert</span> <span class="bp">False</span>
 
@@ -884,7 +884,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
             <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-                <span class="k">print</span> <span class="s">&quot;x y lhs(x, y) rhs(x, y)&quot;</span>
+                <span class="k">print</span> <span class="s2">&quot;x y lhs(x, y) rhs(x, y)&quot;</span>
                 <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
                 <span class="k">assert</span> <span class="bp">False</span>
 
@@ -897,7 +897,7 @@ codes. <a class="reference download internal" href="../_downloads/test_complex.p
             <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
                 <span class="n">r</span> <span class="o">=</span> <span class="n">feq</span><span class="p">(</span><span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">))</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">:</span>
-                    <span class="k">print</span> <span class="s">&quot;x y z lhs(x, y, z) rhs(x, y, z)&quot;</span>
+                    <span class="k">print</span> <span class="s2">&quot;x y z lhs(x, y, z) rhs(x, y, z)&quot;</span>
                     <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">lhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">),</span> <span class="n">rhs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
                     <span class="k">assert</span> <span class="bp">False</span>
 

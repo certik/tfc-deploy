@@ -399,8 +399,8 @@ The solution is:</p>
 <span class="eqno">(5)</span>\[D = k(j_l(ka) n_l'(ka) - j_l'(ka) n_l(ka))\]\[A = {R_{El}(a) k n_l'(ka) - R_{El}'(a) n_l(ka) \over D}\]\[B = -{R_{El}(a) k j_l'(ka) - R_{El}'(a) j_l(ka) \over D}\]</div>
 <p>And one can calculate <span class="math">\(C_l\)</span> and <span class="math">\(\delta_l\)</span> from <a href="#equation-deltaCeq">(1)</a>.
 Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;R Rp j jp n np A B k&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;R Rp j jp n np A B k&quot;</span><span class="p">)</span>
 <span class="go">(R, Rp, j, jp, n, np, A, B, k)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">eq1</span> <span class="o">=</span> <span class="n">R</span> <span class="o">-</span> <span class="n">A</span><span class="o">*</span><span class="n">j</span> <span class="o">-</span> <span class="n">B</span><span class="o">*</span><span class="n">n</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">eq2</span> <span class="o">=</span> <span class="n">Rp</span> <span class="o">-</span> <span class="n">k</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">jp</span> <span class="o">-</span> <span class="n">k</span><span class="o">*</span><span class="n">B</span><span class="o">*</span><span class="n">np</span>

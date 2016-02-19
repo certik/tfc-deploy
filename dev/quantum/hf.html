@@ -2294,7 +2294,7 @@ By summing all these <img class="math" src="../_images/math/e8d1d1630bc2e021ff5c
 
     + 3 + 2 + 6 + 1 + 2 = 92"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">f_nl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f_nl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -2310,7 +2310,7 @@ By summing all these <img class="math" src="../_images/math/e8d1d1630bc2e021ff5c
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="mi">0</span>
 
-<span class="k">print</span> <span class="s">&quot;Sum f_nl =&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f_nl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
+<span class="k">print</span> <span class="s2">&quot;Sum f_nl =&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">([</span><span class="n">f_nl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
 </pre></div>
 </div>
 <p>prints:</p>

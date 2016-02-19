@@ -526,8 +526,8 @@ v_i = {P_i - e A_i \over \sqrt {m + {1\over c^2 } ({\bf P} - e{\bf A})^2}}
 {\bf v} = {c({\bf P} - e{\bf A})\over\sqrt{m^2c^2 + ({\bf P} - e{\bf A})^2}}"/></p>
 </div><p>The system of equations was solved for <img class="math" src="../_images/math/85ffd98b4eaea58a8db38fd0047e3a1d7c5661a0.png" alt="v_i"/> using the code
 (in there <img class="math" src="../_images/math/1cb4cb9467ed9c37a60a089ad5b4897effc45b71.png" alt="v1s = v_1^2"/>, <img class="math" src="../_images/math/c527f406455e0fdbf41696a30ce4fbe73db866be.png" alt="vs=v^2"/> and <img class="math" src="../_images/math/c4947eea9c9dbdc8aa2cfdd672d7f42c6babddb0.png" alt="P1 = P_1 - eA_1"/>):</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;P1 P2 P3 m c v1s v2s v3s&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;P1 P2 P3 m c v1s v2s v3s&quot;</span><span class="p">)</span>
 <span class="go">(P1, P2, P3, m, c, v1s, v2s, v3s)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vs</span> <span class="o">=</span> <span class="n">v1s</span><span class="o">+</span><span class="n">v2s</span><span class="o">+</span><span class="n">v3s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">solve</span><span class="p">([</span><span class="n">P1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">vs</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span><span class="n">v1s</span><span class="o">*</span><span class="n">m</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
@@ -1038,8 +1038,8 @@ Magnetic field of the first coil is (see the previous example):</p>
   = {8 \over 5 \sqrt 5} {4\pi 10^{-7} \cdot 130 I \over 0.15}
   = 7.79\cdot 10^{-4} I"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sqrt</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%e</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="mf">1e-7</span><span class="o">*</span><span class="mi">130</span> <span class="o">/</span> <span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mf">0.15</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sqrt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">8</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="mf">1e-7</span><span class="o">*</span><span class="mi">130</span> <span class="o">/</span> <span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="mf">0.15</span><span class="p">))</span>
 <span class="go">&#39;7.792861e-04&#39;</span>
 </pre></div>
 </div>
@@ -1093,14 +1093,14 @@ we get:</p>
 <div class="math">
 <p><img src="../_images/math/10ec617b4d427edfc7100e972e0587dd917eb87a.png" alt="{e\over m} = 1.80 \cdot 10^{11}\rm\,C\cdot kg^{-1}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="mf">0.15</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="mi">130</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">V</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">I</span> <span class="o">=</span> <span class="mf">1.48</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mu0</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="mf">1e-7</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%e</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">125</span> <span class="o">*</span> <span class="n">V</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">32</span> <span class="o">*</span> <span class="n">mu0</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">R</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">N</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">I</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">125</span> <span class="o">*</span> <span class="n">V</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">32</span> <span class="o">*</span> <span class="n">mu0</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">R</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">N</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">I</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 <span class="go">&#39;1.804238e+11&#39;</span>
 </pre></div>
 </div>
@@ -1108,23 +1108,23 @@ we get:</p>
 <div class="math">
 <p><img src="../_images/math/f9bcc940bce7afe1c972201a2b2f76e77eb6ea78.png" alt="{e\over m} = 1.7588 \cdot 10^{11}\rm\,C\cdot kg^{-1}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="mf">1.6021766e-19</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="mf">1.6021766e-19</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="mi">299792458</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">eV</span> <span class="o">=</span> <span class="n">e</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">KeV</span> <span class="o">=</span> <span class="mf">1e3</span> <span class="o">*</span> <span class="n">eV</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="mf">510.998910</span> <span class="o">*</span> <span class="n">KeV</span> <span class="o">/</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span>
 <span class="go">9.109382795192204e-31</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%e</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span>
 <span class="go">&#39;1.758820e+11&#39;</span>
 </pre></div>
 </div>
 <p>or even simpler (we do not actually need the value of the electron charge
 <img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/>):</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="mi">299792458</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="mi">299792458</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">KeV</span> <span class="o">=</span> <span class="mf">1e3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="mf">510.998910</span> <span class="o">*</span> <span class="n">KeV</span> <span class="o">/</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%e</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%e</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
 <span class="go">&#39;1.758820e+11&#39;</span>
 </pre></div>
 </div>
@@ -1553,8 +1553,8 @@ d = {L-W\over 2}"/></p>
 {{a\over 2}\over(a^2+\left({a\over 2}\right)^2)^{5\over 2}} =
 {16\sqrt 5 \over 125 a^4}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">refine</span><span class="p">,</span> <span class="n">Q</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s">&quot;a z&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">refine</span><span class="p">,</span> <span class="n">Q</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a z&quot;</span><span class="p">)</span>
 <span class="go">(a, z)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">z</span> <span class="o">/</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">S</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">solve</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">z</span><span class="p">),</span> <span class="n">z</span><span class="p">)</span>
@@ -1670,7 +1670,7 @@ is:</p>
 <div class="math">
 <p><img src="../_images/math/537ed4183ef39bf2cf0b6c5ca3d300c719633235.png" alt="\Phi =- {N\mu_0 Q_m d\over\sqrt{a^2 + d^2}} = -0.021 \rm\, V\cdot s"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sqrt</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sqrt</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mu0</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="mf">1e-7</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">cm</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Q_m</span> <span class="o">=</span> <span class="mf">43.</span>
@@ -1690,7 +1690,7 @@ is:</p>
 <p><img src="../_images/math/d3050c265bb3857a7883c5aab71839c8fa2ee5ac.png" alt="\Phi =- {\mu_0 Q_m d\over\sqrt{a^2 + d^2}} = -3.82\times 10^{-5}
     \rm\, V\cdot s"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mf">1.25</span><span class="o">*</span><span class="n">cm</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mf">1.25</span><span class="o">*</span><span class="n">cm</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="n">mu0</span><span class="o">*</span><span class="n">Q_m</span><span class="o">*</span><span class="n">d</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="go">-4.438304942066266e-05</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mf">1.8</span><span class="o">*</span><span class="n">cm</span>

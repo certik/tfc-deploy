@@ -1021,13 +1021,16 @@ to zero (<img class="math" src="../_images/math/6f4b2df3a95584666fb4d21bca87c83d
           I_{3\over2}(\Phi(n_e({\bf x})))
         + {1\over \beta} n_e({\bf x}) \Phi(n_e({\bf x}))
             \right)\d^3 x\,."/></p>
-</div><p>If the potentials are zero, then the pressure (times volume) can be calculated
+</div><p>If the potentials are zero, then the pressure can be calculated
 from:</p>
 <div class="math">
-<p><img src="../_images/math/7fd171160638e4fa9b4f5368f1f43a5a09467480.png" alt="PV = -\Omega[\beta, n_e] = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        \int I_{3\over2}(\Phi(n_e({\bf x}))) \,\d^3 x
-= {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
-        \int I_{3\over2}(\beta\mu) \,\d^3 x"/></p>
+<p><img src="../_images/math/af3890406e6126f7f0cbc55cc2e228932a431c86.png" alt="P = -{1\over V}\Omega[\beta, n_e]
+    = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}V}
+        \int I_{3\over2}(\Phi(n_e({\bf x}))) \,\d^3 x =
+
+= {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}V}
+        \int I_{3\over2}(\beta\mu) \,\d^3 x
+= {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}} I_{3\over2}(\beta\mu) \,."/></p>
 </div></div>
 <div class="section" id="bottom-up-approach">
 <h3>Bottom Up Approach<a class="headerlink" href="#bottom-up-approach" title="Permalink to this headline">¶</a></h3>
@@ -1087,25 +1090,25 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
 <p><img src="../_images/math/f39fc5072981cf3b9ae3acd11c6d7257cc3c2201.png" alt="N = \int n_e({\bf x})\, d^3 x"/></p>
 </div><p>The kinetic energy is</p>
 <div class="math">
-<p><img src="../_images/math/34309586b74a942306fcc6e70ad39f4e06adebc4.png" alt="E_{kin} = \int d^3 x \int 2 {\d^3p\over (2\pi)^3} {p^2\over 2}
+<p><img src="../_images/math/50ccc7725a03116a601c519c1da7de1a8a6135a9.png" alt="E_{kin} = \int \d^3 x \int 2 {\d^3p\over (2\pi)^3} {p^2\over 2}
     {1\over e^{\beta(E-\mu)}+1}
 =
 
-= \int d^3 x \int_0^\infty 2 {4\pi p^2 \d p\over (2\pi)^3} {p^2\over 2}
+= \int \d^3 x \int_0^\infty 2 {4\pi p^2 \d p\over (2\pi)^3} {p^2\over 2}
     {1\over e^{\beta(E-\mu)}+1} =
 
-= \int d^3 x \int_0^\infty 2 {4\pi \sqrt 2\sqrt \epsilon \d \epsilon \over
+= \int \d^3 x \int_0^\infty 2 {4\pi \sqrt 2\sqrt \epsilon \d \epsilon \over
     (2\pi)^3} \epsilon {1\over e^{\beta(\epsilon + V({\bf x})-\mu)}+1} =
 
-= {\sqrt 2 \over \pi^2} \int d^3 x \int_0^\infty
+= {\sqrt 2 \over \pi^2} \int \d^3 x \int_0^\infty
     {\epsilon^{3\over2} \d \epsilon \over
     e^{\beta(\epsilon + V({\bf x})-\mu)}+1} =
 
-= {\sqrt 2 \over \pi^2 \beta^{5\over2}} \int d^3 x \int_0^\infty
+= {\sqrt 2 \over \pi^2 \beta^{5\over2}} \int \d^3 x \int_0^\infty
     {y^{3\over2} \d y \over e^{y - \beta(\mu -V({\bf x}))}+1} =
 
 = {\sqrt 2 \over \pi^2 \beta^{5\over2}}
-    \int I_{3\over2}\left(\beta(\mu - V({\bf x}))\right) d^3 x"/></p>
+    \int I_{3\over2}\left(\beta(\mu - V({\bf x}))\right) \d^3 x"/></p>
 </div><p>From the last formula it can be shown that the kinetic energy is equal to</p>
 <div class="math">
 <p><img src="../_images/math/8252d10d79a6ce00d6b1d2fe841b56fd69bc7ceb.png" alt="E_{kin} = {3\over 2} P V - {1\over 2} E_{en} - {1\over 2} E_{ee}"/></p>
@@ -1120,10 +1123,54 @@ electrons <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7
     = {3\over 2} P V + {1\over 2} E_{en} + {1\over 2} E_{ee}"/></p>
 </div><p>The entropy <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> is equal to:</p>
 <div class="math">
-<p><img src="../_images/math/fcee14adaef2f8bf0a60148e3adfeee1788e526e.png" alt="TS = {5\over3}E_{kin} + E_{en} + 2 E_{ee} -\mu N =
+<p><img src="../_images/math/a3ca999414a15dfcce2ebbe8153e2fcb156ee4fc.png" alt="TS
+   = -{1\over\beta}
+     \sum_i [n_i\log n_i + (1-n_i)\log(1-n_i)] =
+
+   = -{1\over\beta}
+     \sum_i \left[n_i\log\left(n_i\over 1-n_i\right)
+        + \log(1-n_i)\right] =
+
+   =  \left[\sum_i n_i\epsilon_i\right]
+   +
+    \left[-\sum_i n_i \mu\right]
+   +
+        \left[-{1\over\beta} \sum_i\log(1-n_i)\right] =
+
+   = \left[E_{kin} + E_{en} + 2 E_{ee}\right]
+    +
+    \left[-\mu N\right]
+    +
+    \left[{2\over3}E_{kin}\right]
+    =
+
+   = {5\over3}E_{kin} + E_{en} + 2 E_{ee} -\mu N =
 
    = {5\over2}P V + {1\over6}E_{en} + {7\over6}E_{ee} -\mu N"/></p>
-</div><p>The free energy is equal to:</p>
+</div><p>where <img class="math" src="../_images/math/97402d070b2c01ec62e141ddcace624ab75102fd.png" alt="n_i={1\over1+e^{\beta(\epsilon_i-\mu)}}"/> is the number of states at
+energy <img class="math" src="../_images/math/319593f7ae7122d7910bdf87a156b25f7588f1ad.png" alt="\epsilon_i"/>. We used the following calculation expressing one of the
+sums in terms of the kinetic energy:</p>
+<div class="math">
+<p><img src="../_images/math/96d48d6bba6d117c786799eeac56ec63b98c531c.png" alt="-{1\over\beta} \sum_i\log(1-n_i) =
+
+    = -{1\over\beta}\int {2\d^3 x \d^3 p\over (2\pi)^3}
+        \log {e^{\beta(E-\mu)}\over 1+e^{\beta(E-\mu)}} =
+
+    = -{\sqrt 2\over \pi^2 \beta^{5\over2}}\int \d^3 x \int_0^\infty
+        \sqrt{y}\, \d y
+        \log {e^{y-\beta(\mu-V({\bf x}))}\over
+            1+e^{y-\beta(\mu-V({\bf x}))}} =
+
+    = -{\sqrt 2\over \pi^2 \beta^{5\over2}}\int \d^3 x \left[
+        -{2\over3}\int_0^\infty {y^{3\over2} \d y \over
+            1+e^{y-\beta(\mu-V({\bf x}))}} \right] =
+
+    = {2\over 3}{\sqrt 2\over \pi^2 \beta^{5\over2}}\int
+        I_{3\over2}\left(\beta(\mu-V({\bf x}))\right) \d^3 x =
+
+    = {2\over 3} E_{kin} \,,"/></p>
+</div><p>where we used <img class="math" src="../_images/math/af2c02ceefa5d1113bb99221f107eea87840bf67.png" alt="E={p^2\over2}+V({\bf x})"/>.</p>
+<p>The free energy is equal to:</p>
 <div class="math">
 <p><img src="../_images/math/a37f6ee56bbd554c7189de1cdfb4000de0a18a1d.png" alt="F = E - TS = -{2\over3}E_{kin} - E_{ee} + \mu N =
 

@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Thermodynamics &mdash; Theoretical Physics Reference 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
+    <link rel="up" title="Thermodynamics and Statistical Physics" href="main.html" />
+    <link rel="next" title="Statistical Physics" href="statmech.html" />
+    <link rel="prev" title="Thermodynamics and Statistical Physics" href="main.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28893880-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head>
+  <body>
+    <div style="display:none">
+    \(
+        \newcommand{\d}{\mathrm{d}}
+        \newcommand{\bomega}{\vec\omega}
+        \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
+
+        %operators
+        \newcommand{\diag}{\mathrm{diag}}
+        \newcommand{\sinc}{\mathrm{sinc}}
+        \newcommand{\Sh}{ {\large\style{font-family:Times}{\text{Ш}}} }
+        \newcommand{\res}{\mathrm{Res}}
+    \)
+    </div>
+    
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="statmech.html" title="Statistical Physics"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="Thermodynamics and Statistical Physics"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" accesskey="U">Thermodynamics and Statistical Physics</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="thermodynamics">
+<h1>Thermodynamics<a class="headerlink" href="#thermodynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="thermodynamic-potentials">
+<h2>Thermodynamic Potentials<a class="headerlink" href="#thermodynamic-potentials" title="Permalink to this headline">¶</a></h2>
+<p>We start by writing the internal energy</p>
+<div class="math">
+<p><img src="../_images/math/50dae5e89646e2aac5ace5d47adc869b4fd0109c.png" alt="U=U(S, V, N)=\int(T\d S - p \d V + \mu \d N)"/></p>
+</div><p>as a function of entropy <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/>, volume <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and a number of particles <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>. Now we
+want to express it as a function of temperature <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>, pressure <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/> or a chemical
+potential <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>, without losing any information, i.e. we still want to just
+differentiate to obtain other quantities. In order to do that, we have to use
+the Legendre transform. Including <img class="math" src="../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/>, there are 8 possible combinations of
+Legendre transforms that one can do (three of them are applying it to just one
+variable, three of them to two variables, one to all three variables):</p>
+<div class="math">
+<p><img src="../_images/math/8c38e5534910597b9d982cfcb8b3937e74e3989a.png" alt="U = U(S, V, N) = \int (T\d S - p \d V + \mu \d N)
+
+F = F(T, V, N) = U - TS = \int (-S\d T - p \d V + \mu \d N)
+
+H = H(S, p, N) = U + pV = \int (T\d S + V \d p + \mu \d N)
+
+X_1 = X_1(S, V, \mu) = U - \mu N = \int (T\d S - p \d V - N \d \mu)
+
+G = G(T, p, N) = U - TS + pV = \int (-S\d T + V \d p + \mu \d N)
+
+\Omega = \Omega(T, V, \mu) = U-TS-\mu N = \int (-S\d T - p \d V - N \d \mu)
+
+X_2 = X_2(S, p, \mu) = U + pV-\mu N = \int (T\d S + V \d p - N \d \mu)
+
+X_3 = X_3(T, p, \mu) = U-TS+pV-\mu N = \int (-S\d T + V \d p - N \d \mu)"/></p>
+</div><p>Of these, <img class="math" src="../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/> is the internal energy, <img class="math" src="../_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> is the Helmholtz free energy, <img class="math" src="../_images/math/b1902d279ba37d60bdce4e0e987b7cd19d48974e.png" alt="H"/> is
+the enthalpy, <img class="math" src="../_images/math/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" alt="G"/> is the Gibbs free energy, <img class="math" src="../_images/math/9e2b196e9b7e57d1ec99f6534c581ea9759d2170.png" alt="\Omega"/> is the grand potential
+(sometimes also called a Landau potential). The unnamed potentials are simply
+labeled <img class="math" src="../_images/math/13e5e2212d37e0f988a4a149b3173f26b9cd2fc6.png" alt="X_1"/>, <img class="math" src="../_images/math/a2484f4fcf9c11699c809dc6fbf9a622e8347e7c.png" alt="X_2"/> and <img class="math" src="../_images/math/395e1d255863e3a59f53defd30854ebc5afca5de.png" alt="X_3"/>. The <img class="math" src="../_images/math/395e1d255863e3a59f53defd30854ebc5afca5de.png" alt="X_3"/> is sometimes called a null function.</p>
+<p>From the differentials, we can then read off the derivatives (and what other
+variables are constant), here are all the combinations:</p>
+<div class="math">
+<p><img src="../_images/math/474576e746979b07acf903b1d7ab808af4907381.png" alt="T = \left(\partial U \over \partial S\right)_{V, N}
+  = \left(\partial H \over \partial S\right)_{p, N}
+  = \left(\partial X_1 \over \partial S\right)_{V, \mu}
+  = \left(\partial X_2 \over \partial S\right)_{p, \mu}
+
+S = -\left(\partial F \over \partial T\right)_{V, N}
+  = -\left(\partial G \over \partial T\right)_{p, N}
+  = -\left(\partial \Omega \over \partial T\right)_{V, \mu}
+  = -\left(\partial X_3 \over \partial T\right)_{p, \mu}
+
+p = -\left(\partial U \over \partial V\right)_{S, N}
+  = -\left(\partial F \over \partial V\right)_{T, N}
+  = -\left(\partial X_1 \over \partial V\right)_{S, \mu}
+  = -\left(\partial \Omega \over \partial V\right)_{T, \mu}
+
+V = \left(\partial H \over \partial p\right)_{S, N}
+  = \left(\partial G \over \partial p\right)_{T, N}
+  = \left(\partial X_2 \over \partial p\right)_{S, \mu}
+  = \left(\partial X_3 \over \partial p\right)_{T, \mu}
+
+\mu = \left(\partial U \over \partial N\right)_{S, V}
+    = \left(\partial F \over \partial N\right)_{T, V}
+    = \left(\partial H \over \partial N\right)_{S, p}
+    = \left(\partial G \over \partial N\right)_{T, p}
+
+N = -\left(\partial X_1 \over \partial \mu\right)_{S, V}
+  = -\left(\partial \Omega \over \partial \mu\right)_{T, V}
+  = -\left(\partial X_2 \over \partial \mu\right)_{S, p}
+  = -\left(\partial X_3 \over \partial \mu\right)_{T, p}"/></p>
+</div><p>A large system is defined as: if the number of particles <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is made <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/>
+times as large, <img class="math" src="../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/>, <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>, and <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> all become <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> times larger. In other
+words, the internal energy of a large system is a homogeneous function of <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/>,
+<img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>, and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> of order one:</p>
+<div class="math">
+<p><img src="../_images/math/46e39231ede188e09dc78ff4c80fbd7a1616b81d.png" alt="U(\lambda S, \lambda V, \lambda N) = \lambda U(S, V, N)"/></p>
+</div><p>Now we can apply the Euler&#8217;s theorem (see <a class="reference internal" href="../math/other.html#homogeneous-functions"><em>Homogeneous Functions (Euler&#8217;s Theorem)</em></a>):</p>
+<div class="math">
+<p><img src="../_images/math/e695fa5ede19f8a0b40dc214b82d328710b5c3f9.png" alt="U(S, V, N) = S\left(\partial U\over\partial S\right)_{V, N}
+        + V \left(\partial U\over\partial V\right)_{S, N}
+        + N \left(\partial U\over\partial N\right)_{S, V}
+    = TS - pV + \mu N"/></p>
+</div><p>And from the definitions of all the potentials we can calculate their
+forms for large systems:</p>
+<div class="math">
+<p><img src="../_images/math/fe55c11426331f82ee86c7d49798c0f482ae3a96.png" alt="U(S, V, N) = TS - pV + \mu N
+
+F(T, V, N) = U - TS = -pV + \mu N
+
+H(S, p, N) = U + pV = TS + \mu N
+
+X_1(S, V, \mu) = U - \mu N = TS - pV
+
+G(T, p, N) = U - TS + pV = \mu N
+
+\Omega(T, V, \mu) = U-TS-\mu N = -pV
+
+X_2(S, p, \mu) = U + pV-\mu N = TS
+
+X_3(T, p, \mu) = U-TS+pV-\mu N = 0"/></p>
+</div></div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ideal-gas">
+<span id="id1"></span><h3>Ideal Gas<a class="headerlink" href="#ideal-gas" title="Permalink to this headline">¶</a></h3>
+<p>The internal energy as a function of <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/>, <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is equal to:</p>
+<div class="math" id="equation-ideal-gas-U">
+<p><span class="eqno">(1)</span><img src="../_images/math/2a85ab286d2667f3d4e2e47e26904a932cbe6f7f.png" alt="U(S, V, N) = c_V N k_\mathrm{B} \left({N\Phi\over V}
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}"/></p>
+</div><p>where <img class="math" src="../_images/math/2db2d8702f74b2b7832092fdd4542b87003bef56.png" alt="c_V"/> is the heat capacity at a constant volume (<img class="math" src="../_images/math/238ab519957f7ea53300bbff5f2f3f60e6dcece3.png" alt="{3\over 2}"/> for
+monoatomic gases, <img class="math" src="../_images/math/7f2970c7d302beb1086917e02cc2e43b65145816.png" alt="{5\over2}"/> for diatomic gases), <img class="math" src="../_images/math/87660cb33b0d7f77743b0d52822cfa1d50d2e469.png" alt="k_\mathrm{B}"/> is the
+Boltzman constant and <img class="math" src="../_images/math/b85bbfb165b853d6f5f9734be4cdabbb453f4e43.png" alt="\Phi"/> is a constant that may vary for different gases,
+but it is independent of the thermodynamic state of the gas.</p>
+<p>At this level, the above expression is simply given. We would have to use
+statistical physics in order to calculate any of the thermodynamic potentials.</p>
+<p>Now we calculate the free energy <img class="math" src="../_images/math/d01fbb0a13d9adb67350bcb5958b343055eafe19.png" alt="F(T, V, N)"/>. First we must calculate the
+temperature <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>:</p>
+<div class="math" id="equation-ideal-gas-T">
+<p><span class="eqno">(2)</span><img src="../_images/math/e8a4b9c5ec363536253ef3b0fd94a5a61727fb44.png" alt="T = \left(\partial U \over \partial S\right)_{V, N} =
+
+    = {\partial \over \partial S} \left(
+        c_V N k_\mathrm{B} \left({N\Phi\over V}
+        e^{S\over N k_\mathrm{B}}\right)^{1\over c_V} \right) =
+
+    = \left({N\Phi\over V}
+        e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,."/></p>
+</div><p>In order to calculate the the free energy, we must use <a href="#equation-ideal-gas-T">(2)</a> to
+eliminate <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/>:</p>
+<div class="math" id="equation-ideal-gas-S">
+<p><span class="eqno">(3)</span><img src="../_images/math/b9ee70a77b683fad187ec599ff7b9cd78cb04834.png" alt="S = N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)"/></p>
+</div><p>and then express <img class="math" src="../_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/> as a function of <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>, <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> only:</p>
+<div class="math" id="equation-ideal-gas-F">
+<p><span class="eqno">(4)</span><img src="../_images/math/44f01690749485b3395c1b3b9b8247055884e84c.png" alt="F(T, V, N) = U - TS =
+
+    = c_V N k_\mathrm{B} \left({N\Phi\over V}
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
+    -T S =
+
+    = c_V N k_\mathrm{B} T -T
+        N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right) =
+
+    = N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)\,."/></p>
+</div><p>This calculation shows that one can also express the internal energy as a
+function of <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>, <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> as <img class="math" src="../_images/math/becf636b52986226d19c9acded31d7848bc88efb.png" alt="U = U(T, V, N) = c_V N k_\mathrm{B} T"/>. This
+is a valid expression, but unlike <img class="math" src="../_images/math/cd4d93b2cbadb5b5067be2900fe00d49d8fc65d1.png" alt="U = U(S, V, N)"/>, this is not a thermodynamic
+potential, because we lost some information. In particular, if we use <img class="math" src="../_images/math/4f4833bed19ae3f532c764449d395001eb4527e7.png" alt="U = U(T,
+V, N)"/> to find <img class="math" src="../_images/math/cd4d93b2cbadb5b5067be2900fe00d49d8fc65d1.png" alt="U = U(S, V, N)"/>:</p>
+<div class="math">
+<p><img src="../_images/math/6dbfb16454cc94221030152c397ddf54c582df75.png" alt="U = U(T, V, N) = c_V N k_\mathrm{B} T = c_V N k_\mathrm{B}
+    \left(\partial U \over \partial S\right)_{V, N}
+
+\d S = c_V N k_\mathrm{B} {\d U \over U}
+    \quad\quad\mbox{($V$ and $N$ constant)}
+
+S = c_V N k_\mathrm{B} \log U + C
+    \quad\quad\mbox{($V$ and $N$ constant)}
+
+U(S, V, N) = f(V, N) \left(e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,,"/></p>
+</div><p>we can see, that we recovered the correct formula for <img class="math" src="../_images/math/16107e2988bb9c0b4931ed67c2fc85069daa37e7.png" alt="U(S, V, N)"/> except an
+arbitrary function <img class="math" src="../_images/math/fd6a4b40809e6262f4bbc5296d2cb06fa6909931.png" alt="f(V, N)"/> of <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/>. Compared to <a href="#equation-ideal-gas-U">(1)</a> we
+can see that it must be <img class="math" src="../_images/math/c1957830248d31d3d0c66fc2fd4255a974af4447.png" alt="f(V, N) = c_V N k_\mathrm{B} \left({N\Phi\over V}
+\right)^{1\over c_V}"/>, but this information got lost. For this reason, only
+<img class="math" src="../_images/math/d59c68b11f163154da2838cc726fae83929b8580.png" alt="U=U(S, V, N)"/> as well as <img class="math" src="../_images/math/c6754ea534c8de7b63d1a88dfc09c6bdef757b10.png" alt="F=F(T, V, N)"/>, that we just calculated, are
+thermodynamic potentials and both contain equivalent information. But <img class="math" src="../_images/math/16d54fbc4e3fb104e33eeaff3381d14299ae7464.png" alt="U=U(T, V,
+N)"/> is not and it does not contain full information.</p>
+<p>To convert <img class="math" src="../_images/math/d01fbb0a13d9adb67350bcb5958b343055eafe19.png" alt="F(T, V, N)"/> back to <img class="math" src="../_images/math/16107e2988bb9c0b4931ed67c2fc85069daa37e7.png" alt="U(S, V, N)"/>, we first calculate the entropy
+<img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/>:</p>
+<div class="math">
+<p><img src="../_images/math/89c5935f287538cb4df867cd75297b33295fb149.png" alt="S = -\left(\partial F \over \partial T\right)_{V, N} =
+
+    = -{\partial\over\partial T}\left(
+      N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+          \right) =
+
+    = - N k_\mathrm{B} c_V
+        +N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)
+        +N k_\mathrm{B} T {N\Phi\over VT^{c_V}}{V c_V T^{c_V-1}\over N\Phi}
+        =
+
+    = N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)\,,"/></p>
+</div><p>which is the same equation as <a href="#equation-ideal-gas-S">(3)</a>. From this, we express <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>, we
+get <a href="#equation-ideal-gas-T">(2)</a>. Finally, we can calculate the internal energy and
+substitute <img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/> for <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> using <a href="#equation-ideal-gas-T">(2)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/b059b2d410544e0cf189c3f91d054a48207adbb9.png" alt="U(S, V, N) = F + TS =
+
+    = N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+          + TS =
+
+    = N k_\mathrm{B} T c_V
+        - N k_\mathrm{B} T \log \left({VT^{c_V}\over N\Phi}\right)
+          + TS =
+
+    = N k_\mathrm{B} T c_V
+        - TS
+          + TS =
+
+    = c_V N k_\mathrm{B} T =
+
+    = c_V N k_\mathrm{B} \left({N\Phi\over V}
+        e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,."/></p>
+</div><p>This is the same equation as <a href="#equation-ideal-gas-U">(1)</a>. This shows that all
+thermodynamic potentials contain the same information and can be converted to
+one another using the Legendre transformation.</p>
+<p>Note: in equations like <img class="math" src="../_images/math/514bc7720f9c64386e6f00347f0971de66cc9649.png" alt="F(T, V, N) = U - TS"/>, we can use any expressions for
+<img class="math" src="../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/> and <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> (e.g. we can use <img class="math" src="../_images/math/4b1de194f841b1b91fb009ee3ff2fb416989e91d.png" alt="U=U(S,V,N)"/> or <img class="math" src="../_images/math/064498517029279da4513b7749dc5c2128cd66e1.png" alt="U=(T, V, N)"/>, etc.) in the
+intermediate steps, but at the end, we must express the final formula using
+<img class="math" src="../_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T"/>, <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> only.</p>
+<p>To calculate the Gibbs energy, we need to calculate pressure first. We can use
+any of the potentials <img class="math" src="../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/>, <img class="math" src="../_images/math/a055f405829e64a3b70253ab67cb45ed6ed5bb29.png" alt="F"/>, <img class="math" src="../_images/math/13e5e2212d37e0f988a4a149b3173f26b9cd2fc6.png" alt="X_1"/> or <img class="math" src="../_images/math/9e2b196e9b7e57d1ec99f6534c581ea9759d2170.png" alt="\Omega"/> to do so. Since the equation
+of state is typicaly expressed as <img class="math" src="../_images/math/5260d735b238816c9f8d217458ac51337e574e65.png" alt="p=p(T, V, N)"/>, then the free energy <img class="math" src="../_images/math/07892e755b687712a04a44f0b33dcdc91193c377.png" alt="F(T, V,
+N)"/> is the natural choice:</p>
+<div class="math">
+<p><img src="../_images/math/168bf3e081ba48d41aeac7adac0fa792c670232b.png" alt="p = -\left(\partial F \over \partial V\right)_{T, N} =
+
+  = -{\partial \over \partial V}\left(
+    N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+    \right) =
+
+  = N k_\mathrm{B} T {\partial \over \partial V}
+        \log \left({VT^{c_V}\over N\Phi}\right) =
+
+  = N k_\mathrm{B} T {1\over V}\,,"/></p>
+</div><p>and we get the ideal gas law <img class="math" src="../_images/math/6c91363756c22453eb427ebc49e1d4760955cee5.png" alt="p V = N k_\mathrm{B} T"/>. The Gibbs energy is
+equal to:</p>
+<div class="math" id="equation-ideal-gas-G">
+<p><span class="eqno">(5)</span><img src="../_images/math/d581188feea2e859780b9587b12775842f1d1df1.png" alt="G(T, p, N) = U - TS + pV = F + pV =
+
+    = N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+    + N k_\mathrm{B} T =
+
+    = N k_\mathrm{B} T \left((c_V + 1)
+        - \log \left({k_\mathrm{B} T^{c_V+1}\over p\Phi}\right) \right)\,."/></p>
+</div><p>For the enthalpy, we first need:</p>
+<div class="math">
+<p><img src="../_images/math/f3631e13f051b6e8b13cab6af7b7ef3008900458.png" alt="p = -\left(\partial U \over \partial V\right)_{S, N} =
+
+= -c_V N k_\mathrm{B} {1\over c_V} \left({N\Phi\over V}
+    e^{S\over N k_\mathrm{B}}\right)^{{1\over c_V}-1}
+    {N\Phi\over V} e^{S\over N k_\mathrm{B}} \left(-{1\over V}\right) =
+
+= {1\over V} N k_\mathrm{B} \left({N\Phi\over V}
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,,"/></p>
+</div><p>we need to use this to express the volume <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>:</p>
+<div class="math">
+<p><img src="../_images/math/9d9786811b5cd2c52e3731cb366ce187c6f5faf0.png" alt="V^{c_V+1\over c_V} =
+    {N k_\mathrm{B}\over p} \left(N\Phi
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
+    = \left({N^{c_V+1} k_\mathrm{B}^{c_V}\over p^{c_V}}\Phi
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
+
+V = \left({N^{c_V+1} k_\mathrm{B}^{c_V}\over p^{c_V}}\Phi
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V+1}
+   = {N k_\mathrm{B}\over p} \left({ p\Phi \over k_\mathrm{B} }
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V+1}"/></p>
+</div><p>now we can calculate <img class="math" src="../_images/math/fb1f76e64ac4265b2ccf89df5e550153f1590aba.png" alt="H(S, p, N)"/>:</p>
+<div class="math" id="equation-ideal-gas-H">
+<p><span class="eqno">(6)</span><img src="../_images/math/db55ab1f1158b6344c99dbdb9356035457fb0bbd.png" alt="H(S, p, N) = U + pV =
+
+    = c_V N k_\mathrm{B} \left({N\Phi\over V}
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
+    + pV =
+
+  = (c_V+1) p V =
+
+  = (c_V+1) N k_\mathrm{B} \left({ p\Phi \over k_\mathrm{B} }
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V+1} \,."/></p>
+</div><p>The enthalpy in terms of temperature <img class="math" src="../_images/math/d87d596184ac7665e809efee14d4aa4bceb25d0f.png" alt="H = H(T, p, N)"/> can be calculated as:</p>
+<div class="math">
+<p><img src="../_images/math/c9860742f91cce00272f0292b49c532e1bef0210.png" alt="H(T, p, N) = (c_V+1) p V = (c_V+1) N k_\mathrm{B} T\,."/></p>
+</div><p>The specific heat capacity at a constant volume can be calculated as:</p>
+<div class="math">
+<p><img src="../_images/math/37b8e316ea2ac6b66c63f835e6b5d456586cb372.png" alt="c_V \equiv {1\over N k_\mathrm{B}} C_V
+    = {1\over N k_\mathrm{B}}
+        \left(\partial U \over \partial T\right)_{V, N} =
+
+    = {1\over N k_\mathrm{B}}
+        {\partial \over \partial T}\left(c_V N k_\mathrm{B} T\right)
+    = c_V"/></p>
+</div><p>This provides proof that the <img class="math" src="../_images/math/2db2d8702f74b2b7832092fdd4542b87003bef56.png" alt="c_V"/> in <a href="#equation-ideal-gas-U">(1)</a> is indeed the specific
+heat capacity at a constant volume.</p>
+<p>The specific heat capacity at a constant pressure can be calculated as:</p>
+<div class="math">
+<p><img src="../_images/math/3f27b9bb2716ce1609c6cf9424884aff0fa967a2.png" alt="c_p \equiv {1\over N k_\mathrm{B}} C_p
+    = {1\over N k_\mathrm{B}}
+        \left(\partial H \over \partial T\right)_{p, N} =
+
+    = {1\over N k_\mathrm{B}} {\partial H(T, p, N) \over \partial T} =
+
+    = {1\over N k_\mathrm{B}}
+        {\partial \over \partial T}\left((c_V+1) N k_\mathrm{B} T\right)
+    = c_V+1\,."/></p>
+</div><p>Using this relation <img class="math" src="../_images/math/5c16e8d0989e1c2e11f6355bb0d04a5d4b99a61b.png" alt="c_p = c_V + 1"/> we can then express <a href="#equation-ideal-gas-G">(5)</a>:</p>
+<div class="math">
+<p><img src="../_images/math/fa77e86c29d1f6c08d8bb57ba1fcd3293c5a499a.png" alt="G(T, p, N)
+    = N k_\mathrm{B} T \left((c_V + 1)
+        - \log \left({k_\mathrm{B} T^{c_V+1}\over p\Phi}\right) \right) =
+
+    = N k_\mathrm{B} T \left(c_p
+        - \log \left({k_\mathrm{B} T^{c_p}\over p\Phi}\right) \right)\,,"/></p>
+</div><p>and <a href="#equation-ideal-gas-H">(6)</a> as:</p>
+<div class="math">
+<p><img src="../_images/math/e1f58fb371881077fe18e5b390888f674bb100ea.png" alt="H(S, p, N)
+  = (c_V+1) N k_\mathrm{B} \left({ p\Phi \over k_\mathrm{B} }
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_V+1} =
+
+  = c_p N k_\mathrm{B} \left({ p\Phi \over k_\mathrm{B} }
+    e^{S\over N k_\mathrm{B}}\right)^{1\over c_p} \,."/></p>
+</div><p>In order to calculate the grand potential, we first need to find the chemical
+potential:</p>
+<div class="math">
+<p><img src="../_images/math/9af19b7605fabd498913c1f161c00db10444193d.png" alt="\mu = \left(\partial F \over \partial N\right)_{T, V} =
+
+    = {\partial \over \partial N} \left(
+      N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+          \right) =
+
+    = k_\mathrm{B} T \left((c_V+1)
+        - \log \left({VT^{c_V}\over N\Phi}\right)\right)\,,"/></p>
+</div><p>and express <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> using <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/>:</p>
+<div class="math">
+<p><img src="../_images/math/eecdfcc2d532de75c6610ae4124ad96ec6272aca.png" alt="N = {V T^{c_V} \over \Phi e^{c_V+1-{\mu\over k_\mathrm{B} T}}}"/></p>
+</div><p>Now we can calculate <img class="math" src="../_images/math/5078d6f127d77dde0f7b49e28805936c75c7da5f.png" alt="\Omega(T, V, \mu)"/>:</p>
+<div class="math" id="equation-ideal-gas-Omega">
+<p><span class="eqno">(7)</span><img src="../_images/math/f5d91f0dc37473f972c3357661d771cc46cd80da.png" alt="\Omega(T, V, \mu) = U - TS - \mu N = F - \mu N =
+
+    = N k_\mathrm{B} T \left(c_V
+        - \log \left({VT^{c_V}\over N\Phi}\right) \right)
+      -\mu N =
+
+    = N k_\mathrm{B} T \left({\mu\over k_\mathrm{B} T}-1\right)
+      -\mu N =
+
+    = - N k_\mathrm{B} T =
+
+    = - {k_\mathrm{B} V T^{c_V+1} \over
+        \Phi e^{c_V+1-{\mu\over k_\mathrm{B} T}}} =
+
+    = - {k_\mathrm{B} V T^{c_p} \over
+        \Phi e^{c_p-{\mu\over k_\mathrm{B} T}}} \,."/></p>
+</div></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Thermodynamics</a><ul>
+<li><a class="reference internal" href="#thermodynamic-potentials">Thermodynamic Potentials</a></li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#ideal-gas">Ideal Gas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="main.html"
+                        title="previous chapter">Thermodynamics and Statistical Physics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="statmech.html"
+                        title="next chapter">Statistical Physics</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/statmech/thermodynamics.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="statmech.html" title="Statistical Physics"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="main.html" title="Thermodynamics and Statistical Physics"
+             >previous</a> |</li>
+        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
+          <li><a href="main.html" >Thermodynamics and Statistical Physics</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

@@ -177,7 +177,7 @@ Hamiltonian:</p>
 </div><p>that is, the particles are non-interacting, each has a mass <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/> and a
 momentum <img class="math" src="../_images/math/b55571e9fb5654d021a95debf1ca0b8891af79c1.png" alt="\mathbf{p}_i"/>. The canonical partition function is then equal to:</p>
 <div class="math">
-<p><img src="../_images/math/c54b2a69d8e2b5f01ea9a2fe8bdfb0ac605235bf.png" alt="Z_{can} = \sum_n e^{-\beta E_n} =
+<p><img src="../_images/math/9a0da9c7699682a8ee42c556e751e26ab1e604df.png" alt="Z_{can}(T, V, N) = \sum_n e^{-\beta E_n} =
 
 = \int {\d^{3N} x\, \d^{3N} p \over N! (2\pi\hbar)^{3N}}
     e^{-\beta H(\mathbf{x}_i, \mathbf{p}_i)} =
@@ -204,7 +204,7 @@ momentum <img class="math" src="../_images/math/b55571e9fb5654d021a95debf1ca0b88
     {\sqrt\pi\over4\alpha^{3\over2}}\,."/></p>
 </div><p>The Helmholtz free energy is then equal to:</p>
 <div class="math">
-<p><img src="../_images/math/eee919848c1819db41dcaeb65efb2c4aa2a8d872.png" alt="F = -{1\over\beta} \log Z_{can} =
+<p><img src="../_images/math/3f6967a1ac6c8804ca1da16471008e7159dced99.png" alt="F(T, V, N) = -{1\over\beta} \log Z_{can}(T, V, N) =
 
   = -{1\over\beta} \log\left( {1\over N!} \left(
     \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N\right) =
@@ -226,8 +226,7 @@ momentum <img class="math" src="../_images/math/b55571e9fb5654d021a95debf1ca0b88
 
   = N k_\mathrm{B} T \left({3\over2}
     - \log \left( {V T^{3\over2} \over N
-      {\left(2\pi\over m k_\mathrm{B}\right)^{3\over2}
-      {\hbar^3\over e^{5\over2}} }
+      \left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}
       }\right) + O\left(\log N\over N\right) \right)\,,"/></p>
 </div><p>where we used the Stirling&#8217;s approximation for <img class="math" src="../_images/math/0700a3616c5f1597f275b4cd39e9072cd25660be.png" alt="N!"/>. For large <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> this is
 equal to the Helmholtz free energy of the ideal gas (see <a class="reference internal" href="thermodynamics.html#ideal-gas"><em>Ideal Gas</em></a>):</p>
@@ -235,8 +234,46 @@ equal to the Helmholtz free energy of the ideal gas (see <a class="reference int
 <p><img src="../_images/math/944643ef9612b2b78ad078df76283fad70063e2a.png" alt="F(T, V, N)
     = N k_\mathrm{B} T \left(c_V
         - \log \left({VT^{c_V}\over N\Phi}\right) \right)\,,"/></p>
-</div><p>with <img class="math" src="../_images/math/25e2dfda0e5fc06ba04d25f1a2477fdba1be6c18.png" alt="c_V={3\over2}"/> and <img class="math" src="../_images/math/6d8262f1e5840c9a214c93cb72bfd360df5cd6c4.png" alt="\Phi={\left(2\pi\over m k_\mathrm{B}\right)^{3\over2} {\hbar^3\over e^{5\over2}} }"/>. See that section where all other
+</div><p>with <img class="math" src="../_images/math/25e2dfda0e5fc06ba04d25f1a2477fdba1be6c18.png" alt="c_V={3\over2}"/> and
+<img class="math" src="../_images/math/a62746f1e677a8cd7a7afd979b636762f9cae009.png" alt="\Phi=\left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}"/>.
+See that section where all other
 thermodynamic properties are derived from it.</p>
+<p>We can also start from the grand canonical partition function:</p>
+<div class="math">
+<p><img src="../_images/math/4ee4674b8571f35eface940363ac0ca6964537c8.png" alt="Z_{gr}(T, V, \mu) = \sum_{N=0}^\infty e^{\beta \mu N} Z_{can}(T, V, N) =
+
+  = \sum_{N=0}^\infty e^{\beta \mu N}
+    {1\over N!}\left(
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N =
+
+  = \sum_{N=0}^\infty
+    {1\over N!}\left(e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N =
+
+  = e^{e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V}"/></p>
+</div><p>And the grand potential is:</p>
+<div class="math">
+<p><img src="../_images/math/0ea792980e1914ce4e0c61293866cf1154c249c7.png" alt="\Omega(T, V, \mu) = -{1\over\beta} \log Z_{gr}(T, V, \mu) =
+
+       = -{1\over\beta} {e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V} =
+
+       = -{k_\mathrm{B} T} {e^{\mu\over k_\mathrm{B} T}
+    \left(m k_\mathrm{B} T\over2\pi\hbar^2\right)^{3\over2} V} =
+
+    = - {k_\mathrm{B} V T^{5\over2} \over
+        \left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}
+        e^{{5\over2}-{\mu\over k_\mathrm{B} T}}} \,."/></p>
+</div><p>This is equal to the grand potential of an ideal gas:</p>
+<div class="math">
+<p><img src="../_images/math/533d2643f6cd8f497a728866e4ebc05d0c802976.png" alt="\Omega(T, V, \mu) = - {k_\mathrm{B} V T^{c_p} \over
+        \Phi e^{c_p-{\mu\over k_\mathrm{B} T}}} \,,"/></p>
+</div><p>with <img class="math" src="../_images/math/8954f493c83cf003711c70e55b8c5d77c9375969.png" alt="c_p={5\over2}"/> and
+<img class="math" src="../_images/math/a62746f1e677a8cd7a7afd979b636762f9cae009.png" alt="\Phi=\left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}"/>.
+The thermodynamics section then shows that the corresponding Helmholtz free
+energy is the same as we obtained above from the canonical ensemble. Note that
+we also obtained the same <img class="math" src="../_images/math/b85bbfb165b853d6f5f9734be4cdabbb453f4e43.png" alt="\Phi"/> as before.</p>
 </div>
 </div>
 </div>

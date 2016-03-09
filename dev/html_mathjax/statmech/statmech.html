@@ -148,7 +148,7 @@ Hamiltonian:</p>
 <p>that is, the particles are non-interacting, each has a mass <span class="math">\(m\)</span> and a
 momentum <span class="math">\(\mathbf{p}_i\)</span>. The canonical partition function is then equal to:</p>
 <div class="math">
-\[Z_{can} = \sum_n e^{-\beta E_n} =\]\[= \int {\d^{3N} x\, \d^{3N} p \over N! (2\pi\hbar)^{3N}}
+\[Z_{can}(T, V, N) = \sum_n e^{-\beta E_n} =\]\[= \int {\d^{3N} x\, \d^{3N} p \over N! (2\pi\hbar)^{3N}}
     e^{-\beta H(\mathbf{x}_i, \mathbf{p}_i)} =\]\[= \int {\d^{3N} x\, \d^{3N} p \over N! (2\pi\hbar)^{3N}}
     e^{-\beta \sum_{i=1}^N {p_i^2 \over 2 m}} =\]\[= {1\over N!}\left( \int {\d^3 x \d^3 p \over (2\pi\hbar)^3}
     e^{-\beta {p^2 \over 2 m}}\right)^N =\]\[= {1\over N!}\left(V \int_0^\infty {4\pi p^2 \d p
@@ -163,7 +163,7 @@ momentum <span class="math">\(\mathbf{p}_i\)</span>. The canonical partition fun
     {\sqrt\pi\over4\alpha^{3\over2}}\,.\]</div>
 <p>The Helmholtz free energy is then equal to:</p>
 <div class="math">
-\[F = -{1\over\beta} \log Z_{can} =\]\[  = -{1\over\beta} \log\left( {1\over N!} \left(
+\[F(T, V, N) = -{1\over\beta} \log Z_{can}(T, V, N) =\]\[  = -{1\over\beta} \log\left( {1\over N!} \left(
     \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N\right) =\]\[  = {N\over\beta} \left({\log N!\over N} - \log \left(
     \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)\right) =\]\[  = {N\over\beta} \left(\log N - 1 + O\left(\log N\over N\right)
     - \log \left(
@@ -173,8 +173,7 @@ momentum <span class="math">\(\mathbf{p}_i\)</span>. The canonical partition fun
     - \log \left( \left(m\over2\pi\hbar^2\beta\right)^{3\over2}
       {V e^{5\over2} \over N}\right) + O\left(\log N\over N\right) \right) =\]\[  = N k_\mathrm{B} T \left({3\over2}
     - \log \left( {V T^{3\over2} \over N
-      {\left(2\pi\over m k_\mathrm{B}\right)^{3\over2}
-      {\hbar^3\over e^{5\over2}} }
+      \left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}
       }\right) + O\left(\log N\over N\right) \right)\,,\]</div>
 <p>where we used the Stirling&#8217;s approximation for <span class="math">\(N!\)</span>. For large <span class="math">\(N\)</span> this is
 equal to the Helmholtz free energy of the ideal gas (see <a class="reference internal" href="thermodynamics.html#ideal-gas"><em>Ideal Gas</em></a>):</p>
@@ -182,8 +181,34 @@ equal to the Helmholtz free energy of the ideal gas (see <a class="reference int
 \[F(T, V, N)
     = N k_\mathrm{B} T \left(c_V
         - \log \left({VT^{c_V}\over N\Phi}\right) \right)\,,\]</div>
-<p>with <span class="math">\(c_V={3\over2}\)</span> and <span class="math">\(\Phi={\left(2\pi\over m k_\mathrm{B}\right)^{3\over2} {\hbar^3\over e^{5\over2}} }\)</span>. See that section where all other
+<p>with <span class="math">\(c_V={3\over2}\)</span> and
+<span class="math">\(\Phi=\left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}\)</span>.
+See that section where all other
 thermodynamic properties are derived from it.</p>
+<p>We can also start from the grand canonical partition function:</p>
+<div class="math">
+\[Z_{gr}(T, V, \mu) = \sum_{N=0}^\infty e^{\beta \mu N} Z_{can}(T, V, N) =\]\[  = \sum_{N=0}^\infty e^{\beta \mu N}
+    {1\over N!}\left(
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N =\]\[  = \sum_{N=0}^\infty
+    {1\over N!}\left(e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V\right)^N =\]\[  = e^{e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V}\]</div>
+<p>And the grand potential is:</p>
+<div class="math">
+\[\Omega(T, V, \mu) = -{1\over\beta} \log Z_{gr}(T, V, \mu) =\]\[       = -{1\over\beta} {e^{\beta \mu}
+    \left(m\over2\pi\hbar^2\beta\right)^{3\over2} V} =\]\[       = -{k_\mathrm{B} T} {e^{\mu\over k_\mathrm{B} T}
+    \left(m k_\mathrm{B} T\over2\pi\hbar^2\right)^{3\over2} V} =\]\[    = - {k_\mathrm{B} V T^{5\over2} \over
+        \left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}
+        e^{{5\over2}-{\mu\over k_\mathrm{B} T}}} \,.\]</div>
+<p>This is equal to the grand potential of an ideal gas:</p>
+<div class="math">
+\[\Omega(T, V, \mu) = - {k_\mathrm{B} V T^{c_p} \over
+        \Phi e^{c_p-{\mu\over k_\mathrm{B} T}}} \,,\]</div>
+<p>with <span class="math">\(c_p={5\over2}\)</span> and
+<span class="math">\(\Phi=\left(2\pi\hbar^2\over m k_\mathrm{B}e^{5\over3}\right)^{3\over2}\)</span>.
+The thermodynamics section then shows that the corresponding Helmholtz free
+energy is the same as we obtained above from the canonical ensemble. Note that
+we also obtained the same <span class="math">\(\Phi\)</span> as before.</p>
 </div>
 </div>
 </div>

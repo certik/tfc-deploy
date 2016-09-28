@@ -84,6 +84,76 @@
             
   <div class="section" id="quantum-electrodynamics-qed">
 <span id="index-0"></span><h1>Quantum Electrodynamics (QED)<a class="headerlink" href="#quantum-electrodynamics-qed" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="local-gauge-invariance">
+<span id="id1"></span><h2>Local Gauge Invariance<a class="headerlink" href="#local-gauge-invariance" title="Permalink to this headline">¶</a></h2>
+<p>The Dirac equation for an electron is:</p>
+<div class="math">
+<p><img src="../_images/math/e1833f2cd96449a5df7f95498c1abd3c0ed3a545.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi"/></p>
+</div><p>The physical quantities are expressions like <img class="math" src="../_images/math/083a3b9f3dcf61804945122ebb2643657bb7e1c5.png" alt="\bar\psi\psi"/> or
+<img class="math" src="../_images/math/dfe9e2028567b8cab94a1d36d7bea455fdc29966.png" alt="\bar\psi\gamma^\mu\psi"/>, which are all invariant if we add a local phase
+<img class="math" src="../_images/math/3222e2e8733d4e10d63bf38486a6cd0ca73821c0.png" alt="\Lambda(x)"/> to the field (U(1) gauge transformation):</p>
+<div class="math">
+<p><img src="../_images/math/b2e229caa2686e553de8625d65f9aeb9b5512680.png" alt="\psi(x) \to e^{iq\Lambda(x)} \psi(x)
+
+\bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x)}"/></p>
+</div><p>Where <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/> is a parameter that measures the strength of the phase
+transformation. And so we require that the Lagrangian is also invariant under
+the local gauge transformation, because there is no experiment that could
+reveal this phase. By putting this gauge transformation into the Lagrangian
+density, we otain:</p>
+<div class="math">
+<p><img src="../_images/math/b9b5f77921fb52ba0f7825f984746a2e67d21998.png" alt="\L \to \bar\psi e^{-iq\Lambda(x)}
+    (i\hbar c\gamma^\mu \partial_\mu-mc^2)
+e^{iq\Lambda(x)} \psi =
+
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu + iq\partial_\mu\Lambda(x))
+    -mc^2)\psi"/></p>
+</div><p>In order to make the Lagrangian gauge invariant, we have to introduce a gauge
+field, in this case a vector field <img class="math" src="../_images/math/a810ae942710f867fd6789d7dd40228c8dd17be3.png" alt="A_\mu(x)"/>, as follows:</p>
+<div class="math" id="equation-lag_inv">
+<p><span class="eqno">(1)</span><img src="../_images/math/7fcaeb062123a1edbe70687d83bd36909dc58db8.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu)-mc^2)\psi"/></p>
+</div><p>and the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> must transform as
+<img class="math" src="../_images/math/355c28a0f578d29bc23956274ac3f293644a42bf.png" alt="A_\mu \to A_\mu + \partial_\mu\Lambda(x)"/>. Then the Lagrangian is gauge
+invariant:</p>
+<div class="math">
+<p><img src="../_images/math/a235674f4b5f132c483307d53f922fbae255f1ed.png" alt="\L \to \bar\psi e^{-iq\Lambda(x)}
+    (i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu-iq\partial_\mu\Lambda(x))
+    -mc^2) e^{iq\Lambda(x)} \psi =
+
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu
+    -iq\partial_\mu\Lambda(x) + iq\partial_\mu\Lambda(x))
+    -mc^2)\psi =
+
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu) -mc^2)\psi"/></p>
+</div><p>The Lagrangian <a href="#equation-lag_inv">(1)</a> can also be written as (after we introduce the
+Planck constant by <img class="math" src="../_images/math/11f854b39e95f8d90b2f4330d38b48f8fc8a8ba2.png" alt="q\to{q \over \hbar}"/>):</p>
+<div class="math">
+<p><img src="../_images/math/82d09f476cf4aa8687a6ad5fc161e755651627cf.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-{i \over \hbar} qA_\mu)
+    -mc^2)\psi =
+
+= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
+    + qc\bar\psi\gamma^\mu \psi  A_\mu"/></p>
+</div><p>The operator <img class="math" src="../_images/math/9cf1217669f550a3eba7f4bfe5fc3ed9416c2652.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu"/> is called a covariant
+derivative, because it does not change a form (is invariant) under a local
+gauge transformation.</p>
+<p>We can see that the condition of a local gauge invariance requires an
+interaction with a vector field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/>. Now we need to add the kinetic term
+for the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/>:</p>
+<div class="math">
+<p><img src="../_images/math/bcda4d00292d1e81b0f99f3e73e4ecc537480443.png" alt="-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
+</div><p>The mass term <img class="math" src="../_images/math/f2572f20903834d3e3e60ad1476a5137817083db.png" alt="\half m^2 A_\mu A^\mu"/> is not gauge invariant, and so we have to
+set <img class="math" src="../_images/math/2e275495e7e44d279fb3e5051b3a63115e79ead5.png" alt="m=0"/>. Here is the full Lagrangian:</p>
+<div class="math">
+<p><img src="../_images/math/3e25dd378c6431b8995b274b11bbac74603438f8.png" alt="\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
+    + q c\bar\psi\gamma^\mu \psi  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
+</div><p>This is a Lagrangian for an electron and a massless vector boson (photon) of
+spin 1. For an electron, we set <img class="math" src="../_images/math/ac751b731c9ad661bac120ac7fc169d74e55b0c9.png" alt="q=-e"/>, where <img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/>
+is positive). We can introduce a current <img class="math" src="../_images/math/4e2447ba726a5cd6c6851b65db95d9bff2d90ab0.png" alt="j^\mu = c\bar\psi\gamma^\mu \psi"/>,
+then the Lagrangian density becomes:</p>
+<div class="math">
+<p><img src="../_images/math/1508dcbc61049bcceb7a2586ae67c64651360d47.png" alt="\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
+    + q j^\mu  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
+</div></div>
 <div class="section" id="qed-lagrangian">
 <h2>QED Lagrangian<a class="headerlink" href="#qed-lagrangian" title="Permalink to this headline">¶</a></h2>
 <p>The QED Lagrangian density is</p>
@@ -95,7 +165,8 @@
 </div><p>and</p>
 <div class="math">
 <p><img src="../_images/math/b76f3717d8b95018d98c42e69f91ced166382056.png" alt="D_\mu=\partial_\mu+{i\over \hbar}eA_\mu"/></p>
-</div><p>is the gauge covariant derivative and (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge, which is <img class="math" src="../_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1"/> in atomic units, i.e. the electron has a charge <img class="math" src="../_images/math/9510a71303aa5d215f165639a8f37afd64298419.png" alt="-e"/>)</p>
+</div><p>is the gauge covariant derivative and (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge, which is
+<img class="math" src="../_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1"/> in atomic units, i.e. the electron has a charge <img class="math" src="../_images/math/ac751b731c9ad661bac120ac7fc169d74e55b0c9.png" alt="q=-e"/>)</p>
 <div class="math">
 <p><img src="../_images/math/360f0df92affc46c2332ff2e088e153a2e5da364.png" alt="F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu"/></p>
 </div><p>is the electromagnetic field tensor. It&#8217;s astonishing, that this simple Lagrangian can account for all phenomena from macroscopic scales down to something like <img class="math" src="../_images/math/98149bffe830857c28d2a44c8ce529104e8920ff.png" alt="10^{-13}\rm\,cm"/>. So it&#8217;s not a surprise that Feynman, Schwinger and Tomonaga received the 1965 Nobel Prize in Physics for such a fantastic achievement.</p>
@@ -456,13 +527,14 @@ divergence affects <img class="math" src="../_images/math/fe9869cc73b60eeb9f940d
 <p><img src="../_images/math/53c0c4b50c20924c020096cbdd0e96f492f76e5b.png" alt="a_e = {g - 2\over 2} = F_2(0) = {\alpha\over 2\pi} \approx 0.0011614"/></p>
 </div><p>Code:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999049</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span>
-<span class="go">0.0011614097335977778</span>
+<span class="go">0.0011614097331824923</span>
 </pre></div>
 </div>
-<p>Experiments give <img class="math" src="../_images/math/3ab701f3f3b129d1301dd5ee6872d15cf28e6487.png" alt="a_e = 0.00115965218073\pm0.00000000000028"/>.</p>
+<p>Experiments give <img class="math" src="../_images/math/3ab701f3f3b129d1301dd5ee6872d15cf28e6487.png" alt="a_e = 0.00115965218073\pm0.00000000000028"/>
+(<a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>, eq. (1)).</p>
 <p>Higher order corrections from QED can also be calculated:</p>
 <div class="math">
 <p><img src="../_images/math/4f28bc93173cec17687387d4b580f087e4fb32b1.png" alt="a_e = A_1 \left({\alpha\over \pi}\right) +
@@ -482,8 +554,7 @@ divergence affects <img class="math" src="../_images/math/fe9869cc73b60eeb9f940d
 <span class="go">-0.328478965579194</span>
 </pre></div>
 </div>
-<p>See <a class="reference external" href="http://arxiv.org/abs/hep-ph/9602417">hep-ph/9602417</a>, where the author
-obtains the following expression for the coefficient <img class="math" src="../_images/math/791fe65c9d1ed7d8ed33a5025f40c5c7f9e476af.png" alt="A_3"/>:</p>
+<p>See <a class="reference external" href="http://arxiv.org/abs/hep-ph/9602417">hep-ph/9602417</a> for the <img class="math" src="../_images/math/791fe65c9d1ed7d8ed33a5025f40c5c7f9e476af.png" alt="A_3"/> term:</p>
 <div class="math">
 <p><img src="../_images/math/6c86b0f40887a130ddc277f682ac7f6ccd60800a.png" alt="A_3 = \frac{28259}{5184} - \frac{215}{24} \zeta\left(5\right)
 + \frac{100}{3} \left(\sum_{n=1}^{\infty} \frac{1}{2^{n} n^{4}} -
@@ -510,43 +581,99 @@ obtains the following expression for the coefficient <img class="math" src="../_
 <span class="go">1.18124145658720</span>
 </pre></div>
 </div>
-<p>Numerical approximation for <img class="math" src="../_images/math/3b6f936abe426272c6ed7300a218f88be89175a4.png" alt="A_4"/> can be found in
-<a class="reference external" href="http://arxiv.org/abs/hep-ph/0507249">hep-ph/0507249</a>:</p>
+<p>Higher terms are only known numerically. The <img class="math" src="../_images/math/3b6f936abe426272c6ed7300a218f88be89175a4.png" alt="A_4"/> and <img class="math" src="../_images/math/eef7fe0cf0006427ad470b8c83d13ee22d29ec0d.png" alt="A_5"/> terms can be found
+in <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>:</p>
 <div class="math">
-<p><img src="../_images/math/1ba281d957c6d386f86b8d9d279b9321a958ea5f.png" alt="A_4=-1.7283(35)"/></p>
-</div><p>So the total value of <img class="math" src="../_images/math/ec39a648f22679d8ea6c0132f5cb6aa3aab922b8.png" alt="a_e"/> is:</p>
-<div class="math">
-<p><img src="../_images/math/03f68d3d2b1bba643f2e4ba56fd97da70bacb923.png" alt="a_e = 0.00115965223273643 + O(\alpha^4)
+<p><img src="../_images/math/a059eb87b990f41869db8687c15a0b22311b83d4.png" alt="A_4 = -1.912 98 (84)
 
-a_e = 0.00115965218242334 + O(\alpha^5)"/></p>
-</div><p>Let&#8217;s state the experimental value again for comparison (see above):</p>
-<div class="math">
-<p><img src="../_images/math/9b64e45f93e987273b67dfec8dbc111d20e8e866.png" alt="a_e = 0.00115965218073\pm0.00000000000028"/></p>
-</div><p>At this level of accuracy, the uncertainty of the exact value of <img class="math" src="../_images/math/10f32377ac67d94f764f12a15ea987e88c85d3e1.png" alt="\alpha"/> as
-well as other corrections coming from the Standar Model come into play, so one
-should not take the numbers above too seriously, but one can roughly say, that
-the agreement between the QED prediction and experiment is about 8 significant
-figures.</p>
-<p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
-<span class="go">n</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a4</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">A_1</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">197</span><span class="p">)</span><span class="o">/</span><span class="mi">144</span> <span class="o">+</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">A_3</span> <span class="o">=</span> <span class="mi">83</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">72</span> <span class="o">-</span> <span class="mi">215</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">24</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">a4</span> <span class="o">+</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">24</span> <span class="o">-</span> \
-<span class="gp">... </span>        <span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> \
-<span class="gp">... </span>        <span class="mi">239</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2160</span> <span class="o">+</span> <span class="mi">139</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">18</span> <span class="o">-</span> <span class="mi">298</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span> <span class="o">+</span> \
-<span class="gp">... </span>        <span class="mi">17101</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">810</span> <span class="o">+</span> <span class="n">S</span><span class="p">(</span><span class="mi">28259</span><span class="p">)</span><span class="o">/</span><span class="mi">5184</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span> <span class="o">=</span> <span class="n">A_1</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span> <span class="o">+</span> <span class="n">A_2</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">A_3</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
-<span class="go">0.00115965223273643</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">A_4</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.7283</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">a_e</span> <span class="o">+</span> <span class="n">A_4</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
-<span class="go">0.00115965218242334</span>
+A_5 = 7.795 (336)"/></p>
+</div><p>We can now sum <img class="math" src="../_images/math/ec39a648f22679d8ea6c0132f5cb6aa3aab922b8.png" alt="a_e"/> up to a given order by the following script:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="n">summation</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
+<span class="n">var</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+<span class="n">a4</span> <span class="o">=</span> <span class="n">summation</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
+<span class="n">A1</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">A2</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">197</span><span class="p">)</span><span class="o">/</span><span class="mi">144</span> <span class="o">+</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">A3</span> <span class="o">=</span> <span class="mi">83</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">72</span> <span class="o">-</span> <span class="mi">215</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mi">24</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="p">(</span><span class="n">a4</span> <span class="o">+</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">24</span> <span class="o">-</span> \
+                <span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span> <span class="o">-</span> \
+                <span class="mi">239</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2160</span> <span class="o">+</span> <span class="mi">139</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">18</span> <span class="o">-</span> <span class="mi">298</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span> <span class="o">+</span> \
+                <span class="mi">17101</span> <span class="o">*</span> <span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">810</span> <span class="o">+</span> <span class="n">S</span><span class="p">(</span><span class="mi">28259</span><span class="p">)</span><span class="o">/</span><span class="mi">5184</span>
+<span class="n">A4</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.91298</span>
+<span class="n">A5</span> <span class="o">=</span> <span class="mf">7.795</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999049</span>
+<span class="n">a_e_exp</span> <span class="o">=</span> <span class="mf">0.00115965218073</span>
+<span class="n">a_e_exp_err</span> <span class="o">=</span> <span class="mf">0.00000000000028</span>
+<span class="n">a_e_other</span> <span class="o">=</span> <span class="mf">0.00000000000448</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">,</span> <span class="n">A3</span><span class="p">,</span> <span class="n">A4</span><span class="p">,</span> <span class="n">A5</span><span class="p">]</span>
+<span class="n">a_e</span><span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+        <span class="n">a_e</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">n</span><span class="p">())</span>
+<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;Order      :math:`a_e`&quot;</span>
+<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+        <span class="k">print</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">          </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">[:</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
+<span class="k">print</span> <span class="s2">&quot;Other      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_other</span>
+<span class="k">print</span> <span class="s2">&quot;Total      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Experiment </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp</span>
+<span class="k">print</span> <span class="s2">&quot;Difference </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span> <span class="o">-</span> <span class="n">a_e_exp</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Exp. err   </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp_err</span>
+<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
 </pre></div>
 </div>
+<p>and obtain the following table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Order</th>
+<th class="head"><img class="math" src="../_images/math/ec39a648f22679d8ea6c0132f5cb6aa3aab922b8.png" alt="a_e"/></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>0.00116140973318</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.00115963742812</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.00115965223232</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.00115965217663</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>0.00115965217716</td>
+</tr>
+<tr class="row-odd"><td>Other</td>
+<td>0.00000000000448</td>
+</tr>
+<tr class="row-even"><td>Total</td>
+<td>0.00115965218164</td>
+</tr>
+<tr class="row-odd"><td>Experiment</td>
+<td>0.00115965218073</td>
+</tr>
+<tr class="row-even"><td>Difference</td>
+<td>0.00000000000091</td>
+</tr>
+<tr class="row-odd"><td>Exp. err</td>
+<td>0.00000000000028</td>
+</tr>
+</tbody>
+</table>
+<p>The &#8220;Other&#8221; line are contributions from the dependence on the muon and tau
+particle masses, the hadronic vacuum-polarization, the hadronic
+light-by-light-scattering and the electroweak contribution
+(see <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>).
+The &#8220;Difference&#8221; line is the difference from the theory (the &#8220;Total&#8221; line) and
+experiment. The &#8220;Exp. err&#8221; line is the experimental error.</p>
+<p>At this level of accuracy, the uncertainty of the exact value of <img class="math" src="../_images/math/10f32377ac67d94f764f12a15ea987e88c85d3e1.png" alt="\alpha"/> is
+the primary cause of the difference from experiment, and one can use this
+result to predict a more accurate value for <img class="math" src="../_images/math/10f32377ac67d94f764f12a15ea987e88c85d3e1.png" alt="\alpha"/>, assuming that QED and the
+standard model are valid.</p>
 </div>
 </div>
 
@@ -559,6 +686,7 @@ figures.</p>
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Quantum Electrodynamics (QED)</a><ul>
+<li><a class="reference internal" href="#local-gauge-invariance">Local Gauge Invariance</a></li>
 <li><a class="reference internal" href="#qed-lagrangian">QED Lagrangian</a></li>
 <li><a class="reference internal" href="#magnetic-moment-of-an-electron">Magnetic moment of an electron</a></li>
 </ul>

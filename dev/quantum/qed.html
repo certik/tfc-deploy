@@ -93,50 +93,71 @@
 <img class="math" src="../_images/math/dfe9e2028567b8cab94a1d36d7bea455fdc29966.png" alt="\bar\psi\gamma^\mu\psi"/>, which are all invariant if we add a local phase
 <img class="math" src="../_images/math/3222e2e8733d4e10d63bf38486a6cd0ca73821c0.png" alt="\Lambda(x)"/> to the field (U(1) gauge transformation):</p>
 <div class="math">
-<p><img src="../_images/math/b2e229caa2686e553de8625d65f9aeb9b5512680.png" alt="\psi(x) \to e^{iq\Lambda(x)} \psi(x)
+<p><img src="../_images/math/163efe9b4e35eb641c9a88bd6e0723b18ff0b9a5.png" alt="\psi(x) \to e^{iq\Lambda(x)/\hbar} \psi(x)
 
-\bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x)}"/></p>
-</div><p>Where <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/> is a parameter that measures the strength of the phase
-transformation. And so we require that the Lagrangian is also invariant under
-the local gauge transformation, because there is no experiment that could
-reveal this phase. By putting this gauge transformation into the Lagrangian
-density, we otain:</p>
+\bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x) / \hbar}"/></p>
+</div><p>Where <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/> is a parameter that measures the strength of the phase transformation
+and <img class="math" src="../_images/math/0678e85c9374aaebeb3099f934cb8a7e452c75da.png" alt="\hbar"/> is the Planck constant. And so we require that the Lagrangian is
+also invariant under the local gauge transformation, because there is no
+experiment that could reveal this phase. By putting this gauge transformation
+into the Lagrangian density, we otain:</p>
 <div class="math">
-<p><img src="../_images/math/b9b5f77921fb52ba0f7825f984746a2e67d21998.png" alt="\L \to \bar\psi e^{-iq\Lambda(x)}
+<p><img src="../_images/math/776f86dd413c4dff4e87f8d9d0ec503996bae128.png" alt="\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
     (i\hbar c\gamma^\mu \partial_\mu-mc^2)
-e^{iq\Lambda(x)} \psi =
+e^{iq\Lambda(x) / \hbar} \psi =
 
-= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu + iq\partial_\mu\Lambda(x))
-    -mc^2)\psi"/></p>
-</div><p>In order to make the Lagrangian gauge invariant, we have to introduce a gauge
-field, in this case a vector field <img class="math" src="../_images/math/a810ae942710f867fd6789d7dd40228c8dd17be3.png" alt="A_\mu(x)"/>, as follows:</p>
-<div class="math" id="equation-lag_inv">
-<p><span class="eqno">(1)</span><img src="../_images/math/7fcaeb062123a1edbe70687d83bd36909dc58db8.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu)-mc^2)\psi"/></p>
-</div><p>and the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> must transform as
-<img class="math" src="../_images/math/355c28a0f578d29bc23956274ac3f293644a42bf.png" alt="A_\mu \to A_\mu + \partial_\mu\Lambda(x)"/>. Then the Lagrangian is gauge
-invariant:</p>
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu + iq\partial_\mu\Lambda(x) /
+    \hbar) -mc^2)\psi"/></p>
+</div><p>The reason the Lagrangian is not invariant is due to the derivative, which does
+not transform covariantly under a local gauge transformation:</p>
 <div class="math">
-<p><img src="../_images/math/a235674f4b5f132c483307d53f922fbae255f1ed.png" alt="\L \to \bar\psi e^{-iq\Lambda(x)}
-    (i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu-iq\partial_\mu\Lambda(x))
-    -mc^2) e^{iq\Lambda(x)} \psi =
+<p><img src="../_images/math/56e69a557ae39a26afe784b3e69eff3e3490e2c4.png" alt="\partial_\mu e^{iq\Lambda(x) / \hbar} \psi
+= (\partial_\mu + iq\partial_\mu\Lambda(x) / \hbar) \psi"/></p>
+</div><p>In order to make the derivative transform covariantly (and thus the Lagrangian
+gauge invariant), we have to introduce a gauge field, in this case a vector
+field <img class="math" src="../_images/math/a810ae942710f867fd6789d7dd40228c8dd17be3.png" alt="A_\mu(x)"/>, as follows:</p>
+<div class="math">
+<p><img src="../_images/math/634cd23e2aff9c5df3978553af3100dbaa7909e0.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu"/></p>
+</div><p>and the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> must transform as <img class="math" src="../_images/math/3e0505fac86fa0185c1289a80194389b8cb51046.png" alt="A_\mu \to A_\mu +
+\partial_\mu\Lambda(x)"/>. The operator <img class="math" src="../_images/math/859c882ce3aa3caadbe98e7c923f57eab2d2443f.png" alt="D_\mu = \partial_\mu-{i\over
+\hbar}qA_\mu"/> is called a covariant derivative, because it does not change a
+form (is invariant) under a local gauge transformation:</p>
+<div class="math">
+<p><img src="../_images/math/392a0f8f5a35418247e5eca71462a84557f3f10b.png" alt="\bar\psi D_\mu \psi = \bar\psi (\partial_\mu-{i\over \hbar}qA_\mu) \psi
 
-= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu
-    -iq\partial_\mu\Lambda(x) + iq\partial_\mu\Lambda(x))
+\to
+\bar\psi e^{-iq\Lambda(x) / \hbar} (\partial_\mu-{i\over \hbar}q(A_\mu
+    + \partial_\mu \Lambda(x))) e^{iq\Lambda(x) / \hbar} \psi =
+
+= \bar\psi (\partial_\mu
+    - {i\over \hbar}q A_\mu - {i\over \hbar}q \partial_\mu \Lambda(x)
+    + iq\partial_\mu\Lambda(x) / \hbar) \psi =
+
+= \bar\psi (\partial_\mu - {i\over \hbar}qA_\mu) \psi
+= \bar\psi D_\mu \psi"/></p>
+</div><p>Then the Lagrangian</p>
+<div class="math" id="equation-lag_inv">
+<p><span class="eqno">(1)</span><img src="../_images/math/221ec180e07fd91c11711908e9babcdf0f5baea0.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar)-mc^2)\psi"/></p>
+</div><p>is also gauge invariant:</p>
+<div class="math">
+<p><img src="../_images/math/a84ef7cc195da6d3c55af4df135c1a3614e03bd2.png" alt="\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
+    (i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar
+        -iq\partial_\mu\Lambda(x) / \hbar)
+    -mc^2) e^{iq\Lambda(x) / \hbar} \psi =
+
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar
+    -iq\partial_\mu\Lambda(x) / \hbar + iq\partial_\mu\Lambda(x) / \hbar)
     -mc^2)\psi =
 
-= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu) -mc^2)\psi"/></p>
-</div><p>The Lagrangian <a href="#equation-lag_inv">(1)</a> can also be written as (after we introduce the
-Planck constant by <img class="math" src="../_images/math/11f854b39e95f8d90b2f4330d38b48f8fc8a8ba2.png" alt="q\to{q \over \hbar}"/>):</p>
+= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar) -mc^2)\psi"/></p>
+</div><p>The Lagrangian <a href="#equation-lag_inv">(1)</a> can also be written as:</p>
 <div class="math">
 <p><img src="../_images/math/82d09f476cf4aa8687a6ad5fc161e755651627cf.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-{i \over \hbar} qA_\mu)
     -mc^2)\psi =
 
 = \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
     + qc\bar\psi\gamma^\mu \psi  A_\mu"/></p>
-</div><p>The operator <img class="math" src="../_images/math/9cf1217669f550a3eba7f4bfe5fc3ed9416c2652.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu"/> is called a covariant
-derivative, because it does not change a form (is invariant) under a local
-gauge transformation.</p>
-<p>We can see that the condition of a local gauge invariance requires an
+</div><p>We can see that the condition of a local gauge invariance requires an
 interaction with a vector field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/>. Now we need to add the kinetic term
 for the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/>:</p>
 <div class="math">
@@ -147,13 +168,14 @@ set <img class="math" src="../_images/math/2e275495e7e44d279fb3e5051b3a63115e79e
 <p><img src="../_images/math/3e25dd378c6431b8995b274b11bbac74603438f8.png" alt="\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
     + q c\bar\psi\gamma^\mu \psi  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
 </div><p>This is a Lagrangian for an electron and a massless vector boson (photon) of
-spin 1. For an electron, we set <img class="math" src="../_images/math/ac751b731c9ad661bac120ac7fc169d74e55b0c9.png" alt="q=-e"/>, where <img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/>
-is positive). We can introduce a current <img class="math" src="../_images/math/4e2447ba726a5cd6c6851b65db95d9bff2d90ab0.png" alt="j^\mu = c\bar\psi\gamma^\mu \psi"/>,
+spin 1. We can introduce a current <img class="math" src="../_images/math/4e2447ba726a5cd6c6851b65db95d9bff2d90ab0.png" alt="j^\mu = c\bar\psi\gamma^\mu \psi"/>,
 then the Lagrangian density becomes:</p>
 <div class="math">
 <p><img src="../_images/math/1508dcbc61049bcceb7a2586ae67c64651360d47.png" alt="\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
     + q j^\mu  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
-</div></div>
+</div><p>For an electron, we can set <img class="math" src="../_images/math/ac751b731c9ad661bac120ac7fc169d74e55b0c9.png" alt="q=-e"/>, where <img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is
+positive).</p>
+</div>
 <div class="section" id="qed-lagrangian">
 <h2>QED Lagrangian<a class="headerlink" href="#qed-lagrangian" title="Permalink to this headline">¶</a></h2>
 <p>The QED Lagrangian density is</p>

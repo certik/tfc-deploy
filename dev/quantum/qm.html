@@ -84,8 +84,9 @@
             
   <div class="section" id="quantum-mechanics">
 <span id="index-0"></span><h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
+<p id="index-1">We use a metric with signature -2 in this section.</p>
 <div class="section" id="from-qed-to-quantum-mechanics">
-<span id="index-1"></span><h2>From QED to Quantum Mechanics<a class="headerlink" href="#from-qed-to-quantum-mechanics" title="Permalink to this headline">¶</a></h2>
+<h2>From QED to Quantum Mechanics<a class="headerlink" href="#from-qed-to-quantum-mechanics" title="Permalink to this headline">¶</a></h2>
 <p>The QED Lagrangian density is</p>
 <div class="math">
 <p><img src="../_images/math/bf3d7b68f0b9796871d4447ba7b0e61c501b0d0d.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
@@ -242,8 +243,8 @@ first two components of the Dirac equation, no approximation has been made):</p>
 things on the <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> in the denominator.
 By doing the nonrelativistic approximation <img class="math" src="../_images/math/a9b498f7c3a3366d366af4afe6a19172350cd4e6.png" alt="{V-E\over c^2} \ll 2m"/> we obtain
 the Pauli equation:</p>
-<div class="math">
-<p><img src="../_images/math/a83b5ec8c4c2c5c7cf0838281eea6a0f71a5c2ce.png" alt="\left(
+<div class="math" id="equation-pauli-equation1">
+<p><span class="eqno">(1)</span><img src="../_images/math/a83b5ec8c4c2c5c7cf0838281eea6a0f71a5c2ce.png" alt="\left(
 {\left({\boldsymbol\sigma}\cdot({\bf p}-e{\bf A})\right)^2 \over
     2m} + V
 \right) \psi^L = E \psi^L"/></p>
@@ -292,13 +293,91 @@ that can be proven by:</p>
     = \epsilon_{ijk}(-i\hbar(\partial_j A_k)\psi - A_j p_k \psi) =
 
     = -i\hbar((\nabla\times{\bf A})\psi)_i - ({\bf A}\times{\bf p} \psi)_i"/></p>
-</div><p>Putting this into the Pauli equation, we get:</p>
-<div class="math">
-<p><img src="../_images/math/ae6b8a48faa04ab3f158c2673eb7276cf4f050f3.png" alt="\left(
+</div><p>Putting this into the Pauli equation <a href="#equation-pauli-equation1">(1)</a>, we get:</p>
+<div class="math" id="equation-pauli-equation2">
+<p><span class="eqno">(2)</span><img src="../_images/math/ae6b8a48faa04ab3f158c2673eb7276cf4f050f3.png" alt="\left(
 {\left({\bf p}-e{\bf A}\right)^2 \over 2m} + V
 -{e\hbar\over 2m}{\boldsymbol\sigma}\cdot{\bf B}
 \right) \psi^L = E \psi^L"/></p>
-</div></div>
+</div><p>We can expand <img class="math" src="../_images/math/33f481edea3ab16dc142f9577c0bfe67d225ed94.png" alt="\left({\bf p}-e{\bf A}\right)^2"/> as follows:</p>
+<div class="math">
+<p><img src="../_images/math/4fbfe1f5e83145121d63aada1c8632879963b7e2.png" alt="\left({\bf p}-e{\bf A}\right)^2
+= p^2 - e({\bf p}\cdot{\bf A}+{\bf A}\cdot{\bf p}) + e^2 A^2 =
+
+= p^2 - 2e {\bf A}\cdot{\bf p} + e^2 A^2 + ie\hbar(\nabla\cdot{\bf A})"/></p>
+</div><p>where we used:</p>
+<div class="math">
+<p><img src="../_images/math/88877396c3536d2d813f0c614e11affa41602760.png" alt="{\bf p}\cdot{\bf A}\psi
+    = -i\hbar\partial_i A^i\psi
+    = -i\hbar A^i\partial_i \psi -i\hbar(\partial_i A^i)\psi
+    = {\bf A}\cdot{\bf p} \psi -i\hbar(\nabla\cdot{\bf A})\psi"/></p>
+</div><p>and <a href="#equation-pauli-equation2">(2)</a> becomes:</p>
+<div class="math">
+<p><img src="../_images/math/f8fb012bb6975785ad6535c23239012aa88ad3ea.png" alt="\left(
+{p^2 \over 2m}
+- {e\over m} {\bf A}\cdot{\bf p}
++ {e^2\over 2m} A^2
++ {ie\hbar\over 2m}(\nabla\cdot{\bf A})
++ V
+-{e\hbar\over 2m}{\boldsymbol\sigma}\cdot{\bf B}
+\right) \psi^L = E \psi^L"/></p>
+</div><p>Using <img class="math" src="../_images/math/162e1f8ed7d3df473768fa75ed50feae3f61f87f.png" alt="{\bf p} = -i\hbar\nabla"/> we get:</p>
+<div class="math" id="equation-pauli-equation3">
+<p><span class="eqno">(3)</span><img src="../_images/math/1b942c0f017c7d4bbd612d8036ae5c16189367f1.png" alt="\left(
+-{\hbar^2 \over 2m}\nabla^2
++ {ie\hbar\over m} {\bf A}\cdot\nabla
++ {e^2\over 2m} A^2
++ {ie\hbar\over 2m}(\nabla\cdot{\bf A})
++ V
+-{e\hbar\over 2m}{\boldsymbol\sigma}\cdot{\bf B}
+\right) \psi^L = E \psi^L"/></p>
+</div><p>Note that <img class="math" src="../_images/math/3591991a7dc6186af2a2ef4e70d7b28f74660f3f.png" alt="V=e\phi"/> and <img class="math" src="../_images/math/c78cc44de9fa2bda54f7ad75a7206643f81fe6ea.png" alt="e=-|e|"/> is the (negative) electron charge.
+In the Coulomb gauge the term <img class="math" src="../_images/math/dc64c08abd0f5b31e4d63418560586afb4df8351.png" alt="\nabla\cdot{\bf A}=0"/>. Sometimes one can neglect
+the quadratic term <img class="math" src="../_images/math/9956fc4ccb308133c3a7c059ffd50afcd1c0e8b1.png" alt="e^2A^2"/>.</p>
+</div>
+<div class="section" id="example-velocity-and-length-gauges">
+<h3>Example: velocity and length gauges<a class="headerlink" href="#example-velocity-and-length-gauges" title="Permalink to this headline">¶</a></h3>
+<p>Let us assume a given spatially homogeneous time dependent electric field <img class="math" src="../_images/math/a07d0827eabc27a7187770909d03dcc152c886ae.png" alt="{\bf
+E}(t)"/> and no magnetic field <img class="math" src="../_images/math/92b9459a46e514649c9670670c3a4ef128c05f04.png" alt="{\bf B}=0"/>. Then one choice (gauge) of the
+electromagnetic potentials is:</p>
+<div class="math">
+<p><img src="../_images/math/853f29053d25601ea59afd9db351074cc4b8512b.png" alt="\phi = 0
+
+{\bf A}(t) = -\int_0^t {\bf E}(t') \d t'"/></p>
+</div><p>The vector potential <img class="math" src="../_images/math/83c3c7c699d02fb20e6cd05765b0dbfae0444c10.png" alt="{\bf A}"/> is time dependent, but spatially homogeneous
+(constant). Let us first check that we are getting the correct <img class="math" src="../_images/math/99ee03f3854092e4a9bc48ff28bab3ffcb9d66b7.png" alt="{\bf E}"/> and
+<img class="math" src="../_images/math/e9ba51970da63dba1d7d83e26da50e420ca64544.png" alt="{\bf B}"/>:</p>
+<div class="math">
+<p><img src="../_images/math/703d086eeddee14af1546718fc84e8ea27f4f79d.png" alt="{\bf E} = -\nabla\phi-{\partial{\bf A}\over\partial t} = {\bf E}(t)
+
+{\bf B} = \nabla\times{\bf A} = 0"/></p>
+</div><p>We also have <img class="math" src="../_images/math/dc64c08abd0f5b31e4d63418560586afb4df8351.png" alt="\nabla\cdot{\bf A}=0"/>, since <img class="math" src="../_images/math/83c3c7c699d02fb20e6cd05765b0dbfae0444c10.png" alt="{\bf A}"/> does not depend on
+coordinates. Substituting into <a href="#equation-pauli-equation3">(3)</a> we get:</p>
+<div class="math" id="equation-ex1">
+<p><span class="eqno">(4)</span><img src="../_images/math/5becf09e6311eb19dd26c78b6c2fac56b9b9dc99.png" alt="\left(
+-{\hbar^2 \over 2m}\nabla^2
++ {ie\hbar\over m} {\bf A}\cdot\nabla
++ {e^2\over 2m} A^2
+\right) \psi = E \psi"/></p>
+</div><p>The <img class="math" src="../_images/math/53196dddfbaf8145fd14be11cf568c5154588ed5.png" alt="\nabla"/> in the <img class="math" src="../_images/math/41f8259bb98eea61fb5a0e14019c24504af70f60.png" alt="{\bf A}\cdot\nabla"/> term is a velocity, so this gauge is
+called a velocity gauge. We can apply a gauge transformation
+<img class="math" src="../_images/math/ba2da363454cb62bb28224e1369c71b578741326.png" alt="\Lambda = -{\bf A}\cdot{\bf x}"/> and we get:</p>
+<div class="math">
+<p><img src="../_images/math/d09ce2bd16c4579f6e35a1f4b5825c85c5b8009d.png" alt="\phi \to \phi - {\partial\Lambda\over\partial t}
+    = \phi + {\partial{\bf A}\over\partial t}\cdot{\bf x}
+    = \phi - {\bf E}\cdot{\bf x}
+
+{\bf A} \to {\bf A} + \nabla\Lambda
+    = {\bf A} - {\bf A} = 0"/></p>
+</div><p>Substituting this into <a href="#equation-ex1">(4)</a> (and using <img class="math" src="../_images/math/3591991a7dc6186af2a2ef4e70d7b28f74660f3f.png" alt="V=e\phi"/>), we obtain:</p>
+<div class="math" id="equation-ex2">
+<p><span class="eqno">(5)</span><img src="../_images/math/d688bb60b82b62ec213971f849e1627222d6bec6.png" alt="\left(
+-{\hbar^2 \over 2m}\nabla^2
+-e{\bf E}\cdot{\bf x}
+\right) \psi = E \psi"/></p>
+</div><p>Due to the <img class="math" src="../_images/math/81be9c56d3b198d87b4049cff4e32bb5c187c52d.png" alt="{\bf x}"/> term in <img class="math" src="../_images/math/6bf194bc5b0a49afa51ec985c2da40e52609f07f.png" alt="{\bf E}\cdot{\bf x}"/>, this gauge is called the
+length gauge. Note that <img class="math" src="../_images/math/c78cc44de9fa2bda54f7ad75a7206643f81fe6ea.png" alt="e=-|e|"/> is negative for electrons.</p>
+</div>
 <div class="section" id="nonrelativistic-limit-in-the-lagrangian">
 <h3>Nonrelativistic Limit in the Lagrangian<a class="headerlink" href="#nonrelativistic-limit-in-the-lagrangian" title="Permalink to this headline">¶</a></h3>
 <p>We use the identity <img class="math" src="../_images/math/fca3dec86d5a76d1d2db261350abfaafb5099fb0.png" alt="{\partial\over\partial t}\left(e^{-imc^2t}f(t)\right)= e^{-imc^2t}(-imc^2+{\partial\over\partial t})f(t)"/> to get:</p>
@@ -397,14 +476,14 @@ that can be proven by:</p>
 <span id="index-3"></span><h2>Perturbation Theory<a class="headerlink" href="#perturbation-theory" title="Permalink to this headline">¶</a></h2>
 <p>We want to solve the equation:</p>
 <div class="math" id="equation-schroed">
-<p><span class="eqno">(1)</span><img src="../_images/math/2e0b294ef94b6a6eb38641709428d28d81ccfa9b.png" alt="i\hbar{\d \over\d t}\ket{\psi(t)}=H(t)\ket{\psi(t)}"/></p>
+<p><span class="eqno">(6)</span><img src="../_images/math/2e0b294ef94b6a6eb38641709428d28d81ccfa9b.png" alt="i\hbar{\d \over\d t}\ket{\psi(t)}=H(t)\ket{\psi(t)}"/></p>
 </div><p>with <img class="math" src="../_images/math/c71cbbf2e0346c0408b10af53fbc4411be988838.png" alt="H(t) = H^0 + H^1(t)"/>, where <img class="math" src="../_images/math/6db5be18adce7bd3e69b5ab1bae64339dfb827e3.png" alt="H^0"/> is time-independent part whose eigenvalue problem has been solved:</p>
 <div class="math">
 <p><img src="../_images/math/5a11020a780173817b917e72c576b8113fa1f7fc.png" alt="H^0\ket{n^0}=E^0_n\ket{n^0}"/></p>
 </div><p>and <img class="math" src="../_images/math/3e8865a49f6ec45c1e6e40649a9659cc2c76c69d.png" alt="H^1(t)"/> is a small time-dependent perturbation. <img class="math" src="../_images/math/a6868d5d5354804a821b059707d8b923b439c7b8.png" alt="\ket{n^0}"/> form a complete basis, so we can express <img class="math" src="../_images/math/2f34c7d88c221aa95f708963f977e06648ff2af1.png" alt="\ket{\psi(t)}"/> in this basis:</p>
 <div class="math" id="equation-psi">
-<p><span class="eqno">(2)</span><img src="../_images/math/582b31c192fe5dc25b85ce1a2bc3073c5c73a5e9.png" alt="\ket{\psi(t)} = \sum_n d_n(t)e^{-{i\over\hbar}E^0_n t}\ket{n^0}"/></p>
-</div><p>Substituting this into <a href="#equation-schroed">(1)</a>, we get:</p>
+<p><span class="eqno">(7)</span><img src="../_images/math/582b31c192fe5dc25b85ce1a2bc3073c5c73a5e9.png" alt="\ket{\psi(t)} = \sum_n d_n(t)e^{-{i\over\hbar}E^0_n t}\ket{n^0}"/></p>
+</div><p>Substituting this into <a href="#equation-schroed">(6)</a>, we get:</p>
 <div class="math">
 <p><img src="../_images/math/4e7127baa86f2f4636409da94bcccfea2f73557d.png" alt="\sum_n\left( i\hbar{\d\over\d t} d_n(t)+E^0_n d_n(t) \right)e^{-{i\over\hbar}E^0_n t}\ket{n^0} =\sum_n\left( E^0_n d_n(t) +H^1 d_n(t) \right)e^{-{i\over\hbar}E^0_n t}\ket{n^0}"/></p>
 </div><p>so:</p>
@@ -421,15 +500,15 @@ that can be proven by:</p>
 <p><img src="../_images/math/ca18d54b023742e9cd7102220b7e77327a4bb3e8.png" alt="i\hbar\left((d_f(t)-d_f(t_1)\right) =\sum_n\int_{t_1}^t d_n(t') e^{i w_{fn} t'}\braket{f^0|H^1(t')|n^0} \d t'"/></p>
 </div><p>Let the initial wavefunction at time <img class="math" src="../_images/math/8b91b7245b0dd42b4f5585b97e323a8cfaa064a8.png" alt="t_1"/> be some particular state <img class="math" src="../_images/math/a21ca45e76a5348f99cbf27d5b480ed4a8c7978a.png" alt="\ket{\psi(t_1)}=\ket{i^0}"/> of the unperturbed Hamiltonian, then <img class="math" src="../_images/math/71c3e82283b4a12bd47a958ae9a8f4db08f55037.png" alt="d_n(t_1)=\delta_{ni}"/> and we get:</p>
 <div class="math" id="equation-perturb0">
-<p><span class="eqno">(3)</span><img src="../_images/math/ae00a8973865c2f3e13ae7a511e2c1e9f980cb53.png" alt="d_f(t) =\delta_{fi}-{i\over\hbar}\sum_n\int_{t_1}^t d_n(t') e^{i w_{fn} t'}\braket{f^0|H^1(t')|n^0} \d t'"/></p>
+<p><span class="eqno">(8)</span><img src="../_images/math/ae00a8973865c2f3e13ae7a511e2c1e9f980cb53.png" alt="d_f(t) =\delta_{fi}-{i\over\hbar}\sum_n\int_{t_1}^t d_n(t') e^{i w_{fn} t'}\braket{f^0|H^1(t')|n^0} \d t'"/></p>
 </div><p>This is the equation that we will use for the perturbation theory.</p>
 <p>In the zeroth order of the perturbation theory, we set <img class="math" src="../_images/math/757ebbd282690bd2b5ae3462b241a59bc396965b.png" alt="H^1(t)=0"/> and we get:</p>
 <div class="math">
 <p><img src="../_images/math/a9064bd2fec7fe25b736e1a8fa229a97f6f1cc59.png" alt="d_f(t)=\delta_{fi}"/></p>
-</div><p>In the first order of the perturbation theory, we take the solution <img class="math" src="../_images/math/63a0fb89bf50edddadc76c3073b5982b7a8fa248.png" alt="d_n(t)=\delta_{ni}"/> obtained in the zeroth order and substitute into the right hand side of <a href="#equation-perturb0">(3)</a>:</p>
+</div><p>In the first order of the perturbation theory, we take the solution <img class="math" src="../_images/math/63a0fb89bf50edddadc76c3073b5982b7a8fa248.png" alt="d_n(t)=\delta_{ni}"/> obtained in the zeroth order and substitute into the right hand side of <a href="#equation-perturb0">(8)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/58f1a7b8ca271021a18c4e45ed7bc55a91d58d33.png" alt="d_f(t) = \delta_{fi} -{i\over\hbar}\int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'"/></p>
-</div><p>In the second order, we take the last solution, substitute into the right hand side of <a href="#equation-perturb0">(3)</a> again:</p>
+</div><p>In the second order, we take the last solution, substitute into the right hand side of <a href="#equation-perturb0">(8)</a> again:</p>
 <div class="math">
 <p><img src="../_images/math/b9e8922ca5e244507dbfa2f76a62c78c071e4f7f.png" alt="d_f(t) = \delta_{fi}+ \left(-{i\over\hbar}\right)\int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t' +"/></p>
 </div><div class="math">
@@ -459,7 +538,7 @@ that can be proven by:</p>
 <p><img src="../_images/math/ab8906123ad4be329c11f1bac4816e24bf3c5086.png" alt="= \delta_{fi}- {\braket{f^0|H^1|i^0}\over E_f^0-E_i^0} +"/></p>
 </div><div class="math">
 <p><img src="../_images/math/de8f6fb31330c967e78dd5131d8abc122b9c6292.png" alt="+ \sum_n { \braket{f^0|H^1|n^0} \braket{n^0|H^1|i^0} \over (E_n^0-E_i^0)(E_f^0-E_i^0) }"/></p>
-</div><p>Substituting this into <a href="#equation-psi">(2)</a> evaluated for <img class="math" src="../_images/math/5a607fd61885c014512c949fee18869690330407.png" alt="t=0"/>:</p>
+</div><p>Substituting this into <a href="#equation-psi">(7)</a> evaluated for <img class="math" src="../_images/math/5a607fd61885c014512c949fee18869690330407.png" alt="t=0"/>:</p>
 <div class="math">
 <p><img src="../_images/math/9ce4ba381d095c7717dfb07328fd5c1044ebf63c.png" alt="\ket{\psi(0)}=\sum_n d_n(0) \ket{n^0}="/></p>
 </div><div class="math">
@@ -1034,7 +1113,7 @@ E = \sqrt{m^2c^4 + {\bf p}^2c^2}
 <p>Angular momenta are added using the Clebsch-Gordan coefficients (or
 equivalently <img class="math" src="../_images/math/c5352adeaf45930e862095579670a9c9605bce54.png" alt="3j"/> symbols):</p>
 <div class="math" id="equation-angular_momenta_adding">
-<p><span class="eqno">(4)</span><img src="../_images/math/b10c544509a9eb002019c4938fa32a505a9709d2.png" alt="\ket{j_1 j_2 j_3 m_3} =
+<p><span class="eqno">(9)</span><img src="../_images/math/b10c544509a9eb002019c4938fa32a505a9709d2.png" alt="\ket{j_1 j_2 j_3 m_3} =
     \sum_{m_1 m_2} (j_1 m_1 j_2 m_2 | j_3 m_3 ) \ket{j_1 m_1 j_2 m_2} =
 
     = \sum_{m_1 m_2}
@@ -1043,7 +1122,7 @@ equivalently <img class="math" src="../_images/math/c5352adeaf45930e862095579670
         \ket{j_1 m_1 j_2 m_2}"/></p>
 </div><div class="section" id="spin-orbit-coupling-spin-spherical-harmonics">
 <h3>Spin Orbit Coupling (Spin Spherical Harmonics)<a class="headerlink" href="#spin-orbit-coupling-spin-spherical-harmonics" title="Permalink to this headline">¶</a></h3>
-<p>This is just a special case of <a href="#equation-angular_momenta_adding">(4)</a> for:</p>
+<p>This is just a special case of <a href="#equation-angular_momenta_adding">(9)</a> for:</p>
 <div class="math">
 <p><img src="../_images/math/e549080243bd8024d93a7e59d0739d6318d27ace.png" alt="j_1 = l
 
@@ -1293,6 +1372,7 @@ total angular momentum <img class="math" src="../_images/math/b390b00d6aa67d9616
 <li><a class="reference internal" href="#">Quantum Mechanics</a><ul>
 <li><a class="reference internal" href="#from-qed-to-quantum-mechanics">From QED to Quantum Mechanics</a><ul>
 <li><a class="reference internal" href="#derivation-of-the-pauli-equation">Derivation of the Pauli Equation</a></li>
+<li><a class="reference internal" href="#example-velocity-and-length-gauges">Example: velocity and length gauges</a></li>
 <li><a class="reference internal" href="#nonrelativistic-limit-in-the-lagrangian">Nonrelativistic Limit in the Lagrangian</a></li>
 <li><a class="reference internal" href="#klein-gordon-equation">Klein-Gordon Equation</a></li>
 </ul>

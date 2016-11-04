@@ -86,21 +86,24 @@
 <span id="index-0"></span><h1>Quantum Electrodynamics (QED)<a class="headerlink" href="#quantum-electrodynamics-qed" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="local-gauge-invariance">
 <span id="id1"></span><h2>Local Gauge Invariance<a class="headerlink" href="#local-gauge-invariance" title="Permalink to this headline">¶</a></h2>
+<p>We use a metric with signature +2 in this section.</p>
 <p>The Dirac equation for an electron is:</p>
 <div class="math">
 <p><img src="../_images/math/e1833f2cd96449a5df7f95498c1abd3c0ed3a545.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi"/></p>
-</div><p>The physical quantities are expressions like <img class="math" src="../_images/math/083a3b9f3dcf61804945122ebb2643657bb7e1c5.png" alt="\bar\psi\psi"/> or
-<img class="math" src="../_images/math/dfe9e2028567b8cab94a1d36d7bea455fdc29966.png" alt="\bar\psi\gamma^\mu\psi"/>, which are all invariant if we add a local phase
-<img class="math" src="../_images/math/3222e2e8733d4e10d63bf38486a6cd0ca73821c0.png" alt="\Lambda(x)"/> to the field (U(1) gauge transformation):</p>
+</div><p>Physical quantities like a charge density (<img class="math" src="../_images/math/083a3b9f3dcf61804945122ebb2643657bb7e1c5.png" alt="\bar\psi\psi"/>) or a current
+(<img class="math" src="../_images/math/dfe9e2028567b8cab94a1d36d7bea455fdc29966.png" alt="\bar\psi\gamma^\mu\psi"/>), are all invariant if we add a local phase
+<img class="math" src="../_images/math/3222e2e8733d4e10d63bf38486a6cd0ca73821c0.png" alt="\Lambda(x)"/> to the field (this is called a local U(1) gauge transformation):</p>
 <div class="math">
 <p><img src="../_images/math/163efe9b4e35eb641c9a88bd6e0723b18ff0b9a5.png" alt="\psi(x) \to e^{iq\Lambda(x)/\hbar} \psi(x)
 
 \bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x) / \hbar}"/></p>
 </div><p>Where <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/> is a parameter that measures the strength of the phase transformation
-and <img class="math" src="../_images/math/0678e85c9374aaebeb3099f934cb8a7e452c75da.png" alt="\hbar"/> is the Planck constant. And so we require that the Lagrangian is
-also invariant under the local gauge transformation, because there is no
-experiment that could reveal this phase. By putting this gauge transformation
-into the Lagrangian density, we otain:</p>
+(this will be later interpreted as a charge, for example for electrons
+<img class="math" src="../_images/math/f662cd91f638adfbc43ab5b19f4391fcf1257209.png" alt="q=-|e|"/>) and <img class="math" src="../_images/math/0678e85c9374aaebeb3099f934cb8a7e452c75da.png" alt="\hbar"/> is the Planck constant. And so we require that the
+Lagrangian is also invariant under the local gauge transformation, because
+there is no experiment that would change if this local gauge transformation is
+applied on the wave functions. By putting this gauge transformation into the
+Lagrangian density, we otain:</p>
 <div class="math">
 <p><img src="../_images/math/776f86dd413c4dff4e87f8d9d0ec503996bae128.png" alt="\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
     (i\hbar c\gamma^\mu \partial_\mu-mc^2)
@@ -121,10 +124,50 @@ not transform covariantly under a local gauge transformation:</p>
 </div><p>In order to make the derivative transform covariantly (and thus the Lagrangian
 gauge invariant), we have to introduce a gauge field, in this case a vector
 field <img class="math" src="../_images/math/a810ae942710f867fd6789d7dd40228c8dd17be3.png" alt="A_\mu(x)"/>, as follows:</p>
-<div class="math">
-<p><img src="../_images/math/634cd23e2aff9c5df3978553af3100dbaa7909e0.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu"/></p>
+<div class="math" id="equation-covariant-derivative">
+<p><span class="eqno">(1)</span><img src="../_images/math/634cd23e2aff9c5df3978553af3100dbaa7909e0.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu"/></p>
 </div><p>and the field <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> must transform as <img class="math" src="../_images/math/3e0505fac86fa0185c1289a80194389b8cb51046.png" alt="A_\mu \to A_\mu +
-\partial_\mu\Lambda(x)"/>. The operator <img class="math" src="../_images/math/859c882ce3aa3caadbe98e7c923f57eab2d2443f.png" alt="D_\mu = \partial_\mu-{i\over
+\partial_\mu\Lambda(x)"/>. At this level, we are free to choose either plus or
+minus sign in <a href="#equation-covariant-derivative">(1)</a>, since the sign change can be absorbed
+in the definition of the <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> field without loss of generality (if we change
+the sign, the field transformation then changes to <img class="math" src="../_images/math/85db4da7104ffb0647875d31cf9c904e96192b10.png" alt="A_\mu \to A_\mu -
+\partial_\mu\Lambda(x)"/>). In the +2 metric signature we chose a minus sign, so
+that <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> coincides with the usual definition of the electromagnetic
+4-potential:</p>
+<div class="math">
+<p><img src="../_images/math/e29f430a344c4fa05aacd60ab29e8b6cacdab1c8.png" alt="D_\mu = \partial_\mu-{i\over \hbar}qA_\mu
+
+-i\hbar D_\mu = -i\hbar \partial_\mu - qA_\mu
+
+m\hat v_\mu = \hat p_\mu - qA_\mu
+
+m\hat{\bf v} = \hat {\bf p} - q{\bf A}"/></p>
+</div><p>With signature -2, we must choose a plus sign and the identification goes as
+follows:</p>
+<div class="math">
+<p><img src="../_images/math/719359cb7a8931a8884e9fb11e69962b2e4353ce.png" alt="D_\mu = \partial_\mu+{i\over \hbar}qA_\mu
+
+i\hbar D_\mu = i\hbar \partial_\mu - qA_\mu
+
+m\hat v_\mu = \hat p_\mu - qA_\mu
+
+m\hat{\bf v} = \hat {\bf p} - q{\bf A}"/></p>
+</div><p>And we obtain the same final equation. So the kinematic momentum is equal to
+canonical momentum minus charge times the gauge field.  The last expression is
+independent of a metric signature, and that is what is e.g. in the kinetic term
+of a Schrödinger or Pauli equation (with the minus sign in <img class="math" src="../_images/math/87e658562c2841fd3887f337eae1318b0be332ed.png" alt="\hat {\bf p} -
+q{\bf A}"/>). We derive the non-relativistic limit rigorously later, but it gives
+the same result. At this level we just have to make sure we choose the correct
+sign in <a href="#equation-covariant-derivative">(1)</a>, depending on the metric signature,
+otherwise we would get the electromagnetic 4-potential with the opposite sign
+(the sign of <img class="math" src="../_images/math/8c9906d93411ec8026702bde26b7f12612fdb54f.png" alt="A_\mu"/> is ultimately just a convention, but later we want to get
+the same equations as everybody else).</p>
+<p>Another unrelated convention is in choosing the sign of the parameter <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/>. We
+have choosen it to coincide with an electric charge (negative for electrons).
+Some authors choose <img class="math" src="../_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q"/> to be positive for electrons, then one must flip the
+sign in <a href="#equation-covariant-derivative">(1)</a>.</p>
+<p>We will continue using the +2 signature in the rest of the section.</p>
+<p>The operator <img class="math" src="../_images/math/859c882ce3aa3caadbe98e7c923f57eab2d2443f.png" alt="D_\mu = \partial_\mu-{i\over
 \hbar}qA_\mu"/> is called a covariant derivative, because it does not change a
 form (is invariant) under a local gauge transformation:</p>
 <div class="math">
@@ -142,7 +185,7 @@ form (is invariant) under a local gauge transformation:</p>
 = \bar\psi D_\mu \psi"/></p>
 </div><p>Then the Lagrangian</p>
 <div class="math" id="equation-lag_inv">
-<p><span class="eqno">(1)</span><img src="../_images/math/221ec180e07fd91c11711908e9babcdf0f5baea0.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar)-mc^2)\psi"/></p>
+<p><span class="eqno">(2)</span><img src="../_images/math/221ec180e07fd91c11711908e9babcdf0f5baea0.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar)-mc^2)\psi"/></p>
 </div><p>is also gauge invariant:</p>
 <div class="math">
 <p><img src="../_images/math/a84ef7cc195da6d3c55af4df135c1a3614e03bd2.png" alt="\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
@@ -155,7 +198,7 @@ form (is invariant) under a local gauge transformation:</p>
     -mc^2)\psi =
 
 = \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar) -mc^2)\psi"/></p>
-</div><p>The Lagrangian <a href="#equation-lag_inv">(1)</a> can also be written as:</p>
+</div><p>The Lagrangian <a href="#equation-lag_inv">(2)</a> can also be written as:</p>
 <div class="math">
 <p><img src="../_images/math/82d09f476cf4aa8687a6ad5fc161e755651627cf.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-{i \over \hbar} qA_\mu)
     -mc^2)\psi =
@@ -183,17 +226,18 @@ positive).</p>
 </div>
 <div class="section" id="qed-lagrangian">
 <h2>QED Lagrangian<a class="headerlink" href="#qed-lagrangian" title="Permalink to this headline">¶</a></h2>
+<p>We use a metric with signature -2 in this section.</p>
 <p>The QED Lagrangian density is</p>
 <div class="math">
 <p><img src="../_images/math/bf3d7b68f0b9796871d4447ba7b0e61c501b0d0d.png" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
 </div><p>where</p>
 <div class="math">
 <p><img src="../_images/math/c90906518f17570b6eca121f1c048186f9b4c469.png" alt="\psi=\left( \begin{array}{c} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4 \\ \end{array}\right)"/></p>
-</div><p>and</p>
+</div><p>and we must choose a plus sign in <a href="#equation-covariant-derivative">(1)</a> since we use the
+-2 signature:</p>
 <div class="math">
 <p><img src="../_images/math/b76f3717d8b95018d98c42e69f91ced166382056.png" alt="D_\mu=\partial_\mu+{i\over \hbar}eA_\mu"/></p>
-</div><p>is the gauge covariant derivative and (<img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the elementary charge, which is
-<img class="math" src="../_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1"/> in atomic units, i.e. the electron has a charge <img class="math" src="../_images/math/ac751b731c9ad661bac120ac7fc169d74e55b0c9.png" alt="q=-e"/>)</p>
+</div><p><img class="math" src="../_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e"/> is the charge (negative for electrons <img class="math" src="../_images/math/c78cc44de9fa2bda54f7ad75a7206643f81fe6ea.png" alt="e=-|e|"/>).</p>
 <div class="math">
 <p><img src="../_images/math/360f0df92affc46c2332ff2e088e153a2e5da364.png" alt="F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu"/></p>
 </div><p>is the electromagnetic field tensor. It&#8217;s astonishing, that this simple Lagrangian can account for all phenomena from macroscopic scales down to something like <img class="math" src="../_images/math/98149bffe830857c28d2a44c8ce529104e8920ff.png" alt="10^{-13}\rm\,cm"/>. So it&#8217;s not a surprise that Feynman, Schwinger and Tomonaga received the 1965 Nobel Prize in Physics for such a fantastic achievement.</p>

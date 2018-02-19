@@ -459,9 +459,9 @@ the selection rule <span class="math">\(m_1 + m_2 + m_3 = 0\)</span> of the <spa
 and we get:</p>
 <div class="math">
 \[c^k(l, m, l', m') =
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
 \int Y_{lm}^*(\Omega) Y_{k, m-m'}(\Omega) Y_{l'm'}(\Omega) \d\Omega =\]\[\begin{split}= (-1)^{-m}
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
     \sqrt{(2l+1)(2k+1)(2l'+1)\over 4\pi}
     \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
     \begin{pmatrix} l &amp; k &amp; l' \\ -m &amp; m-m' &amp; m' \end{pmatrix} =\end{split}\]\[\begin{split}= (-1)^{-m}
@@ -491,13 +491,13 @@ the <span class="math">\(c^k(l, m, l', m')\)</span> coefficients are nonzero onl
 <div class="math">
 \[\sum_{m=-l}^l c^k(l, m, l, m)
     = \sum_m
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
     \int Y_{lm}^*(\Omega) Y_{k0}(\Omega) Y_{lm}(\Omega) \d\Omega =\]\[    =
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
     \int \sum_m |Y_{lm}(\Omega)|^2 Y_{k0}(\Omega) \d\Omega =\]\[    =
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
     {2l+1\over 4\pi} \int Y_{k0}(\Omega) \d\Omega =\]\[    =
-    \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
     {2l+1\over 4\pi}
     \sqrt{4\pi} \delta_{k0} =\]\[    =
     (2l+1) \delta_{k0}\]</div>
@@ -506,18 +506,18 @@ the <span class="math">\(c^k(l, m, l', m')\)</span> coefficients are nonzero onl
 <h2>Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <div class="math">
 \[c^k(l, m, l', m') =
-    \sqrt{4\pi \over 4k+1}
-\int Y_{lm}^*(\Omega) Y_{k, m-m'}(\Omega) Y_{l'm'}(\Omega) \d\Omega =\]\[= \sqrt{4\pi \over 4k+1}
+    \sqrt{4\pi \over 2k+1}
+\int Y_{lm}^*(\Omega) Y_{k, m-m'}(\Omega) Y_{l'm'}(\Omega) \d\Omega =\]\[= \sqrt{4\pi \over 2k+1}
 \int \Theta_{lm}\Phi_m^* \Theta_{k, m-m'}\Phi_{m-m'} \Theta_{l'm'}\Phi_{m'}
-    \sin\theta \d\theta \d\phi =\]\[= \sqrt{4\pi \over 4k+1}
+    \sin\theta \d\theta \d\phi =\]\[= \sqrt{4\pi \over 2k+1}
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta
-\int_0^{2\pi} \Phi_m^* \Phi_{m-m'} \Phi_{m'} \d\phi =\]\[= \sqrt{4\pi \over 4k+1}
-\int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta
-\left(1\over\sqrt{2\pi}\right)^3
-\int_0^{2\pi} e^{-im\phi} e^{i(m-m')\phi} e^{im'\phi} \d\phi =\]\[= \sqrt{4\pi \over 4k+1}
+\int_0^{2\pi} \Phi_m^* \Phi_{m-m'} \Phi_{m'} \d\phi =\]\[= \sqrt{4\pi \over 2k+1}
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta
 \left(1\over\sqrt{2\pi}\right)^3
-\int_0^{2\pi} \!\!\!\d\phi =\]\[= \sqrt{2\over 4k+1}
+\int_0^{2\pi} e^{-im\phi} e^{i(m-m')\phi} e^{im'\phi} \d\phi =\]\[= \sqrt{4\pi \over 2k+1}
+\int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta
+\left(1\over\sqrt{2\pi}\right)^3
+\int_0^{2\pi} \!\!\!\d\phi =\]\[= \sqrt{2\over 2k+1}
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta\]</div>
 </div>
 <div class="section" id="id7">

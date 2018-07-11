@@ -477,29 +477,32 @@ origin:</p>
 </div><p>We do not have any point charge at the origin, so <img class="math" src="../_images/math/195f2a87341e968ecb3da45cac8970b30f306c6c.png" alt="C=Z - B = 0"/>, from which it
 follows <img class="math" src="../_images/math/d19bc10cd88968d02df7e0e72cbec9c904f025e3.png" alt="B = Z"/>. We finally obtain:</p>
 <div class="math">
-<p><img src="../_images/math/5dbf48eb6defd78a131de51cd950a8c6e546f396.png" alt="V(r) = - Z \left({\alpha\over2} + {1\over r}\right) e^{-\alpha r}
+<p><img src="../_images/math/2132aa6b414ee3ca89f4e4008eea8e755def02f4.png" alt="V(r) = - Z \left({\alpha\over2} + {1\over r}\right) e^{-\alpha r}
     + {Z \over r}
-    = Z \left({1-e^{-\alpha r} \over r} - {\alpha/2}\right)"/></p>
+    = Z \left({1-e^{-\alpha r} \over r} - {\alpha e^{-\alpha r}
+        \over 2}\right)"/></p>
 </div><p>Let us calculate the self-energy:</p>
 <div class="math">
-<p><img src="../_images/math/025e6e9b2cd60c4f4df952ccf282709046fb95f3.png" alt="E_\mathrm{self} =
+<p><img src="../_images/math/21498729ad886bc293e32100504fe09f982c839c.png" alt="E_\mathrm{self} =
 \half \int n({\bf x}) V({\bf x}) \d^3 x
     = {4\pi\over2} \int_0^\infty n(r) V(r) r^2 \d r =
 
 = 2\pi \int_0^\infty
 {Z\alpha^3 \over 8\pi} e^{-\alpha r}
-Z \left({1-e^{-\alpha r} \over r} - {\alpha/2}\right)
+Z \left({1-e^{-\alpha r} \over r} - {\alpha e^{-\alpha r}
+        \over 2}\right)
 r^2 \d r =
 
 = {Z^2 \alpha^3 \over 4}
     \int_0^\infty e^{-\alpha r}
-   \left({1-e^{-\alpha r} \over r} - {\alpha/2}\right)
+   \left({1-e^{-\alpha r} \over r} - {\alpha e^{-\alpha r}
+        \over 2}\right)
     r^2 \d r =
 
 = {Z^2 \alpha^3 \over 4}
-    \left(-{1\over 4\alpha^2}\right) =
+    \left({5\over 8\alpha^2}\right) =
 
-= {Z^2 \alpha \over 16}"/></p>
+= {5Z^2 \alpha \over 32}"/></p>
 </div><p>Code:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r Z B&quot;</span><span class="p">)</span>
@@ -515,8 +518,8 @@ r^2 \d r =
 <span class="go">2))*exp(-alpha*r)/2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">((</span><span class="n">V</span><span class="o">+</span><span class="n">B</span><span class="o">/</span><span class="n">r</span><span class="p">)</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="go">-B + Z</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrate</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">))</span><span class="o">/</span><span class="n">r</span><span class="o">-</span><span class="n">alpha</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
-<span class="go">-1/(4*alpha**2)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrate</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">))</span><span class="o">/</span><span class="n">r</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
+<span class="go">5/(8*alpha**2)</span>
 </pre></div>
 </div>
 </div>

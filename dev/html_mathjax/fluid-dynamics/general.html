@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Fluid Dynamics &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Fluid Dynamics &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Fluid Dynamics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="MHD Equations" href="mhd.html" />
     <link rel="prev" title="Fluid Dynamics" href="main.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,51 +62,51 @@
         <li class="right" >
           <a href="main.html" title="Fluid Dynamics"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Fluid Dynamics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Fluid Dynamics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="fluid-dynamics">
 <span id="index-0"></span><h1>Fluid Dynamics<a class="headerlink" href="#fluid-dynamics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="stress-energy-tensor">
 <span id="index-1"></span><h2>Stress-Energy Tensor<a class="headerlink" href="#stress-energy-tensor" title="Permalink to this headline">¶</a></h2>
-<p>In general, the stress energy tensor is the flux of momentum <span class="math">\(p^\mu\)</span> over the
-surface <span class="math">\(x^\nu\)</span>. It is a machine that contains a knowledge of the energy
+<p>In general, the stress energy tensor is the flux of momentum <span class="math notranslate nohighlight">\(p^\mu\)</span> over the
+surface <span class="math notranslate nohighlight">\(x^\nu\)</span>. It is a machine that contains a knowledge of the energy
 density, momentum density and stress as measured by any observer of the event.</p>
 <p>Imagine a (small) box in the spacetime. Then the observer with a 4-velocity
-<span class="math">\(u^\mu\)</span> measures the density of 4-momentum <span class="math">\(\d p^\alpha\over\d V\)</span>
+<span class="math notranslate nohighlight">\(u^\mu\)</span> measures the density of 4-momentum <span class="math notranslate nohighlight">\(\d p^\alpha\over\d V\)</span>
 in his frame as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\d p^\alpha\over\d V} = -T^\alpha{}_\beta u^\beta\]</div>
 <p>and the energy density that he measures is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho = {E\over V} = -{u^\alpha p_\alpha \over V}
 = - u^\alpha {\d p_\alpha\over\d V}
 = u^\alpha T_{\alpha\beta} u^\beta\]</div>
 <p>One can also obtain the stress energy tensor from the Lagrangian
-<span class="math">\(\L=\L(\eta_\rho, \partial_\nu \eta_\rho, x^\nu)\)</span> by combining the
+<span class="math notranslate nohighlight">\(\L=\L(\eta_\rho, \partial_\nu \eta_\rho, x^\nu)\)</span> by combining the
 Euler-Lagrange equations</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{ \partial \L\over\partial \eta_\rho}
     -
     \partial_\nu\left(
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \right)
 =0\]</div>
-<p>with the total derivative <span class="math">\({\d \L\over \d x^\mu}\)</span>:</p>
-<div class="math">
-\[{\d \L\over \d x^\mu} = {\partial\L\over\partial\eta_\rho}
+<p>with the total derivative <span class="math notranslate nohighlight">\({\d \L\over \d x^\mu}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}{\d \L\over \d x^\mu} = {\partial\L\over\partial\eta_\rho}
     \partial_\mu \eta_\rho
     +
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \partial_\mu\partial_\nu\eta_\rho + \partial_\mu\L
-=\]\[=
+=\\=
     \partial_\nu\left(
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \right)
@@ -125,14 +114,14 @@ Euler-Lagrange equations</p>
     +
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \partial_\nu\partial_\mu\eta_\rho + \partial_\mu\L
-=\]\[=
+=\\=
     \partial_\nu\left(
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \partial_\mu \eta_\rho
     \right)
-    + \partial_\mu\L\]</div>
+    + \partial_\mu\L\end{aligned}\end{align} \]</div>
 <p>or</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_\nu\left(
 { \partial \L\over\partial (\partial_\nu \eta_\rho)}
 \partial_\mu \eta_\rho
@@ -141,155 +130,155 @@ Euler-Lagrange equations</p>
 + \partial_\mu\L
   =0\]</div>
 <p>This can be written as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_\nu T_\mu{}^\nu + f_\mu = 0\]</div>
 <p>where</p>
-<div class="math">
-\[T_\mu{}^\nu =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}T_\mu{}^\nu =
     { \partial \L\over\partial (\partial_\nu \eta_\rho)}
     \partial_\mu \eta_\rho
-    -\L \delta_\mu{}^\nu\]\[f_\mu = \partial_\mu\L\]</div>
+    -\L \delta_\mu{}^\nu\\f_\mu = \partial_\mu\L\end{aligned}\end{align} \]</div>
 <p>The Navier-Stokes equations can be derived from the
 conservation law:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_\nu T^{\mu\nu} + f^\mu = 0\]</div>
 <p>To obtain some Lagrangian (and action) for the perfect fluid, so that we can
-derive the stress energy tensor <span class="math">\(T^{\mu\nu}\)</span> from that, is not trivial, see for
+derive the stress energy tensor <span class="math notranslate nohighlight">\(T^{\mu\nu}\)</span> from that, is not trivial, see for
 example <a class="reference external" href="http://arxiv.org/abs/gr-qc/9304026">arXiv:gr-qc/9304026</a>. One has to
 take into account the equation of state and incorporate the particle number
-conservation <span class="math">\(\nabla_\mu(nu^\mu)=0\)</span> and no entropy exchange
-<span class="math">\(\nabla_\mu(nsu^\mu)=0\)</span> constraints.</p>
+conservation <span class="math notranslate nohighlight">\(\nabla_\mu(nu^\mu)=0\)</span> and no entropy exchange
+<span class="math notranslate nohighlight">\(\nabla_\mu(nsu^\mu)=0\)</span> constraints.</p>
 <p>The equation of continuity follows from the
-conservation of the baryon number &#8212; the volume <span class="math">\(V\)</span> that contains certain
-number of baryons can change, but the total number of baryons <span class="math">\(nV\)</span> must remain
+conservation of the baryon number — the volume <span class="math notranslate nohighlight">\(V\)</span> that contains certain
+number of baryons can change, but the total number of baryons <span class="math notranslate nohighlight">\(nV\)</span> must remain
 constant:</p>
-<div class="math">
-\[{\d (nV)\over\d\tau} = 0\]\[{\d n\over\d\tau}V + n{\d V\over\d\tau} = 0\]\[u^\alpha (\partial_\alpha n)V + n(\partial_\alpha u^\alpha) V = 0\]\[\partial_\alpha (n u^\alpha) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}{\d (nV)\over\d\tau} = 0\\{\d n\over\d\tau}V + n{\d V\over\d\tau} = 0\\u^\alpha (\partial_\alpha n)V + n(\partial_\alpha u^\alpha) V = 0\\\partial_\alpha (n u^\alpha) = 0\end{aligned}\end{align} \]</div>
 <div class="section" id="perfect-fluids">
 <span id="id1"></span><h3>Perfect Fluids<a class="headerlink" href="#perfect-fluids" title="Permalink to this headline">¶</a></h3>
-<p>Perfect fluids have no heat conduction (<span class="math">\(T^{i0} = T^{0i} = 0\)</span>) and no
-viscosity (<span class="math">\(T^{ij} = p\one\)</span>), so in the comoving frame:</p>
-<div class="math">
+<p>Perfect fluids have no heat conduction (<span class="math notranslate nohighlight">\(T^{i0} = T^{0i} = 0\)</span>) and no
+viscosity (<span class="math notranslate nohighlight">\(T^{ij} = p\one\)</span>), so in the comoving frame:</p>
+<div class="math notranslate nohighlight">
 \[T^{\alpha\beta} = \diag(\rho c^2, p, p, p) =
 \left(\rho+{p\over c^2}\right)u^\alpha u^\beta + p g^{\alpha\beta}\]</div>
-<p>where in the comoving frame we have <span class="math">\(g^{\mu\nu} = \diag(-1, 1, 1, 1)\)</span>, <span class="math">\(u^0=c\)</span>
-and <span class="math">\(u^i=0\)</span>,
-but <span class="math">\(\partial_\alpha U^i\neq0\)</span>. <span class="math">\(p\)</span> is the pressure with units
-<span class="math">\([p] =\rm N\,m^{-2}=kg\,m^{-1}\,s^{-2}\)</span> (then
-<span class="math">\([{p\over c^2}] =\rm kg\,m^{-3}\)</span>), <span class="math">\(\rho\)</span> is the rest mass density with units
-<span class="math">\([\rho] =\rm kg\,m^{-3}\)</span>, and <span class="math">\(\rho c^2\)</span> is the energy density with units
-<span class="math">\([\rho c^2] =\rm kg\,m^{-1}\,s^{-2}\)</span>.</p>
+<p>where in the comoving frame we have <span class="math notranslate nohighlight">\(g^{\mu\nu} = \diag(-1, 1, 1, 1)\)</span>, <span class="math notranslate nohighlight">\(u^0=c\)</span>
+and <span class="math notranslate nohighlight">\(u^i=0\)</span>,
+but <span class="math notranslate nohighlight">\(\partial_\alpha U^i\neq0\)</span>. <span class="math notranslate nohighlight">\(p\)</span> is the pressure with units
+<span class="math notranslate nohighlight">\([p] =\rm N\,m^{-2}=kg\,m^{-1}\,s^{-2}\)</span> (then
+<span class="math notranslate nohighlight">\([{p\over c^2}] =\rm kg\,m^{-3}\)</span>), <span class="math notranslate nohighlight">\(\rho\)</span> is the rest mass density with units
+<span class="math notranslate nohighlight">\([\rho] =\rm kg\,m^{-3}\)</span>, and <span class="math notranslate nohighlight">\(\rho c^2\)</span> is the energy density with units
+<span class="math notranslate nohighlight">\([\rho c^2] =\rm kg\,m^{-1}\,s^{-2}\)</span>.</p>
 <p>The last equation is a tensor equation so it
-holds in any frame. Let&#8217;s write the components explicitly:</p>
-<div class="math">
-\[T^{00}
+holds in any frame. Let’s write the components explicitly:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}T^{00}
     = \left(\rho+{p\over c^2}\right)u^0u^0 - p
     = \left(\rho+{p\over c^2}\right)c^2 \gamma^2 - p
     = \left(\rho c^2+p\left(1-{1\over\gamma^2}\right)\right) \gamma^2
-    = \left(\rho c^2+p {v^2\over c^2}\right) \gamma^2\]\[T^{0i} = T^{i0}
+    = \left(\rho c^2+p {v^2\over c^2}\right) \gamma^2\\T^{0i} = T^{i0}
     = \left(\rho+{p\over c^2}\right)u^0u^i
     = \left(\rho+{p\over c^2}\right) c v^i \gamma^2
-    = {1\over c}\left(\rho c^2+p\right) v^i \gamma^2\]\[T^{ij}
+    = {1\over c}\left(\rho c^2+p\right) v^i \gamma^2\\T^{ij}
     = \left(\rho+{p\over c^2}\right) u^iu^j + p \delta^{ij}
-    = \left(\rho+{p\over c^2}\right) v^iv^j\gamma^2 + p \delta^{ij}\]</div>
+    = \left(\rho+{p\over c^2}\right) v^iv^j\gamma^2 + p \delta^{ij}\end{aligned}\end{align} \]</div>
 <p>We now use the conservation of the stress energy tensor and the conservation of
 the number of particles:</p>
-<div class="math" id="equation-conv1">
-<span class="eqno">(1)</span>\[\partial_\nu T^{\mu\nu} = 0\]</div>
-<div class="math" id="equation-conv2">
-<span class="eqno">(2)</span>\[\partial_\mu(nu^\mu) = 0\]</div>
-<p>The equation <a href="#equation-conv2">(2)</a> gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight" id="equation-conv1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-conv1" title="Permalink to this equation">¶</a></span>\[\partial_\nu T^{\mu\nu} = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-conv2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-conv2" title="Permalink to this equation">¶</a></span>\[\partial_\mu(nu^\mu) = 0\]</div>
+<p>The equation <a class="reference internal" href="#equation-conv2">(2)</a> gives:</p>
+<div class="math notranslate nohighlight">
 \[\partial_t (n\gamma) + \partial_i(n v^i \gamma) = 0\]</div>
-<div class="math" id="equation-continuity-relat">
-<span class="eqno">(3)</span>\[\partial_t (n m\gamma) + \partial_i(n m v^i \gamma) = 0\]</div>
-<div class="math" id="equation-continuity1">
-<span class="eqno">(4)</span>\[\partial_t (n m c^2\gamma) + \partial_i(n m c^2 v^i \gamma) = 0\]</div>
-<p>The equation <a href="#equation-conv1">(1)</a> gives for <span class="math">\(\mu=0\)</span>:</p>
-<div class="math">
-\[\partial_\nu T^{0\nu} = 0\]\[\partial_0 T^{00} + \partial_i T^{0i} = 0\]\[\partial_t\left({1\over c}\left(\rho c^2 + p {v^2\over c^2}\right)
+<div class="math notranslate nohighlight" id="equation-continuity-relat">
+<span class="eqno">(3)<a class="headerlink" href="#equation-continuity-relat" title="Permalink to this equation">¶</a></span>\[\partial_t (n m\gamma) + \partial_i(n m v^i \gamma) = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-continuity1">
+<span class="eqno">(4)<a class="headerlink" href="#equation-continuity1" title="Permalink to this equation">¶</a></span>\[\partial_t (n m c^2\gamma) + \partial_i(n m c^2 v^i \gamma) = 0\]</div>
+<p>The equation <a class="reference internal" href="#equation-conv1">(1)</a> gives for <span class="math notranslate nohighlight">\(\mu=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{0\nu} = 0\\\partial_0 T^{00} + \partial_i T^{0i} = 0\\\partial_t\left({1\over c}\left(\rho c^2 + p {v^2\over c^2}\right)
     \gamma^2\right) + \partial_i\left({1\over c}\left(\rho c^2 + p\right)
-    v^i \gamma^2\right) = 0\]</div>
-<div class="math" id="equation-energy-relat2">
-<span class="eqno">(5)</span>\[\partial_t\left(\left(\rho c^2 + p {v^2\over c^2}\right)
+    v^i \gamma^2\right) = 0\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight" id="equation-energy-relat2">
+<span class="eqno">(5)<a class="headerlink" href="#equation-energy-relat2" title="Permalink to this equation">¶</a></span>\[\partial_t\left(\left(\rho c^2 + p {v^2\over c^2}\right)
     \gamma^2\right) + \partial_i\left(\left(\rho c^2 + p\right)
     v^i \gamma^2\right) = 0\]</div>
-<p>We now substract the equation <a href="#equation-continuity1">(4)</a> from <a href="#equation-energy-relat2">(5)</a>:</p>
-<div class="math">
+<p>We now substract the equation <a class="reference internal" href="#equation-continuity1">(4)</a> from <a class="reference internal" href="#equation-energy-relat2">(5)</a>:</p>
+<div class="math notranslate nohighlight">
 \[\partial_t\left(\left(\rho c^2\gamma - n m c^2 + p {v^2\over c^2}
     \gamma\right)
     \gamma\right) + \partial_i\left(\left(\rho c^2\gamma -n m c^2 + p
     \gamma\right)
     v^i \gamma\right) = 0\]</div>
 <p>We define the nonrelativistic energy as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[E = \rho c^2\gamma -n m c^2 = \half \rho v^2 + (\rho - nm)c^2 +
     O\left(v^4\over c^2\right)\]</div>
 <p>so it contains the kinetic plus internal energies. We substitute back
-into <a href="#equation-energy-relat2">(5)</a>:</p>
-<div class="math" id="equation-energy-relat">
-<span class="eqno">(6)</span>\[\partial_t\left(\left(E + p {v^2\over c^2}
+into <a class="reference internal" href="#equation-energy-relat2">(5)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-energy-relat">
+<span class="eqno">(6)<a class="headerlink" href="#equation-energy-relat" title="Permalink to this equation">¶</a></span>\[\partial_t\left(\left(E + p {v^2\over c^2}
     \gamma\right)
     \gamma\right) + \partial_i\left(\left(E + p
     \gamma\right)
     v^i \gamma\right) = 0\]</div>
 <p>This is the relativistic equation for the energy. Substituting
-<span class="math">\(nm = \rho\gamma - {E\over c^2}\)</span> into
-<a href="#equation-continuity-relat">(3)</a>:</p>
-<div class="math" id="equation-continuity-relat3">
-<span class="eqno">(7)</span>\[\partial_t\left(\rho\gamma^2 - {E\gamma\over c^2}\right) +
+<span class="math notranslate nohighlight">\(nm = \rho\gamma - {E\over c^2}\)</span> into
+<a class="reference internal" href="#equation-continuity-relat">(3)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-continuity-relat3">
+<span class="eqno">(7)<a class="headerlink" href="#equation-continuity-relat3" title="Permalink to this equation">¶</a></span>\[\partial_t\left(\rho\gamma^2 - {E\gamma\over c^2}\right) +
     \partial_i\left(\left(\rho\gamma^2 - {E\gamma\over c^2}\right)
     v^i
     \right) = 0\]</div>
-<p>The equation <a href="#equation-conv1">(1)</a> for <span class="math">\(\mu=i\)</span> gives:</p>
-<div class="math">
-\[\partial_\nu T^{i\nu} = 0\]\[\partial_0 T^{i0} + \partial_j T^{ij} = 0\]\[\partial_t \left({1\over c^2}\left(\rho c^2 + p \right) v^i\gamma^2\right)
+<p>The equation <a class="reference internal" href="#equation-conv1">(1)</a> for <span class="math notranslate nohighlight">\(\mu=i\)</span> gives:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{i\nu} = 0\\\partial_0 T^{i0} + \partial_j T^{ij} = 0\\\partial_t \left({1\over c^2}\left(\rho c^2 + p \right) v^i\gamma^2\right)
+    + \partial_j \left(
+    \left(\rho+{p\over c^2}\right) v^iv^j\gamma^2 + p \delta^{ij}
+    \right) = 0\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight" id="equation-momentum-relat">
+<span class="eqno">(8)<a class="headerlink" href="#equation-momentum-relat" title="Permalink to this equation">¶</a></span>\[\partial_t \left(\left(\rho + {p\over c^2} \right) v^i\gamma^2\right)
     + \partial_j \left(
     \left(\rho+{p\over c^2}\right) v^iv^j\gamma^2 + p \delta^{ij}
     \right) = 0\]</div>
-<div class="math" id="equation-momentum-relat">
-<span class="eqno">(8)</span>\[\partial_t \left(\left(\rho + {p\over c^2} \right) v^i\gamma^2\right)
-    + \partial_j \left(
-    \left(\rho+{p\over c^2}\right) v^iv^j\gamma^2 + p \delta^{ij}
-    \right) = 0\]</div>
-<p>This is the momentum equation. The equations <a href="#equation-continuity-relat3">(7)</a>,
-<a href="#equation-momentum-relat">(8)</a>
+<p>This is the momentum equation. The equations <a class="reference internal" href="#equation-continuity-relat3">(7)</a>,
+<a class="reference internal" href="#equation-momentum-relat">(8)</a>
 and
-<a href="#equation-energy-relat">(6)</a> are the correct relativistic equations for the perfect fluid
-(no approximations were done). We can take either <a href="#equation-continuity-relat3">(7)</a> or
-<a href="#equation-energy-relat2">(5)</a> as the equation of continuity (both give the same
+<a class="reference internal" href="#equation-energy-relat">(6)</a> are the correct relativistic equations for the perfect fluid
+(no approximations were done). We can take either <a class="reference internal" href="#equation-continuity-relat3">(7)</a> or
+<a class="reference internal" href="#equation-energy-relat2">(5)</a> as the equation of continuity (both give the same
 nonrelativistic equation of continuity).  Their Newtonian limit is obtained by
-<span class="math">\(c\to\infty\)</span> (which implies <span class="math">\(\gamma\to1\)</span>):</p>
-<div class="math">
-\[\partial_t \rho + \partial_i(\rho v^i) = 0\]\[\partial_t \left(\rho v^i\right)
+<span class="math notranslate nohighlight">\(c\to\infty\)</span> (which implies <span class="math notranslate nohighlight">\(\gamma\to1\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_t \rho + \partial_i(\rho v^i) = 0\\\partial_t \left(\rho v^i\right)
     + \partial_j \left(
     \rho v^iv^j + p \delta^{ij}
-    \right) = 0\]\[\partial_t E + \partial_j\left(v^j\left(E + p \right)\right) = 0\]</div>
+    \right) = 0\\\partial_t E + \partial_j\left(v^j\left(E + p \right)\right) = 0\end{aligned}\end{align} \]</div>
 <p>those are the Euler equations, also sometimes written as:</p>
-<div class="math" id="equation-euler_continuity">
-<span class="eqno">(9)</span>\[{\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v}) = 0\]</div>
-<div class="math" id="equation-euler_momentum">
-<span class="eqno">(10)</span>\[{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
+<div class="math notranslate nohighlight" id="equation-euler-continuity">
+<span class="eqno">(9)<a class="headerlink" href="#equation-euler-continuity" title="Permalink to this equation">¶</a></span>\[{\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v}) = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-euler-momentum">
+<span class="eqno">(10)<a class="headerlink" href="#equation-euler-momentum" title="Permalink to this equation">¶</a></span>\[{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
     (\rho {\bf v}{\bf v}^T) + \nabla p = 0\]</div>
-<div class="math" id="equation-euler_energy">
-<span class="eqno">(11)</span>\[{\partial E\over\partial t}
+<div class="math notranslate nohighlight" id="equation-euler-energy">
+<span class="eqno">(11)<a class="headerlink" href="#equation-euler-energy" title="Permalink to this equation">¶</a></span>\[{\partial E\over\partial t}
     + \nabla\cdot\left({\bf v}\left(E + p \right)\right) = 0\]</div>
 <p>The momentum equation can be further simplified by expanding the parentheses
 and using the continuity equation:</p>
-<div class="math">
-\[{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
-    (\rho {\bf v}{\bf v}^T) + \nabla p = 0\]\[\underbrace{\left(
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}{\partial (\rho{\bf v})\over\partial t} + \nabla \cdot
+    (\rho {\bf v}{\bf v}^T) + \nabla p = 0\\\underbrace{\left(
 {\partial \rho\over \partial t} + \nabla\cdot(\rho{\bf v})\right)}_0
 {\bf v} +
 \rho\left({\partial {\bf v}\over\partial t} + {\bf v}\cdot \nabla
     {\bf v}\right)
-    + \nabla p = 0\]</div>
-<div class="math" id="equation-euler_momentum2">
-<span class="eqno">(12)</span>\[\rho\left({\partial {\bf v}\over\partial t}
+    + \nabla p = 0\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight" id="equation-euler-momentum2">
+<span class="eqno">(12)<a class="headerlink" href="#equation-euler-momentum2" title="Permalink to this equation">¶</a></span>\[\rho\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
     + \nabla p = 0\]</div>
 <p>Where we used:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\left[\nabla \cdot (\rho {\bf v}{\bf v}^T)\right]^i
     = \partial_j (\rho v^iv^j)
     = v^i \partial_j (\rho v^j) + \rho v^j \partial_j v^i
@@ -298,23 +287,23 @@ and using the continuity equation:</p>
 <div class="section" id="alternative-derivation">
 <h4>Alternative Derivation<a class="headerlink" href="#alternative-derivation" title="Permalink to this headline">¶</a></h4>
 <p>We can also take the non-relativistic limit in the stress energy tensor:</p>
-<div class="math">
-\[T^{00} \to \rho c^2\]\[T^{0i} = T^{i0} \to {1\over c} \rho c^2 v^i\]\[T^{ij} \to \rho v^iv^j + p \delta^{ij}\]</div>
-<p>and plug it into the equation <a href="#equation-conv1">(1)</a>. For <span class="math">\(\mu=0\)</span> we get the equation of
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}T^{00} \to \rho c^2\\T^{0i} = T^{i0} \to {1\over c} \rho c^2 v^i\\T^{ij} \to \rho v^iv^j + p \delta^{ij}\end{aligned}\end{align} \]</div>
+<p>and plug it into the equation <a class="reference internal" href="#equation-conv1">(1)</a>. For <span class="math notranslate nohighlight">\(\mu=0\)</span> we get the equation of
 continuity:</p>
-<div class="math">
-\[\partial_\nu T^{0\nu} = 0\]\[\partial_0 T^{00} + \partial_i T^{0i} = 0\]\[\partial_t\left({1\over c} \rho c^2\right)
-    + \partial_i\left({1\over c}\rho c^2 v^i \right) = 0\]\[\partial_t \rho + \partial_i\left(\rho v^i \right) = 0\]</div>
-<p>and for <span class="math">\(\mu=i\)</span> we get the momentum equation:</p>
-<div class="math">
-\[\partial_\nu T^{i\nu} = 0\]\[\partial_0 T^{i0} + \partial_j T^{ij} = 0\]\[\partial_t \left({1\over c^2}\rho c^2 v^i\right)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{0\nu} = 0\\\partial_0 T^{00} + \partial_i T^{0i} = 0\\\partial_t\left({1\over c} \rho c^2\right)
+    + \partial_i\left({1\over c}\rho c^2 v^i \right) = 0\\\partial_t \rho + \partial_i\left(\rho v^i \right) = 0\end{aligned}\end{align} \]</div>
+<p>and for <span class="math notranslate nohighlight">\(\mu=i\)</span> we get the momentum equation:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{i\nu} = 0\\\partial_0 T^{i0} + \partial_j T^{ij} = 0\\\partial_t \left({1\over c^2}\rho c^2 v^i\right)
     + \partial_j \left(
     \rho v^iv^j + p \delta^{ij}
-    \right) = 0\]\[\partial_t \left(\rho v^i\right)
+    \right) = 0\\\partial_t \left(\rho v^i\right)
     + \partial_j \left(
     \rho v^iv^j + p \delta^{ij}
-    \right) = 0\]</div>
-<p>However, in order to derive the equation for energy <span class="math">\(E\)</span>, one needs to take into
+    \right) = 0\end{aligned}\end{align} \]</div>
+<p>However, in order to derive the equation for energy <span class="math notranslate nohighlight">\(E\)</span>, one needs to take into
 account the full relativistic stress energy tensor, see the previous section
 for details.</p>
 </div>
@@ -324,433 +313,433 @@ for details.</p>
 <p>The energy equation can also be derived from thermodynamic and the other two
 Euler equations.
 We have the following two Euler equations:</p>
-<div class="math">
-\[\partial_t\rho + \partial_i(\rho u^i) = 0\]\[\rho\partial_t u^i + \rho u^j\partial_j u^i + \delta^{ij}\partial_j p = 0\]</div>
-<p>We&#8217;ll need the following formulas:</p>
-<div class="math">
-\[\partial_t (u_i u^i) = (\partial_t u_i) u^i + u_i \partial_t u^i =
-(\partial_t u_i)\delta^{ij} u_j + u_i \partial_t u^i =\]\[= (\partial_t u_i\delta^{ij}) u_j + u_i \partial_t u^i =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_t\rho + \partial_i(\rho u^i) = 0\\\rho\partial_t u^i + \rho u^j\partial_j u^i + \delta^{ij}\partial_j p = 0\end{aligned}\end{align} \]</div>
+<p>We’ll need the following formulas:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_t (u_i u^i) = (\partial_t u_i) u^i + u_i \partial_t u^i =
+(\partial_t u_i)\delta^{ij} u_j + u_i \partial_t u^i =\\= (\partial_t u_i\delta^{ij}) u_j + u_i \partial_t u^i =
 (\partial_t u^j) u_j + u_i \partial_t u^i =
-2 u_i \partial_t u^i\]\[\partial_j (u_i u^i) = 2 u_i \partial_j u^i\]\[\partial_t\rho =- \partial_i(\rho u^i)\]\[\partial_t u^i =- u^j\partial_j u^i - {\delta^{ij}\over\rho}\partial_j p\]\[- u^j\partial_j p + \partial_t(\rho U) =\]\[  = - {\d p \over\d t} +\partial_t p + \partial_t(\rho U) =\]\[  = - {\d p \over\d t} +\partial_t (\rho U + p) =\]\[  = - {\d p \over\d t} +{\d\over\d t} (\rho U + p)
-    -u^j\partial_j (\rho U + p)=\]\[  = - {\d p \over\d t} +{\d\rho\over\d t} \left(U + {p\over\rho}\right)
+2 u_i \partial_t u^i\\\partial_j (u_i u^i) = 2 u_i \partial_j u^i\\\partial_t\rho =- \partial_i(\rho u^i)\\\partial_t u^i =- u^j\partial_j u^i - {\delta^{ij}\over\rho}\partial_j p\\- u^j\partial_j p + \partial_t(\rho U) =\\  = - {\d p \over\d t} +\partial_t p + \partial_t(\rho U) =\\  = - {\d p \over\d t} +\partial_t (\rho U + p) =\\  = - {\d p \over\d t} +{\d\over\d t} (\rho U + p)
+    -u^j\partial_j (\rho U + p)=\\  = - {\d p \over\d t} +{\d\rho\over\d t} \left(U + {p\over\rho}\right)
     +\rho{\d\over\d t} \left(U + {p\over\rho}\right)
-    -u^j\partial_j (\rho U + p)=\]\[  = - {\d p \over\d t} +{\d\rho\over\d t} \left(U + {p\over\rho}\right)
+    -u^j\partial_j (\rho U + p)=\\  = - {\d p \over\d t} +{\d\rho\over\d t} \left(U + {p\over\rho}\right)
     +\rho{\d\over\d t} \left(U + {p\over\rho}\right)
     + (\rho U + p)\partial_j u^j
-    -\partial_j (\rho U u^j + p u^j) =\]\[  = \left[\rho {\d\over\d t}\left(U + {p\over\rho}\right) - {\d p\over\d t}
+    -\partial_j (\rho U u^j + p u^j) =\\  = \left[\rho {\d\over\d t}\left(U + {p\over\rho}\right) - {\d p\over\d t}
     \right]
     +
     \left(U + {p\over\rho}\right)\left[ {\d\rho\over\d t} + \rho
         \partial_j u^j \right]
-    -\partial_j (\rho U u^j + p u^j) =\]\[  = - \partial_j(\rho U u^j + p u^j)\]\[  0 = \d Q = T\d S = \d U + p\d V = \d (U + pV) - V\d p
+    -\partial_j (\rho U u^j + p u^j) =\\  = - \partial_j(\rho U u^j + p u^j)\\  0 = \d Q = T\d S = \d U + p\d V = \d (U + pV) - V\d p
     = \d\left(U+{p\over\rho}\right) - {1\over \rho}\d p
-    = \d H - {1\over \rho}\d p\]</div>
-<p>where <span class="math">\(V = {1\over\rho}\)</span> is the specific volume and
-<span class="math">\(H = U+{p\over\rho}\)</span> is entalphy (heat content).</p>
+    = \d H - {1\over \rho}\d p\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(V = {1\over\rho}\)</span> is the specific volume and
+<span class="math notranslate nohighlight">\(H = U+{p\over\rho}\)</span> is entalphy (heat content).</p>
 <p>Then:</p>
-<div class="math">
-\[\partial_t E =\]\[= \partial_t (\half \rho u_i u^i + \rho U) =\]\[= \half u_i u^i \partial_t \rho
-    +\half\rho\partial_t(u_i u^i) + \partial_t(\rho U) =\]\[= -\half u_i u^i \partial_j(\rho u^j)
-    +\rho u_i\partial_t u^i + \partial_t(\rho U) =\]\[= -\half u_i u^i \partial_j(\rho u^j)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_t E =\\= \partial_t (\half \rho u_i u^i + \rho U) =\\= \half u_i u^i \partial_t \rho
+    +\half\rho\partial_t(u_i u^i) + \partial_t(\rho U) =\\= -\half u_i u^i \partial_j(\rho u^j)
+    +\rho u_i\partial_t u^i + \partial_t(\rho U) =\\= -\half u_i u^i \partial_j(\rho u^j)
     - \rho u_i u^j\partial_j u^i - u_i\delta^{ij}\partial_j p
-    + \partial_t(\rho U) =\]\[= -\half u_i u^i \partial_j(\rho u^j)
+    + \partial_t(\rho U) =\\= -\half u_i u^i \partial_j(\rho u^j)
     - \half\rho u^j\partial_j (u_i u^i) - u_i\delta^{ij}\partial_j p
-    + \partial_t(\rho U) =\]\[= -\half\partial_j(\rho u_i u^i u^j)
-    - u^j\partial_j p + \partial_t(\rho U) =\]\[= -\half\partial_j(\rho u_i u^i u^j)
-    - \partial_j(\rho U u^j + p u^j) =\]\[= -\partial_j\left(u^j\left(\half\rho u_i u^i+\rho U + p \right)\right) =\]\[= -\partial_j\left(u^j\left(E + p \right)\right)\]</div>
+    + \partial_t(\rho U) =\\= -\half\partial_j(\rho u_i u^i u^j)
+    - u^j\partial_j p + \partial_t(\rho U) =\\= -\half\partial_j(\rho u_i u^i u^j)
+    - \partial_j(\rho U u^j + p u^j) =\\= -\partial_j\left(u^j\left(\half\rho u_i u^i+\rho U + p \right)\right) =\\= -\partial_j\left(u^j\left(E + p \right)\right)\end{aligned}\end{align} \]</div>
 <p>so:</p>
-<div class="math">
-\[\partial_t E + \partial_j\left(u^j\left(E + p \right)\right) = 0\]\[{\partial E\over\partial t}
-    + \nabla\cdot\left({\bf u}\left(E + p \right)\right) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_t E + \partial_j\left(u^j\left(E + p \right)\right) = 0\\{\partial E\over\partial t}
+    + \nabla\cdot\left({\bf u}\left(E + p \right)\right) = 0\end{aligned}\end{align} \]</div>
 </div>
 </div>
 <div class="section" id="navier-stokes-equations">
 <h2>Navier-Stokes Equations<a class="headerlink" href="#navier-stokes-equations" title="Permalink to this headline">¶</a></h2>
 <p>We start with the following nonrelativistic components of the stress energy
 tensor:</p>
-<div class="math">
-\[T^{00} \to \rho c^2\]\[T^{0i} = T^{i0} \to {1\over c} \rho c^2 v^i\]\[T^{ij} \to \rho v^iv^j - \sigma^{ij}\]</div>
-<p>where <span class="math">\(\sigma^{ij} = -p \delta^{ij} + \mathds{T}\)</span> (more below)
-and plug it into the equation <a href="#equation-conv1">(1)</a>. For <span class="math">\(\mu=0\)</span> we get the equation of
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}T^{00} \to \rho c^2\\T^{0i} = T^{i0} \to {1\over c} \rho c^2 v^i\\T^{ij} \to \rho v^iv^j - \sigma^{ij}\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma^{ij} = -p \delta^{ij} + \mathds{T}\)</span> (more below)
+and plug it into the equation <a class="reference internal" href="#equation-conv1">(1)</a>. For <span class="math notranslate nohighlight">\(\mu=0\)</span> we get the equation of
 continuity as for perfect fluids:</p>
-<div class="math">
-\[\partial_\nu T^{0\nu} = 0\]\[\partial_0 T^{00} + \partial_i T^{0i} = 0\]\[\partial_t\left({1\over c} \rho c^2\right)
-    + \partial_i\left({1\over c}\rho c^2 v^i \right) = 0\]\[\partial_t \rho + \partial_i\left(\rho v^i \right) = 0\]</div>
-<p>and for <span class="math">\(\mu=i\)</span> we get the momentum equation:</p>
-<div class="math">
-\[\partial_\nu T^{i\nu} = f^i\]\[\partial_0 T^{i0} + \partial_j T^{ij} = f^i\]\[\partial_t \left({1\over c^2}\rho c^2 v^i\right)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{0\nu} = 0\\\partial_0 T^{00} + \partial_i T^{0i} = 0\\\partial_t\left({1\over c} \rho c^2\right)
+    + \partial_i\left({1\over c}\rho c^2 v^i \right) = 0\\\partial_t \rho + \partial_i\left(\rho v^i \right) = 0\end{aligned}\end{align} \]</div>
+<p>and for <span class="math notranslate nohighlight">\(\mu=i\)</span> we get the momentum equation:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\partial_\nu T^{i\nu} = f^i\\\partial_0 T^{i0} + \partial_j T^{ij} = f^i\\\partial_t \left({1\over c^2}\rho c^2 v^i\right)
     + \partial_j \left(
     \rho v^iv^j - \sigma^{ij}
-    \right) = f^i\]\[\partial_t \left(\rho v^i\right)
+    \right) = f^i\\\partial_t \left(\rho v^i\right)
     + \partial_j \left(
     \rho v^iv^j - \sigma^{ij}
-    \right) = f^i\]</div>
+    \right) = f^i\end{aligned}\end{align} \]</div>
 <p>By using the continuity equation in the momentum equation (as in perfect
 fluids), we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left(\partial_t v^i + v^i \partial_j v^j\right)
     - \partial_j\sigma^{ij}
     = f^i\]</div>
 <p>This is sometimes called the Cauchy momentum equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = \nabla \cdot \mathds{\sigma} + {\bf f}\]</div>
-<p>where the stress tensor <span class="math">\(\sigma\)</span> can be written as:</p>
-<div class="math">
+<p>where the stress tensor <span class="math notranslate nohighlight">\(\sigma\)</span> can be written as:</p>
+<div class="math notranslate nohighlight">
 \[\sigma=-p\mathds{1} + \mathds{T}\]</div>
 <p>and we get the Navier-Stokes equations:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p + \nabla \cdot \mathds{T} + {\bf f}\]</div>
 <p>Those are the most general equations. If we assume some more things about the
 fluid, they can be further simplified.</p>
-<p>For Newtonian fluids, we want <span class="math">\(\mathds{T}\)</span> to be isotropic, linear in strain
-rates and it&#8217;s divergence zero for fluid at rest. It follows that the only way
+<p>For Newtonian fluids, we want <span class="math notranslate nohighlight">\(\mathds{T}\)</span> to be isotropic, linear in strain
+rates and it’s divergence zero for fluid at rest. It follows that the only way
 to write the tensor under these conditions is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[T_{ij} = 2\mu\epsilon_{ij} + \delta_{ij} \lambda \nabla\cdot{\bf v}\]</div>
 <p>where the strain rate is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\epsilon_{ij}={1\over 2}\left(\partial_j v_i+\partial_i v_j\right)\]</div>
-<p>The trace of <span class="math">\(\mathds{T}\)</span> is:</p>
-<div class="math">
+<p>The trace of <span class="math notranslate nohighlight">\(\mathds{T}\)</span> is:</p>
+<div class="math notranslate nohighlight">
 \[\Tr \mathds{T} = T_{ii}
     = 2\mu\epsilon_{ii} + \delta_{ii} \lambda \nabla\cdot{\bf v}
     = (2\mu + 3 \lambda) \nabla\cdot{\bf v}\]</div>
-<p>Note that <span class="math">\(\mathds{T}\)</span> has zero trace, which is automatically satisfied for
-incompressible flow (<span class="math">\(\nabla\cdot{\bf v}=0\)</span>), but for compressible flow this
+<p>Note that <span class="math notranslate nohighlight">\(\mathds{T}\)</span> has zero trace, which is automatically satisfied for
+incompressible flow (<span class="math notranslate nohighlight">\(\nabla\cdot{\bf v}=0\)</span>), but for compressible flow this
 imposes:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\lambda = -{2\over 3}\mu\]</div>
 <p>The divergence of the tensor is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_j T_{ij} =2\mu\partial_j\epsilon_{ij} + \partial_j\delta_{ij} \lambda \nabla\cdot{\bf v} =\mu\partial_j\partial_j v_i+\mu\partial_i \nabla\cdot{\bf v} + \lambda \partial_i  \nabla\cdot{\bf v} =\mu\partial_j\partial_j v_i+(\mu+\lambda)\partial_i \nabla\cdot{\bf v}\]</div>
 <p>or in vector form (these are usually called the compressible Navier-Stokes
 equations):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla \cdot \mathds{T} =\mu\nabla^2{\bf v}+(\mu+\lambda)\nabla \nabla\cdot{\bf v}\]</div>
-<p>For incompressible fluid we have <span class="math">\(\nabla\cdot\bf v=0\)</span>, so we get the
+<p>For incompressible fluid we have <span class="math notranslate nohighlight">\(\nabla\cdot\bf v=0\)</span>, so we get the
 incompressible Navier-Stokes equations:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla \cdot \mathds{T} =\mu\nabla^2{\bf v}\]</div>
-<p>and for a perfect fluid we have no viscosity, e.g. <span class="math">\(\mu=0\)</span>, then we get the
+<p>and for a perfect fluid we have no viscosity, e.g. <span class="math notranslate nohighlight">\(\mu=0\)</span>, then we get the
 Euler equations (for perfect fluid):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla \cdot \mathds{T}=0\]</div>
 </div>
 <div class="section" id="incompressible-equations">
 <h2>Incompressible Equations<a class="headerlink" href="#incompressible-equations" title="Permalink to this headline">¶</a></h2>
 <p>Incompressible flow means that the material derivative of density is zero:</p>
-<div class="math" id="equation-mat_deriv_zero">
-<span class="eqno">(13)</span>\[{\d \rho\over\d t} = {\partial \rho\over \partial t}
+<div class="math notranslate nohighlight" id="equation-mat-deriv-zero">
+<span class="eqno">(13)<a class="headerlink" href="#equation-mat-deriv-zero" title="Permalink to this equation">¶</a></span>\[{\d \rho\over\d t} = {\partial \rho\over \partial t}
     + {\bf v}\cdot\nabla\rho = 0\,.\]</div>
-<p>Putting this into the equation of continuity <a href="#equation-euler_continuity">(9)</a> one obtains
-<span class="math">\(\rho\nabla\cdot{\bf v}=0\)</span> or equivalently:</p>
-<div class="math" id="equation-div_free">
-<span class="eqno">(14)</span>\[\nabla\cdot{\bf v}=0\,.\]</div>
-<p>But also <a href="#equation-div_free">(14)</a> implies <a href="#equation-mat_deriv_zero">(13)</a>, so these two equations
+<p>Putting this into the equation of continuity <a class="reference internal" href="#equation-euler-continuity">(9)</a> one obtains
+<span class="math notranslate nohighlight">\(\rho\nabla\cdot{\bf v}=0\)</span> or equivalently:</p>
+<div class="math notranslate nohighlight" id="equation-div-free">
+<span class="eqno">(14)<a class="headerlink" href="#equation-div-free" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf v}=0\,.\]</div>
+<p>But also <a class="reference internal" href="#equation-div-free">(14)</a> implies <a class="reference internal" href="#equation-mat-deriv-zero">(13)</a>, so these two equations
 are equivalent: the divergence of the velocity field is zero if and only if the
 material derivative of the density is zero.</p>
-<p>Using the condition <span class="math">\(\nabla\cdot{\bf v}=0\)</span> in <a href="#equation-euler_continuity">(9)</a> and
-<a href="#equation-euler_momentum2">(12)</a> we obtain:</p>
-<div class="math">
-\[\nabla\cdot{\bf v}=0\,,\]\[{\partial \rho\over \partial t} + {\bf v}\cdot\nabla\rho = 0\,,\]\[\rho\left({\partial {\bf v}\over\partial t}
+<p>Using the condition <span class="math notranslate nohighlight">\(\nabla\cdot{\bf v}=0\)</span> in <a class="reference internal" href="#equation-euler-continuity">(9)</a> and
+<a class="reference internal" href="#equation-euler-momentum2">(12)</a> we obtain:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\nabla\cdot{\bf v}=0\,,\\{\partial \rho\over \partial t} + {\bf v}\cdot\nabla\rho = 0\,,\\\rho\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
-    + \nabla p = \mu\nabla^2{\bf v}\,.\]</div>
+    + \nabla p = \mu\nabla^2{\bf v}\,.\end{aligned}\end{align} \]</div>
 <p>In addition to incompressibility, we can also assume a constant density
-<span class="math">\(\rho(x, y, z)=\rho_0\)</span>, then we obtain the incompressible Navier-Stokes
+<span class="math notranslate nohighlight">\(\rho(x, y, z)=\rho_0\)</span>, then we obtain the incompressible Navier-Stokes
 equations:</p>
-<div class="math" id="equation-incomp_euler_1">
-<span class="eqno">(15)</span>\[\nabla\cdot{\bf v}=0\,,\]</div>
-<div class="math" id="equation-incomp_euler_2">
-<span class="eqno">(16)</span>\[\rho_0\left({\partial {\bf v}\over\partial t}
+<div class="math notranslate nohighlight" id="equation-incomp-euler-1">
+<span class="eqno">(15)<a class="headerlink" href="#equation-incomp-euler-1" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf v}=0\,,\]</div>
+<div class="math notranslate nohighlight" id="equation-incomp-euler-2">
+<span class="eqno">(16)<a class="headerlink" href="#equation-incomp-euler-2" title="Permalink to this equation">¶</a></span>\[\rho_0\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
     + \nabla p = \mu\nabla^2{\bf v}\,.\]</div>
-<p>For <span class="math">\(\mu=0\)</span> they become the incompressible Euler equations. At the given time
-step with known <span class="math">\({\bf v}\)</span> and <span class="math">\(p\)</span>, the equation <a href="#equation-incomp_euler_2">(16)</a> is solved
-for <span class="math">\({\bf v}\)</span> at the new time step. Then we solve for new <span class="math">\(p\)</span> as follows.
-Apply divergence to <a href="#equation-incomp_euler_2">(16)</a>:</p>
-<div class="math">
-\[\rho_0\nabla\cdot\left({\partial {\bf v}\over\partial t}
+<p>For <span class="math notranslate nohighlight">\(\mu=0\)</span> they become the incompressible Euler equations. At the given time
+step with known <span class="math notranslate nohighlight">\({\bf v}\)</span> and <span class="math notranslate nohighlight">\(p\)</span>, the equation <a class="reference internal" href="#equation-incomp-euler-2">(16)</a> is solved
+for <span class="math notranslate nohighlight">\({\bf v}\)</span> at the new time step. Then we solve for new <span class="math notranslate nohighlight">\(p\)</span> as follows.
+Apply divergence to <a class="reference internal" href="#equation-incomp-euler-2">(16)</a>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\rho_0\nabla\cdot\left({\partial {\bf v}\over\partial t}
     + {\bf v}\cdot \nabla{\bf v}\right)
-    + \nabla\cdot\nabla p = \mu\nabla\cdot\nabla^2{\bf v}\,,\]\[\rho_0\left({\partial (\nabla\cdot{\bf v})\over\partial t}
+    + \nabla\cdot\nabla p = \mu\nabla\cdot\nabla^2{\bf v}\,,\\\rho_0\left({\partial (\nabla\cdot{\bf v})\over\partial t}
     + \nabla\cdot({\bf v}\cdot \nabla{\bf v})\right)
-    + \nabla^2 p = \mu\nabla\cdot\nabla^2{\bf v}\,,\]</div>
+    + \nabla^2 p = \mu\nabla\cdot\nabla^2{\bf v}\,,\end{aligned}\end{align} \]</div>
 <p>now we use the following identities:</p>
-<div class="math">
-\[\nabla\cdot({\bf v}\cdot \nabla{\bf v})
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\nabla\cdot({\bf v}\cdot \nabla{\bf v})
     = \partial_i(v^j \partial_j v^i)
     = (\partial_i v^j) (\partial_j v^i)
         + v^j \partial_j \partial_i v^i
-    = \Tr (\nabla {\bf v})^2 + {\bf v}\cdot\nabla(\nabla\cdot{\bf v})\,,\]\[\nabla\cdot\nabla^2{\bf v}
+    = \Tr (\nabla {\bf v})^2 + {\bf v}\cdot\nabla(\nabla\cdot{\bf v})\,,\\\nabla\cdot\nabla^2{\bf v}
     = \partial_i\partial^j\partial_j v^i
     = \partial^j\partial_j \partial_i v^i
-    = \nabla^2(\nabla\cdot {\bf v})\,,\]</div>
+    = \nabla^2(\nabla\cdot {\bf v})\,,\end{aligned}\end{align} \]</div>
 <p>to get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho_0\left({\partial (\nabla\cdot{\bf v})\over\partial t}
     + \Tr (\nabla {\bf v})^2 + {\bf v}\cdot\nabla(\nabla\cdot{\bf v})
       \right)
     + \nabla^2 p = \mu \nabla^2(\nabla\cdot {\bf v}) \,.\]</div>
-<p>Finally we use the equation <a href="#equation-incomp_euler_1">(15)</a> to simplify:</p>
-<div class="math" id="equation-incomp_euler_3">
-<span class="eqno">(17)</span>\[-\nabla^2 p = \rho_0\Tr (\nabla {\bf v})^2\,,\]</div>
-<p>which is a Poisson equation for <span class="math">\(p\)</span>. Note again that
-<span class="math">\(\Tr (\nabla {\bf v})^2 = (\partial_i v^j) (\partial_j v^i)\)</span>. The equation
-<a href="#equation-incomp_euler_3">(17)</a> is then used to solve for <span class="math">\(p\)</span> at the new time step.</p>
+<p>Finally we use the equation <a class="reference internal" href="#equation-incomp-euler-1">(15)</a> to simplify:</p>
+<div class="math notranslate nohighlight" id="equation-incomp-euler-3">
+<span class="eqno">(17)<a class="headerlink" href="#equation-incomp-euler-3" title="Permalink to this equation">¶</a></span>\[-\nabla^2 p = \rho_0\Tr (\nabla {\bf v})^2\,,\]</div>
+<p>which is a Poisson equation for <span class="math notranslate nohighlight">\(p\)</span>. Note again that
+<span class="math notranslate nohighlight">\(\Tr (\nabla {\bf v})^2 = (\partial_i v^j) (\partial_j v^i)\)</span>. The equation
+<a class="reference internal" href="#equation-incomp-euler-3">(17)</a> is then used to solve for <span class="math notranslate nohighlight">\(p\)</span> at the new time step.</p>
 <div class="section" id="divergence-free-velocity">
 <h3>Divergence Free Velocity<a class="headerlink" href="#divergence-free-velocity" title="Permalink to this headline">¶</a></h3>
-<p>Typically by propagating <a href="#equation-incomp_euler_2">(16)</a>, we obtain a velocity <span class="math">\({\bf v}^*\)</span>
+<p>Typically by propagating <a class="reference internal" href="#equation-incomp-euler-2">(16)</a>, we obtain a velocity <span class="math notranslate nohighlight">\({\bf v}^*\)</span>
 that is not divergence free. To make it so, we want to find such a divergence
-free <span class="math">\({\bf v}\)</span> that is closest to <span class="math">\({\bf v}^*\)</span> in the <span class="math">\(L^2\)</span> norm <span class="math">\(\|{\bf v} -
+free <span class="math notranslate nohighlight">\({\bf v}\)</span> that is closest to <span class="math notranslate nohighlight">\({\bf v}^*\)</span> in the <span class="math notranslate nohighlight">\(L^2\)</span> norm <span class="math notranslate nohighlight">\(\|{\bf v} -
 {\bf v}^*\| = \sqrt{\int ({\bf v}-{\bf v}^*)^2 \, \d^3 x}\)</span>, in other words we
-want to find the <span class="math">\(L^2\)</span> projection onto the divergence free subspace, so we have
+want to find the <span class="math notranslate nohighlight">\(L^2\)</span> projection onto the divergence free subspace, so we have
 to minimize the following functional:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[R[{\bf v}, \lambda]
     = \half \| {\bf v}-{\bf v}^* \|^2
     - \int \lambda \nabla\cdot{\bf v}\, \d^3 x
     = \int \half({\bf v}-{\bf v}^*)^2
     - \lambda \nabla\cdot{\bf v}\, \d^3 x\,,\]</div>
-<p>where we used a Langrange multiplier <span class="math">\(\lambda=\lambda({\bf x})\)</span> in the second
-term to impose the zero divergence on <span class="math">\({\bf v}={\bf v}({\bf x})\)</span> for all points
-<span class="math">\({\bf x}\)</span> (that is why <span class="math">\(\lambda\)</span> is a function of <span class="math">\({\bf x}\)</span> and not a constant)
-and in the first term we ensure that <span class="math">\({\bf v}\)</span> is as close as possible to the
-original field <span class="math">\({\bf v}^*\)</span> in the <span class="math">\(L^2\)</span> sense. Let&#8217;s calculate the variation:</p>
-<div class="math">
-\[\delta R[{\bf v}, \lambda] = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
+<p>where we used a Langrange multiplier <span class="math notranslate nohighlight">\(\lambda=\lambda({\bf x})\)</span> in the second
+term to impose the zero divergence on <span class="math notranslate nohighlight">\({\bf v}={\bf v}({\bf x})\)</span> for all points
+<span class="math notranslate nohighlight">\({\bf x}\)</span> (that is why <span class="math notranslate nohighlight">\(\lambda\)</span> is a function of <span class="math notranslate nohighlight">\({\bf x}\)</span> and not a constant)
+and in the first term we ensure that <span class="math notranslate nohighlight">\({\bf v}\)</span> is as close as possible to the
+original field <span class="math notranslate nohighlight">\({\bf v}^*\)</span> in the <span class="math notranslate nohighlight">\(L^2\)</span> sense. Let’s calculate the variation:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\delta R[{\bf v}, \lambda] = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
         - \lambda \nabla\cdot \delta{\bf v}
-        - (\nabla\cdot{\bf v}) \delta\lambda \, \d^3 x =\]\[    = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
+        - (\nabla\cdot{\bf v}) \delta\lambda \, \d^3 x =\\    = \int ({\bf v}-{\bf v}^*)\cdot\delta {\bf v}
         + (\nabla\lambda) \cdot \delta{\bf v}
         - (\nabla\cdot{\bf v}) \delta\lambda \, \d^3 x
-     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S =\]\[    = \int ({\bf v}-{\bf v}^* + \nabla\lambda)\cdot\delta {\bf v}
+     +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S =\\    = \int ({\bf v}-{\bf v}^* + \nabla\lambda)\cdot\delta {\bf v}
         - (\nabla\cdot{\bf v}) \delta\lambda \, \d^3 x
-        +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S\,.\]</div>
-<p>From the condition <span class="math">\(\delta R[{\bf v}, \lambda]=0\)</span> and assuming the surface
-integral vanishes (i.e. either <span class="math">\(\lambda=0\)</span> or <span class="math">\(\delta{\bf v}\cdot{\bf n}=0\)</span>
+        +\int \lambda \delta{\bf v}\cdot{\bf n}\, \d S\,.\end{aligned}\end{align} \]</div>
+<p>From the condition <span class="math notranslate nohighlight">\(\delta R[{\bf v}, \lambda]=0\)</span> and assuming the surface
+integral vanishes (i.e. either <span class="math notranslate nohighlight">\(\lambda=0\)</span> or <span class="math notranslate nohighlight">\(\delta{\bf v}\cdot{\bf n}=0\)</span>
 everywhere on the boundary) we obtain the two Euler-Lagrange equations:</p>
-<div class="math" id="equation-lambda_eq1a">
-<span class="eqno">(18)</span>\[{\delta R[{\bf v}, \lambda] \over \delta {\bf v}}
+<div class="math notranslate nohighlight" id="equation-lambda-eq1a">
+<span class="eqno">(18)<a class="headerlink" href="#equation-lambda-eq1a" title="Permalink to this equation">¶</a></span>\[{\delta R[{\bf v}, \lambda] \over \delta {\bf v}}
     = {\bf v}-{\bf v}^* + \nabla\lambda = 0\,,\]</div>
-<div class="math" id="equation-lambda_eq1b">
-<span class="eqno">(19)</span>\[{\delta R[{\bf v}, \lambda] \over \delta \lambda}
+<div class="math notranslate nohighlight" id="equation-lambda-eq1b">
+<span class="eqno">(19)<a class="headerlink" href="#equation-lambda-eq1b" title="Permalink to this equation">¶</a></span>\[{\delta R[{\bf v}, \lambda] \over \delta \lambda}
     = -\nabla\cdot{\bf v} = 0\,.\]</div>
-<p>Applying divergence to <a href="#equation-lambda_eq1a">(18)</a> and using <a href="#equation-lambda_eq1b">(19)</a> we obtain:</p>
-<div class="math" id="equation-lambda_eq2">
-<span class="eqno">(20)</span>\[\nabla^2\lambda = \nabla\cdot{\bf v}^*\,.\]</div>
-<p>After solving this Poisson equation for <span class="math">\(\lambda\)</span> we can calculate the
-divergence free <span class="math">\({\bf v}\)</span> from <a href="#equation-lambda_eq1a">(18)</a>:</p>
-<div class="math" id="equation-lambda_eq3">
-<span class="eqno">(21)</span>\[{\bf v} = {\bf v}^* - \nabla\lambda\,.\]</div>
+<p>Applying divergence to <a class="reference internal" href="#equation-lambda-eq1a">(18)</a> and using <a class="reference internal" href="#equation-lambda-eq1b">(19)</a> we obtain:</p>
+<div class="math notranslate nohighlight" id="equation-lambda-eq2">
+<span class="eqno">(20)<a class="headerlink" href="#equation-lambda-eq2" title="Permalink to this equation">¶</a></span>\[\nabla^2\lambda = \nabla\cdot{\bf v}^*\,.\]</div>
+<p>After solving this Poisson equation for <span class="math notranslate nohighlight">\(\lambda\)</span> we can calculate the
+divergence free <span class="math notranslate nohighlight">\({\bf v}\)</span> from <a class="reference internal" href="#equation-lambda-eq1a">(18)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-lambda-eq3">
+<span class="eqno">(21)<a class="headerlink" href="#equation-lambda-eq3" title="Permalink to this equation">¶</a></span>\[{\bf v} = {\bf v}^* - \nabla\lambda\,.\]</div>
 </div>
 <div class="section" id="time-discretization">
 <h3>Time Discretization<a class="headerlink" href="#time-discretization" title="Permalink to this headline">¶</a></h3>
 <p>The incompressible Euler equations are:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla\cdot{\bf v}=0\,,\]</div>
-<div class="math" id="equation-eul01">
-<span class="eqno">(22)</span>\[{\partial {\bf v}\over\partial t} =
+<div class="math notranslate nohighlight" id="equation-eul01">
+<span class="eqno">(22)<a class="headerlink" href="#equation-eul01" title="Permalink to this equation">¶</a></span>\[{\partial {\bf v}\over\partial t} =
     -{\bf v}\cdot \nabla{\bf v} -{1\over\rho_0} \nabla p\,.\]</div>
 <p>We use first order time discretization:</p>
-<div class="math" id="equation-eul11">
-<span class="eqno">(23)</span>\[\nabla\cdot{\bf v}^{n}=0\,,\]</div>
-<div class="math" id="equation-eul12">
-<span class="eqno">(24)</span>\[\nabla\cdot{\bf v}^{n+1}=0\,,\]</div>
-<div class="math" id="equation-eul13">
-<span class="eqno">(25)</span>\[{{\bf v}^{n+1} - {\bf v}^n\over\Delta t} =
+<div class="math notranslate nohighlight" id="equation-eul11">
+<span class="eqno">(23)<a class="headerlink" href="#equation-eul11" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf v}^{n}=0\,,\]</div>
+<div class="math notranslate nohighlight" id="equation-eul12">
+<span class="eqno">(24)<a class="headerlink" href="#equation-eul12" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf v}^{n+1}=0\,,\]</div>
+<div class="math notranslate nohighlight" id="equation-eul13">
+<span class="eqno">(25)<a class="headerlink" href="#equation-eul13" title="Permalink to this equation">¶</a></span>\[{{\bf v}^{n+1} - {\bf v}^n\over\Delta t} =
     -{\bf v}^n\cdot \nabla{\bf v}^n -{1\over\rho_0} \nabla p^{n+1}\,.\]</div>
-<p>The velocity at time steps <span class="math">\(n\)</span> and <span class="math">\(n+1\)</span> must be divergence free, per
-<a href="#equation-eul11">(23)</a> and <a href="#equation-eul12">(24)</a>. The simplest discretization of <a href="#equation-eul01">(22)</a> is to
-use an explicit scheme, so we evaluate the term <span class="math">\({\bf v}\cdot \nabla{\bf v}\)</span> at
-the time step <span class="math">\(n\)</span>. Regarding the pressure term <span class="math">\(\nabla p\)</span>, if we evaluated it
-at the time step <span class="math">\(n\)</span>, then from <a href="#equation-eul13">(25)</a> we could calculate <span class="math">\({\bf v}^{n+1}\)</span>
-that would not be divergence free, per <a href="#equation-eul12">(24)</a>. So we are led to evaluate
-the pressure term at the time step <span class="math">\(n+1\)</span>, then all the equations
-<a href="#equation-eul11">(23)</a>, <a href="#equation-eul12">(24)</a> and <a href="#equation-eul13">(25)</a> can be satisfied.</p>
-<p>To solve this system of equations, we use an operator splitting on <a href="#equation-eul13">(25)</a>,
+<p>The velocity at time steps <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(n+1\)</span> must be divergence free, per
+<a class="reference internal" href="#equation-eul11">(23)</a> and <a class="reference internal" href="#equation-eul12">(24)</a>. The simplest discretization of <a class="reference internal" href="#equation-eul01">(22)</a> is to
+use an explicit scheme, so we evaluate the term <span class="math notranslate nohighlight">\({\bf v}\cdot \nabla{\bf v}\)</span> at
+the time step <span class="math notranslate nohighlight">\(n\)</span>. Regarding the pressure term <span class="math notranslate nohighlight">\(\nabla p\)</span>, if we evaluated it
+at the time step <span class="math notranslate nohighlight">\(n\)</span>, then from <a class="reference internal" href="#equation-eul13">(25)</a> we could calculate <span class="math notranslate nohighlight">\({\bf v}^{n+1}\)</span>
+that would not be divergence free, per <a class="reference internal" href="#equation-eul12">(24)</a>. So we are led to evaluate
+the pressure term at the time step <span class="math notranslate nohighlight">\(n+1\)</span>, then all the equations
+<a class="reference internal" href="#equation-eul11">(23)</a>, <a class="reference internal" href="#equation-eul12">(24)</a> and <a class="reference internal" href="#equation-eul13">(25)</a> can be satisfied.</p>
+<p>To solve this system of equations, we use an operator splitting on <a class="reference internal" href="#equation-eul13">(25)</a>,
 the most natural is probably the following:</p>
-<div class="math" id="equation-eul21">
-<span class="eqno">(26)</span>\[{{\bf v}^* - {\bf v}^n\over\Delta t} =
+<div class="math notranslate nohighlight" id="equation-eul21">
+<span class="eqno">(26)<a class="headerlink" href="#equation-eul21" title="Permalink to this equation">¶</a></span>\[{{\bf v}^* - {\bf v}^n\over\Delta t} =
     -{\bf v}^n\cdot \nabla{\bf v}^n -{1\over\rho_0} \nabla p^n\,,\]</div>
-<div class="math" id="equation-eul22">
-<span class="eqno">(27)</span>\[{{\bf v}^{n+1} - {\bf v}^*\over\Delta t} =
+<div class="math notranslate nohighlight" id="equation-eul22">
+<span class="eqno">(27)<a class="headerlink" href="#equation-eul22" title="Permalink to this equation">¶</a></span>\[{{\bf v}^{n+1} - {\bf v}^*\over\Delta t} =
     -{1\over\rho_0} \nabla (p^{n+1}-p^n)\,.\]</div>
-<p>The first equation <a href="#equation-eul21">(26)</a> is just like <a href="#equation-eul13">(25)</a>, except that the
-pressure term is evaluated at the time step <span class="math">\(n\)</span>, which forces us to change
-<span class="math">\({\bf v}^{n+1}\)</span> into <span class="math">\({\bf v}^*\)</span>, which is not divergence free. The second
-equation <a href="#equation-eul22">(27)</a> is then uniquely given by the condition that the sum of
-<a href="#equation-eul21">(26)</a> and <a href="#equation-eul22">(27)</a> is equal to <a href="#equation-eul13">(25)</a>.</p>
-<p>The equation <a href="#equation-eul22">(27)</a> is equivalent to <a href="#equation-lambda_eq3">(21)</a>, with <span class="math">\(\lambda =
-{\Delta t \over\rho_0}(p^{n+1}-p^n)\)</span>, so this is an <span class="math">\(L^2\)</span> projection of <span class="math">\({\bf
-v}^*\)</span> onto the divergence free subspace to obtain <span class="math">\({\bf v}^{n+1}\)</span>, also
+<p>The first equation <a class="reference internal" href="#equation-eul21">(26)</a> is just like <a class="reference internal" href="#equation-eul13">(25)</a>, except that the
+pressure term is evaluated at the time step <span class="math notranslate nohighlight">\(n\)</span>, which forces us to change
+<span class="math notranslate nohighlight">\({\bf v}^{n+1}\)</span> into <span class="math notranslate nohighlight">\({\bf v}^*\)</span>, which is not divergence free. The second
+equation <a class="reference internal" href="#equation-eul22">(27)</a> is then uniquely given by the condition that the sum of
+<a class="reference internal" href="#equation-eul21">(26)</a> and <a class="reference internal" href="#equation-eul22">(27)</a> is equal to <a class="reference internal" href="#equation-eul13">(25)</a>.</p>
+<p>The equation <a class="reference internal" href="#equation-eul22">(27)</a> is equivalent to <a class="reference internal" href="#equation-lambda-eq3">(21)</a>, with <span class="math notranslate nohighlight">\(\lambda =
+{\Delta t \over\rho_0}(p^{n+1}-p^n)\)</span>, so this is an <span class="math notranslate nohighlight">\(L^2\)</span> projection of <span class="math notranslate nohighlight">\({\bf
+v}^*\)</span> onto the divergence free subspace to obtain <span class="math notranslate nohighlight">\({\bf v}^{n+1}\)</span>, also
 sometimes called a pressure projection. We use the same method as was used to
-obtain the Poisson equation <a href="#equation-lambda_eq2">(20)</a> for <span class="math">\(\lambda\)</span>, i.e. take a
+obtain the Poisson equation <a class="reference internal" href="#equation-lambda-eq2">(20)</a> for <span class="math notranslate nohighlight">\(\lambda\)</span>, i.e. take a
 divergence and rearrange:</p>
-<div class="math" id="equation-eul23">
-<span class="eqno">(28)</span>\[\nabla^2 \lambda
+<div class="math notranslate nohighlight" id="equation-eul23">
+<span class="eqno">(28)<a class="headerlink" href="#equation-eul23" title="Permalink to this equation">¶</a></span>\[\nabla^2 \lambda
     = \nabla^2\left({\Delta t \over\rho_0}(p^{n+1}-p^n)\right)
     = \nabla\cdot{\bf v}^*\,.\]</div>
-<p>One solves <a href="#equation-eul21">(26)</a> for <span class="math">\({\bf v}^*\)</span>, then the Poisson equation <a href="#equation-eul23">(28)</a>
-for <span class="math">\(\lambda\)</span> (i.e. the pressure update <span class="math">\(p^{n+1}-p^n\)</span>), and then one computes
-<span class="math">\({\bf v}^{n+1}\)</span> using <a href="#equation-eul22">(27)</a> (or equivalently <a href="#equation-lambda_eq3">(21)</a>).</p>
-<p>These equations are derived from Euler equations <a href="#equation-eul11">(23)</a> and <a href="#equation-eul12">(24)</a>
+<p>One solves <a class="reference internal" href="#equation-eul21">(26)</a> for <span class="math notranslate nohighlight">\({\bf v}^*\)</span>, then the Poisson equation <a class="reference internal" href="#equation-eul23">(28)</a>
+for <span class="math notranslate nohighlight">\(\lambda\)</span> (i.e. the pressure update <span class="math notranslate nohighlight">\(p^{n+1}-p^n\)</span>), and then one computes
+<span class="math notranslate nohighlight">\({\bf v}^{n+1}\)</span> using <a class="reference internal" href="#equation-eul22">(27)</a> (or equivalently <a class="reference internal" href="#equation-lambda-eq3">(21)</a>).</p>
+<p>These equations are derived from Euler equations <a class="reference internal" href="#equation-eul11">(23)</a> and <a class="reference internal" href="#equation-eul12">(24)</a>
 using a time discretization and an operator splitting technique. The theory of
-the <span class="math">\(L^2\)</span> projection onto the divergence free subspace is not needed to derive
+the <span class="math notranslate nohighlight">\(L^2\)</span> projection onto the divergence free subspace is not needed to derive
 these equations, but it helps with understanding of what is going on.</p>
-<p>Note 1: the operator splitting of <a href="#equation-eul13">(25)</a> into <a href="#equation-eul21">(26)</a> and <a href="#equation-eul22">(27)</a>
+<p>Note 1: the operator splitting of <a class="reference internal" href="#equation-eul13">(25)</a> into <a class="reference internal" href="#equation-eul21">(26)</a> and <a class="reference internal" href="#equation-eul22">(27)</a>
 is not unique. Another option is:</p>
-<div class="math" id="equation-eul31">
-<span class="eqno">(29)</span>\[{{\bf v}^* - {\bf v}^n\over\Delta t} =
+<div class="math notranslate nohighlight" id="equation-eul31">
+<span class="eqno">(29)<a class="headerlink" href="#equation-eul31" title="Permalink to this equation">¶</a></span>\[{{\bf v}^* - {\bf v}^n\over\Delta t} =
     -{\bf v}^n\cdot \nabla{\bf v}^n \,,\]</div>
-<div class="math" id="equation-eul32">
-<span class="eqno">(30)</span>\[{{\bf v}^{n+1} - {\bf v}^*\over\Delta t} =
+<div class="math notranslate nohighlight" id="equation-eul32">
+<span class="eqno">(30)<a class="headerlink" href="#equation-eul32" title="Permalink to this equation">¶</a></span>\[{{\bf v}^{n+1} - {\bf v}^*\over\Delta t} =
     -{1\over\rho_0} \nabla p^{n+1}\,.\]</div>
-<p>The sum of <a href="#equation-eul31">(29)</a> and <a href="#equation-eul32">(30)</a> is still <a href="#equation-eul13">(25)</a> and the equation
-<a href="#equation-eul32">(30)</a> is still equivalent to <a href="#equation-lambda_eq3">(21)</a>, only this time with
-<span class="math">\(\lambda = {\Delta t \over\rho_0}p^{n+1}\)</span>. The Poisson equation then becomes:</p>
-<div class="math" id="equation-eul33">
-<span class="eqno">(31)</span>\[\nabla^2 \lambda
+<p>The sum of <a class="reference internal" href="#equation-eul31">(29)</a> and <a class="reference internal" href="#equation-eul32">(30)</a> is still <a class="reference internal" href="#equation-eul13">(25)</a> and the equation
+<a class="reference internal" href="#equation-eul32">(30)</a> is still equivalent to <a class="reference internal" href="#equation-lambda-eq3">(21)</a>, only this time with
+<span class="math notranslate nohighlight">\(\lambda = {\Delta t \over\rho_0}p^{n+1}\)</span>. The Poisson equation then becomes:</p>
+<div class="math notranslate nohighlight" id="equation-eul33">
+<span class="eqno">(31)<a class="headerlink" href="#equation-eul33" title="Permalink to this equation">¶</a></span>\[\nabla^2 \lambda
     = \nabla^2\left({\Delta t \over\rho_0}p^{n+1}\right)
     = \nabla\cdot{\bf v}^*\,.\]</div>
-<p>The only difference to the previous scheme is that now the <span class="math">\(L^2\)</span> norm of <span class="math">\(\|
+<p>The only difference to the previous scheme is that now the <span class="math notranslate nohighlight">\(L^2\)</span> norm of <span class="math notranslate nohighlight">\(\|
 {\bf v}^{n+1} - {\bf v}^* \| = \| \nabla\lambda \|\)</span> is larger, because
-<span class="math">\(\lambda\)</span> now depends on the full pressure instead of the pressure difference,
-so <span class="math">\({\bf v}^*\)</span> is not as close to <span class="math">\({\bf v}^{n+1}\)</span> as in the previous scheme.</p>
-<p>Note 2: By applying divergence to <a href="#equation-eul31">(29)</a> we obtain:</p>
-<div class="math">
+<span class="math notranslate nohighlight">\(\lambda\)</span> now depends on the full pressure instead of the pressure difference,
+so <span class="math notranslate nohighlight">\({\bf v}^*\)</span> is not as close to <span class="math notranslate nohighlight">\({\bf v}^{n+1}\)</span> as in the previous scheme.</p>
+<p>Note 2: By applying divergence to <a class="reference internal" href="#equation-eul31">(29)</a> we obtain:</p>
+<div class="math notranslate nohighlight">
 \[{\nabla\cdot{\bf v}^*\over\Delta t}
     = -\nabla\cdot({\bf v}^n\cdot \nabla{\bf v}^n)
     = -\Tr (\nabla {\bf v}^n)^2\,,\]</div>
-<p>and substituting into <a href="#equation-eul33">(31)</a> we obtain:</p>
-<div class="math">
+<p>and substituting into <a class="reference internal" href="#equation-eul33">(31)</a> we obtain:</p>
+<div class="math notranslate nohighlight">
 \[\nabla^2\left({\Delta t \over\rho_0}p^{n+1}\right)
     = \nabla\cdot{\bf v}^*
     = -\Delta t\Tr (\nabla {\bf v}^n)^2\,,\]</div>
 <p>or</p>
-<div class="math" id="equation-eul5">
-<span class="eqno">(32)</span>\[-\nabla^2 p^{n+1} = \rho_0 \Tr (\nabla {\bf v}^n)^2\,,\]</div>
-<p>which is the discrete analog of the equation <a href="#equation-incomp_euler_3">(17)</a>. The same
-result is obtained by applying a divergence to <a href="#equation-eul21">(26)</a> and substituting
-into <a href="#equation-eul23">(28)</a>:</p>
-<div class="math">
+<div class="math notranslate nohighlight" id="equation-eul5">
+<span class="eqno">(32)<a class="headerlink" href="#equation-eul5" title="Permalink to this equation">¶</a></span>\[-\nabla^2 p^{n+1} = \rho_0 \Tr (\nabla {\bf v}^n)^2\,,\]</div>
+<p>which is the discrete analog of the equation <a class="reference internal" href="#equation-incomp-euler-3">(17)</a>. The same
+result is obtained by applying a divergence to <a class="reference internal" href="#equation-eul21">(26)</a> and substituting
+into <a class="reference internal" href="#equation-eul23">(28)</a>:</p>
+<div class="math notranslate nohighlight">
 \[\nabla^2\left({\Delta t \over\rho_0}(p^{n+1}-p^n)\right)
     = \nabla\cdot{\bf v}^*
     = -\Delta t\Tr (\nabla {\bf v}^n)^2-{\Delta t\over\rho_0}\nabla^2 p^n\]</div>
-<p>Which simplifies to <a href="#equation-eul5">(32)</a>.</p>
+<p>Which simplifies to <a class="reference internal" href="#equation-eul5">(32)</a>.</p>
 </div>
 </div>
 <div class="section" id="bernoulli-s-principle">
-<h2>Bernoulli&#8217;s Principle<a class="headerlink" href="#bernoulli-s-principle" title="Permalink to this headline">¶</a></h2>
-<p>Bernoulli&#8217;s principle works for a perfect fluid, so we take the Euler equations:</p>
-<div class="math">
+<h2>Bernoulli’s Principle<a class="headerlink" href="#bernoulli-s-principle" title="Permalink to this headline">¶</a></h2>
+<p>Bernoulli’s principle works for a perfect fluid, so we take the Euler equations:</p>
+<div class="math notranslate nohighlight">
 \[\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p + {\bf f}\]</div>
-<p>and put it into a vertical gravitational field <span class="math">\({\bf f} = (0, 0, -\rho g)=-\rho
+<p>and put it into a vertical gravitational field <span class="math notranslate nohighlight">\({\bf f} = (0, 0, -\rho g)=-\rho
 g\nabla z\)</span>, so:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p - \rho g\nabla z\,,\]</div>
-<p>we divide by <span class="math">\(\rho\)</span>:</p>
-<div class="math">
+<p>we divide by <span class="math notranslate nohighlight">\(\rho\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[{\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} = -\nabla \left({p\over\rho} + g z\right)\]</div>
-<p>and use the identity <span class="math">\({\bf v}\cdot\nabla{\bf v}={1\over 2}\nabla v^2
+<p>and use the identity <span class="math notranslate nohighlight">\({\bf v}\cdot\nabla{\bf v}={1\over 2}\nabla v^2
 + (\nabla \times {\bf v})\times{\bf v}\)</span>:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial {\bf v}\over\partial t} +{1\over 2}\nabla v^2+(\nabla \times {\bf v})\times{\bf v} +\nabla \left({p\over\rho} + g z\right)=0\,,\]</div>
 <p>so:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial {\bf v}\over\partial t} +(\nabla \times {\bf v})\times{\bf v} +\nabla \left({v^2\over 2} + gz + {p\over\rho} \right)=0\,.\]</div>
-<p>If the fluid is moving, we integrate this along a streamline from the point <span class="math">\(A\)</span>
-to <span class="math">\(B\)</span>:</p>
-<div class="math">
+<p>If the fluid is moving, we integrate this along a streamline from the point <span class="math notranslate nohighlight">\(A\)</span>
+to <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\int {\partial {\bf v}\over\partial t} \cdot \d {\bf l} +\left[{v^2\over 2} + gz + {p\over\rho} \right]_A^B=0\,.\]</div>
-<p>So far we didn&#8217;t do any approximation (besides having a perfect fluid in a
+<p>So far we didn’t do any approximation (besides having a perfect fluid in a
 vertical gravitation field).
-Now we assume a steady flow, so <span class="math">\({\partial {\bf
-v}\over\partial t}=0\)</span> and since points <span class="math">\(A\)</span> and <span class="math">\(B\)</span> are arbitrary, we get:</p>
-<div class="math">
+Now we assume a steady flow, so <span class="math notranslate nohighlight">\({\partial {\bf
+v}\over\partial t}=0\)</span> and since points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are arbitrary, we get:</p>
+<div class="math notranslate nohighlight">
 \[{v^2\over 2} + gz + {p\over\rho}={\rm const.}\]</div>
-<p>along the streamline. This is called the Bernoulli&#8217;s principle.
-If the fluid is not moving, we set <span class="math">\({\bf v}=0\)</span> in the equations above and
+<p>along the streamline. This is called the Bernoulli’s principle.
+If the fluid is not moving, we set <span class="math notranslate nohighlight">\({\bf v}=0\)</span> in the equations above and
 immediately get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[gz + {p\over\rho}={\rm const.}\]</div>
 <p>The last equation then holds everywhere in the (nonmoving) fluid (as opposed to
 the previous equation that only holds along the streamline).</p>
 <div class="section" id="hydrostatic-pressure">
 <h3>Hydrostatic Pressure<a class="headerlink" href="#hydrostatic-pressure" title="Permalink to this headline">¶</a></h3>
-<p>Let <span class="math">\(p_1\)</span> be the pressure on the water surface and <span class="math">\(p_2\)</span> the pressure <span class="math">\(h\)</span>
-meters below the surface. From the Bernoulli&#8217;s principle:</p>
-<div class="math">
+<p>Let <span class="math notranslate nohighlight">\(p_1\)</span> be the pressure on the water surface and <span class="math notranslate nohighlight">\(p_2\)</span> the pressure <span class="math notranslate nohighlight">\(h\)</span>
+meters below the surface. From the Bernoulli’s principle:</p>
+<div class="math notranslate nohighlight">
 \[{p_1\over\rho} = g\cdot (-h) + {p_2\over \rho}\]</div>
 <p>so</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[p_1 + h\rho g = p_2\]</div>
-<p>and we can see, that the pressure <span class="math">\(h\)</span> meters below the surface is <span class="math">\(h\rho g\)</span>
-plus the (atmospheric) pressure <span class="math">\(p_1\)</span> on the surface.</p>
+<p>and we can see, that the pressure <span class="math notranslate nohighlight">\(h\)</span> meters below the surface is <span class="math notranslate nohighlight">\(h\rho g\)</span>
+plus the (atmospheric) pressure <span class="math notranslate nohighlight">\(p_1\)</span> on the surface.</p>
 </div>
 <div class="section" id="torricelli-s-law">
-<h3>Torricelli&#8217;s Law<a class="headerlink" href="#torricelli-s-law" title="Permalink to this headline">¶</a></h3>
-<p>We want to find the speed <span class="math">\(v\)</span> of the water flowing out of the tank (of the
-height <span class="math">\(h\)</span>) through a small hole at the bottom. The (atmospheric) pressure at
-the water surface and also near the small hole is <span class="math">\(p_1\)</span>. From the Bernoulli&#8217;s
+<h3>Torricelli’s Law<a class="headerlink" href="#torricelli-s-law" title="Permalink to this headline">¶</a></h3>
+<p>We want to find the speed <span class="math notranslate nohighlight">\(v\)</span> of the water flowing out of the tank (of the
+height <span class="math notranslate nohighlight">\(h\)</span>) through a small hole at the bottom. The (atmospheric) pressure at
+the water surface and also near the small hole is <span class="math notranslate nohighlight">\(p_1\)</span>. From the Bernoulli’s
 principle:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{p_1\over\rho} = {v^2\over 2} + g\cdot (-h) + {p_1\over \rho}\]</div>
 <p>so:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[v=\sqrt{2g h}\]</div>
-<p>This is called the Torricelli&#8217;s law.</p>
+<p>This is called the Torricelli’s law.</p>
 </div>
 <div class="section" id="venturi-effect">
 <h3>Venturi Effect<a class="headerlink" href="#venturi-effect" title="Permalink to this headline">¶</a></h3>
-<p>A pipe with a cross section <span class="math">\(A_1\)</span>, pressure <span class="math">\(p_1\)</span> and the speed of a
-perfect liquid <span class="math">\(v_1\)</span> changes it&#8217;s cross section to <span class="math">\(A_2\)</span>, so the pressure
-changes to <span class="math">\(p_2\)</span> and the speed to <span class="math">\(v_2\)</span>. Given <span class="math">\(\Delta p = p_1-p_2\)</span>, <span class="math">\(A_1\)</span> and
-<span class="math">\(A_2\)</span>, calculate <span class="math">\(v_1\)</span> and <span class="math">\(v_2\)</span>.</p>
+<p>A pipe with a cross section <span class="math notranslate nohighlight">\(A_1\)</span>, pressure <span class="math notranslate nohighlight">\(p_1\)</span> and the speed of a
+perfect liquid <span class="math notranslate nohighlight">\(v_1\)</span> changes it’s cross section to <span class="math notranslate nohighlight">\(A_2\)</span>, so the pressure
+changes to <span class="math notranslate nohighlight">\(p_2\)</span> and the speed to <span class="math notranslate nohighlight">\(v_2\)</span>. Given <span class="math notranslate nohighlight">\(\Delta p = p_1-p_2\)</span>, <span class="math notranslate nohighlight">\(A_1\)</span> and
+<span class="math notranslate nohighlight">\(A_2\)</span>, calculate <span class="math notranslate nohighlight">\(v_1\)</span> and <span class="math notranslate nohighlight">\(v_2\)</span>.</p>
 <p>We use the continuity equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[A_1 v_1 = A_2 v_2\]</div>
-<p>and the Bernoulli&#8217;s principle:</p>
-<div class="math">
+<p>and the Bernoulli’s principle:</p>
+<div class="math notranslate nohighlight">
 \[{v_1^2\over 2} + {p_1\over\rho} = {v_2^2\over 2} + {p_2\over\rho}\]</div>
-<p>so we have two equations for two unknowns <span class="math">\(v_1\)</span> and <span class="math">\(v_2\)</span>, after solving it we
+<p>so we have two equations for two unknowns <span class="math notranslate nohighlight">\(v_1\)</span> and <span class="math notranslate nohighlight">\(v_2\)</span>, after solving it we
 get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[v_1 = A_2\sqrt{2\Delta p\over \rho(A_1^2-A_2^2)}\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[v_2 = A_1\sqrt{2\Delta p\over \rho(A_1^2-A_2^2)}\]</div>
 </div>
 <div class="section" id="hagen-poiseuille-law">
 <span id="index-2"></span><h3>Hagen-Poiseuille Law<a class="headerlink" href="#hagen-poiseuille-law" title="Permalink to this headline">¶</a></h3>
 <p>We assume incompressible (but viscuous) Newtonean fluid (in no external force
 field):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left({\partial {\bf v}\over\partial t} +{\bf v}\cdot\nabla{\bf v} \right) = -\nabla p + \mu\nabla^2{\bf v}\]</div>
-<p>flowing in the vertical pipe of radius <span class="math">\(R\)</span> and we further assume steady flow
-<span class="math">\({\partial {\bf v}\over\partial t}=0\)</span>, axis symmetry
-<span class="math">\(v_r=v_\theta=\partial_\theta(\cdots)=0\)</span> and a fully developed flow <span class="math">\(\partial_z
+<p>flowing in the vertical pipe of radius <span class="math notranslate nohighlight">\(R\)</span> and we further assume steady flow
+<span class="math notranslate nohighlight">\({\partial {\bf v}\over\partial t}=0\)</span>, axis symmetry
+<span class="math notranslate nohighlight">\(v_r=v_\theta=\partial_\theta(\cdots)=0\)</span> and a fully developed flow <span class="math notranslate nohighlight">\(\partial_z
 v_z=0\)</span>. We write the Navier-Stokes equations above in the cylindrical
 coordinates and using the stated assumptions, the only nonzero equations are:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[0=-\partial_r p\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[0=-\partial_z p+\mu{1\over r}\partial_r(r\partial_r v_z)\]</div>
-<p>from the first one we can see the <span class="math">\(p=p(z)\)</span> is a function of <span class="math">\(z\)</span> only and we can
-solve the second one for <span class="math">\(v_z=v_z(r)\)</span>:</p>
-<div class="math">
+<p>from the first one we can see the <span class="math notranslate nohighlight">\(p=p(z)\)</span> is a function of <span class="math notranslate nohighlight">\(z\)</span> only and we can
+solve the second one for <span class="math notranslate nohighlight">\(v_z=v_z(r)\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[v_z(r) = {1\over 4\mu}(\partial_z p) r^2 + C_1\log r + C_2\]</div>
-<p>We want <span class="math">\(v_z(r=0)\)</span> to be finite, so <span class="math">\(C_1=0\)</span>, next we assume the no slip
-boundary conditions <span class="math">\(v_z(r=R)=0\)</span>, so <span class="math">\(C_2 = -{1\over 4\mu}(\partial_z p) R^2\)</span>
+<p>We want <span class="math notranslate nohighlight">\(v_z(r=0)\)</span> to be finite, so <span class="math notranslate nohighlight">\(C_1=0\)</span>, next we assume the no slip
+boundary conditions <span class="math notranslate nohighlight">\(v_z(r=R)=0\)</span>, so <span class="math notranslate nohighlight">\(C_2 = -{1\over 4\mu}(\partial_z p) R^2\)</span>
 and we get the parabolic velocity profile:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[v_z(r) = {1\over 4\mu}(-\partial_z p) (R^2-r^2)\]</div>
 <p>Assuming that the pressure decreases linearly across the length of the pipe, we
-have <span class="math">\(-\partial_z p = {\Delta P\over L}\)</span> and we get:</p>
-<div class="math">
+have <span class="math notranslate nohighlight">\(-\partial_z p = {\Delta P\over L}\)</span> and we get:</p>
+<div class="math notranslate nohighlight">
 \[v_z(r) = {\Delta P\over 4\mu L}(R^2-r^2)\]</div>
 <p>We can now calculate the volumetric flow rate:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[Q = {\d V\over\d t} ={\d\over \d t}\int z\, \d S =\int {\d z\over \d t} \d S =\int v_z \,\d S =\int_0^{2\pi}\int_0^R v_z\, r\, \d r\,\d\phi =\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[={\Delta P\pi\over 2\mu L}\int_0^R (R^2-r^2) r\, \d r ={\Delta P \pi R^4\over 8 \mu L}\]</div>
-<p>so we can see that it depends on the 4th power of <span class="math">\(R\)</span>. This is called the
+<p>so we can see that it depends on the 4th power of <span class="math notranslate nohighlight">\(R\)</span>. This is called the
 Hagen-Poiseuille law.</p>
 </div>
 </div>
@@ -760,7 +749,7 @@ Hagen-Poiseuille law.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -779,9 +768,9 @@ Hagen-Poiseuille law.</p>
 <li><a class="reference internal" href="#time-discretization">Time Discretization</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#bernoulli-s-principle">Bernoulli&#8217;s Principle</a><ul>
+<li><a class="reference internal" href="#bernoulli-s-principle">Bernoulli’s Principle</a><ul>
 <li><a class="reference internal" href="#hydrostatic-pressure">Hydrostatic Pressure</a></li>
-<li><a class="reference internal" href="#torricelli-s-law">Torricelli&#8217;s Law</a></li>
+<li><a class="reference internal" href="#torricelli-s-law">Torricelli’s Law</a></li>
 <li><a class="reference internal" href="#venturi-effect">Venturi Effect</a></li>
 <li><a class="reference internal" href="#hagen-poiseuille-law">Hagen-Poiseuille Law</a></li>
 </ul>
@@ -796,29 +785,30 @@ Hagen-Poiseuille law.</p>
   <h4>Next topic</h4>
   <p class="topless"><a href="mhd.html"
                         title="next chapter">MHD Equations</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/fluid-dynamics/general.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/fluid-dynamics/general.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -830,13 +820,13 @@ Hagen-Poiseuille law.</p>
         <li class="right" >
           <a href="main.html" title="Fluid Dynamics"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Fluid Dynamics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Fluid Dynamics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

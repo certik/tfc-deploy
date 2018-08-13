@@ -1,30 +1,20 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Operators &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Operators &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Classical Mechanics, Special and General Relativity" href="../relativity/main.html" />
     <link rel="prev" title="Differential Geometry" href="differential-geometry.html" />
     <script type="text/javascript">
@@ -42,8 +32,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -60,7 +49,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -72,39 +61,39 @@
         <li class="right" >
           <a href="differential-geometry.html" title="Differential Geometry"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="operators">
 <h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>The domain of the operator <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> is <img class="math" src="../_images/math/ecd906bf2314e7403e50510a8afbf5831fd93dc3.png" alt="D(A)"/>, a subspace of the Hilbert space
-<img class="math" src="../_images/math/99749ee3833d29a7a37d5b1dd4e114b7a57103e8.png" alt="\mathscr{H}"/>.
+<p>The domain of the operator <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> is <img class="math" src="../_images/math/c9b9119cde94b2fded84c3f66f9fb8822c06e85a.svg" alt="D(A)"/>, a subspace of the Hilbert space
+<img class="math" src="../_images/math/c2e16db07868b8e2475182264e566405e1c5d064.svg" alt="\mathscr{H}"/>.
 Linear operator is:</p>
 <div class="math">
-<p><img src="../_images/math/7f1825acc4c548e9ecad22bea42086163a7037d0.png" alt="A (\alpha \ket{u} + \beta \ket{v}) = \alpha A \ket{u} + \beta A \ket{v}"/></p>
-</div><p>for all <img class="math" src="../_images/math/ca24ae3cbe370564a49ff92f5858b3f83e0cf4e5.png" alt="\ket{u}, \ket{v} \in D(A)"/>.
+<p><img src="../_images/math/e117538aa8ab207870349171e9f2e8ea08723072.svg" alt="A (\alpha \ket{u} + \beta \ket{v}) = \alpha A \ket{u} + \beta A \ket{v}"/></p>
+</div><p>for all <img class="math" src="../_images/math/d6072b3bd535dbed76fa1f4b4ce3e878af82514d.svg" alt="\ket{u}, \ket{v} \in D(A)"/>.
 Symmetric operator is:</p>
 <div class="math">
-<p><img src="../_images/math/46ea6b5f811a9ca3b4ab65817523c6ea6ed4c517.png" alt="\braket{u|Av} = \braket{Au|v}"/></p>
-</div><p>for all <img class="math" src="../_images/math/ca24ae3cbe370564a49ff92f5858b3f83e0cf4e5.png" alt="\ket{u}, \ket{v} \in D(A)"/> dense in <img class="math" src="../_images/math/99749ee3833d29a7a37d5b1dd4e114b7a57103e8.png" alt="\mathscr{H}"/>.
-If <img class="math" src="../_images/math/ecd906bf2314e7403e50510a8afbf5831fd93dc3.png" alt="D(A)"/> is dense in <img class="math" src="../_images/math/99749ee3833d29a7a37d5b1dd4e114b7a57103e8.png" alt="\mathscr{H}"/>, then the adjoint operator <img class="math" src="../_images/math/eba894bf7621708b90e3724d96a437fd6497e30d.png" alt="A^\dag"/> is
+<p><img src="../_images/math/0b9bc33e12724fd26cc88ecd9574c5b026e5fda0.svg" alt="\braket{u|Av} = \braket{Au|v}"/></p>
+</div><p>for all <img class="math" src="../_images/math/d6072b3bd535dbed76fa1f4b4ce3e878af82514d.svg" alt="\ket{u}, \ket{v} \in D(A)"/> dense in <img class="math" src="../_images/math/c2e16db07868b8e2475182264e566405e1c5d064.svg" alt="\mathscr{H}"/>.
+If <img class="math" src="../_images/math/c9b9119cde94b2fded84c3f66f9fb8822c06e85a.svg" alt="D(A)"/> is dense in <img class="math" src="../_images/math/c2e16db07868b8e2475182264e566405e1c5d064.svg" alt="\mathscr{H}"/>, then the adjoint operator <img class="math" src="../_images/math/b9354d65d5a1e43d45bcfce399dc8b6a92b2c659.svg" alt="A^\dag"/> is
 defined by</p>
 <div class="math">
-<p><img src="../_images/math/a123873408e84e589e1ff09209b0f45df8f75619.png" alt="\braket{u|A^\dag v} = \braket{Au|v}"/></p>
-</div><p>for all <img class="math" src="../_images/math/c87e91416bceb290bdd98582edb37869e633ed32.png" alt="\ket{u} \in D(A)"/>. The domain <img class="math" src="../_images/math/33e6959a125b243f33a136bf5d6b5e9a6c74b1ee.png" alt="D(A^\dag)"/> is given by all
-<img class="math" src="../_images/math/8f8349fbe2590ef7d06bc8710640b0200cf5effc.png" alt="\ket{v}"/> for which the above relation holds. It can be shown that
-<img class="math" src="../_images/math/bf89d8f4adcd1d5f3fee5e76de0fd93a811e4e5a.png" alt="D(A) \subset D(A^\dag)"/>.</p>
-<p>Operator <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> is self-adjoint if <img class="math" src="../_images/math/3d93df4d11cac9148185db49ad5249c615fd7301.png" alt="A = A^\dag"/>.
-Symmetric operator is self-adjoint only if <img class="math" src="../_images/math/c70565a6cd795f931bb8c3386a1c063fbc533f41.png" alt="D(A) = D(A^\dag)"/>. (Bounded
+<p><img src="../_images/math/25a84b3d5fbdc657a3a87a465eaf260834678d20.svg" alt="\braket{u|A^\dag v} = \braket{Au|v}"/></p>
+</div><p>for all <img class="math" src="../_images/math/59983795914432d9c13e442f35e68c9125cbda86.svg" alt="\ket{u} \in D(A)"/>. The domain <img class="math" src="../_images/math/5ffb372586c89ffe79a5c257526bb763877b02f4.svg" alt="D(A^\dag)"/> is given by all
+<img class="math" src="../_images/math/97be2d8418bc735860a8028ec09782a882545601.svg" alt="\ket{v}"/> for which the above relation holds. It can be shown that
+<img class="math" src="../_images/math/45f283b48f3191008e936230948b00e6dd41c677.svg" alt="D(A) \subset D(A^\dag)"/>.</p>
+<p>Operator <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> is self-adjoint if <img class="math" src="../_images/math/938cf6fe8c194d8d4bf29cdd5a9c6a1947946273.svg" alt="A = A^\dag"/>.
+Symmetric operator is self-adjoint only if <img class="math" src="../_images/math/2f6419b96be8f6493009dbe0f4e4fe2fb776c2b8.svg" alt="D(A) = D(A^\dag)"/>. (Bounded
 symmetric operator is always self-adjoint.)
 Hermitean operator is a bounded symmetric operator.</p>
 <p>Hermitian implies self-adjoint implies symmetric, but all converse implications
@@ -114,81 +103,81 @@ unbounded by default).</p>
 </div>
 <div class="section" id="spectrum">
 <h2>Spectrum<a class="headerlink" href="#spectrum" title="Permalink to this headline">¶</a></h2>
-<p>To obtain a spectrum of the operator <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/>, we need to solve the following
+<p>To obtain a spectrum of the operator <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/>, we need to solve the following
 problem:</p>
 <div class="math">
-<p><img src="../_images/math/8ab670cbd9267bbc01119620567a3ebec94f4b2e.png" alt="A \ket{\lambda} = \lambda \ket{\lambda}"/></p>
-</div><p>Those values of <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> for which the solution <img class="math" src="../_images/math/6a35d53fd4756a5d884339a37caa5cde1739d36e.png" alt="\ket{\lambda}\in\mathscr{H}"/>
-belong to the discrete part of the spectrum. <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> are called eigenvalues
-and <img class="math" src="../_images/math/ec9cf2d3316c8b6b15d637ac8d7be62906d616ad.png" alt="\ket{\lambda}"/> eigenvectors.
-Those values of <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> for which <img class="math" src="../_images/math/ec9cf2d3316c8b6b15d637ac8d7be62906d616ad.png" alt="\ket{\lambda}"/> can be normalized
+<p><img src="../_images/math/caa523820e9bb0d5c03509c0408ea867ff349aaf.svg" alt="A \ket{\lambda} = \lambda \ket{\lambda}"/></p>
+</div><p>Those values of <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/> for which the solution <img class="math" src="../_images/math/4bf2582a647b556aa4a64d8ad99cf6ff94ad3469.svg" alt="\ket{\lambda}\in\mathscr{H}"/>
+belong to the discrete part of the spectrum. <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/> are called eigenvalues
+and <img class="math" src="../_images/math/3b20385d309d48ed9c3433f0ec8265969c10a41d.svg" alt="\ket{\lambda}"/> eigenvectors.
+Those values of <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/> for which <img class="math" src="../_images/math/3b20385d309d48ed9c3433f0ec8265969c10a41d.svg" alt="\ket{\lambda}"/> can be normalized
 to a delta function:</p>
 <div class="math">
-<p><img src="../_images/math/d50e0ef0730ccade95e073a7da80331c300102bb.png" alt="\braket{\lambda|\kappa} = \delta(\lambda-\kappa)"/></p>
+<p><img src="../_images/math/c94b382a4252a9d36b09441a4cdf457de5201f01.svg" alt="\braket{\lambda|\kappa} = \delta(\lambda-\kappa)"/></p>
 </div><p>belong to the continuous part of the spectrum (note that in this case
-<img class="math" src="../_images/math/4027e4e5c7b2f333eb73246531705f26eb97ea5b.png" alt="\ket{\lambda}\notin\mathscr{H}"/>).</p>
+<img class="math" src="../_images/math/721bf79998ffc69c04fc589415389e9300eeb2a2.svg" alt="\ket{\lambda}\notin\mathscr{H}"/>).</p>
 <p>Eigenvectors belonging to the continous part of the spectrum obey the
 completeness relation:</p>
 <div class="math">
-<p><img src="../_images/math/e08e96d5141cda2c7f88b97165ee8220673c6461.png" alt="\int \ket{\lambda}\bra{\lambda} \d \lambda = \one"/></p>
+<p><img src="../_images/math/9b02f7afa5e5141616970932796f178da60e072f.svg" alt="\int \ket{\lambda}\bra{\lambda} \d \lambda = \one"/></p>
 </div><p>Eigenvectors belonging to the discrete part obey the following completeness
 relation:</p>
 <div class="math">
-<p><img src="../_images/math/0bc5756ba8f662e9349d943acfb6dca7f3020983.png" alt="\sum_\lambda \ket{\lambda}\bra{\lambda} \d \lambda = \one"/></p>
+<p><img src="../_images/math/9404ed186d5d9e7853ff8599f825cef0f0d2367e.svg" alt="\sum_\lambda \ket{\lambda}\bra{\lambda} \d \lambda = \one"/></p>
 </div><p>The sum or integral runs over the whole spectrum (if the spectrum contains both
 discrete and continous part, we simply combine sums and integrals).</p>
 <p>Spectrum of a self-adjoint operator is real, because</p>
 <div class="math">
-<p><img src="../_images/math/db78e6439d755c3e22097c3d6ff2ca1b9cc115e3.png" alt="\braket{\lambda|A|\lambda} = \lambda \braket{\lambda|\lambda} =
+<p><img src="../_images/math/c8d52d0d36cb08382ae491ea5037eac25ea82996.svg" alt="\braket{\lambda|A|\lambda} = \lambda \braket{\lambda|\lambda} =
     \lambda^* \braket{\lambda|\lambda}"/></p>
 </div><p>The eigenvectors are orthogonal:</p>
 <div class="math">
-<p><img src="../_images/math/2bde9a1931fec0be7fab3e81e90c9a63e14a2796.png" alt="\braket{\lambda|A|\kappa} = \kappa \braket{\lambda|\kappa} =
+<p><img src="../_images/math/6b0bc6933387c5e6025b70513b13117ce7cf41fe.svg" alt="\braket{\lambda|A|\kappa} = \kappa \braket{\lambda|\kappa} =
     \lambda \braket{\lambda|\kappa}
 
 (\kappa-\lambda) \braket{\lambda|\kappa} = 0"/></p>
-</div><p>So for <img class="math" src="../_images/math/afc83b9bf29d98c9b9f31f53ff7d6b2ad55ad3f1.png" alt="\kappa\ne\lambda"/> we get <img class="math" src="../_images/math/cbec04741e32617f568d2bb87fb8d95d79e1299a.png" alt="\braket{\lambda|\kappa}=0"/>,
-for <img class="math" src="../_images/math/b5ba913822d04f4f3259f797e914a9dc97886403.png" alt="\kappa=\lambda"/> the <img class="math" src="../_images/math/2d197c0e52e1daa3f58c0a1c40163e16a5da58fe.png" alt="\braket{\lambda|\lambda}"/> is equal to 1 if
-<img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> belongs to the discrete spectrum and we get:</p>
+</div><p>So for <img class="math" src="../_images/math/8f8cd401a517c66dfab654215bcfaf8a0b4b729e.svg" alt="\kappa\ne\lambda"/> we get <img class="math" src="../_images/math/72186d7d344daba338ab88ab9ebf78ee51dcddae.svg" alt="\braket{\lambda|\kappa}=0"/>,
+for <img class="math" src="../_images/math/96c3119a41084573e5a2556e190bcbad45f212bf.svg" alt="\kappa=\lambda"/> the <img class="math" src="../_images/math/77505a15a30e0a227e1851a27c6bb59a9a4ca139.svg" alt="\braket{\lambda|\lambda}"/> is equal to 1 if
+<img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/> belongs to the discrete spectrum and we get:</p>
 <div class="math">
-<p><img src="../_images/math/27241375c02a3859538e47b3f3be761cd79482dc.png" alt="\braket{\lambda|\kappa} = \delta_{\lambda\kappa}"/></p>
+<p><img src="../_images/math/7403e07432bc15b33326c090a168f7744c1872eb.svg" alt="\braket{\lambda|\kappa} = \delta_{\lambda\kappa}"/></p>
 </div><p>or it is normalized as a delta function if it belongs to the continous part:</p>
 <div class="math">
-<p><img src="../_images/math/d50e0ef0730ccade95e073a7da80331c300102bb.png" alt="\braket{\lambda|\kappa} = \delta(\lambda-\kappa)"/></p>
+<p><img src="../_images/math/c94b382a4252a9d36b09441a4cdf457de5201f01.svg" alt="\braket{\lambda|\kappa} = \delta(\lambda-\kappa)"/></p>
 </div><p>As such, eigenvectors of a self-adjoint operator are complete and orthogonal
 in the above sense. Thus any function from the space can then be expanded into
 the series:</p>
 <div class="math">
-<p><img src="../_images/math/9594100b4a59b3f390bed4196fd1655d1e511842.png" alt="f(x) = \braket{x|f} = \sum_\lambda \braket{x|\lambda}\braket{\lambda|f}"/></p>
-</div><p>where <img class="math" src="../_images/math/528385ab654d56733559720606e0c5df4d40c8bb.png" alt="\braket{x|\lambda}"/> are the eigenvectors and the
-coefficients <img class="math" src="../_images/math/2bb8c517baa015e338d7a872a3bf064b8afb96ef.png" alt="\braket{\lambda|f}"/> are given by:</p>
+<p><img src="../_images/math/560a49a8b8621e2dc8f93cf501975f5f8ff28677.svg" alt="f(x) = \braket{x|f} = \sum_\lambda \braket{x|\lambda}\braket{\lambda|f}"/></p>
+</div><p>where <img class="math" src="../_images/math/eaecd8d611b3a945a1877db7b512b7af177bcdc3.svg" alt="\braket{x|\lambda}"/> are the eigenvectors and the
+coefficients <img class="math" src="../_images/math/1ffaeedaf786f79d2111287bd734c081457fb39f.svg" alt="\braket{\lambda|f}"/> are given by:</p>
 <div class="math">
-<p><img src="../_images/math/9d6f9d02f7ccef8bbac2d400898bbcee0157e6e0.png" alt="\braket{\lambda|f} = \int \braket{\lambda|x}\braket{x|f} \d x
+<p><img src="../_images/math/f9a5fca7ff1deac4fd637306e47d865880276fe0.svg" alt="\braket{\lambda|f} = \int \braket{\lambda|x}\braket{x|f} \d x
     = \int \braket{\lambda|x} f(x) \d x"/></p>
-</div><p>The sum over <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/> runs over the whole spectrum (i.e. it becomes an
-integral over the continuos parts). Also the coefficients <img class="math" src="../_images/math/2bb8c517baa015e338d7a872a3bf064b8afb96ef.png" alt="\braket{\lambda|f}"/>
+</div><p>The sum over <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/> runs over the whole spectrum (i.e. it becomes an
+integral over the continuos parts). Also the coefficients <img class="math" src="../_images/math/1ffaeedaf786f79d2111287bd734c081457fb39f.svg" alt="\braket{\lambda|f}"/>
 are either discrete or continous depending on the part of the spectrum.
 The series converges in the norm, i.e. the following norm goes to zero as we
-sum over <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce49a7dc4a.png" alt="\lambda"/>:</p>
+sum over <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/>:</p>
 <div class="math">
-<p><img src="../_images/math/db83c7d93c1bae3cabc4a64a9ee5da0765226635.png" alt="\left\| f(x) - \sum_\lambda \braket{x|\lambda}\braket{\lambda|f} \right\|
+<p><img src="../_images/math/dd1e915b0dcdf115c93322a2a4d0c4862b901234.svg" alt="\left\| f(x) - \sum_\lambda \braket{x|\lambda}\braket{\lambda|f} \right\|
     \to 0"/></p>
 </div></div>
 <div class="section" id="derivative-operator">
 <span id="deriv-operator"></span><h2>Derivative Operator<a class="headerlink" href="#derivative-operator" title="Permalink to this headline">¶</a></h2>
 <p>We have the eigenvalue problem</p>
 <div class="math">
-<p><img src="../_images/math/cf9ab471c8498cd51826f8cc2ff634746d548a12.png" alt="A u = \lambda u"/></p>
+<p><img src="../_images/math/1204c87c38f4b266215a23ab3c09406fce1bc946.svg" alt="A u = \lambda u"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/920113f7b6c92f6c2e64cb4b071511a0d648e2d8.png" alt="A = -i {\d \over \d x}"/></p>
-</div><p>The operator <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> is unbounded.
-<img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> is self-adjoint if:</p>
+<p><img src="../_images/math/158f1c09de54e7604093786c1d3d79255d2d2f4d.svg" alt="A = -i {\d \over \d x}"/></p>
+</div><p>The operator <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> is unbounded.
+<img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> is self-adjoint if:</p>
 <div class="math">
-<p><img src="../_images/math/95957c0dece845346497b20e51d258b0d48804ae.png" alt="\int_a^b u^*(x) A v(x) \d x = \int_a^b (A u(x))^* v(x) \d x"/></p>
+<p><img src="../_images/math/8e0601f25f0d8c5a7a4ec9687959911da04aaf12.svg" alt="\int_a^b u^*(x) A v(x) \d x = \int_a^b (A u(x))^* v(x) \d x"/></p>
 </div><p>So</p>
 <div class="math">
-<p><img src="../_images/math/923c1b1d5aaf7934479125ade4556841675d5d47.png" alt="\int_a^b u^*(x) A v(x) \d x
+<p><img src="../_images/math/1d6834f8afab1f4a986e698cf96a1da794d8ab84.svg" alt="\int_a^b u^*(x) A v(x) \d x
     = \int_a^b u^*(x) \left(-i {\d \over \d x}\right) v(x) \d x =
 
     = \int_a^b \left(i {\d \over \d x} u^*(x) \right) v(x) \d x
@@ -198,26 +187,26 @@ sum over <img class="math" src="../_images/math/ce4588fd900d02afcbd260bc07f54cce
         -i[u^*(x) v(x)]^b_a =
 
     = \int_a^b (A u(x))^* v(x) \d x -i[u^*(x) v(x)]^b_a"/></p>
-</div><p>The operator is self-adjoint if and only if <img class="math" src="../_images/math/5d104d10db380d1b8f3a4579fb2367d0f5017147.png" alt="[u^*(x) v(x)]^b_a=0"/>.
+</div><p>The operator is self-adjoint if and only if <img class="math" src="../_images/math/75dd5453369f70687e8fb7e749e5ff4dedd410c2.svg" alt="[u^*(x) v(x)]^b_a=0"/>.
 Few boundary conditions that satisfy this condition:</p>
 <ul class="simple">
 <li>Dirichlet boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/f6cc666a169631e75c6575dc93bea5e2c9fc90bb.png" alt="u(a) = 0, \quad u(b) = 0"/></p>
+<p><img src="../_images/math/03a0eb781903644feb3a5d63e2454f5968cd5395.svg" alt="u(a) = 0, \quad u(b) = 0"/></p>
 </div><ul class="simple">
 <li>Periodic boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/6bec18ec318db424b68e9f1ead2b373b0b39a227.png" alt="u(a) = u(b)"/></p>
+<p><img src="../_images/math/a420be3887d14405554484be2ce6df240a805a37.svg" alt="u(a) = u(b)"/></p>
 </div><ul class="simple">
 <li>Antiperiodic boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/f11a187762c455b13d4baac7f4e053baab0ea120.png" alt="u(a) = -u(b)"/></p>
+<p><img src="../_images/math/9b9ad1260108da1b0972eef1d36bc1fc3cd2030d.svg" alt="u(a) = -u(b)"/></p>
 </div><p>Solving the eigenproblem:</p>
 <div class="math">
-<p><img src="../_images/math/9f881008bc4b36af865c01a52fbe1c9ab058c36c.png" alt="A u = \lambda u
+<p><img src="../_images/math/c5aeefa3c50aa1049f6efc83fe91f61555cc4f72.svg" alt="A u = \lambda u
 
 -i {\d \over \d x} u = \lambda u
 
@@ -227,22 +216,22 @@ u(x) = e^{i\lambda x}"/></p>
 <p>We restrict our space to periodic functions.
 Applying the periodic boundary condition:</p>
 <div class="math">
-<p><img src="../_images/math/69a7ca2ac983e34131c7f71eaaac5b209e9f45d8.png" alt="u(a) = e^{i\lambda a} = u(b) = e^{i\lambda b}"/></p>
+<p><img src="../_images/math/6e8a67308ce08a7ce33bb7daa62105f4614d03f6.svg" alt="u(a) = e^{i\lambda a} = u(b) = e^{i\lambda b}"/></p>
 </div><p>so</p>
 <div class="math">
-<p><img src="../_images/math/c1c766d7ab07d8b75c6cc542964417cb44ce106a.png" alt="e^{i\lambda (b-a)} = 1
+<p><img src="../_images/math/e2bc4d8e8d5da9d5dcd41fc411657f9fd024ccfa.svg" alt="e^{i\lambda (b-a)} = 1
 
 \lambda = {2\pi n\over b-a}\quad\quad{\mbox{for $n=0, \pm 1, \pm 2, \dots$}}"/></p>
 </div><p>The normalized eigenvectors are:</p>
 <div class="math">
-<p><img src="../_images/math/0febd3b6706c69a7fa36c21319b43dc2c9e8a3b3.png" alt="u_n(x) = {1\over\sqrt{b-a}} e^{i {2\pi n\over b-a} x}"/></p>
+<p><img src="../_images/math/a137ccc258b989dac89ee8e8930c7af5bae2f146.svg" alt="u_n(x) = {1\over\sqrt{b-a}} e^{i {2\pi n\over b-a} x}"/></p>
 </div><p>These eigenvectors belong to our space and as such all
-<img class="math" src="../_images/math/d515398f8367337684538e5b0a9705d4c2f28175.png" alt="\lambda = {2\pi n\over b-a}"/> form a discrete spectrum. Other solutions
+<img class="math" src="../_images/math/9d6f89db583a1dc96a93fe0639b0c39a3c4fe5f2.svg" alt="\lambda = {2\pi n\over b-a}"/> form a discrete spectrum. Other solutions
 do not satisfy the periodic boundary condition and so there is no continous
 part in the spectrum.</p>
 <p>The eigenvectors must be orthogonal, as we can check:</p>
 <div class="math">
-<p><img src="../_images/math/c3b73e70d605da7b3c642df94d42819d74d574b5.png" alt="\int_a^b u_n^*(x) u_m(x) \d x =
+<p><img src="../_images/math/d43d41b5cd0673ce2a5df8a4687cc7b342f5bbcb.svg" alt="\int_a^b u_n^*(x) u_m(x) \d x =
 
 = \int_a^b
     {1\over\sqrt{b-a}} e^{-i {2\pi n\over b-a} x}
@@ -280,15 +269,15 @@ part in the spectrum.</p>
   \delta_{mn}"/></p>
 </div><p>The eigenvectors must be complete:</p>
 <div class="math">
-<p><img src="../_images/math/01cced3a7a0e8ee1ce3d716c0215971a98f972b4.png" alt="\sum_{n=-\infty}^\infty \ket{n}\bra{n} = \one
+<p><img src="../_images/math/196cebc298895f507c85aaccc75b01e8d9359541.svg" alt="\sum_{n=-\infty}^\infty \ket{n}\bra{n} = \one
 
 \sum_{n=-\infty}^\infty \braket{x|n}\braket{n|x'} = \braket{x|x'}
 
 \sum_{n=-\infty}^\infty u_n(x) u_n^*(x') \d x = \delta(x-x')"/></p>
-</div><p>Any function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> can then be expanded on the interval <img class="math" src="../_images/math/da2e551d2ca2155b8d8f4935d2e9757722c9bab6.png" alt="[a, b]"/> into the
+</div><p>Any function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> can then be expanded on the interval <img class="math" src="../_images/math/88aa2db811b7a0e9fe75be59bb90b7bae0b65ae9.svg" alt="[a, b]"/> into the
 Fourier series:</p>
 <div class="math">
-<p><img src="../_images/math/ec8acecbd2334417e44f48231b6a5d9699e0f83a.png" alt="f(x) = \braket{x|f} = \sum_{n=-\infty}^\infty \braket{x|n}\braket{n|f}
+<p><img src="../_images/math/6e97e8d9291229f813e56b453c201eb4adcd928f.svg" alt="f(x) = \braket{x|f} = \sum_{n=-\infty}^\infty \braket{x|n}\braket{n|f}
 = \sum_{n=-\infty}^\infty c_n' u_n(x)
 = \sum_{n=-\infty}^\infty c_n' {1\over\sqrt{b-a}} e^{i {2\pi n\over b-a} x}
 = \sum_{n=-\infty}^\infty c_n e^{i {2\pi n\over b-a} x}
@@ -298,9 +287,9 @@ c_n = c_n' {1\over\sqrt{b-a}}
     = {1\over\sqrt{b-a}} \int_a^b \braket{n|x}\braket{x|f} \d x
     = {1\over\sqrt{b-a}} \int_a^b u_n^*(x) f(x) \d x
     = {1\over b-a} \int_a^b e^{-i {2\pi n\over b-a} x} f(x) \d x"/></p>
-</div><p>Equivalently, this can be written using <img class="math" src="../_images/math/6fb300dacfcde1b57ad070409262b1743e0cd966.png" alt="\sin"/> and <img class="math" src="../_images/math/bb5e108fdc4bf4fb6151cb922992f23bc6c35985.png" alt="\cos"/> directly:</p>
+</div><p>Equivalently, this can be written using <img class="math" src="../_images/math/5b2414886f23ef29a055431a547d69cdf8c68c44.svg" alt="\sin"/> and <img class="math" src="../_images/math/c25a9ffd537851d2ca50528ba77b25608c7c8a6f.svg" alt="\cos"/> directly:</p>
 <div class="math">
-<p><img src="../_images/math/5f138a747403f72e12eca77395c0d08c885eac14.png" alt="f(x)
+<p><img src="../_images/math/90eeb01d266df1a7fc33314180891b3e56531f65.svg" alt="f(x)
     = \sum_{n=-\infty}^\infty c_n
         e^{i {2\pi n\over b-a} x} =
 
@@ -313,19 +302,19 @@ c_n = c_n' {1\over\sqrt{b-a}}
         \cos \left({2\pi n\over b-a} x\right)
     + \sum_{n=1}^\infty i (c_n - c_{-n})
         \sin \left({2\pi n\over b-a} x\right)"/></p>
-</div><p>By introducing the coefficients <img class="math" src="../_images/math/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png" alt="a_n"/> and <img class="math" src="../_images/math/8ffd01cdc48042ce7c67d8edcd4904809831cfe4.png" alt="b_n"/>:</p>
+</div><p>By introducing the coefficients <img class="math" src="../_images/math/fa369c3bedf7644f1ba61868776392188d645366.svg" alt="a_n"/> and <img class="math" src="../_images/math/12283e3f046682d1a6f87bb1f2b11e181df387db.svg" alt="b_n"/>:</p>
 <div class="math">
-<p><img src="../_images/math/459ec8b3e6f26fbf145b3865f5675f29f7ec83bf.png" alt="a_n &amp;= c_n + c_{-n}      \quad\quad {\mbox{for } n = 0, 1, 2, \dots} \\
+<p><img src="../_images/math/74b6873682182c91ae6381d552861b959f0d029d.svg" alt="a_n &amp;= c_n + c_{-n}      \quad\quad {\mbox{for } n = 0, 1, 2, \dots} \\
 b_n &amp;= i(c_n - c_{-n})   \quad\quad {\mbox{for } n = 1, 2, \dots}"/></p>
 </div><p>we can write the series as:</p>
 <div class="math">
-<p><img src="../_images/math/efd924f0f153897fcc72fd1694079d8cd054be6f.png" alt="f(x)
+<p><img src="../_images/math/d3057ff9a3dc982332d5bc77f1518c136628010d.svg" alt="f(x)
     = {a_0\over 2} + \sum_{n=1}^\infty a_n
         \cos \left({2\pi n\over b-a} x\right)
     + \sum_{n=1}^\infty b_n \sin \left({2\pi n\over b-a} x\right)"/></p>
 </div><p>we get:</p>
 <div class="math">
-<p><img src="../_images/math/66de268a0d58cb4c82a76aacb5ebe786e0cdddb8.png" alt="a_n = c_n + c_{-n}
+<p><img src="../_images/math/ec902a67e227e7d1811735fa3aeddd36c4816488.svg" alt="a_n = c_n + c_{-n}
     = {1\over b-a} \int_a^b \left(
         e^{-i {2\pi n\over b-a} x} + e^{i {2\pi n\over b-a} x}\right)
         f(x) \d x
@@ -339,44 +328,44 @@ b_n = i(c_n - c_{-n})
     = {2\over b-a} \int_a^b \sin \left({2\pi n\over b-a} x\right)
         f(x) \d x"/></p>
 </div><p>Conceptually, we are taking the complex orthonormal basis
-<img class="math" src="../_images/math/2bd384ffc43f6cebe3479c89d44e9125a3b36dee.png" alt="u_n(x) = {1\over\sqrt{b-a}} e^{i {2\pi n\over b-a} x}"/> and creating
-a real orthonormal basis <img class="math" src="../_images/math/80f3c003b8a34f1fe6911f31a8470a64f20f1248.png" alt="v_n(x)"/> composed of
-<img class="math" src="../_images/math/4da05a286595094186f139b1a2ed6a0840b09e5a.png" alt="u_0"/>, <img class="math" src="../_images/math/10d886a953135dc6eebb1a12286084c647e656d9.png" alt="\Re u_1"/>, <img class="math" src="../_images/math/b7ec09d63fdbda2b7945e9512d319fe813c4935f.png" alt="\Re u_2"/>, ..., <img class="math" src="../_images/math/104cbcaea2aa23fa24a6c53d50f20c13c3998222.png" alt="\Im u_1"/>, <img class="math" src="../_images/math/c65ba48f7ebecb2effab5bd0bdf1be52b9ee1b69.png" alt="\Im u_2"/>, ... as follows:</p>
+<img class="math" src="../_images/math/454de6a6efd61263ee0779896bb33f7155383e64.svg" alt="u_n(x) = {1\over\sqrt{b-a}} e^{i {2\pi n\over b-a} x}"/> and creating
+a real orthonormal basis <img class="math" src="../_images/math/8ff795eec4a9b4d2df239f3b6e5b808eb4bd66e0.svg" alt="v_n(x)"/> composed of
+<img class="math" src="../_images/math/5414bd9de5ba54a76b78fff23f5e0236c2dfb11d.svg" alt="u_0"/>, <img class="math" src="../_images/math/f80d94627bb8d8e6ec5756d3866de4dc0d576c94.svg" alt="\Re u_1"/>, <img class="math" src="../_images/math/aacf6f61b86e1bee1ae26d822174e32123e42594.svg" alt="\Re u_2"/>, …, <img class="math" src="../_images/math/1c1cb9f708e5bed56917071cf59cd35d7260ab48.svg" alt="\Im u_1"/>, <img class="math" src="../_images/math/680f866fcb6d04e106390d3ef2de9f9e6d591d74.svg" alt="\Im u_2"/>, … as follows:</p>
 <div class="math">
-<p><img src="../_images/math/3a4c5bf18623e16b802f233f8b8990b30e9977b5.png" alt="v_n(x) = \begin{cases}
+<p><img src="../_images/math/104bcad612be108081c268046deaaf65329c6d96.svg" alt="v_n(x) = \begin{cases}
     \sqrt{2} \Re u_n =  {\sqrt 2\over\sqrt{b-a}}\cos {2\pi\over b-a} n x
         &amp; \mbox{for } n &gt; 0\\
     u_0  = {1\over\sqrt{b-a}}                     &amp; \mbox{for } n = 0\\
     \sqrt{2} \Im u_{|n|} = {\sqrt 2\over\sqrt{b-a}}
         \sin {2\pi\over b-a} |n| x     &amp; \mbox{for } n &lt; 0\\
     \end{cases}"/></p>
-</div><p>We are only summing over the positive arguments in <img class="math" src="../_images/math/6fb300dacfcde1b57ad070409262b1743e0cd966.png" alt="\sin"/> and <img class="math" src="../_images/math/bb5e108fdc4bf4fb6151cb922992f23bc6c35985.png" alt="\cos"/>, thus the
-absolute value for <img class="math" src="../_images/math/55f454e4ea0c4440992e860d2d18ac610b471e07.png" alt="n &lt; 0"/>. The basis <img class="math" src="../_images/math/e967fada3170ecae135227d4b5d2703e0417349e.png" alt="v_n"/> is orthonormal:</p>
+</div><p>We are only summing over the positive arguments in <img class="math" src="../_images/math/5b2414886f23ef29a055431a547d69cdf8c68c44.svg" alt="\sin"/> and <img class="math" src="../_images/math/c25a9ffd537851d2ca50528ba77b25608c7c8a6f.svg" alt="\cos"/>, thus the
+absolute value for <img class="math" src="../_images/math/59bcbd71ddc5425ac567070408904e75ea5a265d.svg" alt="n &lt; 0"/>. The basis <img class="math" src="../_images/math/03b52fde042ab644fc4e36e1ae699a1c78b38717.svg" alt="v_n"/> is orthonormal:</p>
 <div class="math">
-<p><img src="../_images/math/7dbb689112b476f025c38cbb877db51a885b10f5.png" alt="\int_a^b v_n(x) v_m(x) \d x = \delta_{n m}"/></p>
+<p><img src="../_images/math/796ff3f1a09684ff6c29c313d1164a521a7519e0.svg" alt="\int_a^b v_n(x) v_m(x) \d x = \delta_{n m}"/></p>
 </div><p>and complete:</p>
 <div class="math">
-<p><img src="../_images/math/a2b50a63a4104858df733461c7ab1bd1a3f62f71.png" alt="\sum_{n=-\infty}^\infty v_n(x) v_n(x') \d x = \delta(x-x')"/></p>
+<p><img src="../_images/math/97e30aa181724fb7fb712a025ecb8ebe521ff8de.svg" alt="\sum_{n=-\infty}^\infty v_n(x) v_n(x') \d x = \delta(x-x')"/></p>
 </div><p>This is not the only way to create the real orthonormal basis. In general:</p>
 <div class="math">
-<p><img src="../_images/math/dd6f7a4975a87d18d61d704db9419d22a86209db.png" alt="u_n(x) = \braket{x|n}
+<p><img src="../_images/math/5cfec9c10503ce245178bc8079a66e66f837d86b.svg" alt="u_n(x) = \braket{x|n}
 
 v_n(x) = \braket{x|n}_R
 
 \ket{n}_R = \sum_m U_{n m} \ket{m}"/></p>
-</div><p>We require the new basis <img class="math" src="../_images/math/0d4a92cf45eb044cdf41ec5956b1da53ccda0e93.png" alt="\ket{n}_R"/> to be orthonormal:</p>
+</div><p>We require the new basis <img class="math" src="../_images/math/5bfc3ec3c8e974cf28eaa2554e8d943f01840b16.svg" alt="\ket{n}_R"/> to be orthonormal:</p>
 <div class="math">
-<p><img src="../_images/math/abb845399986c74996ee07a408185f7aa9cf4770.png" alt="\braket{n|m}_R = \delta_{n m}
+<p><img src="../_images/math/7422aed14cd6c6547462cc76f25dccd1965116be.svg" alt="\braket{n|m}_R = \delta_{n m}
 
 \sum_{kl} \braket{k|U^*_{nk} U_{ml} | l} = \delta_{n m}
 
 \sum_{kl} U^*_{nk} U_{ml} \delta_{kl} = \delta_{n m}
 
 \sum_k U^*_{nk} U_{mk} = \delta_{n m}"/></p>
-</div><p>This restricts the <img class="math" src="../_images/math/f77c7ad060d1f72cac1c33813633e118508f1e12.png" alt="U_{nm}"/> matrices to be unitary (<img class="math" src="../_images/math/eedf9e9d1498eb54bb4dfa20ad1c6b1790211c5e.png" alt="U^{-1} = U^\dag"/>),
+</div><p>This restricts the <img class="math" src="../_images/math/12a7258015e97222901987a0f0082c88b85b46b9.svg" alt="U_{nm}"/> matrices to be unitary (<img class="math" src="../_images/math/e47fe2c14f326237efb4289b86423660cfd38bc8.svg" alt="U^{-1} = U^\dag"/>),
 because:</p>
 <div class="math">
-<p><img src="../_images/math/c8bb0a76fc0612382fabcf19ebb4c9d1183b751b.png" alt="U U^\dag = \one
+<p><img src="../_images/math/bd510b78085b3643a412c2d113da4ec58834402f.svg" alt="U U^\dag = \one
 
 (U U^\dag)_{mn} = (\one)_{mn} = \delta_{mn}
 
@@ -385,14 +374,14 @@ because:</p>
 \sum_k U_{mk} U^*_{nk} = \delta_{mn}"/></p>
 </div><p>The unitarity condition also makes sure, that the real basis is complete:</p>
 <div class="math">
-<p><img src="../_images/math/2cd459915a055c6c0b72c9d547d5dffb23ffb4ef.png" alt="\sum_n \ket{n}_R \bra{n}_R
+<p><img src="../_images/math/c82be6deb21df6aefca7029f6ad6a056601bad6d.svg" alt="\sum_n \ket{n}_R \bra{n}_R
     = \sum_n \sum_{kl} U_{nk} \ket{k}\bra{l} U_{nl}^*
     = \sum_{kl} \delta_{kl} \ket{k}\bra{l}
     = \sum_k \ket{k}\bra{k}
     = \one"/></p>
-</div><p>Requiring <img class="math" src="../_images/math/0d4a92cf45eb044cdf41ec5956b1da53ccda0e93.png" alt="\ket{n}_R"/> to be real and using <img class="math" src="../_images/math/477c0fc02530e5445213580461f3e8788d135833.png" alt="\ket{m}^* = \ket{-m}"/> we get:</p>
+</div><p>Requiring <img class="math" src="../_images/math/5bfc3ec3c8e974cf28eaa2554e8d943f01840b16.svg" alt="\ket{n}_R"/> to be real and using <img class="math" src="../_images/math/931fea781895edb17909b48713cde64e19eae000.svg" alt="\ket{m}^* = \ket{-m}"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/cd543e44dc61fb0b2619249a4894179752dfb5cc.png" alt="\ket{n}_R^* = \ket{n}_R
+<p><img src="../_images/math/8604584de4f59e566f412a8abe2575395accbdfb.svg" alt="\ket{n}_R^* = \ket{n}_R
 
 \sum_m U_{nm}^* \ket{m}^* = \sum_m U_{nm} \ket{m}
 
@@ -405,32 +394,32 @@ because:</p>
 U_{nm} = U_{n,-m}^*
 
 U_{nm}^* = U_{n,-m}"/></p>
-</div><p>Because the basis <img class="math" src="../_images/math/3b99618f5dbbf283cd8450728a4c7b59340cddb2.png" alt="\ket{m}"/> is complete. So the only conditions on the matrices
-<img class="math" src="../_images/math/60d6a289232bc1382921a6497f5689e599e2330f.png" alt="U_{mn}"/> are:</p>
+</div><p>Because the basis <img class="math" src="../_images/math/b16f9b357cb3c20d9e64d6b200e05c4677e7cbc4.svg" alt="\ket{m}"/> is complete. So the only conditions on the matrices
+<img class="math" src="../_images/math/d00345e516a01a774c285850810e8567c0d864a7.svg" alt="U_{mn}"/> are:</p>
 <div class="math">
-<p><img src="../_images/math/9e99dc4a3a9c3b377bb48119125f352a2a249a20.png" alt="U^{-1} = U^\dag
+<p><img src="../_images/math/1b6ff1335e6cf4e0a8d3e6b32e82527581ffffce.svg" alt="U^{-1} = U^\dag
 
 U_{nm}^* = U_{n,-m}"/></p>
 </div><p>They imply that the new basis will be real, orthonormal and complete.
 Our final restriction is that we want each real basis element to correspond to
-the same frequency <img class="math" src="../_images/math/4c30377886cf75f91bd1a333c5417f170edc062b.png" alt="\pm m"/> (possible sign change is ok): this means that
+the same frequency <img class="math" src="../_images/math/0c146e43f70c34c3fa261a43007ca8e6fdd6c324.svg" alt="\pm m"/> (possible sign change is ok): this means that
 we can only mix the same frequencies, i.e.:</p>
 <div class="math">
-<p><img src="../_images/math/2b92b3a7676b335629f271341fd1bd6b88fb114e.png" alt="U_{nm} = 0\quad\mbox{for } |n| \ne |m|"/></p>
+<p><img src="../_images/math/333018414a1d7f86afedcad6671c5639ce3f51d8.svg" alt="U_{nm} = 0\quad\mbox{for } |n| \ne |m|"/></p>
 </div><p>and also that the nonzero matrix elements can only be of the form
-<img class="math" src="../_images/math/a3bc03d2cf5bcd0ba6655743c6384f98151198c7.png" alt="R e^{i{\pi\over 2} n}"/> for <img class="math" src="../_images/math/196e8d2666c373905a9b34eb222c9e39c37bc997.png" alt="n=0, 1, 2, 3"/> (i.e. <img class="math" src="../_images/math/55012628ca53153843d5c54ff098ca45015043c0.png" alt="\pm R"/> or <img class="math" src="../_images/math/f91e2086539339b1cf61e4024c09a28198f50bdb.png" alt="\pm iR"/> for some
-positive <img class="math" src="../_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R"/>).</p>
+<img class="math" src="../_images/math/65d4c133414da8c6e87927232ff94dc323e810a3.svg" alt="R e^{i{\pi\over 2} n}"/> for <img class="math" src="../_images/math/ef2ab76986e666eba52d15730f5aa45e57404085.svg" alt="n=0, 1, 2, 3"/> (i.e. <img class="math" src="../_images/math/417f99fad9d0398598df176f68d37cd1f8a163e2.svg" alt="\pm R"/> or <img class="math" src="../_images/math/b35fff556b6bef034a4df408d81b1d657f6212e2.svg" alt="\pm iR"/> for some
+positive <img class="math" src="../_images/math/a15901c03c5ae8e9a3a2b70b19fd6551c65d850e.svg" alt="R"/>).</p>
 <p>Up to possible sign changes and permutations, this determines the matrix
 uniquely. Our choice above is:</p>
 <div class="math">
-<p><img src="../_images/math/f6f1482e0b0c1b4826d4bca504c0aee8c3a0d6cb.png" alt="U_{nm} = \begin{cases}
+<p><img src="../_images/math/15ddce1a49ff1d01b91189a7f00095219032bd2f.svg" alt="U_{nm} = \begin{cases}
     {\delta_{nm} + \delta_{n,-m}\over\sqrt{2}}   &amp; \mbox{for } n &gt; 0\\
     \delta_{0m}                                  &amp; \mbox{for } n = 0\\
     {\delta_{nm} - \delta_{n,-m}\over i\sqrt{2}} &amp; \mbox{for } n &lt; 0\\
     \end{cases}"/></p>
 </div><p>In other words, we get (except that the matrix is infinite):</p>
 <div class="math">
-<p><img src="../_images/math/945322d746166bb0edc5563da4eaa50ef9ef8340.png" alt="\begin{pmatrix}
+<p><img src="../_images/math/81d3f8f508d7b0419ddf242ceeb91be88d415cca.svg" alt="\begin{pmatrix}
 v_3 \\
 v_2 \\
 v_1 \\
@@ -460,19 +449,19 @@ v_{-3} \\
 </div></div>
 <div class="section" id="fourier-transform">
 <h3>Fourier Transform<a class="headerlink" href="#fourier-transform" title="Permalink to this headline">¶</a></h3>
-<p>Our domain is <img class="math" src="../_images/math/57f240143a85a508de7721a7548b3b3c545547bc.png" alt="(-\infty, \infty)"/>, so the solution of the eigen problem is:</p>
+<p>Our domain is <img class="math" src="../_images/math/3d5c641175e32b2077b5bf38fa8107a4cfc470e6.svg" alt="(-\infty, \infty)"/>, so the solution of the eigen problem is:</p>
 <div class="math">
-<p><img src="../_images/math/9f881008bc4b36af865c01a52fbe1c9ab058c36c.png" alt="A u = \lambda u
+<p><img src="../_images/math/c5aeefa3c50aa1049f6efc83fe91f61555cc4f72.svg" alt="A u = \lambda u
 
 -i {\d \over \d x} u = \lambda u
 
 u(x) = e^{i\lambda x}"/></p>
 </div><p>The normalized eigenfunctions are:</p>
 <div class="math">
-<p><img src="../_images/math/ec34403e7e41f7d189fe8550629028fed5583cd9.png" alt="u_\lambda(x) = {1\over\sqrt{2\pi}} e^{i\lambda x}"/></p>
+<p><img src="../_images/math/f3caf8d533bbf9f97251b438ca3875be45222bf2.svg" alt="u_\lambda(x) = {1\over\sqrt{2\pi}} e^{i\lambda x}"/></p>
 </div><p>We calculate the normalization:</p>
 <div class="math">
-<p><img src="../_images/math/a2edcf9f9e52838b269eea5c6999450134c0eacf.png" alt="\int_{-\infty}^\infty u_\lambda^*(x) u_\kappa(x) \d x =
+<p><img src="../_images/math/a956d103c8ee18db28e3855f6e9cfd9b145a3876.svg" alt="\int_{-\infty}^\infty u_\lambda^*(x) u_\kappa(x) \d x =
 
 = \int_{-\infty}^\infty
     {1\over\sqrt{2\pi}} e^{-i\lambda x}
@@ -484,45 +473,45 @@ u(x) = e^{i\lambda x}"/></p>
 = \delta(\kappa-\lambda)"/></p>
 </div><p>So the spectrum is continous. The eigenvectors must be complete:</p>
 <div class="math">
-<p><img src="../_images/math/2e73fc428a75d2db24721f4faa68d4c0e9f11f60.png" alt="\int_{-\infty}^\infty \ket{\lambda}\bra{\lambda} \d \lambda = \one
+<p><img src="../_images/math/5bc8faf72929a54172a1f1b146f700c1d3eb174a.svg" alt="\int_{-\infty}^\infty \ket{\lambda}\bra{\lambda} \d \lambda = \one
 
 \int_{-\infty}^\infty \braket{x|\lambda}\braket{\lambda|x'} \d \lambda
     = \braket{x|x'}
 
 \int_{-\infty}^\infty u_\lambda(x) u_\lambda^*(x') \d \lambda = \delta(x-x')"/></p>
-</div><p>Any function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> can then be written as:</p>
+</div><p>Any function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> can then be written as:</p>
 <div class="math">
-<p><img src="../_images/math/4b6c0e3f7ca5ec46107de9751b46112827d39b4d.png" alt="f(x) = \braket{x|f}
+<p><img src="../_images/math/2135932ac5b48f8830b91f68c724e8bea70c2397.svg" alt="f(x) = \braket{x|f}
 = \int_{-\infty}^\infty \braket{x|\lambda}\braket{\lambda|f} \d \lambda
 = \int_{-\infty}^\infty u_\lambda(x) \hat f(\lambda) \d \lambda
 = {1\over\sqrt{2\pi}} \int_{-\infty}^\infty e^{i\lambda x}
     \hat f(\lambda) \d \lambda"/></p>
-</div><p>where <img class="math" src="../_images/math/6f53695ab26d88021469de3d96be7d566df10e9e.png" alt="\hat f(\lambda)"/> is called the Fourier transform of <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/>:</p>
+</div><p>where <img class="math" src="../_images/math/cd61a4981e7f1756b46a1b76adcb5a89dcea8445.svg" alt="\hat f(\lambda)"/> is called the Fourier transform of <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/b6ce2215e3672239da790bee9672ac888503f343.png" alt="\hat f(\lambda) = \braket{\lambda|f}
+<p><img src="../_images/math/950dd984781b43b66e27f51050a952feeb389efb.svg" alt="\hat f(\lambda) = \braket{\lambda|f}
 = \int_{-\infty}^\infty \braket{\lambda|x}\braket{x|f} \d x
 = \int_{-\infty}^\infty u_\lambda^*(x) f(x) \d x
 = {1\over\sqrt{2\pi}}\int_{-\infty}^\infty
     e^{-i\lambda x} f(x) \d x"/></p>
 </div><p>Note that both for Fourier series and Fourier transform, the sign convention in
-the exponentials (<img class="math" src="../_images/math/76d0b4b9d8ff61068828ffa8a25b5732a0ff49c2.png" alt="e^{\pm i\lambda x}"/>) follows from choosing the sign in <img class="math" src="../_images/math/f0ccd89884c4efcda602a2a66dabc84c7ca92366.png" alt="A =
--i {\d \over \d x}"/> and as such it is arbitrary. We can also choose <img class="math" src="../_images/math/4643b23b989d3548ac3e3aecc4caed81b9c66581.png" alt="A' = i {\d
+the exponentials (<img class="math" src="../_images/math/361c0c8795c8f644777ce48dd38565d9c9a2cf75.svg" alt="e^{\pm i\lambda x}"/>) follows from choosing the sign in <img class="math" src="../_images/math/1eda9640cbbda267fa4672e8e8c8642d1303b58f.svg" alt="A =
+-i {\d \over \d x}"/> and as such it is arbitrary. We can also choose <img class="math" src="../_images/math/8e2d68a1da1676a4a81517f4f5c3a321b093206c.svg" alt="A' = i {\d
 \over \d x}"/> and then the sign will be flipped.</p>
 </div>
 </div>
 <div class="section" id="sturmliouville-operator">
 <h2>Sturm–Liouville Operator<a class="headerlink" href="#sturmliouville-operator" title="Permalink to this headline">¶</a></h2>
-<p>The Sturm-Liouville operator <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is:</p>
+<p>The Sturm-Liouville operator <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> is:</p>
 <div class="math">
-<p><img src="../_images/math/5de50a175ab7cc3bb1dc831fecb198ad9694c98c.png" alt="L u(x)  = {1 \over w(x)} \left(-{\d\over \d x}
+<p><img src="../_images/math/0892ec99d5ea7e8d8856be010a79112e3f4b92ff.svg" alt="L u(x)  = {1 \over w(x)} \left(-{\d\over \d x}
     \left(p(x){\d u(x)\over dx}\right) +q(x) u(x) \right)"/></p>
 </div><p>Everything is real.
-The scalar product is weighted by <img class="math" src="../_images/math/1fbf2dc9f4233f5839c7f4334e8eedda044ea649.png" alt="w(x)"/>. The operator is self-adjoint if:</p>
+The scalar product is weighted by <img class="math" src="../_images/math/70061f3b1862c6b6f03c6684f4322d0103afcc79.svg" alt="w(x)"/>. The operator is self-adjoint if:</p>
 <div class="math">
-<p><img src="../_images/math/17005c80b76ba9d60a6525ea6f6d8498d307ca00.png" alt="\int_a^b u(x) L v(x) w(x) \d x = \int_a^b (L u(x)) v(x) w(x) \d x"/></p>
+<p><img src="../_images/math/70b112b8a57e2208246cd61e1ce2cde2c5dbda1d.svg" alt="\int_a^b u(x) L v(x) w(x) \d x = \int_a^b (L u(x)) v(x) w(x) \d x"/></p>
 </div><p>so</p>
 <div class="math">
-<p><img src="../_images/math/a1fe8945017333b9f05aaa52b48688fedd97a05a.png" alt="\int_a^b u(x) L v(x) w(x) \d x =
+<p><img src="../_images/math/476fd95f5c1d490684e36d02e5d6190354ac1e8e.svg" alt="\int_a^b u(x) L v(x) w(x) \d x =
 
 = \int_a^b u(x) {1 \over w(x)} \left(-{\d\over \d x}
     \left(p(x){\d v(x)\over dx}\right) +q(x) v(x) \right)
@@ -544,69 +533,69 @@ The scalar product is weighted by <img class="math" src="../_images/math/1fbf2dc
 
 = \int_a^b \left(L u(x)\right) v(x) w(x) \d x
       -\left[u(x)p(x){\d v(x)\over dx}-{\d u(x)\over dx}p(x)v(x)\right]^b_a"/></p>
-</div><p>And the operator <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is self-adjoint if and only if:</p>
+</div><p>And the operator <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> is self-adjoint if and only if:</p>
 <div class="math">
-<p><img src="../_images/math/f90ff0bf14b4b8f377767987eed667eca9932b35.png" alt="\left[u(x)p(x)v'(x)-u'(x)p(x)v(x)\right]^b_a = 0"/></p>
+<p><img src="../_images/math/a95ebf26e18108a2c470576d4f3888097e959ad5.svg" alt="\left[u(x)p(x)v'(x)-u'(x)p(x)v(x)\right]^b_a = 0"/></p>
 </div><p>This condition can be satisfied by various boundary conditions.
 For example:</p>
 <ul class="simple">
 <li>Dirichlet boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/f6cc666a169631e75c6575dc93bea5e2c9fc90bb.png" alt="u(a) = 0, \quad u(b) = 0"/></p>
+<p><img src="../_images/math/03a0eb781903644feb3a5d63e2454f5968cd5395.svg" alt="u(a) = 0, \quad u(b) = 0"/></p>
 </div><ul class="simple">
 <li>Neumann boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/22fa61ed562523b3109978c0efeae6a7f3b437d0.png" alt="u'(a) = 0, \quad u'(b) = 0"/></p>
+<p><img src="../_images/math/6800d01d82148debdc42fd15b0e1cb2ec7cfb2f3.svg" alt="u'(a) = 0, \quad u'(b) = 0"/></p>
 </div><ul class="simple">
 <li>Periodic boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/48e3cdfa4f8c6f4515c87cbb925e26507e2295c5.png" alt="u(a)  &amp;= u(b) \\
+<p><img src="../_images/math/3b8b6b02e132199c217b77db11fb7382f1a82ce6.svg" alt="u(a)  &amp;= u(b) \\
 u'(a) &amp;= u'(b)"/></p>
 </div><ul class="simple">
 <li>Antiperiodic boundary conditions</li>
 </ul>
 <div class="math">
-<p><img src="../_images/math/aa5e96c740e3e77fe70c339b433f766fcb6d36c8.png" alt="u(a)  &amp;= -u(b) \\
+<p><img src="../_images/math/f0acdb08117ce43019e32526fc1ce7aa4dbbde6d.svg" alt="u(a)  &amp;= -u(b) \\
 u'(a) &amp;= -u'(b)"/></p>
-</div><p>or mixtures of these, e.g. Dirichlet at <img class="math" src="../_images/math/ed47ef35959c171399e8f18eed4b517223823c04.png" alt="x=a"/> and Neumann at <img class="math" src="../_images/math/741720281e465fc7461c32d504f6d54c5bcaff7c.png" alt="x=b"/>.</p>
+</div><p>or mixtures of these, e.g. Dirichlet at <img class="math" src="../_images/math/1f24a0b06a7e586b7e792575950be7b474a2bc53.svg" alt="x=a"/> and Neumann at <img class="math" src="../_images/math/4c2c6b4eb3c2d0c4bdca561e8c1fb3fef62f75bc.svg" alt="x=b"/>.</p>
 <div class="section" id="legendre-polynomials">
 <h3>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h3>
-<p>Legendre polynomials <img class="math" src="../_images/math/9f7ba371de1369bc2066fe2ef779dd977b4cbdf6.png" alt="P_n(x)"/> are solutions of the Sturm–Liouville problem on
-the interval <img class="math" src="../_images/math/5c3818b9565a33fd3aadba10026d32c5e3eea90f.png" alt="[-1, 1]"/> with <img class="math" src="../_images/math/925c887d3ea52792b9afe9d874ea958e2bc31866.png" alt="p(x)=1-x^2"/>, <img class="math" src="../_images/math/975b707353085bb93263a5017662f424d82f2457.png" alt="q(x)=0"/>, <img class="math" src="../_images/math/302f1b1aee03ee4b2ad73a9a7de1cf70017484a6.png" alt="w(x)=1"/> and
-<img class="math" src="../_images/math/c5865de760def3fd3936e4ef02c06be357104905.png" alt="\lambda=n(n+1)"/>:</p>
+<p>Legendre polynomials <img class="math" src="../_images/math/ae30103ffb0de2b4de8a95c548b28bea989c2ac9.svg" alt="P_n(x)"/> are solutions of the Sturm–Liouville problem on
+the interval <img class="math" src="../_images/math/ee596e4441936333dc3ea4663548e2667e44bdbc.svg" alt="[-1, 1]"/> with <img class="math" src="../_images/math/9efb4b08ba0385955f73e3ee0159b5d7b09719c3.svg" alt="p(x)=1-x^2"/>, <img class="math" src="../_images/math/d13b7fa5eebc535dfca62825960360a050cdb109.svg" alt="q(x)=0"/>, <img class="math" src="../_images/math/69ccfddf85e2e07e1b491e3997981d15091f7488.svg" alt="w(x)=1"/> and
+<img class="math" src="../_images/math/c058d6f962d9195db20db2da37e9ca2e5c3b25c6.svg" alt="\lambda=n(n+1)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/90c4c4f7246fb31f226fb4196be66430804d5383.png" alt="L u(x)  = n(n+1) u(x)
+<p><img src="../_images/math/30ce687b815495b7a7f05934496d78ea3bd8f01b.svg" alt="L u(x)  = n(n+1) u(x)
 
 L u(x)  = -{\d\over \d x} \left((1-x^2){\d u(x)\over dx}\right)"/></p>
-</div><p>The operator <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> is self-adjoint due to vanishing <img class="math" src="../_images/math/2751d79d3bbfb34440d68c685fe6ba7414951749.png" alt="p(x)"/> at
+</div><p>The operator <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> is self-adjoint due to vanishing <img class="math" src="../_images/math/164fbbb0a11f9a6e55ecb0915c8f9c51c7673f3c.svg" alt="p(x)"/> at
 the endpoints:</p>
 <div class="math">
-<p><img src="../_images/math/b1b4f8a9eda4b7deb7cf2500e7fbe16816b9050f.png" alt="\left[(u(x)v'(x)-u'(x)v(x))p(x)\right]_{-1}^1
+<p><img src="../_images/math/2ccacceeb354ace4c8c7bc9402d4f4a6211d76ec.svg" alt="\left[(u(x)v'(x)-u'(x)v(x))p(x)\right]_{-1}^1
     = \left[(u(x)v'(x)-u'(x)v(x))(1-x^2)\right]_{-1}^1 = 0"/></p>
 </div><p>We restrict our space to bounded functions. The solutions of the eigenvalue
-problem for integer <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> are Legendre polynomials <img class="math" src="../_images/math/9f7ba371de1369bc2066fe2ef779dd977b4cbdf6.png" alt="P_n(x)"/>, the normalized
-eigenvectors <img class="math" src="../_images/math/0b91b092026b7c4ad3d6464bf6be59ae8a3059c0.png" alt="u_n(x)"/> are:</p>
+problem for integer <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> are Legendre polynomials <img class="math" src="../_images/math/ae30103ffb0de2b4de8a95c548b28bea989c2ac9.svg" alt="P_n(x)"/>, the normalized
+eigenvectors <img class="math" src="../_images/math/854db2c26eaf2ad70cc351a13febb3856867c5a9.svg" alt="u_n(x)"/> are:</p>
 <div class="math">
-<p><img src="../_images/math/128e3a3d2c58464392e9e9c77469dbd7916f7fe8.png" alt="u_n(x) = \sqrt{2n+1\over 2} P_n(x)"/></p>
+<p><img src="../_images/math/bd30d3a65b94d46a20fea26bbec7d36382fa1f78.svg" alt="u_n(x) = \sqrt{2n+1\over 2} P_n(x)"/></p>
 </div><p>Solutions for non
-integer <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> are Legendre functions that are singular at the end points and as
+integer <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> are Legendre functions that are singular at the end points and as
 such are not solutions that we want. As such, the spectrum is discrete and the
 Legendre polynomials form a complete orthogonal basis for functions
-on the interval <img class="math" src="../_images/math/5c3818b9565a33fd3aadba10026d32c5e3eea90f.png" alt="[-1, 1]"/>:</p>
+on the interval <img class="math" src="../_images/math/ee596e4441936333dc3ea4663548e2667e44bdbc.svg" alt="[-1, 1]"/>:</p>
 <div class="math">
-<p><img src="../_images/math/e865e4c3d791860b95a74a6b7cdcde6c3915fede.png" alt="\int_{-1}^1 u_n(x) u_m(x)
+<p><img src="../_images/math/3e1a0836a07971860ebd51e032cce26c0c75a42e.svg" alt="\int_{-1}^1 u_n(x) u_m(x)
 = {2n+1\over 2} \int_{-1}^1 P_n(x) P_m(x)
 = \delta_{n m}
 
 \sum_{n=0}^\infty u_n(x) u_n(x')
 = {2n+1\over 2} \sum_{n=0}^\infty P_n(x) P_n(x')
 = \delta(x-x')"/></p>
-</div><p>any function <img class="math" src="../_images/math/c96dd6ec1dc4ad7520fbdc78fcdbec9edd068d0c.png" alt="f(x)"/> on the interval <img class="math" src="../_images/math/5c3818b9565a33fd3aadba10026d32c5e3eea90f.png" alt="[-1, 1]"/> can be expanded as:</p>
+</div><p>any function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> on the interval <img class="math" src="../_images/math/ee596e4441936333dc3ea4663548e2667e44bdbc.svg" alt="[-1, 1]"/> can be expanded as:</p>
 <div class="math">
-<p><img src="../_images/math/ad05a68b8903734acc3af9a86693bd874cebb1e6.png" alt="f(x) = \sum_{n=0}^\infty f_n' u_n(x)
+<p><img src="../_images/math/f28eee356657758f3e02270d92ca0789b8441355.svg" alt="f(x) = \sum_{n=0}^\infty f_n' u_n(x)
     = \sum_{n=0}^\infty f_n' \sqrt{2n+1\over 2} P_n(x)
     = \sum_{n=0}^\infty f_n P_n(x)
 
@@ -617,32 +606,32 @@ f_n = f_n' \sqrt{2n+1\over 2}
 </div>
 <div class="section" id="angular-momentum-operator">
 <h2>Angular Momentum Operator<a class="headerlink" href="#angular-momentum-operator" title="Permalink to this headline">¶</a></h2>
-<p>The angular momentum operators <img class="math" src="../_images/math/3f22b669e4803ae525cf8120ca251e2eab025872.png" alt="L_1"/>, <img class="math" src="../_images/math/e13a902eb6a24cf493a2732badd0d151fb4f7672.png" alt="L_2"/> and <img class="math" src="../_images/math/199064ab269e28abf76e7f8f9947f2a4b536da3d.png" alt="L_3"/> are given by:</p>
+<p>The angular momentum operators <img class="math" src="../_images/math/da0239fbf0afcdab5123abf640b41f7af5713a8f.svg" alt="L_1"/>, <img class="math" src="../_images/math/0a83b06aecadafc42009bd871e276b44c97321b1.svg" alt="L_2"/> and <img class="math" src="../_images/math/a454086af257d877c3c0b9e958b32bc116f86276.svg" alt="L_3"/> are given by:</p>
 <div class="math">
-<p><img src="../_images/math/391ec6584e13f8351e089886f16f9b04f46eebd7.png" alt="L_j = -i \epsilon_{jkl} x_k \partial_l"/></p>
+<p><img src="../_images/math/dc687fb7e5443a428eddf017d4f00481056eccdd.svg" alt="L_j = -i \epsilon_{jkl} x_k \partial_l"/></p>
 </div><p>in spherical coordinates:</p>
 <div class="math">
-<p><img src="../_images/math/e5229d43c42db12c5fd23d33789d7767ebd1b3b0.png" alt="L_1 &amp;= i \left(\sin \phi \ \partial_\theta
+<p><img src="../_images/math/3445efab261f968e5eafdde0953703a9f48c41a2.svg" alt="L_1 &amp;= i \left(\sin \phi \ \partial_\theta
      + \cot \theta \cos \phi \ \partial_\phi\right) \\
 L_2 &amp;= i \left(-\cos\phi \ \partial_\theta
     + \cot \theta \sin \phi \ \partial_\phi\right) \\
 L_3 &amp;= -i \partial_\phi"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/3fe330894f1d53b65922fe8f1827512846890961.png" alt="L^2 = L_1^2 + L_2^2 + L_3^2 =
+<p><img src="../_images/math/9de24c309610d23d33853e7ace91c497c6b00d28.svg" alt="L^2 = L_1^2 + L_2^2 + L_3^2 =
      - \left( {1\over\sin\theta} \partial_\theta
             \left(\sin\theta \ \partial_\theta \right)
      + {1\over \sin^2\theta}\partial_\phi^2\right)"/></p>
 </div><p>The eigenproblem is:</p>
-<div class="math" id="equation-Ylm_eig">
-<p><span class="eqno">(1)</span><img src="../_images/math/4f7a4d1f7028a901e215b9e2b334b4296cc0bb29.png" alt="L^2 \ket{lm} &amp;= l(l+1) \ket{lm} \\
+<div class="math" id="equation-ylm-eig">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-ylm-eig" title="Permalink to this equation">¶</a></span><img src="../_images/math/cab4030a80a1635886cfb8b12396ebdd3e1a917b.svg" alt="L^2 \ket{lm} &amp;= l(l+1) \ket{lm} \\
 L_3 \ket{lm} &amp;= m \ket{lm}"/></p>
 </div><p>Using Condon &amp; Shortley phase convention, it can be shown that:</p>
 <div class="math" id="equation-ladder">
-<p><span class="eqno">(2)</span><img src="../_images/math/6d1032b97c84028eeb1446a661be7dafcdf707f3.png" alt="(L_1 \pm i L_2) \ket{l, m} = \sqrt{(l \mp m)(l\pm m + 1)} \ket{l,m \pm 1}"/></p>
+<p><span class="eqno">(2)<a class="headerlink" href="#equation-ladder" title="Permalink to this equation">¶</a></span><img src="../_images/math/4f45d0b0d9b843aa369dfdafee51d7e161d5fbbe.svg" alt="(L_1 \pm i L_2) \ket{l, m} = \sqrt{(l \mp m)(l\pm m + 1)} \ket{l,m \pm 1}"/></p>
 </div><p>and by repeated application:</p>
 <div class="math">
-<p><img src="../_images/math/b11360bcc20d711a2468e6835afe148e014fb84d.png" alt="(L_1 \pm i L_2)^k \ket{l, m} =
+<p><img src="../_images/math/cf840e4524b91186abea44f22533d6ea8cbb9cb3.svg" alt="(L_1 \pm i L_2)^k \ket{l, m} =
 
     = \sqrt{(l \mp m)(l \mp m-1)\cdots(l\mp m -k+1)
         (l\pm m + 1)(l\pm m + 2)\cdots(l\mp m + k)} \ket{l,m \pm k} =
@@ -651,31 +640,31 @@ L_3 \ket{lm} &amp;= m \ket{lm}"/></p>
         \ket{l,m \pm k}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/67b7a6b4ba49718269b689afecc5f50c97c4b5f1.png" alt="L_1 + i L_2 = i \sin \phi \ \partial_\theta
+<p><img src="../_images/math/ac5a96f311495dc729f397d8268b3242c51e245e.svg" alt="L_1 + i L_2 = i \sin \phi \ \partial_\theta
      + i \cot \theta \cos \phi \ \partial_\phi
     \pm \left(\cos\phi \ \partial_\theta
     - \cot \theta \sin \phi \ \partial_\phi\right) =
 
 = e^{\pm i\phi} \left(\pm \partial_\theta + i \cot\theta \partial_\phi
     \right)"/></p>
-</div><p>The solution of <a href="#equation-Ylm_eig">(1)</a> is of the form:</p>
-<div class="math" id="equation-Ylm_form">
-<p><span class="eqno">(3)</span><img src="../_images/math/6ad7529f219051343b6e9ff9f4d0bfc6f9690426.png" alt="\braket{\theta \phi | l m} = Y_{lm}(\theta, \phi)
+</div><p>The solution of <a class="reference internal" href="#equation-ylm-eig">(1)</a> is of the form:</p>
+<div class="math" id="equation-ylm-form">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-ylm-form" title="Permalink to this equation">¶</a></span><img src="../_images/math/b38e0ad8829f03099a94ce09457f81479e963b2e.svg" alt="\braket{\theta \phi | l m} = Y_{lm}(\theta, \phi)
     = \Theta_{lm}(\theta) \Phi_m(\phi)"/></p>
-</div><p>and we get from <a href="#equation-Ylm_eig">(1)</a>:</p>
+</div><p>and we get from <a class="reference internal" href="#equation-ylm-eig">(1)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/3de91ddcec8d4f93955662e23867da065143fd82.png" alt="-i {\d\over\d\phi} \Phi_m(\phi) = m \Phi_m(\phi)"/></p>
-</div><p>on the interval <img class="math" src="../_images/math/700a646698acb6df3a6d32beed152ac60bd3f685.png" alt="[0, 2 \pi]"/> with the boundary condition <img class="math" src="../_images/math/d7b3a4a49cb9893adf6c7d3c03c34a149e92322d.png" alt="\Phi_m(0) =
+<p><img src="../_images/math/9c3cc01fc3232ec0263c75cc7c94bd0a909b2242.svg" alt="-i {\d\over\d\phi} \Phi_m(\phi) = m \Phi_m(\phi)"/></p>
+</div><p>on the interval <img class="math" src="../_images/math/0bd36cea22964b9418551451c6d6bbe9487ec6d7.svg" alt="[0, 2 \pi]"/> with the boundary condition <img class="math" src="../_images/math/5d467b16ee2169b520dd5390348c127210373ab7.svg" alt="\Phi_m(0) =
 \Phi_m(2\pi)"/>. From
-<a class="reference internal" href="#deriv-operator"><em>Derivative Operator</em></a> the eigenvalues are all integer <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>
+<a class="reference internal" href="#deriv-operator"><span class="std std-ref">Derivative Operator</span></a> the eigenvalues are all integer <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>
 and the normalized eigenvector is:</p>
-<div class="math" id="equation-Phi_sol">
-<p><span class="eqno">(4)</span><img src="../_images/math/4d2b8db6a0fda603de41737c8b7009e6428c4a6c.png" alt="\Phi_m(\phi) = {1\over\sqrt{2\pi}} e^{im\phi}"/></p>
-</div><p>Substituting <a href="#equation-Phi_sol">(4)</a> into <a href="#equation-Ylm_form">(3)</a> we get from
-<a href="#equation-Ylm_eig">(1)</a> an ordinary second order differential equation for
-<img class="math" src="../_images/math/b5d8f2bf8a09d5aef874541c85744c196ca99f8f.png" alt="\Theta_{lm}(\theta)"/>:</p>
+<div class="math" id="equation-phi-sol">
+<p><span class="eqno">(4)<a class="headerlink" href="#equation-phi-sol" title="Permalink to this equation">¶</a></span><img src="../_images/math/315bb8289537394bfc70a88c9dc1c8107e3bc3ea.svg" alt="\Phi_m(\phi) = {1\over\sqrt{2\pi}} e^{im\phi}"/></p>
+</div><p>Substituting <a class="reference internal" href="#equation-phi-sol">(4)</a> into <a class="reference internal" href="#equation-ylm-form">(3)</a> we get from
+<a class="reference internal" href="#equation-ylm-eig">(1)</a> an ordinary second order differential equation for
+<img class="math" src="../_images/math/888c83258ed72c6b699f6b96203de55ab26d708b.svg" alt="\Theta_{lm}(\theta)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/96e7a9cccd3ad55752ba3a7a6d01ce605d8aa864.png" alt="L^2 \ket{lm} = l(l+1) \ket{lm}
+<p><img src="../_images/math/7df7a90bd4d080cc1434c246409db54e68c04219.svg" alt="L^2 \ket{lm} = l(l+1) \ket{lm}
 
 - \left( {1\over\sin\theta} \partial_\theta
             \left(\sin\theta \ \partial_\theta \right)
@@ -697,11 +686,11 @@ and the normalized eigenvector is:</p>
     + \left(l (l+1) - {m^2\over 1-z^2}\right)\Theta_{lm} = 0"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/6561dfcfe19b0240c797957955329e0a5143b496.png" alt="z = \cos\theta"/></p>
+<p><img src="../_images/math/2f06cd9c430baf9df373b2f57a5bfd9cebac861b.svg" alt="z = \cos\theta"/></p>
 </div><p>This equation can be solved using the following approach.
-From <a href="#equation-ladder">(2)</a> we get:</p>
+From <a class="reference internal" href="#equation-ladder">(2)</a> we get:</p>
 <div class="math">
-<p><img src="../_images/math/64016ccc484b240dfb80fd04a3c234eff94a560c.png" alt="(L_1\pm iL_2)Y_{lm}(\theta, \phi)
+<p><img src="../_images/math/c32d1ec400a803784102f34f9d8b4e72689f3727.svg" alt="(L_1\pm iL_2)Y_{lm}(\theta, \phi)
 = (L_1\pm iL_2)\Theta_{lm}(\theta)\Phi_m(\phi) =
 
 = e^{\pm i\phi} \left(\pm \partial_\theta + i \cot\theta \partial_\phi
@@ -723,7 +712,7 @@ From <a href="#equation-ladder">(2)</a> we get:</p>
     \sin^{\mp m}\theta\ \Theta_{lm}(\theta) \right)"/></p>
 </div><p>and by repeated application we get:</p>
 <div class="math">
-<p><img src="../_images/math/5de886c123e846944d27003c0caa809f5cd7fbda.png" alt="(L_1\pm iL_2)^k Y_{lm}(\theta, \phi)
+<p><img src="../_images/math/2221a9a92e9ac1707e00aff8cedee97474275c55.svg" alt="(L_1\pm iL_2)^k Y_{lm}(\theta, \phi)
 = (\mp 1)^k \Phi_{m\pm k}(\phi)
     \sin^{k\pm m}\theta \left({\d^k\over(\d \cos \theta)^k}
     \sin^{\mp m}\theta\ \Theta_{lm}(\theta) \right) =
@@ -731,22 +720,22 @@ From <a href="#equation-ladder">(2)</a> we get:</p>
 = \sqrt{{(l\mp m)!\over (l\pm m)!} {(l\pm m + k)!\over (l\mp m - k)!}}
     \Phi_{m \pm k}(\phi) \Theta_{l,m\pm k}(\theta)"/></p>
 </div><p>from which we obtain:</p>
-<div class="math" id="equation-Theta_lmpmk">
-<p><span class="eqno">(5)</span><img src="../_images/math/b075a362cdf8871e8c8df5ac25706f2c296d0ecf.png" alt="\Theta_{l,m\pm k}(\theta) =
+<div class="math" id="equation-theta-lmpmk">
+<p><span class="eqno">(5)<a class="headerlink" href="#equation-theta-lmpmk" title="Permalink to this equation">¶</a></span><img src="../_images/math/7509ced93b78c78bf330b717d1ddd5e595eb05f7.svg" alt="\Theta_{l,m\pm k}(\theta) =
     \sqrt{{(l\pm m)!\over (l\mp m)!} {(l\mp m - k)!\over (l\pm m + k)!}}
         (\mp 1)^k
     \sin^{k\pm m}\theta \left({\d^k\over(\d \cos \theta)^k}
     \sin^{\mp m}\theta\ \Theta_{lm}(\theta) \right)"/></p>
-</div><p>As a special case for <img class="math" src="../_images/math/2e275495e7e44d279fb3e5051b3a63115e79ead5.png" alt="m=0"/> and <img class="math" src="../_images/math/ec2f38a7d062082c08e4d192494d961eaa2bc0e2.png" alt="k=m&gt;0"/> we get:</p>
-<div class="math" id="equation-Theta_lpmm">
-<p><span class="eqno">(6)</span><img src="../_images/math/906cf49bc6e2ce0137721493c722e4dace0ebe7f.png" alt="\Theta_{l,\pm m}(\theta) =
+</div><p>As a special case for <img class="math" src="../_images/math/3d1a54922e06b04c7b99cdbb7cd2091d74f7ab0d.svg" alt="m=0"/> and <img class="math" src="../_images/math/d41747929dfbc708182ccbfc484143e760745c27.svg" alt="k=m&gt;0"/> we get:</p>
+<div class="math" id="equation-theta-lpmm">
+<p><span class="eqno">(6)<a class="headerlink" href="#equation-theta-lpmm" title="Permalink to this equation">¶</a></span><img src="../_images/math/212923ea9aae1a14cb1991a11a7a28829d95ab31.svg" alt="\Theta_{l,\pm m}(\theta) =
         (\mp 1)^m
     \sqrt{{(l - m)!\over (l + m)!}}
     \sin^{m}\theta \left({\d^m\over(\d \cos \theta)^m}
     \Theta_{l0}(\theta) \right)"/></p>
-</div><p>and for <img class="math" src="../_images/math/50008ac2f954f964a7fd2f6a40d0fc8d29cd7710.png" alt="m=l"/> and <img class="math" src="../_images/math/3665de1ea0e4e57219da6b5f751887654cee3cf7.png" alt="k=l-m"/> we get (we only use the <img class="math" src="../_images/math/368b0180d5b5f6370fab3d36c03cd80ca4fa7cec.png" alt="\Theta_{l,m- k}"/> branch):</p>
-<div class="math" id="equation-Theta_ll">
-<p><span class="eqno">(7)</span><img src="../_images/math/350e438c86e8a4c80588b91c571da148bf04c7f1.png" alt="\Theta_{lm}(\theta) =
+</div><p>and for <img class="math" src="../_images/math/8f3a346a6b5abfaf1dcd784033387d7ee93c36de.svg" alt="m=l"/> and <img class="math" src="../_images/math/3594eb73d40979aeac53eacd715e60ffe9e79a5e.svg" alt="k=l-m"/> we get (we only use the <img class="math" src="../_images/math/2678e9d72c51300236afb1b5bbe9c14ec42e1d14.svg" alt="\Theta_{l,m- k}"/> branch):</p>
+<div class="math" id="equation-theta-ll">
+<p><span class="eqno">(7)<a class="headerlink" href="#equation-theta-ll" title="Permalink to this equation">¶</a></span><img src="../_images/math/00914cb07fdb8ddb138b1618be63e4a199eb9997.svg" alt="\Theta_{lm}(\theta) =
 \Theta_{l,l-(l-m)}(\theta) =
 
     = \sqrt{{(l- l)!\over (l+ l)!} {(l+ l - (l-m))!\over (l- l +
@@ -759,28 +748,28 @@ From <a href="#equation-ladder">(2)</a> we get:</p>
     {1\over\sin^m\theta} \left({\d^{l-m}\over(\d \cos \theta)^{l-m}}
     \sin^l\theta\ \Theta_{ll}(\theta) \right)"/></p>
 </div><p>From
-<a href="#equation-ladder">(2)</a> we get:</p>
+<a class="reference internal" href="#equation-ladder">(2)</a> we get:</p>
 <div class="math">
-<p><img src="../_images/math/8178f57ccefa81fa8ecbd026d527d6de23473293.png" alt="(L_1 + i L_2) Y_{ll}
+<p><img src="../_images/math/39904ef501cf5349551e2f2a946ed8ee5ec99ad6.svg" alt="(L_1 + i L_2) Y_{ll}
     = \sqrt{(l - l)(l + l + 1)} Y_{ll} = 0"/></p>
-</div><p>Using <a href="#equation-Phi_sol">(4)</a> this gives us a first order differential equation:</p>
+</div><p>Using <a class="reference internal" href="#equation-phi-sol">(4)</a> this gives us a first order differential equation:</p>
 <div class="math">
-<p><img src="../_images/math/1985c580d59aef867bc43912616c60741c500707.png" alt="(L_1 + i L_2) \Theta_{ll} \Phi_l = 0
+<p><img src="../_images/math/0ec077f755e8489b8a5874514382648c87ce66cb.svg" alt="(L_1 + i L_2) \Theta_{ll} \Phi_l = 0
 
 e^{i\phi} \left(\partial_\theta + i \cot\theta \partial_\phi
     \right) \Theta_{ll} {1\over\sqrt{2\pi}} e^{i l\phi} = 0
 
 {\partial \Theta_{ll}\over\partial \theta} - l \cot \theta \ \Theta_{ll} = 0"/></p>
 </div><p>from which</p>
-<div class="math" id="equation-Theta_ll_form">
-<p><span class="eqno">(8)</span><img src="../_images/math/aa6122e7ce64209d1a244159d7d76e9b5c7c38b8.png" alt="\Theta_{ll}(\theta) = (-1)^l \sqrt{(2l+1)!\over 2} {1\over 2^l l!}
+<div class="math" id="equation-theta-ll-form">
+<p><span class="eqno">(8)<a class="headerlink" href="#equation-theta-ll-form" title="Permalink to this equation">¶</a></span><img src="../_images/math/0e6b3566b451d593c3aa59d4b8591b0fb19df80c.svg" alt="\Theta_{ll}(\theta) = (-1)^l \sqrt{(2l+1)!\over 2} {1\over 2^l l!}
     \sin^l \theta"/></p>
 </div><p>It is normalized as:</p>
 <div class="math">
-<p><img src="../_images/math/5fbfc76d5b4280413ed59babf31e1bd3bcd996bc.png" alt="\int_0^\pi \Theta_{ll}^2 \sin\theta\ \d\theta = 1"/></p>
+<p><img src="../_images/math/714ff085b5c948436629a30208d4a5b7774906c0.svg" alt="\int_0^\pi \Theta_{ll}^2 \sin\theta\ \d\theta = 1"/></p>
 </div><p>We used the value of the integral:</p>
 <div class="math">
-<p><img src="../_images/math/ba4e8071dad393f2fa7ce41367814fb106a862b6.png" alt="\int_0^\pi \sin^{2l+1}\theta\ \d\theta = {\sqrt\pi\ \Gamma(l+1)
+<p><img src="../_images/math/8ec3c9744274b3aa3a3759e43981078d8c3569e5.svg" alt="\int_0^\pi \sin^{2l+1}\theta\ \d\theta = {\sqrt\pi\ \Gamma(l+1)
     \over \Gamma(l+{3\over2})}
  = {\sqrt\pi\  2^{l+1} l! \over (2l+1)!! \sqrt\pi}
  = {2^{l+1} l! \over (2l+1)!!}
@@ -789,16 +778,16 @@ e^{i\phi} \left(\partial_\theta + i \cot\theta \partial_\phi
  = {(2^{l+1} l!)^2 (l+1) \over (2l+2)!}
  = {4 (2^l l!)^2 (l+1) \over (2l+1)! 2 (l+1)}
  = {2 (2^l l!)^2 \over (2l+1)!}"/></p>
-</div><p>Using <a href="#equation-Theta_ll_form">(8)</a> in <a href="#equation-Theta_ll">(7)</a> we get:</p>
+</div><p>Using <a class="reference internal" href="#equation-theta-ll-form">(8)</a> in <a class="reference internal" href="#equation-theta-ll">(7)</a> we get:</p>
 <div class="math">
-<p><img src="../_images/math/14418770fe865205d55b218827ccc6285616a954.png" alt="\Theta_{lm}(\theta)
+<p><img src="../_images/math/13abef76682a4a47094e9780de52eea9f08c5fab.svg" alt="\Theta_{lm}(\theta)
     = (-1)^l \sqrt{{2l+1\over 2}{(l+m)!\over (l-m)!}}
     {1\over 2^l l!}
     {1\over\sin^m\theta} {\d^{l-m}\over(\d \cos \theta)^{l-m}}
     \sin^{2l}\theta"/></p>
-</div><p>for <img class="math" src="../_images/math/2e275495e7e44d279fb3e5051b3a63115e79ead5.png" alt="m=0"/> we obtain:</p>
+</div><p>for <img class="math" src="../_images/math/3d1a54922e06b04c7b99cdbb7cd2091d74f7ab0d.svg" alt="m=0"/> we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/e9472ff05583ed9e19c151832d040da4c8961ef4.png" alt="\Theta_{l0}(\theta)
+<p><img src="../_images/math/80bd6088d3f410efbc27901733ae84c59aeefde8.svg" alt="\Theta_{l0}(\theta)
     = (-1)^l \sqrt{{2l+1\over 2}}
     {1\over 2^l l!}
     {\d^l\over(\d \cos \theta)^l}
@@ -812,23 +801,23 @@ e^{i\phi} \left(\partial_\theta + i \cot\theta \partial_\phi
     = \sqrt{{2l+1\over 2}} P_l(\cos\theta)"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/bf47d40422980f5d8f434b7c910af4c64e3e3557.png" alt="P_l(z) = {1\over 2^l l!} {\d^l\over\d z^l} (z^2-1)^l"/></p>
-</div><p>is the Rodrigues&#8217; formula for Legendre polynomials.
-We substitute <img class="math" src="../_images/math/0acdcffdf9a37fba7321c4c89e8a3aa0e31257e3.png" alt="\Theta_{l0}"/> into <a href="#equation-Theta_lpmm">(6)</a> and get:</p>
-<div class="math" id="equation-Theta3">
-<p><span class="eqno">(9)</span><img src="../_images/math/da2a3f319ee2ec95b66f240e17ef0a332d47b51b.png" alt="\Theta_{l,\pm m}(\theta) =
+<p><img src="../_images/math/20b9d259e6a82637d7214a5554ab552b730d3a8e.svg" alt="P_l(z) = {1\over 2^l l!} {\d^l\over\d z^l} (z^2-1)^l"/></p>
+</div><p>is the Rodrigues’ formula for Legendre polynomials.
+We substitute <img class="math" src="../_images/math/43ef524d1c2f355061e521ab8a4bed829400f755.svg" alt="\Theta_{l0}"/> into <a class="reference internal" href="#equation-theta-lpmm">(6)</a> and get:</p>
+<div class="math" id="equation-theta3">
+<p><span class="eqno">(9)<a class="headerlink" href="#equation-theta3" title="Permalink to this equation">¶</a></span><img src="../_images/math/0e4b1a90742e8265351150c25458a3252969cf61.svg" alt="\Theta_{l,\pm m}(\theta) =
         (\mp 1)^m
     \sqrt{{2l+1\over 2}{(l - m)!\over (l + m)!}}
     \sin^{m}\theta \left({\d^m\over(\d \cos \theta)^m}
     P_l(\cos\theta) \right)"/></p>
-</div><p>Hence <img class="math" src="../_images/math/5a8d62e3a14f816d7463e311431016db029b25af.png" alt="\Theta_{lm} = (-1)^m \Theta_{l,-m}"/>.
+</div><p>Hence <img class="math" src="../_images/math/9d150560c66d550a66ab3df05968c656de731272.svg" alt="\Theta_{lm} = (-1)^m \Theta_{l,-m}"/>.
 Using associated Legendre polynomials, we can write:</p>
-<div class="math" id="equation-thetaPlm">
-<p><span class="eqno">(10)</span><img src="../_images/math/de7a0f282037f06cacc9653156f4bfd23c9e856d.png" alt="\Theta_{lm}(\theta) = \sqrt{{2l+1\over 2}{(l-m)!\over (l+m)!}}
+<div class="math" id="equation-thetaplm">
+<p><span class="eqno">(10)<a class="headerlink" href="#equation-thetaplm" title="Permalink to this equation">¶</a></span><img src="../_images/math/0ea74c018001294d4ac132db35dfbc0a763bd9bd.svg" alt="\Theta_{lm}(\theta) = \sqrt{{2l+1\over 2}{(l-m)!\over (l+m)!}}
     P_l^m(\cos \theta)"/></p>
-</div><p>where (for all <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>):</p>
+</div><p>where (for all <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>):</p>
 <div class="math">
-<p><img src="../_images/math/c91914fe83982b9c3737b03a8b74cc74123697a0.png" alt="P_l^m(\cos \theta)
+<p><img src="../_images/math/1477a9ed989a0aec713629596d1fe44bd20ffa1c.svg" alt="P_l^m(\cos \theta)
 = (-1)^l {(l+m)!\over (l-m)!} {1\over 2^l l!}
 {1\over\sin^m\theta} {\d^{l-m}\over(\d \cos \theta)^{l-m}}
 \sin^{2l}\theta =
@@ -849,12 +838,12 @@ Using associated Legendre polynomials, we can write:</p>
 = (-1)^m {1\over 2^l l!}
 (1-z^2)^{m\over 2} {\d^{l+m}\over \d z^{l+m}} (z^2-1)^l"/></p>
 </div><p>hence (comparing the second and fourth equation above):</p>
-<div class="math" id="equation-Pmm">
-<p><span class="eqno">(11)</span><img src="../_images/math/8e4fdbd66ed3640f8d78b670abcd54a89088360b.png" alt="P^{-m}_l(z) = (-1)^m {(l-m)!\over (l+m)!} P_l^m(z)"/></p>
-</div><p>This is valid for all <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/> (positive or negative).
-For <img class="math" src="../_images/math/cec8d8345a476b8ca52d2e4c32d712dd5ed7169f.png" alt="m \ge 0"/> we get from <a href="#equation-Theta3">(9)</a> and <a href="#equation-Pmm">(11)</a>:</p>
+<div class="math" id="equation-pmm">
+<p><span class="eqno">(11)<a class="headerlink" href="#equation-pmm" title="Permalink to this equation">¶</a></span><img src="../_images/math/0c5e847361d6628598dabb949616f3aa17ac7d5f.svg" alt="P^{-m}_l(z) = (-1)^m {(l-m)!\over (l+m)!} P_l^m(z)"/></p>
+</div><p>This is valid for all <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> (positive or negative).
+For <img class="math" src="../_images/math/e9b10163d876fa5c8f1b58f40b97ecb329703b10.svg" alt="m \ge 0"/> we get from <a class="reference internal" href="#equation-theta3">(9)</a> and <a class="reference internal" href="#equation-pmm">(11)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/fc132d796636f12f2941e969494a8e8dcb5b1a95.png" alt="P_l^{m}(\cos \theta) =
+<p><img src="../_images/math/3278409fb05b3de17f372506669b4956bc4bf22a.svg" alt="P_l^{m}(\cos \theta) =
     (-1)^m
 \sin^{m}\theta {\d^m\over(\d \cos \theta)^m} P_l(\cos\theta)
 
@@ -868,11 +857,11 @@ P_l^{m}(z) =
 P_l^{-m}(z) = {(l-m)!\over (l+m)!}
 (1-z^2)^{m\over2} {\d^m\over\d z^m} P_l(z)"/></p>
 </div><p>This is usually used as the definition of the associated Legendre polynomials.
-They include the Condon &amp; Shortley phase factor <img class="math" src="../_images/math/f9437217dcd1cca1eccdf2d80ab4c9f6fb53a0e3.png" alt="(-1)^m"/> (only for positive
-<img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>). Some authors omit it (then it needs to be included in the equation
-<a href="#equation-thetaPlm">(10)</a>). Note that <a href="#equation-thetaPlm">(10)</a> for <img class="math" src="../_images/math/e59db779ed2f04135988f9e9885f08e4f8fc4f3d.png" alt="m&lt;0"/> can be also written as:</p>
+They include the Condon &amp; Shortley phase factor <img class="math" src="../_images/math/41fbaf6c3c3cfed0b34906f4649b4b99e8037080.svg" alt="(-1)^m"/> (only for positive
+<img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>). Some authors omit it (then it needs to be included in the equation
+<a class="reference internal" href="#equation-thetaplm">(10)</a>). Note that <a class="reference internal" href="#equation-thetaplm">(10)</a> for <img class="math" src="../_images/math/483aa3f13aae77a6854993ec2e4a32affd721e0d.svg" alt="m&lt;0"/> can be also written as:</p>
 <div class="math">
-<p><img src="../_images/math/4b2217cc9ebfba445a0bcb00f4b02839f2960f98.png" alt="\Theta_{lm}(\theta)
+<p><img src="../_images/math/5ae0827d3f696cbcf868aacf3185b6de5cb721bf.svg" alt="\Theta_{lm}(\theta)
     = \sqrt{{2l+1\over 2}{(l-m)!\over (l+m)!}} P_l^m(\cos \theta)
     = \sqrt{{2l+1\over 2}{(l+m)!\over (l-m)!}} {(l-m)!\over (l+m)!}
         P_l^m(\cos \theta) =
@@ -882,27 +871,27 @@ They include the Condon &amp; Shortley phase factor <img class="math" src="../_i
         (\cos \theta)"/></p>
 </div><p>Thanks to</p>
 <div class="math">
-<p><img src="../_images/math/36711d8f56de78ed44ed52309b4b62980945282c.png" alt="i^{m-|m|} = \begin{cases}
+<p><img src="../_images/math/2fbcc0dcc930f8ac54df5d467570c645927f2e35.svg" alt="i^{m-|m|} = \begin{cases}
     1      &amp; \mbox{for } m \ge 0\\
     (-1)^m &amp; \mbox{for } m &lt; 0\\
     \end{cases}"/></p>
-</div><p>we can write for all <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>:</p>
+</div><p>we can write for all <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>:</p>
 <div class="math">
-<p><img src="../_images/math/458411ab649ba7e90676fc1926125bcea611eedf.png" alt="\Theta_{lm}(\theta)
+<p><img src="../_images/math/dbf7a737e9a290dedd01054f386563b947941330.svg" alt="\Theta_{lm}(\theta)
     = \sqrt{{2l+1\over 2}{(l-m)!\over (l+m)!}} P_l^m(\cos \theta)
     = i^{m-|m|} \sqrt{{2l+1\over 2}{(l-|m|)!\over (l+|m|)!}}
         P_l^{|m|}(\cos \theta)"/></p>
 </div><p>The normalization of associated Legendre polynomials is:</p>
 <div class="math">
-<p><img src="../_images/math/2859ee6a42f0b29f088354cfe88114721a3a55ee.png" alt="\int_{-1}^1 \Theta_{lm}(\theta) \Theta_{l' m}(\theta)
+<p><img src="../_images/math/1c2e4d7ca3ffb3201da86090fb894b6001e6acde.svg" alt="\int_{-1}^1 \Theta_{lm}(\theta) \Theta_{l' m}(\theta)
     \sin\theta \d \theta
     = \delta_{l l'}
 
 \int_{-1}^1 P_l^m(x) P_{l'}^m(x) \d x = {2\over 2l+1} {(l+m)!\over(l-m)!}
     \delta_{l l'}"/></p>
-</div><p>Finally, we get (for all <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>):</p>
+</div><p>Finally, we get (for all <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>):</p>
 <div class="math">
-<p><img src="../_images/math/8b53591022df55ddb075af41e7e69990e0bc4a30.png" alt="Y_{lm}(\theta, \phi)
+<p><img src="../_images/math/b73257dff9624f722392e02fa64579686130fc81.svg" alt="Y_{lm}(\theta, \phi)
     = \Theta_{lm}(\theta) \Phi_m(\phi)
     = \sqrt{{2l+1\over 4\pi}{(l-m)!\over (l+m)!}}
     P_l^m(\cos \theta) e^{im\phi} =
@@ -914,7 +903,7 @@ They include the Condon &amp; Shortley phase factor <img class="math" src="../_i
     P_l^{|m|}(\cos \theta) e^{im\phi}"/></p>
 </div><p>Any function on the sphere can be expanded as:</p>
 <div class="math">
-<p><img src="../_images/math/f0d240a3d054589a994b9ea79b2a526853313a42.png" alt="f(\theta, \phi) = \braket{\theta \phi | f}
+<p><img src="../_images/math/63e261b9353298b625ca99e9395c8560b6f2d974.svg" alt="f(\theta, \phi) = \braket{\theta \phi | f}
 = \sum_{l=0}^\infty \sum_{m=-l}^l \braket{\theta \phi|l m}
     \braket{l m | f}
 = \sum_{l=0}^\infty \sum_{m=-l}^l Y_{lm}(\theta, \phi)
@@ -932,7 +921,7 @@ f_{lm} = \braket{l m | f}
 <p>The most obvious approach is to use a similar way as for Fourier series.
 We rearrange the sum:</p>
 <div class="math">
-<p><img src="../_images/math/c0060d70acda40b30673bfa92165086016a60f24.png" alt="f(\theta, \phi)
+<p><img src="../_images/math/c29d6c49a2a0e6cbd1e7ad984766da4ccddc9d34.svg" alt="f(\theta, \phi)
 = \sum_{l=0}^\infty \sum_{m=-l}^l Y_{lm}(\theta, \phi)
     f_{l m}
 = \sum_{l=0}^\infty \sum_{m=-l}^l \Theta_{lm}(\theta, \phi)
@@ -1027,9 +1016,9 @@ We rearrange the sum:</p>
 
 = \sum_{l=0}^\infty \sum_{m=-l}^l Z_{lm}(\theta, \phi)
     \tilde f_{l m}"/></p>
-</div><p>Where the real spherical harmonics <img class="math" src="../_images/math/eb4c32d2068c95137e388ad7950ad1da577291e8.png" alt="Z_{lm}"/> are:</p>
+</div><p>Where the real spherical harmonics <img class="math" src="../_images/math/238452d2cebc7cb136303d4b4f0040ea126b9608.svg" alt="Z_{lm}"/> are:</p>
 <div class="math">
-<p><img src="../_images/math/bc9716ba4669db9f1cfdcd736b0bf56d04990fe9.png" alt="Z_{lm}(\theta, \phi) = \begin{cases}
+<p><img src="../_images/math/2f7803932354740d8200c598ca52d5288a2cab90.svg" alt="Z_{lm}(\theta, \phi) = \begin{cases}
     \sqrt{2} {\Theta_{lm}\over\sqrt{2\pi}} \cos m \phi &amp; \mbox{for } m &gt; 0\\
     {\Theta_{l0}\over\sqrt{2\pi}} &amp; \mbox{for } m = 0\\
     \sqrt{2} {\Theta_{l |m|}\over\sqrt{2\pi}} \sin |m| \phi
@@ -1047,9 +1036,9 @@ We rearrange the sum:</p>
     Y_{l0}(\theta, \phi) \\
     {1\over i\sqrt{2}} (Y_{l |m|}(\theta, \phi) -Y_{l|m|}^*(\theta, \phi))\\
   \end{cases}"/></p>
-</div><p>and the coefficients <img class="math" src="../_images/math/024c0e5b3ad2ea6689794d0b9779d3bcf7681b7a.png" alt="\tilde f_{lm}"/> are:</p>
+</div><p>and the coefficients <img class="math" src="../_images/math/6c1f4d2bc3c8c5d770e352594e771cf7b90312fc.svg" alt="\tilde f_{lm}"/> are:</p>
 <div class="math">
-<p><img src="../_images/math/7e9af26f8d660491c64e79491899148365cb436b.png" alt="\tilde f_{lm} = \begin{cases}
+<p><img src="../_images/math/32c2445e87cab1319177aa261746b0661a1a1e48.svg" alt="\tilde f_{lm} = \begin{cases}
     {f_{l m} + (-1)^m f_{l, -m}\over \sqrt 2} &amp; \mbox{for } m &gt; 0\\
     f_{l0} &amp; \mbox{for } m = 0\\
     i{ f_{l,-m} - (-1)^m f_{lm}\over \sqrt 2} &amp; \mbox{for } m &lt; 0\\
@@ -1075,29 +1064,29 @@ We rearrange the sum:</p>
   \end{cases}
 =
     \int Z_{lm} f \d\Omega"/></p>
-</div><p>The factor <img class="math" src="../_images/math/2c4dc1409208ff6a3039f4871d85c16763334983.png" alt="\sqrt{2}"/> in the definition makes the real spherical harmonics
+</div><p>The factor <img class="math" src="../_images/math/6ed7e82a27129fdcfc41c86f175e59cc36d39141.svg" alt="\sqrt{2}"/> in the definition makes the real spherical harmonics
 properly normalized:</p>
 <div class="math">
-<p><img src="../_images/math/a67de0d306bd9e17a5b514ba6e27d58fa87d3051.png" alt="\int Z_{l m}(\theta, \phi) Z_{l' m'}(\theta, \phi) \d \Omega
+<p><img src="../_images/math/85fd80e153450309ef33fac96a894aa4cb023525.svg" alt="\int Z_{l m}(\theta, \phi) Z_{l' m'}(\theta, \phi) \d \Omega
     =\delta_{l l'} \delta_{m m'}"/></p>
 </div><p>From the above derivation, it is not immediately clear how to obtain other
 parametrizations of real spherical harmonics. And also what identities they
 obey. More systematic approach is to use the transformation matrices just like
 for the Fourier series:</p>
 <div class="math">
-<p><img src="../_images/math/845b6fd12e4ce5c075c19fedeac5ea46ad5af5cf.png" alt="Z_{l\mu}(\theta, \phi) = \braket{\theta\phi|l\mu}_R
+<p><img src="../_images/math/320b0ad75e8d155de1c7d27312df90704e81a69f.svg" alt="Z_{l\mu}(\theta, \phi) = \braket{\theta\phi|l\mu}_R
     = \sum_{m=-l}^l U^l_{\mu m} Y_{lm}(\theta, \phi)
     = \sum_{m=-l}^l U^l_{\mu m} \braket{\theta \phi | lm}
 
 \ket{l\mu}_R = \sum_{m=-l}^l U^l_{\mu m} \ket{lm}"/></p>
 </div><p>We require orthonormality:</p>
 <div class="math">
-<p><img src="../_images/math/2735ab7938de6d854e1e335e17605c9fc62be905.png" alt="\braket{l\mu | l\mu'}_R = \delta_{\mu \mu'}"/></p>
-</div><p>This implies unitarity of the <img class="math" src="../_images/math/e2eaab533fe4cb55ef2faec1d59801e7fcdebbe1.png" alt="U^l"/> matrices for the given <img class="math" src="../_images/math/9b25f8e64b484493fda944d25cad453423041fe6.png" alt="l"/>.
-Requiring <img class="math" src="../_images/math/d33c855bbc594db60d7e10f50ee5105a5c50e0e0.png" alt="\ket{l\mu}_R"/> to be real and using
-<img class="math" src="../_images/math/692002267139e065bf4b9616e1f191b07db0ba03.png" alt="\ket{lm}^* = (-1)^m \ket{l,-m}"/> we get:</p>
+<p><img src="../_images/math/01c332f4316462283ff4f5451ac20f0e7b6bc74a.svg" alt="\braket{l\mu | l\mu'}_R = \delta_{\mu \mu'}"/></p>
+</div><p>This implies unitarity of the <img class="math" src="../_images/math/c6ef37bc8f2ee8bc64d6c9dd908fd36ee2d9f08d.svg" alt="U^l"/> matrices for the given <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>.
+Requiring <img class="math" src="../_images/math/a927ade06fd201deda66750eb51e3b914b498589.svg" alt="\ket{l\mu}_R"/> to be real and using
+<img class="math" src="../_images/math/7b0428d31919ac4235d6bb2b1bf2e0fb02cb9f83.svg" alt="\ket{lm}^* = (-1)^m \ket{l,-m}"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/45ec5ee444bf6215686d43bf1f94ff0205ae06f8.png" alt="\ket{l\mu}_R^* = \ket{l\mu}_R
+<p><img src="../_images/math/24b7e3b3b73d0c04d784207e1a2b35ec0c264096.svg" alt="\ket{l\mu}_R^* = \ket{l\mu}_R
 
 \sum_m (U^l_{\mu m})^* \ket{lm}^* = \sum_m U^l_{\mu m} \ket{lm}
 
@@ -1112,19 +1101,19 @@ U^l_{\mu m} = (-1)^m (U^l_{\mu, -m})^*
 (U^l_{\mu m})^* = (-1)^m U^l_{\mu, -m}"/></p>
 </div><p>As for Fourier series, we require not to mix frequencies and phases, so we get:</p>
 <div class="math">
-<p><img src="../_images/math/b0ed5b71708378c216eeb01267619f5c23142b1c.png" alt="U_{nm}^l = 0\quad\mbox{for } |n| \ne |m|"/></p>
+<p><img src="../_images/math/97aff1bcfa7393d066963bb6091e9a23ef5390ea.svg" alt="U_{nm}^l = 0\quad\mbox{for } |n| \ne |m|"/></p>
 </div><p>and also that the nonzero matrix elements can only be of the form
-<img class="math" src="../_images/math/a3bc03d2cf5bcd0ba6655743c6384f98151198c7.png" alt="R e^{i{\pi\over 2} n}"/> for <img class="math" src="../_images/math/196e8d2666c373905a9b34eb222c9e39c37bc997.png" alt="n=0, 1, 2, 3"/> (i.e. <img class="math" src="../_images/math/55012628ca53153843d5c54ff098ca45015043c0.png" alt="\pm R"/> or <img class="math" src="../_images/math/f91e2086539339b1cf61e4024c09a28198f50bdb.png" alt="\pm iR"/> for some
-positive <img class="math" src="../_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R"/>). Up to signs and permutations, this determines the matrices
+<img class="math" src="../_images/math/65d4c133414da8c6e87927232ff94dc323e810a3.svg" alt="R e^{i{\pi\over 2} n}"/> for <img class="math" src="../_images/math/ef2ab76986e666eba52d15730f5aa45e57404085.svg" alt="n=0, 1, 2, 3"/> (i.e. <img class="math" src="../_images/math/417f99fad9d0398598df176f68d37cd1f8a163e2.svg" alt="\pm R"/> or <img class="math" src="../_images/math/b35fff556b6bef034a4df408d81b1d657f6212e2.svg" alt="\pm iR"/> for some
+positive <img class="math" src="../_images/math/a15901c03c5ae8e9a3a2b70b19fd6551c65d850e.svg" alt="R"/>). Up to signs and permutations, this determines the matrices
 uniquely. As for Fourier series, this implies orthonormality and completeness
 of the real spherical harmonics:</p>
 <div class="math">
-<p><img src="../_images/math/fe0a0b0cb84b8f0b8a9355230c56f3af97122235.png" alt="\braket{l' m' | l m}_R = \delta_{ll'} \delta_{mm'}
+<p><img src="../_images/math/e83c38c6038a52c7fde7f73aefb74827cd395877.svg" alt="\braket{l' m' | l m}_R = \delta_{ll'} \delta_{mm'}
 
 \sum_{l=0}^\infty \sum_{m=-l}^l \ket{lm}_R \bra{lm}_R = \one"/></p>
 </div><p>Also, thanks to unitarity we get:</p>
 <div class="math">
-<p><img src="../_images/math/e5af2c6b421e0ba9d21b4bfd0c7a8fd324f0535a.png" alt="\sum_{m=-l}^l Z_{lm}(\Omega) Z_{lm}(\Omega')
+<p><img src="../_images/math/418c2c54c07a8ac310db55412f9eeea94e732309.svg" alt="\sum_{m=-l}^l Z_{lm}(\Omega) Z_{lm}(\Omega')
 = \sum_{m=-l}^l \sum_{m' m''} U^l_{m m'} Y_{lm'}(\Omega)
     (U^l_{m m''})^* Y_{lm''}^*(\Omega')
 = \sum_{m' m''} \delta_{m' m''} Y_{lm'}(\Omega) Y_{lm''}^*(\Omega') =
@@ -1133,17 +1122,17 @@ of the real spherical harmonics:</p>
 = {2l+1\over 4\pi} P_l(\cos \gamma)"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/e38b611e544914d4d7a14620e084036b92a97881.png" alt="{1\over |{\bf r}-{\bf r'}|}
+<p><img src="../_images/math/ba783ed765d2e0744b85627b6bc5062548585eda.svg" alt="{1\over |{\bf r}-{\bf r'}|}
     =\sum_{l=0}^\infty{r_{&lt;}^l\over r_{&gt;}^{l+1}} P_l({\bf\hat r}\cdot {\bf\hat r'})
     = \sum_{lm}{r_{&lt;}^l\over r_{&gt;}^{l+1}}
         {4\pi\over 2l+1}Y_{lm}({\bf\hat r})Y_{lm}^*({\bf\hat r}')
     = \sum_{lm}{r_{&lt;}^l\over r_{&gt;}^{l+1}}
         {4\pi\over 2l+1}Z_{lm}({\bf\hat r})Z_{lm}({\bf\hat r}')"/></p>
 </div><p>Following the Fourier series, the most natural way to choose the signs in the
-<img class="math" src="../_images/math/e2eaab533fe4cb55ef2faec1d59801e7fcdebbe1.png" alt="U^l"/> matrices is such so as to keep <img class="math" src="../_images/math/6fb300dacfcde1b57ad070409262b1743e0cd966.png" alt="\sin"/> and <img class="math" src="../_images/math/bb5e108fdc4bf4fb6151cb922992f23bc6c35985.png" alt="\cos"/> in the basis with
-positive frequencies (thus the absolute value for <img class="math" src="../_images/math/e59db779ed2f04135988f9e9885f08e4f8fc4f3d.png" alt="m&lt;0"/>):</p>
+<img class="math" src="../_images/math/c6ef37bc8f2ee8bc64d6c9dd908fd36ee2d9f08d.svg" alt="U^l"/> matrices is such so as to keep <img class="math" src="../_images/math/5b2414886f23ef29a055431a547d69cdf8c68c44.svg" alt="\sin"/> and <img class="math" src="../_images/math/c25a9ffd537851d2ca50528ba77b25608c7c8a6f.svg" alt="\cos"/> in the basis with
+positive frequencies (thus the absolute value for <img class="math" src="../_images/math/483aa3f13aae77a6854993ec2e4a32affd721e0d.svg" alt="m&lt;0"/>):</p>
 <div class="math">
-<p><img src="../_images/math/d7d4c129740a5b3752e660aea0ac21fb16a70115.png" alt="Z_{lm}(\theta, \phi)
+<p><img src="../_images/math/bac89008a2a84e7e0527cc09aaff1e1f135acda6.svg" alt="Z_{lm}(\theta, \phi)
 =
 \begin{cases}
     \sqrt{2} \Re(Y_{lm}(\theta, \phi)) &amp; \mbox{for } m &gt; 0\\
@@ -1184,7 +1173,7 @@ positive frequencies (thus the absolute value for <img class="math" src="../_ima
   \end{cases}"/></p>
 </div><p>This gives:</p>
 <div class="math">
-<p><img src="../_images/math/b74d58b0becbcf407b57f3509ff89bb7eacda22f.png" alt="U_{\mu m}^l = \begin{cases}
+<p><img src="../_images/math/a41b564975dca9dd6f5c490ba399fe8a17804df6.svg" alt="U_{\mu m}^l = \begin{cases}
     {\delta_{\mu m} + (-1)^m \delta_{\mu,-m}\over\sqrt{2}}
         &amp; \mbox{for } \mu &gt; 0\\
     \delta_{0m}                                  &amp; \mbox{for } \mu = 0\\
@@ -1195,7 +1184,7 @@ positive frequencies (thus the absolute value for <img class="math" src="../_ima
 <h4>Other convention<a class="headerlink" href="#other-convention" title="Permalink to this headline">¶</a></h4>
 <p>Some people use the following convention:</p>
 <div class="math">
-<p><img src="../_images/math/ec1e9796c00e823da5b8e1c5bc3ef54534f0582b.png" alt="Z_{lm}(\theta, \phi)
+<p><img src="../_images/math/0632918a845b32502d19e488cc9dc5c4456a5ef2.svg" alt="Z_{lm}(\theta, \phi)
 =
 \begin{cases}
     (-1)^m \sqrt{2} \Re(Y_{lm}(\theta, \phi)) &amp; \mbox{for } m &gt; 0\\
@@ -1220,7 +1209,7 @@ positive frequencies (thus the absolute value for <img class="math" src="../_ima
         P_l^{|m|}(\cos\theta) \sin |m| \phi \\
   \end{cases}"/></p>
 </div><p>It has the advantage that there are no minus signs in the final expressions
-using <img class="math" src="../_images/math/6fb300dacfcde1b57ad070409262b1743e0cd966.png" alt="\sin"/>, <img class="math" src="../_images/math/bb5e108fdc4bf4fb6151cb922992f23bc6c35985.png" alt="\cos"/> or using <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/>, <img class="math" src="../_images/math/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" alt="y"/>, <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/>. However, we will not use this
+using <img class="math" src="../_images/math/5b2414886f23ef29a055431a547d69cdf8c68c44.svg" alt="\sin"/>, <img class="math" src="../_images/math/c25a9ffd537851d2ca50528ba77b25608c7c8a6f.svg" alt="\cos"/> or using <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>, <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>, <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/>. However, we will not use this
 convention.</p>
 </div>
 </div>
@@ -1228,7 +1217,7 @@ convention.</p>
 <h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
 <p>Spherical harmonics:</p>
 <div class="math">
-<p><img src="../_images/math/5de069780a330b0c842e66b4530672548833bc42.png" alt="Y_{0,0}(\theta, \phi) = \frac{1}{2 \sqrt{\pi}}
+<p><img src="../_images/math/02aac0e376dfc4348bce0f8045de8d349d01d169.svg" alt="Y_{0,0}(\theta, \phi) = \frac{1}{2 \sqrt{\pi}}
 
 Y_{1,-1}(\theta, \phi) = \frac{\sqrt{6} e^{- \mathbf{\imath} \phi} \sin{\left (\theta \right )}}{4 \sqrt{\pi}}
 
@@ -1261,7 +1250,7 @@ Y_{3,2}(\theta, \phi) = \frac{\sqrt{210} e^{2 \mathbf{\imath} \phi} \sin^{2}{\le
 Y_{3,3}(\theta, \phi) = - \frac{\sqrt{35} e^{3 \mathbf{\imath} \phi} \sin^{3}{\left (\theta \right )}}{8 \sqrt{\pi}}"/></p>
 </div><p>Real spherical harmonics:</p>
 <div class="math">
-<p><img src="../_images/math/66a3f308553483499a39f2772113e968ad5246da.png" alt="Z_{0,0}(\theta, \phi) = \frac{1}{2 \sqrt{\pi}}
+<p><img src="../_images/math/a01077e090c5a61d53f56f73da2c36d842bff664.svg" alt="Z_{0,0}(\theta, \phi) = \frac{1}{2 \sqrt{\pi}}
 
 Z_{1,-1}(\theta, \phi) = - \frac{\sqrt{3} \sin{\left (\phi \right )} \sin{\left (\theta \right )}}{2 \sqrt{\pi}}
 
@@ -1292,9 +1281,9 @@ Z_{3,1}(\theta, \phi) = - \frac{\sqrt{42} \left(360 \cos^{2}{\left (\theta \righ
 Z_{3,2}(\theta, \phi) = \frac{\sqrt{105} \sin^{2}{\left (\theta \right )} \cos{\left (2 \phi \right )} \cos{\left (\theta \right )}}{4 \sqrt{\pi}}
 
 Z_{3,3}(\theta, \phi) = - \frac{\sqrt{70} \sin^{3}{\left (\theta \right )} \cos{\left (3 \phi \right )}}{8 \sqrt{\pi}}"/></p>
-</div><p>Real spherical harmonics (using <img class="math" src="../_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x"/>, <img class="math" src="../_images/math/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" alt="y"/> and <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/>, assuming <img class="math" src="../_images/math/527333c04658f5921acbfc853eb7351c1b097e7e.png" alt="x^2 + y^2 + z^2 = 1"/>):</p>
+</div><p>Real spherical harmonics (using <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>, <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> and <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/>, assuming <img class="math" src="../_images/math/8d04ed31a0773c514c1fc1fdcefda11a5e9388e3.svg" alt="x^2 + y^2 + z^2 = 1"/>):</p>
 <div class="math">
-<p><img src="../_images/math/af814b79b8fd16a0e5921328292883ee7226c55e.png" alt="Z_{0,0}(x, y, z) = \frac{1}{2 \sqrt{\pi}}
+<p><img src="../_images/math/87dacfbaa8d68618a83dd7bb139adcd725aca1b4.svg" alt="Z_{0,0}(x, y, z) = \frac{1}{2 \sqrt{\pi}}
 
 Z_{1,-1}(x, y, z) = - \frac{\sqrt{3} y}{2 \sqrt{\pi}}
 
@@ -1326,8 +1315,8 @@ Z_{3,2}(x, y, z) = \frac{\sqrt{105} z \left(x^{2} - y^{2}\right)}{4 \sqrt{\pi}}
 
 Z_{3,3}(x, y, z) = \frac{\sqrt{70} x \left(- x^{2} + 3 y^{2}\right)}{8 \sqrt{\pi}}"/></p>
 </div><p>These tables were generated using
-<a class="reference download internal" href="../_downloads/spherical_harmonics.py"><tt class="xref download docutils literal"><span class="pre">spherical_harmonics.py</span></tt></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="p">(</span><span class="n">sympify</span><span class="p">,</span> <span class="n">factorial</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">Dummy</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span>
+<a class="reference download internal" href="../_downloads/spherical_harmonics.py" download=""><code class="xref download docutils literal notranslate"><span class="pre">spherical_harmonics.py</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="p">(</span><span class="n">sympify</span><span class="p">,</span> <span class="n">factorial</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">Dummy</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span>
         <span class="n">I</span><span class="p">,</span> <span class="n">latex</span><span class="p">,</span> <span class="n">symbols</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">Plm</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
@@ -1406,38 +1395,38 @@ Z_{3,3}(x, y, z) = \frac{\sqrt{70} x \left(- x^{2} + 3 y^{2}\right)}{8 \sqrt{\pi
 
 
 <span class="n">var</span><span class="p">(</span><span class="s2">&quot;theta phi&quot;</span><span class="p">)</span>
-<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;x y z&quot;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;Spherical harmonics:&quot;</span>
-<span class="k">print</span>
-<span class="k">print</span> <span class="s2">&quot;.. math::&quot;</span>
-<span class="k">print</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;x y z&quot;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s2">&quot;Spherical harmonics:&quot;</span>
+<span class="nb">print</span>
+<span class="nb">print</span> <span class="s2">&quot;.. math::&quot;</span>
+<span class="nb">print</span>
 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">print</span> <span class="sa">r</span><span class="s2">&quot;    Y_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(\theta, \phi) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
+        <span class="nb">print</span> <span class="sa">r</span><span class="s2">&quot;    Y_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(\theta, \phi) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
             <span class="n">latex</span><span class="p">(</span><span class="n">Ylm</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">))</span>
-        <span class="k">print</span>
+        <span class="nb">print</span>
 
-<span class="k">print</span>
-<span class="k">print</span> <span class="s2">&quot;Real spherical harmonics:&quot;</span>
-<span class="k">print</span>
-<span class="k">print</span> <span class="s2">&quot;.. math::&quot;</span>
-<span class="k">print</span>
+<span class="nb">print</span>
+<span class="nb">print</span> <span class="s2">&quot;Real spherical harmonics:&quot;</span>
+<span class="nb">print</span>
+<span class="nb">print</span> <span class="s2">&quot;.. math::&quot;</span>
+<span class="nb">print</span>
 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">print</span> <span class="sa">r</span><span class="s2">&quot;    Z_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(\theta, \phi) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
+        <span class="nb">print</span> <span class="sa">r</span><span class="s2">&quot;    Z_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(\theta, \phi) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
             <span class="n">latex</span><span class="p">(</span><span class="n">Zlm</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span><span class="p">))</span>
-        <span class="k">print</span>
+        <span class="nb">print</span>
 
-<span class="k">print</span>
-<span class="k">print</span> <span class="s2">&quot;Real spherical harmonics (using $x$, $y$ and $z$, assuming $x^2 + y^2 + z^2 = 1$):&quot;</span>
-<span class="k">print</span>
-<span class="k">print</span> <span class="s2">&quot;.. math::&quot;</span>
-<span class="k">print</span>
+<span class="nb">print</span>
+<span class="nb">print</span> <span class="s2">&quot;Real spherical harmonics (using $x$, $y$ and $z$, assuming $x^2 + y^2 + z^2 = 1$):&quot;</span>
+<span class="nb">print</span>
+<span class="nb">print</span> <span class="s2">&quot;.. math::&quot;</span>
+<span class="nb">print</span>
 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">print</span> <span class="sa">r</span><span class="s2">&quot;    Z_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(x, y, z) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
+        <span class="nb">print</span> <span class="sa">r</span><span class="s2">&quot;    Z_{</span><span class="si">%d</span><span class="s2">,</span><span class="si">%d</span><span class="s2">}(x, y, z) =&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> \
             <span class="n">latex</span><span class="p">(</span><span class="n">Zlm_xyz</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span><span class="o">.</span><span class="n">simplify</span><span class="p">())</span>
-        <span class="k">print</span>
+        <span class="nb">print</span>
 </pre></div>
 </div>
 </div>
@@ -1448,7 +1437,7 @@ Z_{3,3}(x, y, z) = \frac{\sqrt{70} x \left(- x^{2} + 3 y^{2}\right)}{8 \sqrt{\pi
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -1482,29 +1471,30 @@ Z_{3,3}(x, y, z) = \frac{\sqrt{70} x \left(- x^{2} + 3 y^{2}\right)}{8 \sqrt{\pi
   <h4>Next topic</h4>
   <p class="topless"><a href="../relativity/main.html"
                         title="next chapter">Classical Mechanics, Special and General Relativity</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/operators.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/operators.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -1516,13 +1506,13 @@ Z_{3,3}(x, y, z) = \frac{\sqrt{70} x \left(- x^{2} + 3 y^{2}\right)}{8 \sqrt{\pi
         <li class="right" >
           <a href="differential-geometry.html" title="Differential Geometry"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

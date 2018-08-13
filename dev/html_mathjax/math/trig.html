@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Periodic Functions &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Periodic Functions &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Delta Function" href="other.html" />
     <link rel="prev" title="Fourier Transform" href="transforms.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,88 +62,88 @@
         <li class="right" >
           <a href="transforms.html" title="Fourier Transform"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="periodic-functions">
 <h1>Periodic Functions<a class="headerlink" href="#periodic-functions" title="Permalink to this headline">¶</a></h1>
-<p>A function <span class="math">\(f(x)\)</span> is periodic with period <span class="math">\(T\)</span>:</p>
-<div class="math">
+<p>A function <span class="math notranslate nohighlight">\(f(x)\)</span> is periodic with period <span class="math notranslate nohighlight">\(T\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[f(x+T) = f(x)\]</div>
-<p>Then you can shift the integration limits by the period <span class="math">\(T\)</span>:</p>
-<div class="math">
+<p>Then you can shift the integration limits by the period <span class="math notranslate nohighlight">\(T\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\int_a^b f(x) \d x
     = \int_a^b f(x+T) \d x
     = \int_{a+T}^{b+T} f(x) \d x\]</div>
-<p>If you integrate <span class="math">\(f(x)\)</span> from <span class="math">\(0\)</span> to <span class="math">\(T\)</span>, you can shift <span class="math">\(x\)</span> in <span class="math">\(f(x)\)</span> by any
-constant <span class="math">\(\alpha\)</span>:</p>
-<div class="math">
-\[\int_0^T f(x+\alpha) \d x =\]\[= \int_\alpha^{T+\alpha} f(x) \d x =\]\[= \int_\alpha^0 f(x) \d x
+<p>If you integrate <span class="math notranslate nohighlight">\(f(x)\)</span> from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(T\)</span>, you can shift <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(f(x)\)</span> by any
+constant <span class="math notranslate nohighlight">\(\alpha\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\int_0^T f(x+\alpha) \d x =\\= \int_\alpha^{T+\alpha} f(x) \d x =\\= \int_\alpha^0 f(x) \d x
 + \int_0^T f(x) \d x
-+ \int_T^{T+\alpha} f(x) \d x =\]\[= -\int_0^\alpha f(x) \d x
++ \int_T^{T+\alpha} f(x) \d x =\\= -\int_0^\alpha f(x) \d x
 + \int_0^T f(x) \d x
-+ \int_0^\alpha f(x) \d x =\]\[= \int_0^T f(x) \d x\]</div>
++ \int_0^\alpha f(x) \d x =\\= \int_0^T f(x) \d x\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="polar-coordinates">
 <h1>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>Polar coordinates (radial, azimuth) <span class="math">\((r,\phi)\)</span> are defined by</p>
-<div class="math">
-\[\begin{eqnarray*} x&=&r\cos\phi \\ y&=&r\sin\phi \\ \end{eqnarray*}\]</div><div class="section" id="example">
+<p>Polar coordinates (radial, azimuth) <span class="math notranslate nohighlight">\((r,\phi)\)</span> are defined by</p>
+<div class="math notranslate nohighlight">
+\begin{eqnarray*} x&amp;=&amp;r\cos\phi \\ y&amp;=&amp;r\sin\phi \\ \end{eqnarray*}</div><div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>When evaluating integrals of the type:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[l(x, y) = \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi\]</div>
-<p>we write <span class="math">\(x\)</span> and <span class="math">\(y\)</span> using polar coordinates:</p>
-<div class="math">
-\[x = r' \cos \phi'\]\[y = r' \sin \phi'\]</div>
-<p>and then use the <span class="math">\(2\pi\)</span> periodicity of <span class="math">\(\cos x\)</span>:</p>
-<div class="math">
-\[l(x, y)
-= \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi =\]\[= \int_0^{2\pi} \sqrt{x^2 + y^2 + r^2 - 2r(x\cos\phi + y\sin\phi)} \,\d \phi =\]\[= \int_0^{2\pi} \sqrt{r'^2 + r^2
-    - 2rr'(\cos\phi'\cos\phi + \sin\phi'\sin\phi)} \,\d \phi =\]\[= \int_0^{2\pi} \sqrt{r'^2 + r^2
-    - 2rr'\cos(\phi-\phi')} \,\d \phi =\]\[= \int_0^{2\pi} \sqrt{r'^2 + r^2 - 2rr'\cos\phi} \,\d \phi =\]</div>
+<p>we write <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> using polar coordinates:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}x = r' \cos \phi'\\y = r' \sin \phi'\end{aligned}\end{align} \]</div>
+<p>and then use the <span class="math notranslate nohighlight">\(2\pi\)</span> periodicity of <span class="math notranslate nohighlight">\(\cos x\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}l(x, y)
+= \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi =\\= \int_0^{2\pi} \sqrt{x^2 + y^2 + r^2 - 2r(x\cos\phi + y\sin\phi)} \,\d \phi =\\= \int_0^{2\pi} \sqrt{r'^2 + r^2
+    - 2rr'(\cos\phi'\cos\phi + \sin\phi'\sin\phi)} \,\d \phi =\\= \int_0^{2\pi} \sqrt{r'^2 + r^2
+    - 2rr'\cos(\phi-\phi')} \,\d \phi =\\= \int_0^{2\pi} \sqrt{r'^2 + r^2 - 2rr'\cos\phi} \,\d \phi =\end{aligned}\end{align} \]</div>
 <p>comparing to:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[l(0, y) = \int_0^{2\pi} \sqrt{y^2 + r^2 - 2ry\sin\phi} \,\d \phi\]</div>
-<p>we can see that because the integral is symmetric, we can just set <span class="math">\(x=0\)</span> and
-then replace <span class="math">\(y \to r'\)</span>. The above method does everything algebraically, but
+<p>we can see that because the integral is symmetric, we can just set <span class="math notranslate nohighlight">\(x=0\)</span> and
+then replace <span class="math notranslate nohighlight">\(y \to r'\)</span>. The above method does everything algebraically, but
 you can use this symmetry argument to remember what to do, or even skip the
-calculation if you are sure that you didn&#8217;t make a mistake in the &#8220;symmetry
-argument&#8221;.</p>
+calculation if you are sure that you didn’t make a mistake in the “symmetry
+argument”.</p>
 </div>
 </div>
 <div class="section" id="spherical-coordinates">
 <h1>Spherical Coordinates<a class="headerlink" href="#spherical-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>Spherical coordinates radial (<span class="math">\(\rho\)</span>), zenith (<span class="math">\(\theta\)</span>), azimuth (<span class="math">\(\phi\)</span>):</p>
-<div class="math" id="equation-spherical_coordinates">
-<span class="eqno">(1)</span>\[\begin{split}x &amp;= \rho\sin\theta\cos\phi \\
+<p>Spherical coordinates radial (<span class="math notranslate nohighlight">\(\rho\)</span>), zenith (<span class="math notranslate nohighlight">\(\theta\)</span>), azimuth (<span class="math notranslate nohighlight">\(\phi\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-spherical-coordinates">
+<span class="eqno">(1)<a class="headerlink" href="#equation-spherical-coordinates" title="Permalink to this equation">¶</a></span>\[\begin{split}x &amp;= \rho\sin\theta\cos\phi \\
 y &amp;= \rho\sin\theta\sin\phi \\
 z &amp;= \rho\cos\theta \\\end{split}\]</div>
-<p>Note: this meaning of <span class="math">\((\theta,\phi)\)</span> is mostly used in the USA and in many
-books. In Europe people usually use different symbols, like <span class="math">\((\phi,\theta)\)</span>,
-<span class="math">\((\vartheta,\varphi)\)</span> and others.</p>
-<p>The motivation is to first write <span class="math">\(x\)</span> and <span class="math">\(y\)</span> using polar coordinates:</p>
-<div class="math">
-\[x = \rho_{xy}\cos\phi\]\[y = \rho_{xy}\sin\phi\]</div>
-<p>and then write <span class="math">\(z\)</span> and the projection <span class="math">\(\rho_{xy}\)</span> of <span class="math">\(\rho\)</span> onto the plane
-<span class="math">\(x-y\)</span> using polar coordinates:</p>
-<div class="math">
-\[z = \rho\cos\theta\]\[\rho_{xy} = \rho\sin\theta\]</div>
+<p>Note: this meaning of <span class="math notranslate nohighlight">\((\theta,\phi)\)</span> is mostly used in the USA and in many
+books. In Europe people usually use different symbols, like <span class="math notranslate nohighlight">\((\phi,\theta)\)</span>,
+<span class="math notranslate nohighlight">\((\vartheta,\varphi)\)</span> and others.</p>
+<p>The motivation is to first write <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> using polar coordinates:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}x = \rho_{xy}\cos\phi\\y = \rho_{xy}\sin\phi\end{aligned}\end{align} \]</div>
+<p>and then write <span class="math notranslate nohighlight">\(z\)</span> and the projection <span class="math notranslate nohighlight">\(\rho_{xy}\)</span> of <span class="math notranslate nohighlight">\(\rho\)</span> onto the plane
+<span class="math notranslate nohighlight">\(x-y\)</span> using polar coordinates:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}z = \rho\cos\theta\\\rho_{xy} = \rho\sin\theta\end{aligned}\end{align} \]</div>
 <p>so by combining these two we get:</p>
-<div class="math">
-\[x = \rho_{xy}\cos\phi = \rho\sin\theta\cos\phi\]\[y = \rho_{xy}\sin\phi = \rho\sin\theta\sin\phi\]\[z = \rho\cos\theta\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}x = \rho_{xy}\cos\phi = \rho\sin\theta\cos\phi\\y = \rho_{xy}\sin\phi = \rho\sin\theta\sin\phi\\z = \rho\cos\theta\end{aligned}\end{align} \]</div>
 <div class="section" id="example-i">
 <h2>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
-<p>To transform differential operators such as <span class="math">\(\d\over\d x\)</span>
+<p>To transform differential operators such as <span class="math notranslate nohighlight">\(\d\over\d x\)</span>
 into spherical coordinates, we make use of the chain rule:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{\partial}{\partial x}=
 \frac{\partial \rho}{\partial x}
 \frac{\partial}{\partial \rho}
@@ -162,257 +151,257 @@ into spherical coordinates, we make use of the chain rule:</p>
 \frac{\partial}{\partial \theta}
 +\frac{\partial\phi}{\partial x}
 \frac{\partial}{\partial \phi}\]</div>
-<p>where <span class="math">\(r\)</span>, <span class="math">\(\theta\)</span> and <span class="math">\(\phi\)</span> are functions of <span class="math">\(x\)</span>, <span class="math">\(y\)</span>, <span class="math">\(z\)</span> to be expressed
-by inverting <a href="#equation-spherical_coordinates">(1)</a>:</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> are functions of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span> to be expressed
+by inverting <a class="reference internal" href="#equation-spherical-coordinates">(1)</a>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\rho(x, y, z)   &amp;= \sqrt{x^2+y^2+z^2}                \\
 \theta(x, y, z) &amp;= \arccos{z\over\sqrt{x^2+y^2+z^2}} \\
 \phi(x, y, z)   &amp;= \arctan{y\over x}                 \\\end{split}\]</div>
-<p>At the end, the derivatives are expressed using <span class="math">\(\rho\)</span>, <span class="math">\(\theta\)</span>,
-<span class="math">\(\phi\)</span> again. For example</p>
-<div class="math">
-\[{\partial\rho\over\partial x} =
-    {\partial\sqrt{x^2+y^2+z^2}\over\partial x} =\]\[    = {x \over \sqrt{x^2+y^2+z^2}} =\]\[    = {\rho\sin\theta\cos\phi \over \rho} = \sin\theta\cos\phi\]</div>
+<p>At the end, the derivatives are expressed using <span class="math notranslate nohighlight">\(\rho\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>,
+<span class="math notranslate nohighlight">\(\phi\)</span> again. For example</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}{\partial\rho\over\partial x} =
+    {\partial\sqrt{x^2+y^2+z^2}\over\partial x} =\\    = {x \over \sqrt{x^2+y^2+z^2}} =\\    = {\rho\sin\theta\cos\phi \over \rho} = \sin\theta\cos\phi\end{aligned}\end{align} \]</div>
 <p>Finally we obtain</p>
-<div class="math" id="equation-differentials_spherical">
-<span class="eqno">(2)</span>\[\frac{\partial}{\partial x}=
+<div class="math notranslate nohighlight" id="equation-differentials-spherical">
+<span class="eqno">(2)<a class="headerlink" href="#equation-differentials-spherical" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\frac{\partial}{\partial x}=
     \sin\theta\cos\phi
     \frac{\partial}{\partial\rho}
     +\frac{\cos\theta\cos\phi}{\rho}
     \frac{\partial}{\partial \theta}
     - \frac{\sin\phi}{\rho\sin\theta}
-    \frac{\partial}{\partial \phi}\]\[\frac{\partial}{\partial y}=
+    \frac{\partial}{\partial \phi}\\\frac{\partial}{\partial y}=
     \sin\theta\sin\phi
     \frac{\partial}{\partial\rho}
     +\frac{\cos\theta\sin\phi}{\rho}
     \frac{\partial}{\partial \theta}
     + \frac{\cos\phi}{\rho\sin\theta}
-    \frac{\partial}{\partial \phi}\]\[\frac{\partial}{\partial z}=
+    \frac{\partial}{\partial \phi}\\\frac{\partial}{\partial z}=
     \cos\theta \frac{\partial}{\partial\rho}
     -\frac{\sin\theta}{\rho}
-    \frac{\partial}{\partial \theta}\]</div>
+    \frac{\partial}{\partial \theta}\end{aligned}\end{align} \]</div>
 <p>These expressions can be combined to obtain more complicated objects
 such as Laplacian (in spherical coordinates). However straightforward
 this approach is, it is also rather cumbersome; an alternative is
-discussed in the <a class="reference internal" href="differential-geometry.html#diff-geom-spherical-coordinates"><em>Spherical Coordinates</em></a> section of differential
+discussed in the <a class="reference internal" href="differential-geometry.html#diff-geom-spherical-coordinates"><span class="std std-ref">Spherical Coordinates</span></a> section of differential
 geometry (where it is shown, that the coefficients in
-<a href="#equation-differentials_spherical">(2)</a> are simply the matrix elements of the inverse
+<a class="reference internal" href="#equation-differentials-spherical">(2)</a> are simply the matrix elements of the inverse
 Jacobian).</p>
 </div>
 <div class="section" id="example-ii">
 <span id="spherical-int-example"></span><h2>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
 <p>When evaluating integrals of the type:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{(x-r\sin\theta\cos\phi)^2
     + (y-r\sin\theta\sin\phi)^2
     + (z-r\cos\theta)^2
       } \,\sin\theta\]</div>
-<p>we write <span class="math">\(x\)</span> and <span class="math">\(y\)</span> using polar coordinates:</p>
-<div class="math">
-\[x = \rho_{xy} \cos \phi'\]\[y = \rho_{xy} \sin \phi'\]</div>
+<p>we write <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> using polar coordinates:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}x = \rho_{xy} \cos \phi'\\y = \rho_{xy} \sin \phi'\end{aligned}\end{align} \]</div>
 <p>and simplify:</p>
-<div class="math">
-\[l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{(x-r\sin\theta\cos\phi)^2
     + (y-r\sin\theta\sin\phi)^2
     + (z-r\cos\theta)^2
-      } \,\sin\theta =\]\[= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+      } \,\sin\theta =\\= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{x^2 + y^2 + z^2 + r^2 -2r(
         x\sin\theta\cos\phi
         +y\sin\theta\sin\phi
         +z\cos\theta
     )
-      } \,\sin\theta =\]\[= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+      } \,\sin\theta =\\= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{\rho_{xy} + z^2 + r^2 -2r(
         \rho_{xy}\cos\phi'\sin\theta\cos\phi
         +\rho_{xy}\sin\phi'\sin\theta\sin\phi
         +z\cos\theta
     )
-      } \,\sin\theta =\]\[= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+      } \,\sin\theta =\\= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{\rho_{xy} + z^2 + r^2 -2r(
         \rho_{xy}\cos(\phi-\phi')\sin\theta
         +z\cos\theta
     )
-      } \,\sin\theta =\]\[= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+      } \,\sin\theta =\\= \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{\rho_{xy} + z^2 + r^2 -2r(
         \rho_{xy}\cos\phi\sin\theta
         +z\cos\theta
     )
-      } \,\sin\theta\]</div>
+      } \,\sin\theta\end{aligned}\end{align} \]</div>
 <p>comparing to:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[l(0, 0, z)
 = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{z^2 + r^2 -2rz\cos\theta } \,\sin\theta =\]</div>
-<p>we can see that because the integral is symmetric, we can just set <span class="math">\(x=0\)</span>,
-<span class="math">\(y=0\)</span> and then replace <span class="math">\(z \to \rho\)</span>.</p>
+<p>we can see that because the integral is symmetric, we can just set <span class="math notranslate nohighlight">\(x=0\)</span>,
+<span class="math notranslate nohighlight">\(y=0\)</span> and then replace <span class="math notranslate nohighlight">\(z \to \rho\)</span>.</p>
 </div>
 </div>
 <div class="section" id="argument-function-atan2">
 <span id="index-0"></span><h1>Argument function, atan2<a class="headerlink" href="#argument-function-atan2" title="Permalink to this headline">¶</a></h1>
-<p>Argument function <span class="math">\(\arg(z)\)</span> is any <span class="math">\(\varphi\)</span> such that</p>
-<div class="math">
+<p>Argument function <span class="math notranslate nohighlight">\(\arg(z)\)</span> is any <span class="math notranslate nohighlight">\(\varphi\)</span> such that</p>
+<div class="math notranslate nohighlight">
 \[z = r e^{i\varphi}\]</div>
-<p>Obviously <span class="math">\(\arg(z)\)</span> is unique up to any integer multiple of <span class="math">\(2\pi\)</span>. By taking
-the principal value of the <span class="math">\(\arg(z)\)</span> function, e.g. fixing <span class="math">\(\arg(z)\)</span> to the
-interval <span class="math">\((-\pi, \pi]\)</span> (so that the branch cut is on the negative <span class="math">\(x\)</span>-axis, as
-usual), we get the <span class="math">\(\Arg(z)\)</span> function:</p>
-<div class="math">
-\[\begin{split}-\pi &lt; \Arg z \le \pi\end{split}\]</div>
-<p>then <span class="math">\(\arg z = \Arg z + 2\pi n\)</span>, where <span class="math">\(n=0, \pm 1, \pm 2, \dots\)</span>. We can then
-use the following formula to easily calculate <span class="math">\(\Arg z\)</span> for any <span class="math">\(z=x+iy\)</span> (except
-<span class="math">\(x=y=0\)</span>, i.e. <span class="math">\(z=0\)</span>, where it is not defined):</p>
-<div class="math">
-\[\begin{split}\Arg(x+iy) =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
-    2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}\end{split}\]</div>
-<p>Finally we define <span class="math">\(\atan2(y, x)\)</span> as:</p>
-<div class="math">
-\[\begin{split}\atan2(y, x) = \Arg(x+iy) =
+<p>Obviously <span class="math notranslate nohighlight">\(\arg(z)\)</span> is unique up to any integer multiple of <span class="math notranslate nohighlight">\(2\pi\)</span>. By taking
+the principal value of the <span class="math notranslate nohighlight">\(\arg(z)\)</span> function, e.g. fixing <span class="math notranslate nohighlight">\(\arg(z)\)</span> to the
+interval <span class="math notranslate nohighlight">\((-\pi, \pi]\)</span> (so that the branch cut is on the negative <span class="math notranslate nohighlight">\(x\)</span>-axis, as
+usual), we get the <span class="math notranslate nohighlight">\(\Arg(z)\)</span> function:</p>
+<div class="math notranslate nohighlight">
+\[-\pi &lt; \Arg z \le \pi\]</div>
+<p>then <span class="math notranslate nohighlight">\(\arg z = \Arg z + 2\pi n\)</span>, where <span class="math notranslate nohighlight">\(n=0, \pm 1, \pm 2, \dots\)</span>. We can then
+use the following formula to easily calculate <span class="math notranslate nohighlight">\(\Arg z\)</span> for any <span class="math notranslate nohighlight">\(z=x+iy\)</span> (except
+<span class="math notranslate nohighlight">\(x=y=0\)</span>, i.e. <span class="math notranslate nohighlight">\(z=0\)</span>, where it is not defined):</p>
+<div class="math notranslate nohighlight">
+\[\Arg(x+iy) =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
+    2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}\]</div>
+<p>Finally we define <span class="math notranslate nohighlight">\(\atan2(y, x)\)</span> as:</p>
+<div class="math notranslate nohighlight">
+\[\atan2(y, x) = \Arg(x+iy) =
     \begin{cases}\pi&amp;y=0;x&lt;0;\cr
-        2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}\end{split}\]</div>
-<p>The angle <span class="math">\(\phi=\atan2(y, x)\)</span> is the angle of the point <span class="math">\((x, y)\)</span> on the unit
+        2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}\]</div>
+<p>The angle <span class="math notranslate nohighlight">\(\phi=\atan2(y, x)\)</span> is the angle of the point <span class="math notranslate nohighlight">\((x, y)\)</span> on the unit
 circle (assuming the usual conventions), and it works for all quadrants
-(<span class="math">\(\phi=\atan({y\over x})\)</span> only works for the first and fourth quadrant, where
-<span class="math">\(\atan({y\over x})=\atan2(y, x)\)</span>, but in the second and third qudrant,
-<span class="math">\(\atan({y\over x})\)</span> gives the wrong angles, while <span class="math">\(\atan2(y, x)\)</span> gives the
+(<span class="math notranslate nohighlight">\(\phi=\atan({y\over x})\)</span> only works for the first and fourth quadrant, where
+<span class="math notranslate nohighlight">\(\atan({y\over x})=\atan2(y, x)\)</span>, but in the second and third qudrant,
+<span class="math notranslate nohighlight">\(\atan({y\over x})\)</span> gives the wrong angles, while <span class="math notranslate nohighlight">\(\atan2(y, x)\)</span> gives the
 correct angles). So in particular:</p>
-<div class="math">
-\[\atan2(0, 1) = 2\,\atan{0\over\sqrt{1^2+0^2}+1} = 0\]\[\atan2(0, -1) = \pi\]\[\atan2(1, 0) = 2\,\atan{1\over\sqrt{0^2+1^2}+0} = 2\,\atan 1 =
-    {\pi\over 2}\]\[\atan2(-1, 0) = 2\,\atan{-1\over\sqrt{0^2+1^2}+0} = -2\,\atan 1 =
-    -{\pi\over 2}\]</div>
-<p>This convention (<span class="math">\(\atan2(y, x)\)</span>) is used for example in Python, C or Fortran.
-Some people might interchange <span class="math">\(x\)</span> with <span class="math">\(y\)</span> in the definition (i.e. <span class="math">\(\atan2(x,
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\atan2(0, 1) = 2\,\atan{0\over\sqrt{1^2+0^2}+1} = 0\\\atan2(0, -1) = \pi\\\atan2(1, 0) = 2\,\atan{1\over\sqrt{0^2+1^2}+0} = 2\,\atan 1 =
+    {\pi\over 2}\\\atan2(-1, 0) = 2\,\atan{-1\over\sqrt{0^2+1^2}+0} = -2\,\atan 1 =
+    -{\pi\over 2}\end{aligned}\end{align} \]</div>
+<p>This convention (<span class="math notranslate nohighlight">\(\atan2(y, x)\)</span>) is used for example in Python, C or Fortran.
+Some people might interchange <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\(y\)</span> in the definition (i.e. <span class="math notranslate nohighlight">\(\atan2(x,
 y)= \Arg(y+ix)\)</span>), but it is not very common.</p>
 <p>The following useful relations hold:</p>
-<div class="math">
-\[\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
-    \quad\quad\quad\mbox{except $x=y=0$}\]\[\cos\atan2(y, x) = {x\over \sqrt{x^2+y^2}}
-    \quad\quad\quad\mbox{except $x=y=0$}\]\[\tan\atan2(y, x) = {y\over x}
-    \quad\quad\quad\mbox{for $x\neq 0$}\]\[\begin{split}\atan2(ky, kx) = \atan2(y, x)
-    \quad\quad\quad\mbox{for $k&gt;0$}\end{split}\]\[\atan2(\sin x, \cos x) = x + 2\pi
-    \left\lfloor \pi-x \over 2\pi \right\rfloor\]\[\atan2(-y, x) = -\atan2(y, x) + 2\pi
-    \left\lfloor \atan2(y, x)+\pi \over 2\pi \right\rfloor\]\[{\partial \over \partial y} \atan2(y, x)
-    = {x\over x^2 + y^2}\]\[{\partial \over \partial x} \atan2(y, x)
-    = -{y\over x^2 + y^2}\]</div>
-<p>We now prove them. The following works for all <span class="math">\(x, y\)</span> except for <span class="math">\(x=y=0\)</span>:</p>
-<div class="math">
-\[\begin{split}\sin\atan2(y, x)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
+    \quad\quad\quad\mbox{except $x=y=0$}\\\cos\atan2(y, x) = {x\over \sqrt{x^2+y^2}}
+    \quad\quad\quad\mbox{except $x=y=0$}\\\tan\atan2(y, x) = {y\over x}
+    \quad\quad\quad\mbox{for $x\neq 0$}\\\atan2(ky, kx) = \atan2(y, x)
+    \quad\quad\quad\mbox{for $k&gt;0$}\\\atan2(\sin x, \cos x) = x + 2\pi
+    \left\lfloor \pi-x \over 2\pi \right\rfloor\\\atan2(-y, x) = -\atan2(y, x) + 2\pi
+    \left\lfloor \atan2(y, x)+\pi \over 2\pi \right\rfloor\\{\partial \over \partial y} \atan2(y, x)
+    = {x\over x^2 + y^2}\\{\partial \over \partial x} \atan2(y, x)
+    = -{y\over x^2 + y^2}\end{aligned}\end{align} \]</div>
+<p>We now prove them. The following works for all <span class="math notranslate nohighlight">\(x, y\)</span> except for <span class="math notranslate nohighlight">\(x=y=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin\atan2(y, x)
     =\begin{cases}\sin\pi&amp;y=0;x&lt;0;\cr
         \sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
             &amp;\rm otherwise\cr\end{cases}
-        =\end{split}\]\[\begin{split}=\begin{cases}0&amp;y=0;x&lt;0;\cr
+        =\\=\begin{cases}0&amp;y=0;x&lt;0;\cr
     {y\over \sqrt{x^2+y^2}}&amp;\rm otherwise\cr\end{cases}
-    =\end{split}\]\[\begin{split}=\begin{cases}{y\over \sqrt{x^2+y^2}}&amp;y=0;x&lt;0;\cr
+    =\\=\begin{cases}{y\over \sqrt{x^2+y^2}}&amp;y=0;x&lt;0;\cr
     {y\over \sqrt{x^2+y^2}}&amp;\rm otherwise\cr\end{cases}
-    ={y\over \sqrt{x^2+y^2}}\end{split}\]\[\begin{split}\cos\atan2(y, x)
+    ={y\over \sqrt{x^2+y^2}}\\\cos\atan2(y, x)
     =\begin{cases}\cos\pi&amp;y=0;x&lt;0;\cr
         \cos\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
             &amp;\rm otherwise\cr\end{cases}
-        =\end{split}\]\[\begin{split}=\begin{cases}-1&amp;y=0;x&lt;0;\cr
+        =\\=\begin{cases}-1&amp;y=0;x&lt;0;\cr
     {x\over \sqrt{x^2+y^2}}&amp;\rm otherwise\cr\end{cases}
-    =\end{split}\]\[\begin{split}=\begin{cases}{x\over \sqrt{x^2+y^2}}&amp;y=0;x&lt;0;\cr
+    =\\=\begin{cases}{x\over \sqrt{x^2+y^2}}&amp;y=0;x&lt;0;\cr
     {x\over \sqrt{x^2+y^2}}&amp;\rm otherwise\cr\end{cases}
-    ={x\over \sqrt{x^2+y^2}}\end{split}\]</div>
-<p>Tangent is infinite for <span class="math">\(\pm{\pi\over 2}\)</span>, which corresponds to <span class="math">\(x=0\)</span>, so the
-following works for all <span class="math">\(x\neq 0\)</span>:</p>
-<div class="math">
-\[\begin{split}\tan\atan2(y, x)
+    ={x\over \sqrt{x^2+y^2}}\end{aligned}\end{align} \]</div>
+<p>Tangent is infinite for <span class="math notranslate nohighlight">\(\pm{\pi\over 2}\)</span>, which corresponds to <span class="math notranslate nohighlight">\(x=0\)</span>, so the
+following works for all <span class="math notranslate nohighlight">\(x\neq 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\tan\atan2(y, x)
     =\begin{cases}\tan\pi&amp;y=0;x&lt;0;\cr
         \tan\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
             &amp;\rm otherwise\cr\end{cases}
-        =\end{split}\]\[\begin{split}=\begin{cases}0&amp;y=0;x&lt;0;\cr
+        =\\=\begin{cases}0&amp;y=0;x&lt;0;\cr
     {y\over x}&amp;\rm otherwise\cr\end{cases}
-    =\end{split}\]\[\begin{split}=\begin{cases}{y\over x}&amp;y=0;x&lt;0;\cr
+    =\\=\begin{cases}{y\over x}&amp;y=0;x&lt;0;\cr
     {y\over x}&amp;\rm otherwise\cr\end{cases}
-    ={y\over x}\end{split}\]</div>
+    ={y\over x}\end{aligned}\end{align} \]</div>
 <p>Finally:</p>
-<div class="math">
-\[\begin{split}\atan2(\sin x, \cos x)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\atan2(\sin x, \cos x)
     =\begin{cases}\pi &amp;x=\pi;\cr
         2\,\atan{\sin x\over\sqrt{\cos^2x+\sin^2x}+\cos x}&amp;
             \rm otherwise\cr\end{cases}
-    =\end{split}\]\[\begin{split}    =\begin{cases}\pi &amp;x=\pi;\cr
+    =\\    =\begin{cases}\pi &amp;x=\pi;\cr
         2\,\atan{\sin x\over1+\cos x}&amp;
             \rm otherwise\cr\end{cases}
-    =\end{split}\]\[\begin{split}    =\begin{cases}x &amp;x=\pi;\cr
+    =\\    =\begin{cases}x &amp;x=\pi;\cr
         2\,\atan\left(\tan {x\over 2}\right)&amp;
             \rm otherwise\cr\end{cases}
     = x + 2\pi
-    \left\lfloor \pi-x \over 2\pi \right\rfloor\end{split}\]</div>
+    \left\lfloor \pi-x \over 2\pi \right\rfloor\end{aligned}\end{align} \]</div>
 <p>In the above, we used the following double angle formulas:</p>
-<div class="math">
-\[\sin 2x = {2\tan x\over 1+\tan^2 x}\]\[\cos 2x = {1-\tan^2x\over 1+\tan^2 x}\]\[\tan 2x = {2\tan x\over 1-\tan^2 x}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin 2x = {2\tan x\over 1+\tan^2 x}\\\cos 2x = {1-\tan^2x\over 1+\tan^2 x}\\\tan 2x = {2\tan x\over 1-\tan^2 x}\end{aligned}\end{align} \]</div>
 <p>to simplify the following expressions:</p>
-<div class="math">
-\[\sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
     {2\tan\atan{y\over\sqrt{x^2+y^2}+x}\over1+\tan^2\atan{y\over\sqrt{x^2+y^2}+x}}
-    =\]\[    =
+    =\\    =
     {2{y\over\sqrt{x^2+y^2}+x}\over1
         +\left({y\over\sqrt{x^2+y^2}+x}\right)^2}
     =
     {2y\left(\sqrt{x^2+y^2}+x\right)\over
         \left(\sqrt{x^2+y^2}+x\right)^2+y^2}
-    =\]\[    =
+    =\\    =
     {y\left(\sqrt{x^2+y^2}+x\right)\over
         x^2+y^2+x\sqrt{x^2+y^2}}
     =
     {y\left(\sqrt{x^2+y^2}+x\right)\over
         \sqrt{x^2+y^2}\left(\sqrt{x^2+y^2}+x\right)}
-    =\]\[    =
-    {y\over\sqrt{x^2+y^2}}\]\[\cos\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
+    =\\    =
+    {y\over\sqrt{x^2+y^2}}\\\cos\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
     {1-\tan^2\atan{y\over\sqrt{x^2+y^2}+x}\over1+\tan^2\atan{y\over\sqrt{x^2+y^2}+x}}
-    =\]\[    =
+    =\\    =
     {1 -\left({y\over\sqrt{x^2+y^2}+x}\right)^2\over
     1 +\left({y\over\sqrt{x^2+y^2}+x}\right)^2}
     =
     {\left(\sqrt{x^2+y^2}+x\right)^2-y^2\over
         \left(\sqrt{x^2+y^2}+x\right)^2+y^2}
-    =\]\[    =
+    =\\    =
     {x\left(\sqrt{x^2+y^2}+x\right)\over
         x^2+y^2+x\sqrt{x^2+y^2}}
     =
     {x\left(\sqrt{x^2+y^2}+x\right)\over
         \sqrt{x^2+y^2}\left(\sqrt{x^2+y^2}+x\right)}
-    =\]\[    =
-    {x\over\sqrt{x^2+y^2}}\]\[\tan\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
+    =\\    =
+    {x\over\sqrt{x^2+y^2}}\\\tan\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
     {2\tan\atan{y\over\sqrt{x^2+y^2}+x}\over1-\tan^2\atan{y\over\sqrt{x^2+y^2}+x}}
-    =\]\[    =
+    =\\    =
     {2{y\over\sqrt{x^2+y^2}+x}\over1
         -\left({y\over\sqrt{x^2+y^2}+x}\right)^2}
     =
     {2y\left(\sqrt{x^2+y^2}+x\right)\over
         \left(\sqrt{x^2+y^2}+x\right)^2-y^2}
-    =\]\[    =
+    =\\    =
     {y\left(\sqrt{x^2+y^2}+x\right)\over
         x\left(\sqrt{x^2+y^2}+x\right)}
-    = {y\over x}\]</div>
-<p>Finally, for all <span class="math">\(k&gt;0\)</span> we get:</p>
-<div class="math">
-\[\begin{split}\atan2(ky, kx) = \Arg(kx + iky)
+    = {y\over x}\end{aligned}\end{align} \]</div>
+<p>Finally, for all <span class="math notranslate nohighlight">\(k&gt;0\)</span> we get:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\atan2(ky, kx) = \Arg(kx + iky)
 =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
     2\,\atan{ky\over\sqrt{(kx)^2+(ky)^2}+kx}&amp;\rm otherwise\cr\end{cases}
-=\end{split}\]\[\begin{split}=\begin{cases}\pi&amp;y=0;x&lt;0;\cr
+=\\=\begin{cases}\pi&amp;y=0;x&lt;0;\cr
     2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}
-= \Arg(x+iy) = \atan2(y, x)\end{split}\]</div>
+= \Arg(x+iy) = \atan2(y, x)\end{aligned}\end{align} \]</div>
 <p>The symmetry property can be proven by:</p>
-<div class="math">
-\[\begin{split}\atan2(-y, x)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\atan2(-y, x)
     =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
         2\,\atan{-y\over\sqrt{x^2+(-y)^2}+x}
-            &amp;\rm otherwise\cr\end{cases} =\end{split}\]\[\begin{split}    =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
+            &amp;\rm otherwise\cr\end{cases} =\\    =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
         -\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
-            &amp;\rm otherwise\cr\end{cases} =\end{split}\]\[    =-\atan2(y, x) + 2\pi
-        \left\lfloor \atan2(y, x)+\pi \over 2\pi \right\rfloor\]</div>
+            &amp;\rm otherwise\cr\end{cases} =\\    =-\atan2(y, x) + 2\pi
+        \left\lfloor \atan2(y, x)+\pi \over 2\pi \right\rfloor\end{aligned}\end{align} \]</div>
 <p>To prove the derivatives, we do:</p>
-<div class="math">
-\[{\partial \over \partial y} \atan2(y, x)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}{\partial \over \partial y} \atan2(y, x)
     = 2{\partial \over \partial y} \atan{y\over\sqrt{x^2+y^2}+x}
-    = {x\over x^2 + y^2}\]\[{\partial \over \partial x} \atan2(y, x)
+    = {x\over x^2 + y^2}\\{\partial \over \partial x} \atan2(y, x)
     = 2{\partial \over \partial x} \atan{y\over\sqrt{x^2+y^2}+x}
-    = -{y\over x^2 + y^2}\]</div>
+    = -{y\over x^2 + y^2}\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x y&quot;</span><span class="p">)</span>
 <span class="go">(x, y)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">atan</span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
@@ -422,18 +411,18 @@ following works for all <span class="math">\(x\neq 0\)</span>:</p>
 </pre></div>
 </div>
 <p>An example of an application:</p>
-<div class="math">
-\[A\sin x + B\cos x = \sqrt{A^2+B^2}\left(
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A\sin x + B\cos x = \sqrt{A^2+B^2}\left(
     {A\over\sqrt{A^2+B^2}}\sin x + {B\over\sqrt{A^2+B^2}}\cos x\right)
-=\]\[= \sqrt{A^2+B^2}\left( \cos\delta\sin x + \sin\delta\cos x\right)
+=\\= \sqrt{A^2+B^2}\left( \cos\delta\sin x + \sin\delta\cos x\right)
 = \sqrt{A^2+B^2}\sin(x+\delta)
-=\]\[= \sqrt{A^2+B^2}\sin(x+\atan2(B, A))\]</div>
+=\\= \sqrt{A^2+B^2}\sin(x+\atan2(B, A))\end{aligned}\end{align} \]</div>
 <p>where</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\delta = \atan2\left({B\over\sqrt{A^2+B^2}}, {A\over\sqrt{A^2+B^2}}\right)
 =\atan2(B, A)\]</div>
 <p>Another application</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\atan2(\cos x, -\sin x)
     = \atan2\left(\sin\left(x+{\pi\over2}\right),
         \cos\left(x+{\pi\over2}\right)\right)
@@ -445,15 +434,15 @@ following works for all <span class="math">\(x\neq 0\)</span>:</p>
 <h2>sin(a x)<a class="headerlink" href="#sin-a-x" title="Permalink to this headline">¶</a></h2>
 <p>Systematic way to derive all multiple argument formulas is to use the following
 relation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\sin(ax) = U_{a-1}(\cos x) \sin x\]</div>
-<p>where <span class="math">\(U_n(x)\)</span> are the Chebyshev polynomials of the second kind, first few are:</p>
-<div class="math">
-\[U_{-3}(x) = -2x\]\[U_{-2}(x) = -1\]\[U_{-1}(x) = 0\]\[U_{- {1\over2}}(x) = {1\over \sqrt 2 \sqrt{x+1}}\]\[U_0(x) = 1\]\[U_{1\over2}(x) = {2x+1\over \sqrt 2 \sqrt{x+1}}\]\[U_1(x) = 2x\]\[U_2(x) = 4x^2 - 1\]\[U_3(x) = 8x^3 - 4x\]\[U_4(x) = 16x^4 - 12x^2 + 1\]\[U_5(x) = 32x^5 - 32x^3 + 6x\]\[U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_n(x)\)</span> are the Chebyshev polynomials of the second kind, first few are:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}U_{-3}(x) = -2x\\U_{-2}(x) = -1\\U_{-1}(x) = 0\\U_{- {1\over2}}(x) = {1\over \sqrt 2 \sqrt{x+1}}\\U_0(x) = 1\\U_{1\over2}(x) = {2x+1\over \sqrt 2 \sqrt{x+1}}\\U_1(x) = 2x\\U_2(x) = 4x^2 - 1\\U_3(x) = 8x^3 - 4x\\U_4(x) = 16x^4 - 12x^2 + 1\\U_5(x) = 32x^5 - 32x^3 + 6x\\U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="k">print</span> <span class="s2">&quot;U_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;U_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">U_0(x) = 1</span>
 <span class="go">U_1(x) = 2*x</span>
 <span class="go">U_2(x) = -1 + 4*x**2</span>
@@ -464,18 +453,18 @@ relation:</p>
 </pre></div>
 </div>
 <p>One can then use this to calculate:</p>
-<div class="math">
-\[\sin (-2x) = U_{-3}(\cos x) \sin x = -2\cos x\sin x\]\[\sin (-x) = U_{-2}(\cos x) \sin x = -\sin x\]\[\sin 0 = U_{-1}(\cos x) \sin x = 0\]\[\sin {x\over 2}  = U_{-{1\over2}}(\cos x) \sin x =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin (-2x) = U_{-3}(\cos x) \sin x = -2\cos x\sin x\\\sin (-x) = U_{-2}(\cos x) \sin x = -\sin x\\\sin 0 = U_{-1}(\cos x) \sin x = 0\\\sin {x\over 2}  = U_{-{1\over2}}(\cos x) \sin x =
     {\sin x\over\sqrt 2\sqrt{\cos x + 1}} =
     {\sqrt{1-\cos^2x}\over\sqrt 2\sqrt{\cos x + 1}} =
-    {\sqrt{1-\cos x}\over\sqrt 2}\]\[\sin x = U_0(\cos x) \sin x = \sin x\]\[\sin {3x\over 2}  = U_{1\over2}(\cos x) \sin x =
+    {\sqrt{1-\cos x}\over\sqrt 2}\\\sin x = U_0(\cos x) \sin x = \sin x\\\sin {3x\over 2}  = U_{1\over2}(\cos x) \sin x =
     {(2\cos x+1)\sin x\over\sqrt 2\sqrt{\cos x + 1}} =
     {(2\cos x+1)\sqrt{1-\cos^2x}\over\sqrt 2\sqrt{\cos x + 1}} =
-    {(2\cos x+1)\sqrt{1-\cos x}\over\sqrt 2}\]\[\sin 2x = U_1(\cos x) \sin x = 2\cos x\sin x\]\[\sin 3x = U_2(\cos x) \sin x = (4\cos^2 x-1)\sin x\]</div>
+    {(2\cos x+1)\sqrt{1-\cos x}\over\sqrt 2}\\\sin 2x = U_1(\cos x) \sin x = 2\cos x\sin x\\\sin 3x = U_2(\cos x) \sin x = (4\cos^2 x-1)\sin x\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span> <span class="k">print</span> <span class="s2">&quot;sin(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;sin(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 <span class="go">sin(1*x) = sin(x)</span>
 <span class="go">sin(2*x) = 2*cos(x)*sin(x)</span>
 <span class="go">sin(3*x) = -(1 - 4*cos(x)**2)*sin(x)</span>
@@ -488,15 +477,15 @@ relation:</p>
 <div class="section" id="cos-a-x">
 <h2>cos(a x)<a class="headerlink" href="#cos-a-x" title="Permalink to this headline">¶</a></h2>
 <p>Similarly as above, we use:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\cos(ax) = T_a(\cos x)\]</div>
-<p>where <span class="math">\(T_n(x)\)</span> are the Chebyshev polynomials of the first kind, first few are:</p>
-<div class="math">
-\[T_0(x) = 1\]\[T_{1\over2}(x) = {\sqrt{x+1}\over \sqrt 2}\]\[T_1(x) = x\]\[T_{3\over2}(x) = {(2x-1)\sqrt{x+1}\over \sqrt 2}\]\[T_2(x) = 2x^2 - 1\]\[T_3(x) = 4x^3 - 3x\]\[T_4(x) = 8x^4 - 8x^2 + 1\]\[T_5(x) = 16x^5 - 20x^3 + 5x\]\[T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1\]</div>
+<p>where <span class="math notranslate nohighlight">\(T_n(x)\)</span> are the Chebyshev polynomials of the first kind, first few are:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}T_0(x) = 1\\T_{1\over2}(x) = {\sqrt{x+1}\over \sqrt 2}\\T_1(x) = x\\T_{3\over2}(x) = {(2x-1)\sqrt{x+1}\over \sqrt 2}\\T_2(x) = 2x^2 - 1\\T_3(x) = 4x^3 - 3x\\T_4(x) = 8x^4 - 8x^2 + 1\\T_5(x) = 16x^5 - 20x^3 + 5x\\T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="k">print</span> <span class="s2">&quot;T_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;T_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">T_0(x) = 1</span>
 <span class="go">T_1(x) = x</span>
 <span class="go">T_2(x) = -1 + 2*x**2</span>
@@ -507,13 +496,13 @@ relation:</p>
 </pre></div>
 </div>
 <p>One can then use this to calculate:</p>
-<div class="math">
-\[\cos 0 = T_0(\cos x) = 1\]\[\cos {x\over 2} = T_{1\over 2}(\cos x) = {\sqrt{1+\cos x}\over\sqrt 2}\]\[\cos x = T_1(\cos x) = \cos x\]\[\cos {3x\over 2} = T_{3\over2}(\cos x) =
-    {(2\cos x-1)\sqrt{1+\cos x}\over\sqrt 2}\]\[\cos 2x = T_2(\cos x) = 2\cos^2 x - 1\]\[\cos 3x = T_3(\cos x) = 4\cos^3 x - 3\cos x\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\cos 0 = T_0(\cos x) = 1\\\cos {x\over 2} = T_{1\over 2}(\cos x) = {\sqrt{1+\cos x}\over\sqrt 2}\\\cos x = T_1(\cos x) = \cos x\\\cos {3x\over 2} = T_{3\over2}(\cos x) =
+    {(2\cos x-1)\sqrt{1+\cos x}\over\sqrt 2}\\\cos 2x = T_2(\cos x) = 2\cos^2 x - 1\\\cos 3x = T_3(\cos x) = 4\cos^3 x - 3\cos x\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="k">print</span> <span class="s2">&quot;cos(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;cos(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
 <span class="go">cos(0*x) = 1</span>
 <span class="go">cos(1*x) = cos(x)</span>
 <span class="go">cos(2*x) = -1 + 2*cos(x)**2</span>
@@ -530,7 +519,7 @@ relation:</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -558,29 +547,30 @@ relation:</p>
   <h4>Next topic</h4>
   <p class="topless"><a href="other.html"
                         title="next chapter">Delta Function</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/trig.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/trig.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -592,13 +582,13 @@ relation:</p>
         <li class="right" >
           <a href="transforms.html" title="Fourier Transform"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>MHD Equations &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>MHD Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Fluid Dynamics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Compressible Euler Equations" href="euler.html" />
     <link rel="prev" title="Fluid Dynamics" href="general.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,42 +62,42 @@
         <li class="right" >
           <a href="general.html" title="Fluid Dynamics"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Fluid Dynamics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Fluid Dynamics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="mhd-equations">
 <span id="index-0"></span><h1>MHD Equations<a class="headerlink" href="#mhd-equations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The magnetohydrodynamics (MHD) equations are:</p>
-<div class="math" id="equation-MHD1">
-<span class="eqno">(1)</span>\[\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0\]</div>
-<div class="math" id="equation-MHD2">
-<span class="eqno">(2)</span>\[\rho\left(\frac{\partial {\bf v}}{\partial t} + ({\bf v} \cdot \nabla)
+<div class="math notranslate nohighlight" id="equation-mhd1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-mhd1" title="Permalink to this equation">¶</a></span>\[\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-mhd2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-mhd2" title="Permalink to this equation">¶</a></span>\[\rho\left(\frac{\partial {\bf v}}{\partial t} + ({\bf v} \cdot \nabla)
  {\bf v} \right) = -\nabla p +
  {1\over\mu}(\nabla\times{\bf B}) \times {\bf B} + \rho {\bf g}\]</div>
-<div class="math" id="equation-MHD3">
-<span class="eqno">(3)</span>\[{\partial {\bf B}\over\partial t}
+<div class="math notranslate nohighlight" id="equation-mhd3">
+<span class="eqno">(3)<a class="headerlink" href="#equation-mhd3" title="Permalink to this equation">¶</a></span>\[{\partial {\bf B}\over\partial t}
         = \nabla\times({\bf v}\times{\bf B}) + \eta\nabla^2{\bf B}\]</div>
-<div class="math" id="equation-MHD4">
-<span class="eqno">(4)</span>\[\nabla\cdot{\bf B} = 0\]</div>
-<p>assuming <span class="math">\(\eta\)</span> is constant. See the next section for a derivation. We can now
-apply the following identities (we use the fact that <span class="math">\(\nabla\cdot{\bf
+<div class="math notranslate nohighlight" id="equation-mhd4">
+<span class="eqno">(4)<a class="headerlink" href="#equation-mhd4" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf B} = 0\]</div>
+<p>assuming <span class="math notranslate nohighlight">\(\eta\)</span> is constant. See the next section for a derivation. We can now
+apply the following identities (we use the fact that <span class="math notranslate nohighlight">\(\nabla\cdot{\bf
 B}=0\)</span>):</p>
-<div class="math">
-\[\left[(\nabla\times{\bf B}) \times {\bf B}\right]_i =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\left[(\nabla\times{\bf B}) \times {\bf B}\right]_i =
     \varepsilon_{ijk}(\nabla\times{\bf B})_j B_k =
     \varepsilon_{ijk}\varepsilon_{jlm}(\partial_l B_m)B_k =
-    (\delta_{kl}\delta_{im}-\delta_{km}\delta_{il})(\partial_l B_m)B_k =\]\[=(\partial_k B_i)B_k - (\partial_i B_k)B_k
+    (\delta_{kl}\delta_{im}-\delta_{km}\delta_{il})(\partial_l B_m)B_k =\\=(\partial_k B_i)B_k - (\partial_i B_k)B_k
     =\left[({\bf B}\cdot\nabla){\bf B} -
-    {1\over2}\nabla|{\bf B}|^2\right]_i\]\[\begin{split}(\nabla\times{\bf B}) \times {\bf B} &amp;=
+    {1\over2}\nabla|{\bf B}|^2\right]_i\\\begin{split}(\nabla\times{\bf B}) \times {\bf B} &amp;=
     ({\bf B}\cdot\nabla){\bf B} - {1\over2}\nabla|{\bf B}|^2=
     ({\bf B}\cdot\nabla){\bf B} + {\bf B}(\nabla\cdot{\bf B})
         - {1\over2}\nabla|{\bf B}|^2
@@ -122,128 +111,128 @@ B}=0\)</span>):</p>
     \left(\nabla\cdot(\rho{\bf v})\right){\bf v}
     + \rho({\bf v}\cdot\nabla){\bf v}=
     -{\bf v}\frac{\partial \rho}{\partial t}
-    + \rho({\bf v}\cdot\nabla){\bf v}\end{split}\]</div>
+    + \rho({\bf v}\cdot\nabla){\bf v}\end{split}\end{aligned}\end{align} \]</div>
 <p>So the MHD equations can alternatively be written as:</p>
-<div class="math" id="equation-MHD1b">
-<span class="eqno">(5)</span>\[\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0\]</div>
-<div class="math" id="equation-MHD2b">
-<span class="eqno">(6)</span>\[\frac{\partial \rho{\bf v}}{\partial t} + \nabla\cdot(\rho{\bf v}{\bf v}^T)
+<div class="math notranslate nohighlight" id="equation-mhd1b">
+<span class="eqno">(5)<a class="headerlink" href="#equation-mhd1b" title="Permalink to this equation">¶</a></span>\[\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-mhd2b">
+<span class="eqno">(6)<a class="headerlink" href="#equation-mhd2b" title="Permalink to this equation">¶</a></span>\[\frac{\partial \rho{\bf v}}{\partial t} + \nabla\cdot(\rho{\bf v}{\bf v}^T)
     = -\nabla p +
     {1\over\mu}\left(\nabla\cdot({\bf B}{\bf B}^T)
         - {1\over2}\nabla|{\bf B}|^2\right) + \rho {\bf g}\]</div>
-<div class="math" id="equation-MHD3b">
-<span class="eqno">(7)</span>\[{\partial {\bf B}\over\partial t}
+<div class="math notranslate nohighlight" id="equation-mhd3b">
+<span class="eqno">(7)<a class="headerlink" href="#equation-mhd3b" title="Permalink to this equation">¶</a></span>\[{\partial {\bf B}\over\partial t}
         = \nabla\cdot({\bf B}{\bf v}^T - {\bf v}{\bf B}^T) + \eta\nabla^2{\bf B}\]</div>
-<div class="math" id="equation-MHD4b">
-<span class="eqno">(8)</span>\[\nabla\cdot{\bf B} = 0\]</div>
-<p>One can also introduce a new variable <span class="math">\(p^* = p + {1\over2}\nabla|{\bf B}|^2\)</span>, that simplifies <a href="#equation-MHD2b">(6)</a> a bit.</p>
+<div class="math notranslate nohighlight" id="equation-mhd4b">
+<span class="eqno">(8)<a class="headerlink" href="#equation-mhd4b" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf B} = 0\]</div>
+<p>One can also introduce a new variable <span class="math notranslate nohighlight">\(p^* = p + {1\over2}\nabla|{\bf B}|^2\)</span>, that simplifies <a class="reference internal" href="#equation-mhd2b">(6)</a> a bit.</p>
 </div>
 <div class="section" id="derivation">
 <span id="index-1"></span><h2>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
 <p>The above equations can easily be derived. We have the continuity equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0\]</div>
 <p>Navier-Stokes equations (momentum equation) with the Lorentz force on the
 right-hand side:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho\left(\frac{\partial {\bf v}}{\partial t} + ({\bf v} \cdot \nabla)
  {\bf v} \right) = -\nabla p + {\bf j} \times {\bf B} + \rho {\bf g}\]</div>
-<p>where the current density <span class="math">\({\bf j}\)</span> is given by the Maxwell equation (we
-neglect the displacement current <span class="math">\({\partial{\bf E}\over\partial t}\)</span>):</p>
-<div class="math">
+<p>where the current density <span class="math notranslate nohighlight">\({\bf j}\)</span> is given by the Maxwell equation (we
+neglect the displacement current <span class="math notranslate nohighlight">\({\partial{\bf E}\over\partial t}\)</span>):</p>
+<div class="math notranslate nohighlight">
 \[{\bf j} = {1\over\mu}\nabla\times{\bf B}\]</div>
 <p>and the Lorentz force:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{1\over\sigma}{\bf j} = {\bf E} + {\bf v}\times{\bf B}\]</div>
-<p>from which we eliminate <span class="math">\({\bf E}\)</span>:</p>
-<div class="math">
+<p>from which we eliminate <span class="math notranslate nohighlight">\({\bf E}\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[{\bf E} = - {\bf v}\times{\bf B} + {1\over\sigma}{\bf j} =
           - {\bf v}\times{\bf B} + {1\over\sigma\mu}\nabla\times{\bf B}\]</div>
 <p>and put it into the Maxwell equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial {\bf B}\over\partial t} = -\nabla\times{\bf E}\]</div>
 <p>so we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial {\bf B}\over\partial t} = \nabla\times({\bf v}\times{\bf B})
             - \nabla\times\left({1\over\sigma\mu}\nabla\times{\bf B}\right)\]</div>
-<p>assuming the magnetic diffusivity <span class="math">\(\eta={1\over\sigma\mu}\)</span> is constant, we
+<p>assuming the magnetic diffusivity <span class="math notranslate nohighlight">\(\eta={1\over\sigma\mu}\)</span> is constant, we
 get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial {\bf B}\over\partial t} = \nabla\times({\bf v}\times{\bf B})
             - \eta\nabla\times\left(\nabla\times{\bf B}\right)
         = \nabla\times({\bf v}\times{\bf B})
             + \eta\left(\nabla^2{\bf B}-\nabla(\nabla\cdot{\bf B})\right)
         = \nabla\times({\bf v}\times{\bf B}) + \eta\nabla^2{\bf B}\]</div>
 <p>where we used the Maxwell equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla\cdot{\bf B} = 0\]</div>
 </div>
 <div class="section" id="finite-element-formulation">
 <span id="index-2"></span><h2>Finite Element Formulation<a class="headerlink" href="#finite-element-formulation" title="Permalink to this headline">¶</a></h2>
 <p>We solve the following ideal MHD equations (we use
-<span class="math">\(p^* = p + {1\over2}\nabla|{\bf B}|^2\)</span>, but we drop the star):</p>
-<div class="math" id="equation-FEM1a">
-<span class="eqno">(9)</span>\[\frac{\partial {\bf u}}{\partial t} + ({\bf u} \cdot \nabla)
+<span class="math notranslate nohighlight">\(p^* = p + {1\over2}\nabla|{\bf B}|^2\)</span>, but we drop the star):</p>
+<div class="math notranslate nohighlight" id="equation-fem1a">
+<span class="eqno">(9)<a class="headerlink" href="#equation-fem1a" title="Permalink to this equation">¶</a></span>\[\frac{\partial {\bf u}}{\partial t} + ({\bf u} \cdot \nabla)
  {\bf u} - ({\bf B}\cdot\nabla){\bf B} + \nabla p = 0\]</div>
-<div class="math" id="equation-FEM2a">
-<span class="eqno">(10)</span>\[{\partial {\bf B}\over\partial t} + ({\bf u}\cdot\nabla){\bf B}
+<div class="math notranslate nohighlight" id="equation-fem2a">
+<span class="eqno">(10)<a class="headerlink" href="#equation-fem2a" title="Permalink to this equation">¶</a></span>\[{\partial {\bf B}\over\partial t} + ({\bf u}\cdot\nabla){\bf B}
     - ({\bf B}\cdot\nabla){\bf u} = 0\]</div>
-<div class="math" id="equation-FEM3a">
-<span class="eqno">(11)</span>\[\nabla\cdot{\bf u} = 0\]</div>
-<div class="math" id="equation-FEM4a">
-<span class="eqno">(12)</span>\[\nabla\cdot{\bf B} = 0\]</div>
-<p>If the equation <a href="#equation-FEM4a">(12)</a> is satisfied initially, then it is
+<div class="math notranslate nohighlight" id="equation-fem3a">
+<span class="eqno">(11)<a class="headerlink" href="#equation-fem3a" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf u} = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-fem4a">
+<span class="eqno">(12)<a class="headerlink" href="#equation-fem4a" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf B} = 0\]</div>
+<p>If the equation <a class="reference internal" href="#equation-fem4a">(12)</a> is satisfied initially, then it is
 satisfied all the time, as can be easily proved by applying a divergence to
 the Maxwell equation
-<span class="math">\({\partial {\bf B}\over\partial t} = -\nabla\times{\bf E}\)</span> (or the
-equation <a href="#equation-FEM2a">(10)</a>, resp. <a href="#equation-MHD3">(3)</a>) and we get
-<span class="math">\({\partial \over\partial t}(\nabla\cdot{\bf B}) = 0\)</span>, so
-<span class="math">\(\nabla\cdot{\bf B}\)</span> is constant, independent of time. As a consequence,
-we are essentially only solving equations <a href="#equation-FEM1a">(9)</a>, <a href="#equation-FEM2a">(10)</a> and
-<a href="#equation-FEM3a">(11)</a>, which consist of 5 equations for 5 unknowns
-(components of <span class="math">\({\bf u}\)</span>, <span class="math">\(p\)</span> and <span class="math">\({\bf B}\)</span>).</p>
-<p>We discretize in time by introducing a small time step <span class="math">\(\tau\)</span> and we also
+<span class="math notranslate nohighlight">\({\partial {\bf B}\over\partial t} = -\nabla\times{\bf E}\)</span> (or the
+equation <a class="reference internal" href="#equation-fem2a">(10)</a>, resp. <a class="reference internal" href="#equation-mhd3">(3)</a>) and we get
+<span class="math notranslate nohighlight">\({\partial \over\partial t}(\nabla\cdot{\bf B}) = 0\)</span>, so
+<span class="math notranslate nohighlight">\(\nabla\cdot{\bf B}\)</span> is constant, independent of time. As a consequence,
+we are essentially only solving equations <a class="reference internal" href="#equation-fem1a">(9)</a>, <a class="reference internal" href="#equation-fem2a">(10)</a> and
+<a class="reference internal" href="#equation-fem3a">(11)</a>, which consist of 5 equations for 5 unknowns
+(components of <span class="math notranslate nohighlight">\({\bf u}\)</span>, <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\({\bf B}\)</span>).</p>
+<p>We discretize in time by introducing a small time step <span class="math notranslate nohighlight">\(\tau\)</span> and we also
 linearize the convective terms:</p>
-<div class="math" id="equation-FEM1b">
-<span class="eqno">(13)</span>\[\frac{{\bf u}^n-{\bf u}^{n-1}}{\tau} + ({\bf u}^{n-1} \cdot \nabla)
+<div class="math notranslate nohighlight" id="equation-fem1b">
+<span class="eqno">(13)<a class="headerlink" href="#equation-fem1b" title="Permalink to this equation">¶</a></span>\[\frac{{\bf u}^n-{\bf u}^{n-1}}{\tau} + ({\bf u}^{n-1} \cdot \nabla)
  {\bf u}^n - ({\bf B}^{n-1}\cdot\nabla){\bf B}^n + \nabla p = 0\]</div>
-<div class="math" id="equation-FEM2b">
-<span class="eqno">(14)</span>\[{{\bf B}^n-{\bf B}^{n-1}\over\tau} + ({\bf u}^{n-1}\cdot\nabla){\bf B}^n
+<div class="math notranslate nohighlight" id="equation-fem2b">
+<span class="eqno">(14)<a class="headerlink" href="#equation-fem2b" title="Permalink to this equation">¶</a></span>\[{{\bf B}^n-{\bf B}^{n-1}\over\tau} + ({\bf u}^{n-1}\cdot\nabla){\bf B}^n
     - ({\bf B}^{n-1}\cdot\nabla){\bf u}^n = 0\]</div>
-<div class="math" id="equation-FEM3b">
-<span class="eqno">(15)</span>\[\nabla\cdot{\bf u}^n = 0\]</div>
-<p>Testing <a href="#equation-FEM1b">(13)</a> by the test functions <span class="math">\((v_1, v_2)\)</span>, <a href="#equation-FEM2b">(14)</a> by
-the functions <span class="math">\((C_1, C_2)\)</span> and <a href="#equation-FEM3b">(15)</a> by the test function
-<span class="math">\(q\)</span>, we obtain the following weak formulation:</p>
-<div class="math" id="equation-FEM1c">
-<span class="eqno">(16)</span>\[\int_\Omega {u_1 v_1\over\tau} + ({\bf u}^{n-1}\cdot\nabla)u_1 v_1
+<div class="math notranslate nohighlight" id="equation-fem3b">
+<span class="eqno">(15)<a class="headerlink" href="#equation-fem3b" title="Permalink to this equation">¶</a></span>\[\nabla\cdot{\bf u}^n = 0\]</div>
+<p>Testing <a class="reference internal" href="#equation-fem1b">(13)</a> by the test functions <span class="math notranslate nohighlight">\((v_1, v_2)\)</span>, <a class="reference internal" href="#equation-fem2b">(14)</a> by
+the functions <span class="math notranslate nohighlight">\((C_1, C_2)\)</span> and <a class="reference internal" href="#equation-fem3b">(15)</a> by the test function
+<span class="math notranslate nohighlight">\(q\)</span>, we obtain the following weak formulation:</p>
+<div class="math notranslate nohighlight" id="equation-fem1c">
+<span class="eqno">(16)<a class="headerlink" href="#equation-fem1c" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_\Omega {u_1 v_1\over\tau} + ({\bf u}^{n-1}\cdot\nabla)u_1 v_1
     - ({\bf B}^{n-1}\cdot\nabla)B_1 v_1
     -p {\partial v_1\over\partial x} \,{\rm d}{\bf x} =
-    \int_\Omega {u_1^{n-1} v_1\over\tau}\,{\rm d}{\bf x}\]\[\int_\Omega {u_2 v_2\over\tau} + ({\bf u}^{n-1}\cdot\nabla)u_2 v_2
+    \int_\Omega {u_1^{n-1} v_1\over\tau}\,{\rm d}{\bf x}\\\int_\Omega {u_2 v_2\over\tau} + ({\bf u}^{n-1}\cdot\nabla)u_2 v_2
     - ({\bf B}^{n-1}\cdot\nabla)B_2 v_2
     -p {\partial v_2\over\partial y} \,{\rm d}{\bf x} =
-    \int_\Omega {u_2^{n-1} v_2\over\tau}\,{\rm d}{\bf x}\]</div>
-<div class="math" id="equation-FEM2c">
-<span class="eqno">(17)</span>\[\int_\Omega {B_1 C_1\over\tau} + ({\bf u}^{n-1}\cdot\nabla)B_1 C_1
+    \int_\Omega {u_2^{n-1} v_2\over\tau}\,{\rm d}{\bf x}\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight" id="equation-fem2c">
+<span class="eqno">(17)<a class="headerlink" href="#equation-fem2c" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_\Omega {B_1 C_1\over\tau} + ({\bf u}^{n-1}\cdot\nabla)B_1 C_1
     - ({\bf B}^{n-1}\cdot\nabla)u_1 C_1 \,{\rm d}{\bf x} =
-    \int_\Omega {B_1^{n-1} C_1\over\tau}\,{\rm d}{\bf x}\]\[\int_\Omega {B_2 C_2\over\tau} + ({\bf u}^{n-1}\cdot\nabla)B_2 C_2
+    \int_\Omega {B_1^{n-1} C_1\over\tau}\,{\rm d}{\bf x}\\\int_\Omega {B_2 C_2\over\tau} + ({\bf u}^{n-1}\cdot\nabla)B_2 C_2
     - ({\bf B}^{n-1}\cdot\nabla)u_2 C_2 \,{\rm d}{\bf x} =
-    \int_\Omega {B_2^{n-1} C_2\over\tau}\,{\rm d}{\bf x}\]</div>
-<div class="math" id="equation-FEM3c">
-<span class="eqno">(18)</span>\[\int_\Omega {\partial u_1\over\partial x}q + {\partial u_2\over\partial y}q
+    \int_\Omega {B_2^{n-1} C_2\over\tau}\,{\rm d}{\bf x}\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight" id="equation-fem3c">
+<span class="eqno">(18)<a class="headerlink" href="#equation-fem3c" title="Permalink to this equation">¶</a></span>\[\int_\Omega {\partial u_1\over\partial x}q + {\partial u_2\over\partial y}q
     \,{\rm d}{\bf x} = 0\]</div>
 <p>To better understand the structure of these equations, we write it using
 bilinear and linear forms, as well as take into account the symmetries of
 the forms. Then we get a particularly simple structure:</p>
-<div class="math">
-\[$$\begin{array}{lclclclclcl}
-+A(u_1, v_1) &&  && -X(p, v_1) && -B(B_1, v_1) &&  &=& l_1(v_1)\\
-  && +A(u_2, v_2) && -Y(p, v_2) &&  && -B(B_2, v_2) &=& l_2(v_2)\\
-+X(q, u_1) && +Y(q, u_2) &&  &&  &&  &=& 0\\
--B(u_1, C_1) &&  &&  && +A(B_1, C_1) &&  &=& l_4(C_1)\\
- && -B(u_2, C_2) &&  &&  && +A(B_2, C_2) &=& l_5(C_2)
-\end{array}$$\]</div><p>where:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
+$$\begin{array}{lclclclclcl}
++A(u_1, v_1) &amp;&amp;  &amp;&amp; -X(p, v_1) &amp;&amp; -B(B_1, v_1) &amp;&amp;  &amp;=&amp; l_1(v_1)\\
+  &amp;&amp; +A(u_2, v_2) &amp;&amp; -Y(p, v_2) &amp;&amp;  &amp;&amp; -B(B_2, v_2) &amp;=&amp; l_2(v_2)\\
++X(q, u_1) &amp;&amp; +Y(q, u_2) &amp;&amp;  &amp;&amp;  &amp;&amp;  &amp;=&amp; 0\\
+-B(u_1, C_1) &amp;&amp;  &amp;&amp;  &amp;&amp; +A(B_1, C_1) &amp;&amp;  &amp;=&amp; l_4(C_1)\\
+ &amp;&amp; -B(u_2, C_2) &amp;&amp;  &amp;&amp;  &amp;&amp; +A(B_2, C_2) &amp;=&amp; l_5(C_2)
+\end{array}$$</div><p>where:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}A(u, v) &amp;= \int_\Omega {u v\over\tau} +
     ({\bf u}^{n-1}\cdot\nabla)u v\,{\rm d}{\bf x}\\
 B(u, v) &amp;= \int_\Omega ({\bf B}^{n-1}\cdot\nabla)uv\,{\rm d}{\bf x}\\
@@ -265,65 +254,65 @@ the structure by:</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>A</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 <td>-X</td>
 <td>-B</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
-<tr class="row-even"><td>&nbsp;</td>
+<tr class="row-even"><td>&#160;</td>
 <td>A</td>
 <td>-Y</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 <td>-B</td>
 </tr>
 <tr class="row-odd"><td>X</td>
 <td>Y</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 </tr>
 <tr class="row-even"><td>-B</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 <td>A</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>&nbsp;</td>
+<tr class="row-odd"><td>&#160;</td>
 <td>-B</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 <td>A</td>
 </tr>
 </tbody>
 </table>
 <p>In order to solve it with Hermes, we first need to write it in the block form:</p>
-<div class="math">
-\[$$\begin{array}{lclclclclcl}
-a_{11}(u_1, v_1) &+& a_{12}(u_2, v_1) &+& a_{13}(p, v_1) &+&
-    a_{14}(B_1, v_1) &+& a_{15}(B_2, v_1) &=& l_1(v_1)\\
-a_{21}(u_1, v_2) &+& a_{22}(u_2, v_2) &+& a_{23}(p, v_2) &+&
-    a_{24}(B_1, v_2) &+& a_{25}(B_2, v_2) &=& l_2(v_2)\\
-a_{31}(u_1, q) &+& a_{32}(u_2, q) &+& a_{33}(p, q) &+&
-    a_{34}(B_1, q) &+& a_{35}(B_2, q) &=& l_3(q)\\
-a_{41}(u_1, C_1) &+& a_{42}(u_2, C_1) &+& a_{43}(p, C_1) &+&
-    a_{44}(B_1, C_1) &+& a_{45}(B_2, C_1) &=& l_4(C_1)\\
-a_{51}(u_1, C_2) &+& a_{52}(u_2, C_2) &+& a_{53}(p, C_2) &+&
-    a_{54}(B_1, C_2) &+& a_{55}(B_2, C_2) &=& l_5(C_2)
-\end{array}$$\]</div><p>comparing to the above, we get the following nonzero forms:</p>
-<div class="math">
-\[$$\begin{array}{lclclclclcl}
-a_{11}(u_1, v_1) &+& 0 &+& a_{13}(p, v_1) &+&
-    a_{14}(B_1, v_1) &+& 0 &=& l_1(v_1)\\
-0 &+& a_{22}(u_2, v_2) &+& a_{23}(p, v_2) &+&
-    0 &+& a_{25}(B_2, v_2) &=& l_2(v_2)\\
-a_{31}(u_1, q) &+& a_{32}(u_2, q) &+& 0 &+&
-    0 &+& 0 &=& 0\\
-a_{41}(u_1, C_1) &+& 0 &+& 0 &+&
-    a_{44}(B_1, C_1) &+& 0 &=& l_4(C_1)\\
-0 &+& a_{52}(u_2, C_2) &+& 0 &+&
-    0 &+& a_{55}(B_2, C_2) &=& l_5(C_2)
-\end{array}$$\]</div><p>where:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
+$$\begin{array}{lclclclclcl}
+a_{11}(u_1, v_1) &amp;+&amp; a_{12}(u_2, v_1) &amp;+&amp; a_{13}(p, v_1) &amp;+&amp;
+    a_{14}(B_1, v_1) &amp;+&amp; a_{15}(B_2, v_1) &amp;=&amp; l_1(v_1)\\
+a_{21}(u_1, v_2) &amp;+&amp; a_{22}(u_2, v_2) &amp;+&amp; a_{23}(p, v_2) &amp;+&amp;
+    a_{24}(B_1, v_2) &amp;+&amp; a_{25}(B_2, v_2) &amp;=&amp; l_2(v_2)\\
+a_{31}(u_1, q) &amp;+&amp; a_{32}(u_2, q) &amp;+&amp; a_{33}(p, q) &amp;+&amp;
+    a_{34}(B_1, q) &amp;+&amp; a_{35}(B_2, q) &amp;=&amp; l_3(q)\\
+a_{41}(u_1, C_1) &amp;+&amp; a_{42}(u_2, C_1) &amp;+&amp; a_{43}(p, C_1) &amp;+&amp;
+    a_{44}(B_1, C_1) &amp;+&amp; a_{45}(B_2, C_1) &amp;=&amp; l_4(C_1)\\
+a_{51}(u_1, C_2) &amp;+&amp; a_{52}(u_2, C_2) &amp;+&amp; a_{53}(p, C_2) &amp;+&amp;
+    a_{54}(B_1, C_2) &amp;+&amp; a_{55}(B_2, C_2) &amp;=&amp; l_5(C_2)
+\end{array}$$</div><p>comparing to the above, we get the following nonzero forms:</p>
+<div class="math notranslate nohighlight">
+$$\begin{array}{lclclclclcl}
+a_{11}(u_1, v_1) &amp;+&amp; 0 &amp;+&amp; a_{13}(p, v_1) &amp;+&amp;
+    a_{14}(B_1, v_1) &amp;+&amp; 0 &amp;=&amp; l_1(v_1)\\
+0 &amp;+&amp; a_{22}(u_2, v_2) &amp;+&amp; a_{23}(p, v_2) &amp;+&amp;
+    0 &amp;+&amp; a_{25}(B_2, v_2) &amp;=&amp; l_2(v_2)\\
+a_{31}(u_1, q) &amp;+&amp; a_{32}(u_2, q) &amp;+&amp; 0 &amp;+&amp;
+    0 &amp;+&amp; 0 &amp;=&amp; 0\\
+a_{41}(u_1, C_1) &amp;+&amp; 0 &amp;+&amp; 0 &amp;+&amp;
+    a_{44}(B_1, C_1) &amp;+&amp; 0 &amp;=&amp; l_4(C_1)\\
+0 &amp;+&amp; a_{52}(u_2, C_2) &amp;+&amp; 0 &amp;+&amp;
+    0 &amp;+&amp; a_{55}(B_2, C_2) &amp;=&amp; l_5(C_2)
+\end{array}$$</div><p>where:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}a_{11}(u_1, v_1) &amp;= A(u_1, v_1)\\
 a_{22}(u_2, v_2) &amp;= A(u_2, v_2)\\
 a_{44}(B_1, C_1) &amp;= A(B_1, C_1)\\
@@ -336,7 +325,7 @@ a_{14}(B_1, v_1) &amp;= -B(B_1, v_1)\\
 a_{41}(u_1, C_1) &amp;= -B(u_1, C_1)\\
 a_{25}(B_2, v_2) &amp;= -B(B_2, v_2)\\
 a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)\end{split}\]</div>
-<p>and <span class="math">\(l1\)</span>, ..., <span class="math">\(l5\)</span> are the same as above.</p>
+<p>and <span class="math notranslate nohighlight">\(l1\)</span>, …, <span class="math notranslate nohighlight">\(l5\)</span> are the same as above.</p>
 </div>
 </div>
 
@@ -344,7 +333,7 @@ a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)\end{split}\]</div>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -362,29 +351,30 @@ a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)\end{split}\]</div>
   <h4>Next topic</h4>
   <p class="topless"><a href="euler.html"
                         title="next chapter">Compressible Euler Equations</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/fluid-dynamics/mhd.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/fluid-dynamics/mhd.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -396,13 +386,13 @@ a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)\end{split}\]</div>
         <li class="right" >
           <a href="general.html" title="Fluid Dynamics"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Fluid Dynamics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Fluid Dynamics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

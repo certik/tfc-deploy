@@ -1,30 +1,20 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Ordinary Differential Equations &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Ordinary Differential Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Linear Algebra" href="la.html" />
     <link rel="prev" title="Wigner D Function" href="wigner.html" />
     <script type="text/javascript">
@@ -42,8 +32,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -60,7 +49,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -72,36 +61,36 @@
         <li class="right" >
           <a href="wigner.html" title="Wigner D Function"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="ordinary-differential-equations">
 <h1>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="finite-difference-formulas">
 <h2>Finite Difference Formulas<a class="headerlink" href="#finite-difference-formulas" title="Permalink to this headline">¶</a></h2>
-<p>We define the backward difference operator <img class="math" src="../_images/math/10e9553a425fbc2a2b4ab0e03203d69927d13133.png" alt="\nabla_h"/> by:</p>
+<p>We define the backward difference operator <img class="math" src="../_images/math/eac19d4b2566a59448fff5a3ba0130c2c733396b.svg" alt="\nabla_h"/> by:</p>
 <div class="math">
-<p><img src="../_images/math/0b0633a581b67a1618905ee62f1bbc34da203825.png" alt="\nabla_h f(a) = f(a) - f(a-h)"/></p>
+<p><img src="../_images/math/695505c7610af55f4ab1c92776a02405ee5a156d.svg" alt="\nabla_h f(a) = f(a) - f(a-h)"/></p>
 </div><p>Repeated application gives:</p>
 <div class="math">
-<p><img src="../_images/math/48a85212919cc8e83615904827dbac9b47d570ea.png" alt="\nabla_h^2 f(a) = \nabla_h (f(a) - f(a-h))
+<p><img src="../_images/math/aaacebcbdc128caf6314831c9e698b0c5fcfe145.svg" alt="\nabla_h^2 f(a) = \nabla_h (f(a) - f(a-h))
     = f(a) - f(a-h) -f(a-h) + f(a-2h)
     = f(a) - 2f(a-h) + f(a-2h)
 
 \nabla_h^3 f(a) = f(a) - 3f(a-h) + 3f(a-2h)-f(a-3h)
 
 \nabla_h^n f(a) = \sum_{k=0}^n \binom{n}{k}(-1)^k f(a-kh)"/></p>
-</div><p>We can also derive a formula for <img class="math" src="../_images/math/d2a98856b79db131e6dba318b2c19be3654bdc94.png" alt="f(a+t)"/> where <img class="math" src="../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/> is any real number,
-independent of <img class="math" src="../_images/math/8189a5b5a0917b8c93350827be4038af1839139d.png" alt="h"/>:</p>
+</div><p>We can also derive a formula for <img class="math" src="../_images/math/9cfb833a4c2155df8bcc582b8220eaa165eb62c8.svg" alt="f(a+t)"/> where <img class="math" src="../_images/math/7ad51d6d459e9bbdf9868b0129b30fbf89d35c09.svg" alt="t"/> is any real number,
+independent of <img class="math" src="../_images/math/0b043f7a352c706fb702c01f04a66e2643b79eda.svg" alt="h"/>:</p>
 <div class="math">
-<p><img src="../_images/math/c47f7b15bb7d89ecbd59ef3da5d86bfc3e1ab202.png" alt="f(a-h) = (1-\nabla_h) f(a)
+<p><img src="../_images/math/d672c3126daf7c2c487f4628afb0ff28e71a4104.svg" alt="f(a-h) = (1-\nabla_h) f(a)
 
 (1-\nabla_h)^{-1} f(a-h) = f(a)
 
@@ -111,9 +100,9 @@ independent of <img class="math" src="../_images/math/8189a5b5a0917b8c93350827be
 
 (1-\nabla_h)^{-{t\over h}} f(a) = f(a+t)"/></p>
 </div><p>Now we can express the following general integral using the function value from
-either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3e668f4db723f.png" alt="f(a)"/>) or right (<img class="math" src="../_images/math/e88bef0f90f0bbe4d107a713801ba523b69e4dee.png" alt="f(a+h)"/>) hand side of the interval <img class="math" src="../_images/math/8189a5b5a0917b8c93350827be4038af1839139d.png" alt="h"/>:</p>
+either left (<img class="math" src="../_images/math/e22df456f515d467479f39e2a66a1ec58f80b9e8.svg" alt="f(a)"/>) or right (<img class="math" src="../_images/math/ad1992e3bcb4cf83a6a013b28acac69eeeacd062.svg" alt="f(a+h)"/>) hand side of the interval <img class="math" src="../_images/math/0b043f7a352c706fb702c01f04a66e2643b79eda.svg" alt="h"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f0486e467c514bf57c61bbb746800a2067d9e968.png" alt="\int_a^{a+h} f(t) \,\d t
+<p><img src="../_images/math/470da191fb3fd30ab97752ce30c012bd89b1a9a0.svg" alt="\int_a^{a+h} f(t) \,\d t
     = \int_0^h f(a+t) \,\d t
     = \int_0^h (1-\nabla_h)^{-{t\over h}} f(a) \,\d t
     =
@@ -129,7 +118,7 @@ either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3
     = h \left(1-\half\nabla_h - {1\over 12}\nabla_h^2-{1\over24}
         \nabla_h^3+\cdots\right) f(a+h)"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">integrate</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">integrate</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;nabla t h&quot;</span><span class="p">)</span>
 <span class="go">(nabla, t, h)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">nabla</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="n">h</span><span class="p">),</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span>
@@ -146,7 +135,7 @@ either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3
 </div>
 <p>Keeping terms only to third-order, we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/f44e719ee5ba68707df1cb69bcb0c726f205beaf.png" alt="\int_a^{a+h} f(t) \,\d t
+<p><img src="../_images/math/6f7b9adcf1da24546db095cdd1dd1f4734cac5cb.svg" alt="\int_a^{a+h} f(t) \,\d t
     = - {h\nabla_h\over (1-\nabla_h) \log(1-\nabla_h)}f(a)
     \approx h \left(1+\half\nabla_h + {5\over 12}\nabla_h^2+{3\over8}
         \nabla_h^3\right) f(a)
@@ -172,7 +161,7 @@ either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3
     = {h\over24}\left(55f(a) -59f(a-h) + 37f(a-2h) -9f(a-3h)\right)"/></p>
 </div><p>Similarly:</p>
 <div class="math">
-<p><img src="../_images/math/98455a7d647d0262a7d80863ff8e2ede64d944eb.png" alt="\int_a^{a+h} f(t) \,\d t
+<p><img src="../_images/math/7a3d3b0004653df09a11e25f202493acb00db6b6.svg" alt="\int_a^{a+h} f(t) \,\d t
     = - {h\nabla_h\over\log(1-\nabla_h)}f(a+h)
     \approx h \left(1-\half\nabla_h - {1\over 12}\nabla_h^2-{1\over24}
         \nabla_h^3\right) f(a+h)
@@ -180,7 +169,7 @@ either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3
 
     = {h\over24}\left(9f(a+h) +19f(a) -5f(a-h) +f(a-2h)\right)"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;f0 f1 f2 f3&quot;</span><span class="p">)</span>
 <span class="go">(f0, f1, f2, f3)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nabla1</span> <span class="o">=</span> <span class="n">f0</span> <span class="o">-</span> <span class="n">f1</span>
@@ -196,11 +185,11 @@ either left (<img class="math" src="../_images/math/1acc6639de4f1c620680bec4adf3
 <div class="section" id="integrating-ode">
 <h2>Integrating ODE<a class="headerlink" href="#integrating-ode" title="Permalink to this headline">¶</a></h2>
 <p>Set of linear ODEs can be written in the form:</p>
-<div class="math" id="equation-ode_eq">
-<p><span class="eqno">(1)</span><img src="../_images/math/e8d43e3a8a93f628aa78cda11ebca2d66fe490ca.png" alt="{\d y\over\d r} = G y"/></p>
+<div class="math" id="equation-ode-eq">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-ode-eq" title="Permalink to this equation">¶</a></span><img src="../_images/math/a91d76bfd6373960b04a5a6d26e0608556dc3512.svg" alt="{\d y\over\d r} = G y"/></p>
 </div><p>For example for the Schrödinger we have</p>
 <div class="math">
-<p><img src="../_images/math/c144a6b2a22c880cb39a2ecceabfc76bd5890a2f.png" alt="y = \begin{pmatrix}
+<p><img src="../_images/math/5f861c09939a302b0e7d7ee0aedc9d58f8afb27b.svg" alt="y = \begin{pmatrix}
     P \\
     Q
     \end{pmatrix}
@@ -209,46 +198,46 @@ G = \begin{pmatrix}
     0 &amp; 1 \\
     -2(E-V) - {l(l+1)\over r^2} &amp; 0 \\
     \end{pmatrix}"/></p>
-</div><p>Now we need to choose a grid <img class="math" src="../_images/math/258d51d7f19dc55e32e54a7228c2954d6bbd38ad.png" alt="r = r(t)"/>, where <img class="math" src="../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/> is some uniform grid. For
-example <img class="math" src="../_images/math/3e3a72573d07a09025385a57eef07c7c06a75aca.png" alt="r = r_0 (e^t-1)"/>:</p>
+</div><p>Now we need to choose a grid <img class="math" src="../_images/math/cd6f7f5a8267a17ff4482b681469da4ae91b62d8.svg" alt="r = r(t)"/>, where <img class="math" src="../_images/math/7ad51d6d459e9bbdf9868b0129b30fbf89d35c09.svg" alt="t"/> is some uniform grid. For
+example <img class="math" src="../_images/math/b34455fa3f914c1a0d8370a9f1dd44f1d2b7c9b0.svg" alt="r = r_0 (e^t-1)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f4da6b24c198de46469670fe6d0892e24f72019a.png" alt="r_i = r_0 (e^{t_i} - 1)
+<p><img src="../_images/math/156a1d393159dc6d8f674d54282c7fd54a76fe41.svg" alt="r_i = r_0 (e^{t_i} - 1)
 
 t_i = (i-1)h"/></p>
-</div><p>where <img class="math" src="../_images/math/ff52527934669b955341c083e3bdaf63f62c27c8.png" alt="i = 1, 2, 3, \dots, N"/>. We also need the derivative, for the exampe
+</div><p>where <img class="math" src="../_images/math/4d98375403819e2fcd6251f4336a6f7bdc0b6285.svg" alt="i = 1, 2, 3, \dots, N"/>. We also need the derivative, for the exampe
 above we get:</p>
 <div class="math">
-<p><img src="../_images/math/4747903af2562137abba593ccebd0c5335d67c1d.png" alt="{\d r\over\d t} = r_0 e^t"/></p>
-</div><p>Now we substitute this into <a href="#equation-ode_eq">(1)</a>:</p>
+<p><img src="../_images/math/8ea5298cf647a744d31a4ded3e66e311f4ea83c2.svg" alt="{\d r\over\d t} = r_0 e^t"/></p>
+</div><p>Now we substitute this into <a class="reference internal" href="#equation-ode-eq">(1)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/423c7a7976c8a41a1fb683ad056b1b736416bf73.png" alt="{\d y\over\d t} = {\d r\over\d t} G y"/></p>
-</div><p>We can integrate this system from <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> to <img class="math" src="../_images/math/ec2ac3b93c1551b226a92d7446fd4316867f921b.png" alt="a+h"/> on a uniform grid <img class="math" src="../_images/math/273e0046b505d99f3d1167caa82b2ac76c96d075.png" alt="t_i"/>:</p>
+<p><img src="../_images/math/f145a585234e3354dd430de5076aa3b5851e6087.svg" alt="{\d y\over\d t} = {\d r\over\d t} G y"/></p>
+</div><p>We can integrate this system from <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/> to <img class="math" src="../_images/math/d0ea81424c73777041ee81bea53ccc0565810321.svg" alt="a+h"/> on a uniform grid <img class="math" src="../_images/math/1328d870bc95a9d030bfbb0338f9437884293187.svg" alt="t_i"/>:</p>
 <div class="math">
-<p><img src="../_images/math/e81ab984b606bd314a3c0e87706223c872cdd1b4.png" alt="y(a+h) = y(a) + \int_a^{a+h} {\d r\over\d t} G y\,\d t
+<p><img src="../_images/math/c8b1dddd2c7df68858a347e7ec585d9419fe32a8.svg" alt="y(a+h) = y(a) + \int_a^{a+h} {\d r\over\d t} G y\,\d t
     = y(a) + \int_a^{a+h} f(t)\,\d t"/></p>
-</div><p>where <img class="math" src="../_images/math/f5a46fb36c750824df9c13194d51b38fb7056eb5.png" alt="f(t) = {\d r\over\d t} G y"/> and we use some method to approximate the
+</div><p>where <img class="math" src="../_images/math/282ff7dafd467c4e9d26ff1597f34156118a93f5.svg" alt="f(t) = {\d r\over\d t} G y"/> and we use some method to approximate the
 integral, see the previous section.</p>
 </div>
 <div class="section" id="radial-poisson-equation">
 <h2>Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this headline">¶</a></h2>
 <p>Radial Poisson equation is:</p>
-<div class="math" id="equation-poisson-V">
-<p><span class="eqno">(2)</span><img src="../_images/math/b073af06566e513e74496a5ef9358b2602096043.png" alt="V''(r) + {2\over r} V'(r) = -4\pi n(r)"/></p>
+<div class="math" id="equation-poisson-v">
+<p><span class="eqno">(2)<a class="headerlink" href="#equation-poisson-v" title="Permalink to this equation">¶</a></span><img src="../_images/math/fadff7491047b43cdb63dd1616d214d6f154bc9c.svg" alt="V''(r) + {2\over r} V'(r) = -4\pi n(r)"/></p>
 </div><p>The left hand side can be written as:</p>
 <div class="math">
-<p><img src="../_images/math/dcad752967ea2eadb5ebe0fcadbe4e85b3e63c9e.png" alt="V'' + {2\over r} V'
+<p><img src="../_images/math/76fa235d44f3ca27a54410a462a0fa4cce624e68.svg" alt="V'' + {2\over r} V'
     = {1\over r} \left(r V'' + 2V'\right)
     = {1\over r} \left(r V\right)''"/></p>
 </div><p>So the Poisson equation can also be written as:</p>
-<div class="math" id="equation-poisson-rV">
-<p><span class="eqno">(3)</span><img src="../_images/math/f33a65b25d75ebfa0c2066939731d6e78e456806.png" alt="(rV)'' = -4\pi r\, n"/></p>
-</div><p>Now we determine the values of <img class="math" src="../_images/math/48672d6e6e5d0a0b70361cbc39e616b04793436c.png" alt="V(0)"/>, <img class="math" src="../_images/math/7593bfff6b8100c2010b9e87a1380e8dd5092274.png" alt="V'(0)"/> and the behavior of
-<img class="math" src="../_images/math/f3bc25f27bfe53652375a7ae2ec7f84b72509f76.png" alt="V(\infty)"/> and <img class="math" src="../_images/math/fa441b4c2dad595040b9696954d5014e53ba0d4b.png" alt="V'(\infty)"/>. The equation determines <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> up to an
-arbitrary constant, so we set <img class="math" src="../_images/math/8f16a3c702151496cb5680dee7517fa04f51fd7c.png" alt="V(\infty) = 0"/> and now the potential <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> is
+<div class="math" id="equation-poisson-rv">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-poisson-rv" title="Permalink to this equation">¶</a></span><img src="../_images/math/f09e20ec65bbce1c8abbc411451a069a9aa4d542.svg" alt="(rV)'' = -4\pi r\, n"/></p>
+</div><p>Now we determine the values of <img class="math" src="../_images/math/26e486b0b3acbada5354da18c4db71306300cda8.svg" alt="V(0)"/>, <img class="math" src="../_images/math/17d9df71a1dc0a39c0ded248e03121cf62faca88.svg" alt="V'(0)"/> and the behavior of
+<img class="math" src="../_images/math/d4b3707afe28134cd20bfb7b198dc8970ff762be.svg" alt="V(\infty)"/> and <img class="math" src="../_images/math/264a12ff148eadf01040486ffcb4da1a9200ead8.svg" alt="V'(\infty)"/>. The equation determines <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> up to an
+arbitrary constant, so we set <img class="math" src="../_images/math/5409739b7ae63137815dc1c5643fde94ea908e94.svg" alt="V(\infty) = 0"/> and now the potential <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> is
 determined uniquely.</p>
-<p>The 3D integral of the (number) density is equal to the total (numeric) charge, which is equal to <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png" alt="Z"/> (number of electrons). We can then use the Poisson equation to rewrite the integral in terms of <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>:</p>
+<p>The 3D integral of the (number) density is equal to the total (numeric) charge, which is equal to <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/> (number of electrons). We can then use the Poisson equation to rewrite the integral in terms of <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/>:</p>
 <div class="math">
-<p><img src="../_images/math/d9ee13aa07e9a4e6b372763f5b063c7c484e4ce4.png" alt="Z = \int n({\bf x}) \d^3 x
+<p><img src="../_images/math/d68bcd2d14b7c43de99fac6b64d79ffb1651df5e.svg" alt="Z = \int n({\bf x}) \d^3 x
     = \int n(r) r^2\d\Omega\d r
     = \int_0^\infty 4\pi n(r) r^2\d r =
 
@@ -265,40 +254,40 @@ determined uniquely.</p>
     = \lim_{r\to0} V'(r)r^2 -\lim_{r\to\infty} V'(r)r^2"/></p>
 </div><p>Let</p>
 <div class="math">
-<p><img src="../_images/math/c1fd0d9fb6c67b535d7d7805255f2203d9bc9cec.png" alt="\lim_{r\to0} V'(r)r^2 = C"/></p>
-</div><p>Then around <img class="math" src="../_images/math/aa7b115bc10ced52207e4eb06252e46cf6d58ca8.png" alt="r\to0"/> we get <img class="math" src="../_images/math/7a854875589b1c429988e19a27ca87e97f3947c8.png" alt="V'(r) = {C\over r^2}"/> and <img class="math" src="../_images/math/a3a6ca153402c86c266b4ab4ef67caf6d194047c.png" alt="V(r) = -{C\over r}+D"/>
-(for some constant <img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/>). As such, <img class="math" src="../_images/math/c3355896da590fc491a10150a50416687626d7cc.png" alt="C"/> is a point charge (delta function) at
-the origin. From now on, we will assume no point charge, i.e. <img class="math" src="../_images/math/7296755ef63523ef0ed2e997caae100445bbb44d.png" alt="C=0"/>.</p>
-<p>In the limit <img class="math" src="../_images/math/bf3427c52f12556ca750265a7da828a20ee9bbe3.png" alt="r\to\infty"/>, we get the equation:</p>
+<p><img src="../_images/math/1a9ffe9040cb2c5c56303dea594ef2611f89735c.svg" alt="\lim_{r\to0} V'(r)r^2 = C"/></p>
+</div><p>Then around <img class="math" src="../_images/math/71a1de5e6a4341a3a62d3d07d7e73fd452a58c8a.svg" alt="r\to0"/> we get <img class="math" src="../_images/math/8af508151b0b8f292fe7635d4e3360381daecd73.svg" alt="V'(r) = {C\over r^2}"/> and <img class="math" src="../_images/math/1449a7cdc5b435474586c1854cd6c51745bbcdf5.svg" alt="V(r) = -{C\over r}+D"/>
+(for some constant <img class="math" src="../_images/math/3fd412c6c80b7a76e8c86d2dfa89ac65668ae1f6.svg" alt="D"/>). As such, <img class="math" src="../_images/math/6e7e2a5448a5278e14f22e7184aba8f70c6d0c58.svg" alt="C"/> is a point charge (delta function) at
+the origin. From now on, we will assume no point charge, i.e. <img class="math" src="../_images/math/924f76382938b26e5825b13a19e6fedd40dcbe6a.svg" alt="C=0"/>.</p>
+<p>In the limit <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/>, we get the equation:</p>
 <div class="math">
-<p><img src="../_images/math/3751954720d053fb0848f16fa1fe6bb5baca9a81.png" alt="V'(r) = -{Z-C\over r^2} = -{Z\over r^2}"/></p>
-</div><p>by integrating (and requiring that <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> vanished in infinity to get rid of the
-integration constant), we get for <img class="math" src="../_images/math/bf3427c52f12556ca750265a7da828a20ee9bbe3.png" alt="r\to\infty"/>:</p>
+<p><img src="../_images/math/c1666af5775ad97fa4df21fa2305ab1df846a29b.svg" alt="V'(r) = -{Z-C\over r^2} = -{Z\over r^2}"/></p>
+</div><p>by integrating (and requiring that <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> vanished in infinity to get rid of the
+integration constant), we get for <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/>:</p>
 <div class="math">
-<p><img src="../_images/math/02c1a9c9cbfc90ca67aee937dde1589a80455078.png" alt="V(r) = {Z\over r}"/></p>
-</div><p>Integrating <a href="#equation-poisson-rV">(3)</a> directly, we get:</p>
+<p><img src="../_images/math/0a00f01c2e54768743b69dadfc972433823ee0b5.svg" alt="V(r) = {Z\over r}"/></p>
+</div><p>Integrating <a class="reference internal" href="#equation-poisson-rv">(3)</a> directly, we get:</p>
 <div class="math">
-<p><img src="../_images/math/8c84b6dbba5afb7683f3ce0a24aad32f95d7fb71.png" alt="[(rV)']_0^\infty = -4\pi\int_0^\infty r n(r) \d r
+<p><img src="../_images/math/dade5c8c2f0328ad2eb87c9cfd5b85c64d7ffe7b.svg" alt="[(rV)']_0^\infty = -4\pi\int_0^\infty r n(r) \d r
 
 [V + rV']_0^\infty = -4\pi\int_0^\infty r n(r) \d r"/></p>
-</div><p>We already know that <img class="math" src="../_images/math/153922b5d53dfe63544ac7bc5c7b3ea8e21d6610.png" alt="V'"/> behaves like <img class="math" src="../_images/math/5e524633c1b151632e9fecc74a0333d713607d58.png" alt="-{Z\over r^2}"/> in infinity,
-so <img class="math" src="../_images/math/16772cac689c76b613869aab123b067cdc35a534.png" alt="rV'"/> vanishes. Requiring <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> itself to
-vanish in infinity, the left hand side simplifies to <img class="math" src="../_images/math/1b09bf0cebf3f13963f4a21ab79dbc6b0e13eda1.png" alt="-V(0)"/> and we get:</p>
+</div><p>We already know that <img class="math" src="../_images/math/cfc4a1e44e3d51ef4e2fbada3818f7af51b80872.svg" alt="V'"/> behaves like <img class="math" src="../_images/math/e76260b2c5acea63fb90c82f510c6516a9ea420f.svg" alt="-{Z\over r^2}"/> in infinity,
+so <img class="math" src="../_images/math/00d8df8d7b0b23c4a64eb2d30e0d7794a9006a40.svg" alt="rV'"/> vanishes. Requiring <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> itself to
+vanish in infinity, the left hand side simplifies to <img class="math" src="../_images/math/16c65d0f405707862dc55af32f73b561caaf1d65.svg" alt="-V(0)"/> and we get:</p>
 <div class="math">
-<p><img src="../_images/math/4707697c382ebac45c300c7b1089e1b93d845019.png" alt="V(0) = 4\pi\int_0^\infty r n(r) \d r"/></p>
-</div><p>Last thing to determine is <img class="math" src="../_images/math/7593bfff6b8100c2010b9e87a1380e8dd5092274.png" alt="V'(0)"/>. To do that, we expand the charge density
-and potential (and it&#8217;s derivatives) into a series around the origin:</p>
+<p><img src="../_images/math/b20147dc75f336f0c4737f54fc9589f8bf906ca1.svg" alt="V(0) = 4\pi\int_0^\infty r n(r) \d r"/></p>
+</div><p>Last thing to determine is <img class="math" src="../_images/math/17d9df71a1dc0a39c0ded248e03121cf62faca88.svg" alt="V'(0)"/>. To do that, we expand the charge density
+and potential (and it’s derivatives) into a series around the origin:</p>
 <div class="math">
-<p><img src="../_images/math/73398d759b5900af0f3f70e27020aafd494f2349.png" alt="n(r) = n_0 + n_1 r + n_2 r^2 + \cdots = \sum_{k=0}^\infty n_k r^k
+<p><img src="../_images/math/d02ba7c94c945e94bb29cb9f09e5631885b6ae03.svg" alt="n(r) = n_0 + n_1 r + n_2 r^2 + \cdots = \sum_{k=0}^\infty n_k r^k
 
 V(r) = V_0 + V_1 r + V_2 r^2 + \cdots = \sum_{k=0}^\infty V_k r^k
 
 V'(r) = \sum_{k=1}^\infty V_k k r^{k-1}
 
 V''(r) = \sum_{k=2}^\infty V_k k(k-1) r^{k-2}"/></p>
-</div><p>And substitute into the equation <a href="#equation-poisson-V">(2)</a>:</p>
+</div><p>And substitute into the equation <a class="reference internal" href="#equation-poisson-v">(2)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/ca9923dd958ca74a827a47098b69e474215b3362.png" alt="\sum_{k=2}^\infty V_k k(k-1) r^{k-2} +
+<p><img src="../_images/math/608bd24ba73e39e83682319c4fefd30111004abf.svg" alt="\sum_{k=2}^\infty V_k k(k-1) r^{k-2} +
     {2\over r}\sum_{k=1}^\infty V_k k r^{k-1} =
     -4\pi \sum_{k=0}^\infty n_k r^k
 
@@ -328,26 +317,26 @@ V''(r) = \sum_{k=2}^\infty V_k k(k-1) r^{k-2}"/></p>
 {2\over r} V_1
     =
     -\sum_{k=0}^\infty \left(4\pi n_k+V_{k+2} (k+2)(k+3)\right) r^k"/></p>
-</div><p>We now multiply the whole equation by <img class="math" src="../_images/math/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" alt="r"/> and then set <img class="math" src="../_images/math/400365c088499af977542271fc6363b086a63499.png" alt="r=0"/>. We get
-<img class="math" src="../_images/math/237dd0320e52464f034ab738e9faafd19bc43dd9.png" alt="V_1 = 0"/>, so <img class="math" src="../_images/math/50517c498bab6ab1b80637676e2efd8c4e934b5d.png" alt="V'(0) = V_1 = 0"/>. We put it back into the equation to get:</p>
+</div><p>We now multiply the whole equation by <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> and then set <img class="math" src="../_images/math/3d83df94da83cbdc3b9f3114e724e93767b9e664.svg" alt="r=0"/>. We get
+<img class="math" src="../_images/math/8fd20906dd836e15945d7ebacb2433ea796c7026.svg" alt="V_1 = 0"/>, so <img class="math" src="../_images/math/cfed2025643905f37235b32eef198abe7f0f8bd8.svg" alt="V'(0) = V_1 = 0"/>. We put it back into the equation to get:</p>
 <div class="math">
-<p><img src="../_images/math/2e23b4a12afa0e23c58667c6ce505e40caf5c3f0.png" alt="\sum_{k=0}^\infty \left(4\pi n_k+V_{k+2} (k+2)(k+3)\right) r^k = 0"/></p>
-</div><p>This must hold for all <img class="math" src="../_images/math/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" alt="r"/>, so we get the following set of equations for <img class="math" src="../_images/math/fad52f920621ed9487b73562a35bd18eac008e63.png" alt="k=0,
+<p><img src="../_images/math/457f499b729ee01ebfafb0aef684aa73cc765ee2.svg" alt="\sum_{k=0}^\infty \left(4\pi n_k+V_{k+2} (k+2)(k+3)\right) r^k = 0"/></p>
+</div><p>This must hold for all <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/>, so we get the following set of equations for <img class="math" src="../_images/math/e00c3a97420a049ad0cd1902903d8ca496cbe3e5.svg" alt="k=0,
 1, \cdots"/>:</p>
 <div class="math">
-<p><img src="../_images/math/d083d2e0bd04dfaab54075f84edad0a9f8984f7a.png" alt="4\pi n_k+V_{k+2} (k+2)(k+3) = 0"/></p>
-</div><p>from which we express <img class="math" src="../_images/math/40b514f3d50ab12888fa4886e266bb6a1e8a7e9f.png" alt="V_k"/> for all <img class="math" src="../_images/math/c17d88e2fdeef66df0e37def936f39b773567278.png" alt="k \ge 2"/>.
-We already know the values for <img class="math" src="../_images/math/5ed8470bc717a49aafe4556c7e2c2e11ddc7b687.png" alt="k=1"/> and
-<img class="math" src="../_images/math/badf0ecd1ef8289387d8462393438c6e2710ff28.png" alt="k=0"/> from earlier, so overall we get:</p>
+<p><img src="../_images/math/8409ef206cb480c045d40fb7708ca26a2db5530a.svg" alt="4\pi n_k+V_{k+2} (k+2)(k+3) = 0"/></p>
+</div><p>from which we express <img class="math" src="../_images/math/0d2bb9f3bf5dc68b8afeeeb65a73a644e23695b9.svg" alt="V_k"/> for all <img class="math" src="../_images/math/9d94ebc5f74d668a50bd132f44ddb70e652fa477.svg" alt="k \ge 2"/>.
+We already know the values for <img class="math" src="../_images/math/ca40308a8527b69893f78a385a32488bc34c7e7e.svg" alt="k=1"/> and
+<img class="math" src="../_images/math/4cee3a63ffbbea2a53315c9a8ebc0f28a009c6d2.svg" alt="k=0"/> from earlier, so overall we get:</p>
 <div class="math">
-<p><img src="../_images/math/6dacec682608d842dcabe72e4dbbc144c0a98013.png" alt="V_0 = 4\pi\int_0^\infty r n(r) \d r
+<p><img src="../_images/math/8ea20d528ab14c2f068e01662d77387e5598d688.svg" alt="V_0 = 4\pi\int_0^\infty r n(r) \d r
 
 V_1 = 0
 
 V_{k+2} = -{4\pi n_k\over (k+2)(k+3)}"/></p>
 </div><p>in particular:</p>
 <div class="math">
-<p><img src="../_images/math/d6f42058e8c12703cee8b9da45fe0f8eaf20f97c.png" alt="V_2 = - {4\pi n_0\over 6} = -{2\pi\over 3} n_0
+<p><img src="../_images/math/44351c72f5bff4aca5bba9b9a754bd4dd0cb13c9.svg" alt="V_2 = - {4\pi n_0\over 6} = -{2\pi\over 3} n_0
 
 V_3 = - {4\pi n_1\over 12} = -{\pi\over 3} n_1
 
@@ -356,9 +345,9 @@ V_4 = - {4\pi n_2\over 20} = -{\pi\over 5} n_2
 V_5 = - {4\pi n_3\over 30} = -{2\pi\over 15} n_3
 
 \cdots"/></p>
-</div><p>So we get the following series expansion for <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and <img class="math" src="../_images/math/153922b5d53dfe63544ac7bc5c7b3ea8e21d6610.png" alt="V'"/>:</p>
+</div><p>So we get the following series expansion for <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and <img class="math" src="../_images/math/cfc4a1e44e3d51ef4e2fbada3818f7af51b80872.svg" alt="V'"/>:</p>
 <div class="math">
-<p><img src="../_images/math/be6955ce7d0247dad9d2a4b3c8052551e7d35dad.png" alt="V = V_0 -{2\pi\over 3} n_0 r^2 -{\pi\over 3} n_1 r^3-{\pi\over 5} n_2 r^4
+<p><img src="../_images/math/722c3c9b8f645e9236be8df7ab6f16c99481f49b.svg" alt="V = V_0 -{2\pi\over 3} n_0 r^2 -{\pi\over 3} n_1 r^3-{\pi\over 5} n_2 r^4
     -{2\pi\over 15} n_3 r^5 - \cdots
 
 V' = -{4\pi\over 3} n_0 r -\pi n_1 r^2-{4\pi\over 5} n_2 r^3
@@ -370,12 +359,12 @@ present a few.</p>
 <div class="section" id="gaussian-charge">
 <h4>Gaussian Charge<a class="headerlink" href="#gaussian-charge" title="Permalink to this headline">¶</a></h4>
 <p>The Gaussian charge is simply a Gaussian, normalized in such a way that the
-total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png" alt="Z"/>:</p>
-<div class="math" id="equation-gauss_charge">
-<p><span class="eqno">(4)</span><img src="../_images/math/4139b4bc165720bd194d7c27f7e04bce181e3067.png" alt="n(r) = {Z\alpha^3 \over \pi^{3\over2} } e^{-\alpha^2 r^2}"/></p>
-</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/9866e3a998d628ba0941eb4fea0666ac391d149a.png" alt="Q"/>:</p>
+total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
+<div class="math" id="equation-gauss-charge">
+<p><span class="eqno">(4)<a class="headerlink" href="#equation-gauss-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/426cbd247845ee9cd690c6dbe9462b27c1964204.svg" alt="n(r) = {Z\alpha^3 \over \pi^{3\over2} } e^{-\alpha^2 r^2}"/></p>
+</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
 <div class="math">
-<p><img src="../_images/math/b4f9f69a8155874c9d185cd2bb191e6bca901866.png" alt="Q = \int n({\bf x}) \d^3 x
+<p><img src="../_images/math/9c8a3f21c343cbf6bc7d82893d8b00bc564f7e79.svg" alt="Q = \int n({\bf x}) \d^3 x
     = 4\pi \int_0^\infty n(r) r^2 \d r =
 
 = 4\pi \int_0^\infty {Z\alpha^3 \over \pi^{3\over2} } e^{-\alpha^2 r^2}
@@ -384,19 +373,19 @@ total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398
 = {4 Z \alpha^3 \over \sqrt\pi} \int_0^\infty e^{-\alpha^2 r^2} r^2 \d r =
 
 = {4 Z \alpha^3 \over \sqrt\pi} {\sqrt\pi\over 4\alpha^3} = Z"/></p>
-</div><p>So the total charge is <img class="math" src="../_images/math/69b355a61e126ea52667898f534e4115c6448d39.png" alt="Q=Z"/>, as expected. Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span>
+</div><p>So the total charge is <img class="math" src="../_images/math/56ca685ed6a70c0254dbf1e772fc5932b39f454c.svg" alt="Q=Z"/>, as expected. Code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 <span class="go">r</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrate</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
 <span class="go">sqrt(pi)/(4*alpha**3)</span>
 </pre></div>
 </div>
-<p>Now we calculate the potential <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/> from the Poisson equation
-<a href="#equation-poisson-rV">(3)</a>:</p>
+<p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
+<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/8abc9d3e4edcde78fd847ad68a404c1bda1f0492.png" alt="\left(rV(r)\right)'' = -4\pi r n(r)
+<p><img src="../_images/math/b5431501f9b1c89b7994da77d39900b0e1dccbdb.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = -{4\alpha^3 r Z\over \sqrt\pi } e^{-\alpha^2 r^2}
 
 \left(rV(r)\right)' = {2 Z\alpha\over \sqrt\pi } e^{-\alpha^2 r^2} + A
@@ -404,18 +393,18 @@ total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398
 r V(r) = Z \,\mbox{erf}(\alpha r) + Ar + B
 
 V(r) = Z \,{\mbox{erf}(\alpha r) \over r} + A + {B\over r}"/></p>
-</div><p>We have two integration constants <img class="math" src="../_images/math/019e9892786e493964e145e7c5cf7b700314e53b.png" alt="A"/> and <img class="math" src="../_images/math/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="B"/>. We fix the potential using the
-condition <img class="math" src="../_images/math/8f16a3c702151496cb5680dee7517fa04f51fd7c.png" alt="V(\infty) = 0"/>, which implies <img class="math" src="../_images/math/9f44a5278f9f07028b5386312e86885738ffec92.png" alt="A=0"/>. The other constant <img class="math" src="../_images/math/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="B"/> is a
-point charge at the origin, which in our case <a href="#equation-gauss_charge">(4)</a> is zero, so
-<img class="math" src="../_images/math/33535d13e10f27c6657f5795ecb46f5c415ad539.png" alt="B=0"/>.</p>
+</div><p>We have two integration constants <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> and <img class="math" src="../_images/math/8eb7c8af84dc3945487fc2588e930f59b4aa574c.svg" alt="B"/>. We fix the potential using the
+condition <img class="math" src="../_images/math/5409739b7ae63137815dc1c5643fde94ea908e94.svg" alt="V(\infty) = 0"/>, which implies <img class="math" src="../_images/math/b6c1a095491e61daaba64e158f1b9bc2484dd89a.svg" alt="A=0"/>. The other constant <img class="math" src="../_images/math/8eb7c8af84dc3945487fc2588e930f59b4aa574c.svg" alt="B"/> is a
+point charge at the origin, which in our case <a class="reference internal" href="#equation-gauss-charge">(4)</a> is zero, so
+<img class="math" src="../_images/math/c12e11f20e0f5778d1395f53e6a4a585424b4eb4.svg" alt="B=0"/>.</p>
 <p>We finally obtain the potential:</p>
 <div class="math">
-<p><img src="../_images/math/2b333687040542de960865891f8ac61513dcc037.png" alt="V(r) = Z \,{\mbox{erf}(\alpha r) \over r}"/></p>
+<p><img src="../_images/math/bc671c9f33ef9ad48fcaf7b7828d4147c96c8172.svg" alt="V(r) = Z \,{\mbox{erf}(\alpha r) \over r}"/></p>
 </div><p>We can calculate the electrostatic self-energy, i.e. the energy of
-interaction of the charge <img class="math" src="../_images/math/80fa4544c8c02c8156306df524451bacaf608c03.png" alt="n(r)"/> with the potential generated by this
-charge <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/>:</p>
+interaction of the charge <img class="math" src="../_images/math/70a3b77789654e5324af7f780f01b7d9a5620954.svg" alt="n(r)"/> with the potential generated by this
+charge <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9b6e6d58f0d441f37018fadf792f5e18b5034a1e.png" alt="E_\mathrm{self} =
+<p><img src="../_images/math/c93b2a2b0c8cf11e37f78961c7ca63c0ceaf9201.svg" alt="E_\mathrm{self} =
 \half \int n({\bf x}) V({\bf x}) \d^3 x
     = {4\pi\over2} \int_0^\infty n(r) V(r) r^2 \d r =
 
@@ -429,10 +418,10 @@ charge <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9
 
 = {Z^2 \alpha\over \sqrt{2\pi}}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span><span class="p">,</span> <span class="n">erf</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span><span class="p">,</span> <span class="n">erf</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 <span class="go">r</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrate</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">erf</span><span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
 <span class="go">sqrt(2)/(4*alpha**2)</span>
 </pre></div>
@@ -441,12 +430,12 @@ charge <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9
 <div class="section" id="exponential-charge">
 <h4>Exponential Charge<a class="headerlink" href="#exponential-charge" title="Permalink to this headline">¶</a></h4>
 <p>The exponential charge is simply an exponential, normalized in such a way that
-the total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png" alt="Z"/>:</p>
-<div class="math" id="equation-exp_charge">
-<p><span class="eqno">(5)</span><img src="../_images/math/588c6a5e3ad4304410a037840f4997c41545465c.png" alt="n(r) = {Z\alpha^3 \over 8\pi} e^{-\alpha r}"/></p>
-</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/9866e3a998d628ba0941eb4fea0666ac391d149a.png" alt="Q"/>:</p>
+the total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
+<div class="math" id="equation-exp-charge">
+<p><span class="eqno">(5)<a class="headerlink" href="#equation-exp-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/d04d604c5cddeb1b4716bb1cd3d3ab81464d2d72.svg" alt="n(r) = {Z\alpha^3 \over 8\pi} e^{-\alpha r}"/></p>
+</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
 <div class="math">
-<p><img src="../_images/math/8533ad3ac306992338428549bdcf16e073b1309a.png" alt="Q = \int n({\bf x}) \d^3 x
+<p><img src="../_images/math/8a5afe105ffad6739b0af38fc739a3385dbbd19f.svg" alt="Q = \int n({\bf x}) \d^3 x
     = 4\pi \int_0^\infty n(r) r^2 \d r =
 
 = 4\pi \int_0^\infty {Z\alpha^3 \over 8\pi} e^{-\alpha r}
@@ -455,35 +444,35 @@ the total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273fee
 = {Z \alpha^3 \over 2} \int_0^\infty e^{-\alpha r} r^2 \d r =
 
 = {Z \alpha^3 \over 2} {2\over\alpha^3} = Z"/></p>
-</div><p>So the total charge is <img class="math" src="../_images/math/69b355a61e126ea52667898f534e4115c6448d39.png" alt="Q=Z"/>, as expected.</p>
-<p>Now we calculate the potential <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/> from the Poisson equation
-<a href="#equation-poisson-rV">(3)</a>:</p>
+</div><p>So the total charge is <img class="math" src="../_images/math/56ca685ed6a70c0254dbf1e772fc5932b39f454c.svg" alt="Q=Z"/>, as expected.</p>
+<p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
+<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/91c0314e9104cd8c5b2c77e32c374a11e765672a.png" alt="\left(rV(r)\right)'' = -4\pi r n(r)
+<p><img src="../_images/math/3f0201e987ee522fd48a706326f7b7044a6782e2.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = -{Z\alpha^3 \over 2} r e^{-\alpha r}
 
 V(r) = - Z \left({\alpha\over2} + {1\over r}\right) e^{-\alpha r} + A + {B\over r}"/></p>
-</div><p>Similarly as for the Gaussian charge, we require the potential <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/> to vanish
-at infinity, which implies <img class="math" src="../_images/math/9f44a5278f9f07028b5386312e86885738ffec92.png" alt="A=0"/>. Then we calculate the point charge at the
+</div><p>Similarly as for the Gaussian charge, we require the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> to vanish
+at infinity, which implies <img class="math" src="../_images/math/b6c1a095491e61daaba64e158f1b9bc2484dd89a.svg" alt="A=0"/>. Then we calculate the point charge at the
 origin:</p>
 <div class="math">
-<p><img src="../_images/math/d74f17c69d8496d87b6d57eea8c7a9351ebdb54e.png" alt="C = \lim_{r\to0} V'(r)r^2 =
+<p><img src="../_images/math/5b383a37a1e8da6b28eefc1ccec03ba97ca72eaf.svg" alt="C = \lim_{r\to0} V'(r)r^2 =
 
 = \lim_{r\to0}
 \half \left(- 2 B e^{\alpha r} + Z \alpha r \left(\alpha r + 1\right)
 + Z \left(\alpha r + 2\right)\right) e^{- \alpha r} =
 
 = Z - B"/></p>
-</div><p>We do not have any point charge at the origin, so <img class="math" src="../_images/math/195f2a87341e968ecb3da45cac8970b30f306c6c.png" alt="C=Z - B = 0"/>, from which it
-follows <img class="math" src="../_images/math/d19bc10cd88968d02df7e0e72cbec9c904f025e3.png" alt="B = Z"/>. We finally obtain:</p>
+</div><p>We do not have any point charge at the origin, so <img class="math" src="../_images/math/11f6c3cc8c794c21db1407375e4e82ceb7e5ba03.svg" alt="C=Z - B = 0"/>, from which it
+follows <img class="math" src="../_images/math/d1c9a1d021e03bf9f9080197f65e9e136be85ccb.svg" alt="B = Z"/>. We finally obtain:</p>
 <div class="math">
-<p><img src="../_images/math/2132aa6b414ee3ca89f4e4008eea8e755def02f4.png" alt="V(r) = - Z \left({\alpha\over2} + {1\over r}\right) e^{-\alpha r}
+<p><img src="../_images/math/40ac8e180313b00b393cccba518f699a484a8440.svg" alt="V(r) = - Z \left({\alpha\over2} + {1\over r}\right) e^{-\alpha r}
     + {Z \over r}
     = Z \left({1-e^{-\alpha r} \over r} - {\alpha e^{-\alpha r}
         \over 2}\right)"/></p>
 </div><p>Let us calculate the self-energy:</p>
 <div class="math">
-<p><img src="../_images/math/21498729ad886bc293e32100504fe09f982c839c.png" alt="E_\mathrm{self} =
+<p><img src="../_images/math/44a4d71c010d23cc4cfa7e18532d47255085ef6d.svg" alt="E_\mathrm{self} =
 \half \int n({\bf x}) V({\bf x}) \d^3 x
     = {4\pi\over2} \int_0^\infty n(r) V(r) r^2 \d r =
 
@@ -504,10 +493,10 @@ r^2 \d r =
 
 = {5Z^2 \alpha \over 32}"/></p>
 </div><p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">oo</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r Z B&quot;</span><span class="p">)</span>
 <span class="go">(r, Z, B)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrate</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">)</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
 <span class="go">2/alpha**3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">V</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="o">-</span><span class="n">Z</span><span class="o">*</span><span class="n">alpha</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">r</span><span class="p">),</span> <span class="n">r</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="n">r</span>
@@ -525,27 +514,27 @@ r^2 \d r =
 </div>
 <div class="section" id="piecewise-polynomial-charge">
 <h4>Piecewise Polynomial Charge<a class="headerlink" href="#piecewise-polynomial-charge" title="Permalink to this headline">¶</a></h4>
-<p>We will use a second-derivative continuous piecewise polynomial for <img class="math" src="../_images/math/80fa4544c8c02c8156306df524451bacaf608c03.png" alt="n(r)"/>,
-normalized in such a way that the total charge is <img class="math" src="../_images/math/3ead47fb9fb4a4c273feee398f72ff2a09702b84.png" alt="Z"/>:</p>
-<div class="math" id="equation-poly_charge">
-<p><span class="eqno">(6)</span><img src="../_images/math/5e202d90d0d64935e84476d93104307b7c42a2d1.png" alt="n(r) = \begin{cases}
+<p>We will use a second-derivative continuous piecewise polynomial for <img class="math" src="../_images/math/70a3b77789654e5324af7f780f01b7d9a5620954.svg" alt="n(r)"/>,
+normalized in such a way that the total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
+<div class="math" id="equation-poly-charge">
+<p><span class="eqno">(6)<a class="headerlink" href="#equation-poly-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/61d6c943b705043ce061f03be0ee8422db0ac736.svg" alt="n(r) = \begin{cases}
 -21Z(r-r_c)^3(6r^2+3rr_c+r_c^2)/(5\pi r_c^8) &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 0&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
-</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/9866e3a998d628ba0941eb4fea0666ac391d149a.png" alt="Q"/>:</p>
+</div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
 <div class="math">
-<p><img src="../_images/math/80e16ced0b99540c4017e73df0c50c479ee88d7c.png" alt="Q = \int n({\bf x}) \d^3 x
+<p><img src="../_images/math/5bcfabf7ec7d5cc9c3e5332ee74cad264ca43dbb.svg" alt="Q = \int n({\bf x}) \d^3 x
     = 4\pi \int_0^\infty n(r) r^2 \d r =
 
 = 4\pi \int_0^{r_c} -21Z(r-r_c)^3(6r^2+3rr_c+r_c^2)/(5\pi r_c^8)
     r^2 \d r =
 
 = Z"/></p>
-</div><p>So the total charge is <img class="math" src="../_images/math/69b355a61e126ea52667898f534e4115c6448d39.png" alt="Q=Z"/>, as expected.</p>
-<p>Now we calculate the potential <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/> from the Poisson equation
-<a href="#equation-poisson-rV">(3)</a>:</p>
+</div><p>So the total charge is <img class="math" src="../_images/math/56ca685ed6a70c0254dbf1e772fc5932b39f454c.svg" alt="Q=Z"/>, as expected.</p>
+<p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
+<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/2a2182718b107eec4116024e8cb22fffb7834e1e.png" alt="\left(rV(r)\right)'' = -4\pi r n(r)
+<p><img src="../_images/math/21fe1704b3b611027b6af77c0e3e460ef6b089fb.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = 4\pi r \cdot 21Z(r-r_c)^3(6r^2+3rr_c+r_c^2)/(5\pi r_c^8)
 
 V(r) = \begin{cases}
@@ -554,11 +543,11 @@ r^{3} r_{c}^{2} - 14 r_{c}^{5}\right) + A_1 + {B_1\over r}
 &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 A_2 + {B_2\over r}&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
-</div><p>Similarly as for the Gaussian charge, we require the potential <img class="math" src="../_images/math/4bb5bea4e0d4233b1b83f94c4db7d760e9323451.png" alt="V(r)"/> to vanish
-at infinity, which implies <img class="math" src="../_images/math/650be2a7a078632b628ef430e3cfc0b52167b0c8.png" alt="A_2=0"/>. Then we calculate the point charge at the
+</div><p>Similarly as for the Gaussian charge, we require the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> to vanish
+at infinity, which implies <img class="math" src="../_images/math/21665e78e2592da85abf34de0e4d4b9f3c49ac46.svg" alt="A_2=0"/>. Then we calculate the point charge at the
 origin:</p>
 <div class="math">
-<p><img src="../_images/math/80ba095047a1f6bbcc790a336e4637d3993b5dbb.png" alt="C = \lim_{r\to0} V'(r)r^2 =
+<p><img src="../_images/math/4186bdf3d18161f233352392d4d64dc933f3eb4e.svg" alt="C = \lim_{r\to0} V'(r)r^2 =
 
 = \lim_{r\to0}\left(
 - B_1 + \frac{63 Z r^{8}}{5 r_{c}^{8}} - \frac{36 Z}{r_{c}^{7}} r^{7} +
@@ -566,31 +555,31 @@ origin:</p>
   \right)
 
 = -B_1"/></p>
-</div><p>We do not have any point charge at the origin, so <img class="math" src="../_images/math/02ceb14b007b314c904afc59e97088a94243fa11.png" alt="C=-B_1 = 0"/>, from which it
-follows <img class="math" src="../_images/math/7017b97a87dfb12a324a5ac3a30cee6e4493ea04.png" alt="B_1 = 0"/>. Then <img class="math" src="../_images/math/368b6f971b418d731c62ff2cb59f51c527d22849.png" alt="B_2"/> is calculated from the condition of a continuous
-first derivative at <img class="math" src="../_images/math/58c3e678f23a0bdf4bae8de75dd3f9408c176e38.png" alt="r=r_c"/>:</p>
+</div><p>We do not have any point charge at the origin, so <img class="math" src="../_images/math/462b43037fd9905f513fb33011b0579f6962b327.svg" alt="C=-B_1 = 0"/>, from which it
+follows <img class="math" src="../_images/math/f243496c16db306487fa757b89b733d282f020de.svg" alt="B_1 = 0"/>. Then <img class="math" src="../_images/math/c54a97a538289819f88751f7ce2cbcad5dcec32a.svg" alt="B_2"/> is calculated from the condition of a continuous
+first derivative at <img class="math" src="../_images/math/dd16b4dae251ca807ab2566e342cb2f19b4852c5.svg" alt="r=r_c"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f84188da0a953c8eef3fd2798781a5fe68a4832d.png" alt="V'(r_c) = \begin{cases}
+<p><img src="../_images/math/c07f809c742c1ee64e72c73521968ce215d8aaaa.svg" alt="V'(r_c) = \begin{cases}
 -{Z\over r_c^2} &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 -{B_2\over r_c^2}&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
-</div><p>So <img class="math" src="../_images/math/16dfe139f5f31a328914f1d4d361cf1d066427c5.png" alt="B_2=Z"/>. Finally, <img class="math" src="../_images/math/36c7f3f828cf12ab9cafeffad282468a95219600.png" alt="A_1"/> is calculated from the continuous
-values of <img class="math" src="../_images/math/ea01c514c9997c06721518c9328768dc887aa253.png" alt="V(r_c)"/>:</p>
+</div><p>So <img class="math" src="../_images/math/ea40ba54198c302d9062b15175ea45517a774b66.svg" alt="B_2=Z"/>. Finally, <img class="math" src="../_images/math/5246b7c40ca8f7f0f41040d8c5d6f8304add9c13.svg" alt="A_1"/> is calculated from the continuous
+values of <img class="math" src="../_images/math/e49c01c6ba3483accc02eb0497a910ed4a65d516.svg" alt="V(r_c)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/33d0eb4477c3b4108315502d0633b2cdb82029b9.png" alt="V(r_c) = \begin{cases}
+<p><img src="../_images/math/be4bfd91ac7ac07cff98c39c465446e850d24ce3.svg" alt="V(r_c) = \begin{cases}
 A_1-{7Z\over 5r_c} &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 {Z\over r_c}&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
-</div><p>which implies <img class="math" src="../_images/math/32c713facaa2f55f24d3e05f07828639c6dd1363.png" alt="A_1={12Z\over 5r_c}"/>. We finally obtain:</p>
+</div><p>which implies <img class="math" src="../_images/math/f6ec96dfb3ec0a1667b62120c1b30755d15908d6.svg" alt="A_1={12Z\over 5r_c}"/>. We finally obtain:</p>
 <div class="math">
-<p><img src="../_images/math/938d54b0ea96611e79809a8c16d5a82807d42268.png" alt="V(r) = \begin{cases}
+<p><img src="../_images/math/a81505280feca46e12e50f98883e9941c74bfbfd.svg" alt="V(r) = \begin{cases}
 \frac{Z}{5 r_{c}^{8}} \left(9r^7 - 30r^6r_c + 28r^5r_c^2 - 14r^2r_c^5
     + 12 r_c^7\right) &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 {Z\over r}&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
 </div><p>Let us calculate the self-energy:</p>
 <div class="math">
-<p><img src="../_images/math/65cde12a21ac5608ddb6f0998c9f7918b880da35.png" alt="E_\mathrm{self} =
+<p><img src="../_images/math/ea47c670017d72db6547792a02248c1f8b13bdcd.svg" alt="E_\mathrm{self} =
 \half \int n({\bf x}) V({\bf x}) \d^3 x
     = {4\pi\over2} \int_0^\infty n(r) V(r) r^2 \d r =
 
@@ -603,22 +592,22 @@ r^2 \d r =
 = {15962 Z^2 \over 17875 r_c}"/></p>
 </div><p>Let us also calculate the following integral:</p>
 <div class="math">
-<p><img src="../_images/math/f69e806e2296713db84b34bb30317da7657e7288.png" alt="I_g =
+<p><img src="../_images/math/e2e6e873b910b0ce7dd17c035f462d2486d212f9.svg" alt="I_g =
 \int n({\bf x}) \left({Z\over r}-V({\bf x})\right) \d^3 x
     = 4\pi \int_0^\infty n(r) \left({Z\over r}-V(r)\right) r^2 \d r =
 
 = {10976 Z^2 \over 17875 r_c}"/></p>
 </div><p>Which agrees with <a class="reference internal" href="#pask2012" id="id1">[Pask2012]</a>, equation (10c). The following integral over the
-sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b677121f6080020f2fd.png" alt="r_c"/>:</p>
+sphere of radius <img class="math" src="../_images/math/c2a6d69d3430bba2a967e76d66abe898c2856899.svg" alt="r_c"/>:</p>
 <div class="math">
-<p><img src="../_images/math/05efe17f586eb68b3510351639508351138cf9e4.png" alt="I_{sph} =
+<p><img src="../_images/math/63b1408d14bdca17d2525d9aa0104d62d36ebaa4.svg" alt="I_{sph} =
 \int_{\Omega: r &lt; r_c} \left({Z\over r}-V({\bf x})\right) \d^3 x
     = 4\pi \int_0^{r_c} \left({Z\over r}-V(r)\right) r^2 \d r =
 
 = {14 \pi Z r_c^2 \over 75}"/></p>
 </div><p>Again in agreement with <a class="reference internal" href="#pask2012" id="id2">[Pask2012]</a>, the paragraph after equation (17).</p>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">solve</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">solve</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r r_c Z A B&quot;</span><span class="p">)</span>
 <span class="go">(r, r_c, Z, A, B)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">21</span><span class="o">*</span><span class="n">Z</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">-</span><span class="n">r_c</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="mi">6</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">r_c</span><span class="o">+</span><span class="n">r_c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span> <span class="n">r_c</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
@@ -647,12 +636,12 @@ sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b67
 <span class="go">14*pi*Z*r_c**2/75</span>
 </pre></div>
 </div>
-<p>Alternatively, one can also calculate this using a <tt class="docutils literal"><span class="pre">Piecewise</span></tt> function:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Piecewise</span><span class="p">,</span> <span class="n">oo</span><span class="p">,</span> <span class="n">Symbol</span>
+<p>Alternatively, one can also calculate this using a <code class="docutils literal notranslate"><span class="pre">Piecewise</span></code> function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Piecewise</span><span class="p">,</span> <span class="n">oo</span><span class="p">,</span> <span class="n">Symbol</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;r Z A B&quot;</span><span class="p">)</span>
 <span class="go">(r, Z, A, B)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r_c</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;r_c&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="n">Piecewise</span><span class="p">((</span><span class="o">-</span><span class="mi">21</span><span class="o">*</span><span class="n">Z</span><span class="o">*</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">r_c</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="mi">6</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">r_c</span> <span class="o">+</span> <span class="n">r_c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">r_c</span><span class="o">**</span><span class="mi">8</span><span class="p">),</span> <span class="n">r</span> <span class="o">&lt;=</span> <span class="n">r_c</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">True</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r_c</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;r_c&quot;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="n">Piecewise</span><span class="p">((</span><span class="o">-</span><span class="mi">21</span><span class="o">*</span><span class="n">Z</span><span class="o">*</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">r_c</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="mi">6</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">r_c</span> <span class="o">+</span> <span class="n">r_c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">r_c</span><span class="o">**</span><span class="mi">8</span><span class="p">),</span> <span class="n">r</span> <span class="o">&lt;=</span> <span class="n">r_c</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">integrate</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
 <span class="go">Z</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">V</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">n</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="n">r</span>
@@ -667,7 +656,7 @@ sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b67
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">solve</span><span class="p">((</span><span class="n">V</span><span class="o">+</span><span class="n">A</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">r_c</span><span class="p">)</span><span class="o">-</span><span class="n">Z</span><span class="o">/</span><span class="n">r_c</span><span class="p">,</span> <span class="n">A</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A</span>
 <span class="go">12*Z/(5*r_c)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">V</span> <span class="o">=</span> <span class="n">V</span> <span class="o">+</span> <span class="n">Piecewise</span><span class="p">((</span><span class="n">A</span><span class="p">,</span> <span class="n">r</span> <span class="o">&lt;=</span> <span class="n">r_c</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">True</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">V</span> <span class="o">=</span> <span class="n">V</span> <span class="o">+</span> <span class="n">Piecewise</span><span class="p">((</span><span class="n">A</span><span class="p">,</span> <span class="n">r</span> <span class="o">&lt;=</span> <span class="n">r_c</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">V</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
 <span class="go">Piecewise((Z*(r**2*(9*r**5 - 30*r**4*r_c + 28*r**3*r_c**2 - 14*r_c**5)/r_c**7 + 12)/(5*r_c), r &lt;= r_c), (0, True))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">integrate</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">V</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
@@ -691,7 +680,7 @@ sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b67
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -717,29 +706,30 @@ sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b67
   <h4>Next topic</h4>
   <p class="topless"><a href="la.html"
                         title="next chapter">Linear Algebra</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/ode.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/ode.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -751,13 +741,13 @@ sphere of radius <img class="math" src="../_images/math/aa7620a597a75f93da094b67
         <li class="right" >
           <a href="wigner.html" title="Wigner D Function"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

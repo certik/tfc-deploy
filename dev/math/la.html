@@ -1,30 +1,20 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Linear Algebra &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Linear Algebra &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Differential Geometry" href="differential-geometry.html" />
     <link rel="prev" title="Ordinary Differential Equations" href="ode.html" />
     <script type="text/javascript">
@@ -42,8 +32,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -60,7 +49,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -72,15 +61,15 @@
         <li class="right" >
           <a href="ode.html" title="Ordinary Differential Equations"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="linear-algebra">
 <h1>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h1>
@@ -89,29 +78,29 @@
 <p>Virtually all spaces used in physics are Hilbert spaces (treated in the weak
 sense, i.e. equipped with distributions), which means that they have a scalar
 product and a norm.</p>
-<p>The braket <img class="math" src="../_images/math/69457c759aa9444e01b03f3fb47a03ceb6475d2f.png" alt="\braket{f|g}"/> in Dirac notation is a scalar product and we are
+<p>The braket <img class="math" src="../_images/math/ea975a2f7493f1b859ceb2415526c710327b59be.svg" alt="\braket{f|g}"/> in Dirac notation is a scalar product and we are
 free to define it anyway we like, as long as it satisfies the following
 properties:</p>
 <div class="math">
-<p><img src="../_images/math/82e8c2d7ec1c24e77fc4163778ee5f99aaf0c04b.png" alt="\braket{f|g} = \braket{g|f}^*
+<p><img src="../_images/math/d155aff2c1b828ef0df9a030dbf7545a9ce4f089.svg" alt="\braket{f|g} = \braket{g|f}^*
 
 \braket{f|ag} = a\braket{f|g}
 
 \braket{f_1 + f_2|g} = \braket{f_1|g} + \braket{f_2|g}
 
 \braket{f|f} \ge 0"/></p>
-</div><p>where <img class="math" src="../_images/math/7302885fcdb1e5ac050d7a4a192a5569256af891.png" alt="\braket{f|f}=0"/> if, and only if, <img class="math" src="../_images/math/e5a9a7e34e6bdbcf5053ba001acb6b29007d79e4.png" alt="\ket{f}=0"/>. Scalar product induces the
+</div><p>where <img class="math" src="../_images/math/d87503d4c6c5eecefcf3793cdeada4edba07b6f1.svg" alt="\braket{f|f}=0"/> if, and only if, <img class="math" src="../_images/math/51b14e9311f2643e7f41407285a91cbffee94daf.svg" alt="\ket{f}=0"/>. Scalar product induces the
 norm:</p>
 <div class="math">
-<p><img src="../_images/math/7812e4446bced9261146abc636eaa88744e7c1ca.png" alt="||\ket{f}|| = \sqrt{\braket{f|f}}"/></p>
+<p><img src="../_images/math/74e4e13bcdf934868e9701a6a028541ef4000863.svg" alt="||\ket{f}|| = \sqrt{\braket{f|f}}"/></p>
 </div><p>Any norm has to satisfy the following properties:</p>
 <div class="math">
-<p><img src="../_images/math/57dca436a4f5af6e9b3bfb20b581495bc3214acf.png" alt="||a\ket{f}|| = |a| ||\ket{f}||
+<p><img src="../_images/math/0df7c0b262a1812bb1d5fbfbce6de91e443730d1.svg" alt="||a\ket{f}|| = |a| ||\ket{f}||
 
 ||\ket{f}+\ket{g}|| \le ||\ket{f}|| + ||\ket{g}||
 
 ||\ket{f}|| \ge 0"/></p>
-</div><p>where <img class="math" src="../_images/math/efb4f762704131a451538a90729d7ea2258583c2.png" alt="||\ket{f}||=0"/> if, and only if, <img class="math" src="../_images/math/e5a9a7e34e6bdbcf5053ba001acb6b29007d79e4.png" alt="\ket{f}=0"/>. Those properties are
+</div><p>where <img class="math" src="../_images/math/53af22a44f16d4e061ec4035b974511e77e98285.svg" alt="||\ket{f}||=0"/> if, and only if, <img class="math" src="../_images/math/51b14e9311f2643e7f41407285a91cbffee94daf.svg" alt="\ket{f}=0"/>. Those properties are
 automatically satisfied by the induced norm.</p>
 <p>In general, any of these properties can be weakened, one can study spaces that
 have a norm, but not a scalar product, or spaces, that have objects resembling
@@ -125,7 +114,7 @@ remember how to work with such spaces.</p>
 <p>Some examples of frequently used spaces and scalar products follows.</p>
 <p>Finite dimensional spaces:</p>
 <div class="math">
-<p><img src="../_images/math/af1a5e3380a1686297460f30f57c63f43e408355.png" alt="\ket{f} = \left(\begin{array}{c}
+<p><img src="../_images/math/2c3c280629719aff2a8001f5cc5df945beeae65e.svg" alt="\ket{f} = \left(\begin{array}{c}
     f_1 \\
     f_2 \\
     \vdots \\
@@ -136,9 +125,9 @@ remember how to work with such spaces.</p>
 \left(\begin{array}{cccc}
     f_1 &amp; f_2 &amp; \cdots &amp; f_n \\
     \end{array}\right)"/></p>
-</div><p><img class="math" src="../_images/math/68138c4eccafc022ada2a0cda6cbf45815cd56dd.png" alt="R^n"/> Euclidean scalar product:</p>
+</div><p><img class="math" src="../_images/math/799173e5b72f2d8f277e842cc0a5ed1a3f6cdf76.svg" alt="R^n"/> Euclidean scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/b61cf4730dbd6f4548098b3a1518158c1cb60970.png" alt="\braket{f|g} =
+<p><img src="../_images/math/406906a7d6d2f2eb6ba023b10f984adcb067832b.svg" alt="\braket{f|g} =
 \left(\begin{array}{cccc}
     f_1 &amp; f_2 &amp; \cdots &amp; f_n \\
     \end{array}\right)
@@ -151,7 +140,7 @@ remember how to work with such spaces.</p>
     = f_1 g_2 + f_2 g_2 + \cdots + f_n g_n"/></p>
 </div><p>Infinite dimensional spaces:</p>
 <div class="math">
-<p><img src="../_images/math/39f751ae70ba90040357ac83f321bb718748542f.png" alt="\ket{f} = \left(\begin{array}{c}
+<p><img src="../_images/math/dfe0312b54d7b296f3472e22f424fbe0d5c3d7b4.svg" alt="\ket{f} = \left(\begin{array}{c}
     f_1 \\
     f_2 \\
     \vdots \\
@@ -161,9 +150,9 @@ remember how to work with such spaces.</p>
 \left(\begin{array}{ccc}
     f_1 &amp; f_2 &amp; \cdots \\
     \end{array}\right)"/></p>
-</div><p><img class="math" src="../_images/math/99a7769d50c24df6fd19aa599c2bcbb82d4e3414.png" alt="l^2"/> scalar product:</p>
+</div><p><img class="math" src="../_images/math/b1e84293ebe03d52b6614cf156030b91c70b1c4e.svg" alt="l^2"/> scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/ed8f1b72092f78e5a29583e455e731ceec30ef5f.png" alt="\braket{f|g} =
+<p><img src="../_images/math/c53d78137a8bb6c2299ba2ad14333b47ba3b083e.svg" alt="\braket{f|g} =
 \left(\begin{array}{ccc}
     f_1 &amp; f_2 &amp; \cdots \\
     \end{array}\right)
@@ -175,72 +164,72 @@ remember how to work with such spaces.</p>
     = f_1 g_2 + f_2 g_2 + \cdots"/></p>
 </div><p>Function spaces:</p>
 <div class="math">
-<p><img src="../_images/math/1c0476351b8e7e8a0e79c6a0128bcd8a673b2f37.png" alt="\ket{f} = f(x)
+<p><img src="../_images/math/ef1b7f0efdf04e0220fd121c2da1483f0aa83d08.svg" alt="\ket{f} = f(x)
 
 \bra{f} = f^*(x)"/></p>
-</div><p><img class="math" src="../_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/> scalar product:</p>
+</div><p><img class="math" src="../_images/math/b6f15c13d01c54166ba345b5ac840650b1a875a1.svg" alt="L^2"/> scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/3d58024b920f27eab3b4e245a0d40bf04d073c52.png" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) \d x"/></p>
-</div><p><img class="math" src="../_images/math/ee500eed1910756eedebc53f0079d3aaf7a5753f.png" alt="H^1"/> scalar product:</p>
+<p><img src="../_images/math/fdfb89d8111be79848b71283c72498585131c55d.svg" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) \d x"/></p>
+</div><p><img class="math" src="../_images/math/ee9547d9868b6c7df53e1427990bab7b47bec715.svg" alt="H^1"/> scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/9e2a1b7f5609b11f7a2d97d9683cb41bc62d3dfe.png" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x) \d x"/></p>
-</div><p><img class="math" src="../_images/math/6394837e32b25f2f5ad7886b956f2ba96000c3a8.png" alt="H^2"/> scalar product:</p>
+<p><img src="../_images/math/465208e15123467131af532aa464db3a321bbdc4.svg" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x) \d x"/></p>
+</div><p><img class="math" src="../_images/math/75fd9c086f37a03bf5295c0760b0b6dcc17eaf85.svg" alt="H^2"/> scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/0d02a7ba39d15efba46aa3da37f76aa678e3fc71.png" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x)
+<p><img src="../_images/math/a0474247bf2c5056fad4c10ef865bb9f39b92d31.svg" alt="\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x)
     + f''^*(x) g''(x) \d x"/></p>
 </div><p>Energy scalar product:</p>
 <div class="math">
-<p><img src="../_images/math/f545d509498f0658abe51a36eaf81ecd351e5f91.png" alt="\braket{f|g} = \int_\Omega f^*(x) q(x) g(x) + f'^*(x) p(x) g'(x) \d x"/></p>
+<p><img src="../_images/math/c0da19bf6a23735b4abbc391dfba5c278b5a1311.svg" alt="\braket{f|g} = \int_\Omega f^*(x) q(x) g(x) + f'^*(x) p(x) g'(x) \d x"/></p>
 </div><p>All of these scalar products automatically satisfy all of the properties of the
-scalar product, only the energy scalar product doesn&#8217;t automatically satisfy
-<img class="math" src="../_images/math/22670161bc7e6858dbe75c5306b67a0a04e1ce25.png" alt="\braket{f|f} \ge 0"/>, which imposes some conditions on the parameters <img class="math" src="../_images/math/2751d79d3bbfb34440d68c685fe6ba7414951749.png" alt="p(x)"/>
-and <img class="math" src="../_images/math/25b5f855b56cd269cd617940805cef31bc41a95c.png" alt="q(x)"/>.</p>
+scalar product, only the energy scalar product doesn’t automatically satisfy
+<img class="math" src="../_images/math/4edbe77efc9450f64db6e0e8d4fb592e6136e74f.svg" alt="\braket{f|f} \ge 0"/>, which imposes some conditions on the parameters <img class="math" src="../_images/math/164fbbb0a11f9a6e55ecb0915c8f9c51c7673f3c.svg" alt="p(x)"/>
+and <img class="math" src="../_images/math/1d2a86d01f3d6d4226d9fe0927c23a0fa7bc38e4.svg" alt="q(x)"/>.</p>
 </div>
 </div>
 <div class="section" id="projections">
 <h2>Projections<a class="headerlink" href="#projections" title="Permalink to this headline">¶</a></h2>
-<p>Projection is a linear idempotent operator <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/>:</p>
+<p>Projection is a linear idempotent operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/>:</p>
 <div class="math">
-<p><img src="../_images/math/98f990b420bb2c75b1b6c383ab627b7180b63981.png" alt="P^2 = P"/></p>
-</div><p>It takes a vector <img class="math" src="../_images/math/0b273df015c5876094b161706ffc80c6c69140e0.png" alt="\ket{u}"/> from <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> and projects it onto a vector <img class="math" src="../_images/math/c30988fbb5c5bdbf7828da250678034187841aaf.png" alt="\ket{w} =
-P\ket{u}"/> from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>. Further application of the operator <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> gains nothing:
-<img class="math" src="../_images/math/9d4c11f8f1cb4732d5db88fc4e0aa63a4c6b9475.png" alt="P\ket{w} = P^2\ket{u} = P\ket{u} = \ket{w}"/>.
-It decomposes the space <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> into a direct sum <img class="math" src="../_images/math/b2214c1f5b3bf4a42aaa026170c5955021114481.png" alt="V=W\oplus W^\bot"/> of
-the projection subspace <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and its complement <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/>. If <img class="math" src="../_images/math/73870675e282ca61eb472f1fbbe3d7c46056ba27.png" alt="\ket{w}"/> is
-from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> then its complement <img class="math" src="../_images/math/1d4f4f31ebd8d592a798b13618fba108e2965496.png" alt="\ket{u} - P\ket{u}"/> is from <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/>.</p>
+<p><img src="../_images/math/b5439b414dfed66d4dbb1ed16f648b03a1f16e6c.svg" alt="P^2 = P"/></p>
+</div><p>It takes a vector <img class="math" src="../_images/math/a0abf2cac09497dce9b448b6246345dffcaf6540.svg" alt="\ket{u}"/> from <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and projects it onto a vector <img class="math" src="../_images/math/8c9430ca031225fb2775d6934c122a874f2d0cd8.svg" alt="\ket{w} =
+P\ket{u}"/> from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>. Further application of the operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> gains nothing:
+<img class="math" src="../_images/math/53e81b0a5349bec71b9956a49da7ebf54a22ef06.svg" alt="P\ket{w} = P^2\ket{u} = P\ket{u} = \ket{w}"/>.
+It decomposes the space <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> into a direct sum <img class="math" src="../_images/math/9c73e6fe8b13dd4cdeada8460c58925cbe7c46e7.svg" alt="V=W\oplus W^\bot"/> of
+the projection subspace <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and its complement <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/>. If <img class="math" src="../_images/math/9a06fc3f09f90bc9a6813213e4628c066c615e28.svg" alt="\ket{w}"/> is
+from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> then its complement <img class="math" src="../_images/math/8b2721f3fefac908a7ecc7ebab2d9d6dd36c049e.svg" alt="\ket{u} - P\ket{u}"/> is from <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/>.</p>
 <p>Orthogonal projection is a projection that is Hermitean:</p>
 <div class="math">
-<p><img src="../_images/math/08fb6fd6e9d5cc30918e3e29a094cf582185874c.png" alt="P^\dag = P"/></p>
-</div><p>The complement of an orthogonal projection is orthogonal to any vector from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>:</p>
+<p><img src="../_images/math/0521b2f27cf0da4e6dc92f7b0c09acceaa9996fa.svg" alt="P^\dag = P"/></p>
+</div><p>The complement of an orthogonal projection is orthogonal to any vector from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>:</p>
 <div class="math">
-<p><img src="../_images/math/76d75ac9cd11e768f83babea89a6678914b31b13.png" alt="\braket{u-Pu|w} = \braket{u|w} - \braket{Pu|w} =
+<p><img src="../_images/math/4bf9075a6992e8eb57ccaba2dab9d2876c8e189d.svg" alt="\braket{u-Pu|w} = \braket{u|w} - \braket{Pu|w} =
     \braket{u|w} - \braket{u|P^\dag|w} =
 
     =
     \braket{u|w} - \braket{u|P|w} =
     \braket{u|w} - \braket{u|w} = 0"/></p>
 </div><p>In other words, orthogonal projection projects a vector
-<img class="math" src="../_images/math/0b273df015c5876094b161706ffc80c6c69140e0.png" alt="\ket{u}"/> from the space <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/> into an orthogonal subspace (projection subspace)
-<img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>. The two spaces <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/> are orthogonal, because any vector from
-<img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> is orthogonal to all vectors from <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/>. Given the
-space <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>, the operator <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> is unique.</p>
+<img class="math" src="../_images/math/a0abf2cac09497dce9b448b6246345dffcaf6540.svg" alt="\ket{u}"/> from the space <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> into an orthogonal subspace (projection subspace)
+<img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>. The two spaces <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/> are orthogonal, because any vector from
+<img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> is orthogonal to all vectors from <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/>. Given the
+space <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>, the operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is unique.</p>
 <p>The complement of non-orthogonal projection is not orthogonal to any vector
-from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>:</p>
+from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>:</p>
 <div class="math">
-<p><img src="../_images/math/7ff2ec3ffa79e10a5762db57cd875b9795a38c9a.png" alt="\braket{u-Pu|w} =
+<p><img src="../_images/math/49d96314705e825b32788b55403dc07a3a8a1be8.svg" alt="\braket{u-Pu|w} =
     \braket{u|w} - \braket{u|P|w} \neq
     \braket{u|w} - \braket{u|P^\dag|w} =
     \braket{u|w} - \braket{u|w} = 0"/></p>
-</div><p>And the two spaces <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/> are not orthogonal, because any vector from
-<img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> is not orthogonal to any vector from <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/>. Given both
-spaces <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and <img class="math" src="../_images/math/f1403101e49a238e0c523e967b99c66808fcf119.png" alt="W^\bot"/>, the operator <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> is unique.</p>
-<p>If we choose any orthonormal basis <img class="math" src="../_images/math/a49e93d0d7a2050ff9a2e92a275d42e3bb343d8a.png" alt="\ket{w_0}"/>, <img class="math" src="../_images/math/c7e742c2dd81fd42e06d5cdcb561d5d88cae0ed5.png" alt="\ket{w_1}"/>,
-<img class="math" src="../_images/math/58c1611517e096b8b5e657b180e83e2d73895482.png" alt="\ket{w_2}"/>, ..., of the subspace <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>, then the orthogonal projection <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> is:</p>
-<div class="math" id="equation-proj_ortho">
-<p><span class="eqno">(1)</span><img src="../_images/math/ef8fea84561af4c44bf16b52b08e514507acae1e.png" alt="P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}"/></p>
+</div><p>And the two spaces <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/> are not orthogonal, because any vector from
+<img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> is not orthogonal to any vector from <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/>. Given both
+spaces <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and <img class="math" src="../_images/math/294e8e8d5ac653b27f02185a252e0fc1b8ac360a.svg" alt="W^\bot"/>, the operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is unique.</p>
+<p>If we choose any orthonormal basis <img class="math" src="../_images/math/063ee391e39be9a9a29d79236855539f3dfa67e0.svg" alt="\ket{w_0}"/>, <img class="math" src="../_images/math/15b2ccc479d27f584250fdb004d8ddd1f6f4a6ad.svg" alt="\ket{w_1}"/>,
+<img class="math" src="../_images/math/122dc5055e93afbe0bd84988dc063d6a730d0180.svg" alt="\ket{w_2}"/>, …, of the subspace <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>, then the orthogonal projection <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is:</p>
+<div class="math" id="equation-proj-ortho">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-proj-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/53354afd87845b5811f34a0a5570d7a537dbefec.svg" alt="P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}"/></p>
 </div><p>because:</p>
 <div class="math">
-<p><img src="../_images/math/2625ccbfc5b6811bf12bafb54a9fc8b28b7ade26.png" alt="P^2 =
+<p><img src="../_images/math/31eac8048851c0e822092b33d5d87b1d24482c55.svg" alt="P^2 =
 \sum_{k=0}^\infty \ket{w_k}\bra{w_k}
 \sum_{l=0}^\infty \ket{w_l}\bra{w_l}
 =
@@ -250,18 +239,18 @@ spaces <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98
 = \sum_{k=0}^\infty \ket{w_k}\bra{w_k} = P"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/ac27a707442ddef9388967c5a667266b8433205e.png" alt="P^\dag = \left(\sum_{k=0}^\infty \ket{w_k}\bra{w_k}\right)^\dag =
+<p><img src="../_images/math/e6b9b2214e78c790b02f02406b7ea8a13a4db9cd.svg" alt="P^\dag = \left(\sum_{k=0}^\infty \ket{w_k}\bra{w_k}\right)^\dag =
 \sum_{k=0}^\infty \left(\ket{w_k}\bra{w_k}\right)^\dag =
 \sum_{k=0}^\infty \ket{w_k}\bra{w_k} = P"/></p>
-</div><p><img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> is independent of the basis, i.e <img class="math" src="../_images/math/1b351eefecbe87f84c9ac0603535ea9c2b97ba75.png" alt="\sum_{k=0}^\infty \ket{w_k}\bra{w_k}
-=\sum_{l=0}^\infty \ket{u_l}\bra{u_l}"/>, as long as <img class="math" src="../_images/math/de58f11ccd185b975d78eb6bc76b9ee699627dc4.png" alt="\ket{u_l}"/> span the same
-subspace as <img class="math" src="../_images/math/8946eabf62b22ae74ff9f3629449097f188079c6.png" alt="\ket{w_k}"/>, because the operator <img class="math" src="../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/> is unique.</p>
-<p>To find the closest vector <img class="math" src="../_images/math/73870675e282ca61eb472f1fbbe3d7c46056ba27.png" alt="\ket{w}"/> from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> to the vector <img class="math" src="../_images/math/0b273df015c5876094b161706ffc80c6c69140e0.png" alt="\ket{u}"/> from <img class="math" src="../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>,
-we need to minimize the norm <img class="math" src="../_images/math/7dd6673c693e5da075a4b480895c7be28a70d391.png" alt="||\ket{u}-\ket{w}||"/>. So we write
-<img class="math" src="../_images/math/7b0fd916a6af41b3573e206a263f5dce3a56bc90.png" alt="\ket{w} = P\ket{u} + \ket{z}"/> for some vector <img class="math" src="../_images/math/c2b91d4943ef48d462507feebc7525ac850b9e5b.png" alt="\ket{z}"/> from <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and simplify
+</div><p><img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is independent of the basis, i.e <img class="math" src="../_images/math/d5f24b74144146fd5f643c4e249a439464387d8d.svg" alt="\sum_{k=0}^\infty \ket{w_k}\bra{w_k}
+=\sum_{l=0}^\infty \ket{u_l}\bra{u_l}"/>, as long as <img class="math" src="../_images/math/f37064b717d0440d4b2f2f155d4b68fdbd158768.svg" alt="\ket{u_l}"/> span the same
+subspace as <img class="math" src="../_images/math/2410e82eb1e885816ee9de7103603c7d68f6708b.svg" alt="\ket{w_k}"/>, because the operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is unique.</p>
+<p>To find the closest vector <img class="math" src="../_images/math/9a06fc3f09f90bc9a6813213e4628c066c615e28.svg" alt="\ket{w}"/> from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> to the vector <img class="math" src="../_images/math/a0abf2cac09497dce9b448b6246345dffcaf6540.svg" alt="\ket{u}"/> from <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/>,
+we need to minimize the norm <img class="math" src="../_images/math/93ad620f85b3efef323ef1a095d96bf5dc9286f5.svg" alt="||\ket{u}-\ket{w}||"/>. So we write
+<img class="math" src="../_images/math/d69f18de202b08e6da6199b7a2f73b71fda7ef37.svg" alt="\ket{w} = P\ket{u} + \ket{z}"/> for some vector <img class="math" src="../_images/math/cbbaad2dc441bb0d3517776c2333c79a6f77cb5d.svg" alt="\ket{z}"/> from <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and simplify
 the norm:</p>
 <div class="math">
-<p><img src="../_images/math/d0af4e35e26ee0f1b1225c632793628a8300fe4f.png" alt="||\ket{u}-\ket{w}||^2 = \braket{u-w|u-w} =
+<p><img src="../_images/math/e163946f3af2aea354ed8a7c7649cb0de74d70eb.svg" alt="||\ket{u}-\ket{w}||^2 = \braket{u-w|u-w} =
 \braket{u-Pu-z|u-Pu-z} =
 
 =
@@ -269,62 +258,62 @@ the norm:</p>
 
 =
 \braket{u-Pu|u-Pu} + \braket{z|z}"/></p>
-</div><p>which is minimal for <img class="math" src="../_images/math/ccc4b22e4f8c150f76f6ee1320fa60da76cbd4d0.png" alt="\ket{z}=0"/>, so we found out that the closest vector is
-<img class="math" src="../_images/math/5b15a85e005d16bdb6c38888550feb8103f34fa8.png" alt="\ket{w} = P\ket{u}"/>. We used the fact that <img class="math" src="../_images/math/ce8b134eeb28a9101a5ce196fe4bc972c0610174.png" alt="\braket{u-Pu|z}=0"/>, because
-<img class="math" src="../_images/math/5e93d4b4e6018448abac48aa25d0ae95c3c7a85d.png" alt="\ket{u-Pu}"/> is from the orthogonal complement to the subspace <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/>.
+</div><p>which is minimal for <img class="math" src="../_images/math/26b1889cb99064675a90b6a17156c685a3433812.svg" alt="\ket{z}=0"/>, so we found out that the closest vector is
+<img class="math" src="../_images/math/61ea19692273accf4cd38f42db35a43086241052.svg" alt="\ket{w} = P\ket{u}"/>. We used the fact that <img class="math" src="../_images/math/fd52dd30c4e0c2e047a85297100bb8f5ca45b98e.svg" alt="\braket{u-Pu|z}=0"/>, because
+<img class="math" src="../_images/math/5bab538889e441eaedbce344832738f54e4413c5.svg" alt="\ket{u-Pu}"/> is from the orthogonal complement to the subspace <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>.
 In other words, orthogonal projection finds the closest vector from a subspace
 onto which it projects.</p>
 <div class="section" id="projection-coefficients">
 <h3>Projection Coefficients<a class="headerlink" href="#projection-coefficients" title="Permalink to this headline">¶</a></h3>
-<p>Given the basis <img class="math" src="../_images/math/2215e549dbab1e945f3edd0821626a45fdc12ff0.png" alt="\ket{v_k}"/> (orthogonal or non-orthogonal), we would like to
-find a formula for the projection coefficients <img class="math" src="../_images/math/b91ac9c58c0e22ff0b88f239dbda5d97e8329e81.png" alt="\phi_k"/> defined by:</p>
-<div class="math" id="equation-proj_coeff">
-<p><span class="eqno">(2)</span><img src="../_images/math/b9ada58af0d21541e7b1edba94d9ac72cca03b2b.png" alt="P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,."/></p>
-</div><p>This holds, because <img class="math" src="../_images/math/cb9933c0969c86e0db2cccb32b12b631f9017cc5.png" alt="P\ket{u}"/> belongs to the space <img class="math" src="../_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W"/> and every vector from
-it can be expressed as a linear combination of <img class="math" src="../_images/math/2215e549dbab1e945f3edd0821626a45fdc12ff0.png" alt="\ket{v_k}"/>.</p>
+<p>Given the basis <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/> (orthogonal or non-orthogonal), we would like to
+find a formula for the projection coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/> defined by:</p>
+<div class="math" id="equation-proj-coeff">
+<p><span class="eqno">(2)<a class="headerlink" href="#equation-proj-coeff" title="Permalink to this equation">¶</a></span><img src="../_images/math/1e2caf904c4fab18107c1a8b8277fa98bd07f3b2.svg" alt="P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,."/></p>
+</div><p>This holds, because <img class="math" src="../_images/math/2dd46189dffd8b4003e3049eed50432cd0580e73.svg" alt="P\ket{u}"/> belongs to the space <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and every vector from
+it can be expressed as a linear combination of <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/>.</p>
 <div class="section" id="projecting-to-orthogonal-basis">
 <h4>Projecting to Orthogonal Basis<a class="headerlink" href="#projecting-to-orthogonal-basis" title="Permalink to this headline">¶</a></h4>
-<p>For orthogonal projections we simply substitute the equation <a href="#equation-proj_ortho">(1)</a>
-into <a href="#equation-proj_coeff">(2)</a> and get:</p>
+<p>For orthogonal projections we simply substitute the equation <a class="reference internal" href="#equation-proj-ortho">(1)</a>
+into <a class="reference internal" href="#equation-proj-coeff">(2)</a> and get:</p>
 <div class="math">
-<p><img src="../_images/math/5f2dd8ff7746018390b60f9a28222f3e83b081ab.png" alt="P \ket{u} = \sum_{k=0}^\infty \ket{w_k}\braket{w_k | u}
+<p><img src="../_images/math/feb066ff2f58d9e9ab23c142e58657a658c81974.svg" alt="P \ket{u} = \sum_{k=0}^\infty \ket{w_k}\braket{w_k | u}
     = \sum_{k=0}^\infty \ket{w_k} \phi_k \,,"/></p>
-</div><p>from which the projection coefficients <img class="math" src="../_images/math/b91ac9c58c0e22ff0b88f239dbda5d97e8329e81.png" alt="\phi_k"/> are given by</p>
-<div class="math" id="equation-phi_ortho">
-<p><span class="eqno">(3)</span><img src="../_images/math/d7341bfce335b05742e9e49c23e6ed87fdc2604d.png" alt="\phi_k = \braket{w_k | u} \,."/></p>
+</div><p>from which the projection coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/> are given by</p>
+<div class="math" id="equation-phi-ortho">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-phi-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/a3055073114d6f891700942b2d74895f30f01dcd.svg" alt="\phi_k = \braket{w_k | u} \,."/></p>
 </div></div>
 <div class="section" id="projecting-to-nonorthogonal-basis">
 <h4>Projecting to Nonorthogonal Basis<a class="headerlink" href="#projecting-to-nonorthogonal-basis" title="Permalink to this headline">¶</a></h4>
-<p>In order to project onto a nonorthogonal basis <img class="math" src="../_images/math/2215e549dbab1e945f3edd0821626a45fdc12ff0.png" alt="\ket{v_k}"/> (for example a
+<p>In order to project onto a nonorthogonal basis <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/> (for example a
 finite element basis),
-we multiply <a href="#equation-proj_coeff">(2)</a> by <img class="math" src="../_images/math/c18347412174136eff36238272c091364624ca0c.png" alt="\bra{v_l}"/> from the left and simplify:</p>
+we multiply <a class="reference internal" href="#equation-proj-coeff">(2)</a> by <img class="math" src="../_images/math/7651d3954b6b283640eef17fedfcd52a1173512c.svg" alt="\bra{v_l}"/> from the left and simplify:</p>
 <div class="math">
-<p><img src="../_images/math/56edd2080c6a45dfaa8c56603bfefe7f28fdc9a3.png" alt="\braket{v_l|P|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k
+<p><img src="../_images/math/f393683861f1e9f127af936c1645c4b6b8101f11.svg" alt="\braket{v_l|P|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k
 
 \braket{v_l|P^\dag|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k
 
 \braket{v_l|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k"/></p>
-</div><p>so we need to solve a linear system for the coefficients <img class="math" src="../_images/math/b91ac9c58c0e22ff0b88f239dbda5d97e8329e81.png" alt="\phi_k"/>:</p>
-<div class="math" id="equation-linsystem_proj">
-<p><span class="eqno">(4)</span><img src="../_images/math/a1256448e01c532082c30216a49a32fb372331f1.png" alt="A_{lk}\phi_k = f_l \,,"/></p>
+</div><p>so we need to solve a linear system for the coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/>:</p>
+<div class="math" id="equation-linsystem-proj">
+<p><span class="eqno">(4)<a class="headerlink" href="#equation-linsystem-proj" title="Permalink to this equation">¶</a></span><img src="../_images/math/8991b4161fb55ede24e25d78d2334fed65bc8a0b.svg" alt="A_{lk}\phi_k = f_l \,,"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/33de24355bddd69cb4cec0c3281eb41ac0abafb8.png" alt="A_{lk} = \braket{v_l|v_k}
+<p><img src="../_images/math/a650c2d861dae77e3e5b4badc02834f48e815e9c.svg" alt="A_{lk} = \braket{v_l|v_k}
 
 f_l = \braket{v_l|u} \,."/></p>
-</div><p>This works for any basis, it doesn&#8217;t have to be normalized nor orthogonal.
+</div><p>This works for any basis, it doesn’t have to be normalized nor orthogonal.
 In the special case of a (normalized) orthogonal basis, we get
-<img class="math" src="../_images/math/7fced4c0409d8325cfdb3948c131f8d53db41bec.png" alt="A_{lk} = \braket{v_l|v_k}=\delta_{lk}"/> and from <a href="#equation-linsystem_proj">(4)</a> we get</p>
+<img class="math" src="../_images/math/10504fb39211ecbd743c6f54605be771e7fd99f7.svg" alt="A_{lk} = \braket{v_l|v_k}=\delta_{lk}"/> and from <a class="reference internal" href="#equation-linsystem-proj">(4)</a> we get</p>
 <div class="math">
-<p><img src="../_images/math/cde98ccedd2145eabbce2ceb655c5bd14695f4ef.png" alt="A_{lk}\phi_k = \delta_{lk} \phi_k = \phi_l = f_l = \braket{v_l|u}\,,"/></p>
-</div><p>so we recovered the equation <a href="#equation-phi_ortho">(3)</a> as expected.</p>
+<p><img src="../_images/math/fde5aa692ec59a49c56981f81633cfa0437d6936.svg" alt="A_{lk}\phi_k = \delta_{lk} \phi_k = \phi_l = f_l = \braket{v_l|u}\,,"/></p>
+</div><p>so we recovered the equation <a class="reference internal" href="#equation-phi-ortho">(3)</a> as expected.</p>
 </div>
 </div>
 <div class="section" id="id1">
 <h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p><img class="math" src="../_images/math/2b61524f97db58f2e9333c29e76bb5b8d33e981c.png" alt="R^3"/> orthogonal projection. Orthogonal basis:</p>
+<p><img class="math" src="../_images/math/3c631cfb6e990cae68d7906bcacc4193a425e53c.svg" alt="R^3"/> orthogonal projection. Orthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/0d93d98f4dfd06a72184c943bd88c47b1033473c.png" alt="\ket{w_0} =
+<p><img src="../_images/math/eb4984679c4503cd78c9eb14d86ebffe318d2f8e.svg" alt="\ket{w_0} =
 \left(\begin{array}{c}
     1 \\
     0 \\
@@ -358,7 +347,7 @@ P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
     \end{array}\right)"/></p>
 </div><p>Different orthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/ac66c3839be75c854eaf373ea1dc6842a54ee3b0.png" alt="\ket{w_0} = {1\over\sqrt 2}
+<p><img src="../_images/math/1faac96995c90ede68126ca80d4ea706ff293b47.svg" alt="\ket{w_0} = {1\over\sqrt 2}
 \left(\begin{array}{c}
     1 \\
     1 \\
@@ -392,9 +381,9 @@ P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
     0 &amp; 1 &amp; 0\\
     0 &amp; 0 &amp; 0\\
     \end{array}\right)"/></p>
-</div><p><img class="math" src="../_images/math/62623d70eaa11458b42450ab31277cc88f4dbd6b.png" alt="R^2"/> non-orthogonal (oblique) projection (<img class="math" src="../_images/math/610abfe628a11e7160f83b018879347d91ef8f3d.png" alt="\alpha\neq0"/>):</p>
+</div><p><img class="math" src="../_images/math/d09e51e2219bbc0c898eff1dbcbf1e0e62573a28.svg" alt="R^2"/> non-orthogonal (oblique) projection (<img class="math" src="../_images/math/838a8447c032ffe985aba8237c2871e2a1d4c35c.svg" alt="\alpha\neq0"/>):</p>
 <div class="math">
-<p><img src="../_images/math/7c04b44fc2fdde7a6d668aba7007500caa3d2157.png" alt="P =
+<p><img src="../_images/math/2da4de659eb6276ff19119c1bf6eff04c6dc5d6d.svg" alt="P =
 \left(\begin{array}{ccc}
     1 &amp; \alpha \\
     0 &amp; 0 \\
@@ -437,19 +426,19 @@ P \ket{u} =
     x + \alpha y \\
     0 \\
     \end{array}\right)"/></p>
-</div><p>Because the projection is not orthogonal (in the <img class="math" src="../_images/math/62623d70eaa11458b42450ab31277cc88f4dbd6b.png" alt="R^2"/> Euclidean scalar
-product), the projected point <img class="math" src="../_images/math/5f5e5cf7ecf10f3c3997c27a695c8d7d2b79fec5.png" alt="(x + \alpha y, 0)"/> is not the closest point (in
-the induced Euclidean <img class="math" src="../_images/math/62623d70eaa11458b42450ab31277cc88f4dbd6b.png" alt="R^2"/> norm) to <img class="math" src="../_images/math/adfd9ae8a3fac031d3b8b470a52a709a23d4d6d2.png" alt="(x, y)"/>. For <img class="math" src="../_images/math/11e9c9370965f44fe5bd812e80c12fccbeec1a17.png" alt="\alpha=0"/> the projection
-becomes orthogonal and indeed the projected point <img class="math" src="../_images/math/eb99be0632ae9be9bbeeec99f75e4a71c2595180.png" alt="(x, 0)"/> then becomes the
-closest point to <img class="math" src="../_images/math/adfd9ae8a3fac031d3b8b470a52a709a23d4d6d2.png" alt="(x, y)"/>.</p>
-<p>Lagrange interpolation projection onto the space <img class="math" src="../_images/math/81eb7709c2e64446f82c7699ae690734d5164872.png" alt="\{1, x\}"/>:</p>
+</div><p>Because the projection is not orthogonal (in the <img class="math" src="../_images/math/d09e51e2219bbc0c898eff1dbcbf1e0e62573a28.svg" alt="R^2"/> Euclidean scalar
+product), the projected point <img class="math" src="../_images/math/84fd69d9538633c986c3a45a538757c21a62da47.svg" alt="(x + \alpha y, 0)"/> is not the closest point (in
+the induced Euclidean <img class="math" src="../_images/math/d09e51e2219bbc0c898eff1dbcbf1e0e62573a28.svg" alt="R^2"/> norm) to <img class="math" src="../_images/math/12411adbc06e3306be64acbc5d919c86843c38a6.svg" alt="(x, y)"/>. For <img class="math" src="../_images/math/a92248431ef93bd64a48922b3f6aab6b074f341a.svg" alt="\alpha=0"/> the projection
+becomes orthogonal and indeed the projected point <img class="math" src="../_images/math/f8c14dc190023dee667025afd8766de7ecdd0d01.svg" alt="(x, 0)"/> then becomes the
+closest point to <img class="math" src="../_images/math/12411adbc06e3306be64acbc5d919c86843c38a6.svg" alt="(x, y)"/>.</p>
+<p>Lagrange interpolation projection onto the space <img class="math" src="../_images/math/2b8dba97228d142f116a5f05c285fe2d223ed34a.svg" alt="\{1, x\}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/13aff094d7819dcb163c22a658af91adbaa8ff00.png" alt="\ket{u} = f(x)
+<p><img src="../_images/math/ed7e179939e582f9c0aebef148aaa0e75613b56f.svg" alt="\ket{u} = f(x)
 
 P\ket{u} = {f(1)+f(-1)\over 2} + x{f(1)-f(-1)\over 2}"/></p>
-</div><p><img class="math" src="../_images/math/07c3de5211dc08b13546363f8b139700a16dd963.png" alt="L^2"/> projection onto the space <img class="math" src="../_images/math/81eb7709c2e64446f82c7699ae690734d5164872.png" alt="\{1, x\}"/>. Orthogonal basis:</p>
+</div><p><img class="math" src="../_images/math/b6f15c13d01c54166ba345b5ac840650b1a875a1.svg" alt="L^2"/> projection onto the space <img class="math" src="../_images/math/2b8dba97228d142f116a5f05c285fe2d223ed34a.svg" alt="\{1, x\}"/>. Orthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/e1bacd7915b710d20d3cca90d69799cfae18d74e.png" alt="\ket{u} = f(x)
+<p><img src="../_images/math/c1fcec6ab75166f591ae1835e097372010264af8.svg" alt="\ket{u} = f(x)
 
 \ket{w_0} = {1\over\sqrt2}
 
@@ -462,7 +451,7 @@ P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =
     = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x"/></p>
 </div><p>Different orthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/d447ad4a9523f99349be0745f2082f21c7bc8a6a.png" alt="\ket{w_0} = {\sqrt6\over4}(1+x)
+<p><img src="../_images/math/506e8d18bfb022e6170b58f761ac3ce99a3c7801.svg" alt="\ket{w_0} = {\sqrt6\over4}(1+x)
 
 \ket{w_1} = {\sqrt2\over4}(1-3x)
 
@@ -473,7 +462,7 @@ P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =
     = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x"/></p>
 </div><p>Nonorthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/89278c184e9079d497bfeaef0a27354e894d5408.png" alt="\ket{w_0} = 1
+<p><img src="../_images/math/14d53603e123b245ffbf97df1889935f0945f6ad.svg" alt="\ket{w_0} = 1
 
 \ket{w_1} = 1 + x
 
@@ -545,9 +534,9 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
     =
 
     = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x"/></p>
-</div><p><img class="math" src="../_images/math/ee500eed1910756eedebc53f0079d3aaf7a5753f.png" alt="H^1"/> projection. Nonorthogonal basis:</p>
+</div><p><img class="math" src="../_images/math/ee9547d9868b6c7df53e1427990bab7b47bec715.svg" alt="H^1"/> projection. Nonorthogonal basis:</p>
 <div class="math">
-<p><img src="../_images/math/fab936fa620d408ba0cdaf03b1a1fd4914b13451.png" alt="\ket{w_0} = 1
+<p><img src="../_images/math/596bd78ab6cde03ebceccd0b8b0c9e767ed309ad.svg" alt="\ket{w_0} = 1
 
 \ket{w_1} = 1 + x
 
@@ -634,7 +623,7 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -662,29 +651,30 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
   <h4>Next topic</h4>
   <p class="topless"><a href="differential-geometry.html"
                         title="next chapter">Differential Geometry</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/la.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/la.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -696,13 +686,13 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
         <li class="right" >
           <a href="ode.html" title="Ordinary Differential Equations"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

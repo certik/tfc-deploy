@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Quantum Electrodynamics (QED) &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Quantum Electrodynamics (QED) &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Quantum Field Theory and Quantum Mechanics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Quantum Mechanics" href="qm.html" />
     <link rel="prev" title="Introduction" href="qft.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,15 +62,15 @@
         <li class="right" >
           <a href="qft.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="quantum-electrodynamics-qed">
 <span id="index-0"></span><h1>Quantum Electrodynamics (QED)<a class="headerlink" href="#quantum-electrodynamics-qed" title="Permalink to this headline">¶</a></h1>
@@ -89,293 +78,293 @@
 <span id="id1"></span><h2>Local Gauge Invariance<a class="headerlink" href="#local-gauge-invariance" title="Permalink to this headline">¶</a></h2>
 <p>We use a metric with signature +2 in this section.</p>
 <p>The Dirac equation for an electron is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\L=\bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi\]</div>
-<p>Physical quantities like a charge density (<span class="math">\(\bar\psi\psi\)</span>) or a current
-(<span class="math">\(\bar\psi\gamma^\mu\psi\)</span>), are all invariant if we add a local phase
-<span class="math">\(\Lambda(x)\)</span> to the field (this is called a local U(1) gauge transformation):</p>
-<div class="math">
-\[\psi(x) \to e^{iq\Lambda(x)/\hbar} \psi(x)\]\[\bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x) / \hbar}\]</div>
-<p>Where <span class="math">\(q\)</span> is a parameter that measures the strength of the phase transformation
+<p>Physical quantities like a charge density (<span class="math notranslate nohighlight">\(\bar\psi\psi\)</span>) or a current
+(<span class="math notranslate nohighlight">\(\bar\psi\gamma^\mu\psi\)</span>), are all invariant if we add a local phase
+<span class="math notranslate nohighlight">\(\Lambda(x)\)</span> to the field (this is called a local U(1) gauge transformation):</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\psi(x) \to e^{iq\Lambda(x)/\hbar} \psi(x)\\\bar\psi(x) \to \bar \psi(x) e^{-iq\Lambda(x) / \hbar}\end{aligned}\end{align} \]</div>
+<p>Where <span class="math notranslate nohighlight">\(q\)</span> is a parameter that measures the strength of the phase transformation
 (this will be later interpreted as a charge, for example for electrons
-<span class="math">\(q=-|e|\)</span>) and <span class="math">\(\hbar\)</span> is the Planck constant. And so we require that the
+<span class="math notranslate nohighlight">\(q=-|e|\)</span>) and <span class="math notranslate nohighlight">\(\hbar\)</span> is the Planck constant. And so we require that the
 Lagrangian is also invariant under the local gauge transformation, because
 there is no experiment that would change if this local gauge transformation is
 applied on the wave functions. By putting this gauge transformation into the
 Lagrangian density, we otain:</p>
-<div class="math">
-\[\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
     (i\hbar c\gamma^\mu \partial_\mu-mc^2)
-e^{iq\Lambda(x) / \hbar} \psi =\]\[= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu + iq\partial_\mu\Lambda(x) /
-    \hbar) -mc^2)\psi\]</div>
+e^{iq\Lambda(x) / \hbar} \psi =\\= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu + iq\partial_\mu\Lambda(x) /
+    \hbar) -mc^2)\psi\end{aligned}\end{align} \]</div>
 <p>The reason the Lagrangian is not invariant is due to the derivative, which does
 not transform covariantly under a local gauge transformation:</p>
-<div class="math">
-\[\bar\psi \partial_\mu \psi
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\bar\psi \partial_\mu \psi
 \to
 \bar\psi e^{-iq\Lambda(x) / \hbar} \partial_\mu
-    e^{iq\Lambda(x) / \hbar} \psi =\]\[= \bar\psi (\partial_\mu
-    + iq\partial_\mu\Lambda(x) / \hbar) \psi \neq \bar\psi \partial_\mu \psi\]</div>
+    e^{iq\Lambda(x) / \hbar} \psi =\\= \bar\psi (\partial_\mu
+    + iq\partial_\mu\Lambda(x) / \hbar) \psi \neq \bar\psi \partial_\mu \psi\end{aligned}\end{align} \]</div>
 <p>In order to make the derivative transform covariantly (and thus the Lagrangian
 gauge invariant), we have to introduce a gauge field, in this case a vector
-field <span class="math">\(A_\mu(x)\)</span>, as follows:</p>
-<div class="math" id="equation-covariant-derivative">
-<span class="eqno">(1)</span>\[D_\mu = \partial_\mu-{i\over \hbar}qA_\mu\]</div>
-<p>and the field <span class="math">\(A_\mu\)</span> must transform as <span class="math">\(A_\mu \to A_\mu +
+field <span class="math notranslate nohighlight">\(A_\mu(x)\)</span>, as follows:</p>
+<div class="math notranslate nohighlight" id="equation-covariant-derivative">
+<span class="eqno">(1)<a class="headerlink" href="#equation-covariant-derivative" title="Permalink to this equation">¶</a></span>\[D_\mu = \partial_\mu-{i\over \hbar}qA_\mu\]</div>
+<p>and the field <span class="math notranslate nohighlight">\(A_\mu\)</span> must transform as <span class="math notranslate nohighlight">\(A_\mu \to A_\mu +
 \partial_\mu\Lambda(x)\)</span>. At this level, we are free to choose either plus or
-minus sign in <a href="#equation-covariant-derivative">(1)</a>, since the sign change can be absorbed
-in the definition of the <span class="math">\(A_\mu\)</span> field without loss of generality (if we change
-the sign, the field transformation then changes to <span class="math">\(A_\mu \to A_\mu -
+minus sign in <a class="reference internal" href="#equation-covariant-derivative">(1)</a>, since the sign change can be absorbed
+in the definition of the <span class="math notranslate nohighlight">\(A_\mu\)</span> field without loss of generality (if we change
+the sign, the field transformation then changes to <span class="math notranslate nohighlight">\(A_\mu \to A_\mu -
 \partial_\mu\Lambda(x)\)</span>). In the +2 metric signature we chose a minus sign, so
-that <span class="math">\(A_\mu\)</span> coincides with the usual definition of the electromagnetic
+that <span class="math notranslate nohighlight">\(A_\mu\)</span> coincides with the usual definition of the electromagnetic
 4-potential:</p>
-<div class="math">
-\[D_\mu = \partial_\mu-{i\over \hbar}qA_\mu\]\[-i\hbar D_\mu = -i\hbar \partial_\mu - qA_\mu\]\[m\hat v_\mu = \hat p_\mu - qA_\mu\]\[m\hat{\bf v} = \hat {\bf p} - q{\bf A}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}D_\mu = \partial_\mu-{i\over \hbar}qA_\mu\\-i\hbar D_\mu = -i\hbar \partial_\mu - qA_\mu\\m\hat v_\mu = \hat p_\mu - qA_\mu\\m\hat{\bf v} = \hat {\bf p} - q{\bf A}\end{aligned}\end{align} \]</div>
 <p>With signature -2, we must choose a plus sign and the identification goes as
 follows:</p>
-<div class="math">
-\[D_\mu = \partial_\mu+{i\over \hbar}qA_\mu\]\[i\hbar D_\mu = i\hbar \partial_\mu - qA_\mu\]\[m\hat v_\mu = \hat p_\mu - qA_\mu\]\[m\hat{\bf v} = \hat {\bf p} - q{\bf A}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}D_\mu = \partial_\mu+{i\over \hbar}qA_\mu\\i\hbar D_\mu = i\hbar \partial_\mu - qA_\mu\\m\hat v_\mu = \hat p_\mu - qA_\mu\\m\hat{\bf v} = \hat {\bf p} - q{\bf A}\end{aligned}\end{align} \]</div>
 <p>And we obtain the same final equation. So the kinematic momentum is equal to
 canonical momentum minus charge times the gauge field.  The last expression is
 independent of a metric signature, and that is what is e.g. in the kinetic term
-of a Schrödinger or Pauli equation (with the minus sign in <span class="math">\(\hat {\bf p} -
+of a Schrödinger or Pauli equation (with the minus sign in <span class="math notranslate nohighlight">\(\hat {\bf p} -
 q{\bf A}\)</span>). We derive the non-relativistic limit rigorously later, but it gives
 the same result. At this level we just have to make sure we choose the correct
-sign in <a href="#equation-covariant-derivative">(1)</a>, depending on the metric signature,
+sign in <a class="reference internal" href="#equation-covariant-derivative">(1)</a>, depending on the metric signature,
 otherwise we would get the electromagnetic 4-potential with the opposite sign
-(the sign of <span class="math">\(A_\mu\)</span> is ultimately just a convention, but later we want to get
+(the sign of <span class="math notranslate nohighlight">\(A_\mu\)</span> is ultimately just a convention, but later we want to get
 the same equations as everybody else).</p>
-<p>Another unrelated convention is in choosing the sign of the parameter <span class="math">\(q\)</span>. We
+<p>Another unrelated convention is in choosing the sign of the parameter <span class="math notranslate nohighlight">\(q\)</span>. We
 have choosen it to coincide with an electric charge (negative for electrons).
-Some authors choose <span class="math">\(q\)</span> to be positive for electrons, then one must flip the
-sign in <a href="#equation-covariant-derivative">(1)</a>.</p>
+Some authors choose <span class="math notranslate nohighlight">\(q\)</span> to be positive for electrons, then one must flip the
+sign in <a class="reference internal" href="#equation-covariant-derivative">(1)</a>.</p>
 <p>We will continue using the +2 signature in the rest of the section.</p>
-<p>The operator <span class="math">\(D_\mu = \partial_\mu-{i\over
+<p>The operator <span class="math notranslate nohighlight">\(D_\mu = \partial_\mu-{i\over
 \hbar}qA_\mu\)</span> is called a covariant derivative, because it does not change a
 form (is invariant) under a local gauge transformation:</p>
-<div class="math">
-\[\bar\psi D_\mu \psi = \bar\psi (\partial_\mu-{i\over \hbar}qA_\mu) \psi\]\[\to
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\bar\psi D_\mu \psi = \bar\psi (\partial_\mu-{i\over \hbar}qA_\mu) \psi\\\to
 \bar\psi e^{-iq\Lambda(x) / \hbar} (\partial_\mu-{i\over \hbar}q(A_\mu
-    + \partial_\mu \Lambda(x))) e^{iq\Lambda(x) / \hbar} \psi =\]\[= \bar\psi (\partial_\mu
+    + \partial_\mu \Lambda(x))) e^{iq\Lambda(x) / \hbar} \psi =\\= \bar\psi (\partial_\mu
     - {i\over \hbar}q A_\mu - {i\over \hbar}q \partial_\mu \Lambda(x)
-    + iq\partial_\mu\Lambda(x) / \hbar) \psi =\]\[= \bar\psi (\partial_\mu - {i\over \hbar}qA_\mu) \psi
-= \bar\psi D_\mu \psi\]</div>
+    + iq\partial_\mu\Lambda(x) / \hbar) \psi =\\= \bar\psi (\partial_\mu - {i\over \hbar}qA_\mu) \psi
+= \bar\psi D_\mu \psi\end{aligned}\end{align} \]</div>
 <p>Then the Lagrangian</p>
-<div class="math" id="equation-lag_inv">
-<span class="eqno">(2)</span>\[\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar)-mc^2)\psi\]</div>
+<div class="math notranslate nohighlight" id="equation-lag-inv">
+<span class="eqno">(2)<a class="headerlink" href="#equation-lag-inv" title="Permalink to this equation">¶</a></span>\[\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar)-mc^2)\psi\]</div>
 <p>is also gauge invariant:</p>
-<div class="math">
-\[\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\L \to \bar\psi e^{-iq\Lambda(x) / \hbar}
     (i\hbar c\gamma^\mu (\partial_\mu-iqA_\mu / \hbar
         -iq\partial_\mu\Lambda(x) / \hbar)
-    -mc^2) e^{iq\Lambda(x) / \hbar} \psi =\]\[= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar
+    -mc^2) e^{iq\Lambda(x) / \hbar} \psi =\\= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar
     -iq\partial_\mu\Lambda(x) / \hbar + iq\partial_\mu\Lambda(x) / \hbar)
-    -mc^2)\psi =\]\[= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar) -mc^2)\psi\]</div>
-<p>The Lagrangian <a href="#equation-lag_inv">(2)</a> can also be written as:</p>
-<div class="math">
-\[\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-{i \over \hbar} qA_\mu)
-    -mc^2)\psi =\]\[= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
-    + qc\bar\psi\gamma^\mu \psi  A_\mu\]</div>
+    -mc^2)\psi =\\= \bar\psi(i\hbar c\gamma^\mu (\partial_\mu -iqA_\mu / \hbar) -mc^2)\psi\end{aligned}\end{align} \]</div>
+<p>The Lagrangian <a class="reference internal" href="#equation-lag-inv">(2)</a> can also be written as:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\L=\bar\psi(i\hbar c\gamma^\mu (\partial_\mu-{i \over \hbar} qA_\mu)
+    -mc^2)\psi =\\= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
+    + qc\bar\psi\gamma^\mu \psi  A_\mu\end{aligned}\end{align} \]</div>
 <p>We can see that the condition of a local gauge invariance requires an
-interaction with a vector field <span class="math">\(A_\mu\)</span>. Now we need to add the kinetic term
-for the field <span class="math">\(A_\mu\)</span>:</p>
-<div class="math">
+interaction with a vector field <span class="math notranslate nohighlight">\(A_\mu\)</span>. Now we need to add the kinetic term
+for the field <span class="math notranslate nohighlight">\(A_\mu\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[-{1\over4}F_{\mu\nu}F^{\mu\nu}\]</div>
-<p>The mass term <span class="math">\(\half m^2 A_\mu A^\mu\)</span> is not gauge invariant, and so we have to
-set <span class="math">\(m=0\)</span>. Here is the full Lagrangian:</p>
-<div class="math">
+<p>The mass term <span class="math notranslate nohighlight">\(\half m^2 A_\mu A^\mu\)</span> is not gauge invariant, and so we have to
+set <span class="math notranslate nohighlight">\(m=0\)</span>. Here is the full Lagrangian:</p>
+<div class="math notranslate nohighlight">
 \[\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
     + q c\bar\psi\gamma^\mu \psi  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}\]</div>
 <p>This is a Lagrangian for an electron and a massless vector boson (photon) of
-spin 1. We can introduce a current <span class="math">\(j^\mu = c\bar\psi\gamma^\mu \psi\)</span>,
+spin 1. We can introduce a current <span class="math notranslate nohighlight">\(j^\mu = c\bar\psi\gamma^\mu \psi\)</span>,
 then the Lagrangian density becomes:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\L= \bar\psi(i\hbar c\gamma^\mu \partial_\mu-mc^2)\psi
     + q j^\mu  A_\mu -{1\over4}F_{\mu\nu}F^{\mu\nu}\]</div>
-<p>For an electron, we can set <span class="math">\(q=-e\)</span>, where <span class="math">\(e\)</span> is the elementary charge (<span class="math">\(e\)</span> is
+<p>For an electron, we can set <span class="math notranslate nohighlight">\(q=-e\)</span>, where <span class="math notranslate nohighlight">\(e\)</span> is the elementary charge (<span class="math notranslate nohighlight">\(e\)</span> is
 positive).</p>
 </div>
 <div class="section" id="qed-lagrangian">
 <h2>QED Lagrangian<a class="headerlink" href="#qed-lagrangian" title="Permalink to this headline">¶</a></h2>
 <p>We use a metric with signature -2 in this section.</p>
 <p>The QED Lagrangian density is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}\]</div>
 <p>where</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\psi=\left( \begin{array}{c} \psi_1 \\ \psi_2 \\ \psi_3 \\ \psi_4 \\ \end{array}\right)\end{split}\]</div>
-<p>and we must choose a plus sign in <a href="#equation-covariant-derivative">(1)</a> since we use the
+<p>and we must choose a plus sign in <a class="reference internal" href="#equation-covariant-derivative">(1)</a> since we use the
 -2 signature:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[D_\mu=\partial_\mu+{i\over \hbar}eA_\mu\]</div>
-<p><span class="math">\(e\)</span> is the charge (negative for electrons <span class="math">\(e=-|e|\)</span>).</p>
-<div class="math">
+<p><span class="math notranslate nohighlight">\(e\)</span> is the charge (negative for electrons <span class="math notranslate nohighlight">\(e=-|e|\)</span>).</p>
+<div class="math notranslate nohighlight">
 \[F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu\]</div>
-<p>is the electromagnetic field tensor. It&#8217;s astonishing, that this simple Lagrangian can account for all phenomena from macroscopic scales down to something like <span class="math">\(10^{-13}\rm\,cm\)</span>. So it&#8217;s not a surprise that Feynman, Schwinger and Tomonaga received the 1965 Nobel Prize in Physics for such a fantastic achievement.</p>
+<p>is the electromagnetic field tensor. It’s astonishing, that this simple Lagrangian can account for all phenomena from macroscopic scales down to something like <span class="math notranslate nohighlight">\(10^{-13}\rm\,cm\)</span>. So it’s not a surprise that Feynman, Schwinger and Tomonaga received the 1965 Nobel Prize in Physics for such a fantastic achievement.</p>
 <p>Plugging this Lagrangian into the Euler-Lagrange equation of motion for a field, we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=0\]</div>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_\nu F^{\nu\mu}=-ec\bar\psi\gamma^\mu\psi\]</div>
 <p>The first equation is the Dirac equation in the electromagnetic field and the
-second equation is a set of Maxwell equations (<span class="math">\(\partial_\nu
-F^{\nu\mu}=-ej^\mu\)</span>) with a source <span class="math">\(j^\mu=c\bar\psi\gamma^\mu\psi\)</span>, which is a
+second equation is a set of Maxwell equations (<span class="math notranslate nohighlight">\(\partial_\nu
+F^{\nu\mu}=-ej^\mu\)</span>) with a source <span class="math notranslate nohighlight">\(j^\mu=c\bar\psi\gamma^\mu\psi\)</span>, which is a
 4-current comming from the Dirac equation.</p>
 </div>
 <div class="section" id="magnetic-moment-of-an-electron">
 <h2>Magnetic moment of an electron<a class="headerlink" href="#magnetic-moment-of-an-electron" title="Permalink to this headline">¶</a></h2>
-<p>In this section we derive the order-<span class="math">\(\alpha\)</span> correction to the magnetic moment
+<p>In this section we derive the order-<span class="math notranslate nohighlight">\(\alpha\)</span> correction to the magnetic moment
 of an electron.</p>
 <p>We start by computing the electron vertex function for the process
-<span class="math">\(\gamma(q)\to e^+(p) + e^-(p')\)</span>:</p>
-<div class="math">
+<span class="math notranslate nohighlight">\(\gamma(q)\to e^+(p) + e^-(p')\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[i M = i e^2 \left(\bar u(p')\Gamma^\mu(p', p)u(p)\right) {1\over q^2}
     \left(\bar u(k') \gamma_\mu u(k)\right)\]</div>
-<p>where <span class="math">\(k\)</span> corresponds to some heavy target. If <span class="math">\(A_\mu^{\rm cl}\)</span> is a fixed
+<p>where <span class="math notranslate nohighlight">\(k\)</span> corresponds to some heavy target. If <span class="math notranslate nohighlight">\(A_\mu^{\rm cl}\)</span> is a fixed
 classical potential, we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[i M 2\pi \delta(p^{0'} - p^0) =
     -i e \bar u(p')\Gamma^\mu(p', p)u(p) A_\mu^{\rm cl}\]</div>
 <p>Using general arguments (Lorentz invariance, parity-conservation, Ward
-identity) we can always write <span class="math">\(\Gamma^\mu\)</span> as:</p>
-<div class="math">
+identity) we can always write <span class="math notranslate nohighlight">\(\Gamma^\mu\)</span> as:</p>
+<div class="math notranslate nohighlight">
 \[\Gamma^\mu(p', p) = \gamma^\mu F_1(q^2) + {i\sigma^{\mu\nu} q_\nu \over
     2m} F_2(q^2)\]</div>
-<p>where <span class="math">\(F_1\)</span> and <span class="math">\(F_2\)</span> ar unknown functions of <span class="math">\(q^2 = (p'-p)^2 = -2p'\cdot p +
+<p>where <span class="math notranslate nohighlight">\(F_1\)</span> and <span class="math notranslate nohighlight">\(F_2\)</span> ar unknown functions of <span class="math notranslate nohighlight">\(q^2 = (p'-p)^2 = -2p'\cdot p +
 2m^2\)</span> called form factors. As we will see below, in the lowest order we get
-<span class="math">\(F_1 = 1\)</span> and <span class="math">\(F_2 = 0\)</span>.</p>
+<span class="math notranslate nohighlight">\(F_1 = 1\)</span> and <span class="math notranslate nohighlight">\(F_2 = 0\)</span>.</p>
 <p>We can calculate the amplitude for elastic Coulomb scattering of a
 nonrelativistic electron from a region of nonzero electrostatic potential by
-setting <span class="math">\(A_\mu^{\rm cl}(x)=(\phi({\bf x}), 0)\)</span>, then:</p>
-<div class="math">
-\[A_\mu^{\rm cl}(q)=(2\pi\delta(q^0)\tilde\phi({\bf q}), 0)\]\[i M 2\pi \delta(p^{0'} - p^0) =
-    -i e \bar u(p')\Gamma^0(p', p)u(p) 2\pi\delta(q^0)\tilde\phi({\bf q})\]\[i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\]</div>
+setting <span class="math notranslate nohighlight">\(A_\mu^{\rm cl}(x)=(\phi({\bf x}), 0)\)</span>, then:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A_\mu^{\rm cl}(q)=(2\pi\delta(q^0)\tilde\phi({\bf q}), 0)\\i M 2\pi \delta(p^{0'} - p^0) =
+    -i e \bar u(p')\Gamma^0(p', p)u(p) 2\pi\delta(q^0)\tilde\phi({\bf q})\\i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\end{aligned}\end{align} \]</div>
 <p>If the electrostatic field is very slowly varying over a large (even
-macroscopic) region, <span class="math">\(\tilde\phi({\bf q})\)</span> will be concentrated about <span class="math">\({\bf q}
-= 0\)</span>, then we can take the limit <span class="math">\({\bf q}\to 0\)</span>:</p>
-<div class="math">
-\[i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\]\[i M = -i e \bar u(p')
+macroscopic) region, <span class="math notranslate nohighlight">\(\tilde\phi({\bf q})\)</span> will be concentrated about <span class="math notranslate nohighlight">\({\bf q}
+= 0\)</span>, then we can take the limit <span class="math notranslate nohighlight">\({\bf q}\to 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}i M = -i e \bar u(p')\Gamma^0(p', p)u(p) \tilde\phi({\bf q})\\i M = -i e \bar u(p')
     \left(\gamma^0 F_1(q^2) + {i\sigma^{0\nu} q_\nu \over 2m} F_2(q^2)
-        \right)u(p) \tilde\phi({\bf q})\]\[i M = -i e \bar u(p') \gamma^0 u(p) F_1(0) \tilde\phi({\bf q})\]\[i M = -i e 2m\xi^{'\dag}\xi F_1(0) \tilde\phi({\bf q})\]\[i M = -i \left( e F_1(0) \tilde\phi({\bf q})\right) 2m\xi^{'\dag}\xi\]</div>
+        \right)u(p) \tilde\phi({\bf q})\\i M = -i e \bar u(p') \gamma^0 u(p) F_1(0) \tilde\phi({\bf q})\\i M = -i e 2m\xi^{'\dag}\xi F_1(0) \tilde\phi({\bf q})\\i M = -i \left( e F_1(0) \tilde\phi({\bf q})\right) 2m\xi^{'\dag}\xi\end{aligned}\end{align} \]</div>
 <p>This corresponds to the Born approximation for scattering from a potential</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[V({\bf x}) = e F_1(0) \phi({\bf x})\]</div>
-<p>Thus <span class="math">\(F_1(0)\)</span> is the electric charge of the electron, in units of <span class="math">\(e\)</span>. Since
-<span class="math">\(F_1(0) = 1\)</span> already in the first order of perturbation theory, radiative
-corrections to <span class="math">\(F_1(q^2)\)</span> must vanish at <span class="math">\(q^2=0\)</span>.</p>
+<p>Thus <span class="math notranslate nohighlight">\(F_1(0)\)</span> is the electric charge of the electron, in units of <span class="math notranslate nohighlight">\(e\)</span>. Since
+<span class="math notranslate nohighlight">\(F_1(0) = 1\)</span> already in the first order of perturbation theory, radiative
+corrections to <span class="math notranslate nohighlight">\(F_1(q^2)\)</span> must vanish at <span class="math notranslate nohighlight">\(q^2=0\)</span>.</p>
 <p>Now we calculate the scattering from a static vector potential by setting
-<span class="math">\(A_\mu^{\rm cl}(x)=(0, {\bf A}_\mu^{\rm cl}({\bf x}))\)</span>, then:</p>
-<div class="math">
-\[A^\mu_{\rm cl}(q)=(0, 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q}))\]\[i M 2\pi \delta(p^{'i} - p^i) =
-    i e \bar u(p')\Gamma^i(p', p)u(p) 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q})\]\[i M = i e \bar u(p')\Gamma^i(p', p)u(p) \tilde A^i_{\rm cl}({\bf q})\]\[i M = i e \bar u(p')\left(\gamma^i F_1(q^2) + {i\sigma^{i\nu} q_\nu \over 2m} F_2(q^2) \right)
-u(p) \tilde A^i_{\rm cl}({\bf q})\]</div>
-<p>In the limit <span class="math">\(q\to0\)</span> this becomes:</p>
-<div class="math">
-\[i M = i e
+<span class="math notranslate nohighlight">\(A_\mu^{\rm cl}(x)=(0, {\bf A}_\mu^{\rm cl}({\bf x}))\)</span>, then:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A^\mu_{\rm cl}(q)=(0, 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q}))\\i M 2\pi \delta(p^{'i} - p^i) =
+    i e \bar u(p')\Gamma^i(p', p)u(p) 2\pi\delta(q^i)\tilde A^i_{\rm cl}({\bf q})\\i M = i e \bar u(p')\Gamma^i(p', p)u(p) \tilde A^i_{\rm cl}({\bf q})\\i M = i e \bar u(p')\left(\gamma^i F_1(q^2) + {i\sigma^{i\nu} q_\nu \over 2m} F_2(q^2) \right)
+u(p) \tilde A^i_{\rm cl}({\bf q})\end{aligned}\end{align} \]</div>
+<p>In the limit <span class="math notranslate nohighlight">\(q\to0\)</span> this becomes:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}i M = i e
     2m\xi^{'\dag}\left(-i\epsilon^{ijk}{q^j\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
-\tilde A^i_{\rm cl}({\bf q})\]\[i M = -i e
+\tilde A^i_{\rm cl}({\bf q})\\i M = -i e
     2m\xi^{'\dag}\left(-{\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
-\left(-i\epsilon^{ijk}q^j\tilde A^i_{\rm cl}({\bf q})\right)\]\[i M = -i e
+\left(-i\epsilon^{ijk}q^j\tilde A^i_{\rm cl}({\bf q})\right)\\i M = -i e
     2m\xi^{'\dag}\left(-{\sigma^k\over 2m}(F_1(0) + F_2(0)) \right)\xi
-    \tilde B^k({\bf q})\]\[i M = -i \left(-{e\over m} (F_1(0) + F_2(0))
+    \tilde B^k({\bf q})\\i M = -i \left(-{e\over m} (F_1(0) + F_2(0))
     2m\xi^{'\dag}{\sigma^k\over 2}\xi
-    \tilde B^k({\bf q})\right)\]</div>
+    \tilde B^k({\bf q})\right)\end{aligned}\end{align} \]</div>
 <p>where</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tilde B^k({\bf q}) =
 \left(-i\epsilon^{ijk}q^j\tilde A^i_{\rm cl}({\bf q})\right)\]</div>
-<p>is the Fourier transform of the magnetic field produced by <span class="math">\({\bf A}^{\rm
+<p>is the Fourier transform of the magnetic field produced by <span class="math notranslate nohighlight">\({\bf A}^{\rm
 cl}({\bf x})\)</span>.</p>
 <p>This corresponds to the Born approximation for scattering from a potential</p>
-<div class="math">
-\[V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
     \xi^{'\dag}{\sigma^k\over 2}\xi
-    B^k({\bf x})\]\[V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
-    \xi^{'\dag}{\bsigma\over 2}\xi\cdot {\bf B}({\bf x})\]\[\begin{split}V({\bf x}) = -&lt;{\bmu}&gt;\cdot {\bf B}({\bf x})\end{split}\]</div>
+    B^k({\bf x})\\V({\bf x}) = -{e\over m} (F_1(0) + F_2(0))
+    \xi^{'\dag}{\bsigma\over 2}\xi\cdot {\bf B}({\bf x})\\V({\bf x}) = -&lt;{\bmu}&gt;\cdot {\bf B}({\bf x})\end{aligned}\end{align} \]</div>
 <p>where</p>
-<div class="math">
-\[\begin{split}&lt;{\bmu}&gt; = {e\over m} (F_1(0) + F_2(0)) \xi^{'\dag}{\bsigma\over 2}\xi\end{split}\]\[\begin{split}&lt;{\bmu}&gt; = g {e\over 2m} {\bf S}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}&lt;{\bmu}&gt; = {e\over m} (F_1(0) + F_2(0)) \xi^{'\dag}{\bsigma\over 2}\xi\\&lt;{\bmu}&gt; = g {e\over 2m} {\bf S}\end{aligned}\end{align} \]</div>
 <p>where</p>
-<div class="math">
-\[g = 2(F_1(0) + F_2(0))\]\[{\bf S} = \xi^{'\dag}{\bsigma\over 2}\xi\]</div>
-<p>The coefficient <span class="math">\(g\)</span> is called the Landé g-factor, and since the leading order
-of perturbation theory gives <span class="math">\(F_2(0)=0\)</span> (and we know that <span class="math">\(F_1(0)=1\)</span> to all
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}g = 2(F_1(0) + F_2(0))\\{\bf S} = \xi^{'\dag}{\bsigma\over 2}\xi\end{aligned}\end{align} \]</div>
+<p>The coefficient <span class="math notranslate nohighlight">\(g\)</span> is called the Landé g-factor, and since the leading order
+of perturbation theory gives <span class="math notranslate nohighlight">\(F_2(0)=0\)</span> (and we know that <span class="math notranslate nohighlight">\(F_1(0)=1\)</span> to all
 orders), we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[g = 2(F_1(0) + F_2(0)) = 2 + 2F_2(0) = 2 + O(\alpha)\]</div>
 <p>This is the standard prediction of the Dirac equation. The anomalous magnetic
 moment is then:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[a_e = {g - 2\over 2} = F_2(0)\]</div>
 <p>To calculate that, we need to evaluate the one-loop correction to the vertex
 function, so we start by deriving the appropriate Green function for the
-process <span class="math">\(\gamma(q) + e^+(p) \to e^+(p')\)</span>:</p>
-<div class="math">
-\[\ket{i} = a^{r\dag}_{\bf q} b^{t\dag}_{\bf p} \ket{\Omega}\]\[\ket{f} = b^{s\dag}_{\bf p'} \ket{\Omega}\]\[\braket{f|i} =\bra{\Omega} b^s_{\bf p'} a^{r\dag}_{\bf q}
-     b^{t\dag}_{\bf p} \ket{\Omega} =\]\[    =\bra{\Omega}T b^s_{\bf p'} a^{r\dag}_{\bf q}
-         b^{t\dag}_{\bf p} \ket{\Omega} =\]\[    =\bra{\Omega}T
+process <span class="math notranslate nohighlight">\(\gamma(q) + e^+(p) \to e^+(p')\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{i} = a^{r\dag}_{\bf q} b^{t\dag}_{\bf p} \ket{\Omega}\\\ket{f} = b^{s\dag}_{\bf p'} \ket{\Omega}\\\braket{f|i} =\bra{\Omega} b^s_{\bf p'} a^{r\dag}_{\bf q}
+     b^{t\dag}_{\bf p} \ket{\Omega} =\\    =\bra{\Omega}T b^s_{\bf p'} a^{r\dag}_{\bf q}
+         b^{t\dag}_{\bf p} \ket{\Omega} =\\    =\bra{\Omega}T
          \bar u^s({\bf p'}){1\over\tilde S(p')}\tilde \psi(p')
          \epsilon_\mu^{r*}({\bf q}){q^2\over i} \tilde A^\mu(-q)
          \tilde{\bar\psi}(-p){1\over\tilde S(-p)}u^t({\bf p})
-         \ket{\Omega} =\]\[    =\bar u^s({\bf p'}){1\over\tilde S(p')}
+         \ket{\Omega} =\\    =\bar u^s({\bf p'}){1\over\tilde S(p')}
         \epsilon_\mu^{r*}({\bf q}){q^2\over i}
          \bra{\Omega}T
          \tilde \psi(p')
          \tilde A^\mu(-q)
          \tilde{\bar\psi}(-p)
-         \ket{\Omega}{1\over\tilde S(-p)}u^t({\bf p}) =\]\[    =\bar u^s({\bf p'}){1\over\tilde S(p')}
+         \ket{\Omega}{1\over\tilde S(-p)}u^t({\bf p}) =\\    =\bar u^s({\bf p'}){1\over\tilde S(p')}
         \epsilon_\mu^{r*}({\bf q}){q^2\over i}
          \tilde G(p, p', q)
-         {1\over\tilde S(-p)}u^t({\bf p}) =\]</div>
+         {1\over\tilde S(-p)}u^t({\bf p}) =\end{aligned}\end{align} \]</div>
 <p>where:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tilde G(p, p', q) = \bra{\Omega}T \tilde \psi(p') \tilde A^\mu(-q)
          \tilde{\bar\psi}(-p)
          \ket{\Omega}\]</div>
 <p>is the interacting Green function for the Lagrangian
-<span class="math">\(-\lambda \bar e \gamma^\mu e A_\mu\)</span>. In the first order:</p>
-<div class="math">
-\[\tilde G(p, p', q) = \bra{\Omega}T \tilde\psi(p') \tilde A^\mu(-q)
+<span class="math notranslate nohighlight">\(-\lambda \bar e \gamma^\mu e A_\mu\)</span>. In the first order:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\tilde G(p, p', q) = \bra{\Omega}T \tilde\psi(p') \tilde A^\mu(-q)
          \tilde{\bar\psi}(-p)
-         \ket{\Omega} =\]\[    = \int \d^4 x \bra{0}T \tilde\psi(p') \tilde A^\mu(-q)
+         \ket{\Omega} =\\    = \int \d^4 x \bra{0}T \tilde\psi(p') \tilde A^\mu(-q)
          \tilde{\bar\psi}(-p)
          (-\lambda)\bar e(x) \gamma^\rho e(x) A_\rho(x)
-         \ket{0} =\]\[    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
+         \ket{0} =\\    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
         e^{i\hat p'p' - \hat q q
         -\hat pp}
         \bra{0}T \psi(\hat p') A^\mu(\hat q)
          {\bar\psi}(\hat p)
          \bar e(x) \gamma^\rho e(x) A_\rho(x)
-         \ket{0} =\]\[    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
+         \ket{0} =\\    = (-\lambda)\int \d^4 x \d\hat p'\d\hat q\d\hat p
         e^{i\hat p'p' - \hat q q
         -\hat pp}
         D^\mu_\rho(\hat q-x) S(\hat p' - x)\gamma^\rho S(\hat p-x)
-        =\]\[    = (-\lambda)(2\pi)^4\delta(p'-q-p)
-        \tilde D^\mu_\rho(q) \tilde S(p')\gamma^\rho \tilde S(p)\]</div>
+        =\\    = (-\lambda)(2\pi)^4\delta(p'-q-p)
+        \tilde D^\mu_\rho(q) \tilde S(p')\gamma^\rho \tilde S(p)\end{aligned}\end{align} \]</div>
 <p>so the amplitude is:</p>
-<div class="math">
-\[\braket{f|i}=\bar u^s({\bf p'}){1\over\tilde S(p')}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\braket{f|i}=\bar u^s({\bf p'}){1\over\tilde S(p')}
     \epsilon_\mu^{r*}({\bf q}){q^2\over i}
  (-\lambda)(2\pi)^4\delta(p'-q-p)
     \tilde D^\mu_\rho(q) \tilde S(p')\gamma^\rho \tilde S(p)
-     {1\over\tilde S(-p)}u^t({\bf p}) =\]\[=(-\lambda)(2\pi)^4\delta(p'-q-p)\epsilon_\mu^{r*}({\bf q})
-        u^s({\bf p'})\gamma^\mu u^t({\bf p})\]</div>
-<p>and we got <span class="math">\(\Gamma^\mu = \gamma^\mu\)</span>, so <span class="math">\(F_1=1\)</span> and <span class="math">\(F_2=0\)</span> in the lowest
+     {1\over\tilde S(-p)}u^t({\bf p}) =\\=(-\lambda)(2\pi)^4\delta(p'-q-p)\epsilon_\mu^{r*}({\bf q})
+        u^s({\bf p'})\gamma^\mu u^t({\bf p})\end{aligned}\end{align} \]</div>
+<p>and we got <span class="math notranslate nohighlight">\(\Gamma^\mu = \gamma^\mu\)</span>, so <span class="math notranslate nohighlight">\(F_1=1\)</span> and <span class="math notranslate nohighlight">\(F_2=0\)</span> in the lowest
 order. In the next order we get:</p>
-<div class="math">
-\[\tilde G(p, p', q)
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\tilde G(p, p', q)
     = (-\lambda)(2\pi)^4\delta(p'-q-p)
-        \tilde D^\mu_\rho(q) \tilde S(p')\delta\Gamma^\rho \tilde S(p)\]\[\delta\Gamma^\mu =
+        \tilde D^\mu_\rho(q) \tilde S(p')\delta\Gamma^\rho \tilde S(p)\\\delta\Gamma^\mu =
     \int {\d^4 k\over (2\pi)^4} \tilde D_{\nu\rho}(k-p)
         (-ie\gamma^\nu)
         \tilde S(k')
         \gamma^\mu
         \tilde S(k)
-        (-ie\gamma^\rho)\]</div>
+        (-ie\gamma^\rho)\end{aligned}\end{align} \]</div>
 <p>Now we can write:</p>
-<div class="math">
-\[\bar u(p')\Gamma^\mu(p', p) u(p) =
-    \bar u(p')(\gamma^\mu + \delta\Gamma^\mu) u(p)\]\[\bar u(p')\delta\Gamma^\mu(p', p) u(p) =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\bar u(p')\Gamma^\mu(p', p) u(p) =
+    \bar u(p')(\gamma^\mu + \delta\Gamma^\mu) u(p)\\\bar u(p')\delta\Gamma^\mu(p', p) u(p) =
     \int {\d^4 k\over (2\pi)^4} \tilde D_{\nu\rho}(k-p)
         \bar u(p')
         (-ie\gamma^\nu)
@@ -383,7 +372,7 @@ order. In the next order we get:</p>
         \gamma^\mu
         \tilde S(k)
         (-ie\gamma^\rho)
-        u(p) =\]\[    =
+        u(p) =\\    =
     \int {\d^4 k\over (2\pi)^4} {-ig_{\nu\rho}\over (k-p)^2 +i\epsilon}
         \bar u(p')
         (-ie\gamma^\nu)
@@ -391,123 +380,123 @@ order. In the next order we get:</p>
         \gamma^\mu
         {i(\fslash k + m)\over k^2-m^2 +i\epsilon}
         (-ie\gamma^\rho)
-        u(p) =\]\[= 2ie^2\int {\d^4 k\over (2\pi)^4}
+        u(p) =\\= 2ie^2\int {\d^4 k\over (2\pi)^4}
     {\bar u(p') \left(
         \fslash k \gamma^mu \fslash k' + m^2\gamma^\mu - 2m(k+k')^\mu
         \right) u(p) \over
     ((k-p)^2 + i\epsilon)(k'^2 - m^2 + i\epsilon)(k^2-m^2+i\epsilon)
-        }=\]\[= \cdots =\]\[= 2i e^2 \int {\d^4 l\over (2\pi)^4} \int_0^1 \d x \,\d y \,\d z\,
+        }=\\= \cdots =\\= 2i e^2 \int {\d^4 l\over (2\pi)^4} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     {2\over D^3} \bar u(p') \left(
     \gamma^\mu (-\half l^2+ (1-x)(1-y)q^2 + (1-4z+z^2)m^2)
         + {i\sigma^{\mu\nu}q_\nu\over 2m} (2m^2 z(1-z))
-    \right)u(p) =\]\[= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    \right)u(p) =\\= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     \bar u(p') \left(
     \gamma^\mu \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
         \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)\right]
         + {i\sigma^{\mu\nu}q_\nu\over 2m}\left[{1\over\Delta}2m^2 z(1-z)
-            \right] \right)u(p)\]</div>
+            \right] \right)u(p)\end{aligned}\end{align} \]</div>
 <p>where</p>
-<div class="math">
-\[k' = k + q\]\[D = l^2 - \Delta + i\epsilon\]\[\begin{split}\Delta = -xyq^2 + (1-z)^2 m^2 &gt; 0\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}k' = k + q\\D = l^2 - \Delta + i\epsilon\\\Delta = -xyq^2 + (1-z)^2 m^2 &gt; 0\end{aligned}\end{align} \]</div>
 <p>So the expressions for the form factors are:</p>
-<div class="math">
-\[F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
         \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)\right]
-        +O(\alpha^2)\]\[F_2(q^2) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+        +O(\alpha^2)\\F_2(q^2) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
      \left[{1\over\Delta}2m^2 z(1-z) \right]
-        +O(\alpha^2) =\]\[= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+        +O(\alpha^2) =\\= {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
      \left[2m^2 z(1-z)\over m^2(1-z)^2 - q^2 xy \right]
-        +O(\alpha^2)\]</div>
-<p><span class="math">\(F_1\)</span> contains both ultraviolet and infrared divergencies. To cure the infrared
-divergence, we add a term <span class="math">\(\mu^2 z\)</span> to <span class="math">\(\Delta\)</span>. To cure the ultraviolet
+        +O(\alpha^2)\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(F_1\)</span> contains both ultraviolet and infrared divergencies. To cure the infrared
+divergence, we add a term <span class="math notranslate nohighlight">\(\mu^2 z\)</span> to <span class="math notranslate nohighlight">\(\Delta\)</span>. To cure the ultraviolet
 divergence, we make the substitution:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[F_1(q^2) \to F_1(q^2) - \delta F_1(0)\]</div>
-<p>where <span class="math">\(\delta F_1\)</span> is the first order (in <span class="math">\(\alpha\)</span>) correction to <span class="math">\(F_1\)</span> (i.e.
-<span class="math">\(F_1 = 1 + \delta F_1 + O(\alpha^2)\)</span>):</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\delta F_1\)</span> is the first order (in <span class="math notranslate nohighlight">\(\alpha\)</span>) correction to <span class="math notranslate nohighlight">\(F_1\)</span> (i.e.
+<span class="math notranslate nohighlight">\(F_1 = 1 + \delta F_1 + O(\alpha^2)\)</span>):</p>
+<div class="math notranslate nohighlight">
 \[\delta F_1(0) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     \left[\log {z \Lambda^2\over\Delta (q^2=0)} + {1\over\Delta (q^2=0)}
         (1-4z+z^2)m^2\right]\]</div>
-<p>so the corrected <span class="math">\(F_1\)</span> is:</p>
-<div class="math">
-\[F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+<p>so the corrected <span class="math notranslate nohighlight">\(F_1\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}F_1(q^2) = 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     \left[\log {z \Lambda^2\over\Delta} + {1\over\Delta}
-        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)+\right.\]\[    \left.-\log {z \Lambda^2\over\Delta (q^2=0)} - {1\over\Delta (q^2=0)}
+        \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\right)+\right.\\    \left.-\log {z \Lambda^2\over\Delta (q^2=0)} - {1\over\Delta (q^2=0)}
     (1-4z+z^2)m^2\right]
-    +O(\alpha^2) =\]\[= 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+    +O(\alpha^2) =\\= 1 + {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
     \left[\log {m^2 (1-z)^2\over m^2(1-z)^2 - q^2 x y} +
         \left((1-x)(1-y)q^2 + (1-4z+z^2)m^2\over
         m^2(1-z)^2 - q^2 x y +\mu^2z
-        \right)+\right.\]\[    \left.-{(1-4z+z^2)m^2\over m^2 (1-z)^2 + \mu^2 z}\right]
-    +O(\alpha^2)\]</div>
+        \right)+\right.\\    \left.-{(1-4z+z^2)m^2\over m^2 (1-z)^2 + \mu^2 z}\right]
+    +O(\alpha^2)\end{aligned}\end{align} \]</div>
 <p>Neither the ultraviolet nor the infrared
-divergence affects <span class="math">\(F_2(q^2)\)</span>, so we just set <span class="math">\(q=0\)</span>:</p>
-<div class="math">
-\[F_2(0) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+divergence affects <span class="math notranslate nohighlight">\(F_2(q^2)\)</span>, so we just set <span class="math notranslate nohighlight">\(q=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}F_2(0) = {\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
-     \left[2m^2 z(1-z)\over m^2(1-z)^2 \right] +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
+     \left[2m^2 z(1-z)\over m^2(1-z)^2 \right] +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d x \,\d y \,\d z\,
     \delta(x+y+z-1)
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
     \theta(1-(1-y-z))\theta((1-y-z)-0)
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
     \theta(y+z)\theta(1-y-z)
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d y \int_0^1 \,\d z\,
     \theta(1-y-z)
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z \int_0^{1-z} \,\d y
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z (1-z)
-     {2 z\over 1-z} +O(\alpha^2) =\]\[={\alpha\over 2\pi} \int_0^1 \d z 2z + O(\alpha^2) =\]\[= {\alpha\over 2\pi} + O(\alpha^2)\]</div>
-<p>Thus we get the correction to the <span class="math">\(g\)</span>-factor of the electron:</p>
-<div class="math">
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d z \int_0^{1-z} \,\d y
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d z (1-z)
+     {2 z\over 1-z} +O(\alpha^2) =\\={\alpha\over 2\pi} \int_0^1 \d z 2z + O(\alpha^2) =\\= {\alpha\over 2\pi} + O(\alpha^2)\end{aligned}\end{align} \]</div>
+<p>Thus we get the correction to the <span class="math notranslate nohighlight">\(g\)</span>-factor of the electron:</p>
+<div class="math notranslate nohighlight">
 \[a_e = {g - 2\over 2} = F_2(0) = {\alpha\over 2\pi} \approx 0.0011614\]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">pi</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">137.035999049</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a_e</span>
 <span class="go">0.0011614097331824923</span>
 </pre></div>
 </div>
-<p>Experiments give <span class="math">\(a_e = 0.00115965218073\pm0.00000000000028\)</span>
+<p>Experiments give <span class="math notranslate nohighlight">\(a_e = 0.00115965218073\pm0.00000000000028\)</span>
 (<a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>, eq. (1)).</p>
 <p>Higher order corrections from QED can also be calculated:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[a_e = A_1 \left({\alpha\over \pi}\right) +
       A_2 \left({\alpha\over \pi}\right)^2 +
       A_3 \left({\alpha\over \pi}\right)^3 +
       A_4 \left({\alpha\over \pi}\right)^4 + \cdots\]</div>
-<p>we already know that <span class="math">\(A_1 = \half\)</span>. See for example <a class="reference external" href="http://arxiv.org/abs/hep-ph/9410248">hep-ph/9410248</a> for the expression for <span class="math">\(A_2\)</span>:</p>
-<div class="math">
-\[A_2 = \frac{197}{144} + \frac{3}{4} \zeta\left(3\right) - \frac{1}{2}
-    \pi^{2} \operatorname{log}\left(2\right) + \frac{1}{12} \pi^{2} =\]\[= -0.328478965579\dots\]</div>
+<p>we already know that <span class="math notranslate nohighlight">\(A_1 = \half\)</span>. See for example <a class="reference external" href="http://arxiv.org/abs/hep-ph/9410248">hep-ph/9410248</a> for the expression for <span class="math notranslate nohighlight">\(A_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A_2 = \frac{197}{144} + \frac{3}{4} \zeta\left(3\right) - \frac{1}{2}
+    \pi^{2} \operatorname{log}\left(2\right) + \frac{1}{12} \pi^{2} =\\= -0.328478965579\dots\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">197</span><span class="p">)</span><span class="o">/</span><span class="mi">144</span> <span class="o">+</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">zeta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A_2</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
 <span class="go">-0.328478965579194</span>
 </pre></div>
 </div>
-<p>See <a class="reference external" href="http://arxiv.org/abs/hep-ph/9602417">hep-ph/9602417</a> for the <span class="math">\(A_3\)</span> term:</p>
-<div class="math">
-\[A_3 = \frac{28259}{5184} - \frac{215}{24} \zeta\left(5\right)
+<p>See <a class="reference external" href="http://arxiv.org/abs/hep-ph/9602417">hep-ph/9602417</a> for the <span class="math notranslate nohighlight">\(A_3\)</span> term:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A_3 = \frac{28259}{5184} - \frac{215}{24} \zeta\left(5\right)
 + \frac{100}{3} \left(\sum_{n=1}^{\infty} \frac{1}{2^{n} n^{4}} -
   \frac{1}{24} \pi^{2} \operatorname{log}^{2}\left(2\right) + \frac{1}{24}
-  \operatorname{log}^{4}\left(2\right)\right) +\]\[+\frac{139}{18}
+  \operatorname{log}^{4}\left(2\right)\right) +\\+\frac{139}{18}
 \zeta\left(3\right) - \frac{298}{9} \pi^{2}
 \operatorname{log}\left(2\right) + \frac{83}{72} \pi^{2}
 \zeta\left(3\right) + \frac{17101}{810} \pi^{2} -
-\frac{239}{2160} \pi^{4} =\]\[= 1.181241456\dots\]</div>
+\frac{239}{2160} \pi^{4} =\\= 1.181241456\dots\end{aligned}\end{align} \]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="nb">sum</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
 <span class="go">n</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a4</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
@@ -519,12 +508,12 @@ divergence affects <span class="math">\(F_2(q^2)\)</span>, so we just set <span 
 <span class="go">1.18124145658720</span>
 </pre></div>
 </div>
-<p>Higher terms are only known numerically. The <span class="math">\(A_4\)</span> and <span class="math">\(A_5\)</span> terms can be found
+<p>Higher terms are only known numerically. The <span class="math notranslate nohighlight">\(A_4\)</span> and <span class="math notranslate nohighlight">\(A_5\)</span> terms can be found
 in <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>:</p>
-<div class="math">
-\[A_4 = -1.912 98 (84)\]\[A_5 = 7.795 (336)\]</div>
-<p>We can now sum <span class="math">\(a_e\)</span> up to a given order by the following script:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="n">summation</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A_4 = -1.912 98 (84)\\A_5 = 7.795 (336)\end{aligned}\end{align} \]</div>
+<p>We can now sum <span class="math notranslate nohighlight">\(a_e\)</span> up to a given order by the following script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">zeta</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">log</span><span class="p">,</span> <span class="n">summation</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">oo</span>
 <span class="n">var</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
 <span class="n">a4</span> <span class="o">=</span> <span class="n">summation</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">**</span><span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oo</span><span class="p">))</span>
 <span class="n">A1</span> <span class="o">=</span> <span class="n">S</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
@@ -543,17 +532,17 @@ in <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:141
 <span class="n">a_e</span><span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
         <span class="n">a_e</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">n</span><span class="p">())</span>
-<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
-<span class="k">print</span> <span class="s2">&quot;Order      :math:`a_e`&quot;</span>
-<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;========== ================&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;Order      :math:`a_e`&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;========== ================&quot;</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
-        <span class="k">print</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">          </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">[:</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
-<span class="k">print</span> <span class="s2">&quot;Other      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_other</span>
-<span class="k">print</span> <span class="s2">&quot;Total      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;Experiment </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp</span>
-<span class="k">print</span> <span class="s2">&quot;Difference </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span> <span class="o">-</span> <span class="n">a_e_exp</span><span class="p">)</span>
-<span class="k">print</span> <span class="s2">&quot;Exp. err   </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp_err</span>
-<span class="k">print</span> <span class="s2">&quot;========== ================&quot;</span>
+        <span class="nb">print</span> <span class="s2">&quot;</span><span class="si">%d</span><span class="s2">          </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">[:</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
+<span class="nb">print</span> <span class="s2">&quot;Other      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_other</span>
+<span class="nb">print</span> <span class="s2">&quot;Total      </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s2">&quot;Experiment </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp</span>
+<span class="nb">print</span> <span class="s2">&quot;Difference </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">a_e</span><span class="p">)</span> <span class="o">+</span> <span class="n">a_e_other</span> <span class="o">-</span> <span class="n">a_e_exp</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s2">&quot;Exp. err   </span><span class="si">%16.14f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">a_e_exp_err</span>
+<span class="nb">print</span> <span class="s2">&quot;========== ================&quot;</span>
 </pre></div>
 </div>
 <p>and obtain the following table:</p>
@@ -564,7 +553,7 @@ in <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:141
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Order</th>
-<th class="head"><span class="math">\(a_e\)</span></th>
+<th class="head"><span class="math notranslate nohighlight">\(a_e\)</span></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -600,15 +589,15 @@ in <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:141
 </tr>
 </tbody>
 </table>
-<p>The &#8220;Other&#8221; line are contributions from the dependence on the muon and tau
+<p>The “Other” line are contributions from the dependence on the muon and tau
 particle masses, the hadronic vacuum-polarization, the hadronic
 light-by-light-scattering and the electroweak contribution
 (see <a class="reference external" href="http://arxiv.org/abs/1412.8284">arXiv:1412.8284</a>).
-The &#8220;Difference&#8221; line is the difference from the theory (the &#8220;Total&#8221; line) and
-experiment. The &#8220;Exp. err&#8221; line is the experimental error.</p>
-<p>At this level of accuracy, the uncertainty of the exact value of <span class="math">\(\alpha\)</span> is
+The “Difference” line is the difference from the theory (the “Total” line) and
+experiment. The “Exp. err” line is the experimental error.</p>
+<p>At this level of accuracy, the uncertainty of the exact value of <span class="math notranslate nohighlight">\(\alpha\)</span> is
 the primary cause of the difference from experiment, and one can use this
-result to predict a more accurate value for <span class="math">\(\alpha\)</span>, assuming that QED and the
+result to predict a more accurate value for <span class="math notranslate nohighlight">\(\alpha\)</span>, assuming that QED and the
 standard model are valid.</p>
 </div>
 </div>
@@ -617,7 +606,7 @@ standard model are valid.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -635,29 +624,30 @@ standard model are valid.</p>
   <h4>Next topic</h4>
   <p class="topless"><a href="qm.html"
                         title="next chapter">Quantum Mechanics</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/quantum/qed.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/quantum/qed.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -669,13 +659,13 @@ standard model are valid.</p>
         <li class="right" >
           <a href="qft.html" title="Introduction"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

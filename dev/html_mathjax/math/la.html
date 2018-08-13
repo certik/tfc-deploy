@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Linear Algebra &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Linear Algebra &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Differential Geometry" href="differential-geometry.html" />
     <link rel="prev" title="Ordinary Differential Equations" href="ode.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,15 +62,15 @@
         <li class="right" >
           <a href="ode.html" title="Ordinary Differential Equations"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="linear-algebra">
 <h1>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h1>
@@ -90,19 +79,19 @@
 <p>Virtually all spaces used in physics are Hilbert spaces (treated in the weak
 sense, i.e. equipped with distributions), which means that they have a scalar
 product and a norm.</p>
-<p>The braket <span class="math">\(\braket{f|g}\)</span> in Dirac notation is a scalar product and we are
+<p>The braket <span class="math notranslate nohighlight">\(\braket{f|g}\)</span> in Dirac notation is a scalar product and we are
 free to define it anyway we like, as long as it satisfies the following
 properties:</p>
-<div class="math">
-\[\braket{f|g} = \braket{g|f}^*\]\[\braket{f|ag} = a\braket{f|g}\]\[\braket{f_1 + f_2|g} = \braket{f_1|g} + \braket{f_2|g}\]\[\braket{f|f} \ge 0\]</div>
-<p>where <span class="math">\(\braket{f|f}=0\)</span> if, and only if, <span class="math">\(\ket{f}=0\)</span>. Scalar product induces the
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\braket{f|g} = \braket{g|f}^*\\\braket{f|ag} = a\braket{f|g}\\\braket{f_1 + f_2|g} = \braket{f_1|g} + \braket{f_2|g}\\\braket{f|f} \ge 0\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(\braket{f|f}=0\)</span> if, and only if, <span class="math notranslate nohighlight">\(\ket{f}=0\)</span>. Scalar product induces the
 norm:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[||\ket{f}|| = \sqrt{\braket{f|f}}\]</div>
 <p>Any norm has to satisfy the following properties:</p>
-<div class="math">
-\[||a\ket{f}|| = |a| ||\ket{f}||\]\[||\ket{f}+\ket{g}|| \le ||\ket{f}|| + ||\ket{g}||\]\[||\ket{f}|| \ge 0\]</div>
-<p>where <span class="math">\(||\ket{f}||=0\)</span> if, and only if, <span class="math">\(\ket{f}=0\)</span>. Those properties are
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}||a\ket{f}|| = |a| ||\ket{f}||\\||\ket{f}+\ket{g}|| \le ||\ket{f}|| + ||\ket{g}||\\||\ket{f}|| \ge 0\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(||\ket{f}||=0\)</span> if, and only if, <span class="math notranslate nohighlight">\(\ket{f}=0\)</span>. Those properties are
 automatically satisfied by the induced norm.</p>
 <p>In general, any of these properties can be weakened, one can study spaces that
 have a norm, but not a scalar product, or spaces, that have objects resembling
@@ -115,18 +104,18 @@ remember how to work with such spaces.</p>
 <h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
 <p>Some examples of frequently used spaces and scalar products follows.</p>
 <p>Finite dimensional spaces:</p>
-<div class="math">
-\[\begin{split}\ket{f} = \left(\begin{array}{c}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\ket{f} = \left(\begin{array}{c}
     f_1 \\
     f_2 \\
     \vdots \\
     f_n \\
-    \end{array}\right)\end{split}\]\[\begin{split}\bra{f} =
+    \end{array}\right)\end{split}\\\begin{split}\bra{f} =
 \left(\begin{array}{cccc}
     f_1 &amp; f_2 &amp; \cdots &amp; f_n \\
-    \end{array}\right)\end{split}\]</div>
-<p><span class="math">\(R^n\)</span> Euclidean scalar product:</p>
-<div class="math">
+    \end{array}\right)\end{split}\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(R^n\)</span> Euclidean scalar product:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\braket{f|g} =
 \left(\begin{array}{cccc}
     f_1 &amp; f_2 &amp; \cdots &amp; f_n \\
@@ -139,17 +128,17 @@ remember how to work with such spaces.</p>
     \end{array}\right)
     = f_1 g_2 + f_2 g_2 + \cdots + f_n g_n\end{split}\]</div>
 <p>Infinite dimensional spaces:</p>
-<div class="math">
-\[\begin{split}\ket{f} = \left(\begin{array}{c}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\ket{f} = \left(\begin{array}{c}
     f_1 \\
     f_2 \\
     \vdots \\
-    \end{array}\right)\end{split}\]\[\begin{split}\bra{f} =
+    \end{array}\right)\end{split}\\\begin{split}\bra{f} =
 \left(\begin{array}{ccc}
     f_1 &amp; f_2 &amp; \cdots \\
-    \end{array}\right)\end{split}\]</div>
-<p><span class="math">\(l^2\)</span> scalar product:</p>
-<div class="math">
+    \end{array}\right)\end{split}\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(l^2\)</span> scalar product:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\braket{f|g} =
 \left(\begin{array}{ccc}
     f_1 &amp; f_2 &amp; \cdots \\
@@ -161,151 +150,151 @@ remember how to work with such spaces.</p>
     \end{array}\right)
     = f_1 g_2 + f_2 g_2 + \cdots\end{split}\]</div>
 <p>Function spaces:</p>
-<div class="math">
-\[\ket{f} = f(x)\]\[\bra{f} = f^*(x)\]</div>
-<p><span class="math">\(L^2\)</span> scalar product:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{f} = f(x)\\\bra{f} = f^*(x)\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(L^2\)</span> scalar product:</p>
+<div class="math notranslate nohighlight">
 \[\braket{f|g} = \int_\Omega f^*(x) g(x) \d x\]</div>
-<p><span class="math">\(H^1\)</span> scalar product:</p>
-<div class="math">
+<p><span class="math notranslate nohighlight">\(H^1\)</span> scalar product:</p>
+<div class="math notranslate nohighlight">
 \[\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x) \d x\]</div>
-<p><span class="math">\(H^2\)</span> scalar product:</p>
-<div class="math">
+<p><span class="math notranslate nohighlight">\(H^2\)</span> scalar product:</p>
+<div class="math notranslate nohighlight">
 \[\braket{f|g} = \int_\Omega f^*(x) g(x) + f'^*(x) g'(x)
     + f''^*(x) g''(x) \d x\]</div>
 <p>Energy scalar product:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\braket{f|g} = \int_\Omega f^*(x) q(x) g(x) + f'^*(x) p(x) g'(x) \d x\]</div>
 <p>All of these scalar products automatically satisfy all of the properties of the
-scalar product, only the energy scalar product doesn&#8217;t automatically satisfy
-<span class="math">\(\braket{f|f} \ge 0\)</span>, which imposes some conditions on the parameters <span class="math">\(p(x)\)</span>
-and <span class="math">\(q(x)\)</span>.</p>
+scalar product, only the energy scalar product doesn’t automatically satisfy
+<span class="math notranslate nohighlight">\(\braket{f|f} \ge 0\)</span>, which imposes some conditions on the parameters <span class="math notranslate nohighlight">\(p(x)\)</span>
+and <span class="math notranslate nohighlight">\(q(x)\)</span>.</p>
 </div>
 </div>
 <div class="section" id="projections">
 <h2>Projections<a class="headerlink" href="#projections" title="Permalink to this headline">¶</a></h2>
-<p>Projection is a linear idempotent operator <span class="math">\(P\)</span>:</p>
-<div class="math">
+<p>Projection is a linear idempotent operator <span class="math notranslate nohighlight">\(P\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[P^2 = P\]</div>
-<p>It takes a vector <span class="math">\(\ket{u}\)</span> from <span class="math">\(V\)</span> and projects it onto a vector <span class="math">\(\ket{w} =
-P\ket{u}\)</span> from <span class="math">\(W\)</span>. Further application of the operator <span class="math">\(P\)</span> gains nothing:
-<span class="math">\(P\ket{w} = P^2\ket{u} = P\ket{u} = \ket{w}\)</span>.
-It decomposes the space <span class="math">\(V\)</span> into a direct sum <span class="math">\(V=W\oplus W^\bot\)</span> of
-the projection subspace <span class="math">\(W\)</span> and its complement <span class="math">\(W^\bot\)</span>. If <span class="math">\(\ket{w}\)</span> is
-from <span class="math">\(W\)</span> then its complement <span class="math">\(\ket{u} - P\ket{u}\)</span> is from <span class="math">\(W^\bot\)</span>.</p>
+<p>It takes a vector <span class="math notranslate nohighlight">\(\ket{u}\)</span> from <span class="math notranslate nohighlight">\(V\)</span> and projects it onto a vector <span class="math notranslate nohighlight">\(\ket{w} =
+P\ket{u}\)</span> from <span class="math notranslate nohighlight">\(W\)</span>. Further application of the operator <span class="math notranslate nohighlight">\(P\)</span> gains nothing:
+<span class="math notranslate nohighlight">\(P\ket{w} = P^2\ket{u} = P\ket{u} = \ket{w}\)</span>.
+It decomposes the space <span class="math notranslate nohighlight">\(V\)</span> into a direct sum <span class="math notranslate nohighlight">\(V=W\oplus W^\bot\)</span> of
+the projection subspace <span class="math notranslate nohighlight">\(W\)</span> and its complement <span class="math notranslate nohighlight">\(W^\bot\)</span>. If <span class="math notranslate nohighlight">\(\ket{w}\)</span> is
+from <span class="math notranslate nohighlight">\(W\)</span> then its complement <span class="math notranslate nohighlight">\(\ket{u} - P\ket{u}\)</span> is from <span class="math notranslate nohighlight">\(W^\bot\)</span>.</p>
 <p>Orthogonal projection is a projection that is Hermitean:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[P^\dag = P\]</div>
-<p>The complement of an orthogonal projection is orthogonal to any vector from <span class="math">\(W\)</span>:</p>
-<div class="math">
-\[\braket{u-Pu|w} = \braket{u|w} - \braket{Pu|w} =
-    \braket{u|w} - \braket{u|P^\dag|w} =\]\[    =
+<p>The complement of an orthogonal projection is orthogonal to any vector from <span class="math notranslate nohighlight">\(W\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\braket{u-Pu|w} = \braket{u|w} - \braket{Pu|w} =
+    \braket{u|w} - \braket{u|P^\dag|w} =\\    =
     \braket{u|w} - \braket{u|P|w} =
-    \braket{u|w} - \braket{u|w} = 0\]</div>
+    \braket{u|w} - \braket{u|w} = 0\end{aligned}\end{align} \]</div>
 <p>In other words, orthogonal projection projects a vector
-<span class="math">\(\ket{u}\)</span> from the space <span class="math">\(V\)</span> into an orthogonal subspace (projection subspace)
-<span class="math">\(W\)</span>. The two spaces <span class="math">\(W\)</span> and <span class="math">\(W^\bot\)</span> are orthogonal, because any vector from
-<span class="math">\(W\)</span> is orthogonal to all vectors from <span class="math">\(W^\bot\)</span>. Given the
-space <span class="math">\(W\)</span>, the operator <span class="math">\(P\)</span> is unique.</p>
+<span class="math notranslate nohighlight">\(\ket{u}\)</span> from the space <span class="math notranslate nohighlight">\(V\)</span> into an orthogonal subspace (projection subspace)
+<span class="math notranslate nohighlight">\(W\)</span>. The two spaces <span class="math notranslate nohighlight">\(W\)</span> and <span class="math notranslate nohighlight">\(W^\bot\)</span> are orthogonal, because any vector from
+<span class="math notranslate nohighlight">\(W\)</span> is orthogonal to all vectors from <span class="math notranslate nohighlight">\(W^\bot\)</span>. Given the
+space <span class="math notranslate nohighlight">\(W\)</span>, the operator <span class="math notranslate nohighlight">\(P\)</span> is unique.</p>
 <p>The complement of non-orthogonal projection is not orthogonal to any vector
-from <span class="math">\(W\)</span>:</p>
-<div class="math">
+from <span class="math notranslate nohighlight">\(W\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\braket{u-Pu|w} =
     \braket{u|w} - \braket{u|P|w} \neq
     \braket{u|w} - \braket{u|P^\dag|w} =
     \braket{u|w} - \braket{u|w} = 0\]</div>
-<p>And the two spaces <span class="math">\(W\)</span> and <span class="math">\(W^\bot\)</span> are not orthogonal, because any vector from
-<span class="math">\(W\)</span> is not orthogonal to any vector from <span class="math">\(W^\bot\)</span>. Given both
-spaces <span class="math">\(W\)</span> and <span class="math">\(W^\bot\)</span>, the operator <span class="math">\(P\)</span> is unique.</p>
-<p>If we choose any orthonormal basis <span class="math">\(\ket{w_0}\)</span>, <span class="math">\(\ket{w_1}\)</span>,
-<span class="math">\(\ket{w_2}\)</span>, ..., of the subspace <span class="math">\(W\)</span>, then the orthogonal projection <span class="math">\(P\)</span> is:</p>
-<div class="math" id="equation-proj_ortho">
-<span class="eqno">(1)</span>\[P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}\]</div>
+<p>And the two spaces <span class="math notranslate nohighlight">\(W\)</span> and <span class="math notranslate nohighlight">\(W^\bot\)</span> are not orthogonal, because any vector from
+<span class="math notranslate nohighlight">\(W\)</span> is not orthogonal to any vector from <span class="math notranslate nohighlight">\(W^\bot\)</span>. Given both
+spaces <span class="math notranslate nohighlight">\(W\)</span> and <span class="math notranslate nohighlight">\(W^\bot\)</span>, the operator <span class="math notranslate nohighlight">\(P\)</span> is unique.</p>
+<p>If we choose any orthonormal basis <span class="math notranslate nohighlight">\(\ket{w_0}\)</span>, <span class="math notranslate nohighlight">\(\ket{w_1}\)</span>,
+<span class="math notranslate nohighlight">\(\ket{w_2}\)</span>, …, of the subspace <span class="math notranslate nohighlight">\(W\)</span>, then the orthogonal projection <span class="math notranslate nohighlight">\(P\)</span> is:</p>
+<div class="math notranslate nohighlight" id="equation-proj-ortho">
+<span class="eqno">(1)<a class="headerlink" href="#equation-proj-ortho" title="Permalink to this equation">¶</a></span>\[P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}\]</div>
 <p>because:</p>
-<div class="math">
-\[P^2 =
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}P^2 =
 \sum_{k=0}^\infty \ket{w_k}\bra{w_k}
 \sum_{l=0}^\infty \ket{w_l}\bra{w_l}
 =
-\sum_{k,l=0}^\infty \ket{w_k}\braket{w_k|w_l}\bra{w_l}=\]\[=\sum_{k,l=0}^\infty \ket{w_k}\delta_{kl}\bra{w_l}
-= \sum_{k=0}^\infty \ket{w_k}\bra{w_k} = P\]</div>
+\sum_{k,l=0}^\infty \ket{w_k}\braket{w_k|w_l}\bra{w_l}=\\=\sum_{k,l=0}^\infty \ket{w_k}\delta_{kl}\bra{w_l}
+= \sum_{k=0}^\infty \ket{w_k}\bra{w_k} = P\end{aligned}\end{align} \]</div>
 <p>and</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[P^\dag = \left(\sum_{k=0}^\infty \ket{w_k}\bra{w_k}\right)^\dag =
 \sum_{k=0}^\infty \left(\ket{w_k}\bra{w_k}\right)^\dag =
 \sum_{k=0}^\infty \ket{w_k}\bra{w_k} = P\]</div>
-<p><span class="math">\(P\)</span> is independent of the basis, i.e <span class="math">\(\sum_{k=0}^\infty \ket{w_k}\bra{w_k}
-=\sum_{l=0}^\infty \ket{u_l}\bra{u_l}\)</span>, as long as <span class="math">\(\ket{u_l}\)</span> span the same
-subspace as <span class="math">\(\ket{w_k}\)</span>, because the operator <span class="math">\(P\)</span> is unique.</p>
-<p>To find the closest vector <span class="math">\(\ket{w}\)</span> from <span class="math">\(W\)</span> to the vector <span class="math">\(\ket{u}\)</span> from <span class="math">\(V\)</span>,
-we need to minimize the norm <span class="math">\(||\ket{u}-\ket{w}||\)</span>. So we write
-<span class="math">\(\ket{w} = P\ket{u} + \ket{z}\)</span> for some vector <span class="math">\(\ket{z}\)</span> from <span class="math">\(W\)</span> and simplify
+<p><span class="math notranslate nohighlight">\(P\)</span> is independent of the basis, i.e <span class="math notranslate nohighlight">\(\sum_{k=0}^\infty \ket{w_k}\bra{w_k}
+=\sum_{l=0}^\infty \ket{u_l}\bra{u_l}\)</span>, as long as <span class="math notranslate nohighlight">\(\ket{u_l}\)</span> span the same
+subspace as <span class="math notranslate nohighlight">\(\ket{w_k}\)</span>, because the operator <span class="math notranslate nohighlight">\(P\)</span> is unique.</p>
+<p>To find the closest vector <span class="math notranslate nohighlight">\(\ket{w}\)</span> from <span class="math notranslate nohighlight">\(W\)</span> to the vector <span class="math notranslate nohighlight">\(\ket{u}\)</span> from <span class="math notranslate nohighlight">\(V\)</span>,
+we need to minimize the norm <span class="math notranslate nohighlight">\(||\ket{u}-\ket{w}||\)</span>. So we write
+<span class="math notranslate nohighlight">\(\ket{w} = P\ket{u} + \ket{z}\)</span> for some vector <span class="math notranslate nohighlight">\(\ket{z}\)</span> from <span class="math notranslate nohighlight">\(W\)</span> and simplify
 the norm:</p>
-<div class="math">
-\[||\ket{u}-\ket{w}||^2 = \braket{u-w|u-w} =
-\braket{u-Pu-z|u-Pu-z} =\]\[=
-\braket{u-Pu|u-Pu} + \braket{z|z} - \braket{u-Pu|z}-\braket{z|u-Pu}=\]\[=
-\braket{u-Pu|u-Pu} + \braket{z|z}\]</div>
-<p>which is minimal for <span class="math">\(\ket{z}=0\)</span>, so we found out that the closest vector is
-<span class="math">\(\ket{w} = P\ket{u}\)</span>. We used the fact that <span class="math">\(\braket{u-Pu|z}=0\)</span>, because
-<span class="math">\(\ket{u-Pu}\)</span> is from the orthogonal complement to the subspace <span class="math">\(W\)</span>.
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}||\ket{u}-\ket{w}||^2 = \braket{u-w|u-w} =
+\braket{u-Pu-z|u-Pu-z} =\\=
+\braket{u-Pu|u-Pu} + \braket{z|z} - \braket{u-Pu|z}-\braket{z|u-Pu}=\\=
+\braket{u-Pu|u-Pu} + \braket{z|z}\end{aligned}\end{align} \]</div>
+<p>which is minimal for <span class="math notranslate nohighlight">\(\ket{z}=0\)</span>, so we found out that the closest vector is
+<span class="math notranslate nohighlight">\(\ket{w} = P\ket{u}\)</span>. We used the fact that <span class="math notranslate nohighlight">\(\braket{u-Pu|z}=0\)</span>, because
+<span class="math notranslate nohighlight">\(\ket{u-Pu}\)</span> is from the orthogonal complement to the subspace <span class="math notranslate nohighlight">\(W\)</span>.
 In other words, orthogonal projection finds the closest vector from a subspace
 onto which it projects.</p>
 <div class="section" id="projection-coefficients">
 <h3>Projection Coefficients<a class="headerlink" href="#projection-coefficients" title="Permalink to this headline">¶</a></h3>
-<p>Given the basis <span class="math">\(\ket{v_k}\)</span> (orthogonal or non-orthogonal), we would like to
-find a formula for the projection coefficients <span class="math">\(\phi_k\)</span> defined by:</p>
-<div class="math" id="equation-proj_coeff">
-<span class="eqno">(2)</span>\[P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,.\]</div>
-<p>This holds, because <span class="math">\(P\ket{u}\)</span> belongs to the space <span class="math">\(W\)</span> and every vector from
-it can be expressed as a linear combination of <span class="math">\(\ket{v_k}\)</span>.</p>
+<p>Given the basis <span class="math notranslate nohighlight">\(\ket{v_k}\)</span> (orthogonal or non-orthogonal), we would like to
+find a formula for the projection coefficients <span class="math notranslate nohighlight">\(\phi_k\)</span> defined by:</p>
+<div class="math notranslate nohighlight" id="equation-proj-coeff">
+<span class="eqno">(2)<a class="headerlink" href="#equation-proj-coeff" title="Permalink to this equation">¶</a></span>\[P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,.\]</div>
+<p>This holds, because <span class="math notranslate nohighlight">\(P\ket{u}\)</span> belongs to the space <span class="math notranslate nohighlight">\(W\)</span> and every vector from
+it can be expressed as a linear combination of <span class="math notranslate nohighlight">\(\ket{v_k}\)</span>.</p>
 <div class="section" id="projecting-to-orthogonal-basis">
 <h4>Projecting to Orthogonal Basis<a class="headerlink" href="#projecting-to-orthogonal-basis" title="Permalink to this headline">¶</a></h4>
-<p>For orthogonal projections we simply substitute the equation <a href="#equation-proj_ortho">(1)</a>
-into <a href="#equation-proj_coeff">(2)</a> and get:</p>
-<div class="math">
+<p>For orthogonal projections we simply substitute the equation <a class="reference internal" href="#equation-proj-ortho">(1)</a>
+into <a class="reference internal" href="#equation-proj-coeff">(2)</a> and get:</p>
+<div class="math notranslate nohighlight">
 \[P \ket{u} = \sum_{k=0}^\infty \ket{w_k}\braket{w_k | u}
     = \sum_{k=0}^\infty \ket{w_k} \phi_k \,,\]</div>
-<p>from which the projection coefficients <span class="math">\(\phi_k\)</span> are given by</p>
-<div class="math" id="equation-phi_ortho">
-<span class="eqno">(3)</span>\[\phi_k = \braket{w_k | u} \,.\]</div>
+<p>from which the projection coefficients <span class="math notranslate nohighlight">\(\phi_k\)</span> are given by</p>
+<div class="math notranslate nohighlight" id="equation-phi-ortho">
+<span class="eqno">(3)<a class="headerlink" href="#equation-phi-ortho" title="Permalink to this equation">¶</a></span>\[\phi_k = \braket{w_k | u} \,.\]</div>
 </div>
 <div class="section" id="projecting-to-nonorthogonal-basis">
 <h4>Projecting to Nonorthogonal Basis<a class="headerlink" href="#projecting-to-nonorthogonal-basis" title="Permalink to this headline">¶</a></h4>
-<p>In order to project onto a nonorthogonal basis <span class="math">\(\ket{v_k}\)</span> (for example a
+<p>In order to project onto a nonorthogonal basis <span class="math notranslate nohighlight">\(\ket{v_k}\)</span> (for example a
 finite element basis),
-we multiply <a href="#equation-proj_coeff">(2)</a> by <span class="math">\(\bra{v_l}\)</span> from the left and simplify:</p>
-<div class="math">
-\[\braket{v_l|P|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\]\[\braket{v_l|P^\dag|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\]\[\braket{v_l|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\]</div>
-<p>so we need to solve a linear system for the coefficients <span class="math">\(\phi_k\)</span>:</p>
-<div class="math" id="equation-linsystem_proj">
-<span class="eqno">(4)</span>\[A_{lk}\phi_k = f_l \,,\]</div>
+we multiply <a class="reference internal" href="#equation-proj-coeff">(2)</a> by <span class="math notranslate nohighlight">\(\bra{v_l}\)</span> from the left and simplify:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\braket{v_l|P|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\\\braket{v_l|P^\dag|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\\\braket{v_l|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k\end{aligned}\end{align} \]</div>
+<p>so we need to solve a linear system for the coefficients <span class="math notranslate nohighlight">\(\phi_k\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-linsystem-proj">
+<span class="eqno">(4)<a class="headerlink" href="#equation-linsystem-proj" title="Permalink to this equation">¶</a></span>\[A_{lk}\phi_k = f_l \,,\]</div>
 <p>where</p>
-<div class="math">
-\[A_{lk} = \braket{v_l|v_k}\]\[f_l = \braket{v_l|u} \,.\]</div>
-<p>This works for any basis, it doesn&#8217;t have to be normalized nor orthogonal.
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}A_{lk} = \braket{v_l|v_k}\\f_l = \braket{v_l|u} \,.\end{aligned}\end{align} \]</div>
+<p>This works for any basis, it doesn’t have to be normalized nor orthogonal.
 In the special case of a (normalized) orthogonal basis, we get
-<span class="math">\(A_{lk} = \braket{v_l|v_k}=\delta_{lk}\)</span> and from <a href="#equation-linsystem_proj">(4)</a> we get</p>
-<div class="math">
+<span class="math notranslate nohighlight">\(A_{lk} = \braket{v_l|v_k}=\delta_{lk}\)</span> and from <a class="reference internal" href="#equation-linsystem-proj">(4)</a> we get</p>
+<div class="math notranslate nohighlight">
 \[A_{lk}\phi_k = \delta_{lk} \phi_k = \phi_l = f_l = \braket{v_l|u}\,,\]</div>
-<p>so we recovered the equation <a href="#equation-phi_ortho">(3)</a> as expected.</p>
+<p>so we recovered the equation <a class="reference internal" href="#equation-phi-ortho">(3)</a> as expected.</p>
 </div>
 </div>
 <div class="section" id="id1">
 <h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p><span class="math">\(R^3\)</span> orthogonal projection. Orthogonal basis:</p>
-<div class="math">
-\[\begin{split}\ket{w_0} =
+<p><span class="math notranslate nohighlight">\(R^3\)</span> orthogonal projection. Orthogonal basis:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\ket{w_0} =
 \left(\begin{array}{c}
     1 \\
     0 \\
     0 \\
-    \end{array}\right)\end{split}\]\[\begin{split}\ket{w_1} =
+    \end{array}\right)\end{split}\\\begin{split}\ket{w_1} =
 \left(\begin{array}{c}
     0 \\
     1 \\
     0 \\
-    \end{array}\right)\end{split}\]\[\begin{split}P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
+    \end{array}\right)\end{split}\\\begin{split}P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
 \left(\begin{array}{ccc}
     1 &amp; 0 &amp; 0 \\
     0 &amp; 0 &amp; 0\\
@@ -322,20 +311,20 @@ In the special case of a (normalized) orthogonal basis, we get
     1 &amp; 0 &amp; 0 \\
     0 &amp; 1 &amp; 0\\
     0 &amp; 0 &amp; 0\\
-    \end{array}\right)\end{split}\]</div>
+    \end{array}\right)\end{split}\end{aligned}\end{align} \]</div>
 <p>Different orthogonal basis:</p>
-<div class="math">
-\[\begin{split}\ket{w_0} = {1\over\sqrt 2}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\ket{w_0} = {1\over\sqrt 2}
 \left(\begin{array}{c}
     1 \\
     1 \\
     0 \\
-    \end{array}\right)\end{split}\]\[\begin{split}\ket{w_1} = {1\over\sqrt 2}
+    \end{array}\right)\end{split}\\\begin{split}\ket{w_1} = {1\over\sqrt 2}
 \left(\begin{array}{c}
     1 \\
     -1 \\
     0 \\
-    \end{array}\right)\end{split}\]\[\begin{split}P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
+    \end{array}\right)\end{split}\\\begin{split}P = \ket{w_0}\bra{w_0} + \ket{w_1}\bra{w_1} =
 {1\over 2}
 \left(\begin{array}{ccc}
     1 &amp; 1 &amp; 0 \\
@@ -354,14 +343,14 @@ In the special case of a (normalized) orthogonal basis, we get
     1 &amp; 0 &amp; 0 \\
     0 &amp; 1 &amp; 0\\
     0 &amp; 0 &amp; 0\\
-    \end{array}\right)\end{split}\]</div>
-<p><span class="math">\(R^2\)</span> non-orthogonal (oblique) projection (<span class="math">\(\alpha\neq0\)</span>):</p>
-<div class="math">
-\[\begin{split}P =
+    \end{array}\right)\end{split}\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(R^2\)</span> non-orthogonal (oblique) projection (<span class="math notranslate nohighlight">\(\alpha\neq0\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}P =
 \left(\begin{array}{ccc}
     1 &amp; \alpha \\
     0 &amp; 0 \\
-    \end{array}\right)\end{split}\]\[\begin{split}P^2 =
+    \end{array}\right)\end{split}\\\begin{split}P^2 =
 \left(\begin{array}{ccc}
     1 &amp; \alpha \\
     0 &amp; 0 \\
@@ -375,12 +364,12 @@ In the special case of a (normalized) orthogonal basis, we get
     1 &amp; \alpha \\
     0 &amp; 0 \\
     \end{array}\right)
-= P\end{split}\]\[\begin{split}P^\dag = P^T =
+= P\end{split}\\\begin{split}P^\dag = P^T =
 \left(\begin{array}{ccc}
     1 &amp; 0 \\
     \alpha &amp; 0 \\
     \end{array}\right)
-\neq P\end{split}\]\[\begin{split}P \ket{u} =
+\neq P\end{split}\\\begin{split}P \ket{u} =
 \left(\begin{array}{ccc}
     1 &amp; \alpha \\
     0 &amp; 0 \\
@@ -393,35 +382,35 @@ In the special case of a (normalized) orthogonal basis, we get
 \left(\begin{array}{c}
     x + \alpha y \\
     0 \\
-    \end{array}\right)\end{split}\]</div>
-<p>Because the projection is not orthogonal (in the <span class="math">\(R^2\)</span> Euclidean scalar
-product), the projected point <span class="math">\((x + \alpha y, 0)\)</span> is not the closest point (in
-the induced Euclidean <span class="math">\(R^2\)</span> norm) to <span class="math">\((x, y)\)</span>. For <span class="math">\(\alpha=0\)</span> the projection
-becomes orthogonal and indeed the projected point <span class="math">\((x, 0)\)</span> then becomes the
-closest point to <span class="math">\((x, y)\)</span>.</p>
-<p>Lagrange interpolation projection onto the space <span class="math">\(\{1, x\}\)</span>:</p>
-<div class="math">
-\[\ket{u} = f(x)\]\[P\ket{u} = {f(1)+f(-1)\over 2} + x{f(1)-f(-1)\over 2}\]</div>
-<p><span class="math">\(L^2\)</span> projection onto the space <span class="math">\(\{1, x\}\)</span>. Orthogonal basis:</p>
-<div class="math">
-\[\ket{u} = f(x)\]\[\ket{w_0} = {1\over\sqrt2}\]\[\ket{w_1} = \sqrt{3\over2}x\]\[P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =\]\[    = {1\over\sqrt2} \int_{-1}^1 {1\over\sqrt2} f(x) \d x
+    \end{array}\right)\end{split}\end{aligned}\end{align} \]</div>
+<p>Because the projection is not orthogonal (in the <span class="math notranslate nohighlight">\(R^2\)</span> Euclidean scalar
+product), the projected point <span class="math notranslate nohighlight">\((x + \alpha y, 0)\)</span> is not the closest point (in
+the induced Euclidean <span class="math notranslate nohighlight">\(R^2\)</span> norm) to <span class="math notranslate nohighlight">\((x, y)\)</span>. For <span class="math notranslate nohighlight">\(\alpha=0\)</span> the projection
+becomes orthogonal and indeed the projected point <span class="math notranslate nohighlight">\((x, 0)\)</span> then becomes the
+closest point to <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
+<p>Lagrange interpolation projection onto the space <span class="math notranslate nohighlight">\(\{1, x\}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{u} = f(x)\\P\ket{u} = {f(1)+f(-1)\over 2} + x{f(1)-f(-1)\over 2}\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(L^2\)</span> projection onto the space <span class="math notranslate nohighlight">\(\{1, x\}\)</span>. Orthogonal basis:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{u} = f(x)\\\ket{w_0} = {1\over\sqrt2}\\\ket{w_1} = \sqrt{3\over2}x\\P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =\\    = {1\over\sqrt2} \int_{-1}^1 {1\over\sqrt2} f(x) \d x
         + \sqrt{3\over2}x \int_{-1}^1 \sqrt{3\over2}x f(x) \d x
-    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\]</div>
+    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\end{aligned}\end{align} \]</div>
 <p>Different orthogonal basis:</p>
-<div class="math">
-\[\ket{w_0} = {\sqrt6\over4}(1+x)\]\[\ket{w_1} = {\sqrt2\over4}(1-3x)\]\[P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =\]\[    = {\sqrt6\over4}(1+x) \int_{-1}^1 {\sqrt6\over4}(1+x) f(x) \d x
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{w_0} = {\sqrt6\over4}(1+x)\\\ket{w_1} = {\sqrt2\over4}(1-3x)\\P\ket{u} = \ket{w_0}\braket{w_0|u} + \ket{w_1}\braket{w_1|u} =\\    = {\sqrt6\over4}(1+x) \int_{-1}^1 {\sqrt6\over4}(1+x) f(x) \d x
     + {\sqrt2\over4}(1-3x) \int_{-1}^1 {\sqrt2\over4}(1-3x) f(x) \d x
-    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\]</div>
+    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\end{aligned}\end{align} \]</div>
 <p>Nonorthogonal basis:</p>
-<div class="math">
-\[\ket{w_0} = 1\]\[\ket{w_1} = 1 + x\]\[A_{lk}\phi_k = f_l\]\[\begin{split}A_{lk} = \left(\begin{array}{cc}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{w_0} = 1\\\ket{w_1} = 1 + x\\A_{lk}\phi_k = f_l\\\begin{split}A_{lk} = \left(\begin{array}{cc}
     A_{00} &amp; A_{01} \\
     A_{10} &amp; A_{11} \\
 \end{array}\right)=
 \left(\begin{array}{cc}
     \braket{w_0|w_0} &amp; \braket{w_0|w_1} \\
     \braket{w_1|w_0} &amp; \braket{w_1|w_1} \\
-\end{array}\right)=\end{split}\]\[\begin{split}=
+\end{array}\right)=\end{split}\\\begin{split}=
 \left(\begin{array}{cc}
     \int_{-1}^1 \d x &amp; \int_{-1}^1 1+x \,\d x \\
     \int_{-1}^1 1+x\,\d x &amp; \int_{-1}^1 (1+x)^2 \,\d x \\
@@ -429,11 +418,11 @@ closest point to <span class="math">\((x, y)\)</span>.</p>
 =\left(\begin{array}{cc}
     2 &amp; 2 \\
     2 &amp; {8\over3} \\
-\end{array}\right)\end{split}\]\[\begin{split}A_{kl}^{-1} =
+\end{array}\right)\end{split}\\\begin{split}A_{kl}^{-1} =
 \left(\begin{array}{cc}
     2 &amp; -{3\over2} \\
     -{3\over2} &amp; {3\over2} \\
-\end{array}\right)\end{split}\]\[\begin{split}f_{l} = \left(\begin{array}{c}
+\end{array}\right)\end{split}\\\begin{split}f_{l} = \left(\begin{array}{c}
     f_0 \\
     f_1 \\
 \end{array}\right)=
@@ -444,7 +433,7 @@ closest point to <span class="math">\((x, y)\)</span>.</p>
 \left(\begin{array}{c}
     \int_{-1}^1 f(x)\, \d x \\
     \int_{-1}^1 (1+x)f(x)\,\d x \\
-\end{array}\right)\end{split}\]\[\begin{split}\phi_k =
+\end{array}\right)\end{split}\\\begin{split}\phi_k =
 \left(\begin{array}{c}
     \phi_0 \\
     \phi_1 \\
@@ -457,23 +446,23 @@ A_{kl}^{-1} f_l =
 \left(\begin{array}{c}
     \int_{-1}^1 f(x)\, \d x \\
     \int_{-1}^1 (1+x)f(x)\,\d x \\
-\end{array}\right)=\end{split}\]\[\begin{split}=
+\end{array}\right)=\end{split}\\\begin{split}=
 \left(\begin{array}{c}
     2\int_{-1}^1 f(x) - {3\over2}(1+x)f(x)\d x \\
     -{3\over2}\int_{-1}^1 f(x) + {3\over2}(1+x)f(x)\d x \\
-\end{array}\right)=\end{split}\]\[P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =\]\[    = 1 \left(2\int_{-1}^1 f(x) - {3\over2}(1+x)f(x)\d x\right)
+\end{array}\right)=\end{split}\\P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =\\    = 1 \left(2\int_{-1}^1 f(x) - {3\over2}(1+x)f(x)\d x\right)
     + (1+x)\left(-{3\over2}\int_{-1}^1 f(x) + {3\over2}(1+x)f(x)\d x\right)
-    =\]\[    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\]</div>
-<p><span class="math">\(H^1\)</span> projection. Nonorthogonal basis:</p>
-<div class="math">
-\[\ket{w_0} = 1\]\[\ket{w_1} = 1 + x\]\[A_{lk}\phi_k = f_l\]\[\begin{split}A_{lk} = \left(\begin{array}{cc}
+    =\\    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over2}x \int_{-1}^1 x f(x) \d x\end{aligned}\end{align} \]</div>
+<p><span class="math notranslate nohighlight">\(H^1\)</span> projection. Nonorthogonal basis:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ket{w_0} = 1\\\ket{w_1} = 1 + x\\A_{lk}\phi_k = f_l\\\begin{split}A_{lk} = \left(\begin{array}{cc}
     A_{00} &amp; A_{01} \\
     A_{10} &amp; A_{11} \\
 \end{array}\right)=
 \left(\begin{array}{cc}
     \braket{w_0|w_0} &amp; \braket{w_0|w_1} \\
     \braket{w_1|w_0} &amp; \braket{w_1|w_1} \\
-\end{array}\right)=\end{split}\]\[\begin{split}=
+\end{array}\right)=\end{split}\\\begin{split}=
 \left(\begin{array}{cc}
     \int_{-1}^1 \d x &amp; \int_{-1}^1 1+x \,\d x \\
     \int_{-1}^1 1+x\,\d x &amp; \int_{-1}^1 (1+x)^2 + 1 \,\d x \\
@@ -481,11 +470,11 @@ A_{kl}^{-1} f_l =
 =\left(\begin{array}{cc}
     2 &amp; 2 \\
     2 &amp; {14\over3} \\
-\end{array}\right)\end{split}\]\[\begin{split}A_{kl}^{-1} =
+\end{array}\right)\end{split}\\\begin{split}A_{kl}^{-1} =
 \left(\begin{array}{cc}
     {7\over8} &amp; -{3\over8} \\
     -{3\over8} &amp; {3\over8} \\
-\end{array}\right)\end{split}\]\[\begin{split}f_{l} = \left(\begin{array}{c}
+\end{array}\right)\end{split}\\\begin{split}f_{l} = \left(\begin{array}{c}
     f_0 \\
     f_1 \\
 \end{array}\right)=
@@ -496,7 +485,7 @@ A_{kl}^{-1} f_l =
 \left(\begin{array}{c}
     \int_{-1}^1 f(x)\, \d x \\
     \int_{-1}^1 (1+x)f(x) + f'(x)\,\d x \\
-\end{array}\right)\end{split}\]\[\begin{split}\phi_k =
+\end{array}\right)\end{split}\\\begin{split}\phi_k =
 \left(\begin{array}{c}
     \phi_0 \\
     \phi_1 \\
@@ -509,16 +498,16 @@ A_{kl}^{-1} f_l =
 \left(\begin{array}{c}
     \int_{-1}^1 f(x)\, \d x \\
     \int_{-1}^1 (1+x)f(x) +f'(x)\,\d x \\
-\end{array}\right)=\end{split}\]\[\begin{split}=
+\end{array}\right)=\end{split}\\\begin{split}=
 \left(\begin{array}{c}
     \int_{-1}^1  {7\over8}f(x) - {3\over8}(1+x)f(x)- {3\over8}f'(x)\d x \\
     \int_{-1}^1 -{3\over8}f(x) + {3\over8}(1+x)f(x)+ {3\over8}f'(x)\d x \\
-\end{array}\right)=\end{split}\]\[P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =\]\[    = 1 \left(\int_{-1}^1 {7\over8}f(x) - {3\over8}(1+x)f(x)- {3\over8}f'(x)\d x\right)
+\end{array}\right)=\end{split}\\P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =\\    = 1 \left(\int_{-1}^1 {7\over8}f(x) - {3\over8}(1+x)f(x)- {3\over8}f'(x)\d x\right)
     + (1+x)\left(\int_{-1}^1 -{3\over8}f(x) + {3\over8}(1+x)f(x)+ {3\over8}f'(x)\d x\right)
-    =\]\[    = \int_{-1}^1 {1\over2}f(x)-{3\over8}f'(x) \d x
-    + x \int_{-1}^1 {3\over8}x f(x)+{3\over8}f'(x) \d x=\]\[    = \int_{-1}^1 {1\over2}f(x) \d x + x \int_{-1}^1 {3\over8}x f(x) \d x
-        -{3\over8}(f(1)-f(-1)) + {3\over8}x(f(1)-f(-1))=\]\[    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over8}x \int_{-1}^1 x f(x) \d x
-        +{3\over8}(-1+x)(f(1)-f(-1))\]</div>
+    =\\    = \int_{-1}^1 {1\over2}f(x)-{3\over8}f'(x) \d x
+    + x \int_{-1}^1 {3\over8}x f(x)+{3\over8}f'(x) \d x=\\    = \int_{-1}^1 {1\over2}f(x) \d x + x \int_{-1}^1 {3\over8}x f(x) \d x
+        -{3\over8}(f(1)-f(-1)) + {3\over8}x(f(1)-f(-1))=\\    = {1\over2}\int_{-1}^1 f(x) \d x + {3\over8}x \int_{-1}^1 x f(x) \d x
+        +{3\over8}(-1+x)(f(1)-f(-1))\end{aligned}\end{align} \]</div>
 </div>
 </div>
 </div>
@@ -527,7 +516,7 @@ A_{kl}^{-1} f_l =
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -555,29 +544,30 @@ A_{kl}^{-1} f_l =
   <h4>Next topic</h4>
   <p class="topless"><a href="differential-geometry.html"
                         title="next chapter">Differential Geometry</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/la.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/la.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -589,13 +579,13 @@ A_{kl}^{-1} f_l =
         <li class="right" >
           <a href="ode.html" title="Ordinary Differential Equations"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Groups &mdash; Theoretical Physics Reference 0.5 documentation</title>
-    
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>Groups &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '0.5',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Theoretical Physics Reference 0.5 documentation" href="../index.html" />
-    <link rel="up" title="Mathematics" href="main.html" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Wigner D Function" href="wigner.html" />
     <link rel="prev" title="Feynman Parameters" href="feynman-parameters.html" />
     <script type="text/javascript">
@@ -43,8 +33,7 @@
     </script>
      
 
-  </head>
-  <body>
+  </head><body>
     <div style="display:none">
     \(
         \newcommand{\d}{\mathrm{d}}
@@ -61,7 +50,7 @@
     </div>
     
 
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -73,15 +62,15 @@
         <li class="right" >
           <a href="feynman-parameters.html" title="Feynman Parameters"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" accesskey="U">Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="groups">
 <h1>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
@@ -94,21 +83,21 @@ be able to quickly recover our forgotten ideas.</p>
 <p>Definition of a group:</p>
 <blockquote>
 <div><ul class="simple">
-<li>I1: <span class="math">\(x,y \in G  \Rightarrow  xy \in G\)</span></li>
-<li>I2: there exist <span class="math">\(e\)</span> such that <span class="math">\(ex=xe=x\)</span> for each <span class="math">\(x\in G\)</span></li>
-<li>I3: there exist <span class="math">\(x^{-1}\)</span> such that <span class="math">\(xx^{-1}=x^{-1}x=e\)</span> for each <span class="math">\(x\in G\)</span></li>
-<li>I4: <span class="math">\((xy)z=x(yz)\)</span> for each <span class="math">\(x,y,z\in G\)</span></li>
+<li>I1: <span class="math notranslate nohighlight">\(x,y \in G  \Rightarrow  xy \in G\)</span></li>
+<li>I2: there exist <span class="math notranslate nohighlight">\(e\)</span> such that <span class="math notranslate nohighlight">\(ex=xe=x\)</span> for each <span class="math notranslate nohighlight">\(x\in G\)</span></li>
+<li>I3: there exist <span class="math notranslate nohighlight">\(x^{-1}\)</span> such that <span class="math notranslate nohighlight">\(xx^{-1}=x^{-1}x=e\)</span> for each <span class="math notranslate nohighlight">\(x\in G\)</span></li>
+<li>I4: <span class="math notranslate nohighlight">\((xy)z=x(yz)\)</span> for each <span class="math notranslate nohighlight">\(x,y,z\in G\)</span></li>
 </ul>
 </div></blockquote>
-<p>Every finite group is isomorphic to a subgroup of <span class="math">\(S_n\)</span> (permutations).</p>
+<p>Every finite group is isomorphic to a subgroup of <span class="math notranslate nohighlight">\(S_n\)</span> (permutations).</p>
 <div class="section" id="representation">
 <h3>Representation<a class="headerlink" href="#representation" title="Permalink to this headline">¶</a></h3>
-<p>Set of linear operators <span class="math">\(T(x)\)</span> (for each <span class="math">\(x\in G\)</span> there is one <span class="math">\(T(x)\)</span>)</p>
-<div class="math">
+<p>Set of linear operators <span class="math notranslate nohighlight">\(T(x)\)</span> (for each <span class="math notranslate nohighlight">\(x\in G\)</span> there is one <span class="math notranslate nohighlight">\(T(x)\)</span>)</p>
+<div class="math notranslate nohighlight">
 \[T(x)T(y)=T(xy),\quad T(e)={\hbox{\dsrom 1}}\,.\]</div>
-<p><span class="math">\(T(x)\)</span> fulfills all the group axioms I1, I2, I3, I4. The requirement <span class="math">\(T(e)=1\)</span> is
+<p><span class="math notranslate nohighlight">\(T(x)\)</span> fulfills all the group axioms I1, I2, I3, I4. The requirement <span class="math notranslate nohighlight">\(T(e)=1\)</span> is
 non-trivial, consider for example the following 4 matrices</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}T(\bsigma)=\begin{pmatrix}
     \bsigma &amp; 0 \\
     0       &amp; 0 \\
@@ -116,63 +105,63 @@ non-trivial, consider for example the following 4 matrices</p>
                 \hbox{\dsrom 1} &amp; 0 \\
                 0               &amp; 0 \\
                             \end{pmatrix}\,,\end{split}\]</div>
-<p>that fulfill <span class="math">\(T(x)T(y)=T(xy)\)</span> but not <span class="math">\(T(e)={\hbox{\dsrom 1}}\)</span>.</p>
-<p>The representation <span class="math">\(T(x)\)</span> is said to be <em>faithful</em> if there is a one-to-one
-relationship between <span class="math">\(T(x)\)</span> and <span class="math">\(x\)</span> (an isomorphism).</p>
-<p>Equivalent representations <span class="math">\(T_1\)</span> and <span class="math">\(T_2\)</span>: there exist <span class="math">\(S\)</span> such that
-<span class="math">\(T_2=ST_1(x)S^{-1}\)</span> for each <span class="math">\(x\in G\)</span>.</p>
-<p>Reducible representation <span class="math">\(T(x)\)</span>: there exist an equivalent representation that
+<p>that fulfill <span class="math notranslate nohighlight">\(T(x)T(y)=T(xy)\)</span> but not <span class="math notranslate nohighlight">\(T(e)={\hbox{\dsrom 1}}\)</span>.</p>
+<p>The representation <span class="math notranslate nohighlight">\(T(x)\)</span> is said to be <em>faithful</em> if there is a one-to-one
+relationship between <span class="math notranslate nohighlight">\(T(x)\)</span> and <span class="math notranslate nohighlight">\(x\)</span> (an isomorphism).</p>
+<p>Equivalent representations <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span>: there exist <span class="math notranslate nohighlight">\(S\)</span> such that
+<span class="math notranslate nohighlight">\(T_2=ST_1(x)S^{-1}\)</span> for each <span class="math notranslate nohighlight">\(x\in G\)</span>.</p>
+<p>Reducible representation <span class="math notranslate nohighlight">\(T(x)\)</span>: there exist an equivalent representation that
 is diagonal:</p>
-<div class="math" id="equation-eq-1-1">
-<span class="eqno">(1)</span>\[\begin{split}T'(x)=ST(x)S^{-1}=\begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-eq-1-1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-1-1" title="Permalink to this equation">¶</a></span>\[\begin{split}T'(x)=ST(x)S^{-1}=\begin{pmatrix}
     T_1' &amp; 0 \\
     0    &amp; T_2' \\
     \end{pmatrix}\,, \qquad \forall x\in G\,.\end{split}\]</div>
-<p>We say that <span class="math">\(T'\)</span> is a direct sum of <span class="math">\(T_1'\)</span> and <span class="math">\(T_2'\)</span>: <span class="math">\(T'=T_1'\oplus T_2'\)</span>.</p>
+<p>We say that <span class="math notranslate nohighlight">\(T'\)</span> is a direct sum of <span class="math notranslate nohighlight">\(T_1'\)</span> and <span class="math notranslate nohighlight">\(T_2'\)</span>: <span class="math notranslate nohighlight">\(T'=T_1'\oplus T_2'\)</span>.</p>
 <p>Irreducible representation: is not reducible.</p>
-<p>Conjugate element: <span class="math">\(x\)</span> is conjugate to <span class="math">\(y\)</span> (<span class="math">\(x\sim y\)</span>) if there exist <span class="math">\(c\)</span> such that:</p>
-<div class="math">
+<p>Conjugate element: <span class="math notranslate nohighlight">\(x\)</span> is conjugate to <span class="math notranslate nohighlight">\(y\)</span> (<span class="math notranslate nohighlight">\(x\sim y\)</span>) if there exist <span class="math notranslate nohighlight">\(c\)</span> such that:</p>
+<div class="math notranslate nohighlight">
 \[x=cyc^{-1}\]</div>
-<p>if <span class="math">\(x\sim y\)</span> and <span class="math">\(y\sim z\)</span> then <span class="math">\(x\sim z\)</span>.</p>
+<p>if <span class="math notranslate nohighlight">\(x\sim y\)</span> and <span class="math notranslate nohighlight">\(y\sim z\)</span> then <span class="math notranslate nohighlight">\(x\sim z\)</span>.</p>
 <p>Conjugate class: elements which are all conjugate to each other</p>
-<p>No element may belong to more than one class <span class="math">\(\Rightarrow\)</span> every group may be
+<p>No element may belong to more than one class <span class="math notranslate nohighlight">\(\Rightarrow\)</span> every group may be
 broken up into separate classes.</p>
-<p>Character <span class="math">\(\chi\)</span> of the representation <span class="math">\(T(x)\)</span>: set of numbers <span class="math">\(\chi(x)=\Tr
-T(x)\)</span> as the group element <span class="math">\(x\)</span> runs through the group.</p>
+<p>Character <span class="math notranslate nohighlight">\(\chi\)</span> of the representation <span class="math notranslate nohighlight">\(T(x)\)</span>: set of numbers <span class="math notranslate nohighlight">\(\chi(x)=\Tr
+T(x)\)</span> as the group element <span class="math notranslate nohighlight">\(x\)</span> runs through the group.</p>
 <p>Equivalent representations have the same character:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\chi'(x)=\Tr T'(x)=\Tr ST(x)S^{-1}=\Tr T(x)=\chi(x)\]</div>
 <p>Representations having the same character are equivalent.</p>
 <p>Proof: Characters can be thought of as elements of a q-dimensional vector space
 where q is the number of conjugacy classes. Using the orthogonality relations
 derived above, we find that the q characters for the q inequivalent irreducible
-representations forms a basis set. Also, according to Maschke&#8217;s theorem, both
+representations forms a basis set. Also, according to Maschke’s theorem, both
 representations can be expressed as the direct sum of irreducible
 representations. Since the character of the direct sum of representations is
 the sum of their characters, from linear algebra, we see they are equivalent.</p>
 <p>All the elements in the same class have the same character.</p>
-<p>Maschke&#8217;s theorem: for finite groups, every class of equivalent representations
+<p>Maschke’s theorem: for finite groups, every class of equivalent representations
 contains unitary representations. The theorem is also true for most infinite
 groups of interest in physics.</p>
-<p>Let <span class="math">\(T\)</span> be a reducible representation, then:</p>
-<div class="math">
+<p>Let <span class="math notranslate nohighlight">\(T\)</span> be a reducible representation, then:</p>
+<div class="math notranslate nohighlight">
 \[T=m_1T^{(1)} \oplus m_2T^{(2)} \oplus m_3T^{(3)}\oplus \cdots\]</div>
-<p>where <span class="math">\(T^{(1)}\)</span>, <span class="math">\(T^{(2)}\)</span>, <span class="math">\(T^{(3)}\)</span> dots are all the inequivalent
-irreducible representations and <span class="math">\(m_\alpha\)</span> (<span class="math">\(\alpha=1,2,3,\dots\)</span>) gives the
-number of times that the irreducible representation <span class="math">\(T^{(\alpha)}\)</span> occurs in
+<p>where <span class="math notranslate nohighlight">\(T^{(1)}\)</span>, <span class="math notranslate nohighlight">\(T^{(2)}\)</span>, <span class="math notranslate nohighlight">\(T^{(3)}\)</span> dots are all the inequivalent
+irreducible representations and <span class="math notranslate nohighlight">\(m_\alpha\)</span> (<span class="math notranslate nohighlight">\(\alpha=1,2,3,\dots\)</span>) gives the
+number of times that the irreducible representation <span class="math notranslate nohighlight">\(T^{(\alpha)}\)</span> occurs in
 the reduction.</p>
 <p>Similar relation holds for group characters:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\chi=m_1\chi^{(1)} + m_2\chi^{(2)} + m_3\chi^{(3)} + \cdots\]</div>
 <p>and it can be shown <a class="reference internal" href="#elliott" id="id1">[Elliott]</a> (eq. 4.28, page 63):</p>
-<div class="math">
-\[m_\alpha={1\over g}\sum_{x\in G} \chi^{(\alpha)*}(x)\chi(x)=\]\[= {1\over g}\sum_{p} c_p\chi^{(\alpha)*}_p\chi_p\]</div>
-<p>where <span class="math">\(c_p\)</span> is the number of elements in the class <span class="math">\(p\)</span>, <span class="math">\(g\)</span> is the number of
-elements in <span class="math">\(G\)</span> (the order of the group).</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}m_\alpha={1\over g}\sum_{x\in G} \chi^{(\alpha)*}(x)\chi(x)=\\= {1\over g}\sum_{p} c_p\chi^{(\alpha)*}_p\chi_p\end{aligned}\end{align} \]</div>
+<p>where <span class="math notranslate nohighlight">\(c_p\)</span> is the number of elements in the class <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(g\)</span> is the number of
+elements in <span class="math notranslate nohighlight">\(G\)</span> (the order of the group).</p>
 <div class="section" id="example">
 <h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
-<p>Consider the <span class="math">\(S_3\)</span> permutation group. The character table is:</p>
-<div class="math">
+<p>Consider the <span class="math notranslate nohighlight">\(S_3\)</span> permutation group. The character table is:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 S_3    &amp; e &amp; 3 (1 2) &amp; 2 (1 2 3) \\
 \hline
@@ -180,29 +169,29 @@ S_3    &amp; e &amp; 3 (1 2) &amp; 2 (1 2 3) \\
  A_2   &amp; 1 &amp;  -1     &amp;  1 \\
   E    &amp; 2 &amp;   0     &amp; -1 \\
 \end{array}\end{split}\]</div>
-<p>From the table we read <span class="math">\(c_1 = 1\)</span>, <span class="math">\(c_2 = 3\)</span>, <span class="math">\(c_3 = 2\)</span> and
-<span class="math">\(g = c_1 + c_2 + c_3 = 1 + 3 + 2 = 6\)</span>. There are 3 classes and 3 irreducible
+<p>From the table we read <span class="math notranslate nohighlight">\(c_1 = 1\)</span>, <span class="math notranslate nohighlight">\(c_2 = 3\)</span>, <span class="math notranslate nohighlight">\(c_3 = 2\)</span> and
+<span class="math notranslate nohighlight">\(g = c_1 + c_2 + c_3 = 1 + 3 + 2 = 6\)</span>. There are 3 classes and 3 irreducible
 representations.</p>
 <dl class="docutils">
 <dt>Case I</dt>
 <dd><p class="first">We are given a representation given by the following matrices:</p>
-<div class="math">
-\[\begin{split}e = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}e = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = \half\begin{pmatrix} 1 &amp; -\sqrt{3} \\ -\sqrt{3} &amp; -1 \end{pmatrix},
     \quad\quad
-b = \half\begin{pmatrix} 1 &amp; \sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix},\end{split}\]\[\begin{split}c = \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
+b = \half\begin{pmatrix} 1 &amp; \sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix},\end{split}\\\begin{split}c = \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 d = \half\begin{pmatrix} -1 &amp; \sqrt{3} \\ -\sqrt{3} &amp; -1 \end{pmatrix},
     \quad\quad
-f = \half\begin{pmatrix} -1 &amp; -\sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix}.\end{split}\]</div>
+f = \half\begin{pmatrix} -1 &amp; -\sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix}.\end{split}\end{aligned}\end{align} \]</div>
 <p>These 6 matrices belong to the following three classes
-<span class="math">\(\{e\}\)</span>, <span class="math">\(\{a, b, c\}\)</span>, <span class="math">\(\{d, f\}\)</span> and the corresponding characters for
+<span class="math notranslate nohighlight">\(\{e\}\)</span>, <span class="math notranslate nohighlight">\(\{a, b, c\}\)</span>, <span class="math notranslate nohighlight">\(\{d, f\}\)</span> and the corresponding characters for
 each class are:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\chi_1 &amp;= 2 \\
 \chi_2 &amp;= 0 \\
 \chi_3 &amp;= -1\end{split}\]</div>
 <p>and we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
     + 2\cdot1\cdot (-1)) = 0 \\
 m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
@@ -210,23 +199,23 @@ m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
 m_3 &amp;= {1\over 6} (1\cdot 2\cdot 2 + 3\cdot 0\cdot 0
     + 2\cdot(-1)\cdot (-1)) = 1\\\end{split}\]</div>
 <p class="last">So this representation is irreducible and it is equivalent to
-<span class="math">\(m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = E\)</span>.</p>
+<span class="math notranslate nohighlight">\(m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = E\)</span>.</p>
 </dd>
 <dt>Case II</dt>
 <dd><p class="first">We are given a representation given by the following matrices:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = b = c = \half\begin{pmatrix} -1 &amp; -\sqrt{3} \\ -\sqrt{3} &amp; 1
     \end{pmatrix}.\end{split}\]</div>
 <p>These 6 matrices belong to the following three classes
-<span class="math">\(\{e\}\)</span>, <span class="math">\(\{a, b, c\}\)</span>, <span class="math">\(\{d, f\}\)</span> and the corresponding characters for
+<span class="math notranslate nohighlight">\(\{e\}\)</span>, <span class="math notranslate nohighlight">\(\{a, b, c\}\)</span>, <span class="math notranslate nohighlight">\(\{d, f\}\)</span> and the corresponding characters for
 each class are:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\chi_1 &amp;= 2 \\
 \chi_2 &amp;= 0 \\
 \chi_3 &amp;= 2\end{split}\]</div>
 <p>and we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
     + 2\cdot1\cdot 2) = 1 \\
 m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
@@ -234,9 +223,9 @@ m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
 m_3 &amp;= {1\over 6} (1\cdot 2\cdot 2 + 3\cdot 0\cdot 0
     + 2\cdot(-1)\cdot 2) = 0\\\end{split}\]</div>
 <p>So this representation is reducible and it is equivalent to
-<span class="math">\(m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = A_1 \oplus A_2\)</span>.
+<span class="math notranslate nohighlight">\(m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = A_1 \oplus A_2\)</span>.
 The matrices are equivalent to:</p>
-<div class="last math">
+<div class="last math notranslate nohighlight">
 \[\begin{split}e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = b = c = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}.\end{split}\]</div>
 </dd>
@@ -245,34 +234,34 @@ a = b = c = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}.\end{split}\]<
 </div>
 <div class="section" id="other-facts">
 <h3>Other facts<a class="headerlink" href="#other-facts" title="Permalink to this headline">¶</a></h3>
-<p>Number of irreducible representations <span class="math">\(=\)</span> the number of classes.</p>
+<p>Number of irreducible representations <span class="math notranslate nohighlight">\(=\)</span> the number of classes.</p>
 <dl class="docutils">
-<dt>Regular representation of <span class="math">\(G\)</span>:</dt>
-<dd><p class="first">Take <span class="math">\(R^n\)</span> with <span class="math">\(n=\# G\)</span> and assign a canonical basis to the elements <span class="math">\(g_i\)</span>
-of <span class="math">\(G\)</span>. A matrix <span class="math">\(A_a\)</span> assigned to <span class="math">\(a\in G\)</span> now describes the mapping
-<span class="math">\((g_1,g_2,\ldots)\mapsto (ag_1,ag_2,\ldots)\)</span>, i.e. in if <span class="math">\(ag_1=g_5\)</span>, then
+<dt>Regular representation of <span class="math notranslate nohighlight">\(G\)</span>:</dt>
+<dd><p class="first">Take <span class="math notranslate nohighlight">\(R^n\)</span> with <span class="math notranslate nohighlight">\(n=\# G\)</span> and assign a canonical basis to the elements <span class="math notranslate nohighlight">\(g_i\)</span>
+of <span class="math notranslate nohighlight">\(G\)</span>. A matrix <span class="math notranslate nohighlight">\(A_a\)</span> assigned to <span class="math notranslate nohighlight">\(a\in G\)</span> now describes the mapping
+<span class="math notranslate nohighlight">\((g_1,g_2,\ldots)\mapsto (ag_1,ag_2,\ldots)\)</span>, i.e. in if <span class="math notranslate nohighlight">\(ag_1=g_5\)</span>, then
 the fifth element of the first row is one and others of that row are zero
-in <span class="math">\(A_a\)</span>. Each IR of the reg. rep. occurs in its decomposition with the
+in <span class="math notranslate nohighlight">\(A_a\)</span>. Each IR of the reg. rep. occurs in its decomposition with the
 multiplicity equal to its dimension. Thus (p. 65, <a class="reference internal" href="#sternberg" id="id2">[Sternberg]</a>)</p>
 <blockquote class="last">
-<div><div class="math">
+<div><div class="math notranslate nohighlight">
 \[\# G = \sum p_i^2\,.\]</div>
 </div></blockquote>
 </dd>
 <dt>Element Order</dt>
-<dd>The order <span class="math">\(n\)</span> of an element <span class="math">\(g\)</span> is the least integer for which <span class="math">\(g^n=e\)</span>.
-The order <span class="math">\(n\)</span> can be determined from the group multiplication table for
+<dd>The order <span class="math notranslate nohighlight">\(n\)</span> of an element <span class="math notranslate nohighlight">\(g\)</span> is the least integer for which <span class="math notranslate nohighlight">\(g^n=e\)</span>.
+The order <span class="math notranslate nohighlight">\(n\)</span> can be determined from the group multiplication table for
 example.
-Theorem: <span class="math">\(n\)</span> must divide the size (order) of the group (for finite groups).
+Theorem: <span class="math notranslate nohighlight">\(n\)</span> must divide the size (order) of the group (for finite groups).
 Example: For a group of six elements, the only possible orders are 1, 2, 3
 and 6.
 Note: the element order is the same for the whole conjugacy class because:
-<span class="math">\(x^n = \left(c y c^{-1}\right)^n = c y^n c^{-1} = c e c^{-1} = e\)</span>.</dd>
-<dt>Schur&#8217;s lemma</dt>
-<dd><p class="first">(a) Be <span class="math">\(r\)</span> an IR of <span class="math">\(G\)</span>. If <span class="math">\([r(a),T]=0\)</span>, <span class="math">\(\forall a\in G\)</span>, then
-<span class="math">\(T=cI\)</span>.</p>
-<p class="last">(b) Be <span class="math">\(r_1\)</span>, <span class="math">\(r_2\)</span> two inequivalent IRs of <span class="math">\(G\)</span>. Then
-<span class="math">\(r_1(a)T=Tr_2(a)\)</span> valid <span class="math">\(\forall a\in G\)</span> implies <span class="math">\(T=0\)</span>. See p. 55 in
+<span class="math notranslate nohighlight">\(x^n = \left(c y c^{-1}\right)^n = c y^n c^{-1} = c e c^{-1} = e\)</span>.</dd>
+<dt>Schur’s lemma</dt>
+<dd><p class="first">(a) Be <span class="math notranslate nohighlight">\(r\)</span> an IR of <span class="math notranslate nohighlight">\(G\)</span>. If <span class="math notranslate nohighlight">\([r(a),T]=0\)</span>, <span class="math notranslate nohighlight">\(\forall a\in G\)</span>, then
+<span class="math notranslate nohighlight">\(T=cI\)</span>.</p>
+<p class="last">(b) Be <span class="math notranslate nohighlight">\(r_1\)</span>, <span class="math notranslate nohighlight">\(r_2\)</span> two inequivalent IRs of <span class="math notranslate nohighlight">\(G\)</span>. Then
+<span class="math notranslate nohighlight">\(r_1(a)T=Tr_2(a)\)</span> valid <span class="math notranslate nohighlight">\(\forall a\in G\)</span> implies <span class="math notranslate nohighlight">\(T=0\)</span>. See p. 55 in
 <a class="reference internal" href="#sternberg" id="id3">[Sternberg]</a>. This can be used to derive the orthogonality relations for
 characters.</p>
 </dd>
@@ -281,63 +270,63 @@ characters.</p>
 (p. 52) and compact (p. 179 in <a class="reference internal" href="#sternberg" id="id4">[Sternberg]</a>) groups. Counterexample for
 larger groups, p. 53.</dd>
 <dt>Sum of reps.</dt>
-<dd>Opposite process to reduction, <span class="math">\(\rho\oplus\sigma\)</span>, it
-lives on the direct sum of the two vector spaces of <span class="math">\(\rho\)</span> and <span class="math">\(\sigma\)</span>.</dd>
+<dd>Opposite process to reduction, <span class="math notranslate nohighlight">\(\rho\oplus\sigma\)</span>, it
+lives on the direct sum of the two vector spaces of <span class="math notranslate nohighlight">\(\rho\)</span> and <span class="math notranslate nohighlight">\(\sigma\)</span>.</dd>
 </dl>
-<p>Take an IR <span class="math">\(\rho\)</span> of <span class="math">\(G\)</span>. Then <span class="math">\(\rho\)</span> will also be a rep. of any subgroup
-<span class="math">\(H\subset G\)</span>, but it need not be an IR, because the condition for
-reducibility, Eq. <a href="#equation-eq-1-1">(1)</a>, is less strict: it suffices if the matrices
-<span class="math">\(T(g)\)</span> are simultaneously block diagonal only for <span class="math">\(g\in H\)</span>, not for all <span class="math">\(g\in
-G\)</span>. This is called <em>restriction</em> and it is denoted by <span class="math">\(\downarrow\)</span>.</p>
-<p><em>Induced representation</em>, denoted by <span class="math">\(\uparrow\)</span>, is an opposite of the
-restriction. It works as follows: if <span class="math">\(F=G\otimes H\)</span>, then
-<span class="math">\(\rho(f)=\rho(g)\)</span>, when <span class="math">\(f=g\otimes h\)</span>.</p>
-<p><em>Product of representations</em>, <span class="math">\(\rho\otimes\sigma\)</span> lives on the direct product
+<p>Take an IR <span class="math notranslate nohighlight">\(\rho\)</span> of <span class="math notranslate nohighlight">\(G\)</span>. Then <span class="math notranslate nohighlight">\(\rho\)</span> will also be a rep. of any subgroup
+<span class="math notranslate nohighlight">\(H\subset G\)</span>, but it need not be an IR, because the condition for
+reducibility, Eq. <a class="reference internal" href="#equation-eq-1-1">(1)</a>, is less strict: it suffices if the matrices
+<span class="math notranslate nohighlight">\(T(g)\)</span> are simultaneously block diagonal only for <span class="math notranslate nohighlight">\(g\in H\)</span>, not for all <span class="math notranslate nohighlight">\(g\in
+G\)</span>. This is called <em>restriction</em> and it is denoted by <span class="math notranslate nohighlight">\(\downarrow\)</span>.</p>
+<p><em>Induced representation</em>, denoted by <span class="math notranslate nohighlight">\(\uparrow\)</span>, is an opposite of the
+restriction. It works as follows: if <span class="math notranslate nohighlight">\(F=G\otimes H\)</span>, then
+<span class="math notranslate nohighlight">\(\rho(f)=\rho(g)\)</span>, when <span class="math notranslate nohighlight">\(f=g\otimes h\)</span>.</p>
+<p><em>Product of representations</em>, <span class="math notranslate nohighlight">\(\rho\otimes\sigma\)</span> lives on the direct product
 of the two vector spaces. Product of IRs need not be an IR. Most prominent
 example: adding of angular momenta.</p>
 </div>
 <div class="section" id="interesting-examples">
 <h3>Interesting examples<a class="headerlink" href="#interesting-examples" title="Permalink to this headline">¶</a></h3>
-<p><span class="math">\(O\)</span> and <span class="math">\(T_d\)</span> (see <a class="reference internal" href="#point-groups"><em>Crystallographic Point Groups</em></a>) are isomorphic to <span class="math">\(S_4\)</span> (p. 35
+<p><span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(T_d\)</span> (see <a class="reference internal" href="#point-groups"><span class="std std-ref">Crystallographic Point Groups</span></a>) are isomorphic to <span class="math notranslate nohighlight">\(S_4\)</span> (p. 35
 in <a class="reference internal" href="#sternberg" id="id5">[Sternberg]</a>). Written as matrices in 3D,
-they are 3D representations. Since <span class="math">\(O\)</span> has only <span class="math">\(\det A=1\)</span> matrices unlike
-<span class="math">\(T_d\)</span>, they are inequivalent.</p>
-<p>Homeomorphism of <span class="math">\(SL(2,C)\)</span> into the Lorentz group [or <span class="math">\(SU(2)\)</span> into <span class="math">\(SO(3)\)</span>],
-p. 7 <a class="reference internal" href="#sternberg" id="id6">[Sternberg]</a>}. Start with the following <span class="math">\(1-1\)</span> correspondence between
-<span class="math">\(\vec{x}\)</span> and <span class="math">\(x\)</span>:</p>
-<div class="math">
+they are 3D representations. Since <span class="math notranslate nohighlight">\(O\)</span> has only <span class="math notranslate nohighlight">\(\det A=1\)</span> matrices unlike
+<span class="math notranslate nohighlight">\(T_d\)</span>, they are inequivalent.</p>
+<p>Homeomorphism of <span class="math notranslate nohighlight">\(SL(2,C)\)</span> into the Lorentz group [or <span class="math notranslate nohighlight">\(SU(2)\)</span> into <span class="math notranslate nohighlight">\(SO(3)\)</span>],
+p. 7 <a class="reference internal" href="#sternberg" id="id6">[Sternberg]</a>}. Start with the following <span class="math notranslate nohighlight">\(1-1\)</span> correspondence between
+<span class="math notranslate nohighlight">\(\vec{x}\)</span> and <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\vec{x}=(x_0,x_1,x_2,x_3)^T\,,\qquad
 x=\begin{pmatrix}
   x_0+x_3  &amp; x_1-ix_2 \\
   x_1+ix_2 &amp; x_0-x_3
   \end{pmatrix}\,.\end{split}\]</div>
-<p>For any matrix of <span class="math">\(A\in SL(2,C)\)</span> take <span class="math">\(AxA^*=x'\)</span>. Decode <span class="math">\(x'\)</span> into <span class="math">\(\vec{x}'\)</span>
-and the relation between <span class="math">\(\vec{x}\)</span> and <span class="math">\(\vec{x}'\)</span> defines uniquely a Lorentz
-transformation; thus <span class="math">\(A\)</span> was mapped into some Lorentz group element. If
-<span class="math">\(x_0=0\)</span> this gives a mapping from <span class="math">\(SU(2)\)</span> into <span class="math">\(SO(3)\)</span>. The mapping is <span class="math">\(2-1\)</span>
-because <span class="math">\(A\)</span> and <span class="math">\(-A\)</span> give the same <span class="math">\(x'\)</span>.</p>
-<p><span class="math">\(SO(3)\)</span> is not simply connected. Consider matrices
-<span class="math">\(U_{\theta}=diag(e^{-i\theta}, e^{i\theta})\in SU(2)\)</span>, <span class="math">\(\theta\in[0,\pi]\)</span>.
-These map into <span class="math">\(SO(3)\)</span> rotations by <span class="math">\(2\theta\)</span> around the <span class="math">\(z\)</span>&#8211;axis. These
-matrices <span class="math">\(A_\theta=R_{z,2\theta}\)</span> in <span class="math">\(SO(3)\)</span> form a closed loop,
-<span class="math">\(R_{z,0}=R_{z,2\pi}\)</span>. If <span class="math">\(SO(3)\)</span> were simply connected it would be possible to
-contract this loop into a point while keeping <span class="math">\(A_0\)</span> and <span class="math">\(A_\pi\)</span> unchanged. But
+<p>For any matrix of <span class="math notranslate nohighlight">\(A\in SL(2,C)\)</span> take <span class="math notranslate nohighlight">\(AxA^*=x'\)</span>. Decode <span class="math notranslate nohighlight">\(x'\)</span> into <span class="math notranslate nohighlight">\(\vec{x}'\)</span>
+and the relation between <span class="math notranslate nohighlight">\(\vec{x}\)</span> and <span class="math notranslate nohighlight">\(\vec{x}'\)</span> defines uniquely a Lorentz
+transformation; thus <span class="math notranslate nohighlight">\(A\)</span> was mapped into some Lorentz group element. If
+<span class="math notranslate nohighlight">\(x_0=0\)</span> this gives a mapping from <span class="math notranslate nohighlight">\(SU(2)\)</span> into <span class="math notranslate nohighlight">\(SO(3)\)</span>. The mapping is <span class="math notranslate nohighlight">\(2-1\)</span>
+because <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(-A\)</span> give the same <span class="math notranslate nohighlight">\(x'\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(SO(3)\)</span> is not simply connected. Consider matrices
+<span class="math notranslate nohighlight">\(U_{\theta}=diag(e^{-i\theta}, e^{i\theta})\in SU(2)\)</span>, <span class="math notranslate nohighlight">\(\theta\in[0,\pi]\)</span>.
+These map into <span class="math notranslate nohighlight">\(SO(3)\)</span> rotations by <span class="math notranslate nohighlight">\(2\theta\)</span> around the <span class="math notranslate nohighlight">\(z\)</span>–axis. These
+matrices <span class="math notranslate nohighlight">\(A_\theta=R_{z,2\theta}\)</span> in <span class="math notranslate nohighlight">\(SO(3)\)</span> form a closed loop,
+<span class="math notranslate nohighlight">\(R_{z,0}=R_{z,2\pi}\)</span>. If <span class="math notranslate nohighlight">\(SO(3)\)</span> were simply connected it would be possible to
+contract this loop into a point while keeping <span class="math notranslate nohighlight">\(A_0\)</span> and <span class="math notranslate nohighlight">\(A_\pi\)</span> unchanged. But
 then the same would have to happen with the original curve of matrices
-<span class="math">\(U_\theta\)</span> while keeping <span class="math">\(U_0\)</span> and <span class="math">\(U_\pi\)</span> at their place. Since
-<span class="math">\(U_{\pi}=-I\not= U_0=I\)</span>, this curve is not closed and such a contraction is
+<span class="math notranslate nohighlight">\(U_\theta\)</span> while keeping <span class="math notranslate nohighlight">\(U_0\)</span> and <span class="math notranslate nohighlight">\(U_\pi\)</span> at their place. Since
+<span class="math notranslate nohighlight">\(U_{\pi}=-I\not= U_0=I\)</span>, this curve is not closed and such a contraction is
 not possible.</p>
-<p>All IRs of <span class="math">\(S_3\)</span> are in <a class="reference internal" href="#sternberg" id="id7">[Sternberg]</a>, p. 57.</p>
+<p>All IRs of <span class="math notranslate nohighlight">\(S_3\)</span> are in <a class="reference internal" href="#sternberg" id="id7">[Sternberg]</a>, p. 57.</p>
 </div>
 </div>
 <div class="section" id="crystallographic-point-groups">
 <span id="point-groups"></span><h2>Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
 <p>Point group is a subgroup of O(3).</p>
-<p>Crystallographic point groups are all subgroups of <span class="math">\(O(3)\)</span>, which leave a
+<p>Crystallographic point groups are all subgroups of <span class="math notranslate nohighlight">\(O(3)\)</span>, which leave a
 monoatomic crystal lattice invariant. Those can be symmetries of an infinite
-crystal (e.g. <span class="math">\(C_5\)</span> is excluded since pentagons cannot cover the plane).</p>
-<p>There are only 7 crystallographic point groups: <span class="math">\(S_2\)</span> (triclinic),
-<span class="math">\(C_{2h}\)</span> (monoclinic), <span class="math">\(D_{2h}\)</span> (orthorhombic), <span class="math">\(D_{3d}\)</span> (rhombohedral),
-<span class="math">\(D_{4h}\)</span> (tetragonal), <span class="math">\(D_{6h}\)</span> (hexagonal) and <span class="math">\(O_{h}\)</span> (cubic).</p>
+crystal (e.g. <span class="math notranslate nohighlight">\(C_5\)</span> is excluded since pentagons cannot cover the plane).</p>
+<p>There are only 7 crystallographic point groups: <span class="math notranslate nohighlight">\(S_2\)</span> (triclinic),
+<span class="math notranslate nohighlight">\(C_{2h}\)</span> (monoclinic), <span class="math notranslate nohighlight">\(D_{2h}\)</span> (orthorhombic), <span class="math notranslate nohighlight">\(D_{3d}\)</span> (rhombohedral),
+<span class="math notranslate nohighlight">\(D_{4h}\)</span> (tetragonal), <span class="math notranslate nohighlight">\(D_{6h}\)</span> (hexagonal) and <span class="math notranslate nohighlight">\(O_{h}\)</span> (cubic).</p>
 <p>For simple monoatomic crystals with one atom per unit cell these seven are the
 only possible crystallographic point groups. For more complicated crystals
 with a molecule or an arrangement of atoms in the unit cell, the symmetry will
@@ -346,7 +335,7 @@ cell invariant.</p>
 <p>The complete list of all possible crystallographic point groups will therefore
 be given by the above seven together with all their subgroups
 (Tab. 3 in <a class="reference internal" href="#birss" id="id8">[Birss]</a> or Tab. 4 in <a class="reference internal" href="#sternberg" id="id9">[Sternberg]</a>):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{cc}
 S_2    &amp; C_{1h}, S_2 \\
 C_{2h} &amp; C_2, C_{1h}, C_{2h} \\
@@ -357,100 +346,100 @@ D_{6h} &amp; C_3, S_6, D_3, C_{3v}, D_{3d}, C_6, C_{3h}, C_{6h}, D_6, C_{6v},
     D_{3h}, D_{6h} \\
 O_h    &amp; T, T_h, O, T_d, O_h \\
 \end{array}\end{split}\]</div>
-<p>There are 37 subgroups together. <span class="math">\(D_{3d}\)</span> is a subgroup of <span class="math">\(D_{6h}\)</span> (so all
-5 subgroups of <span class="math">\(D_{3d}\)</span> are also subgroups of <span class="math">\(D_{6h}\)</span>).
+<p>There are 37 subgroups together. <span class="math notranslate nohighlight">\(D_{3d}\)</span> is a subgroup of <span class="math notranslate nohighlight">\(D_{6h}\)</span> (so all
+5 subgroups of <span class="math notranslate nohighlight">\(D_{3d}\)</span> are also subgroups of <span class="math notranslate nohighlight">\(D_{6h}\)</span>).
 Together we get 37-5 = 32
 distinct subgroups. Groups, which might at first sight appear to be missing
-from the list are <span class="math">\(C_{1v}\)</span>, <span class="math">\(D_1\)</span>, <span class="math">\(D_{1h}\)</span>, <span class="math">\(S_1\)</span>, and <span class="math">\(S_3\)</span>, but these are
-the same as <span class="math">\(C_{1h}\)</span>, <span class="math">\(C_2\)</span>, <span class="math">\(C_{2v}\)</span>, <span class="math">\(C_{1h}\)</span> and <span class="math">\(C_{3h}\)</span> respectively.</p>
+from the list are <span class="math notranslate nohighlight">\(C_{1v}\)</span>, <span class="math notranslate nohighlight">\(D_1\)</span>, <span class="math notranslate nohighlight">\(D_{1h}\)</span>, <span class="math notranslate nohighlight">\(S_1\)</span>, and <span class="math notranslate nohighlight">\(S_3\)</span>, but these are
+the same as <span class="math notranslate nohighlight">\(C_{1h}\)</span>, <span class="math notranslate nohighlight">\(C_2\)</span>, <span class="math notranslate nohighlight">\(C_{2v}\)</span>, <span class="math notranslate nohighlight">\(C_{1h}\)</span> and <span class="math notranslate nohighlight">\(C_{3h}\)</span> respectively.</p>
 <p>The following groups are isomorphic:</p>
-<p><span class="math">\(C_{1h}\)</span>, <span class="math">\(S_2\)</span>, <span class="math">\(C_2\)</span></p>
-<p><span class="math">\(S_4\)</span>, <span class="math">\(C_4\)</span></p>
-<p><span class="math">\(S_6\)</span>, <span class="math">\(C_{3h}\)</span>, <span class="math">\(C_6\)</span></p>
-<p><span class="math">\(C_{2h}\)</span>, <span class="math">\(C_{2v}\)</span>, <span class="math">\(D_2\)</span></p>
-<p><span class="math">\(C_{3v}\)</span>, <span class="math">\(D_3\)</span></p>
-<p><span class="math">\(D_{2d}\)</span>, <span class="math">\(C_{4v}\)</span>, <span class="math">\(D_4\)</span></p>
-<p><span class="math">\(D_{3d}\)</span>, <span class="math">\(D_{3h}\)</span>, <span class="math">\(C_{6v}\)</span>, <span class="math">\(D_6\)</span></p>
-<p><span class="math">\(T_d, O\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{1h}\)</span>, <span class="math notranslate nohighlight">\(S_2\)</span>, <span class="math notranslate nohighlight">\(C_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(S_4\)</span>, <span class="math notranslate nohighlight">\(C_4\)</span></p>
+<p><span class="math notranslate nohighlight">\(S_6\)</span>, <span class="math notranslate nohighlight">\(C_{3h}\)</span>, <span class="math notranslate nohighlight">\(C_6\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{2h}\)</span>, <span class="math notranslate nohighlight">\(C_{2v}\)</span>, <span class="math notranslate nohighlight">\(D_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{3v}\)</span>, <span class="math notranslate nohighlight">\(D_3\)</span></p>
+<p><span class="math notranslate nohighlight">\(D_{2d}\)</span>, <span class="math notranslate nohighlight">\(C_{4v}\)</span>, <span class="math notranslate nohighlight">\(D_4\)</span></p>
+<p><span class="math notranslate nohighlight">\(D_{3d}\)</span>, <span class="math notranslate nohighlight">\(D_{3h}\)</span>, <span class="math notranslate nohighlight">\(C_{6v}\)</span>, <span class="math notranslate nohighlight">\(D_6\)</span></p>
+<p><span class="math notranslate nohighlight">\(T_d, O\)</span></p>
 <p>The way to derive the above lists is the following.</p>
 <p>Procedure:</p>
 <ol class="arabic simple">
-<li>Find all finite crystallographic subgroups of <span class="math">\(SO(3)\)</span> called
+<li>Find all finite crystallographic subgroups of <span class="math notranslate nohighlight">\(SO(3)\)</span> called
 <em>rotation subgroups</em></li>
-<li>Take each subgroup from 1) and add <span class="math">\(-I\)</span> and
-close the subgroup (&#8216;non-rot containing <span class="math">\(-I\)</span>&#8216;)</li>
-<li>for each subgroup <span class="math">\(G^\wedge\)</span> in 1), find whether it has some normal
-subgroups <span class="math">\(G^+\)</span> of index 2 (half a size of <span class="math">\(G^\wedge\)</span>) and construct
-<span class="math">\(G^+\cup (-I)aG^+\)</span>, where <span class="math">\(a\notin G^+\)</span> and <span class="math">\(a\in G^\wedge\)</span>; this will be a
-&#8216;non-rot not containing <span class="math">\(-I\)</span>&#8216; (for each <span class="math">\(G^\wedge\)</span> there can be zero, one or
-more such <span class="math">\(G^+\)</span>).</li>
+<li>Take each subgroup from 1) and add <span class="math notranslate nohighlight">\(-I\)</span> and
+close the subgroup (‘non-rot containing <span class="math notranslate nohighlight">\(-I\)</span>‘)</li>
+<li>for each subgroup <span class="math notranslate nohighlight">\(G^\wedge\)</span> in 1), find whether it has some normal
+subgroups <span class="math notranslate nohighlight">\(G^+\)</span> of index 2 (half a size of <span class="math notranslate nohighlight">\(G^\wedge\)</span>) and construct
+<span class="math notranslate nohighlight">\(G^+\cup (-I)aG^+\)</span>, where <span class="math notranslate nohighlight">\(a\notin G^+\)</span> and <span class="math notranslate nohighlight">\(a\in G^\wedge\)</span>; this will be a
+‘non-rot not containing <span class="math notranslate nohighlight">\(-I\)</span>‘ (for each <span class="math notranslate nohighlight">\(G^\wedge\)</span> there can be zero, one or
+more such <span class="math notranslate nohighlight">\(G^+\)</span>).</li>
 </ol>
 <p>The sum of 1.,2.,3. are all finite crystallographic groups
-of <span class="math">\(O(3)\)</span>.  The procedure is described in <a class="reference internal" href="#sternberg" id="id10">[Sternberg]</a>, p. 28-40.</p>
-<p>An example: <span class="math">\(O\)</span> (all rot. symm. of a cube, i.e. no mirroring) is 1), <span class="math">\(O^h\)</span>
-(all symm. of a cube) is 2) made of <span class="math">\(O\)</span> and <span class="math">\(T_d\)</span> (all symm. of a tetrahedron)
+of <span class="math notranslate nohighlight">\(O(3)\)</span>.  The procedure is described in <a class="reference internal" href="#sternberg" id="id10">[Sternberg]</a>, p. 28-40.</p>
+<p>An example: <span class="math notranslate nohighlight">\(O\)</span> (all rot. symm. of a cube, i.e. no mirroring) is 1), <span class="math notranslate nohighlight">\(O^h\)</span>
+(all symm. of a cube) is 2) made of <span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(T_d\)</span> (all symm. of a tetrahedron)
 is 3) made of 1).</p>
 <div class="section" id="zoology">
 <h3>Zoology<a class="headerlink" href="#zoology" title="Permalink to this headline">¶</a></h3>
-<p>Schönflies notation: <span class="math">\(C_n\)</span> is an <span class="math">\(n\)</span>&#8211;fold rotation (<span class="math">\(2_z\)</span>, <span class="math">\(3_z\)</span> ...)
-group (planar polygon), <span class="math">\(D_n\)</span> is a diedric group, i.e. <span class="math">\(C_n\)</span> plus
-turn-the-page two-fold rotations (e.g. <span class="math">\(2_x\)</span>, <span class="math">\(2_\perp\)</span>), <span class="math">\(T\)</span>, <span class="math">\(O\)</span> and <span class="math">\(I\)</span>
-(= <span class="math">\(Y\)</span>) are the rotational symmetries of a tetrahedron, octahedron (identical
+<p>Schönflies notation: <span class="math notranslate nohighlight">\(C_n\)</span> is an <span class="math notranslate nohighlight">\(n\)</span>–fold rotation (<span class="math notranslate nohighlight">\(2_z\)</span>, <span class="math notranslate nohighlight">\(3_z\)</span> …)
+group (planar polygon), <span class="math notranslate nohighlight">\(D_n\)</span> is a diedric group, i.e. <span class="math notranslate nohighlight">\(C_n\)</span> plus
+turn-the-page two-fold rotations (e.g. <span class="math notranslate nohighlight">\(2_x\)</span>, <span class="math notranslate nohighlight">\(2_\perp\)</span>), <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(I\)</span>
+(= <span class="math notranslate nohighlight">\(Y\)</span>) are the rotational symmetries of a tetrahedron, octahedron (identical
 to those of a cube) and icosahedron (identical to those of a dodecahedron),
 respectively. Additional indexes mean reflection planes, horizontal, vertical,
-diagonal (h,v,d) or <span class="math">\(-I\)</span> (i). Some atypical notation: <span class="math">\(S_2=C_i\)</span>,
-<span class="math">\(S_6=C_{3i}\)</span>, <span class="math">\(S_4=C_{2i}\)</span>, <span class="math">\(C_s=C_{1h}\)</span>.</p>
-<p>Hermann&#8211;Mauguin (HM, international) notation: 2,3,4 means <span class="math">\(C_n\)</span>, <span class="math">\(\bar{4}\)</span>
-means rotation-inversion axis (rotation followed by <span class="math">\(-I\)</span>), <span class="math">\(m\)</span> is a vertical
-mirror plane, <span class="math">\(/m\)</span> is a horizontal mirror plane.</p>
-<p>Symmetry operations (in Table 3 of <a class="reference internal" href="#birss" id="id11">[Birss]</a>): like HM, <span class="math">\(2_x\)</span> means a
-two-fold rotation around <span class="math">\(x\)</span>&#8211;axis, <span class="math">\(2_\perp\)</span> means some other axis in the
-<span class="math">\(xy\)</span> plane than <span class="math">\(x,y\)</span> or <span class="math">\(xy\)</span> (diagonal), <span class="math">\(\bar{3}_z\)</span> is a rotation followed
-by <span class="math">\(-I\)</span>. <span class="math">\(3(2_\perp)\)</span> means three different two-fold axes <span class="math">\(2_\perp\)</span>.</p>
+diagonal (h,v,d) or <span class="math notranslate nohighlight">\(-I\)</span> (i). Some atypical notation: <span class="math notranslate nohighlight">\(S_2=C_i\)</span>,
+<span class="math notranslate nohighlight">\(S_6=C_{3i}\)</span>, <span class="math notranslate nohighlight">\(S_4=C_{2i}\)</span>, <span class="math notranslate nohighlight">\(C_s=C_{1h}\)</span>.</p>
+<p>Hermann–Mauguin (HM, international) notation: 2,3,4 means <span class="math notranslate nohighlight">\(C_n\)</span>, <span class="math notranslate nohighlight">\(\bar{4}\)</span>
+means rotation-inversion axis (rotation followed by <span class="math notranslate nohighlight">\(-I\)</span>), <span class="math notranslate nohighlight">\(m\)</span> is a vertical
+mirror plane, <span class="math notranslate nohighlight">\(/m\)</span> is a horizontal mirror plane.</p>
+<p>Symmetry operations (in Table 3 of <a class="reference internal" href="#birss" id="id11">[Birss]</a>): like HM, <span class="math notranslate nohighlight">\(2_x\)</span> means a
+two-fold rotation around <span class="math notranslate nohighlight">\(x\)</span>–axis, <span class="math notranslate nohighlight">\(2_\perp\)</span> means some other axis in the
+<span class="math notranslate nohighlight">\(xy\)</span> plane than <span class="math notranslate nohighlight">\(x,y\)</span> or <span class="math notranslate nohighlight">\(xy\)</span> (diagonal), <span class="math notranslate nohighlight">\(\bar{3}_z\)</span> is a rotation followed
+by <span class="math notranslate nohighlight">\(-I\)</span>. <span class="math notranslate nohighlight">\(3(2_\perp)\)</span> means three different two-fold axes <span class="math notranslate nohighlight">\(2_\perp\)</span>.</p>
 </div>
 <div class="section" id="construction-and-usage-of-the-character-table">
 <h3>Construction and usage of the character table<a class="headerlink" href="#construction-and-usage-of-the-character-table" title="Permalink to this headline">¶</a></h3>
 <p>For simpler groups the character tables can be fully constructed by the
 following rules:</p>
 <ol class="arabic">
-<li><p class="first">The sum of the squares of the dimensions <span class="math">\(n_i\)</span> of the irreducible
-representations is equal to the order <span class="math">\(g\)</span> of the point group:</p>
+<li><p class="first">The sum of the squares of the dimensions <span class="math notranslate nohighlight">\(n_i\)</span> of the irreducible
+representations is equal to the order <span class="math notranslate nohighlight">\(g\)</span> of the point group:</p>
 <blockquote>
-<div><div class="math">
+<div><div class="math notranslate nohighlight">
 \[\sum_{\mu=1}^k n_\mu^2 = g\]</div>
 </div></blockquote>
-<p>The dimension <span class="math">\(n_\mu\)</span> is given by the character of the identity matrix
-(first column) <span class="math">\(n_\mu = \chi^\mu(E)\)</span>, so the sum of squares of the first
-column is <span class="math">\(g\)</span>. It is customary to put the characters of the one dimensional
-representation (<span class="math">\(\chi^1(C_i)=1\)</span>) into the first row, so the first row
-is filled with 1s. Also, <span class="math">\(n_i\)</span> must divide <span class="math">\(g\)</span>.</p>
+<p>The dimension <span class="math notranslate nohighlight">\(n_\mu\)</span> is given by the character of the identity matrix
+(first column) <span class="math notranslate nohighlight">\(n_\mu = \chi^\mu(E)\)</span>, so the sum of squares of the first
+column is <span class="math notranslate nohighlight">\(g\)</span>. It is customary to put the characters of the one dimensional
+representation (<span class="math notranslate nohighlight">\(\chi^1(C_i)=1\)</span>) into the first row, so the first row
+is filled with 1s. Also, <span class="math notranslate nohighlight">\(n_i\)</span> must divide <span class="math notranslate nohighlight">\(g\)</span>.</p>
 </li>
-<li><p class="first">The number of irreducible representations <span class="math">\(r\)</span> (rows) is equal to the number
-of classes <span class="math">\(k\)</span> (columns)</p>
+<li><p class="first">The number of irreducible representations <span class="math notranslate nohighlight">\(r\)</span> (rows) is equal to the number
+of classes <span class="math notranslate nohighlight">\(k\)</span> (columns)</p>
 </li>
 <li><p class="first">The rows must satisfy</p>
 <blockquote>
-<div><div class="math">
+<div><div class="math notranslate nohighlight">
 \[\sum_{i=1}^k g_i \chi^\mu(C_i) \chi^\nu(C_i)^* = g \delta_{\mu\nu}\]</div>
 </div></blockquote>
 </li>
 <li><p class="first">The columns must satisfy</p>
 <blockquote>
-<div><div class="math">
+<div><div class="math notranslate nohighlight">
 \[\sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i}
     \delta_{ij}\]</div>
 </div></blockquote>
 </li>
 <li><p class="first">Characters of all one-dimensional representation must be roots of unity,
-equal to <span class="math">\(\chi = e^{2\pi i k\over n}\)</span>, where <span class="math">\(n\)</span> is the element order, which
-must divide the group size <span class="math">\(g\)</span> (and it is the same for the whole conjugacy
-class). In general, <span class="math">\(k\)</span> is any integer (for faithful representation it would
-be <span class="math">\(k=1\)</span>).
+equal to <span class="math notranslate nohighlight">\(\chi = e^{2\pi i k\over n}\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the element order, which
+must divide the group size <span class="math notranslate nohighlight">\(g\)</span> (and it is the same for the whole conjugacy
+class). In general, <span class="math notranslate nohighlight">\(k\)</span> is any integer (for faithful representation it would
+be <span class="math notranslate nohighlight">\(k=1\)</span>).
 This follows from the fact, that the character is also the one-dimensional
 representation matrix and they all commute, thus the group is Abelian.
 Also, the characters (=representation matrices) must respect the group
-operations, so for example if for two group elements <span class="math">\(g_1^2=g_2\)</span>, then their
-characters must also obey <span class="math">\(\chi_1^2 = \chi_2\)</span>.</p>
+operations, so for example if for two group elements <span class="math notranslate nohighlight">\(g_1^2=g_2\)</span>, then their
+characters must also obey <span class="math notranslate nohighlight">\(\chi_1^2 = \chi_2\)</span>.</p>
 </li>
 <li><p class="first">Character of an element is the complex conjugate of its inverse. If they
 both belong to the same conjugacy class, the character must be real. If the
@@ -460,41 +449,41 @@ conjugacy class from the same irreducible representation.</p>
 </li>
 <li><p class="first">Characters come in complex conjugate pairs, since complex conjugate of a
 representation is also a representation. If there is only one representation
-of the dimension <span class="math">\(d\)</span>, then it must be real (since it is its own conjugate).
-If there are two representations of dimension <span class="math">\(d\)</span> and one is complex, then
+of the dimension <span class="math notranslate nohighlight">\(d\)</span>, then it must be real (since it is its own conjugate).
+If there are two representations of dimension <span class="math notranslate nohighlight">\(d\)</span> and one is complex, then
 the other one must be its complex conjugate. Another way to look at this is
 that if we conjugate each entry of the character table, then we must get the
 same character table (up to a possible reordering of rows within the same
 dimension).</p>
 </li>
-<li><p class="first">If there is one dimensional representation <span class="math">\(A_1\)</span> (with characters <span class="math">\(\chi_1\)</span>)
-and any other representation <span class="math">\(T\)</span> of dimension <span class="math">\(d\)</span> (with characters <span class="math">\(\chi\)</span>),
-then there must be a representation of dimension <span class="math">\(d\)</span> with characters
-<span class="math">\(\chi_1\chi\)</span> (corresponding to the tensor product <span class="math">\(A_1 \otimes T\)</span>).</p>
+<li><p class="first">If there is one dimensional representation <span class="math notranslate nohighlight">\(A_1\)</span> (with characters <span class="math notranslate nohighlight">\(\chi_1\)</span>)
+and any other representation <span class="math notranslate nohighlight">\(T\)</span> of dimension <span class="math notranslate nohighlight">\(d\)</span> (with characters <span class="math notranslate nohighlight">\(\chi\)</span>),
+then there must be a representation of dimension <span class="math notranslate nohighlight">\(d\)</span> with characters
+<span class="math notranslate nohighlight">\(\chi_1\chi\)</span> (corresponding to the tensor product <span class="math notranslate nohighlight">\(A_1 \otimes T\)</span>).</p>
 </li>
 </ol>
 <p>There exists a systematic approach that works for any group, but it is
 complicated (see for example <a class="reference internal" href="#dixon67" id="id12">[Dixon67]</a>, <a class="reference internal" href="#blokker72" id="id13">[Blokker72]</a>, <a class="reference internal" href="#cannon69" id="id14">[Cannon69]</a>
 and <a class="reference internal" href="#chillag86" id="id15">[Chillag86]</a>).</p>
 <p>The notation for irreducible representation:
-One-dimensional irreducible representations are labeled either <span class="math">\(A\)</span> or <span class="math">\(B\)</span>
-according to whether the character of a <span class="math">\(2\pi\over n\)</span> (proper or improper)
-rotation about the symmetry axis of highest order <span class="math">\(n\)</span> is <span class="math">\(+1\)</span> or <span class="math">\(-1\)</span>. If there
-is no symmetry axis, all one-dimensional representations are labeled <span class="math">\(A\)</span>.</p>
+One-dimensional irreducible representations are labeled either <span class="math notranslate nohighlight">\(A\)</span> or <span class="math notranslate nohighlight">\(B\)</span>
+according to whether the character of a <span class="math notranslate nohighlight">\(2\pi\over n\)</span> (proper or improper)
+rotation about the symmetry axis of highest order <span class="math notranslate nohighlight">\(n\)</span> is <span class="math notranslate nohighlight">\(+1\)</span> or <span class="math notranslate nohighlight">\(-1\)</span>. If there
+is no symmetry axis, all one-dimensional representations are labeled <span class="math notranslate nohighlight">\(A\)</span>.</p>
 <p>For general information, see <a class="reference internal" href="#elliott" id="id16">[Elliott]</a> (sec. 4.15, page 67) and <a class="reference internal" href="#bishop" id="id17">[Bishop]</a>, page
 128.</p>
 <div class="section" id="example-i">
 <h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h4>
-<p>Let&#8217;s take the group <span class="math">\(C_{3v}\)</span>, which has three classes <span class="math">\(E\)</span> (1 element),
-<span class="math">\(C_3\)</span> (2 elements) and <span class="math">\(\sigma_v\)</span> (3 elements).</p>
-<p>So <span class="math">\(g_1=1\)</span>, <span class="math">\(g_2=2\)</span> and <span class="math">\(g_3=3\)</span> and the order is
-<span class="math">\(g=g_1+g_2+g_3=6\)</span>. Therefore it has three irreducible representations, whose
+<p>Let’s take the group <span class="math notranslate nohighlight">\(C_{3v}\)</span>, which has three classes <span class="math notranslate nohighlight">\(E\)</span> (1 element),
+<span class="math notranslate nohighlight">\(C_3\)</span> (2 elements) and <span class="math notranslate nohighlight">\(\sigma_v\)</span> (3 elements).</p>
+<p>So <span class="math notranslate nohighlight">\(g_1=1\)</span>, <span class="math notranslate nohighlight">\(g_2=2\)</span> and <span class="math notranslate nohighlight">\(g_3=3\)</span> and the order is
+<span class="math notranslate nohighlight">\(g=g_1+g_2+g_3=6\)</span>. Therefore it has three irreducible representations, whose
 dimensions must satisfy:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[n_1^2 + n_2^2 + n_3^2 = 6\]</div>
-<p>The only integer solution (up to a permutation) is <span class="math">\(n_1=n_2=1\)</span> and <span class="math">\(n_3=2\)</span>. So
+<p>The only integer solution (up to a permutation) is <span class="math notranslate nohighlight">\(n_1=n_2=1\)</span> and <span class="math notranslate nohighlight">\(n_3=2\)</span>. So
 we immediately have:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
@@ -502,8 +491,8 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
        &amp; 1 &amp;   a   &amp; b \\
        &amp; 2 &amp;   c   &amp; d \\
 \end{array}\end{split}\]</div>
-<p>The rule 3. generates the following equations for all <span class="math">\(\mu\)</span> and <span class="math">\(\nu\)</span>:</p>
-<div class="math">
+<p>The rule 3. generates the following equations for all <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\nu\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{cc|c}
 \mu &amp; \nu &amp; \sum_{i=1}^k g_i \chi^\mu(C_i) \chi^\nu(C_i)^* = g \delta_{\mu\nu} \\
 \hline
@@ -516,19 +505,19 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \end{array}\end{split}\]</div>
 <p>Solving all these equations simultaneously, we
 get two independent solutions. One is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= 1 \\
 b &amp;= -1 \\
 c &amp;= -1 \\
 d &amp;= 0\end{split}\]</div>
 <p>and the other is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= -{7\over 5} \\
 b &amp;= {3\over 5} \\
 c &amp;= {1\over 5} \\
 d &amp;= -{4\over 5}\end{split}\]</div>
-<p>The rule 4. generates the following equations for all <span class="math">\(i\)</span> and <span class="math">\(j\)</span>:</p>
-<div class="math">
+<p>The rule 4. generates the following equations for all <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{cc|c}
 i &amp; j &amp; \sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i} \delta_{ij} \\
 \hline
@@ -539,11 +528,11 @@ i &amp; j &amp; \sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i} \del
 2 &amp; 3 &amp;     1 + ab + cd = 0 \\
 3 &amp; 3 &amp;     1 + b^2 + d^2 = 2
 \end{array}\end{split}\]</div>
-<p>Both of the above solutions for <span class="math">\((a, b, c, d)\)</span> satisfy all of these equations,
+<p>Both of the above solutions for <span class="math notranslate nohighlight">\((a, b, c, d)\)</span> satisfy all of these equations,
 so the column equations are redundant.</p>
 <p>Now we use the rule 5. and see that the second solution is not a root of unity,
 so we discard it. The final character table is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
@@ -552,7 +541,7 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
   E    &amp; 2 &amp;  -1   &amp;  0 \\
 \end{array}\end{split}\]</div>
 <p>Code:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
 <span class="n">var</span><span class="p">(</span><span class="s2">&quot;a, b, c, d&quot;</span><span class="p">)</span>
 <span class="n">g</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">M</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
@@ -576,40 +565,40 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
         <span class="n">eq</span> <span class="o">-=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="o">/</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">eq</span>
 
-<span class="k">print</span> <span class="s2">&quot;Character table:&quot;</span>
-<span class="k">print</span> <span class="n">M</span>
-<span class="k">print</span> <span class="s2">&quot;Rows conditions:&quot;</span>
+<span class="nb">print</span> <span class="s2">&quot;Character table:&quot;</span>
+<span class="nb">print</span> <span class="n">M</span>
+<span class="nb">print</span> <span class="s2">&quot;Rows conditions:&quot;</span>
 <span class="n">eqs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">mu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">nu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
         <span class="n">eq</span> <span class="o">=</span> <span class="n">rows</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">nu</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
         <span class="n">eqs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
-        <span class="k">print</span> <span class="n">mu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
-<span class="k">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
-<span class="k">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
+        <span class="nb">print</span> <span class="n">mu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">nu</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
+<span class="nb">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
+<span class="nb">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
 <span class="n">eqs2</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
         <span class="n">eq</span> <span class="o">=</span> <span class="n">cols</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
         <span class="n">eqs2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span>
-        <span class="k">print</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
-<span class="k">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
-<span class="k">print</span> <span class="s2">&quot;Solving the 1, 2, 4, 5 equations out of 0..5 from the rows conditions&quot;</span>
+        <span class="nb">print</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;:    &quot;</span><span class="p">,</span> <span class="n">eq</span>
+<span class="nb">print</span> <span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">40</span>
+<span class="nb">print</span> <span class="s2">&quot;Solving the 1, 2, 4, 5 equations out of 0..5 from the rows conditions&quot;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">eqs</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="n">eqs</span><span class="p">[</span><span class="mi">4</span><span class="p">:],</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">])</span>
-<span class="k">print</span> <span class="n">s</span>
-<span class="k">print</span> <span class="s2">&quot;Test that all the solutions satisfy the rest of the equations:&quot;</span>
+<span class="nb">print</span> <span class="n">s</span>
+<span class="nb">print</span> <span class="s2">&quot;Test that all the solutions satisfy the rest of the equations:&quot;</span>
 <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-    <span class="k">print</span>
-    <span class="k">print</span> <span class="s2">&quot;Solution:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span>
+    <span class="nb">print</span>
+    <span class="nb">print</span> <span class="s2">&quot;Solution:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">eqs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span>
         <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
         <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="n">b</span><span class="p">,</span>
         <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
         <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
         <span class="p">})</span>
-    <span class="k">print</span> <span class="s2">&quot;Equation 3 from rows conditions, result: &quot;</span><span class="p">,</span> <span class="n">r</span>
+    <span class="nb">print</span> <span class="s2">&quot;Equation 3 from rows conditions, result: &quot;</span><span class="p">,</span> <span class="n">r</span>
     <span class="k">assert</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="k">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
+    <span class="nb">print</span> <span class="s2">&quot;Columns conditions:&quot;</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">eq</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">eqs2</span><span class="p">):</span>
         <span class="n">r</span> <span class="o">=</span> <span class="n">eq</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span>
                 <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="n">a</span><span class="p">,</span>
@@ -617,64 +606,65 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
                 <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
                 <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="n">d</span><span class="p">,</span>
                 <span class="p">})</span>
-        <span class="k">print</span> <span class="s2">&quot;Equation </span><span class="si">%i</span><span class="s2"> from columns conditions, result: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="s2">&quot;Equation </span><span class="si">%i</span><span class="s2"> from columns conditions, result: </span><span class="si">%r</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
         <span class="k">assert</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">0</span>
 </pre></div>
 </div>
 <p>This prints:</p>
-<div class="highlight-python"><pre>Character table:
-[1, 1, 1]
-[1, a, b]
-[2, c, d]
-Rows conditions:
-1 1 :     0
-1 2 :     2*a + 3*b + 1
-1 3 :     2*c + 3*d + 2
-2 2 :     2*a**2 + 3*b**2 - 5
-2 3 :     2*a*c + 3*b*d + 2
-3 3 :     2*c**2 + 3*d**2 - 2
-----------------------------------------
-Columns conditions:
-1 1 :     0
-1 2 :     a + 2*c + 1
-1 3 :     b + 2*d + 1
-2 2 :     a**2 + c**2 - 2
-2 3 :     a*b + c*d + 1
-3 3 :     b**2 + d**2 - 1
-----------------------------------------
-Solving the 1, 2, 4, 5 equations out of 0..5 from the rows conditions
-[(-7/5, 3/5, 1/5, -4/5), (1, -1, -1, 0)]
-Test that all the solutions satisfy the rest of the equations:
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Character</span> <span class="n">table</span><span class="p">:</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">]</span>
+<span class="n">Rows</span> <span class="n">conditions</span><span class="p">:</span>
+<span class="mi">1</span> <span class="mi">1</span> <span class="p">:</span>     <span class="mi">0</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="p">:</span>     <span class="mi">2</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">1</span> <span class="mi">3</span> <span class="p">:</span>     <span class="mi">2</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">d</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">2</span> <span class="mi">2</span> <span class="p">:</span>     <span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">5</span>
+<span class="mi">2</span> <span class="mi">3</span> <span class="p">:</span>     <span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">d</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">3</span> <span class="mi">3</span> <span class="p">:</span>     <span class="mi">2</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="o">----------------------------------------</span>
+<span class="n">Columns</span> <span class="n">conditions</span><span class="p">:</span>
+<span class="mi">1</span> <span class="mi">1</span> <span class="p">:</span>     <span class="mi">0</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="p">:</span>     <span class="n">a</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">1</span> <span class="mi">3</span> <span class="p">:</span>     <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">2</span> <span class="mi">2</span> <span class="p">:</span>     <span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="mi">2</span> <span class="mi">3</span> <span class="p">:</span>     <span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="mi">3</span> <span class="mi">3</span> <span class="p">:</span>     <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="o">----------------------------------------</span>
+<span class="n">Solving</span> <span class="n">the</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="n">equations</span> <span class="n">out</span> <span class="n">of</span> <span class="mf">0.</span><span class="o">.</span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">rows</span> <span class="n">conditions</span>
+<span class="p">[(</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+<span class="n">Test</span> <span class="n">that</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">solutions</span> <span class="n">satisfy</span> <span class="n">the</span> <span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">equations</span><span class="p">:</span>
 
-Solution: -7/5 3/5 1/5 -4/5
-Equation 3 from rows conditions, result:  0
-Columns conditions:
-Equation 0 from columns conditions, result: 0
-Equation 1 from columns conditions, result: 0
-Equation 2 from columns conditions, result: 0
-Equation 3 from columns conditions, result: 0
-Equation 4 from columns conditions, result: 0
-Equation 5 from columns conditions, result: 0
+<span class="n">Solution</span><span class="p">:</span> <span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">5</span> <span class="mi">3</span><span class="o">/</span><span class="mi">5</span> <span class="mi">1</span><span class="o">/</span><span class="mi">5</span> <span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span>
+<span class="n">Equation</span> <span class="mi">3</span> <span class="kn">from</span> <span class="nn">rows</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span>  <span class="mi">0</span>
+<span class="n">Columns</span> <span class="n">conditions</span><span class="p">:</span>
+<span class="n">Equation</span> <span class="mi">0</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">1</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">2</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">3</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">4</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">5</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
 
-Solution: 1 -1 -1 0
-Equation 3 from rows conditions, result:  0
-Columns conditions:
-Equation 0 from columns conditions, result: 0
-Equation 1 from columns conditions, result: 0
-Equation 2 from columns conditions, result: 0
-Equation 3 from columns conditions, result: 0
-Equation 4 from columns conditions, result: 0
-Equation 5 from columns conditions, result: 0</pre>
+<span class="n">Solution</span><span class="p">:</span> <span class="mi">1</span> <span class="o">-</span><span class="mi">1</span> <span class="o">-</span><span class="mi">1</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">3</span> <span class="kn">from</span> <span class="nn">rows</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span>  <span class="mi">0</span>
+<span class="n">Columns</span> <span class="n">conditions</span><span class="p">:</span>
+<span class="n">Equation</span> <span class="mi">0</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">1</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">2</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">3</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">4</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Equation</span> <span class="mi">5</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="example-ii">
 <h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <span class="math">\(C_{3v}\)</span> again, using another approach.
+<p>We derive the character table for <span class="math notranslate nohighlight">\(C_{3v}\)</span> again, using another approach.
 First we determine the element orders, that must divide the size of the group
-(possible values are 1, 2, 3, 6). Element order of the class <span class="math">\(E\)</span> is 1, because
-<span class="math">\(E^2=1\)</span>. The element order of <span class="math">\(C_3\)</span> is 3, because <span class="math">\(C_3^3 = 1\)</span>. Finally, the
-element order of <span class="math">\(\sigma_v\)</span> is 2, because <span class="math">\(\sigma_v^2=1\)</span>.</p>
-<div class="math">
+(possible values are 1, 2, 3, 6). Element order of the class <span class="math notranslate nohighlight">\(E\)</span> is 1, because
+<span class="math notranslate nohighlight">\(E^2=1\)</span>. The element order of <span class="math notranslate nohighlight">\(C_3\)</span> is 3, because <span class="math notranslate nohighlight">\(C_3^3 = 1\)</span>. Finally, the
+element order of <span class="math notranslate nohighlight">\(\sigma_v\)</span> is 2, because <span class="math notranslate nohighlight">\(\sigma_v^2=1\)</span>.</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \mbox{class sizes} &amp; 1 &amp; 2 &amp; 3 \\
@@ -684,32 +674,32 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
  A_2      &amp; 1 &amp;   a   &amp; b \\
   E       &amp; 2 &amp;   c   &amp; d \\
 \end{array}\end{split}\]</div>
-<p>Rule 7: The characters of the representation <span class="math">\(A_2\)</span> must be real, because
-otherwise <span class="math">\(A_1\)</span> would have to be a complex conjugate. <span class="math">\(E\)</span> is the only
+<p>Rule 7: The characters of the representation <span class="math notranslate nohighlight">\(A_2\)</span> must be real, because
+otherwise <span class="math notranslate nohighlight">\(A_1\)</span> would have to be a complex conjugate. <span class="math notranslate nohighlight">\(E\)</span> is the only
 representation of dimension 2, so it must be real as well.</p>
-<p>Rule 5: <span class="math">\(A_2\)</span> is Abelian, with element orders 1, 3 and 2. As such, we must
+<p>Rule 5: <span class="math notranslate nohighlight">\(A_2\)</span> is Abelian, with element orders 1, 3 and 2. As such, we must
 have:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a = e^{2\pi i k\over 3} \\
 b = e^{2\pi i l\over 2} \\\end{split}\]</div>
-<p>Where <span class="math">\(k\)</span> and <span class="math">\(l\)</span> are unknown integers.
-However, since both <span class="math">\(a\)</span> and <span class="math">\(b\)</span> is real, the only solution is <span class="math">\(k=0\)</span>
-(corresponding to <span class="math">\(a=1\)</span>) and <span class="math">\(l=0, 1\)</span> (corresponding to <span class="math">\(b=\pm 1\)</span>).</p>
+<p>Where <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(l\)</span> are unknown integers.
+However, since both <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> is real, the only solution is <span class="math notranslate nohighlight">\(k=0\)</span>
+(corresponding to <span class="math notranslate nohighlight">\(a=1\)</span>) and <span class="math notranslate nohighlight">\(l=0, 1\)</span> (corresponding to <span class="math notranslate nohighlight">\(b=\pm 1\)</span>).</p>
 <p>Rule 3 gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + 2a + 3b = 0\]</div>
-<p>And plugging in <span class="math">\(a=1\)</span> this implies <span class="math">\(b=-1\)</span>, consistent with the previous
+<p>And plugging in <span class="math notranslate nohighlight">\(a=1\)</span> this implies <span class="math notranslate nohighlight">\(b=-1\)</span>, consistent with the previous
 paragraph.</p>
-<p>Rule 8: multiplying <span class="math">\(A_2\)</span> by <span class="math">\(E\)</span> must give characters of dimension 2, which is
-<span class="math">\(E\)</span>, so we get:</p>
-<div class="math">
+<p>Rule 8: multiplying <span class="math notranslate nohighlight">\(A_2\)</span> by <span class="math notranslate nohighlight">\(E\)</span> must give characters of dimension 2, which is
+<span class="math notranslate nohighlight">\(E\)</span>, so we get:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}+1 \cdot c &amp;= c \\
 -1 \cdot d &amp;= d \\\end{split}\]</div>
-<p>From which <span class="math">\(d=0\)</span>. Rule 3 gives:</p>
-<div class="math">
+<p>From which <span class="math notranslate nohighlight">\(d=0\)</span>. Rule 3 gives:</p>
+<div class="math notranslate nohighlight">
 \[2 + 2c + 3d = 0\]</div>
-<p>Where we use <span class="math">\(d=0\)</span> and we get <span class="math">\(c=-1\)</span>. The final character table is:</p>
-<div class="math">
+<p>Where we use <span class="math notranslate nohighlight">\(d=0\)</span> and we get <span class="math notranslate nohighlight">\(c=-1\)</span>. The final character table is:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
@@ -720,8 +710,8 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 </div>
 <div class="section" id="example-iii">
 <h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <span class="math">\(C_2\)</span>.</p>
-<div class="math">
+<p>We derive the character table for <span class="math notranslate nohighlight">\(C_2\)</span>.</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_2 &amp; E &amp; C_2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 \\
@@ -732,10 +722,10 @@ C_2 &amp; E &amp; C_2 \\
 \end{array}\end{split}\]</div>
 <p>We have two classes, group order is 2, so we must have two representations of
 dimension 1. Using the rule 3. we get:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + a = 0\]</div>
-<p>so <span class="math">\(a=-1\)</span> and the final character table is:</p>
-<div class="math">
+<p>so <span class="math notranslate nohighlight">\(a=-1\)</span> and the final character table is:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_2 &amp; E &amp; C_2 \\
 \hline
@@ -745,8 +735,8 @@ C_2 &amp; E &amp; C_2 \\
 </div>
 <div class="section" id="example-iv">
 <h4>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <span class="math">\(C_3\)</span>.</p>
-<div class="math">
+<p>We derive the character table for <span class="math notranslate nohighlight">\(C_3\)</span>.</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 \\
@@ -755,7 +745,7 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \end{array}\end{split}\]</div>
 <p>We have 3 classes and representations, group order is 3, so they must be one
 dimensional:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 \\
@@ -766,34 +756,34 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
  A_3      &amp; 1 &amp;   c   &amp; d \\
 \end{array}\end{split}\]</div>
 <p>Rule 3 says:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + a + b = 0\]</div>
 <p>Rule 5 says:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= \omega^k \\
 b &amp;= \omega^l \\\end{split}\]</div>
-<p>where <span class="math">\(\omega = e^{2\pi i \over 3}\)</span>, so:</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\omega = e^{2\pi i \over 3}\)</span>, so:</p>
+<div class="math notranslate nohighlight">
 \[1 + \omega^k + \omega^l = 0\]</div>
-<p>Which has only two solutions: <span class="math">\(k=1\)</span>, <span class="math">\(l=2\)</span> and <span class="math">\(k=2\)</span>, <span class="math">\(l=1\)</span>. If we choose the
-first solution, we get <span class="math">\(a=\omega\)</span> and <span class="math">\(b=\omega^2=\bar\omega\)</span>. Using the rule
-7. it follows that <span class="math">\(c=\bar a = \bar\omega=\omega^2\)</span> and <span class="math">\(d=\bar b = \omega\)</span>.
-If we choose the second solution, we get the pairs <span class="math">\(a, b\)</span> and <span class="math">\(c, d\)</span>
+<p>Which has only two solutions: <span class="math notranslate nohighlight">\(k=1\)</span>, <span class="math notranslate nohighlight">\(l=2\)</span> and <span class="math notranslate nohighlight">\(k=2\)</span>, <span class="math notranslate nohighlight">\(l=1\)</span>. If we choose the
+first solution, we get <span class="math notranslate nohighlight">\(a=\omega\)</span> and <span class="math notranslate nohighlight">\(b=\omega^2=\bar\omega\)</span>. Using the rule
+7. it follows that <span class="math notranslate nohighlight">\(c=\bar a = \bar\omega=\omega^2\)</span> and <span class="math notranslate nohighlight">\(d=\bar b = \omega\)</span>.
+If we choose the second solution, we get the pairs <span class="math notranslate nohighlight">\(a, b\)</span> and <span class="math notranslate nohighlight">\(c, d\)</span>
 interchanged, however, we can reorder the rows, so these two options are
 equivalent. The final character table is:</p>
-<div class="math">
-\[\begin{split}\begin{array}{c|ccc}
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \hline
  A_1      &amp; 1 &amp;   1   &amp; 1 \\
  A_2      &amp; 1 &amp;   \omega   &amp; \omega^2 \\
  A_3      &amp; 1 &amp;   \omega^2   &amp; \omega \\
-\end{array}\end{split}\]\[\omega = e^{2\pi i \over 3} = {-1+i\sqrt 3 \over 2}\]</div>
+\end{array}\end{split}\\\omega = e^{2\pi i \over 3} = {-1+i\sqrt 3 \over 2}\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="example-v">
 <h4>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h4>
-<p>Group <span class="math">\(C_4\)</span>:</p>
-<div class="math">
+<p>Group <span class="math notranslate nohighlight">\(C_4\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|cccc}
 C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
@@ -805,31 +795,31 @@ C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
  A_4      &amp; 1 &amp;       &amp;   &amp;   \\
 \end{array}\end{split}\]</div>
 <p>Rule 5 gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= i^k    \\
 b &amp;= (-1)^l \\
 c &amp;= i^m    \\\end{split}\]</div>
 <p>Rule 3 gives:</p>
-<div class="math" id="equation-xxy">
-<span class="eqno">(2)</span>\[1 + a + b + c = 0\]</div>
-<p>Using the rule 7. we know that at least one of <span class="math">\(A_2\)</span>, <span class="math">\(A_3\)</span> and <span class="math">\(A_4\)</span> must be
-real, so let it be <span class="math">\(A_2\)</span>.
-The only real solutions of the equation <a href="#equation-xxy">(2)</a> are <span class="math">\(a=1\)</span>, <span class="math">\(b=-1\)</span>, <span class="math">\(c=-1\)</span>
-and permutations. The representation however must be isomorphic to the <span class="math">\(C_4\)</span>
-group, so in particular <span class="math">\(a^2 = b\)</span>, from which <span class="math">\(b=1\)</span> and then
-<span class="math">\(a=-1\)</span> and <span class="math">\(c=-1\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-xxy">
+<span class="eqno">(2)<a class="headerlink" href="#equation-xxy" title="Permalink to this equation">¶</a></span>\[1 + a + b + c = 0\]</div>
+<p>Using the rule 7. we know that at least one of <span class="math notranslate nohighlight">\(A_2\)</span>, <span class="math notranslate nohighlight">\(A_3\)</span> and <span class="math notranslate nohighlight">\(A_4\)</span> must be
+real, so let it be <span class="math notranslate nohighlight">\(A_2\)</span>.
+The only real solutions of the equation <a class="reference internal" href="#equation-xxy">(2)</a> are <span class="math notranslate nohighlight">\(a=1\)</span>, <span class="math notranslate nohighlight">\(b=-1\)</span>, <span class="math notranslate nohighlight">\(c=-1\)</span>
+and permutations. The representation however must be isomorphic to the <span class="math notranslate nohighlight">\(C_4\)</span>
+group, so in particular <span class="math notranslate nohighlight">\(a^2 = b\)</span>, from which <span class="math notranslate nohighlight">\(b=1\)</span> and then
+<span class="math notranslate nohighlight">\(a=-1\)</span> and <span class="math notranslate nohighlight">\(c=-1\)</span>.</p>
 <p>The group operations give:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a^2 &amp;= b \\
 a b &amp;= c \\
 a c &amp;= 1 \\\end{split}\]</div>
 <p>which gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}2k &amp;= l \\
 k +l &amp;= m \\
 k + m &amp;= 0, 4, 8, 12, ... \\\end{split}\]</div>
 <p>The possible solutions are:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{ccc}
 k &amp; l &amp; m \\
 \hline
@@ -837,12 +827,12 @@ k &amp; l &amp; m \\
 1 &amp; 2 &amp; 3 \\
 3 &amp; 2 &amp; 1 \\
 \end{array}\end{split}\]</div>
-<p>The first solution is real and it is equal to <span class="math">\(A_2\)</span>. The other two solutions
-are complex conjugate and they must be solutions of <span class="math">\(A_3\)</span> and <span class="math">\(A_4\)</span>,
-because <span class="math">\(A_3\)</span> and <span class="math">\(A_4\)</span> cannot be real (otherwise they would have to be equal
-to <span class="math">\(A_2\)</span> and the orthogonality relation for columns would not hold). The final
+<p>The first solution is real and it is equal to <span class="math notranslate nohighlight">\(A_2\)</span>. The other two solutions
+are complex conjugate and they must be solutions of <span class="math notranslate nohighlight">\(A_3\)</span> and <span class="math notranslate nohighlight">\(A_4\)</span>,
+because <span class="math notranslate nohighlight">\(A_3\)</span> and <span class="math notranslate nohighlight">\(A_4\)</span> cannot be real (otherwise they would have to be equal
+to <span class="math notranslate nohighlight">\(A_2\)</span> and the orthogonality relation for columns would not hold). The final
 character table is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|cccc}
 C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \hline
@@ -854,8 +844,8 @@ C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 </div>
 <div class="section" id="example-vi">
 <h4>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h4>
-<p>Group <span class="math">\(T\)</span>:</p>
-<div class="math">
+<p>Group <span class="math notranslate nohighlight">\(T\)</span>:</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|cccc}
 T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 \mbox{class sizes} &amp; 1 &amp; 4 &amp; 4 &amp; 3\\
@@ -869,25 +859,25 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 <p>The group size is 1 + 4 + 4 + 3 = 12, so the only possible option
 for dimensions of the 4 representations is 1, 1, 1 and 3.</p>
 <p>Rule 5 gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}a &amp;= \omega^k    \\
 b &amp;= \omega^l \\
 c &amp;= (-1)^m    \\\end{split}\]</div>
-<p>where <span class="math">\(\omega = e^{2\pi i \over 3}\)</span>.
+<p>where <span class="math notranslate nohighlight">\(\omega = e^{2\pi i \over 3}\)</span>.
 Rule 3 gives:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + 4 \omega^k + 4 \omega^l + 3 (-1)^m = 0\]</div>
-<p>The only solution is <span class="math">\(m=0\)</span>, <span class="math">\(k=1\)</span> and <span class="math">\(l=2\)</span> (and <span class="math">\(k\)</span> with <span class="math">\(l\)</span> interchanged).
-This fully determines <span class="math">\(A_2\)</span> and <span class="math">\(A_3\)</span>. The last row is determined from column
+<p>The only solution is <span class="math notranslate nohighlight">\(m=0\)</span>, <span class="math notranslate nohighlight">\(k=1\)</span> and <span class="math notranslate nohighlight">\(l=2\)</span> (and <span class="math notranslate nohighlight">\(k\)</span> with <span class="math notranslate nohighlight">\(l\)</span> interchanged).
+This fully determines <span class="math notranslate nohighlight">\(A_2\)</span> and <span class="math notranslate nohighlight">\(A_3\)</span>. The last row is determined from column
 orthogonality conditions (we compare the given column with the first column):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}1 + \omega + \omega^2 + 3 d &amp; = 0 \\
 1 + \omega^2 + \omega + 3 e &amp; = 0 \\
 1 + 1 + 1 + 3 f &amp; = 0 \\\end{split}\]</div>
-<p>Using the relation <span class="math">\(1 + \omega + \omega^2=0\)</span> we get <span class="math">\(d = 0\)</span>, <span class="math">\(e=0\)</span>
-and <span class="math">\(f=-1\)</span>.</p>
+<p>Using the relation <span class="math notranslate nohighlight">\(1 + \omega + \omega^2=0\)</span> we get <span class="math notranslate nohighlight">\(d = 0\)</span>, <span class="math notranslate nohighlight">\(e=0\)</span>
+and <span class="math notranslate nohighlight">\(f=-1\)</span>.</p>
 <p>The final character table is:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\begin{array}{c|cccc}
 T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 \hline
@@ -902,53 +892,53 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 <div class="section" id="applications-of-finite-groups">
 <h2>Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="distinct-energy-levels-vibrations">
-<h3>Distinct energy levels (&#8216;vibrations&#8217;)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this headline">¶</a></h3>
+<h3>Distinct energy levels (‘vibrations’)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this headline">¶</a></h3>
 <p>Assume that we know number of atoms in a molecule and measure the number of
 its distinct vibrational modes (frequencies) in a multiplet. We want to know
 its symmetry.</p>
-<p>We go through the list of all possible (point) symmetries <span class="math">\(S\)</span> of such a
-molecule and look at what all reps. <span class="math">\(S\)</span> has. If an <span class="math">\(n\)</span>&#8211;tuplet was observed
-among the vibrational modes and there is no <span class="math">\(n\)</span>-dimensional IR of <span class="math">\(S\)</span>, then
+<p>We go through the list of all possible (point) symmetries <span class="math notranslate nohighlight">\(S\)</span> of such a
+molecule and look at what all reps. <span class="math notranslate nohighlight">\(S\)</span> has. If an <span class="math notranslate nohighlight">\(n\)</span>–tuplet was observed
+among the vibrational modes and there is no <span class="math notranslate nohighlight">\(n\)</span>-dimensional IR of <span class="math notranslate nohighlight">\(S\)</span>, then
 can be excluded.</p>
-<p>This procedure assumes that (a) the original symmetry <span class="math">\(S\)</span> is slightly disturbed
-because of something and (b) two multiplets (<span class="math">\(m\)</span> and <span class="math">\(n\)</span> dimensional) do not
-accidentally happen to have the same frequencies (&#8216;accidental degeneracy&#8217;).</p>
+<p>This procedure assumes that (a) the original symmetry <span class="math notranslate nohighlight">\(S\)</span> is slightly disturbed
+because of something and (b) two multiplets (<span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> dimensional) do not
+accidentally happen to have the same frequencies (‘accidental degeneracy’).</p>
 </div>
 <div class="section" id="selection-rules-transitions">
-<h3>Selection rules (&#8216;transitions&#8217;)<a class="headerlink" href="#selection-rules-transitions" title="Permalink to this headline">¶</a></h3>
+<h3>Selection rules (‘transitions’)<a class="headerlink" href="#selection-rules-transitions" title="Permalink to this headline">¶</a></h3>
 <p>According to <a class="reference internal" href="#pilar" id="id18">[Pilar]</a>, p. 572.</p>
 <p>Probability of an optical transition is proportional to</p>
-<div class="math" id="equation-eq-1-2">
-<span class="eqno">(3)</span>\[\braket{i| H_1 |f}\,,\]</div>
-<p>where <span class="math">\(\ket{i}\)</span>, <span class="math">\(\ket{f}\)</span> are the initial and final states and <span class="math">\(H_1\)</span> is
+<div class="math notranslate nohighlight" id="equation-eq-1-2">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-1-2" title="Permalink to this equation">¶</a></span>\[\braket{i| H_1 |f}\,,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\ket{i}\)</span>, <span class="math notranslate nohighlight">\(\ket{f}\)</span> are the initial and final states and <span class="math notranslate nohighlight">\(H_1\)</span> is
 the operator of the interaction causing the transition. This is the
 Fermi golden rule (first order time dep. perturbation theory).</p>
-<p>The integral (<a href="#equation-eq-1-2">(3)</a>) may vanish because of the symmetry. A simple 1D
-example is that <span class="math">\(\ket{f}\)</span> is an even function <span class="math">\(f(x)\)</span>, <span class="math">\(\ket{i}\)</span> is an odd
-function <span class="math">\(i(x)\)</span> and <span class="math">\(H_1\)</span> is an even function <span class="math">\(h_1(x)\)</span>. Then
-<span class="math">\(i^*(x)h_1(x)f(x)\)</span> is odd and thus the integral over <span class="math">\((-\infty,\infty)\)</span>
+<p>The integral (<a class="reference internal" href="#equation-eq-1-2">(3)</a>) may vanish because of the symmetry. A simple 1D
+example is that <span class="math notranslate nohighlight">\(\ket{f}\)</span> is an even function <span class="math notranslate nohighlight">\(f(x)\)</span>, <span class="math notranslate nohighlight">\(\ket{i}\)</span> is an odd
+function <span class="math notranslate nohighlight">\(i(x)\)</span> and <span class="math notranslate nohighlight">\(H_1\)</span> is an even function <span class="math notranslate nohighlight">\(h_1(x)\)</span>. Then
+<span class="math notranslate nohighlight">\(i^*(x)h_1(x)f(x)\)</span> is odd and thus the integral over <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>
 vanishes. The group theory only generalizes this observation.</p>
-<p>The procedure is: find the IRs <span class="math">\(\rho_i\)</span>, <span class="math">\(\rho_f\)</span> to which <span class="math">\(\ket{i}\)</span>,
-<span class="math">\(\ket{f}\)</span> belong and also <span class="math">\(\rho\)</span>, the regular rep of <span class="math">\(H_1\)</span> in order to catch
-all IRs of <span class="math">\(H_1\)</span> (is this procedure correct?). Then construct
-<span class="math">\(\rho_i\otimes\rho\otimes\rho_f\)</span>, decompose it into IRs and see if the trivial
-rep is present. If not, the integral (<a href="#equation-eq-1-2">(3)</a>) vanishes. This procedure
-is claimed to be equivalent to checking whether <span class="math">\(\rho_i\otimes \rho_f\)</span> and
-<span class="math">\(\rho\)</span> contain at least one common IR.</p>
-<p>The infrared absorption (IRa) is described by <span class="math">\(H_1\propto x\)</span> (or <span class="math">\(y\)</span>, <span class="math">\(z\)</span>,
+<p>The procedure is: find the IRs <span class="math notranslate nohighlight">\(\rho_i\)</span>, <span class="math notranslate nohighlight">\(\rho_f\)</span> to which <span class="math notranslate nohighlight">\(\ket{i}\)</span>,
+<span class="math notranslate nohighlight">\(\ket{f}\)</span> belong and also <span class="math notranslate nohighlight">\(\rho\)</span>, the regular rep of <span class="math notranslate nohighlight">\(H_1\)</span> in order to catch
+all IRs of <span class="math notranslate nohighlight">\(H_1\)</span> (is this procedure correct?). Then construct
+<span class="math notranslate nohighlight">\(\rho_i\otimes\rho\otimes\rho_f\)</span>, decompose it into IRs and see if the trivial
+rep is present. If not, the integral (<a class="reference internal" href="#equation-eq-1-2">(3)</a>) vanishes. This procedure
+is claimed to be equivalent to checking whether <span class="math notranslate nohighlight">\(\rho_i\otimes \rho_f\)</span> and
+<span class="math notranslate nohighlight">\(\rho\)</span> contain at least one common IR.</p>
+<p>The infrared absorption (IRa) is described by <span class="math notranslate nohighlight">\(H_1\propto x\)</span> (or <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>,
 depending probably on the polarization of light), the Raman scattering has
-<span class="math">\(H_1\propto x^2\)</span> (it comes from the second order perturbation theory?).</p>
+<span class="math notranslate nohighlight">\(H_1\propto x^2\)</span> (it comes from the second order perturbation theory?).</p>
 </div>
 <div class="section" id="id19">
 <h3>Zoology<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Todo:</p>
 <ul class="simple">
-<li>Describe the representations <span class="math">\(A_1\)</span>, <span class="math">\(A_2\)</span>, <span class="math">\(B_1\)</span>, <span class="math">\(E\)</span> etc.</li>
+<li>Describe the representations <span class="math notranslate nohighlight">\(A_1\)</span>, <span class="math notranslate nohighlight">\(A_2\)</span>, <span class="math notranslate nohighlight">\(B_1\)</span>, <span class="math notranslate nohighlight">\(E\)</span> etc.</li>
 <li>Reps are specified
-by the generating functions <span class="math">\(f(x,y,z)\)</span> and the symmetry operations <span class="math">\(T\)</span> acting
-on these functions <span class="math">\(f(x,y,z)\mapsto f(x',y',z')\)</span>  then transform the
-arguments, <span class="math">\((x,y,z)\mapsto (x',y',z')=T(x,y,z)\)</span>. Explain what functions are
-commonly used (<span class="math">\(x\)</span>, <span class="math">\(R_x,\ldots\)</span>) and give maybe some examples.</li>
+by the generating functions <span class="math notranslate nohighlight">\(f(x,y,z)\)</span> and the symmetry operations <span class="math notranslate nohighlight">\(T\)</span> acting
+on these functions <span class="math notranslate nohighlight">\(f(x,y,z)\mapsto f(x',y',z')\)</span>  then transform the
+arguments, <span class="math notranslate nohighlight">\((x,y,z)\mapsto (x',y',z')=T(x,y,z)\)</span>. Explain what functions are
+commonly used (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(R_x,\ldots\)</span>) and give maybe some examples.</li>
 <li>Further reading: Davydov, p. 318, 195. Joe Penrose: Symmetry in Science.</li>
 </ul>
 </div>
@@ -958,76 +948,76 @@ commonly used (<span class="math">\(x\)</span>, <span class="math">\(R_x,\ldots\
 <div class="section" id="lie-groups-algebras">
 <h3>Lie groups+algebras<a class="headerlink" href="#lie-groups-algebras" title="Permalink to this headline">¶</a></h3>
 <p>A continuous group with metrics is a Lie group (more exactly a differentiable
-manifold and <span class="math">\(a\mapsto ag\)</span> and <span class="math">\(a\mapsto a^{-1}\)</span> are differentiable <span class="math">\(\forall
-g\)</span>, p. 172 in <a class="reference internal" href="#sternberg" id="id20">[Sternberg]</a>) usually a subgroup of <span class="math">\(GL(n)\)</span> is meant, a
-linear Lie group (i.e. matrices). Peter&#8211;Weyl theorem (p. 179
+manifold and <span class="math notranslate nohighlight">\(a\mapsto ag\)</span> and <span class="math notranslate nohighlight">\(a\mapsto a^{-1}\)</span> are differentiable <span class="math notranslate nohighlight">\(\forall
+g\)</span>, p. 172 in <a class="reference internal" href="#sternberg" id="id20">[Sternberg]</a>) usually a subgroup of <span class="math notranslate nohighlight">\(GL(n)\)</span> is meant, a
+linear Lie group (i.e. matrices). Peter–Weyl theorem (p. 179
 in <a class="reference internal" href="#sternberg" id="id21">[Sternberg]</a>) looks like that compact Lie groups are practically as
 nice as finite groups.</p>
-<p>Consider <span class="math">\(G=O(n)\)</span>, p. 234 in <a class="reference internal" href="#sternberg" id="id22">[Sternberg]</a>. If <span class="math">\(A\in G\)</span> then
-<span class="math">\(\exp(-tA)\subset G\)</span> where <span class="math">\(t\in R\)</span>. At least in <span class="math">\(O(3)\)</span> and probably in any
-<span class="math">\(O(n)\)</span>, any element of <span class="math">\(G\)</span> can be written as <span class="math">\(\exp(-tA)\)</span> where <span class="math">\(A\)</span> is a
-<span class="math">\(\pi/2\)</span> rotation around some axis. These <span class="math">\(A\)</span>&#8216;s are the generators of <span class="math">\(G\)</span>.</p>
+<p>Consider <span class="math notranslate nohighlight">\(G=O(n)\)</span>, p. 234 in <a class="reference internal" href="#sternberg" id="id22">[Sternberg]</a>. If <span class="math notranslate nohighlight">\(A\in G\)</span> then
+<span class="math notranslate nohighlight">\(\exp(-tA)\subset G\)</span> where <span class="math notranslate nohighlight">\(t\in R\)</span>. At least in <span class="math notranslate nohighlight">\(O(3)\)</span> and probably in any
+<span class="math notranslate nohighlight">\(O(n)\)</span>, any element of <span class="math notranslate nohighlight">\(G\)</span> can be written as <span class="math notranslate nohighlight">\(\exp(-tA)\)</span> where <span class="math notranslate nohighlight">\(A\)</span> is a
+<span class="math notranslate nohighlight">\(\pi/2\)</span> rotation around some axis. These <span class="math notranslate nohighlight">\(A\)</span>‘s are the generators of <span class="math notranslate nohighlight">\(G\)</span>.</p>
 <p>Typical example: for
-<span class="math">\(G=SO(3)\)</span> there are three generators, <span class="math">\(iA_x\)</span>, <span class="math">\(iA_y\)</span>, <span class="math">\(iA_z\)</span>, where <span class="math">\(A_x\)</span> is
-the rotation by <span class="math">\(\pi/2\)</span> around <span class="math">\(x\)</span>&#8211;axis in <span class="math">\(R^3\)</span>. The generators form a
-vector space (here the linear span of <span class="math">\(iA_x\)</span>, <span class="math">\(iA_y\)</span>, <span class="math">\(iA_z\)</span>) with an
+<span class="math notranslate nohighlight">\(G=SO(3)\)</span> there are three generators, <span class="math notranslate nohighlight">\(iA_x\)</span>, <span class="math notranslate nohighlight">\(iA_y\)</span>, <span class="math notranslate nohighlight">\(iA_z\)</span>, where <span class="math notranslate nohighlight">\(A_x\)</span> is
+the rotation by <span class="math notranslate nohighlight">\(\pi/2\)</span> around <span class="math notranslate nohighlight">\(x\)</span>–axis in <span class="math notranslate nohighlight">\(R^3\)</span>. The generators form a
+vector space (here the linear span of <span class="math notranslate nohighlight">\(iA_x\)</span>, <span class="math notranslate nohighlight">\(iA_y\)</span>, <span class="math notranslate nohighlight">\(iA_z\)</span>) with an
 additional operation of commutation. This structure is closed and it is called
-the Lie algebra of the group <span class="math">\(G\)</span>. The commutation relations between the
-generators fully specify the Lie algebra. E.g. <span class="math">\([iA_x,iA_y]=iA_z\)</span>
+the Lie algebra of the group <span class="math notranslate nohighlight">\(G\)</span>. The commutation relations between the
+generators fully specify the Lie algebra. E.g. <span class="math notranslate nohighlight">\([iA_x,iA_y]=iA_z\)</span>
 and the two other ones.</p>
 <p>This is a great simplification because a continuous (infinite) group was thus
 mapped on a vector space, the algebra, where it suffices to look at the basis
 elements, the generator. The net effect is that we have to watch only three
 objects instead of infinitely many in the example above.</p>
 <p>Todo: weights, roots and Dynkin diagrams. Octets and decuplets. Classification
-of IRs of <span class="math">\(SU(n)\)</span>. From <a class="reference internal" href="#georgi" id="id23">[Georgi]</a>.</p>
+of IRs of <span class="math notranslate nohighlight">\(SU(n)\)</span>. From <a class="reference internal" href="#georgi" id="id23">[Georgi]</a>.</p>
 <div class="section" id="irs-of-su-2">
 <h4>IRs of SU(2)<a class="headerlink" href="#irs-of-su-2" title="Permalink to this headline">¶</a></h4>
 <ol class="loweralpha simple" start="16">
 <li>181 in <a class="reference internal" href="#sternberg" id="id24">[Sternberg]</a>; alternative somewhere in <a class="reference internal" href="#georgi" id="id25">[Georgi]</a>.</li>
 </ol>
 <p>The Peter-Weyl theorem concerns also the orthogonality of characters and that
-in turn strongly restricts any possible characters of <span class="math">\(SU(2)\)</span>. The conjugacy
-classes of <span class="math">\(SU(2)\)</span> are exemplified by matrices
-<span class="math">\(U_\theta=\diag(e^{i\theta},e^{-i\theta})\)</span> and their possible characters can
+in turn strongly restricts any possible characters of <span class="math notranslate nohighlight">\(SU(2)\)</span>. The conjugacy
+classes of <span class="math notranslate nohighlight">\(SU(2)\)</span> are exemplified by matrices
+<span class="math notranslate nohighlight">\(U_\theta=\diag(e^{i\theta},e^{-i\theta})\)</span> and their possible characters can
 only be</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\chi(\theta)=\sum_{k=-s}^{s} \exp(-i2k\theta)\]</div>
-<p>with <span class="math">\(2s\)</span> integer.</p>
+<p>with <span class="math notranslate nohighlight">\(2s\)</span> integer.</p>
 <p>All the corresponding reps exist, they are defined on the space
-<span class="math">\(z_1^{2s},z_1^{2s-1}z_2,\ldots, z_2^{2s}\)</span> by
-<span class="math">\(U_{-\theta}z_1^{2s-k}z_2^k\mapsto [\exp i(2s-2k)\theta]z_1^{2s-k}z_2^k\)</span>.</p>
-<p>For an IR of <span class="math">\(SU(2)\)</span> the complex conjugate is just the original. For other
-<span class="math">\(SU(n)\)</span> it is not necessarily the case, p. 182 in <a class="reference internal" href="#sternberg" id="id26">[Sternberg]</a>.</p>
-<p>IRs of <span class="math">\(SO(3)\)</span> are just those of <span class="math">\(SU(2)\)</span> but <span class="math">\(s\)</span> must be an integer.</p>
+<span class="math notranslate nohighlight">\(z_1^{2s},z_1^{2s-1}z_2,\ldots, z_2^{2s}\)</span> by
+<span class="math notranslate nohighlight">\(U_{-\theta}z_1^{2s-k}z_2^k\mapsto [\exp i(2s-2k)\theta]z_1^{2s-k}z_2^k\)</span>.</p>
+<p>For an IR of <span class="math notranslate nohighlight">\(SU(2)\)</span> the complex conjugate is just the original. For other
+<span class="math notranslate nohighlight">\(SU(n)\)</span> it is not necessarily the case, p. 182 in <a class="reference internal" href="#sternberg" id="id26">[Sternberg]</a>.</p>
+<p>IRs of <span class="math notranslate nohighlight">\(SO(3)\)</span> are just those of <span class="math notranslate nohighlight">\(SU(2)\)</span> but <span class="math notranslate nohighlight">\(s\)</span> must be an integer.</p>
 </div>
 </div>
 <div class="section" id="young-diagrams">
 <h3>Young diagrams<a class="headerlink" href="#young-diagrams" title="Permalink to this headline">¶</a></h3>
-<p>YD is a systematic method to find all IRs of any symmetric group <span class="math">\(S_n\)</span>
-(permutations of an <span class="math">\(n\)</span>-element set). The idea:</p>
+<p>YD is a systematic method to find all IRs of any symmetric group <span class="math notranslate nohighlight">\(S_n\)</span>
+(permutations of an <span class="math notranslate nohighlight">\(n\)</span>-element set). The idea:</p>
 <ul class="simple">
-<li>find all conjugacy classes of <span class="math">\(S_n\)</span></li>
+<li>find all conjugacy classes of <span class="math notranslate nohighlight">\(S_n\)</span></li>
 <li>assign an IR to each of them</li>
 </ul>
-<p>Char&#8217;n of the conjugacy classes: each permutation can be decomposed into
+<p>Char’n of the conjugacy classes: each permutation can be decomposed into
 cycles. This cycle structure (i.e. how many cycles of length 1, how many of
-length 2, etc. <span class="math">\(=[\nu_1,\nu_2\,\ldots,\nu_n]\)</span>) is a unique mark of each
+length 2, etc. <span class="math notranslate nohighlight">\(=[\nu_1,\nu_2\,\ldots,\nu_n]\)</span>) is a unique mark of each
 conjugation class. The Young diagram is written by rows, each row has
-<span class="math">\(\lambda_i\)</span> empty boxes and <span class="math">\(\lambda_i-\lambda_{i+i}=\nu_i\ge 0\)</span>. Each
-conjugacy class has one YD. An YD of <span class="math">\(S_n\)</span> has <span class="math">\(n\)</span> boxes.</p>
-<p>A Young tabloid (YTd) is obtained by filling an YD with numbers <span class="math">\(1,\ldots,n\)</span> where
+<span class="math notranslate nohighlight">\(\lambda_i\)</span> empty boxes and <span class="math notranslate nohighlight">\(\lambda_i-\lambda_{i+i}=\nu_i\ge 0\)</span>. Each
+conjugacy class has one YD. An YD of <span class="math notranslate nohighlight">\(S_n\)</span> has <span class="math notranslate nohighlight">\(n\)</span> boxes.</p>
+<p>A Young tabloid (YTd) is obtained by filling an YD with numbers <span class="math notranslate nohighlight">\(1,\ldots,n\)</span> where
 ordering in each row does not matter. A Young tableau is an YTd where all
 orderings (thus also in rows) matter.</p>
-<p>The IRs of <span class="math">\(S_n\)</span>. Take an YD <span class="math">\(\lambda\)</span>. On the space of all corresponding
-YTd&#8217;s (<span class="math">\(M_\lambda\)</span>) a rep. of the <span class="math">\(S_n\)</span> is created. It is decomposed into IRs
-and shown to have some &#8216;new&#8217; IR compared to <span class="math">\(\mu&gt;\lambda\)</span>.</p>
+<p>The IRs of <span class="math notranslate nohighlight">\(S_n\)</span>. Take an YD <span class="math notranslate nohighlight">\(\lambda\)</span>. On the space of all corresponding
+YTd’s (<span class="math notranslate nohighlight">\(M_\lambda\)</span>) a rep. of the <span class="math notranslate nohighlight">\(S_n\)</span> is created. It is decomposed into IRs
+and shown to have some ‘new’ IR compared to <span class="math notranslate nohighlight">\(\mu&gt;\lambda\)</span>.</p>
 <p>Details are explained in <a class="reference internal" href="#sternberg" id="id27">[Sternberg]</a>, p. 76 or in the lecture notes of
 J. Niederle.</p>
 <p>Comments from p. 82 of <a class="reference internal" href="#sternberg" id="id28">[Sternberg]</a>:
-Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">\(e_t\)</span>; <span class="math">\(\delta_{\{t\}}\)</span> means probably a function on
-<span class="math">\(M_\lambda\)</span> which is zero for all <span class="math">\(\{y\}\)</span> unless <span class="math">\(\{y\}=\{t\}\)</span>). The action of
-<span class="math">\(a\in S_n\)</span> on this basis functions is described.</p>
+Basis of <span class="math notranslate nohighlight">\(M_\lambda\)</span> is defined (<span class="math notranslate nohighlight">\(e_t\)</span>; <span class="math notranslate nohighlight">\(\delta_{\{t\}}\)</span> means probably a function on
+<span class="math notranslate nohighlight">\(M_\lambda\)</span> which is zero for all <span class="math notranslate nohighlight">\(\{y\}\)</span> unless <span class="math notranslate nohighlight">\(\{y\}=\{t\}\)</span>). The action of
+<span class="math notranslate nohighlight">\(a\in S_n\)</span> on this basis functions is described.</p>
 </div>
 </div>
 <div class="section" id="literature">
@@ -1060,7 +1050,7 @@ Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">
 <table class="docutils citation" frame="void" id="pilar" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id18">[Pilar]</a></td><td>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw&#8211;Hill.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id18">[Pilar]</a></td><td>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw–Hill.</td></tr>
 </tbody>
 </table>
 <table class="docutils citation" frame="void" id="sternberg" rules="none">
@@ -1101,7 +1091,7 @@ Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
@@ -1129,8 +1119,8 @@ Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">
 </ul>
 </li>
 <li><a class="reference internal" href="#applications-of-finite-groups">Applications of finite groups</a><ul>
-<li><a class="reference internal" href="#distinct-energy-levels-vibrations">Distinct energy levels (&#8216;vibrations&#8217;)</a></li>
-<li><a class="reference internal" href="#selection-rules-transitions">Selection rules (&#8216;transitions&#8217;)</a></li>
+<li><a class="reference internal" href="#distinct-energy-levels-vibrations">Distinct energy levels (‘vibrations’)</a></li>
+<li><a class="reference internal" href="#selection-rules-transitions">Selection rules (‘transitions’)</a></li>
 <li><a class="reference internal" href="#id19">Zoology</a></li>
 </ul>
 </li>
@@ -1153,29 +1143,30 @@ Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">
   <h4>Next topic</h4>
   <p class="topless"><a href="wigner.html"
                         title="next chapter">Wigner D Function</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="../_sources/math/groups.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/groups.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -1187,13 +1178,13 @@ Basis of <span class="math">\(M_\lambda\)</span> is defined (<span class="math">
         <li class="right" >
           <a href="feynman-parameters.html" title="Feynman Parameters"
              >previous</a> |</li>
-        <li><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &raquo;</li>
-          <li><a href="main.html" >Mathematics</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
       </ul>
     </div>
-    <div class="footer">
-        &copy; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
     </div>
   </body>
 </html>

@@ -118,15 +118,15 @@ vectors.</p>
 <p>Let’s integrate a function <span class="math notranslate nohighlight">\(f(x, y, z)\)</span> over the surface of a sphere in 3D
 (e.g. <span class="math notranslate nohighlight">\(k=2\)</span> and <span class="math notranslate nohighlight">\(n=3\)</span>):</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\mathbf{\varphi}(\theta, \phi) = \mat{
+\[ \begin{align}\begin{aligned}\mathbf{\varphi}(\theta, \phi) &amp;= \mat{
     r\sin\theta\cos\phi \cr
     r\sin\theta\sin\phi \cr
     r\cos\theta \cr
-}\\{\bf J} = \mat{
+}\\{\bf J} &amp;= \mat{
     -r\sin\theta\sin\phi &amp; r\cos\theta\cos\phi \cr
     r\sin\theta\cos\phi &amp; r\cos\theta\sin\phi \cr
     0 &amp; -r\sin\theta \cr
-}\\{\bf G} = {\bf J}^T {\bf J} =
+}\\{\bf G} &amp;= {\bf J}^T {\bf J} =
 \mat{
     -r\sin\theta\sin\phi &amp; r\sin\theta\cos\phi &amp; 0 \cr
     r\cos\theta\cos\phi &amp; r\cos\theta\sin\phi &amp; -r\sin\theta \cr
@@ -139,9 +139,9 @@ vectors.</p>
 = \mat {
     r^2\sin^2\theta &amp; 0 \cr
     0 &amp; r^2 \cr
-}\\\det{\bf G} = r^4\sin^2\theta\\\sqrt{\det{\bf G}} = r^2\sin\theta\\\int_M f(x, y, z) \d S = \int_{\R^n} f(r\sin\theta\cos\phi,
+}\\\det{\bf G} &amp;= r^4\sin^2\theta\\\sqrt{\det{\bf G}} &amp;= r^2\sin\theta\\\int_M f(x, y, z) \d S &amp;= \int_{\R^n} f(r\sin\theta\cos\phi,
 r\sin\theta\sin\phi, r\cos\theta)\, r^2\sin\theta\,\d\theta\,\d\phi
-=\\= \int_0^\pi\d\theta \int_0^{2\pi}\d\phi\, f(r\sin\theta\cos\phi,
+=\\&amp;= \int_0^\pi\d\theta \int_0^{2\pi}\d\phi\, f(r\sin\theta\cos\phi,
 r\sin\theta\sin\phi, r\cos\theta)\, r^2\sin\theta\end{aligned}\end{align} \]</div>
 <p>Let’s say we want to calculate the surface area of a sphere, so we set <span class="math notranslate nohighlight">\(f(x, y,
 z) = 1\)</span> and get:</p>

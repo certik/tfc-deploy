@@ -119,19 +119,19 @@ vectors.</p>
 <p>Let’s integrate a function <img class="math" src="../_images/math/5451024f42c9f408e5e8db2fa503873a937b7a49.svg" alt="f(x, y, z)"/> over the surface of a sphere in 3D
 (e.g. <img class="math" src="../_images/math/de63e9c48aef469525ff22d6ff8781e21f3d9f24.svg" alt="k=2"/> and <img class="math" src="../_images/math/20793f5ed17ea69a1e38be6f1a6ea251f284fa50.svg" alt="n=3"/>):</p>
 <div class="math">
-<p><img src="../_images/math/388a00d7d9cf60fdce695725b00029b603938c48.svg" alt="\mathbf{\varphi}(\theta, \phi) = \mat{
+<p><img src="../_images/math/a7545f5d39f6bbf6025c21a1a8bfdb0eca4dfa36.svg" alt="\mathbf{\varphi}(\theta, \phi) &amp;= \mat{
     r\sin\theta\cos\phi \cr
     r\sin\theta\sin\phi \cr
     r\cos\theta \cr
 }
 
-{\bf J} = \mat{
+{\bf J} &amp;= \mat{
     -r\sin\theta\sin\phi &amp; r\cos\theta\cos\phi \cr
     r\sin\theta\cos\phi &amp; r\cos\theta\sin\phi \cr
     0 &amp; -r\sin\theta \cr
 }
 
-{\bf G} = {\bf J}^T {\bf J} =
+{\bf G} &amp;= {\bf J}^T {\bf J} =
 \mat{
     -r\sin\theta\sin\phi &amp; r\sin\theta\cos\phi &amp; 0 \cr
     r\cos\theta\cos\phi &amp; r\cos\theta\sin\phi &amp; -r\sin\theta \cr
@@ -146,15 +146,15 @@ vectors.</p>
     0 &amp; r^2 \cr
 }
 
-\det{\bf G} = r^4\sin^2\theta
+\det{\bf G} &amp;= r^4\sin^2\theta
 
-\sqrt{\det{\bf G}} = r^2\sin\theta
+\sqrt{\det{\bf G}} &amp;= r^2\sin\theta
 
-\int_M f(x, y, z) \d S = \int_{\R^n} f(r\sin\theta\cos\phi,
+\int_M f(x, y, z) \d S &amp;= \int_{\R^n} f(r\sin\theta\cos\phi,
 r\sin\theta\sin\phi, r\cos\theta)\, r^2\sin\theta\,\d\theta\,\d\phi
 =
 
-= \int_0^\pi\d\theta \int_0^{2\pi}\d\phi\, f(r\sin\theta\cos\phi,
+&amp;= \int_0^\pi\d\theta \int_0^{2\pi}\d\phi\, f(r\sin\theta\cos\phi,
 r\sin\theta\sin\phi, r\cos\theta)\, r^2\sin\theta"/></p>
 </div><p>Let’s say we want to calculate the surface area of a sphere, so we set <img class="math" src="../_images/math/0f58e2a254bee54fa101cb0bbce92c194fd5d090.svg" alt="f(x, y,
 z) = 1"/> and get:</p>

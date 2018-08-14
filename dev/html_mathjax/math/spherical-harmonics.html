@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Legendre Polynomials &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.29. Legendre Polynomials &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hypergeometric Functions" href="hyper.html" />
-    <link rel="prev" title="Delta Function" href="other.html" />
+    <link rel="next" title="3.34. Hypergeometric Functions" href="hyper.html" />
+    <link rel="prev" title="3.15. Delta Function" href="other.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -57,13 +57,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="hyper.html" title="Hypergeometric Functions"
+          <a href="hyper.html" title="3.34. Hypergeometric Functions"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="other.html" title="Delta Function"
+          <a href="other.html" title="3.15. Delta Function"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -73,13 +73,13 @@
           <div class="body" role="main">
             
   <div class="section" id="legendre-polynomials">
-<span id="index-0"></span><span id="id1"></span><h1>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>3.29. Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h1>
 <p>Legendre polynomials <span class="math notranslate nohighlight">\(P_l(x)\)</span> defined by the Rodrigues’ formula</p>
 <div class="math notranslate nohighlight">
 \[P_l(x)={1\over2^l l!}{\d^l\over\d x^l}[(x^2-1)^l]\]</div>
 <p>they also obey the completeness relation</p>
 <div class="math notranslate nohighlight" id="equation-lorto">
-<span class="eqno">(1)<a class="headerlink" href="#equation-lorto" title="Permalink to this equation">¶</a></span>\[   \sum_{l=0}^\infty {2l+1\over2}P_l(x')P_l(x)=\delta(x-x')\]</div>
+<span class="eqno">(3.29.1)<a class="headerlink" href="#equation-lorto" title="Permalink to this equation">¶</a></span>\[   \sum_{l=0}^\infty {2l+1\over2}P_l(x')P_l(x)=\delta(x-x')\]</div>
 <p>and orthogonality relation:</p>
 <div class="math notranslate nohighlight">
 \[\int_{-1}^1 P_k(x) P_l(x) \d x = {2\delta_{kl} \over 2k+1}\]</div>
@@ -129,7 +129,7 @@
 <p>So we will be just using the <span class="math notranslate nohighlight">\(3j\)</span> symbol form from now on.
 We can now calculate the integral of three Legendre polynomials:</p>
 <div class="math notranslate nohighlight" id="equation-int-three-legendre-polys">
-<span class="eqno">(2)<a class="headerlink" href="#equation-int-three-legendre-polys" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_{-1}^1 P_k(x) P_l(x) P_m(x) \d x =\\\begin{split}= \int_{-1}^1
+<span class="eqno">(3.29.2)<a class="headerlink" href="#equation-int-three-legendre-polys" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_{-1}^1 P_k(x) P_l(x) P_m(x) \d x =\\\begin{split}= \int_{-1}^1
     \sum_{n=|k-l|}^{k+l}
     \begin{pmatrix} k &amp; l &amp; n \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
     (2n+1) P_n(x)
@@ -206,10 +206,10 @@ for <span class="math notranslate nohighlight">\(|t| \le 1\)</span>:</p>
 </tbody>
 </table>
 <div class="section" id="example-i">
-<h2>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+<h2>3.29.1. Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
 <p>Very important is the following multipole expansion:</p>
 <div class="math notranslate nohighlight" id="equation-legendre-expansion">
-<span class="eqno">(3)<a class="headerlink" href="#equation-legendre-expansion" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}{1\over |{\bf r}-{\bf r'}|}
+<span class="eqno">(3.29.1.1)<a class="headerlink" href="#equation-legendre-expansion" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}{1\over |{\bf r}-{\bf r'}|}
     ={1\over \sqrt{({\bf r}-{\bf r'})^2}}
     ={1\over \sqrt{r^2-2{\bf r}\cdot {\bf r'} + r'^2}}
     ={1\over r_&gt;\sqrt{1-2\left(r_&lt;\over r_&gt;\right){\bf\hat r}\cdot {\bf\hat
@@ -223,7 +223,7 @@ Assuming <span class="math notranslate nohighlight">\(r &gt; r'\)</span>, we get
 ={1\over r}\left( P_0({\bf\hat r}\cdot {\bf\hat r'}) + P_1({\bf\hat r}\cdot {\bf\hat r'}){r'\over r} + P_2({\bf\hat r}\cdot {\bf\hat r'})\left(r'\over r\right)^2 + O\left(r'^3\over r^3\right) \right) =\\={1\over r}\left( 1 + {\bf\hat r}\cdot {\bf\hat r'} {r'\over r} + \half\left(3({\bf\hat r}\cdot {\bf\hat r'})^2-1\right)\left(r'\over r\right)^2 + O\left(r'^3\over r^3\right) \right) =\\={1\over r} +{{\bf r}\cdot {\bf r'}\over r^3} +{3({\bf r}\cdot {\bf r'})^2-r^2r'^2\over 2r^5} + O\left(r'^3\over r^4\right)\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="example-ii">
-<h2>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+<h2>3.29.2. Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
 <p>Let’s find the expansion of</p>
 <div class="math notranslate nohighlight">
 \[f(x) = {e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}}\]</div>
@@ -280,7 +280,7 @@ g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \
 </div>
 </div>
 <div class="section" id="example-iii">
-<h2>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
+<h2>3.29.3. Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[{e^{-{|{\bf r}-{\bf r'}|\over D}}\over |{\bf r}-{\bf r'}|}
     = {e^{-r_&gt;\sqrt{1-2\left(r_&lt;\over r_&gt;\right)
@@ -298,7 +298,7 @@ x &amp; = {\bf\hat r}\cdot {\bf\hat r'} \\
 t &amp; = {r_&lt;\over r_&gt;}\end{split}\]</div>
 </div>
 <div class="section" id="example-iv">
-<h2>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h2>
+<h2>3.29.4. Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[V(|{\bf r}_1-{\bf r}_2|)
     = {e^{-{|{\bf r}_1-{\bf r}_2|\over D}}\over |{\bf r}_1-{\bf r}_2|}\]</div>
@@ -337,7 +337,7 @@ t &amp; = {r_&lt;\over r_&gt;}\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="spherical-harmonics">
-<span id="index-1"></span><h1>Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this headline">¶</a></h1>
+<span id="index-1"></span><h1>3.30. Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this headline">¶</a></h1>
 <p>Are defined for <span class="math notranslate nohighlight">\(m \ge 0\)</span> by</p>
 <div class="math notranslate nohighlight">
 \[Y_{lm}(\theta,\phi)=\sqrt{{2l+1\over4\pi}{(l-m)!\over(l+m)!}}\,P_l^m(\cos\theta)\,e^{im\phi}\]</div>
@@ -361,15 +361,15 @@ written as:</p>
     \end{cases}\end{split}\]</div>
 <p>The spherical harmonics are ortonormal:</p>
 <div class="math notranslate nohighlight" id="equation-yorto">
-<span class="eqno">(4)<a class="headerlink" href="#equation-yorto" title="Permalink to this equation">¶</a></span>\[   \int Y_{lm}\,Y^*_{l'm'}\,\d\Omega = \int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \delta_{mm'}\delta_{ll'}\]</div>
+<span class="eqno">(3.30.1)<a class="headerlink" href="#equation-yorto" title="Permalink to this equation">¶</a></span>\[   \int Y_{lm}\,Y^*_{l'm'}\,\d\Omega = \int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \delta_{mm'}\delta_{ll'}\]</div>
 <p>and complete (both in the <span class="math notranslate nohighlight">\(l\)</span>-subspace and the whole space):</p>
 <div class="math notranslate nohighlight" id="equation-lcomplete">
-<span class="eqno">(5)<a class="headerlink" href="#equation-lcomplete" title="Permalink to this equation">¶</a></span>\[   \sum_{m=-l}^l|Y_{lm}(\theta,\phi)|^2={2l+1\over4\pi}\]</div>
+<span class="eqno">(3.30.2)<a class="headerlink" href="#equation-lcomplete" title="Permalink to this equation">¶</a></span>\[   \sum_{m=-l}^l|Y_{lm}(\theta,\phi)|^2={2l+1\over4\pi}\]</div>
 <div class="math notranslate nohighlight" id="equation-ycomplete">
-<span class="eqno">(6)<a class="headerlink" href="#equation-ycomplete" title="Permalink to this equation">¶</a></span>\[   \sum_{l=0}^\infty\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi') ={1\over\sin\theta}\delta(\theta-\theta')\delta(\phi-\phi')= \delta({\bf\hat r}-{\bf\hat r'})\]</div>
-<p>The relation <a class="reference internal" href="#equation-lcomplete">(5)</a> is a special case of an addition theorem for spherical harmonics</p>
+<span class="eqno">(3.30.3)<a class="headerlink" href="#equation-ycomplete" title="Permalink to this equation">¶</a></span>\[   \sum_{l=0}^\infty\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi') ={1\over\sin\theta}\delta(\theta-\theta')\delta(\phi-\phi')= \delta({\bf\hat r}-{\bf\hat r'})\]</div>
+<p>The relation <a class="reference internal" href="#equation-lcomplete">(3.30.2)</a> is a special case of an addition theorem for spherical harmonics</p>
 <div class="math notranslate nohighlight" id="equation-lsum">
-<span class="eqno">(7)<a class="headerlink" href="#equation-lsum" title="Permalink to this equation">¶</a></span>\[   \sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= {2l+1\over 4\pi}P_l(\cos\gamma)\]</div>
+<span class="eqno">(3.30.4)<a class="headerlink" href="#equation-lsum" title="Permalink to this equation">¶</a></span>\[   \sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= {2l+1\over 4\pi}P_l(\cos\gamma)\]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma\)</span> is the angle between the unit vectors given by <span class="math notranslate nohighlight">\({\bf\hat r}=(\theta,\phi)\)</span> and <span class="math notranslate nohighlight">\({\bf\hat r'}=(\theta',\phi')\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\cos\gamma=\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi') ={\bf\hat r}\cdot{\bf\hat r'}\]</div>
@@ -377,7 +377,7 @@ written as:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}Y_{l m}^*(\Omega) = (-1)^m Y_{l,-m}(\Omega)\\(-1)^m Y_{l,-m}^*(\Omega) = Y_{lm}(\Omega)\end{aligned}\end{align} \]</div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>3.30.1. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\int_{-1}^1 P_k(x) \d x
     = \int_{-1}^1 P_k(x) P_0(x) \d x
@@ -387,7 +387,7 @@ written as:</p>
 </div>
 </div>
 <div class="section" id="gaunt-coefficients">
-<h1>Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this headline">¶</a></h1>
+<h1>3.31. Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this headline">¶</a></h1>
 <p>We use the Wigner-Eckart theorem:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\braket{j m | T^k_q | j' m'} = (-1)^{j-m}
@@ -411,7 +411,7 @@ evaluate the W-E theorem for <span class="math notranslate nohighlight">\(m=q=m'
         \d \theta \d \phi =\\= \sqrt{(2j+1)(2k+1)(2j'+1)\over 4\pi} {1\over 2}
     \int_{-1}^1 P_j(x) P_k(x) P_{j'}(x) \d x =\\\begin{split}= \sqrt{(2j+1)(2k+1)(2j'+1)\over 4\pi}
     \begin{pmatrix} j &amp; k &amp; j' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2\end{split}\end{aligned}\end{align} \]</div>
-<p>where we used <a class="reference internal" href="#equation-int-three-legendre-polys">(2)</a>.
+<p>where we used <a class="reference internal" href="#equation-int-three-legendre-polys">(3.29.2)</a>.
 Comparing these two results, we get:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}(j || T^k || j') = (-1)^{-j}
@@ -468,7 +468,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
 </tbody>
 </table>
 <div class="section" id="id4">
-<h2>Example I<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>3.31.1. Example I<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[c^0(l, m, l', m')
     =\sqrt{4\pi}
@@ -476,7 +476,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
     =\delta_{l l'}\delta_{m m'}\]</div>
 </div>
 <div class="section" id="id5">
-<h2>Example II<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>3.31.2. Example II<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\sum_{m=-l}^l c^k(l, m, l, m)
     = \sum_m
@@ -492,7 +492,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
     (2l+1) \delta_{k0}\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="id6">
-<h2>Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>3.31.3. Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}c^k(l, m, l', m') =
     \sqrt{4\pi \over 2k+1}
@@ -510,7 +510,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="id7">
-<h2>Example IV<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2>3.31.4. Example IV<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}c^k(l, -m, l', -m') =\\\begin{split}= (-1)^{m}
     \sqrt{(2l+1)(2l'+1)}
@@ -548,7 +548,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
     = {c^{l}(l', 0, k, 0) \over \sqrt{(2l'+1)(2k+1)}}\end{split}\\c^k(l, 0, l', 0) = c^k(l', 0, l, 0)\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="example-v">
-<h2>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h2>
+<h2>3.31.5. Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\sum_{m'} \left(c^k(l, m, l', m')\right)^2 =\\\begin{split}    = \sum_{m'}
     (2l+1)(2l'+1)
@@ -566,9 +566,9 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
     =\end{split}\\    =\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="example-vi">
-<span id="five-spherical-harmonics"></span><h2>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h2>
+<span id="five-spherical-harmonics"></span><h2>3.31.6. Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight" id="equation-five-spherical-harmonics">
-<span class="eqno">(8)<a class="headerlink" href="#equation-five-spherical-harmonics" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\sum_{m'}\sum_{q}\int
+<span class="eqno">(3.31.6.1)<a class="headerlink" href="#equation-five-spherical-harmonics" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\sum_{m'}\sum_{q}\int
         Y_{l'm'}(\Omega)
         Y_{l'm'}^*(\Omega')
         Y_{kq}(\Omega)
@@ -622,7 +622,7 @@ the <span class="math notranslate nohighlight">\(c^k(l, m, l', m')\)</span> coef
     Y_{\lambda\mu}^*(\Omega')
     Y_{\lambda\mu}(\Omega)\end{aligned}\end{align} \]</div>
 <p>Note: using the integral of 3 spherical harmonics directly in
-<a class="reference internal" href="#equation-five-spherical-harmonics">(8)</a>:</p>
+<a class="reference internal" href="#equation-five-spherical-harmonics">(3.31.6.1)</a>:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\sum_{m'}\sum_{q}\int
         Y_{l'm'}(\Omega)
@@ -640,7 +640,7 @@ simplify things further.</p>
 </div>
 </div>
 <div class="section" id="wigner-3j-symbols">
-<h1>Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this headline">¶</a></h1>
+<h1>3.32. Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this headline">¶</a></h1>
 <p>Relation between the Wigner <span class="math notranslate nohighlight">\(3j\)</span> symbols and Clebsch-Gordan coefficients:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\begin{split}\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
@@ -676,11 +676,11 @@ integer:</p>
     2j+1}\end{split}\]</div>
 <p>As a special case, we get:</p>
 <div class="math notranslate nohighlight" id="equation-3j-square-sum">
-<span class="eqno">(9)<a class="headerlink" href="#equation-3j-square-sum" title="Permalink to this equation">¶</a></span>\[\begin{split}\sum_{m'}
+<span class="eqno">(3.32.1)<a class="headerlink" href="#equation-3j-square-sum" title="Permalink to this equation">¶</a></span>\[\begin{split}\sum_{m'}
 \begin{pmatrix} l &amp; k &amp; l' \\ -m &amp; m-m' &amp; m' \end{pmatrix}^2
 =
     {1 \over 2l+1}\end{split}\]</div>
-<p>Here is a script to check that the equation <a class="reference internal" href="#equation-3j-square-sum">(9)</a> works:</p>
+<p>Here is a script to check that the equation <a class="reference internal" href="#equation-3j-square-sum">(3.32.1)</a> works:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">S</span>
 <span class="kn">from</span> <span class="nn">sympy.physics.wigner</span> <span class="k">import</span> <span class="n">wigner_3j</span>
 
@@ -757,7 +757,7 @@ above to obtain values for permuted symbols):</p>
     &amp;= (-1)^{j-m-1} \sqrt{2(j+m+1)(j-m+1)
         \over (2j+1)(2j+2)(2j+3)}\end{split}\]</div>
 <div class="section" id="id8">
-<h2>Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2>3.32.1. Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\begin{split}\begin{pmatrix} j_3-\half &amp; \half &amp; j_3 \\
     m_3-\half &amp; \half &amp; -m_3 \end{pmatrix} =
@@ -805,8 +805,8 @@ above to obtain values for permuted symbols):</p>
 </div>
 </div>
 <div class="section" id="multipole-expansion">
-<span id="index-2"></span><h1>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h1>
-<p>Using <a class="reference internal" href="#equation-legendre-expansion">(3)</a> we get:</p>
+<span id="index-2"></span><h1>3.33. Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h1>
+<p>Using <a class="reference internal" href="#equation-legendre-expansion">(3.29.1.1)</a> we get:</p>
 <div class="math notranslate nohighlight">
 \[{1\over |{\bf r}-{\bf r'}|}
     =\sum_{l=0}^\infty{r_{&lt;}^l\over r_{&gt;}^{l+1}} P_l({\bf\hat r}\cdot {\bf\hat r'})
@@ -826,39 +826,39 @@ above to obtain values for permuted symbols):</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Legendre Polynomials</a><ul>
-<li><a class="reference internal" href="#example-i">Example I</a></li>
-<li><a class="reference internal" href="#example-ii">Example II</a></li>
-<li><a class="reference internal" href="#example-iii">Example III</a></li>
-<li><a class="reference internal" href="#example-iv">Example IV</a></li>
+<li><a class="reference internal" href="#">3.29. Legendre Polynomials</a><ul>
+<li><a class="reference internal" href="#example-i">3.29.1. Example I</a></li>
+<li><a class="reference internal" href="#example-ii">3.29.2. Example II</a></li>
+<li><a class="reference internal" href="#example-iii">3.29.3. Example III</a></li>
+<li><a class="reference internal" href="#example-iv">3.29.4. Example IV</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#spherical-harmonics">Spherical Harmonics</a><ul>
-<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#spherical-harmonics">3.30. Spherical Harmonics</a><ul>
+<li><a class="reference internal" href="#examples">3.30.1. Examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#gaunt-coefficients">Gaunt Coefficients</a><ul>
-<li><a class="reference internal" href="#id4">Example I</a></li>
-<li><a class="reference internal" href="#id5">Example II</a></li>
-<li><a class="reference internal" href="#id6">Example III</a></li>
-<li><a class="reference internal" href="#id7">Example IV</a></li>
-<li><a class="reference internal" href="#example-v">Example V</a></li>
-<li><a class="reference internal" href="#example-vi">Example VI</a></li>
+<li><a class="reference internal" href="#gaunt-coefficients">3.31. Gaunt Coefficients</a><ul>
+<li><a class="reference internal" href="#id4">3.31.1. Example I</a></li>
+<li><a class="reference internal" href="#id5">3.31.2. Example II</a></li>
+<li><a class="reference internal" href="#id6">3.31.3. Example III</a></li>
+<li><a class="reference internal" href="#id7">3.31.4. Example IV</a></li>
+<li><a class="reference internal" href="#example-v">3.31.5. Example V</a></li>
+<li><a class="reference internal" href="#example-vi">3.31.6. Example VI</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#wigner-3j-symbols">Wigner 3j Symbols</a><ul>
-<li><a class="reference internal" href="#id8">Examples</a></li>
+<li><a class="reference internal" href="#wigner-3j-symbols">3.32. Wigner 3j Symbols</a><ul>
+<li><a class="reference internal" href="#id8">3.32.1. Examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#multipole-expansion">Multipole Expansion</a></li>
+<li><a class="reference internal" href="#multipole-expansion">3.33. Multipole Expansion</a></li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="other.html"
-                        title="previous chapter">Delta Function</a></p>
+                        title="previous chapter">3.15. Delta Function</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="hyper.html"
-                        title="next chapter">Hypergeometric Functions</a></p>
+                        title="next chapter">3.34. Hypergeometric Functions</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -889,13 +889,13 @@ above to obtain values for permuted symbols):</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="hyper.html" title="Hypergeometric Functions"
+          <a href="hyper.html" title="3.34. Hypergeometric Functions"
              >next</a> |</li>
         <li class="right" >
-          <a href="other.html" title="Delta Function"
+          <a href="other.html" title="3.15. Delta Function"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

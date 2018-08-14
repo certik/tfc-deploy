@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Ordinary Differential Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.38. Ordinary Differential Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linear Algebra" href="la.html" />
-    <link rel="prev" title="Wigner D Function" href="wigner.html" />
+    <link rel="next" title="3.39. Linear Algebra" href="la.html" />
+    <link rel="prev" title="3.37. Wigner D Function" href="wigner.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="la.html" title="Linear Algebra"
+          <a href="la.html" title="3.39. Linear Algebra"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="wigner.html" title="Wigner D Function"
+          <a href="wigner.html" title="3.37. Wigner D Function"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,9 +72,9 @@
           <div class="body" role="main">
             
   <div class="section" id="ordinary-differential-equations">
-<h1>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h1>
+<h1>3.38. Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="finite-difference-formulas">
-<h2>Finite Difference Formulas<a class="headerlink" href="#finite-difference-formulas" title="Permalink to this headline">¶</a></h2>
+<h2>3.38.1. Finite Difference Formulas<a class="headerlink" href="#finite-difference-formulas" title="Permalink to this headline">¶</a></h2>
 <p>We define the backward difference operator <img class="math" src="../_images/math/eac19d4b2566a59448fff5a3ba0130c2c733396b.svg" alt="\nabla_h"/> by:</p>
 <div class="math">
 <p><img src="../_images/math/695505c7610af55f4ab1c92776a02405ee5a156d.svg" alt="\nabla_h f(a) = f(a) - f(a-h)"/></p>
@@ -183,10 +183,10 @@ either left (<img class="math" src="../_images/math/e22df456f515d467479f39e2a66a
 </div>
 </div>
 <div class="section" id="integrating-ode">
-<h2>Integrating ODE<a class="headerlink" href="#integrating-ode" title="Permalink to this headline">¶</a></h2>
+<h2>3.38.2. Integrating ODE<a class="headerlink" href="#integrating-ode" title="Permalink to this headline">¶</a></h2>
 <p>Set of linear ODEs can be written in the form:</p>
 <div class="math" id="equation-ode-eq">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-ode-eq" title="Permalink to this equation">¶</a></span><img src="../_images/math/a91d76bfd6373960b04a5a6d26e0608556dc3512.svg" alt="{\d y\over\d r} = G y"/></p>
+<p><span class="eqno">(3.38.2.1)<a class="headerlink" href="#equation-ode-eq" title="Permalink to this equation">¶</a></span><img src="../_images/math/a91d76bfd6373960b04a5a6d26e0608556dc3512.svg" alt="{\d y\over\d r} = G y"/></p>
 </div><p>For example for the Schrödinger we have</p>
 <div class="math">
 <p><img src="../_images/math/5f861c09939a302b0e7d7ee0aedc9d58f8afb27b.svg" alt="y = \begin{pmatrix}
@@ -208,7 +208,7 @@ t_i = (i-1)h"/></p>
 above we get:</p>
 <div class="math">
 <p><img src="../_images/math/8ea5298cf647a744d31a4ded3e66e311f4ea83c2.svg" alt="{\d r\over\d t} = r_0 e^t"/></p>
-</div><p>Now we substitute this into <a class="reference internal" href="#equation-ode-eq">(1)</a>:</p>
+</div><p>Now we substitute this into <a class="reference internal" href="#equation-ode-eq">(3.38.2.1)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/f145a585234e3354dd430de5076aa3b5851e6087.svg" alt="{\d y\over\d t} = {\d r\over\d t} G y"/></p>
 </div><p>We can integrate this system from <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/> to <img class="math" src="../_images/math/d0ea81424c73777041ee81bea53ccc0565810321.svg" alt="a+h"/> on a uniform grid <img class="math" src="../_images/math/1328d870bc95a9d030bfbb0338f9437884293187.svg" alt="t_i"/>:</p>
@@ -219,10 +219,10 @@ above we get:</p>
 integral, see the previous section.</p>
 </div>
 <div class="section" id="radial-poisson-equation">
-<h2>Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this headline">¶</a></h2>
+<h2>3.38.3. Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this headline">¶</a></h2>
 <p>Radial Poisson equation is:</p>
 <div class="math" id="equation-poisson-v">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-poisson-v" title="Permalink to this equation">¶</a></span><img src="../_images/math/fadff7491047b43cdb63dd1616d214d6f154bc9c.svg" alt="V''(r) + {2\over r} V'(r) = -4\pi n(r)"/></p>
+<p><span class="eqno">(3.38.3.1)<a class="headerlink" href="#equation-poisson-v" title="Permalink to this equation">¶</a></span><img src="../_images/math/fadff7491047b43cdb63dd1616d214d6f154bc9c.svg" alt="V''(r) + {2\over r} V'(r) = -4\pi n(r)"/></p>
 </div><p>The left hand side can be written as:</p>
 <div class="math">
 <p><img src="../_images/math/76fa235d44f3ca27a54410a462a0fa4cce624e68.svg" alt="V'' + {2\over r} V'
@@ -230,7 +230,7 @@ integral, see the previous section.</p>
     = {1\over r} \left(r V\right)''"/></p>
 </div><p>So the Poisson equation can also be written as:</p>
 <div class="math" id="equation-poisson-rv">
-<p><span class="eqno">(3)<a class="headerlink" href="#equation-poisson-rv" title="Permalink to this equation">¶</a></span><img src="../_images/math/f09e20ec65bbce1c8abbc411451a069a9aa4d542.svg" alt="(rV)'' = -4\pi r\, n"/></p>
+<p><span class="eqno">(3.38.3.2)<a class="headerlink" href="#equation-poisson-rv" title="Permalink to this equation">¶</a></span><img src="../_images/math/f09e20ec65bbce1c8abbc411451a069a9aa4d542.svg" alt="(rV)'' = -4\pi r\, n"/></p>
 </div><p>Now we determine the values of <img class="math" src="../_images/math/26e486b0b3acbada5354da18c4db71306300cda8.svg" alt="V(0)"/>, <img class="math" src="../_images/math/17d9df71a1dc0a39c0ded248e03121cf62faca88.svg" alt="V'(0)"/> and the behavior of
 <img class="math" src="../_images/math/d4b3707afe28134cd20bfb7b198dc8970ff762be.svg" alt="V(\infty)"/> and <img class="math" src="../_images/math/264a12ff148eadf01040486ffcb4da1a9200ead8.svg" alt="V'(\infty)"/>. The equation determines <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> up to an
 arbitrary constant, so we set <img class="math" src="../_images/math/5409739b7ae63137815dc1c5643fde94ea908e94.svg" alt="V(\infty) = 0"/> and now the potential <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> is
@@ -265,7 +265,7 @@ the origin. From now on, we will assume no point charge, i.e. <img class="math" 
 integration constant), we get for <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/>:</p>
 <div class="math">
 <p><img src="../_images/math/0a00f01c2e54768743b69dadfc972433823ee0b5.svg" alt="V(r) = {Z\over r}"/></p>
-</div><p>Integrating <a class="reference internal" href="#equation-poisson-rv">(3)</a> directly, we get:</p>
+</div><p>Integrating <a class="reference internal" href="#equation-poisson-rv">(3.38.3.2)</a> directly, we get:</p>
 <div class="math">
 <p><img src="../_images/math/dade5c8c2f0328ad2eb87c9cfd5b85c64d7ffe7b.svg" alt="[(rV)']_0^\infty = -4\pi\int_0^\infty r n(r) \d r
 
@@ -285,7 +285,7 @@ V(r) = V_0 + V_1 r + V_2 r^2 + \cdots = \sum_{k=0}^\infty V_k r^k
 V'(r) = \sum_{k=1}^\infty V_k k r^{k-1}
 
 V''(r) = \sum_{k=2}^\infty V_k k(k-1) r^{k-2}"/></p>
-</div><p>And substitute into the equation <a class="reference internal" href="#equation-poisson-v">(2)</a>:</p>
+</div><p>And substitute into the equation <a class="reference internal" href="#equation-poisson-v">(3.38.3.1)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/608bd24ba73e39e83682319c4fefd30111004abf.svg" alt="\sum_{k=2}^\infty V_k k(k-1) r^{k-2} +
     {2\over r}\sum_{k=1}^\infty V_k k r^{k-1} =
@@ -361,7 +361,7 @@ present a few.</p>
 <p>The Gaussian charge is simply a Gaussian, normalized in such a way that the
 total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
 <div class="math" id="equation-gauss-charge">
-<p><span class="eqno">(4)<a class="headerlink" href="#equation-gauss-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/426cbd247845ee9cd690c6dbe9462b27c1964204.svg" alt="n(r) = {Z\alpha^3 \over \pi^{3\over2} } e^{-\alpha^2 r^2}"/></p>
+<p><span class="eqno">(3.38.3.3)<a class="headerlink" href="#equation-gauss-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/426cbd247845ee9cd690c6dbe9462b27c1964204.svg" alt="n(r) = {Z\alpha^3 \over \pi^{3\over2} } e^{-\alpha^2 r^2}"/></p>
 </div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
 <div class="math">
 <p><img src="../_images/math/9c8a3f21c343cbf6bc7d82893d8b00bc564f7e79.svg" alt="Q = \int n({\bf x}) \d^3 x
@@ -383,7 +383,7 @@ total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386
 </pre></div>
 </div>
 <p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
-<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
+<a class="reference internal" href="#equation-poisson-rv">(3.38.3.2)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/b5431501f9b1c89b7994da77d39900b0e1dccbdb.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = -{4\alpha^3 r Z\over \sqrt\pi } e^{-\alpha^2 r^2}
@@ -395,7 +395,7 @@ r V(r) = Z \,\mbox{erf}(\alpha r) + Ar + B
 V(r) = Z \,{\mbox{erf}(\alpha r) \over r} + A + {B\over r}"/></p>
 </div><p>We have two integration constants <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> and <img class="math" src="../_images/math/8eb7c8af84dc3945487fc2588e930f59b4aa574c.svg" alt="B"/>. We fix the potential using the
 condition <img class="math" src="../_images/math/5409739b7ae63137815dc1c5643fde94ea908e94.svg" alt="V(\infty) = 0"/>, which implies <img class="math" src="../_images/math/b6c1a095491e61daaba64e158f1b9bc2484dd89a.svg" alt="A=0"/>. The other constant <img class="math" src="../_images/math/8eb7c8af84dc3945487fc2588e930f59b4aa574c.svg" alt="B"/> is a
-point charge at the origin, which in our case <a class="reference internal" href="#equation-gauss-charge">(4)</a> is zero, so
+point charge at the origin, which in our case <a class="reference internal" href="#equation-gauss-charge">(3.38.3.3)</a> is zero, so
 <img class="math" src="../_images/math/c12e11f20e0f5778d1395f53e6a4a585424b4eb4.svg" alt="B=0"/>.</p>
 <p>We finally obtain the potential:</p>
 <div class="math">
@@ -432,7 +432,7 @@ charge <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598
 <p>The exponential charge is simply an exponential, normalized in such a way that
 the total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
 <div class="math" id="equation-exp-charge">
-<p><span class="eqno">(5)<a class="headerlink" href="#equation-exp-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/d04d604c5cddeb1b4716bb1cd3d3ab81464d2d72.svg" alt="n(r) = {Z\alpha^3 \over 8\pi} e^{-\alpha r}"/></p>
+<p><span class="eqno">(3.38.3.4)<a class="headerlink" href="#equation-exp-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/d04d604c5cddeb1b4716bb1cd3d3ab81464d2d72.svg" alt="n(r) = {Z\alpha^3 \over 8\pi} e^{-\alpha r}"/></p>
 </div><p>Let us verify the normalization by calculating the total charge <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
 <div class="math">
 <p><img src="../_images/math/8a5afe105ffad6739b0af38fc739a3385dbbd19f.svg" alt="Q = \int n({\bf x}) \d^3 x
@@ -446,7 +446,7 @@ the total charge is <img class="math" src="../_images/math/11fbe21c5214ca7373664
 = {Z \alpha^3 \over 2} {2\over\alpha^3} = Z"/></p>
 </div><p>So the total charge is <img class="math" src="../_images/math/56ca685ed6a70c0254dbf1e772fc5932b39f454c.svg" alt="Q=Z"/>, as expected.</p>
 <p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
-<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
+<a class="reference internal" href="#equation-poisson-rv">(3.38.3.2)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/3f0201e987ee522fd48a706326f7b7044a6782e2.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = -{Z\alpha^3 \over 2} r e^{-\alpha r}
@@ -517,7 +517,7 @@ r^2 \d r =
 <p>We will use a second-derivative continuous piecewise polynomial for <img class="math" src="../_images/math/70a3b77789654e5324af7f780f01b7d9a5620954.svg" alt="n(r)"/>,
 normalized in such a way that the total charge is <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/>:</p>
 <div class="math" id="equation-poly-charge">
-<p><span class="eqno">(6)<a class="headerlink" href="#equation-poly-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/61d6c943b705043ce061f03be0ee8422db0ac736.svg" alt="n(r) = \begin{cases}
+<p><span class="eqno">(3.38.3.5)<a class="headerlink" href="#equation-poly-charge" title="Permalink to this equation">¶</a></span><img src="../_images/math/61d6c943b705043ce061f03be0ee8422db0ac736.svg" alt="n(r) = \begin{cases}
 -21Z(r-r_c)^3(6r^2+3rr_c+r_c^2)/(5\pi r_c^8) &amp;\quad\mbox{for $0\le r \le r_c$}\cr
 0&amp;\quad\mbox{for $r&gt;r_c$}\cr
 \end{cases}"/></p>
@@ -532,7 +532,7 @@ normalized in such a way that the total charge is <img class="math" src="../_ima
 = Z"/></p>
 </div><p>So the total charge is <img class="math" src="../_images/math/56ca685ed6a70c0254dbf1e772fc5932b39f454c.svg" alt="Q=Z"/>, as expected.</p>
 <p>Now we calculate the potential <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> from the Poisson equation
-<a class="reference internal" href="#equation-poisson-rv">(3)</a>:</p>
+<a class="reference internal" href="#equation-poisson-rv">(3.38.3.2)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/21fe1704b3b611027b6af77c0e3e460ef6b089fb.svg" alt="\left(rV(r)\right)'' = -4\pi r n(r)
     = 4\pi r \cdot 21Z(r-r_c)^3(6r^2+3rr_c+r_c^2)/(5\pi r_c^8)
@@ -684,10 +684,10 @@ sphere of radius <img class="math" src="../_images/math/c2a6d69d3430bba2a967e76d
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Ordinary Differential Equations</a><ul>
-<li><a class="reference internal" href="#finite-difference-formulas">Finite Difference Formulas</a></li>
-<li><a class="reference internal" href="#integrating-ode">Integrating ODE</a></li>
-<li><a class="reference internal" href="#radial-poisson-equation">Radial Poisson Equation</a><ul>
+<li><a class="reference internal" href="#">3.38. Ordinary Differential Equations</a><ul>
+<li><a class="reference internal" href="#finite-difference-formulas">3.38.1. Finite Difference Formulas</a></li>
+<li><a class="reference internal" href="#integrating-ode">3.38.2. Integrating ODE</a></li>
+<li><a class="reference internal" href="#radial-poisson-equation">3.38.3. Radial Poisson Equation</a><ul>
 <li><a class="reference internal" href="#examples">Examples</a><ul>
 <li><a class="reference internal" href="#gaussian-charge">Gaussian Charge</a></li>
 <li><a class="reference internal" href="#exponential-charge">Exponential Charge</a></li>
@@ -702,10 +702,10 @@ sphere of radius <img class="math" src="../_images/math/c2a6d69d3430bba2a967e76d
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="wigner.html"
-                        title="previous chapter">Wigner D Function</a></p>
+                        title="previous chapter">3.37. Wigner D Function</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="la.html"
-                        title="next chapter">Linear Algebra</a></p>
+                        title="next chapter">3.39. Linear Algebra</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -736,13 +736,13 @@ sphere of radius <img class="math" src="../_images/math/c2a6d69d3430bba2a967e76d
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="la.html" title="Linear Algebra"
+          <a href="la.html" title="3.39. Linear Algebra"
              >next</a> |</li>
         <li class="right" >
-          <a href="wigner.html" title="Wigner D Function"
+          <a href="wigner.html" title="3.37. Wigner D Function"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

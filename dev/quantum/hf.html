@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hartree-Fock (HF) Method &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>8.10. Hartree-Fock (HF) Method &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Projector Augmented-Wave Method (PAW)" href="paw.html" />
-    <link rel="prev" title="Density Functional Theory (DFT)" href="dft.html" />
+    <link rel="next" title="8.11. Projector Augmented-Wave Method (PAW)" href="paw.html" />
+    <link rel="prev" title="8.9. Density Functional Theory (DFT)" href="dft.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="paw.html" title="Projector Augmented-Wave Method (PAW)"
+          <a href="paw.html" title="8.11. Projector Augmented-Wave Method (PAW)"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="dft.html" title="Density Functional Theory (DFT)"
+          <a href="dft.html" title="8.9. Density Functional Theory (DFT)"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,9 +72,9 @@
           <div class="body" role="main">
             
   <div class="section" id="hartree-fock-hf-method">
-<h1>Hartree-Fock (HF) Method<a class="headerlink" href="#hartree-fock-hf-method" title="Permalink to this headline">¶</a></h1>
+<h1>8.10. Hartree-Fock (HF) Method<a class="headerlink" href="#hartree-fock-hf-method" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="derivation">
-<h2>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.1. Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
 <p>The interacting Hamiltonian for many body Schrödinger equation
 is (see the general QFT notes for derivation):</p>
 <div class="math">
@@ -116,7 +116,7 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
 <p><img src="../_images/math/9a4f1392d6a0dcf67ff0920fc6659fb3385e5714.svg" alt="\delta \left(E - \sum_{i,j=1}^Z \epsilon_{ij} \braket{i|j}\right) = 0"/></p>
 </div><p>We obtain:</p>
 <div class="math" id="equation-hfeq0">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-hfeq0" title="Permalink to this equation">¶</a></span><img src="../_images/math/fdc5eccb13a26f15cd0f7c1c2fe7e40a63a08f3d.svg" alt="T \ket{i} + \sum_{j=1}^Z \left(\braket{j|V|ij}-\braket{j|V|ji}\right)
+<p><span class="eqno">(8.10.1.1)<a class="headerlink" href="#equation-hfeq0" title="Permalink to this equation">¶</a></span><img src="../_images/math/fdc5eccb13a26f15cd0f7c1c2fe7e40a63a08f3d.svg" alt="T \ket{i} + \sum_{j=1}^Z \left(\braket{j|V|ij}-\braket{j|V|ji}\right)
     = \epsilon_i \ket{i}"/></p>
 </div><p>in the <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-representation:</p>
 <div class="math">
@@ -151,7 +151,7 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
         \d^3 y\,\,\psi_j({\bf x})"/></p>
 </div><p>we get the Hartree-Fock equations:</p>
 <div class="math" id="equation-hfeq">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-hfeq" title="Permalink to this equation">¶</a></span><img src="../_images/math/3af166b071b795077144f6fe303e44deab183bba.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
+<p><span class="eqno">(8.10.1.2)<a class="headerlink" href="#equation-hfeq" title="Permalink to this equation">¶</a></span><img src="../_images/math/3af166b071b795077144f6fe303e44deab183bba.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
 +
 \int {\sum_{j=1}^Z|\psi_j({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y\right)\psi_i({\bf x})
@@ -206,25 +206,25 @@ W_{fj}({\bf x}) = \int {f({\bf y})\psi_j^*({\bf y})\over|{\bf x}-{\bf y}|}
 \nabla^2 W_{fj}({\bf x}) = -4\pi f({\bf x})\psi_j^*({\bf x})"/></p>
 </div></div>
 <div class="section" id="roothaan-equations-for-closed-shell-systems">
-<h2>Roothaan Equations For Closed Shell Systems<a class="headerlink" href="#roothaan-equations-for-closed-shell-systems" title="Permalink to this headline">¶</a></h2>
-<p>Starting from <a class="reference internal" href="#equation-hfeq0">(1)</a> and integrating over spins we get (here
+<h2>8.10.2. Roothaan Equations For Closed Shell Systems<a class="headerlink" href="#roothaan-equations-for-closed-shell-systems" title="Permalink to this headline">¶</a></h2>
+<p>Starting from <a class="reference internal" href="#equation-hfeq0">(8.10.1.1)</a> and integrating over spins we get (here
 <img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/>, <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> are spatial orbitals, not spin orbitals):</p>
 <div class="math" id="equation-hfeq01">
-<p><span class="eqno">(3)<a class="headerlink" href="#equation-hfeq01" title="Permalink to this equation">¶</a></span><img src="../_images/math/16b0ebad4ad0665b751df528f8ae1a18fe77e6a6.svg" alt="T \ket{i} + \sum_{k=1}^{N/2}
+<p><span class="eqno">(8.10.2.1)<a class="headerlink" href="#equation-hfeq01" title="Permalink to this equation">¶</a></span><img src="../_images/math/16b0ebad4ad0665b751df528f8ae1a18fe77e6a6.svg" alt="T \ket{i} + \sum_{k=1}^{N/2}
     \left(2\braket{k|V|ik}-\braket{k|V|ki}\right) = \epsilon_i \ket{i}"/></p>
 </div><p>We introduce basis functions <img class="math" src="../_images/math/1a75a845bf9de324a7c3a2a830bc22c35a658dd8.svg" alt="\ket{\mu}"/> by (below the greek letters are basis
 functions, latin letters are spatial orbitals):</p>
 <div class="math">
 <p><img src="../_images/math/d2b9c4da5e310a86d506b9518b4ea1004ab695ec.svg" alt="\ket{i} = \sum_\nu C_{\nu i} \ket{\nu}"/></p>
-</div><p>substitute into <a class="reference internal" href="#equation-hfeq01">(3)</a> and multiply by <img class="math" src="../_images/math/73baebaa6c17e5b44ff79f0e90d009cf35fc9a64.svg" alt="\bra{\mu}"/> from the left:</p>
+</div><p>substitute into <a class="reference internal" href="#equation-hfeq01">(8.10.2.1)</a> and multiply by <img class="math" src="../_images/math/73baebaa6c17e5b44ff79f0e90d009cf35fc9a64.svg" alt="\bra{\mu}"/> from the left:</p>
 <div class="math" id="equation-hfeq02">
-<p><span class="eqno">(4)<a class="headerlink" href="#equation-hfeq02" title="Permalink to this equation">¶</a></span><img src="../_images/math/6d49a1f82d5b5fbee686ec9006f265f25a404024.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
+<p><span class="eqno">(8.10.2.2)<a class="headerlink" href="#equation-hfeq02" title="Permalink to this equation">¶</a></span><img src="../_images/math/6d49a1f82d5b5fbee686ec9006f265f25a404024.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
     + \sum_\nu\sum_{k=1}^{N/2} \left(2\braket{\mu k|V|\nu k}
         -\braket{\mu k|V|k\nu}\right) C_{\nu i}
     = \epsilon_i \sum_\nu \braket{\mu | \nu} C_{\nu i}"/></p>
 </div><p>Now we expand the functions <img class="math" src="../_images/math/397e484b0faf352ed22dd4d7109b4273103a98e7.svg" alt="\ket{k}"/>:</p>
 <div class="math" id="equation-hfeq03">
-<p><span class="eqno">(5)<a class="headerlink" href="#equation-hfeq03" title="Permalink to this equation">¶</a></span><img src="../_images/math/d78f3c27c22db3372f33f62de8218cd08605f405.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
+<p><span class="eqno">(8.10.2.3)<a class="headerlink" href="#equation-hfeq03" title="Permalink to this equation">¶</a></span><img src="../_images/math/d78f3c27c22db3372f33f62de8218cd08605f405.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
     + \sum_\nu \sum_{\alpha\beta}
         \left(2\sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^* \right)
         \left(\braket{\mu \beta|V|\nu \alpha}
@@ -241,7 +241,7 @@ functions, latin letters are spatial orbitals):</p>
 P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*"/></p>
 </div><p>and get:</p>
 <div class="math" id="equation-hfeq04">
-<p><span class="eqno">(6)<a class="headerlink" href="#equation-hfeq04" title="Permalink to this equation">¶</a></span><img src="../_images/math/93caf87335817e33d9373b2210ac9b8bc7f32652.svg" alt="\sum_\nu \left( \braket{\mu | T | \nu}
+<p><span class="eqno">(8.10.2.4)<a class="headerlink" href="#equation-hfeq04" title="Permalink to this equation">¶</a></span><img src="../_images/math/93caf87335817e33d9373b2210ac9b8bc7f32652.svg" alt="\sum_\nu \left( \braket{\mu | T | \nu}
     + \sum_{\alpha\beta}
         P_{\alpha\beta}
         \left(\braket{\mu \beta|V|\nu \alpha}
@@ -258,9 +258,9 @@ G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
             -\half \braket{\mu \beta|V|\alpha \nu}\right)
 
 S_{\mu\nu} = \braket{\mu | \nu}"/></p>
-</div><p>the equation <a class="reference internal" href="#equation-hfeq04">(6)</a> is:</p>
+</div><p>the equation <a class="reference internal" href="#equation-hfeq04">(8.10.2.4)</a> is:</p>
 <div class="math" id="equation-roothaan1">
-<p><span class="eqno">(7)<a class="headerlink" href="#equation-roothaan1" title="Permalink to this equation">¶</a></span><img src="../_images/math/d92aa9223236aeb2208f3a8c820b09b52be861b7.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i}
+<p><span class="eqno">(8.10.2.5)<a class="headerlink" href="#equation-roothaan1" title="Permalink to this equation">¶</a></span><img src="../_images/math/d92aa9223236aeb2208f3a8c820b09b52be861b7.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i}
     = \epsilon_i \sum_\nu S_{\mu\nu} C_{\nu i}"/></p>
 </div><p>These are the Roothaan equations. It is a generalized eigenvalue problem.</p>
 <p>Total energy is given by (the <img class="math" src="../_images/math/c82b7276809f5a3c1c4f091de9dccee1d0b4988d.svg" alt="i,j"/> in the first equation are spin orbitals,
@@ -301,9 +301,9 @@ in the other equations <img class="math" src="../_images/math/c82b7276809f5a3c1c
 = \half \sum_{\mu\nu} P_{\nu\mu} (H_{\mu\nu}^{\mbox{core}}
     +F_{\mu\nu})"/></p>
 </div><p>The same thing can be derived in <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-representation
-starting from <a class="reference internal" href="#equation-hfeq">(2)</a> and introducing spatial orbitals:</p>
+starting from <a class="reference internal" href="#equation-hfeq">(8.10.1.2)</a> and introducing spatial orbitals:</p>
 <div class="math" id="equation-hfeq2">
-<p><span class="eqno">(8)<a class="headerlink" href="#equation-hfeq2" title="Permalink to this equation">¶</a></span><img src="../_images/math/f6eb813892958592f267d30a85e510afd89f4965.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
+<p><span class="eqno">(8.10.2.6)<a class="headerlink" href="#equation-hfeq2" title="Permalink to this equation">¶</a></span><img src="../_images/math/f6eb813892958592f267d30a85e510afd89f4965.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
 +
 \int {2\sum_{k=1}^{N/2}|\psi_k({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y\right)\psi_i({\bf x})
@@ -314,10 +314,10 @@ starting from <a class="reference internal" href="#equation-hfeq">(2)</a> and in
 </div><p>We introduce basis functions <img class="math" src="../_images/math/bd58575e743a9ea9f2312e335d9bdff979f22107.svg" alt="\phi_\mu"/>:</p>
 <div class="math">
 <p><img src="../_images/math/40586b181dbeb747a6d723b151613395ec5a20e6.svg" alt="\psi_i({\bf x}) = \sum_\nu C_{\nu i} \phi_\nu({\bf x})"/></p>
-</div><p>substitute into <a class="reference internal" href="#equation-hfeq2">(8)</a> and also multiply the whole equation by
+</div><p>substitute into <a class="reference internal" href="#equation-hfeq2">(8.10.2.6)</a> and also multiply the whole equation by
 <img class="math" src="../_images/math/88abfb00d2130ac097b74c6d3ca2988e0efc3c42.svg" alt="\phi_\mu^*"/> and integrate over <img class="math" src="../_images/math/bd379d76154aa25ae8d397923e27bf9581f1e57c.svg" alt="{\bf x}"/>:</p>
 <div class="math" id="equation-hfeq3">
-<p><span class="eqno">(9)<a class="headerlink" href="#equation-hfeq3" title="Permalink to this equation">¶</a></span><img src="../_images/math/6ee58e66706047ccf81d894337942a31fc87fdde.svg" alt="\sum_\nu
+<p><span class="eqno">(8.10.2.7)<a class="headerlink" href="#equation-hfeq3" title="Permalink to this equation">¶</a></span><img src="../_images/math/6ee58e66706047ccf81d894337942a31fc87fdde.svg" alt="\sum_\nu
 \int
 \phi_\mu^*({\bf x})
 \left(-\half \nabla^2 -{Z\over |{\bf x}|}
@@ -423,10 +423,10 @@ for example <img class="math" src="../_images/math/fad4dc24ee2efb2dd960db3804009
 from the context.</p>
 </div>
 <div class="section" id="two-particle-matrix-element">
-<h2>Two Particle Matrix Element<a class="headerlink" href="#two-particle-matrix-element" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.3. Two Particle Matrix Element<a class="headerlink" href="#two-particle-matrix-element" title="Permalink to this headline">¶</a></h2>
 <p>The two particle matrix element is:</p>
 <div class="math" id="equation-twoint">
-<p><span class="eqno">(10)<a class="headerlink" href="#equation-twoint" title="Permalink to this equation">¶</a></span><img src="../_images/math/ad13c2e483c1aa6f83a4ef0b94f640e83935a518.svg" alt="(ij|kl) =
+<p><span class="eqno">(8.10.3.1)<a class="headerlink" href="#equation-twoint" title="Permalink to this equation">¶</a></span><img src="../_images/math/ad13c2e483c1aa6f83a4ef0b94f640e83935a518.svg" alt="(ij|kl) =
     \int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_k^*({\bf x}')\psi_l({\bf x}')
         \over | {\bf x} - {\bf x}' |} \d^3 x \d^3 x' =
 
@@ -439,7 +439,7 @@ the <img class="math" src="../_images/math/ef301ec22362b3ec6d3f929b4b43b21686bb6
 <p><img src="../_images/math/0f9870642c1ff57cf23a2cca13d2fbb92fa34fb5.svg" alt="\ket{jl}=\psi_j({\bf x})\psi_l({\bf x}')
 
 \ket{ik}=\psi_i({\bf x})\psi_k({\bf x}')"/></p>
-</div><p>The <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/> is called the chemists’ notation. From <a class="reference internal" href="#equation-twoint">(10)</a> there
+</div><p>The <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/> is called the chemists’ notation. From <a class="reference internal" href="#equation-twoint">(8.10.3.1)</a> there
 are two types of symmetries — interchanging of the dummy variables:</p>
 <div class="math">
 <p><img src="../_images/math/8976984315d279f2ee2847d6a186d30b69f0ad9a.svg" alt="(ij|kl) = \braket{ik|jl} =
@@ -570,7 +570,7 @@ symmetries are missing, i.e.
 \braket{\alpha \beta | \gamma \delta}"/>.</p>
 </div>
 <div class="section" id="general-matrix-elements-in-spherical-symmetry">
-<h2>General Matrix Elements in Spherical Symmetry<a class="headerlink" href="#general-matrix-elements-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.4. General Matrix Elements in Spherical Symmetry<a class="headerlink" href="#general-matrix-elements-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Spherical symmetry is this particular choice of a basis:</p>
 <div class="math">
 <p><img src="../_images/math/0d52fcbe45a20ed5bc9de0991e69a528f4fe2889.svg" alt="\phi_\mu({\bf x}) =
@@ -1541,19 +1541,19 @@ R^k(n_1 l_1, n_2 l_2, n_1' l_1', n_2' l_2')"/></p>
 </div>
 </div>
 <div class="section" id="slater-type-orbitals-sto">
-<h2>Slater Type Orbitals (STO)<a class="headerlink" href="#slater-type-orbitals-sto" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.5. Slater Type Orbitals (STO)<a class="headerlink" href="#slater-type-orbitals-sto" title="Permalink to this headline">¶</a></h2>
 <p>In this section we express the matrix elements in the STO basis.
 It turns out that all integrals that we need can be expressed in terms
 of the following simple integral (where <img class="math" src="../_images/math/322b5f8a09d4d1b05e8438cd6d716f932d73ad3b.svg" alt="n,\zeta \ge 0"/>):</p>
 <div class="math" id="equation-slater-basic">
-<p><span class="eqno">(11)<a class="headerlink" href="#equation-slater-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/749ce0bb21607122dc348cc1b65cc9468329a9ce.svg" alt="\int_0^\infty r^n e^{-\zeta r} \d r
+<p><span class="eqno">(8.10.5.1)<a class="headerlink" href="#equation-slater-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/749ce0bb21607122dc348cc1b65cc9468329a9ce.svg" alt="\int_0^\infty r^n e^{-\zeta r} \d r
     =\int_0^\infty \left(x\over\zeta\right)^n e^{-x} {\d x\over\zeta}
     ={1\over\zeta^{n+1}} \int_0^\infty x^n e^{-x} \d x
     ={\Gamma(n+1)\over\zeta^{n+1}}
     ={n!\over\zeta^{n+1}}"/></p>
 </div><p>The STO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/> is:</p>
 <div class="math" id="equation-sto-p">
-<p><span class="eqno">(12)<a class="headerlink" href="#equation-sto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/574b2a235470fb54c775bf917dead8eb54565269.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r}"/></p>
+<p><span class="eqno">(8.10.5.2)<a class="headerlink" href="#equation-sto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/574b2a235470fb54c775bf917dead8eb54565269.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r}"/></p>
 </div><p>Where the normalization constant <img class="math" src="../_images/math/a05c95dc1898bb6b4fe1bf1515d5a628ddc02fb6.svg" alt="N_{n\zeta}"/> is such that the STO orbital is
 normalized as the radial wavefunction <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/>:</p>
 <div class="math">
@@ -1565,8 +1565,8 @@ normalized as the radial wavefunction <img class="math" src="../_images/math/0f4
 <p><img src="../_images/math/ca1a8db9e47967928cd89c409d4293121676048e.svg" alt="N_{n\zeta} = \sqrt{(2\zeta)^{2n+1}\over (2n)!}"/></p>
 </div><p>Note that for <img class="math" src="../_images/math/64579655afce336b43d779ce69db40c431555e94.svg" alt="R(r)={P(r)\over r}"/> we get the following STO basis function:</p>
 <div class="math" id="equation-sto-r">
-<p><span class="eqno">(13)<a class="headerlink" href="#equation-sto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/d37e166f1c61cb88ca8de3ff961b5b136f5d01f6.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r}"/></p>
-</div><p>One uses either <a class="reference internal" href="#equation-sto-p">(12)</a> or <a class="reference internal" href="#equation-sto-r">(13)</a> depending on whether one solves the
+<p><span class="eqno">(8.10.5.3)<a class="headerlink" href="#equation-sto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/d37e166f1c61cb88ca8de3ff961b5b136f5d01f6.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r}"/></p>
+</div><p>One uses either <a class="reference internal" href="#equation-sto-p">(8.10.5.2)</a> or <a class="reference internal" href="#equation-sto-r">(8.10.5.3)</a> depending on whether one solves the
 radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> or for <img class="math" src="../_images/math/2ee68628330142c892400d22d22b483f3ae9f890.svg" alt="R={P\over r}"/>.</p>
 <div class="section" id="id1">
 <h3>Overlap<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
@@ -1872,12 +1872,12 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
 </div></div>
 </div>
 <div class="section" id="gaussian-type-orbitals-gto">
-<h2>Gaussian Type Orbitals (GTO)<a class="headerlink" href="#gaussian-type-orbitals-gto" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.6. Gaussian Type Orbitals (GTO)<a class="headerlink" href="#gaussian-type-orbitals-gto" title="Permalink to this headline">¶</a></h2>
 <p>In this section we express the matrix elements in the GTO basis.
 It turns out that all integrals that we need can be expressed in terms
 of the following simple integral (where <img class="math" src="../_images/math/322b5f8a09d4d1b05e8438cd6d716f932d73ad3b.svg" alt="n,\zeta \ge 0"/>):</p>
 <div class="math" id="equation-gto-basic">
-<p><span class="eqno">(14)<a class="headerlink" href="#equation-gto-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/ae544b414a8e2704ecfa1746ff5d5229c5bfb1fa.svg" alt="\int_0^\infty r^n e^{-\zeta r^2} \d r
+<p><span class="eqno">(8.10.6.1)<a class="headerlink" href="#equation-gto-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/ae544b414a8e2704ecfa1746ff5d5229c5bfb1fa.svg" alt="\int_0^\infty r^n e^{-\zeta r^2} \d r
     = {1\over\sqrt{\zeta^{n+1}}} \int_0^\infty x^n e^{-x^2} \d x
     = {1\over2\sqrt{\zeta^{n+1}}} \int_0^\infty t^{n-1\over 2} e^{-t} \d t
     = {\Gamma({n+1\over2})\over2 \zeta^{n+1\over2}} =
@@ -1889,10 +1889,10 @@ of the following simple integral (where <img class="math" src="../_images/math/3
     \end{cases}"/></p>
 </div><p>The GTO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/> is:</p>
 <div class="math" id="equation-gto-p">
-<p><span class="eqno">(15)<a class="headerlink" href="#equation-gto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/1b81256da3d7ec64ba6cec7eb071c07677d1058c.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r^2}"/></p>
+<p><span class="eqno">(8.10.6.2)<a class="headerlink" href="#equation-gto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/1b81256da3d7ec64ba6cec7eb071c07677d1058c.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r^2}"/></p>
 </div><p>However, unlike STO, the GTO functions must satisfy the condition
 <img class="math" src="../_images/math/16abee4c212a3876b3fb07eebd97f7891be9b63a.svg" alt="n = l + 2i + 1"/> where <img class="math" src="../_images/math/551aa8d3c2795c2a93f5971bd9e7f9ff7e4dc591.svg" alt="i=0, 1, 2, \dots"/> (this condition is later used
-in <a class="reference internal" href="#equation-gto-basic">(14)</a> to determine whether <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> is even or odd).
+in <a class="reference internal" href="#equation-gto-basic">(8.10.6.1)</a> to determine whether <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> is even or odd).
 The normalization constant <img class="math" src="../_images/math/a05c95dc1898bb6b4fe1bf1515d5a628ddc02fb6.svg" alt="N_{n\zeta}"/> is such that the GTO orbital is
 normalized as the radial wavefunction <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/>:</p>
 <div class="math">
@@ -1904,8 +1904,8 @@ normalized as the radial wavefunction <img class="math" src="../_images/math/0f4
 <p><img src="../_images/math/dd15687baeedac3e7ec805b0b2b86604e1b51ede.svg" alt="N_{n\zeta} = \sqrt{{1\over (2n-1)!!}\sqrt{2 (4\zeta)^{2n+1}\over\pi}}"/></p>
 </div><p>Note that for <img class="math" src="../_images/math/64579655afce336b43d779ce69db40c431555e94.svg" alt="R(r)={P(r)\over r}"/> we get the following GTO basis function:</p>
 <div class="math" id="equation-gto-r">
-<p><span class="eqno">(16)<a class="headerlink" href="#equation-gto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/4b59101c9f726525b1bc0bcdbaaa8b38383bd729.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r^2}"/></p>
-</div><p>One uses either <a class="reference internal" href="#equation-sto-p">(12)</a> or <a class="reference internal" href="#equation-sto-r">(13)</a> depending on whether one solves the
+<p><span class="eqno">(8.10.6.3)<a class="headerlink" href="#equation-gto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/4b59101c9f726525b1bc0bcdbaaa8b38383bd729.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r^2}"/></p>
+</div><p>One uses either <a class="reference internal" href="#equation-sto-p">(8.10.5.2)</a> or <a class="reference internal" href="#equation-sto-r">(8.10.5.3)</a> depending on whether one solves the
 radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> or for <img class="math" src="../_images/math/2ee68628330142c892400d22d22b483f3ae9f890.svg" alt="R={P\over r}"/>.</p>
 <div class="section" id="id5">
 <h3>Overlap<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
@@ -2093,7 +2093,7 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
 </div></div>
 </div>
 <div class="section" id="exchange-integral-in-spherical-symmetry">
-<h2>Exchange Integral in Spherical Symmetry<a class="headerlink" href="#exchange-integral-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.7. Exchange Integral in Spherical Symmetry<a class="headerlink" href="#exchange-integral-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Let’s calculate the exchange integral</p>
 <div class="math">
 <p><img src="../_images/math/0448afac81e1fd2fb7cf2332addeebd9ef921960.svg" alt="\int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_j^*({\bf x}')\psi_i({\bf x}')
@@ -2215,7 +2215,7 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
     \d r \d r'"/></p>
 </div></div>
 <div class="section" id="occupation-numbers">
-<h2>Occupation Numbers<a class="headerlink" href="#occupation-numbers" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.8. Occupation Numbers<a class="headerlink" href="#occupation-numbers" title="Permalink to this headline">¶</a></h2>
 <p>We have a sum over <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> electron states like this:</p>
 <div class="math">
 <p><img src="../_images/math/7a39f647c24d24b49035351975f59311875daaf5.svg" alt="\sum_{i=1}^N A_i({\bf x}) = \sum_{nlms} A_{nlms}({\bf x})"/></p>
@@ -2309,7 +2309,7 @@ By summing all these <img class="math" src="../_images/math/b368932d75bc763e50a8
 </div>
 </div>
 <div class="section" id="hartree-screening-functions">
-<h2>Hartree Screening Functions<a class="headerlink" href="#hartree-screening-functions" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.9. Hartree Screening Functions<a class="headerlink" href="#hartree-screening-functions" title="Permalink to this headline">¶</a></h2>
 <p>Hartree screening function <img class="math" src="../_images/math/36a594d2af3278dfe9533f620a9f134417f6ad8a.svg" alt="Y^k(f, r)"/> is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/ef28243d46aab9fe7065ef6fd5b24953bd1370f6.svg" alt="Y^k(f, r) = r
@@ -2471,7 +2471,7 @@ weak formulation is:</p>
 boundary and no constrain on the right.</p>
 </div>
 <div class="section" id="hartree-potential-in-spherical-symmetry">
-<span id="hartree-spherical"></span><h2>Hartree Potential in Spherical Symmetry<a class="headerlink" href="#hartree-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+<span id="hartree-spherical"></span><h2>8.10.10. Hartree Potential in Spherical Symmetry<a class="headerlink" href="#hartree-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>For both open and closed shell atoms we get exactly:</p>
 <div class="math">
 <p><img src="../_images/math/d446c156b4b13fb50c87667f22d33eb59ff9b11b.svg" alt="V_H({\bf x})
@@ -2563,7 +2563,7 @@ V_H''(r) r + 2V_H'(r) = - 4\pi n(r) r
 V_H''(r) + {2\over r}V_H'(r) = -4\pi n(r)"/></p>
 </div></div>
 <div class="section" id="nonlocal-exchange-potential-in-spherical-symmetry">
-<h2>Nonlocal Exchange Potential in Spherical Symmetry<a class="headerlink" href="#nonlocal-exchange-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.11. Nonlocal Exchange Potential in Spherical Symmetry<a class="headerlink" href="#nonlocal-exchange-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Similarly, we calculate:</p>
 <div class="math">
 <p><img src="../_images/math/12d43ec3e04f07030480cbb1a35d9f3476db4c09.svg" alt="\sum_{j=1}^Z\int {\psi_i({\bf x'})\psi_j^*({\bf x'})\over|{\bf x}-{\bf x'}|}
@@ -2642,7 +2642,7 @@ multiplication by 2. We assumed closed shells atoms (we summed over all <img cla
 the above). We used the result of the integral in
 <a class="reference internal" href="../math/spherical-harmonics.html#five-spherical-harmonics"><span class="std std-ref">Example VI</span></a> and also:</p>
 <div class="math" id="equation-using3j">
-<p><span class="eqno">(17)<a class="headerlink" href="#equation-using3j" title="Permalink to this equation">¶</a></span><img src="../_images/math/0c07d0a270013406e83b53fa5ee8a6a5750fc1f5.svg" alt="\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)
+<p><span class="eqno">(8.10.11.1)<a class="headerlink" href="#equation-using3j" title="Permalink to this equation">¶</a></span><img src="../_images/math/0c07d0a270013406e83b53fa5ee8a6a5750fc1f5.svg" alt="\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)
     = \sqrt{2l'+1\over 2l+1}
         \sqrt{(2l'+1)(2l+1)}
         \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
@@ -2650,7 +2650,7 @@ the above). We used the result of the integral in
         \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2"/></p>
 </div></div>
 <div class="section" id="radial-hartree-fock-equations">
-<h2>Radial Hartree-Fock Equations<a class="headerlink" href="#radial-hartree-fock-equations" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.12. Radial Hartree-Fock Equations<a class="headerlink" href="#radial-hartree-fock-equations" title="Permalink to this headline">¶</a></h2>
 <p>Using the above integrals, the HF equations become:</p>
 <div class="math">
 <p><img src="../_images/math/9ff90119416ff9f054175a1461a06fecb4f60f69.svg" alt="-\half P_{nl}''(r) +
@@ -2689,7 +2689,7 @@ the above). We used the result of the integral in
     = {Y^0(4\pi n(r) r^2, r) \over r}"/></p>
 </div></div>
 <div class="section" id="total-energy">
-<h2>Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.13. Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
 <p>The total energy is:</p>
 <div class="math">
 <p><img src="../_images/math/03f91b2c4d9c2987cf8c340b5d28d6d0d409d882.svg" alt="E = \sum_a 2(2l_a+1) \left( \epsilon_a
@@ -2770,7 +2770,7 @@ the above). We used the result of the integral in
 </div></div>
 </div>
 <div class="section" id="fem">
-<h2>FEM<a class="headerlink" href="#fem" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.14. FEM<a class="headerlink" href="#fem" title="Permalink to this headline">¶</a></h2>
 <p>The weak formulation is (<img class="math" src="../_images/math/16a7354d55f6a651cba318c1fd8f06eab0873f09.svg" alt="u(r) = P_{nl}(r)"/>):</p>
 <div class="math">
 <p><img src="../_images/math/e818d651fffa75e82f362b9b472c795246c7f2c8.svg" alt="\int_0^\infty \left( \half u'(r) v'(r) +
@@ -3019,7 +3019,7 @@ E = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
             R^k(n l, n' l', n' l', n l) \right)"/></p>
 </div></div>
 <div class="section" id="index-transformation">
-<h2>4-Index Transformation<a class="headerlink" href="#index-transformation" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.15. 4-Index Transformation<a class="headerlink" href="#index-transformation" title="Permalink to this headline">¶</a></h2>
 <p>The 4-index transformation is a way to convert the two particle
 integrals over basis functions <img class="math" src="../_images/math/60baba702241cb7c138a19f75928c6c679686d17.svg" alt="(\alpha \beta | \gamma \delta)"/> into
 two particle integrals over atomic (or molecular) orbitals <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/>:</p>
@@ -3031,7 +3031,7 @@ two particle integrals over atomic (or molecular) orbitals <img class="math" src
     C_{\delta l} (\alpha \beta | \gamma \delta)"/></p>
 </div></div>
 <div class="section" id="green-s-functions">
-<h2>Green’s Functions<a class="headerlink" href="#green-s-functions" title="Permalink to this headline">¶</a></h2>
+<h2>8.10.16. Green’s Functions<a class="headerlink" href="#green-s-functions" title="Permalink to this headline">¶</a></h2>
 <p>The self energy up to a second order is given by:</p>
 <div class="math">
 <p><img src="../_images/math/b7e90cf6ff7e500aa98e1452c33e5570325a469d.svg" alt="\Sigma_{ij}(E) =
@@ -3042,7 +3042,7 @@ two particle integrals over atomic (or molecular) orbitals <img class="math" src
 </div><p>The <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/>, <img class="math" src="../_images/math/fb30453cb037350d0bc27d8abd617fdc563c635c.svg" alt="b"/> are occupied orbitals, <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/>, <img class="math" src="../_images/math/deb2bb6206edaca480551ef2028840b95011da05.svg" alt="s"/> are virtual orbitals.
 The Dyson equation is:</p>
 <div class="math" id="equation-dyson">
-<p><span class="eqno">(18)<a class="headerlink" href="#equation-dyson" title="Permalink to this equation">¶</a></span><img src="../_images/math/15f4cf262cc181a38db7f65dd47f3f1b5ee08fc8.svg" alt="{\bf G}(E) = {\bf G}_0(E) + {\bf G}_0(E) {\boldsymbol\Sigma}(E) {\bf G}(E)"/></p>
+<p><span class="eqno">(8.10.16.1)<a class="headerlink" href="#equation-dyson" title="Permalink to this equation">¶</a></span><img src="../_images/math/15f4cf262cc181a38db7f65dd47f3f1b5ee08fc8.svg" alt="{\bf G}(E) = {\bf G}_0(E) + {\bf G}_0(E) {\boldsymbol\Sigma}(E) {\bf G}(E)"/></p>
 </div><p>where</p>
 <div class="math">
 <p><img src="../_images/math/c790f2e254a74e5d173c7953e1a82ff6045a7f9a.svg" alt="{\bf G}_0(E) = {1\over E - {\boldsymbol \epsilon}}
@@ -3077,7 +3077,7 @@ spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a
 
 = \lim_{\eta\to0} {i\over 2\pi}
     \left({\bf G}(z+i\eta) - {\bf G}(z-i\eta)\right)"/></p>
-</div><p>From <a class="reference internal" href="#equation-dyson">(18)</a> we get:</p>
+</div><p>From <a class="reference internal" href="#equation-dyson">(8.10.16.1)</a> we get:</p>
 <div class="math">
 <p><img src="../_images/math/ad9e6a4ff00b75326906ad97276ed9eae3ce4870.svg" alt="{1\over {\bf G}_0(E)} {\bf G}(E) = 1 + {\boldsymbol \Sigma}(E) {\bf G}(E)
 
@@ -3151,11 +3151,11 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Hartree-Fock (HF) Method</a><ul>
-<li><a class="reference internal" href="#derivation">Derivation</a></li>
-<li><a class="reference internal" href="#roothaan-equations-for-closed-shell-systems">Roothaan Equations For Closed Shell Systems</a></li>
-<li><a class="reference internal" href="#two-particle-matrix-element">Two Particle Matrix Element</a></li>
-<li><a class="reference internal" href="#general-matrix-elements-in-spherical-symmetry">General Matrix Elements in Spherical Symmetry</a><ul>
+<li><a class="reference internal" href="#">8.10. Hartree-Fock (HF) Method</a><ul>
+<li><a class="reference internal" href="#derivation">8.10.1. Derivation</a></li>
+<li><a class="reference internal" href="#roothaan-equations-for-closed-shell-systems">8.10.2. Roothaan Equations For Closed Shell Systems</a></li>
+<li><a class="reference internal" href="#two-particle-matrix-element">8.10.3. Two Particle Matrix Element</a></li>
+<li><a class="reference internal" href="#general-matrix-elements-in-spherical-symmetry">8.10.4. General Matrix Elements in Spherical Symmetry</a><ul>
 <li><a class="reference internal" href="#overlap">Overlap</a></li>
 <li><a class="reference internal" href="#potential">Potential</a></li>
 <li><a class="reference internal" href="#kinetic">Kinetic</a></li>
@@ -3164,47 +3164,47 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
 <li><a class="reference internal" href="#two-particle">Two particle</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#slater-type-orbitals-sto">Slater Type Orbitals (STO)</a><ul>
+<li><a class="reference internal" href="#slater-type-orbitals-sto">8.10.5. Slater Type Orbitals (STO)</a><ul>
 <li><a class="reference internal" href="#id1">Overlap</a></li>
 <li><a class="reference internal" href="#id2">Potential</a></li>
 <li><a class="reference internal" href="#id3">Kinetic</a></li>
 <li><a class="reference internal" href="#id4">Two particle</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#gaussian-type-orbitals-gto">Gaussian Type Orbitals (GTO)</a><ul>
+<li><a class="reference internal" href="#gaussian-type-orbitals-gto">8.10.6. Gaussian Type Orbitals (GTO)</a><ul>
 <li><a class="reference internal" href="#id5">Overlap</a></li>
 <li><a class="reference internal" href="#id6">Potential</a></li>
 <li><a class="reference internal" href="#id7">Kinetic</a></li>
 <li><a class="reference internal" href="#id8">Two particle</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exchange-integral-in-spherical-symmetry">Exchange Integral in Spherical Symmetry</a></li>
-<li><a class="reference internal" href="#occupation-numbers">Occupation Numbers</a><ul>
+<li><a class="reference internal" href="#exchange-integral-in-spherical-symmetry">8.10.7. Exchange Integral in Spherical Symmetry</a></li>
+<li><a class="reference internal" href="#occupation-numbers">8.10.8. Occupation Numbers</a><ul>
 <li><a class="reference internal" href="#example-i">Example I</a></li>
 <li><a class="reference internal" href="#example-ii">Example II</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#hartree-screening-functions">Hartree Screening Functions</a></li>
-<li><a class="reference internal" href="#hartree-potential-in-spherical-symmetry">Hartree Potential in Spherical Symmetry</a></li>
-<li><a class="reference internal" href="#nonlocal-exchange-potential-in-spherical-symmetry">Nonlocal Exchange Potential in Spherical Symmetry</a></li>
-<li><a class="reference internal" href="#radial-hartree-fock-equations">Radial Hartree-Fock Equations</a></li>
-<li><a class="reference internal" href="#total-energy">Total Energy</a><ul>
+<li><a class="reference internal" href="#hartree-screening-functions">8.10.9. Hartree Screening Functions</a></li>
+<li><a class="reference internal" href="#hartree-potential-in-spherical-symmetry">8.10.10. Hartree Potential in Spherical Symmetry</a></li>
+<li><a class="reference internal" href="#nonlocal-exchange-potential-in-spherical-symmetry">8.10.11. Nonlocal Exchange Potential in Spherical Symmetry</a></li>
+<li><a class="reference internal" href="#radial-hartree-fock-equations">8.10.12. Radial Hartree-Fock Equations</a></li>
+<li><a class="reference internal" href="#total-energy">8.10.13. Total Energy</a><ul>
 <li><a class="reference internal" href="#example-helium">Example: Helium</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#fem">FEM</a></li>
-<li><a class="reference internal" href="#index-transformation">4-Index Transformation</a></li>
-<li><a class="reference internal" href="#green-s-functions">Green’s Functions</a></li>
+<li><a class="reference internal" href="#fem">8.10.14. FEM</a></li>
+<li><a class="reference internal" href="#index-transformation">8.10.15. 4-Index Transformation</a></li>
+<li><a class="reference internal" href="#green-s-functions">8.10.16. Green’s Functions</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="dft.html"
-                        title="previous chapter">Density Functional Theory (DFT)</a></p>
+                        title="previous chapter">8.9. Density Functional Theory (DFT)</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="paw.html"
-                        title="next chapter">Projector Augmented-Wave Method (PAW)</a></p>
+                        title="next chapter">8.11. Projector Augmented-Wave Method (PAW)</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -3235,13 +3235,13 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="paw.html" title="Projector Augmented-Wave Method (PAW)"
+          <a href="paw.html" title="8.11. Projector Augmented-Wave Method (PAW)"
              >next</a> |</li>
         <li class="right" >
-          <a href="dft.html" title="Density Functional Theory (DFT)"
+          <a href="dft.html" title="8.9. Density Functional Theory (DFT)"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Delta Function &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.15. Delta Function &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Legendre Polynomials" href="spherical-harmonics.html" />
-    <link rel="prev" title="Periodic Functions" href="trig.html" />
+    <link rel="next" title="3.29. Legendre Polynomials" href="spherical-harmonics.html" />
+    <link rel="prev" title="3.10. Periodic Functions" href="trig.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+          <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="trig.html" title="Periodic Functions"
+          <a href="trig.html" title="3.10. Periodic Functions"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,48 +72,48 @@
           <div class="body" role="main">
             
   <div class="section" id="delta-function">
-<h1>Delta Function<a class="headerlink" href="#delta-function" title="Permalink to this headline">¶</a></h1>
+<h1>3.15. Delta Function<a class="headerlink" href="#delta-function" title="Permalink to this headline">¶</a></h1>
 <p>Delta function <img class="math" src="../_images/math/0137ce3338af30cf52b564c067c5f84989d5a071.svg" alt="\delta(x)"/> is defined such that this relation holds:</p>
 <div class="math" id="equation-deltadef">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-deltadef" title="Permalink to this equation">¶</a></span><img src="../_images/math/d4df7ebd10cdc2dbdd938deced4cad84d53a46e6.svg" alt="\int f(x)\delta(x-t)\d x=f(t)"/></p>
+<p><span class="eqno">(3.15.1)<a class="headerlink" href="#equation-deltadef" title="Permalink to this equation">¶</a></span><img src="../_images/math/d4df7ebd10cdc2dbdd938deced4cad84d53a46e6.svg" alt="\int f(x)\delta(x-t)\d x=f(t)"/></p>
 </div><p>No such function exists, but one can find many sequences “converging” to a delta function:</p>
 <div class="math" id="equation-deltalim">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-deltalim" title="Permalink to this equation">¶</a></span><img src="../_images/math/76ad80092bfedf3247ec1b0c17a9a49ed798cafd.svg" alt="\lim_{\alpha\to\infty}\delta_\alpha(x) = \delta(x)"/></p>
+<p><span class="eqno">(3.15.2)<a class="headerlink" href="#equation-deltalim" title="Permalink to this equation">¶</a></span><img src="../_images/math/76ad80092bfedf3247ec1b0c17a9a49ed798cafd.svg" alt="\lim_{\alpha\to\infty}\delta_\alpha(x) = \delta(x)"/></p>
 </div><p>more precisely:</p>
 <div class="math" id="equation-deltaprec">
-<p><span class="eqno">(3)<a class="headerlink" href="#equation-deltaprec" title="Permalink to this equation">¶</a></span><img src="../_images/math/831d1bfc2fb335e8bb657b6f6ab8b50258d95fab.svg" alt="\lim_{\alpha\to\infty}\int f(x)\delta_\alpha(x)\d x = \int f(x)\lim_{\alpha\to\infty}\delta_\alpha(x)\d x = f(0)"/></p>
+<p><span class="eqno">(3.15.3)<a class="headerlink" href="#equation-deltaprec" title="Permalink to this equation">¶</a></span><img src="../_images/math/831d1bfc2fb335e8bb657b6f6ab8b50258d95fab.svg" alt="\lim_{\alpha\to\infty}\int f(x)\delta_\alpha(x)\d x = \int f(x)\lim_{\alpha\to\infty}\delta_\alpha(x)\d x = f(0)"/></p>
 </div><p>one example of such a sequence is:</p>
 <div class="math">
 <p><img src="../_images/math/46fcc3b9b582b29d6659b7756751552b8e5f4ee5.svg" alt="\delta_\alpha(x) = {1\over\pi x}\sin(\alpha x)"/></p>
-</div><p>It’s clear that <a class="reference internal" href="#equation-deltaprec">(3)</a> holds for any well behaved function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>.
+</div><p>It’s clear that <a class="reference internal" href="#equation-deltaprec">(3.15.3)</a> holds for any well behaved function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>.
 Some mathematicians like to say that it’s incorrect to use such a notation when
-in fact the integral <a class="reference internal" href="#equation-deltadef">(1)</a> doesn’t “exist”, but we will not follow
+in fact the integral <a class="reference internal" href="#equation-deltadef">(3.15.1)</a> doesn’t “exist”, but we will not follow
 their approach, because it is not important if something “exists” or not,
-but rather if it is clear what we mean by our notation: <a class="reference internal" href="#equation-deltadef">(1)</a> is a
-shorthand for <a class="reference internal" href="#equation-deltaprec">(3)</a> and <a class="reference internal" href="#equation-deltalim">(2)</a> gets a mathematically rigorous
-meaning when you integrate both sides and use <a class="reference internal" href="#equation-deltadef">(1)</a> to arrive at
-<a class="reference internal" href="#equation-deltaprec">(3)</a>.  Thus one uses the relations <a class="reference internal" href="#equation-deltadef">(1)</a>, <a class="reference internal" href="#equation-deltalim">(2)</a>,
-<a class="reference internal" href="#equation-deltaprec">(3)</a> to derive all properties of the delta function.</p>
+but rather if it is clear what we mean by our notation: <a class="reference internal" href="#equation-deltadef">(3.15.1)</a> is a
+shorthand for <a class="reference internal" href="#equation-deltaprec">(3.15.3)</a> and <a class="reference internal" href="#equation-deltalim">(3.15.2)</a> gets a mathematically rigorous
+meaning when you integrate both sides and use <a class="reference internal" href="#equation-deltadef">(3.15.1)</a> to arrive at
+<a class="reference internal" href="#equation-deltaprec">(3.15.3)</a>.  Thus one uses the relations <a class="reference internal" href="#equation-deltadef">(3.15.1)</a>, <a class="reference internal" href="#equation-deltalim">(3.15.2)</a>,
+<a class="reference internal" href="#equation-deltaprec">(3.15.3)</a> to derive all properties of the delta function.</p>
 <p>Let’s give an example. Let <img class="math" src="../_images/math/9ed4101059451f6fbc592cb709858e3f87ddaa53.svg" alt="{\bf\hat r}"/> be the unit vector in 3D and we can
 label it using spherical coordinates <img class="math" src="../_images/math/83ea07e1d9387e78cb3ea9cd809fcd1b0bc9d29a.svg" alt="{\bf\hat r}={\bf\hat r}(\theta,\phi)"/>.
 We can also express it in cartesian coordinates as <img class="math" src="../_images/math/dd7b68f8be6a72067e33292985210c05b0015f8b.svg" alt="{\bf\hat
 r}(\theta,\phi)=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)"/>.</p>
 <div class="math" id="equation-deltar">
-<p><span class="eqno">(4)<a class="headerlink" href="#equation-deltar" title="Permalink to this equation">¶</a></span><img src="../_images/math/bf5aad1023b38924834b2b3ddc3d850723a57895.svg" alt="f({\bf\hat r'})=\int\delta({\bf\hat r}-{\bf\hat r'})f({\bf\hat r})\,\d {\bf\hat r}"/></p>
+<p><span class="eqno">(3.15.4)<a class="headerlink" href="#equation-deltar" title="Permalink to this equation">¶</a></span><img src="../_images/math/bf5aad1023b38924834b2b3ddc3d850723a57895.svg" alt="f({\bf\hat r'})=\int\delta({\bf\hat r}-{\bf\hat r'})f({\bf\hat r})\,\d {\bf\hat r}"/></p>
 </div><p>Expressing <img class="math" src="../_images/math/e48a70328a19c77a7ba69cc5e286b15ad5130de9.svg" alt="f({\bf\hat r})=f(\theta,\phi)"/> as a function of <img class="math" src="../_images/math/5debff8d4966e4c1ca24e947b3190c3008b5b36f.svg" alt="\theta"/> and
 <img class="math" src="../_images/math/c3840070bf80f9ae1042948615aee7e95b959b25.svg" alt="\phi"/> we have</p>
 <div class="math" id="equation-deltaangles">
-<p><span class="eqno">(5)<a class="headerlink" href="#equation-deltaangles" title="Permalink to this equation">¶</a></span><img src="../_images/math/3dbfd911fc9fd1a6bc5af241cc14f5d153be8ec1.svg" alt="f(\theta',\phi')=\int\delta(\theta-\theta')\delta(\phi-\phi') f(\theta,\phi)\,\d\theta\d\phi"/></p>
-</div><p>Expressing <a class="reference internal" href="#equation-deltar">(4)</a> in spherical coordinates we get</p>
+<p><span class="eqno">(3.15.5)<a class="headerlink" href="#equation-deltaangles" title="Permalink to this equation">¶</a></span><img src="../_images/math/3dbfd911fc9fd1a6bc5af241cc14f5d153be8ec1.svg" alt="f(\theta',\phi')=\int\delta(\theta-\theta')\delta(\phi-\phi') f(\theta,\phi)\,\d\theta\d\phi"/></p>
+</div><p>Expressing <a class="reference internal" href="#equation-deltar">(3.15.4)</a> in spherical coordinates we get</p>
 <div class="math">
 <p><img src="../_images/math/2f2e7a5056681d89a21809fb75a9f12938d1a519.svg" alt="f(\theta',\phi')=\int\delta({\bf\hat r}-{\bf\hat r'}) f(\theta,\phi)\sin\theta\,\d\theta\d\phi"/></p>
-</div><p>and comparing to <a class="reference internal" href="#equation-deltaangles">(5)</a> we finally get</p>
+</div><p>and comparing to <a class="reference internal" href="#equation-deltaangles">(3.15.5)</a> we finally get</p>
 <div class="math">
 <p><img src="../_images/math/c976621f47c0898d8e677535cd625ebaf9f2dd46.svg" alt="\delta({\bf\hat r}-{\bf\hat r'})={1\over\sin\theta} \delta(\theta-\theta')\delta(\phi-\phi')"/></p>
 </div><p>In exactly the same manner we get</p>
 <div class="math">
 <p><img src="../_images/math/c4f303faa4961ba4737a488235703dd53d2b2261.svg" alt="\delta({\bf r}-{\bf r'})=\delta({\bf\hat r}-{\bf\hat r'}) {\delta(\rho-\rho')\over\rho^2}"/></p>
-</div><p>See also <a class="reference internal" href="#equation-functionalderdel">(8)</a> for an example of how to deal with more
+</div><p>See also <a class="reference internal" href="#equation-functionalderdel">(3.17.4.1)</a> for an example of how to deal with more
 complex expressions involving the delta function like <img class="math" src="../_images/math/258eb25ac0920dd973d7fdcaa7f4deb15b70e323.svg" alt="\delta^2(x)"/>.</p>
 <p>When integrating over finite interval, this formula is very useful:</p>
 <div class="math">
@@ -131,7 +131,7 @@ complex expressions involving the delta function like <img class="math" src="../
     = \lim_{L\to\infty} {\sin \omega L \over \pi \omega} = \delta(\omega)"/></p>
 </div></div>
 <div class="section" id="distributions">
-<h1>Distributions<a class="headerlink" href="#distributions" title="Permalink to this headline">¶</a></h1>
+<h1>3.16. Distributions<a class="headerlink" href="#distributions" title="Permalink to this headline">¶</a></h1>
 <p>Some mathematicians like to use distributions and a mathematical notation for
 that, which I think is making things less clear, but nevertheless it’s
 important to understand it too, so the notation is explained in this section,
@@ -246,12 +246,12 @@ Riemann–Lebesgue lemma, the integral then converges towards zero as
 <img class="math" src="../_images/math/86bd60db2f6de94a855b6777f65d2a30955475f2.svg" alt="L\to\infty"/>.</p>
 </div>
 <div class="section" id="variations-and-functional-derivatives">
-<span id="index-0"></span><h1>Variations and Functional Derivatives<a class="headerlink" href="#variations-and-functional-derivatives" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>3.17. Variations and Functional Derivatives<a class="headerlink" href="#variations-and-functional-derivatives" title="Permalink to this headline">¶</a></h1>
 <p>Variations and functional derivatives are generalization of differentials and
 partial derivatives to functionals. It is important to master this subject just
 like regular differentials/derivatives in calculus.</p>
 <div class="section" id="functions-of-one-variable">
-<h2>Functions of One Variable<a class="headerlink" href="#functions-of-one-variable" title="Permalink to this headline">¶</a></h2>
+<h2>3.17.1. Functions of One Variable<a class="headerlink" href="#functions-of-one-variable" title="Permalink to this headline">¶</a></h2>
 <p>Let’s first review differentials and derivatives of functions of one variable.
 We will use an approach that directly generalizes to multivariable functions
 and functionals.
@@ -322,7 +322,7 @@ differential and we get:</p>
 </div><p>and so the notation is consistent.</p>
 </div>
 <div class="section" id="functions-of-several-variables">
-<h2>Functions of several variables<a class="headerlink" href="#functions-of-several-variables" title="Permalink to this headline">¶</a></h2>
+<h2>3.17.2. Functions of several variables<a class="headerlink" href="#functions-of-several-variables" title="Permalink to this headline">¶</a></h2>
 <p>Let’s have <img class="math" src="../_images/math/d76704c7d84bd96f4b07c65819dd5a348552fece.svg" alt="\x=(x_1,x_2,\dots,x_N)"/>. The function <img class="math" src="../_images/math/bab13ecee4af4f98ddfa630069b1051389b77f21.svg" alt="f(\x)"/> assigns a number to
 each <img class="math" src="../_images/math/cafa069de5de5af4757165c42e891ad20f878b7b.svg" alt="\x"/>. We define a differential of <img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/> in the direction of <img class="math" src="../_images/math/a767f92ec4cad22cf11c5988afc27fb5129faba3.svg" alt="{\bf h}"/> as:</p>
 <div class="math">
@@ -383,7 +383,7 @@ either <img class="math" src="../_images/math/3fac2e1a348943d6e48afbb5573ee20a7b
 That’s all there is to it.</p>
 </div>
 <div class="section" id="functionals">
-<h2>Functionals<a class="headerlink" href="#functionals" title="Permalink to this headline">¶</a></h2>
+<h2>3.17.3. Functionals<a class="headerlink" href="#functionals" title="Permalink to this headline">¶</a></h2>
 <p>Let’s now define functional derivatives and variations.
 Functional <img class="math" src="../_images/math/0ea35c45f2cd84e329b5e0fc560fb023e1e26632.svg" alt="F[f]"/> assigns a number to each function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>. The variation is
 defined as</p>
@@ -395,7 +395,7 @@ defined as</p>
 </div><p>This also gives a formula for computing <img class="math" src="../_images/math/591152978e8700bdec09146d65726e708326b263.svg" alt="{\delta F\over\delta f(x)}"/>: we set
 <img class="math" src="../_images/math/6ec7b60af35dd25107bf8e81d47c939820be6ff1.svg" alt="h(y)=\delta(x-y)"/> and</p>
 <div class="math" id="equation-functional-derivative-def">
-<p><span class="eqno">(6)<a class="headerlink" href="#equation-functional-derivative-def" title="Permalink to this equation">¶</a></span><img src="../_images/math/300b18668cc36ae5cd010fa3eb2a1bc68749a7f6.svg" alt="{\delta F\over\delta f(x)}=a(x)=\int a(y)\delta(x-y)\d y= \left.{\d\over\d\varepsilon}F[f(y)+\varepsilon\delta(x-y)] \right|_{\varepsilon=0}=
+<p><span class="eqno">(3.17.3.1)<a class="headerlink" href="#equation-functional-derivative-def" title="Permalink to this equation">¶</a></span><img src="../_images/math/300b18668cc36ae5cd010fa3eb2a1bc68749a7f6.svg" alt="{\delta F\over\delta f(x)}=a(x)=\int a(y)\delta(x-y)\d y= \left.{\d\over\d\varepsilon}F[f(y)+\varepsilon\delta(x-y)] \right|_{\varepsilon=0}=
 
    =\lim_{\varepsilon\to0} {F[f(y)+\varepsilon\delta(x-y)]-F[f(y)]\over\varepsilon}"/></p>
 </div><p>Sometimes the functional derivative is defined using the last formula, here
@@ -416,7 +416,7 @@ It is completely analogous to <img class="math" src="../_images/math/0682bf8616d
 in actual calculations – the definition of a variation (using a regular
 derivative):</p>
 <div class="math" id="equation-functional-deriv">
-<p><span class="eqno">(7)<a class="headerlink" href="#equation-functional-deriv" title="Permalink to this equation">¶</a></span><img src="../_images/math/e7334c47c6682f271612e11ea69896d7bfbf4b27.svg" alt="\delta F[f] = \left.{\d\over\d\varepsilon}F[f+\varepsilon \delta f]
+<p><span class="eqno">(3.17.3.2)<a class="headerlink" href="#equation-functional-deriv" title="Permalink to this equation">¶</a></span><img src="../_images/math/e7334c47c6682f271612e11ea69896d7bfbf4b27.svg" alt="\delta F[f] = \left.{\d\over\d\varepsilon}F[f+\varepsilon \delta f]
     \right|_{\varepsilon=0}"/></p>
 </div><p>the definition of the functional derivative:</p>
 <div class="math">
@@ -452,7 +452,7 @@ example (here <img class="math" src="../_images/math/f3faf3d037b6a3e2c2283878795
     = \left.{\d\over\d\varepsilon}\partial_\mu(\phi+\varepsilon \delta\phi) \right|_{\varepsilon=0}
     = \partial_\mu\left.{\d\over\d\varepsilon}(\phi+\varepsilon \delta\phi) \right|_{\varepsilon=0}
     =\partial_\mu \delta\phi"/></p>
-</div><p>As such, the <img class="math" src="../_images/math/c8c9187df79c442c27ef6ba80826246731c618ef.svg" alt="F"/> in <a class="reference internal" href="#equation-functional-deriv">(7)</a> can be either a functional or any
+</div><p>As such, the <img class="math" src="../_images/math/c8c9187df79c442c27ef6ba80826246731c618ef.svg" alt="F"/> in <a class="reference internal" href="#equation-functional-deriv">(3.17.3.2)</a> can be either a functional or any
 expression that contains the function <img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/>.
 This notation allows us a very convenient computation, as shown in the
 following examples.</p>
@@ -509,9 +509,9 @@ where the function <img class="math" src="../_images/math/245a8ddeab2b5a0eb8e9b4
 = \int{\delta F\over\delta\psi}\delta\psi\d x"/></p>
 </div></div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>3.17.4. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Some of these examples show how to use the delta function definition of the
-functional derivative in equation <a class="reference internal" href="#equation-functional-derivative-def">(6)</a>. However, the
+functional derivative in equation <a class="reference internal" href="#equation-functional-derivative-def">(3.17.3.1)</a>. However, the
 simplest way is to calculate variation first and then read off the functional
 derivative from the result, as explained above.</p>
 <div class="math">
@@ -611,7 +611,7 @@ sequence <img class="math" src="../_images/math/bc31e0b8ebded1b9c7faa73de87ca852
 </div><div class="math">
 <p><img src="../_images/math/1d5370f37c5c596ae9e9fc446435c079a57196fc.svg" alt="=\left.\lim_{\alpha\to\infty}\int3(f(x)+\varepsilon\delta_\alpha(x-t))^2\delta_\alpha(x-t)\d x \right|_{\varepsilon=0}=\lim_{\alpha\to\infty}\int3f^2(x)\delta_\alpha(x-t)\d x="/></p>
 </div><div class="math" id="equation-functionalderdel">
-<p><span class="eqno">(8)<a class="headerlink" href="#equation-functionalderdel" title="Permalink to this equation">¶</a></span><img src="../_images/math/337e5e03a136c2af15ee0fba07c235de0ce16e56.svg" alt="=\int3f^2(x)\lim_{\alpha\to\infty}\delta_\alpha(x-t)\d x= \int3f^2(x)\delta(x-t)\d x=3f^2(t)"/></p>
+<p><span class="eqno">(3.17.4.1)<a class="headerlink" href="#equation-functionalderdel" title="Permalink to this equation">¶</a></span><img src="../_images/math/337e5e03a136c2af15ee0fba07c235de0ce16e56.svg" alt="=\int3f^2(x)\lim_{\alpha\to\infty}\delta_\alpha(x-t)\d x= \int3f^2(x)\delta(x-t)\d x=3f^2(t)"/></p>
 </div><p>As you can see, we got the same result, with the same rigor, but using an
 obfuscating notation. That’s why such obvious manipulations with
 <img class="math" src="../_images/math/03a2e44f36811c5ce50093fb3220b9ba0602e33e.svg" alt="\delta_\alpha"/> are tacitly implied. However, the best method is to first
@@ -742,7 +742,7 @@ r_s(r) = \left(3\over 4\pi (-\rho)\right)^{1\over 3}
 </div></div>
 </div>
 <div class="section" id="dirac-notation">
-<span id="index-1"></span><h1>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">¶</a></h1>
+<span id="index-1"></span><h1>3.18. Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">¶</a></h1>
 <p>The Dirac notation allows a very compact and powerful way of writing
 equations that describe a function expansion into a basis, both discrete
 (e.g. a Fourier series expansion) and continuous (e.g. a Fourier transform)
@@ -783,13 +783,13 @@ remember and – that is important – less general.</p>
 </div><p>thus</p>
 <div class="math">
 <p><img src="../_images/math/b8bc748fddcf78b83ef4bef38826721eabc8a7df.svg" alt="\int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \int\braket{l'm'|{\bf\hat r}}\braket{{\bf\hat r}|lm}\d\Omega= \braket{l'm'|lm}"/></p>
-</div><p>and from <a class="reference internal" href="spherical-harmonics.html#equation-yorto">(4)</a> we get</p>
+</div><p>and from <a class="reference internal" href="spherical-harmonics.html#equation-yorto">(3.30.1)</a> we get</p>
 <div class="math">
 <p><img src="../_images/math/52efb5a8ba815587804c3ff1281855c4dc057ee4.svg" alt="\braket{l'm'|lm}=\delta_{mm'}\delta_{ll'}"/></p>
 </div><p>now</p>
 <div class="math">
 <p><img src="../_images/math/171828c75ff02ec584a4c31b81455816c528586b.svg" alt="\sum_{lm}Y_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= \sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}"/></p>
-</div><p>from <a class="reference internal" href="spherical-harmonics.html#equation-ycomplete">(6)</a> we get</p>
+</div><p>from <a class="reference internal" href="spherical-harmonics.html#equation-ycomplete">(3.30.3)</a> we get</p>
 <div class="math">
 <p><img src="../_images/math/afaf4bdadb39e91e5cb52150e17b8fd481312bb7.svg" alt="\sum_{lm}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}= \braket{{\bf\hat r}|{\bf\hat r'}}"/></p>
 </div><p>so we have</p>
@@ -827,10 +827,10 @@ remember and – that is important – less general.</p>
 <div class="math">
 <p><img src="../_images/math/e10af8002e12ee1801f80d9390528e64d610c246.svg" alt="\sum_{lm} \ket{lm}\bra{lm}=\one"/></p>
 </div><p>is a unity in the <img class="math" src="../_images/math/507694064a0f6b1929986732c731ef96ec59d488.svg" alt="\ket{\bf\hat r}"/> space only (i.e. on the unit sphere).</p>
-<p>Let’s rewrite the equation <a class="reference internal" href="spherical-harmonics.html#equation-lsum">(7)</a>:</p>
+<p>Let’s rewrite the equation <a class="reference internal" href="spherical-harmonics.html#equation-lsum">(3.30.4)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/a5ebc4b310fa03759045c06839f449c027f245b4.svg" alt="\sum_m\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r'}}= {4\pi\over 2l+1} \braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}"/></p>
-</div><p>Using the completeness relation <a class="reference internal" href="spherical-harmonics.html#equation-lorto">(1)</a>:</p>
+</div><p>Using the completeness relation <a class="reference internal" href="spherical-harmonics.html#equation-lorto">(3.29.1)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/97908fc5c552dccd2912a0cbfd46d530ed46e4c0.svg" alt="\sum_l {2l+1\over2}\braket{x'|P_l}\braket{P_l|x}=\braket{x'|x}"/></p>
 </div><div class="math">
@@ -845,10 +845,10 @@ remember and – that is important – less general.</p>
 <p><img src="../_images/math/9ebb44cad53df563c79892f33bd861a5b9f301d6.svg" alt="f_l={(2l+1)^2\over8\pi}\braket{P_l|f} ={(2l+1)^2\over8\pi}\int_{-1}^1 \braket{P_l|x}\braket{x|f}\d x ={(2l+1)^2\over8\pi}\int_{-1}^1 P_l(x)f(x)\d x"/></p>
 </div><p>or written explicitly</p>
 <div class="math" id="equation-fylm">
-<p><span class="eqno">(9)<a class="headerlink" href="#equation-fylm" title="Permalink to this equation">¶</a></span><img src="../_images/math/1024f01fc40557b1f596234718cb8826980ffce3.svg" alt="f({\bf\hat r}\cdot{\bf\hat r'})= \sum_{l=0}^\infty\sum_{m=-l}^l Y_{lm}({\bf\hat r}) f_l Y_{lm}^*({\bf\hat r'})"/></p>
+<p><span class="eqno">(3.18.1)<a class="headerlink" href="#equation-fylm" title="Permalink to this equation">¶</a></span><img src="../_images/math/1024f01fc40557b1f596234718cb8826980ffce3.svg" alt="f({\bf\hat r}\cdot{\bf\hat r'})= \sum_{l=0}^\infty\sum_{m=-l}^l Y_{lm}({\bf\hat r}) f_l Y_{lm}^*({\bf\hat r'})"/></p>
 </div></div>
 <div class="section" id="homogeneous-functions-euler-s-theorem">
-<span id="homogeneous-functions"></span><span id="index-2"></span><h1>Homogeneous Functions (Euler’s Theorem)<a class="headerlink" href="#homogeneous-functions-euler-s-theorem" title="Permalink to this headline">¶</a></h1>
+<span id="homogeneous-functions"></span><span id="index-2"></span><h1>3.19. Homogeneous Functions (Euler’s Theorem)<a class="headerlink" href="#homogeneous-functions-euler-s-theorem" title="Permalink to this headline">¶</a></h1>
 <p>A function of several variables <img class="math" src="../_images/math/2a5134e9cc51a3eb75196fdf8d1f509658c032fd.svg" alt="f(x_1, x_2, \dots) \equiv f(x_i)"/> is
 homogeneous of degree <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> if</p>
 <div class="math">
@@ -863,7 +863,7 @@ homogeneous of degree <img class="math" src="../_images/math/7b5f8f49e0623523265
 <div class="math">
 <p><img src="../_images/math/0355e1e2a013c040e787a10a5c8d8e68a37c0bfe.svg" alt="{\bf x} \cdot \nabla f({\bf x}) = k f({\bf x})"/></p>
 </div><div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<h2>3.19.1. Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
 <p>The function <img class="math" src="../_images/math/dfac67ed2785ab1f69d005d1e63331634e31f276.svg" alt="f(x, y, z) = {xy\over z}"/> is homogeneous of degree 1, because:</p>
 <div class="math">
 <p><img src="../_images/math/d3a356dd62832a9246db5a761bc6387f462a75f4.svg" alt="f(\lambda x, \lambda y, \lambda z) = {\lambda x\lambda y\over \lambda z}
@@ -885,7 +885,7 @@ z\left(-{xy\over z^2}\right)
 </div><p>Which is true.</p>
 </div>
 <div class="section" id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<h2>3.19.2. Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
 <p>The function <img class="math" src="../_images/math/817b25e4f65cbfc26d6bf0df7df4fc13301cd210.svg" alt="V(r) = -{Z \over r}"/> is homogeneous of degree -1, because:</p>
 <div class="math">
 <p><img src="../_images/math/5dd0fb7b82db69097440ba20c444e98070ecd255.svg" alt="V(\lambda r) = -{Z\over \lambda r} = \lambda^{-1} V(r)"/></p>
@@ -899,24 +899,24 @@ z\left(-{xy\over z^2}\right)
 </div>
 </div>
 <div class="section" id="green-functions">
-<h1>Green Functions<a class="headerlink" href="#green-functions" title="Permalink to this headline">¶</a></h1>
+<h1>3.20. Green Functions<a class="headerlink" href="#green-functions" title="Permalink to this headline">¶</a></h1>
 <p>Green functions are an excellent tool for working with a solution to any ODE or
 PDE. In this text we explain how it works and then show how one can calculate
 them using FEM.</p>
 <div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2>3.20.1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Let’s put any ODE or PDE in the form:</p>
 <div class="math" id="equation-pde">
-<p><span class="eqno">(10)<a class="headerlink" href="#equation-pde" title="Permalink to this equation">¶</a></span><img src="../_images/math/f5f6f299c2fc7d37c173ceec807d4c26c5f7cbfb.svg" alt="Lu(x)=f(x)"/></p>
+<p><span class="eqno">(3.20.1.1)<a class="headerlink" href="#equation-pde" title="Permalink to this equation">¶</a></span><img src="../_images/math/f5f6f299c2fc7d37c173ceec807d4c26c5f7cbfb.svg" alt="Lu(x)=f(x)"/></p>
 </div><p>Here <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> is a differential operator and <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> can have any dimension, e.g. 1D
 (ODE), 2D, 3D or more (PDE). Then we can express the solution as</p>
 <div class="math" id="equation-solution">
-<p><span class="eqno">(11)<a class="headerlink" href="#equation-solution" title="Permalink to this equation">¶</a></span><img src="../_images/math/dea49d93520eb5d8d8782817e9a21387152d354f.svg" alt="u(x) = L^{-1}f(x) = \int G(x, x')f(x')\d x'"/></p>
+<p><span class="eqno">(3.20.1.2)<a class="headerlink" href="#equation-solution" title="Permalink to this equation">¶</a></span><img src="../_images/math/dea49d93520eb5d8d8782817e9a21387152d354f.svg" alt="u(x) = L^{-1}f(x) = \int G(x, x')f(x')\d x'"/></p>
 </div><p>where <img class="math" src="../_images/math/7ed671c796add4cc6613ecb6500f258b5452bad5.svg" alt="G(x, x')"/> is a Green function, that needs to satisfy the equation:</p>
 <div class="math" id="equation-green">
-<p><span class="eqno">(12)<a class="headerlink" href="#equation-green" title="Permalink to this equation">¶</a></span><img src="../_images/math/ba034c8bcf1b835b7dc305c37487fddcae0e0087.svg" alt="LG(x, x')=\delta(x-x')"/></p>
-</div><p>Remember, that <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> acts on <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> only, so we can check, that <a class="reference internal" href="#equation-solution">(11)</a>
-indeed solves the PDE <a class="reference internal" href="#equation-pde">(10)</a>:</p>
+<p><span class="eqno">(3.20.1.3)<a class="headerlink" href="#equation-green" title="Permalink to this equation">¶</a></span><img src="../_images/math/ba034c8bcf1b835b7dc305c37487fddcae0e0087.svg" alt="LG(x, x')=\delta(x-x')"/></p>
+</div><p>Remember, that <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/> acts on <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> only, so we can check, that <a class="reference internal" href="#equation-solution">(3.20.1.2)</a>
+indeed solves the PDE <a class="reference internal" href="#equation-pde">(3.20.1.1)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/89b26ab513914a04d26e88abc2ab49fd9771eb29.svg" alt="Lu(x)
 = L\int G(x, x')f(x')\d x'
@@ -925,17 +925,17 @@ indeed solves the PDE <a class="reference internal" href="#equation-pde">(10)</a
 = f(x)"/></p>
 </div></div>
 <div class="section" id="boundary-conditions">
-<h2>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
-<p>The equation <a class="reference internal" href="#equation-green">(12)</a> doesn’t determine the Green function uniquely,
+<h2>3.20.2. Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
+<p>The equation <a class="reference internal" href="#equation-green">(3.20.1.3)</a> doesn’t determine the Green function uniquely,
 because one can add to it any solution of the homogeneous equation <img class="math" src="../_images/math/e5c81b9f81837f036cdd6ae87588d559db2ab6a5.svg" alt="Lu(x)=0"/>.
-We can use this freedom to solve <a class="reference internal" href="#equation-green">(12)</a> for any boundary condition.
+We can use this freedom to solve <a class="reference internal" href="#equation-green">(3.20.1.3)</a> for any boundary condition.
 So we prescribe a boundary condition
-and find the Green function (by solving <a class="reference internal" href="#equation-green">(12)</a>) that satisfies the
+and find the Green function (by solving <a class="reference internal" href="#equation-green">(3.20.1.3)</a>) that satisfies the
 boundary condition. It can be shown, that <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/> determined from
-<a class="reference internal" href="#equation-solution">(11)</a> then also needs to satisfy the same boundary condition.</p>
+<a class="reference internal" href="#equation-solution">(3.20.1.2)</a> then also needs to satisfy the same boundary condition.</p>
 </div>
 <div class="section" id="symmetry">
-<h2>Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">¶</a></h2>
+<h2>3.20.3. Symmetry<a class="headerlink" href="#symmetry" title="Permalink to this headline">¶</a></h2>
 <p>We write the equation for Green functions at two different points <img class="math" src="../_images/math/3894518ab1bb277e2dcb35ca0ab07980476f56b1.svg" alt="x_1"/>
 and <img class="math" src="../_images/math/c1959a8e822eb72f3feda0cd1ebea073b3dcef96.svg" alt="x_2"/>:</p>
 <div class="math">
@@ -967,7 +967,7 @@ G(x, x_1) L G(x, x_2) = \delta(x-x_2) G(x, x_1)"/></p>
 </div><p>So the Green function is symmetric for Hermitean operators <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/>.</p>
 </div>
 <div class="section" id="id1">
-<h2>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>3.20.4. Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="poisson-equation-in-1d">
 <h3>Poisson Equation in 1D<a class="headerlink" href="#poisson-equation-in-1d" title="Permalink to this headline">¶</a></h3>
 <p>Poisson equation:</p>
@@ -1045,7 +1045,7 @@ r&amp;\quad\mbox{for $r&lt;r'$}\cr
     = -\delta(r-r')"/></p>
 </div><p>Given:</p>
 <div class="math" id="equation-rad-integral-u">
-<p><span class="eqno">(13)<a class="headerlink" href="#equation-rad-integral-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/db31e920d388661be69edca0a63d266a4e3d6ae3.svg" alt="u(r) = \int_0^\infty {f(r') r'^2 \over r_&gt;} \d r'"/></p>
+<p><span class="eqno">(3.20.4.1)<a class="headerlink" href="#equation-rad-integral-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/db31e920d388661be69edca0a63d266a4e3d6ae3.svg" alt="u(r) = \int_0^\infty {f(r') r'^2 \over r_&gt;} \d r'"/></p>
 </div><p>The Green function is</p>
 <div class="math">
 <p><img src="../_images/math/b515c5603541e0f5cd41a50c53008c451fb0558c.svg" alt="G(r, r') = {r'^2\over r_&gt;}"/></p>
@@ -1066,7 +1066,7 @@ r&amp;\quad\mbox{for $r&lt;r'$}\cr
     =-{2\over r}{r'^2\over r^2} H(r-r') +{r'^2\over r^2} \delta(r-r')
         +{2\over r}{r'^2\over r^2} H(r-r')
     ={r'^2\over r^2} \delta(r-r') = \delta(r-r')"/></p>
-</div><p>So <img class="math" src="../_images/math/ffc59410b3a95e5d61d0eec324c9a6510eb05038.svg" alt="u(r)"/> from <a class="reference internal" href="#equation-rad-integral-u">(13)</a> is a solution to the radial Poisson
+</div><p>So <img class="math" src="../_images/math/ffc59410b3a95e5d61d0eec324c9a6510eb05038.svg" alt="u(r)"/> from <a class="reference internal" href="#equation-rad-integral-u">(3.20.4.1)</a> is a solution to the radial Poisson
 equation:</p>
 <div class="math">
 <p><img src="../_images/math/16b7a4214f0c767d84ad9597c12a1315d72908a1.svg" alt="-{\d^2\over\d r^2} u(r) - {2\over r}{\d\over\d r}u(r) = f(r)"/></p>
@@ -1220,7 +1220,7 @@ u(x) = -{1\over4\pi}\int {f(x')e^{ik|x-x'| }\over|x-x'| }\d x'"/></p>
 -\int\nabla g_{x'}(x) \cdot \nabla v(x) \d x = v(x')"/></p>
 </div><p>So we choose <img class="math" src="../_images/math/583b3e6f2f50ad78121ee1f56727580dc67b7928.svg" alt="x'"/> and then solve for <img class="math" src="../_images/math/e169da5b7b335ab7479e2d6e4c8f736b68681d3b.svg" alt="g_{x'}(x)"/> using FEM and we get the
 Green function <img class="math" src="../_images/math/7ed671c796add4cc6613ecb6500f258b5452bad5.svg" alt="G(x, x')"/> for all <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> and one particular <img class="math" src="../_images/math/583b3e6f2f50ad78121ee1f56727580dc67b7928.svg" alt="x'"/>. We can then
-evaluate the integral <a class="reference internal" href="#equation-solution">(11)</a> numerically – one would have to use FEM
+evaluate the integral <a class="reference internal" href="#equation-solution">(3.20.1.2)</a> numerically – one would have to use FEM
 for all <img class="math" src="../_images/math/583b3e6f2f50ad78121ee1f56727580dc67b7928.svg" alt="x'"/> that are needed in the integral, so that is not efficient, but it
 should work. One will then be able to play with Green functions and be able to
 calculate them numerically for any boundary condition (which is not possible
@@ -1229,7 +1229,7 @@ analytically).</p>
 </div>
 </div>
 <div class="section" id="binomial-coefficients">
-<h1>Binomial Coefficients<a class="headerlink" href="#binomial-coefficients" title="Permalink to this headline">¶</a></h1>
+<h1>3.21. Binomial Coefficients<a class="headerlink" href="#binomial-coefficients" title="Permalink to this headline">¶</a></h1>
 <p>For <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> and <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> integers, the binomial coefficients are defined by:</p>
 <div class="math">
 <p><img src="../_images/math/0ba660e4b60eab57563110e0613e609b71b57159.svg" alt="\binom{n}{k} = {n!\over k! (n-k)!} =
@@ -1323,46 +1323,46 @@ analytically).</p>
         \right) t^{n} =
 
     = \sum_{n=0}^\infty P_n(x) t^{n}"/></p>
-</div><p>where we used <a class="reference internal" href="#equation-double-sum-2">(15)</a> and</p>
+</div><p>where we used <a class="reference internal" href="#equation-double-sum-2">(3.22.2)</a> and</p>
 <div class="math">
 <p><img src="../_images/math/21f8b1fd54b925280ba5ef4567c2c84758307291.svg" alt="\binom{2n-2k}{n-k} \binom{n-k}{k} = \binom{2n-2k}{n} \binom{n}{k}"/></p>
 </div><p>The <img class="math" src="../_images/math/ae30103ffb0de2b4de8a95c548b28bea989c2ac9.svg" alt="P_n(x)"/> are <a class="reference internal" href="spherical-harmonics.html#legendre-polynomials"><span class="std std-ref">Legendre Polynomials</span></a>.</p>
 </div>
 <div class="section" id="double-sums">
-<h1>Double Sums<a class="headerlink" href="#double-sums" title="Permalink to this headline">¶</a></h1>
+<h1>3.22. Double Sums<a class="headerlink" href="#double-sums" title="Permalink to this headline">¶</a></h1>
 <p>When evaluating double sums, one can use triangular summation to reorder them:</p>
 <div class="math" id="equation-double-sum-1">
-<p><span class="eqno">(14)<a class="headerlink" href="#equation-double-sum-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/7bc04abeba6aa5b45f71b1510089618a4f88fdae.svg" alt="\sum_{n=0}^\infty \sum_{k=0}^\infty a_{n k} =
+<p><span class="eqno">(3.22.1)<a class="headerlink" href="#equation-double-sum-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/7bc04abeba6aa5b45f71b1510089618a4f88fdae.svg" alt="\sum_{n=0}^\infty \sum_{k=0}^\infty a_{n k} =
 \sum_{n=0}^\infty \sum_{k=0}^n a_{n-k, k}"/></p>
 </div><p>Also it holds</p>
 <div class="math" id="equation-double-sum-2">
-<p><span class="eqno">(15)<a class="headerlink" href="#equation-double-sum-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/4621e0f3b98ff04543d2f55798b5d4ed7474290d.svg" alt="\sum_{n=0}^\infty \sum_{k=0}^n a_{n k} =
+<p><span class="eqno">(3.22.2)<a class="headerlink" href="#equation-double-sum-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/4621e0f3b98ff04543d2f55798b5d4ed7474290d.svg" alt="\sum_{n=0}^\infty \sum_{k=0}^n a_{n k} =
     \sum_{n=0}^\infty \sum_{k=0}^{\left\lfloor n\over 2 \right\rfloor}
         a_{n-k, k}"/></p>
 </div></div>
 <div class="section" id="triangle-inequality">
-<h1>Triangle Inequality<a class="headerlink" href="#triangle-inequality" title="Permalink to this headline">¶</a></h1>
+<h1>3.23. Triangle Inequality<a class="headerlink" href="#triangle-inequality" title="Permalink to this headline">¶</a></h1>
 <p>Triangle inequality (condition) means that none of the three
 quantities <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/>, <img class="math" src="../_images/math/fb30453cb037350d0bc27d8abd617fdc563c635c.svg" alt="b"/>, <img class="math" src="../_images/math/fbc61f23cc2b888220006641e38ddc9cf143e1d8.svg" alt="c"/> is greater than the sum of the other two:</p>
 <div class="math" id="equation-trig-three">
-<p><span class="eqno">(16)<a class="headerlink" href="#equation-trig-three" title="Permalink to this equation">¶</a></span><img src="../_images/math/816f8b21df0d7fe1b740aa9f8ac9c63bda4af3d9.svg" alt="a + b \ge c
+<p><span class="eqno">(3.23.1)<a class="headerlink" href="#equation-trig-three" title="Permalink to this equation">¶</a></span><img src="../_images/math/816f8b21df0d7fe1b740aa9f8ac9c63bda4af3d9.svg" alt="a + b \ge c
 
 b + c \ge a
 
 c + a \ge b"/></p>
 </div><p>This is equivalent to just one equation:</p>
 <div class="math" id="equation-trig-one">
-<p><span class="eqno">(17)<a class="headerlink" href="#equation-trig-one" title="Permalink to this equation">¶</a></span><img src="../_images/math/cfebbface2c0e3987024d3b1503e310c359f4b96.svg" alt="|a-b| \le c \le a+b"/></p>
+<p><span class="eqno">(3.23.2)<a class="headerlink" href="#equation-trig-one" title="Permalink to this equation">¶</a></span><img src="../_images/math/cfebbface2c0e3987024d3b1503e310c359f4b96.svg" alt="|a-b| \le c \le a+b"/></p>
 </div><p>we can do any permutation of the symbols, i.e. the above equation is equivalent
 to any of these:</p>
 <div class="math">
 <p><img src="../_images/math/323174bbbec2fab1e47b6e4ee38296ed039763c5.svg" alt="|b-c| \le a \le b+c
 
 |c-a| \le b \le c+a"/></p>
-</div><p>So instead of stating the three inequalities <a class="reference internal" href="#equation-trig-three">(16)</a> it is more
-convenient to just write <a class="reference internal" href="#equation-trig-one">(17)</a>, using any permutation that we like.</p>
-<p>To show, that <a class="reference internal" href="#equation-trig-three">(16)</a> implies <a class="reference internal" href="#equation-trig-one">(17)</a> we rewrite
-<a class="reference internal" href="#equation-trig-three">(16)</a>:</p>
+</div><p>So instead of stating the three inequalities <a class="reference internal" href="#equation-trig-three">(3.23.1)</a> it is more
+convenient to just write <a class="reference internal" href="#equation-trig-one">(3.23.2)</a>, using any permutation that we like.</p>
+<p>To show, that <a class="reference internal" href="#equation-trig-three">(3.23.1)</a> implies <a class="reference internal" href="#equation-trig-one">(3.23.2)</a> we rewrite
+<a class="reference internal" href="#equation-trig-three">(3.23.1)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/6d596b7c755abaebdd0cc988146ec509fb6a8ba4.svg" alt="a + b \ge c
 
@@ -1374,9 +1374,9 @@ c \ge b-a"/></p>
 <p><img src="../_images/math/bf252c1cef50c29687f00c2a8fc9222c173c8a6e.svg" alt="a + b \ge c
 
 c \ge |a-b|"/></p>
-</div><p>and we get <a class="reference internal" href="#equation-trig-one">(17)</a>.
-To show, that <a class="reference internal" href="#equation-trig-one">(17)</a> implies <a class="reference internal" href="#equation-trig-three">(16)</a> we rewrite
-<a class="reference internal" href="#equation-trig-one">(17)</a> for <img class="math" src="../_images/math/995095260684840f82ece75ba68ac1f413b95afb.svg" alt="a\ge b"/> first:</p>
+</div><p>and we get <a class="reference internal" href="#equation-trig-one">(3.23.2)</a>.
+To show, that <a class="reference internal" href="#equation-trig-one">(3.23.2)</a> implies <a class="reference internal" href="#equation-trig-three">(3.23.1)</a> we rewrite
+<a class="reference internal" href="#equation-trig-one">(3.23.2)</a> for <img class="math" src="../_images/math/995095260684840f82ece75ba68ac1f413b95afb.svg" alt="a\ge b"/> first:</p>
 <div class="math">
 <p><img src="../_images/math/5bb8659eb257340c024dcfc27846808c7691b40d.svg" alt="a \ge b
 
@@ -1394,7 +1394,7 @@ b + c \ge a
 
 a \ge b"/></p>
 </div><p>since <img class="math" src="../_images/math/fbc61f23cc2b888220006641e38ddc9cf143e1d8.svg" alt="c"/> is positive, if <img class="math" src="../_images/math/995095260684840f82ece75ba68ac1f413b95afb.svg" alt="a\ge b"/> then also <img class="math" src="../_images/math/acaebe9b5e2dafb5e8be67a3e130aacb37737815.svg" alt="c+a\ge b"/> and we get
-<a class="reference internal" href="#equation-trig-three">(16)</a>. Finally, for <img class="math" src="../_images/math/098ef99ce2c6316142100f0c4ca5bdb30cb52826.svg" alt="a &lt; b"/>:</p>
+<a class="reference internal" href="#equation-trig-three">(3.23.1)</a>. Finally, for <img class="math" src="../_images/math/098ef99ce2c6316142100f0c4ca5bdb30cb52826.svg" alt="a &lt; b"/>:</p>
 <div class="math">
 <p><img src="../_images/math/f1f81ceae06d081cc28295d5c38b6de71a09b44e.svg" alt="a &lt; b
 
@@ -1412,40 +1412,40 @@ b &gt; a
 
 c + a \ge b"/></p>
 </div><p>since <img class="math" src="../_images/math/fbc61f23cc2b888220006641e38ddc9cf143e1d8.svg" alt="c"/> is positive, if <img class="math" src="../_images/math/63d52b487258ddf9613c54c637396c83385026bd.svg" alt="b &gt; a"/> then also <img class="math" src="../_images/math/879412167bd34675a366a0a5e432f4a454dcf041.svg" alt="b+c\ge a"/> and we get
-<a class="reference internal" href="#equation-trig-three">(16)</a>.</p>
+<a class="reference internal" href="#equation-trig-three">(3.23.1)</a>.</p>
 </div>
 <div class="section" id="gamma-function">
-<h1>Gamma Function<a class="headerlink" href="#gamma-function" title="Permalink to this headline">¶</a></h1>
+<h1>3.24. Gamma Function<a class="headerlink" href="#gamma-function" title="Permalink to this headline">¶</a></h1>
 <p>The Gamma function <img class="math" src="../_images/math/fe1b38f59291519c5660f36927cba53635b76294.svg" alt="\Gamma(x)"/> is defined by the following properties
 for <img class="math" src="../_images/math/2f5f1197ff4d409749669769fe43922645632ad2.svg" alt="x &gt; 0"/>:</p>
 <div class="math" id="equation-gamma1">
-<p><span class="eqno">(18)<a class="headerlink" href="#equation-gamma1" title="Permalink to this equation">¶</a></span><img src="../_images/math/681df601051b4b4014be2fc62767d4506a76e242.svg" alt="\Gamma(1) = 1"/></p>
+<p><span class="eqno">(3.24.1)<a class="headerlink" href="#equation-gamma1" title="Permalink to this equation">¶</a></span><img src="../_images/math/681df601051b4b4014be2fc62767d4506a76e242.svg" alt="\Gamma(1) = 1"/></p>
 </div><div class="math" id="equation-gamma2">
-<p><span class="eqno">(19)<a class="headerlink" href="#equation-gamma2" title="Permalink to this equation">¶</a></span><img src="../_images/math/eaa8e42a224ed4c16ab96df32fc904b1f3baddce.svg" alt="\Gamma(x+1) = x \Gamma(x)"/></p>
+<p><span class="eqno">(3.24.2)<a class="headerlink" href="#equation-gamma2" title="Permalink to this equation">¶</a></span><img src="../_images/math/eaa8e42a224ed4c16ab96df32fc904b1f3baddce.svg" alt="\Gamma(x+1) = x \Gamma(x)"/></p>
 </div><div class="math" id="equation-gamma3">
-<p><span class="eqno">(20)<a class="headerlink" href="#equation-gamma3" title="Permalink to this equation">¶</a></span><img src="../_images/math/d3de2ee32cec2b2c4cda5373257f46d542e7f0b4.svg" alt="\log\Gamma(x) \quad\mbox{is convex}"/></p>
+<p><span class="eqno">(3.24.3)<a class="headerlink" href="#equation-gamma3" title="Permalink to this equation">¶</a></span><img src="../_images/math/d3de2ee32cec2b2c4cda5373257f46d542e7f0b4.svg" alt="\log\Gamma(x) \quad\mbox{is convex}"/></p>
 </div><p>It can be shown that this determines the function uniquely for <img class="math" src="../_images/math/2f5f1197ff4d409749669769fe43922645632ad2.svg" alt="x &gt; 0"/> (this is
 called the Bohr-Mollerup theorem) and then it can be extended analytically to
 the whole complex plane.</p>
-<p>The most common formula for <img class="math" src="../_images/math/4899119aa74cfae080fb98d7a3eec8f7c99d5888.svg" alt="\Gamma(z)"/> that satisfies <a class="reference internal" href="#equation-gamma1">(18)</a>,
-<a class="reference internal" href="#equation-gamma2">(19)</a> and <a class="reference internal" href="#equation-gamma3">(20)</a>
+<p>The most common formula for <img class="math" src="../_images/math/4899119aa74cfae080fb98d7a3eec8f7c99d5888.svg" alt="\Gamma(z)"/> that satisfies <a class="reference internal" href="#equation-gamma1">(3.24.1)</a>,
+<a class="reference internal" href="#equation-gamma2">(3.24.2)</a> and <a class="reference internal" href="#equation-gamma3">(3.24.3)</a>
 is:</p>
 <div class="math" id="equation-gamma-int">
-<p><span class="eqno">(21)<a class="headerlink" href="#equation-gamma-int" title="Permalink to this equation">¶</a></span><img src="../_images/math/c8f5666e28c909fd46887ba18a7e1bb531fb0633.svg" alt="\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \d t"/></p>
-</div><p>It satisfies <a class="reference internal" href="#equation-gamma1">(18)</a> because:</p>
+<p><span class="eqno">(3.24.4)<a class="headerlink" href="#equation-gamma-int" title="Permalink to this equation">¶</a></span><img src="../_images/math/c8f5666e28c909fd46887ba18a7e1bb531fb0633.svg" alt="\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \d t"/></p>
+</div><p>It satisfies <a class="reference internal" href="#equation-gamma1">(3.24.1)</a> because:</p>
 <div class="math">
 <p><img src="../_images/math/1ceaf0d8534bd6d3603ded595d72939e3d8f98c9.svg" alt="\Gamma(1)
     = \int_0^\infty t^{1-1} e^{-t} \d t
     = \int_0^\infty e^{-t} \d t
     = [-e^{-t}]_0^\infty
     = 1"/></p>
-</div><p>It satisfies <a class="reference internal" href="#equation-gamma2">(19)</a> by integrating by parts:</p>
+</div><p>It satisfies <a class="reference internal" href="#equation-gamma2">(3.24.2)</a> by integrating by parts:</p>
 <div class="math">
 <p><img src="../_images/math/f40d0d517c4c0885182a65a8cab892db68eb025a.svg" alt="\Gamma(z)
     = \int_0^\infty t^{z-1} e^{-t} \d t
     = (z-1)\int_0^\infty t^{z-2} e^{-t} \d t-[t^{z-1}e^{-t}]_0^\infty
     = (z-1)\Gamma(z-1)"/></p>
-</div><p>Finally it satisfies <a class="reference internal" href="#equation-gamma3">(20)</a> by verifying the convex condition
+</div><p>Finally it satisfies <a class="reference internal" href="#equation-gamma3">(3.24.3)</a> by verifying the convex condition
 directly (<img class="math" src="../_images/math/a161c44d0c25c59ded070766b1a97b725cd6c8c7.svg" alt="x, y &gt; 0"/> and <img class="math" src="../_images/math/7c5c667df9c7b22de45b9373b02d5031b9cc3997.svg" alt="0\le \lambda \le 1"/>):</p>
 <div class="math">
 <p><img src="../_images/math/e193b802295b5ad23137141ab556d1a52577f556.svg" alt="\log\Gamma(\lambda x + (1-\lambda) y)
@@ -1459,8 +1459,8 @@ directly (<img class="math" src="../_images/math/a161c44d0c25c59ded070766b1a97b7
         \left(\int_0^\infty t^{y-1} e^{-t} \d t\right)^{1-\lambda}\right) =
 
     = \lambda \log\Gamma(x) + (1-\lambda) \log \Gamma(y)"/></p>
-</div><p>And thus <a class="reference internal" href="#equation-gamma-int">(21)</a> uniquely determines the Gamma function.
-We can use <a class="reference internal" href="#equation-gamma-int">(21)</a> to calculate <img class="math" src="../_images/math/fc48fc3a0227b0395bb7b8842aa0e49fb5207f1a.svg" alt="\Gamma(\half)"/>:</p>
+</div><p>And thus <a class="reference internal" href="#equation-gamma-int">(3.24.4)</a> uniquely determines the Gamma function.
+We can use <a class="reference internal" href="#equation-gamma-int">(3.24.4)</a> to calculate <img class="math" src="../_images/math/fc48fc3a0227b0395bb7b8842aa0e49fb5207f1a.svg" alt="\Gamma(\half)"/>:</p>
 <div class="math">
 <p><img src="../_images/math/dc99ad6fc0a86e22ef11d7737a7a00b8fb955680.svg" alt="\Gamma(\half)
     = \int_0^\infty t^{{1\over2}-1} e^{-t} \d t
@@ -1480,14 +1480,14 @@ We can use <a class="reference internal" href="#equation-gamma-int">(21)</a> to 
 </div><p>From this and the definition of the Gamma function we get
 for integer <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/>:</p>
 <div class="math" id="equation-gamma-fact">
-<p><span class="eqno">(22)<a class="headerlink" href="#equation-gamma-fact" title="Permalink to this equation">¶</a></span><img src="../_images/math/dc25c6418ebb106e5ad325cc879db6dd28d25bfa.svg" alt="\Gamma(n+1) = n\Gamma(n) = n(n-1)\Gamma(n-1)
+<p><span class="eqno">(3.24.5)<a class="headerlink" href="#equation-gamma-fact" title="Permalink to this equation">¶</a></span><img src="../_images/math/dc25c6418ebb106e5ad325cc879db6dd28d25bfa.svg" alt="\Gamma(n+1) = n\Gamma(n) = n(n-1)\Gamma(n-1)
     = n(n-1)(n-2)\cdots 2\cdot1\cdot\Gamma(1) =
 
     = n(n-1)(n-2)\cdots 1
     = n!"/></p>
 </div><p>and</p>
 <div class="math" id="equation-gamma-double-fact">
-<p><span class="eqno">(23)<a class="headerlink" href="#equation-gamma-double-fact" title="Permalink to this equation">¶</a></span><img src="../_images/math/fb9cd5a38e92504af51b5b25e0bb7d49393a93e7.svg" alt="\Gamma(n+\half) = (n-\half)\Gamma(n-\half)
+<p><span class="eqno">(3.24.6)<a class="headerlink" href="#equation-gamma-double-fact" title="Permalink to this equation">¶</a></span><img src="../_images/math/fb9cd5a38e92504af51b5b25e0bb7d49393a93e7.svg" alt="\Gamma(n+\half) = (n-\half)\Gamma(n-\half)
     = (n-\half)(n-1-\half)\Gamma(n-1-\half)
     = (n-\half)(n-1-\half)\cdots\half\Gamma(\half) =
 
@@ -1496,7 +1496,7 @@ for integer <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378
     = {(2n-1)!!\over 2^n}\sqrt\pi"/></p>
 </div></div>
 <div class="section" id="incomplete-gamma-function">
-<h1>Incomplete Gamma Function<a class="headerlink" href="#incomplete-gamma-function" title="Permalink to this headline">¶</a></h1>
+<h1>3.25. Incomplete Gamma Function<a class="headerlink" href="#incomplete-gamma-function" title="Permalink to this headline">¶</a></h1>
 <p>The upper incomplete gamma function is defined by:</p>
 <div class="math">
 <p><img src="../_images/math/3fb394cab2ee6a0a059ad8e32c1b0041018d4202.svg" alt="\Gamma(z, x) = \int_x^\infty t^{z-1} e^{-t} \d t"/></p>
@@ -1585,7 +1585,7 @@ The recursion relation is then:</p>
     = {\Gamma(z)\over \Gamma(z+n+1)}\gamma(z+n+1, x) + x^z
         \Gamma(z) e^{-x} \sum_{k=0}^n {x^k\over \Gamma(z+k+1)} ="/></p>
 </div><div class="math" id="equation-gamma-series">
-<p><span class="eqno">(24)<a class="headerlink" href="#equation-gamma-series" title="Permalink to this equation">¶</a></span><img src="../_images/math/f38e29dee8042f5e76af6cb3a6231c58bab62c94.svg" alt="= x^z \Gamma(z) e^{-x} \sum_{k=0}^\infty {x^k\over \Gamma(z+k+1)}"/></p>
+<p><span class="eqno">(3.25.1)<a class="headerlink" href="#equation-gamma-series" title="Permalink to this equation">¶</a></span><img src="../_images/math/f38e29dee8042f5e76af6cb3a6231c58bab62c94.svg" alt="= x^z \Gamma(z) e^{-x} \sum_{k=0}^\infty {x^k\over \Gamma(z+k+1)}"/></p>
 </div><p>where we used:</p>
 <div class="math">
 <p><img src="../_images/math/bf02bb120a4d5b1df8e3914efd0fee4d38fafd54.svg" alt="\lim_{z\to\infty} {\gamma(z, x)\over\Gamma(z)} = 0"/></p>
@@ -1606,7 +1606,7 @@ long as <img class="math" src="../_images/math/f6b0b9ec6f37f9397e00104e140be0dc5
     &lt; {x \over z - 1 - x} \int_0^\infty f(t) \d t =
 
     = {x \over z - 1 - x} \Gamma(z)"/></p>
-</div><p>Using <a class="reference internal" href="#equation-gamma-series">(24)</a> we can now write <img class="math" src="../_images/math/35ad7a8ed87ff17a34420e65a9ac1af3256126bf.svg" alt="\gamma(z, x)"/> using the Kummer
+</div><p>Using <a class="reference internal" href="#equation-gamma-series">(3.25.1)</a> we can now write <img class="math" src="../_images/math/35ad7a8ed87ff17a34420e65a9ac1af3256126bf.svg" alt="\gamma(z, x)"/> using the Kummer
 confluent hypergeometric function <img class="math" src="../_images/math/ee99aab95dba73a23c6f68e386dbfdad0c61acf5.svg" alt="{}_1F_1(a, b, z)"/> as follows:</p>
 <div class="math">
 <p><img src="../_images/math/d381479d2d926f79b2a2426836a0d5d07543e079.svg" alt="\gamma(z, x)
@@ -1614,7 +1614,7 @@ confluent hypergeometric function <img class="math" src="../_images/math/ee99aab
     = x^z z^{-1} e^{-x}\, {}_1F_1(1, z+1, x)
     = x^z z^{-1}\, {}_1F_1(z, z+1, -x)"/></p>
 </div><div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<h2>3.25.1. Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>Consider the class of integrals:</p>
 <div class="math">
 <p><img src="../_images/math/f7a5744d35b7364596d2bd4a157a4a1e12db500b.svg" alt="F_m(t) = \int_0^1 u^{2m} e^{-tu^2} \d u, \quad\quad
@@ -1646,7 +1646,7 @@ confluent hypergeometric function <img class="math" src="../_images/math/ee99aab
 </div><p>By expressing <img class="math" src="../_images/math/d0c1f219f4cfe1c691f3fef24684fb0e31ea49d6.svg" alt="F_m(t)"/> from the equation we obtain the inverse relation:</p>
 <div class="math">
 <p><img src="../_images/math/4e2e626cafc1358cec18e02f3284cfd5c5dbaaf9.svg" alt="F_m(t) = {2t F_{m+1}(t) + e^{-t}\over 2m+1}"/></p>
-</div><p>From <a class="reference internal" href="#equation-gamma-series">(24)</a> we get:</p>
+</div><p>From <a class="reference internal" href="#equation-gamma-series">(3.25.1)</a> we get:</p>
 <div class="math">
 <p><img src="../_images/math/3fdabf9fd8c940c556ec47633956a0630e7279b7.svg" alt="F_m(t)
     = {\gamma(m+\half, t)\over 2 t^{m+\half}}
@@ -1666,16 +1666,16 @@ confluent hypergeometric function <img class="math" src="../_images/math/ee99aab
 </div></div>
 </div>
 <div class="section" id="factorial">
-<h1>Factorial<a class="headerlink" href="#factorial" title="Permalink to this headline">¶</a></h1>
+<h1>3.26. Factorial<a class="headerlink" href="#factorial" title="Permalink to this headline">¶</a></h1>
 <p>The factorial <img class="math" src="../_images/math/bbc873a64abef5d18bfffdbf271619680a3be0f7.svg" alt="n!"/> is defined as</p>
 <div class="math">
 <p><img src="../_images/math/8491b6b4bc811e0570ae5927af98cd5fb161a682.svg" alt="n! = n(n-1)(n-2)\cdots 3\cdot2\cdot 1"/></p>
-</div><p>By <a class="reference internal" href="#equation-gamma-fact">(22)</a> it can be written using the Gamma function as:</p>
+</div><p>By <a class="reference internal" href="#equation-gamma-fact">(3.24.5)</a> it can be written using the Gamma function as:</p>
 <div class="math">
 <p><img src="../_images/math/24822ad7457818c2b8940ed269a04a84f8b2194e.svg" alt="n! = \Gamma(n+1)"/></p>
 </div></div>
 <div class="section" id="double-factorial">
-<h1>Double Factorial<a class="headerlink" href="#double-factorial" title="Permalink to this headline">¶</a></h1>
+<h1>3.27. Double Factorial<a class="headerlink" href="#double-factorial" title="Permalink to this headline">¶</a></h1>
 <p>The double factorial <img class="math" src="../_images/math/84e3f7b7eafff4bc0efbe6c15c13ecd07aae9893.svg" alt="n!!"/> is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/584261fcad2698e59437f937c11c266d5644cae6.svg" alt="n!! = \begin{cases}
@@ -1692,11 +1692,11 @@ confluent hypergeometric function <img class="math" src="../_images/math/ee99aab
     = 1\cdot3\cdot5\cdots(2k-1)
     = {1\cdot2\cdot3\cdot4\cdot5\cdots(2k) \over 2\cdot4\cdot6\cdots (2k)}
     = {(2k)!\over (2k)!!} = {(2k)!\over 2^k k!}"/></p>
-</div><p>For odd <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> it can be written using the Gamma function, see <a class="reference internal" href="#equation-gamma-double-fact">(23)</a>:</p>
+</div><p>For odd <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> it can be written using the Gamma function, see <a class="reference internal" href="#equation-gamma-double-fact">(3.24.6)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/1e701b89ca4be2aa37e40194dec5ef6abb306ff2.svg" alt="(2k-1)!! = {1\over\sqrt\pi} 2^k \Gamma\left(k+\half\right)"/></p>
 </div><div class="section" id="id2">
-<h2>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>3.27.1. Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/cbb432aec81de6b02229f7452d41dcb86a176129.svg" alt="A(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
     1\cdot 2\cdot 3\cdot \dots \cdot n}
@@ -1712,7 +1712,7 @@ B(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
 </div></div>
 </div>
 <div class="section" id="fermi-dirac-integral">
-<span id="fermi-integral"></span><h1>Fermi-Dirac Integral<a class="headerlink" href="#fermi-dirac-integral" title="Permalink to this headline">¶</a></h1>
+<span id="fermi-integral"></span><h1>3.28. Fermi-Dirac Integral<a class="headerlink" href="#fermi-dirac-integral" title="Permalink to this headline">¶</a></h1>
 <p>The Fermi-Dirac integral (sometimes just called a Fermi integral) is defined
 as:</p>
 <div class="math">
@@ -1737,26 +1737,26 @@ I_{3\over 2}(\mu) = \int_0^\infty {\epsilon^{3\over2} \d\epsilon \over
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Delta Function</a></li>
-<li><a class="reference internal" href="#distributions">Distributions</a></li>
-<li><a class="reference internal" href="#variations-and-functional-derivatives">Variations and Functional Derivatives</a><ul>
-<li><a class="reference internal" href="#functions-of-one-variable">Functions of One Variable</a></li>
-<li><a class="reference internal" href="#functions-of-several-variables">Functions of several variables</a></li>
-<li><a class="reference internal" href="#functionals">Functionals</a></li>
-<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#">3.15. Delta Function</a></li>
+<li><a class="reference internal" href="#distributions">3.16. Distributions</a></li>
+<li><a class="reference internal" href="#variations-and-functional-derivatives">3.17. Variations and Functional Derivatives</a><ul>
+<li><a class="reference internal" href="#functions-of-one-variable">3.17.1. Functions of One Variable</a></li>
+<li><a class="reference internal" href="#functions-of-several-variables">3.17.2. Functions of several variables</a></li>
+<li><a class="reference internal" href="#functionals">3.17.3. Functionals</a></li>
+<li><a class="reference internal" href="#examples">3.17.4. Examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dirac-notation">Dirac Notation</a></li>
-<li><a class="reference internal" href="#homogeneous-functions-euler-s-theorem">Homogeneous Functions (Euler’s Theorem)</a><ul>
-<li><a class="reference internal" href="#example-1">Example 1</a></li>
-<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#dirac-notation">3.18. Dirac Notation</a></li>
+<li><a class="reference internal" href="#homogeneous-functions-euler-s-theorem">3.19. Homogeneous Functions (Euler’s Theorem)</a><ul>
+<li><a class="reference internal" href="#example-1">3.19.1. Example 1</a></li>
+<li><a class="reference internal" href="#example-2">3.19.2. Example 2</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#green-functions">Green Functions</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#boundary-conditions">Boundary Conditions</a></li>
-<li><a class="reference internal" href="#symmetry">Symmetry</a></li>
-<li><a class="reference internal" href="#id1">Examples</a><ul>
+<li><a class="reference internal" href="#green-functions">3.20. Green Functions</a><ul>
+<li><a class="reference internal" href="#introduction">3.20.1. Introduction</a></li>
+<li><a class="reference internal" href="#boundary-conditions">3.20.2. Boundary Conditions</a></li>
+<li><a class="reference internal" href="#symmetry">3.20.3. Symmetry</a></li>
+<li><a class="reference internal" href="#id1">3.20.4. Examples</a><ul>
 <li><a class="reference internal" href="#poisson-equation-in-1d">Poisson Equation in 1D</a></li>
 <li><a class="reference internal" href="#radial-poisson-equation">Radial Poisson Equation</a></li>
 <li><a class="reference internal" href="#helmholtz-equation-in-1d">Helmholtz Equation in 1D</a></li>
@@ -1768,28 +1768,28 @@ I_{3\over 2}(\mu) = \int_0^\infty {\epsilon^{3\over2} \d\epsilon \over
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#binomial-coefficients">Binomial Coefficients</a></li>
-<li><a class="reference internal" href="#double-sums">Double Sums</a></li>
-<li><a class="reference internal" href="#triangle-inequality">Triangle Inequality</a></li>
-<li><a class="reference internal" href="#gamma-function">Gamma Function</a></li>
-<li><a class="reference internal" href="#incomplete-gamma-function">Incomplete Gamma Function</a><ul>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#binomial-coefficients">3.21. Binomial Coefficients</a></li>
+<li><a class="reference internal" href="#double-sums">3.22. Double Sums</a></li>
+<li><a class="reference internal" href="#triangle-inequality">3.23. Triangle Inequality</a></li>
+<li><a class="reference internal" href="#gamma-function">3.24. Gamma Function</a></li>
+<li><a class="reference internal" href="#incomplete-gamma-function">3.25. Incomplete Gamma Function</a><ul>
+<li><a class="reference internal" href="#example">3.25.1. Example</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#factorial">Factorial</a></li>
-<li><a class="reference internal" href="#double-factorial">Double Factorial</a><ul>
-<li><a class="reference internal" href="#id2">Example</a></li>
+<li><a class="reference internal" href="#factorial">3.26. Factorial</a></li>
+<li><a class="reference internal" href="#double-factorial">3.27. Double Factorial</a><ul>
+<li><a class="reference internal" href="#id2">3.27.1. Example</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#fermi-dirac-integral">Fermi-Dirac Integral</a></li>
+<li><a class="reference internal" href="#fermi-dirac-integral">3.28. Fermi-Dirac Integral</a></li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="trig.html"
-                        title="previous chapter">Periodic Functions</a></p>
+                        title="previous chapter">3.10. Periodic Functions</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="spherical-harmonics.html"
-                        title="next chapter">Legendre Polynomials</a></p>
+                        title="next chapter">3.29. Legendre Polynomials</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1820,13 +1820,13 @@ I_{3\over 2}(\mu) = \int_0^\infty {\epsilon^{3\over2} \d\epsilon \over
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+          <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              >next</a> |</li>
         <li class="right" >
-          <a href="trig.html" title="Periodic Functions"
+          <a href="trig.html" title="3.10. Periodic Functions"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

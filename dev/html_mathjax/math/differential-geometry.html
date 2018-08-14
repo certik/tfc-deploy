@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Differential Geometry &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.40. Differential Geometry &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Operators" href="operators.html" />
-    <link rel="prev" title="Linear Algebra" href="la.html" />
+    <link rel="next" title="3.41. Operators" href="operators.html" />
+    <link rel="prev" title="3.39. Linear Algebra" href="la.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -57,13 +57,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="operators.html" title="Operators"
+          <a href="operators.html" title="3.41. Operators"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="la.html" title="Linear Algebra"
+          <a href="la.html" title="3.39. Linear Algebra"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -73,9 +73,9 @@
           <div class="body" role="main">
             
   <div class="section" id="differential-geometry">
-<h1>Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this headline">¶</a></h1>
+<h1>3.40. Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="manifolds">
-<span id="index-0"></span><h2>Manifolds<a class="headerlink" href="#manifolds" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>3.40.1. Manifolds<a class="headerlink" href="#manifolds" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="scalars-vectors-tensors">
 <span id="index-1"></span><h3>Scalars, Vectors, Tensors<a class="headerlink" href="#scalars-vectors-tensors" title="Permalink to this headline">¶</a></h3>
 <p>Differentiable manifold <span class="math notranslate nohighlight">\(U\)</span> is a space covered by an atlas of maps, each map
@@ -239,7 +239,7 @@ transports its own tangent vector:</p>
 {\d x^\beta\over\d\lambda}{\partial\over\partial x^\beta}
 {\d x^\alpha\over\d\lambda} = {\d^2 x^\alpha\over\d\lambda^2}\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-geodesic-equation">
-<span class="eqno">(1)<a class="headerlink" href="#equation-geodesic-equation" title="Permalink to this equation">¶</a></span>\[{\d^2 x^\alpha\over\d\lambda^2} + \Gamma^\alpha_{\beta\gamma} {\d x^\beta\over\d\lambda}{\d x^\gamma\over\d\lambda} = 0\]</div>
+<span class="eqno">(3.40.1.1)<a class="headerlink" href="#equation-geodesic-equation" title="Permalink to this equation">¶</a></span>\[{\d^2 x^\alpha\over\d\lambda^2} + \Gamma^\alpha_{\beta\gamma} {\d x^\beta\over\d\lambda}{\d x^\gamma\over\d\lambda} = 0\]</div>
 <p>Let’s determine all possible reparametrizations that leave the geodesic
 equation invariant:</p>
 <div class="math notranslate nohighlight">
@@ -361,20 +361,20 @@ formulas shorter:</p>
         \right)(\delta x_\rho) \d\lambda\end{aligned}\end{align} \]</div>
 <p>By setting the variation <span class="math notranslate nohighlight">\(\delta\tau=0\)</span> we obtain the geodesic equation:</p>
 <div class="math notranslate nohighlight" id="equation-geodesic-equation2">
-<span class="eqno">(2)<a class="headerlink" href="#equation-geodesic-equation2" title="Permalink to this equation">¶</a></span>\[    K{\d\over\d\lambda}\left(1\over K\right)g^{\alpha\rho}+
+<span class="eqno">(3.40.1.2)<a class="headerlink" href="#equation-geodesic-equation2" title="Permalink to this equation">¶</a></span>\[    K{\d\over\d\lambda}\left(1\over K\right)g^{\alpha\rho}+
         {\d^2 x^\rho\over\d\lambda^2}
     +\Gamma^\rho_{\mu\nu}
  {\d x^\mu\over\d \lambda} {\d x^\nu\over\d\lambda} = 0\]</div>
 <p>We have a freedom of choosing <span class="math notranslate nohighlight">\(\lambda\)</span>, so we choose
 such parametrization so that <span class="math notranslate nohighlight">\(\d\lambda = \d\tau\)</span>, which makes <span class="math notranslate nohighlight">\(K=1\)</span> and
-we recover <a class="reference internal" href="#equation-geodesic-equation">(1)</a>:</p>
+we recover <a class="reference internal" href="#equation-geodesic-equation">(3.40.1.1)</a>:</p>
 <div class="math notranslate nohighlight">
 \[       {\d^2 x^\rho\over\d\lambda^2}
    +\Gamma^\rho_{\mu\nu}
 {\d x^\mu\over\d \lambda} {\d x^\nu\over\d\lambda} = 0\]</div>
-<p>Note that the equation <a class="reference internal" href="#equation-geodesic-equation2">(2)</a> is parametrization invariant,
-but <a class="reference internal" href="#equation-geodesic-equation">(1)</a> is not (only affine reparametrization leaves
-<a class="reference internal" href="#equation-geodesic-equation">(1)</a> invariant).</p>
+<p>Note that the equation <a class="reference internal" href="#equation-geodesic-equation2">(3.40.1.2)</a> is parametrization invariant,
+but <a class="reference internal" href="#equation-geodesic-equation">(3.40.1.1)</a> is not (only affine reparametrization leaves
+<a class="reference internal" href="#equation-geodesic-equation">(3.40.1.1)</a> invariant).</p>
 </div>
 <div class="section" id="riemann-curvature-tensor">
 <span id="index-6"></span><h3>Riemann Curvature Tensor<a class="headerlink" href="#riemann-curvature-tensor" title="Permalink to this headline">¶</a></h3>
@@ -605,7 +605,7 @@ over <span class="math notranslate nohighlight">\(i\)</span>, <span class="math 
      \partial_k g_{ij}\right)\]</div>
 <p>If <span class="math notranslate nohighlight">\(k=i\)</span> or <span class="math notranslate nohighlight">\(k=j\)</span> then</p>
 <div class="math notranslate nohighlight" id="equation-chris1">
-<span class="eqno">(3)<a class="headerlink" href="#equation-chris1" title="Permalink to this equation">¶</a></span>\[\Gamma^k_{ij} =
+<span class="eqno">(3.40.1.3)<a class="headerlink" href="#equation-chris1" title="Permalink to this equation">¶</a></span>\[\Gamma^k_{ij} =
 \Gamma^i_{ij} = \Gamma^i_{ji}
     =\half g^{ii} \left(\partial_j g_{ii}+\partial_i g_{ij}-
      \partial_i g_{ij}\right)
@@ -614,7 +614,7 @@ over <span class="math notranslate nohighlight">\(i\)</span>, <span class="math 
     ={1\over h_i} \partial_j h_i\]</div>
 <p>otherwise (i.e. <span class="math notranslate nohighlight">\(k\neq i\)</span> and <span class="math notranslate nohighlight">\(k\neq j\)</span>) then either <span class="math notranslate nohighlight">\(i=j\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-chris2">
-<span class="eqno">(4)<a class="headerlink" href="#equation-chris2" title="Permalink to this equation">¶</a></span>\[\Gamma^k_{ij} =
+<span class="eqno">(3.40.1.4)<a class="headerlink" href="#equation-chris2" title="Permalink to this equation">¶</a></span>\[\Gamma^k_{ij} =
 \Gamma^k_{ii}
     =\half g^{kk} \left(\partial_i g_{ki}+\partial_i g_{ki}-
      \partial_k g_{ii}\right)
@@ -628,16 +628,16 @@ over <span class="math notranslate nohighlight">\(i\)</span>, <span class="math 
      \partial_k g_{ij}\right)
     =0\]</div>
 <p>In other words, the symbols can only be nonzero if at least two of <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j\)</span>
-or <span class="math notranslate nohighlight">\(k\)</span> are the same and one can use the two formulas <a class="reference internal" href="#equation-chris1">(3)</a> and
-<a class="reference internal" href="#equation-chris2">(4)</a> to quickly evaluate them. A systematic way to do it is to write
-<a class="reference internal" href="#equation-chris1">(3)</a> and <a class="reference internal" href="#equation-chris2">(4)</a> in the following form:</p>
+or <span class="math notranslate nohighlight">\(k\)</span> are the same and one can use the two formulas <a class="reference internal" href="#equation-chris1">(3.40.1.3)</a> and
+<a class="reference internal" href="#equation-chris2">(3.40.1.4)</a> to quickly evaluate them. A systematic way to do it is to write
+<a class="reference internal" href="#equation-chris1">(3.40.1.3)</a> and <a class="reference internal" href="#equation-chris2">(3.40.1.4)</a> in the following form:</p>
 <div class="math notranslate nohighlight" id="equation-chris3">
-<span class="eqno">(5)<a class="headerlink" href="#equation-chris3" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\Gamma^i_{ij} = \Gamma^i_{ji} ={1\over h_i} \partial_j h_i \quad\quad
+<span class="eqno">(3.40.1.5)<a class="headerlink" href="#equation-chris3" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\Gamma^i_{ij} = \Gamma^i_{ji} ={1\over h_i} \partial_j h_i \quad\quad
     \mbox{$i$, $j$ arbitrary}\\\Gamma^j_{ii} =-{h_i\over h_j^2} \partial_j h_i \quad\quad
     \mbox{$i\neq j$}\end{aligned}\end{align} \]</div>
 <p>Then find all <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span> for which <span class="math notranslate nohighlight">\(\partial_j h_i\)</span> is nonzero and then
 immediately write all nonzero Christoffel symbols using the equations
-<a class="reference internal" href="#equation-chris3">(5)</a>.</p>
+<a class="reference internal" href="#equation-chris3">(3.40.1.5)</a>.</p>
 <p>For example for cylindrical coordinates we have <span class="math notranslate nohighlight">\(h_\rho=h_z =1\)</span> and <span class="math notranslate nohighlight">\(h_\phi =
 \rho\)</span>, so <span class="math notranslate nohighlight">\(\partial_j h_i\)</span> is only nonzero for <span class="math notranslate nohighlight">\(i=\phi\)</span> and <span class="math notranslate nohighlight">\(j=\rho\)</span> and we
 get:</p>
@@ -842,7 +842,7 @@ normal vector to this surface.</p>
 </div>
 </div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>3.40.2. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="weak-formulation-of-laplace-equation">
 <h3>Weak Formulation of Laplace Equation<a class="headerlink" href="#weak-formulation-of-laplace-equation" title="Permalink to this headline">¶</a></h3>
 <p>As an example, we write the weak formulation of the Laplace equation in
@@ -955,20 +955,20 @@ diagonal metric:</p>
 <p>The relation between cartesian coordinates <span class="math notranslate nohighlight">\(\hat x^a=(x, y, z)\)</span>
 and spherical coordinates <span class="math notranslate nohighlight">\(x^i=(\rho, \theta, \phi)\)</span> is:</p>
 <div class="math notranslate nohighlight" id="equation-spherical-coord">
-<span class="eqno">(6)<a class="headerlink" href="#equation-spherical-coord" title="Permalink to this equation">¶</a></span>\[\begin{split}x &amp;= \rho\sin\theta\cos\phi \\
+<span class="eqno">(3.40.2.1)<a class="headerlink" href="#equation-spherical-coord" title="Permalink to this equation">¶</a></span>\[\begin{split}x &amp;= \rho\sin\theta\cos\phi \\
 y &amp;= \rho\sin\theta\sin\phi \\
 z &amp;= \rho\cos\theta         \\\end{split}\]</div>
 <p>The transformation matrix (Jacobian) is calculated by differentiating
-<a class="reference internal" href="#equation-spherical-coord">(6)</a>:</p>
+<a class="reference internal" href="#equation-spherical-coord">(3.40.2.1)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-jacobian-spherical">
-<span class="eqno">(7)<a class="headerlink" href="#equation-jacobian-spherical" title="Permalink to this equation">¶</a></span>\[{\partial \hat x\over\partial x}
+<span class="eqno">(3.40.2.2)<a class="headerlink" href="#equation-jacobian-spherical" title="Permalink to this equation">¶</a></span>\[{\partial \hat x\over\partial x}
     = {\partial (x, y, z)\over\partial(\rho, \theta, \phi)}
     = \mat{
 \sin\theta\cos\phi &amp; \rho\cos\theta\cos\phi &amp; -\rho\sin\theta\sin\phi \cr
 \sin\theta\sin\phi &amp; \rho\cos\theta\sin\phi &amp;  \rho\sin\theta\cos\phi \cr
 \cos\theta         &amp; -\rho\sin\theta        &amp;  0                      \cr}\]</div>
 <p>The inverse Jacobian is calculated by inverting the matrix
-<a class="reference internal" href="#equation-jacobian-spherical">(7)</a>:</p>
+<a class="reference internal" href="#equation-jacobian-spherical">(3.40.2.2)</a>:</p>
 <div class="math notranslate nohighlight">
 \[{\partial x\over\partial \hat x}
     = {\partial(\rho, \theta, \phi)\over\partial(x, y, z)}
@@ -980,7 +980,7 @@ z &amp;= \rho\cos\theta         \\\end{split}\]</div>
 -{\sin\phi\over\rho\sin\theta} &amp; {\cos\phi\over\rho\sin\theta}
         &amp; 0                      \cr }\]</div>
 <p>We expressed the above Jacobians using <span class="math notranslate nohighlight">\(\rho\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span> and we can
-use <a class="reference internal" href="#equation-spherical-coord">(6)</a> to express them using <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>. Code:</p>
+use <a class="reference internal" href="#equation-spherical-coord">(3.40.2.1)</a> to express them using <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>. Code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">latex</span>
 <span class="n">var</span><span class="p">(</span><span class="s2">&quot;rho theta phi&quot;</span><span class="p">)</span>
 <span class="n">x_hat</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
@@ -1195,7 +1195,7 @@ coordinate systems):</p>
 <div class="math notranslate nohighlight">
 \[\nabla_0 \mat{V'^0\cr V'^1 \cr V'^2\cr V'^3\cr} = \mat{\partial_0V'^0\cr \partial_0V'^1 +\Gamma^1_{00}V'^0+\Gamma^1_{02}V'^2\cr \partial_0V'^2 +\Gamma^2_{00}V'^0+\Gamma^2_{01}V'^1\cr \partial_0V'^3\cr} = \mat{\partial_0V'^0\cr \partial_0V'^1 -x'\omega^2V'^0-\omega V'^2\cr \partial_0V'^2 -y'\omega^2V'^0+\omega V'^1\cr \partial_0V'^3\cr}=\]</div>
 <div class="math notranslate nohighlight" id="equation-vcovar">
-<span class="eqno">(8)<a class="headerlink" href="#equation-vcovar" title="Permalink to this equation">¶</a></span>\[=
+<span class="eqno">(3.40.2.3)<a class="headerlink" href="#equation-vcovar" title="Permalink to this equation">¶</a></span>\[=
 \partial_0
 \mat{V'^0\cr V'^1 \cr V'^2\cr V'^3\cr}
 +
@@ -1227,7 +1227,7 @@ Let’s imagine a static vector in the <span class="math notranslate nohighlight
 \[\nabla_0\nabla_0W^\mu= = \mat{0\cr -\omega^2\cos\omega t\cr -\omega^2\sin\omega t\cr 0\cr}\]</div>
 <p>How can one prove the relation:</p>
 <div class="math notranslate nohighlight" id="equation-vrot">
-<span class="eqno">(9)<a class="headerlink" href="#equation-vrot" title="Permalink to this equation">¶</a></span>\[{\d{\bf A}\over\d t} = \boldsymbol\omega \times {\bf A} + {\d'{\bf A}\over\d t}\]</div>
+<span class="eqno">(3.40.2.4)<a class="headerlink" href="#equation-vrot" title="Permalink to this equation">¶</a></span>\[{\d{\bf A}\over\d t} = \boldsymbol\omega \times {\bf A} + {\d'{\bf A}\over\d t}\]</div>
 <p>that is used for example to derive the Coriolis acceleration etc.?
 We need to write it components to understand what it really means:</p>
 <div class="math notranslate nohighlight">
@@ -1279,7 +1279,7 @@ for the finite element discretization of axisymmetric 3D problems.</p>
 \[\epsilon_{ij} = \frac{1}{2}\left(\frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i}   \right),\ \ \ \ 1 \le i,j \le 3.\]</div>
 <p>The stress tensor <span class="math notranslate nohighlight">\(\sigma\)</span> has the form</p>
 <div class="math notranslate nohighlight" id="equation-0a">
-<span class="eqno">(10)<a class="headerlink" href="#equation-0a" title="Permalink to this equation">¶</a></span>\[   \sigma_{ij} = \lambda \delta_{ij}\mbox{div}\bfu + 2\mu \epsilon_{ij},\ \ \ \ 1 \le i,j \le 3,\]</div>
+<span class="eqno">(3.40.2.5)<a class="headerlink" href="#equation-0a" title="Permalink to this equation">¶</a></span>\[   \sigma_{ij} = \lambda \delta_{ij}\mbox{div}\bfu + 2\mu \epsilon_{ij},\ \ \ \ 1 \le i,j \le 3,\]</div>
 <p>where</p>
 <div class="math notranslate nohighlight">
 \[\mbox{div}\bfu = \sum_{k=1}^3 \frac{\partial u_k}{\partial x_k} = \sum_{k=1}^3 \epsilon_{kk} = \mbox{Tr}(\epsilon).\]</div>
@@ -1287,7 +1287,7 @@ for the finite element discretization of axisymmetric 3D problems.</p>
 symbol (<span class="math notranslate nohighlight">\(\delta_{ij} = 1\)</span> if <span class="math notranslate nohighlight">\(i = j\)</span> and <span class="math notranslate nohighlight">\(\delta_{ij} = 0\)</span> otherwise).
 The equilibrium equations have the form</p>
 <div class="math notranslate nohighlight" id="equation-0b">
-<span class="eqno">(11)<a class="headerlink" href="#equation-0b" title="Permalink to this equation">¶</a></span>\[   \sum_{j=1}^3 \frac{\partial \sigma_{ij}}{\partial x_j} + f_i = 0,\ \ \ \ 1 \le i \le 3,\]</div>
+<span class="eqno">(3.40.2.6)<a class="headerlink" href="#equation-0b" title="Permalink to this equation">¶</a></span>\[   \sum_{j=1}^3 \frac{\partial \sigma_{ij}}{\partial x_j} + f_i = 0,\ \ \ \ 1 \le i \le 3,\]</div>
 <p>where <span class="math notranslate nohighlight">\((f_1, f_2, f_3)^T\)</span> is the vector of internal forces (such as gravity).</p>
 <p>The boundary conditions for linear elasticity are given by</p>
 <div class="math notranslate nohighlight">
@@ -1297,14 +1297,14 @@ The equilibrium equations have the form</p>
 <h4>Weak formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h4>
 <p>Multiplying by test functions and integrating over the domain <span class="math notranslate nohighlight">\(\Omega\)</span> we obtain</p>
 <div class="math notranslate nohighlight" id="equation-1a">
-<span class="eqno">(12)<a class="headerlink" href="#equation-1a" title="Permalink to this equation">¶</a></span>\[   - \int_{\Omega}\sum_{j=1}^3 \frac{\partial \sigma_{ij}}{\partial x_j}v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3.\]</div>
+<span class="eqno">(3.40.2.7)<a class="headerlink" href="#equation-1a" title="Permalink to this equation">¶</a></span>\[   - \int_{\Omega}\sum_{j=1}^3 \frac{\partial \sigma_{ij}}{\partial x_j}v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3.\]</div>
 <p>Using Green’s theorem and the boundary conditions</p>
 <div class="math notranslate nohighlight">
 \[\int_{\Omega}\sum_{j=1}^3 \sigma_{ij} \frac{\partial v_i}{\partial x_j} - \int_{\partial \Omega} \sum_{j=1}^3 \sigma_{ij} n_j v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3.\]</div>
 <p>Thus</p>
 <div class="math notranslate nohighlight" id="equation-1b">
-<span class="eqno">(13)<a class="headerlink" href="#equation-1b" title="Permalink to this equation">¶</a></span>\[   \int_{\Omega}\sum_{j=1}^3 \sigma_{ij} \frac{\partial v_i}{\partial x_j} - \int_{\Gamma_2} g_i v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3.\]</div>
-<p>Let us write the equations <a class="reference internal" href="#equation-1b">(13)</a> in detail using relation <a class="reference internal" href="#equation-0a">(10)</a></p>
+<span class="eqno">(3.40.2.8)<a class="headerlink" href="#equation-1b" title="Permalink to this equation">¶</a></span>\[   \int_{\Omega}\sum_{j=1}^3 \sigma_{ij} \frac{\partial v_i}{\partial x_j} - \int_{\Gamma_2} g_i v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3.\]</div>
+<p>Let us write the equations <a class="reference internal" href="#equation-1b">(3.40.2.8)</a> in detail using relation <a class="reference internal" href="#equation-0a">(3.40.2.5)</a></p>
 <div class="math notranslate nohighlight" id="equation-weak">
 \begin{eqnarray*}
 \int_{\Omega} \left[\lambda \mbox{div}u + 2 \mu \frac{\partial u_1}{\partial x_1}\right] \frac{\partial v_1}{\partial x_1} + \mu \left(\frac{\partial u_1}{\partial x_2} + \frac{\partial u_2}{\partial x_1}\right)\frac{\partial v_1}{\partial x_2} + \mu \left(\frac{\partial u_1}{\partial x_3} + \frac{\partial u_3}{\partial x_1}\right)\frac{\partial v_1}{\partial x_3}
@@ -1344,13 +1344,13 @@ u_1 &amp;=&amp; u_r \cos \phi, \nonumber \\
 u_2 &amp;=&amp; u_r \sin \phi, \nonumber \\
 u_3 &amp;=&amp; u_z. \nonumber
 \end{eqnarray*}</div><p>The same relations hold for surface forces <span class="math notranslate nohighlight">\(g_i\)</span> and volume forces <span class="math notranslate nohighlight">\(f_i\)</span>.</p>
-<p>Applying <a class="reference internal" href="#equation-1">(15)</a> to <span class="math notranslate nohighlight">\(u_1\)</span>, we obtain</p>
+<p>Applying <a class="reference internal" href="#equation-1">(3.40.2.10)</a> to <span class="math notranslate nohighlight">\(u_1\)</span>, we obtain</p>
 <div class="math notranslate nohighlight">
 \begin{eqnarray*}
 \frac{\partial u_1}{\partial x_1} &amp;=&amp; \frac{\partial u_1}{\partial r}\cos\phi - \frac{1}{r}\frac{\partial u_1}{\partial \phi}\sin\phi,\nonumber \\
 \frac{\partial u_1}{\partial x_2} &amp;=&amp; \frac{\partial u_1}{\partial r}\sin\phi + \frac{1}{r}\frac{\partial u_1}{\partial \phi}\cos\phi, \nonumber \\
 \frac{\partial u_1}{\partial x_3} &amp;=&amp; \frac{\partial u_1}{\partial z}. \nonumber
-\end{eqnarray*}</div><p>Using <a class="reference internal" href="#equation-2">(16)</a> and the fact that <span class="math notranslate nohighlight">\(u_r\)</span> does not depend on <span class="math notranslate nohighlight">\(\phi\)</span>, this yields</p>
+\end{eqnarray*}</div><p>Using <a class="reference internal" href="#equation-2">(3.40.2.11)</a> and the fact that <span class="math notranslate nohighlight">\(u_r\)</span> does not depend on <span class="math notranslate nohighlight">\(\phi\)</span>, this yields</p>
 <div class="math notranslate nohighlight">
 \begin{eqnarray*}
 \frac{\partial u_1}{\partial x_1} &amp;=&amp; \frac{\partial u_r}{\partial r}\cos^2\phi + \frac{1}{r} u_r\sin^2\phi,\nonumber \\
@@ -1375,10 +1375,10 @@ coordinates</p>
 <div class="section" id="axisymmetric-formulation">
 <h4>Axisymmetric formulation<a class="headerlink" href="#axisymmetric-formulation" title="Permalink to this headline">¶</a></h4>
 <p>Assuming that the domain <span class="math notranslate nohighlight">\(\Omega\)</span> is axisymmetric,
-we can begin to transform the integrals in <a class="reference internal" href="#equation-weak">(14)</a> to cylindrical coordinates.
-Recall that the Jacobian of the transformation is <span class="math notranslate nohighlight">\(J(r, \phi, z) = r\)</span>. The first equation in <a class="reference internal" href="#equation-weak">(14)</a> has the form:</p>
+we can begin to transform the integrals in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> to cylindrical coordinates.
+Recall that the Jacobian of the transformation is <span class="math notranslate nohighlight">\(J(r, \phi, z) = r\)</span>. The first equation in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> has the form:</p>
 <div class="math notranslate nohighlight">
-\begin{eqnarray*} &amp;&amp;\int_{\Omega} r \left[\lambda (\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z}) + 2 \mu (\frac{\partial u_r}{\partial r}\cos^2\phi + \frac{1}{r} u_r\sin^2\phi)\right] (\frac{\partial v_r}{\partial r}\cos^2\phi + \frac{1}{r} v_r\sin^2\phi) + \\ &amp;&amp;r 2 \mu \left(\frac{\partial u_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}u_r \cos\phi\sin\phi\right)\left(\frac{\partial v_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}v_r \cos\phi\sin\phi\right) + \\ &amp;&amp;r \mu \left(\frac{\partial u_r}{\partial z}\cos\phi + \frac{\partial u_z}{\partial r}\cos\phi\right)\frac{\partial v_r}{\partial z}\cos\phi - \int_{\Gamma_2} r g_r v_r {\cos}^2 \phi = \int_{\Omega} r f_r\ v_r \cos^2 \phi, \end{eqnarray*}</div><p>The second equation in <a class="reference internal" href="#equation-weak">(14)</a> has the form:</p>
+\begin{eqnarray*} &amp;&amp;\int_{\Omega} r \left[\lambda (\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z}) + 2 \mu (\frac{\partial u_r}{\partial r}\cos^2\phi + \frac{1}{r} u_r\sin^2\phi)\right] (\frac{\partial v_r}{\partial r}\cos^2\phi + \frac{1}{r} v_r\sin^2\phi) + \\ &amp;&amp;r 2 \mu \left(\frac{\partial u_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}u_r \cos\phi\sin\phi\right)\left(\frac{\partial v_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}v_r \cos\phi\sin\phi\right) + \\ &amp;&amp;r \mu \left(\frac{\partial u_r}{\partial z}\cos\phi + \frac{\partial u_z}{\partial r}\cos\phi\right)\frac{\partial v_r}{\partial z}\cos\phi - \int_{\Gamma_2} r g_r v_r {\cos}^2 \phi = \int_{\Omega} r f_r\ v_r \cos^2 \phi, \end{eqnarray*}</div><p>The second equation in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> has the form:</p>
 <div class="math notranslate nohighlight">
 \begin{eqnarray*} &amp;&amp;\int_{\Omega} r 2\mu \left(\frac{\partial u_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}u_r \cos\phi\sin\phi\right)\left(\frac{\partial v_r}{\partial r}\cos\phi\sin\phi - \frac{1}{r}v_r \cos\phi\sin\phi\right) +\\ &amp;&amp; r \left[\lambda (\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z}) + 2 \mu (\frac{\partial u_r}{\partial r}\sin^2\phi + \frac{1}{r} u_r\cos^2\phi)\right] (\frac{\partial v_r}{\partial r}\sin^2\phi + \frac{1}{r} v_r\cos^2\phi) + \\ &amp;&amp; r \mu \left(\frac{\partial u_r}{\partial z}\sin\phi + \frac{\partial u_z}{\partial r}\sin\phi\right)(\frac{\partial v_r}{\partial z}\sin\phi)  - \int_{\Gamma_2}r g_r v_r \sin^2 \phi = \int_{\Omega}r f_r\ v_r \sin^2 \phi,\\ \end{eqnarray*}</div><p>Adding these two equations together we get</p>
 <div class="math notranslate nohighlight">
@@ -1387,7 +1387,7 @@ Recall that the Jacobian of the transformation is <span class="math notranslate 
 \[\int_{\Omega} r \lambda (\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z}) (\frac{\partial v_r}{\partial r} + \frac{1}{r} v_r) + \int_{\Omega} r \mu \left[ 2 \left(\frac{\partial u_r}{\partial r}\frac{\partial v_r}{\partial r} + \frac{1}{r^2} u_r v_r\right) +  \left(\frac{\partial u_r}{\partial z}\frac{\partial v_r}{\partial z} + \frac{\partial u_z}{\partial r}\frac{\partial v_r}{\partial z}\right)\right]\]</div>
 <div class="math notranslate nohighlight">
 \[- \int_{\Gamma_2} g_r v_r r = \int_{\Omega}f_r\ v_r r\]</div>
-<p>Finally, the third equation in <a class="reference internal" href="#equation-weak">(14)</a> has the form</p>
+<p>Finally, the third equation in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> has the form</p>
 <div class="math notranslate nohighlight">
 \begin{eqnarray*} &amp;&amp; \int_{\Omega} r \mu \left(\frac{\partial u_r}{\partial z}\cos\phi + \frac{\partial u_z}{\partial r}\cos\phi\right)\frac{\partial v_z}{\partial r}\cos\phi + r \mu \left(\frac{\partial u_r}{\partial z}\sin\phi + \frac{\partial u_z}{\partial r}\sin\phi\right)\frac{\partial v_z}{\partial r}\sin\phi  + \\ &amp;&amp; r \left[\lambda (\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z} ) + 2 \mu \frac{\partial u_z}{\partial z}\right] \frac{\partial v_z}{\partial z} - \int_{\Gamma_2} g_z v_z  r = \int_{\Omega}f_z\ v_z r. \end{eqnarray*}</div><p>This gives us</p>
 <div class="math notranslate nohighlight">
@@ -1483,8 +1483,8 @@ coordinates (see above) we get:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Differential Geometry</a><ul>
-<li><a class="reference internal" href="#manifolds">Manifolds</a><ul>
+<li><a class="reference internal" href="#">3.40. Differential Geometry</a><ul>
+<li><a class="reference internal" href="#manifolds">3.40.1. Manifolds</a><ul>
 <li><a class="reference internal" href="#scalars-vectors-tensors">Scalars, Vectors, Tensors</a></li>
 <li><a class="reference internal" href="#covariant-differentiation">Covariant differentiation</a></li>
 <li><a class="reference internal" href="#parallel-transport">Parallel transport</a></li>
@@ -1508,7 +1508,7 @@ coordinates (see above) we get:</p>
 <li><a class="reference internal" href="#covariant-integration">Covariant integration</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#examples">3.40.2. Examples</a><ul>
 <li><a class="reference internal" href="#weak-formulation-of-laplace-equation">Weak Formulation of Laplace Equation</a></li>
 <li><a class="reference internal" href="#cylindrical-coordinates">Cylindrical Coordinates</a></li>
 <li><a class="reference internal" href="#spherical-coordinates">Spherical Coordinates</a></li>
@@ -1529,10 +1529,10 @@ coordinates (see above) we get:</p>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="la.html"
-                        title="previous chapter">Linear Algebra</a></p>
+                        title="previous chapter">3.39. Linear Algebra</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="operators.html"
-                        title="next chapter">Operators</a></p>
+                        title="next chapter">3.41. Operators</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1563,13 +1563,13 @@ coordinates (see above) we get:</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="operators.html" title="Operators"
+          <a href="operators.html" title="3.41. Operators"
              >next</a> |</li>
         <li class="right" >
-          <a href="la.html" title="Linear Algebra"
+          <a href="la.html" title="3.39. Linear Algebra"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

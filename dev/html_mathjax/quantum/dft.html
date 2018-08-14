@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Density Functional Theory (DFT) &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>8.9. Density Functional Theory (DFT) &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hartree-Fock (HF) Method" href="hf.html" />
-    <link rel="prev" title="Radial Schrödinger and Dirac Equations" href="radial.html" />
+    <link rel="next" title="8.10. Hartree-Fock (HF) Method" href="hf.html" />
+    <link rel="prev" title="8.8. Radial Schrödinger and Dirac Equations" href="radial.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -57,13 +57,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="hf.html" title="Hartree-Fock (HF) Method"
+          <a href="hf.html" title="8.10. Hartree-Fock (HF) Method"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="radial.html" title="Radial Schrödinger and Dirac Equations"
+          <a href="radial.html" title="8.8. Radial Schrödinger and Dirac Equations"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -73,9 +73,9 @@
           <div class="body" role="main">
             
   <div class="section" id="density-functional-theory-dft">
-<h1>Density Functional Theory (DFT)<a class="headerlink" href="#density-functional-theory-dft" title="Permalink to this headline">¶</a></h1>
+<h1>8.9. Density Functional Theory (DFT)<a class="headerlink" href="#density-functional-theory-dft" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="many-body-schrodinger-equation">
-<h2>Many Body Schrödinger Equation<a class="headerlink" href="#many-body-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.1. Many Body Schrödinger Equation<a class="headerlink" href="#many-body-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
 <p>We use (Hartree) atomic units in this whole section about DFT.
 We use the Born-Oppenheimer approximation, which says that the nuclei of the
 treated atoms are seen as fixed. A stationary electronic state (for <span class="math notranslate nohighlight">\(N\)</span>
@@ -111,7 +111,7 @@ called the particle (or number) density and is therefore given by:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}n({\bf r})= \int \Psi^*({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \Psi ({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_N+\\+\int \Psi^*({\bf r}_1,{\bf r},\cdots,{\bf r}_N) \Psi ({\bf r}_1,{\bf r},\cdots,{\bf r}_N) \,\d^3 r_1\,\d^3 r_3\cdots\d^3 r_N+\cdots\\+\int \Psi^*({\bf r}_1,{\bf r}_2,\cdots,{\bf r}) \Psi ({\bf r}_1,{\bf r}_2,\cdots,{\bf r}) \,\d^3 r_1\,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_{N-1}=\\=\int(\delta({\bf r}-{\bf r}_1)+\delta({\bf r}-{\bf r}_2)+\cdots+\delta({\bf r}-{\bf r}_N))\\\Psi^*({\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N) \Psi ({\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N) \,\d^3 r_1\,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_{N}=\\=\sum_{i=1}^N\int \braket{\Psi|{\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N}\delta({\bf r}-{\bf r}_i) \braket{{\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N|\Psi} \,\d^3 r_1\,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_{N}=\\=N\int \braket{\Psi|{\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N}\delta({\bf r}-{\bf r}_1) \braket{{\bf r}_1,{\bf r}_2,\cdots,{\bf r}_N|\Psi} \,\d^3 r_1\,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_{N}=\end{aligned}\end{align} \]</div>
 <div class="math notranslate nohighlight" id="equation-chargedensity">
-<span class="eqno">(1)<a class="headerlink" href="#equation-chargedensity" title="Permalink to this equation">¶</a></span>\[=N\int \Psi^*({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \Psi ({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_N\]</div>
+<span class="eqno">(8.9.1.1)<a class="headerlink" href="#equation-chargedensity" title="Permalink to this equation">¶</a></span>\[=N\int \Psi^*({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \Psi ({\bf r},{\bf r}_2,\cdots,{\bf r}_N) \,\d^3 r_2\,\d^3 r_3\cdots\d^3 r_N\]</div>
 <p>Thus <span class="math notranslate nohighlight">\(\int_\Omega n({\bf r})\,\d^3r\)</span> gives the number of particles
 in the region of integration <span class="math notranslate nohighlight">\(\Omega\)</span>. Obviously <span class="math notranslate nohighlight">\(\int
 n({\bf r})\,\d^3r=N\)</span>.</p>
@@ -130,19 +130,19 @@ The amount of electronic charge in the region <span class="math notranslate nohi
     = -\int_\Omega n({\bf r})\,\d^3r\]</div>
 <p>The energy of the system is given by</p>
 <div class="math notranslate nohighlight" id="equation-emanybody">
-<span class="eqno">(2)<a class="headerlink" href="#equation-emanybody" title="Permalink to this equation">¶</a></span>\[E=\braket{\Psi|\hat H|\Psi}= \braket{\Psi|\hat T|\Psi}+\braket{\Psi|\hat U|\Psi}+\braket{\Psi|\hat V|\Psi}= T+U+V\]</div>
+<span class="eqno">(8.9.1.2)<a class="headerlink" href="#equation-emanybody" title="Permalink to this equation">¶</a></span>\[E=\braket{\Psi|\hat H|\Psi}= \braket{\Psi|\hat T|\Psi}+\braket{\Psi|\hat U|\Psi}+\braket{\Psi|\hat V|\Psi}= T+U+V\]</div>
 <p>where</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}T=\braket{\Psi|\hat T|\Psi}=\sum_i^N\int \Psi^*({\bf r_1},{\bf r_2},\cdots,{\bf r_N})(-\half\nabla_i^2) \Psi({\bf r_1},{\bf r_2},\cdots,{\bf r_N})\,\d^3 r_1\,\d^3 r_2\cdots\d^3 r_N\\U=\braket{\Psi|\hat U|\Psi}\\V=\braket{\Psi|\hat V|\Psi}=\sum_i^N\int \Psi^*({\bf r_1},{\bf r_2},\cdots,{\bf r_N})v({\bf r_i}) \Psi({\bf r_1},{\bf r_2},\cdots,{\bf r_N})\,\d^3 r_1\,\d^3 r_2\cdots\d^3 r_N=\\=\sum_i^N\int \Psi^*({\bf r_1},{\bf r_2},\cdots,{\bf r_N})v({\bf r_1}) \Psi({\bf r_1},{\bf r_2},\cdots,{\bf r_N})\,\d^3 r_1\,\d^3 r_2\cdots\d^3 r_N=\\=N\int \Psi^*({\bf r_1},{\bf r_2},\cdots,{\bf r_N})v({\bf r_1}) \Psi({\bf r_1},{\bf r_2},\cdots,{\bf r_N})\,\d^3 r_1\,\d^3 r_2\cdots\d^3 r_N=\end{aligned}\end{align} \]</div>
 <div class="math notranslate nohighlight" id="equation-v-n">
-<span class="eqno">(3)<a class="headerlink" href="#equation-v-n" title="Permalink to this equation">¶</a></span>\[=\int v({\bf r}) n({\bf r})\d^3 r=V[n]\]</div>
+<span class="eqno">(8.9.1.3)<a class="headerlink" href="#equation-v-n" title="Permalink to this equation">¶</a></span>\[=\int v({\bf r}) n({\bf r})\d^3 r=V[n]\]</div>
 <p>It needs to be stressed, that <span class="math notranslate nohighlight">\(E\)</span> generally is <em>not</em> a functional of <span class="math notranslate nohighlight">\(n\)</span>
 alone, only the <span class="math notranslate nohighlight">\(V[n]\)</span> is. In the next section we show however, that if the
 <span class="math notranslate nohighlight">\(\ket{\Psi}\)</span> is a ground state (of any system), then <span class="math notranslate nohighlight">\(E\)</span> becomes a functional
 of <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 <div class="section" id="the-hohenberg-kohn-theorem">
-<h2>The Hohenberg-Kohn Theorem<a class="headerlink" href="#the-hohenberg-kohn-theorem" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.2. The Hohenberg-Kohn Theorem<a class="headerlink" href="#the-hohenberg-kohn-theorem" title="Permalink to this headline">¶</a></h2>
 <p>The Schrödinger equation gives the map</p>
 <div class="math notranslate nohighlight">
 \[C: V \to \Psi\]</div>
@@ -162,7 +162,7 @@ density <span class="math notranslate nohighlight">\(n\)</span> giving rise to t
 <div class="math notranslate nohighlight">
 \[D: \Psi \to n\]</div>
 <p>which is also bijective, because to every <span class="math notranslate nohighlight">\(\Psi\)</span> we can compute <span class="math notranslate nohighlight">\(n\)</span> from
-<a class="reference internal" href="#equation-chargedensity">(1)</a> and two different <span class="math notranslate nohighlight">\(\Psi\)</span> and <span class="math notranslate nohighlight">\(\Psi'\)</span> give two different
+<a class="reference internal" href="#equation-chargedensity">(8.9.1.1)</a> and two different <span class="math notranslate nohighlight">\(\Psi\)</span> and <span class="math notranslate nohighlight">\(\Psi'\)</span> give two different
 <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(n'\)</span>, because different <span class="math notranslate nohighlight">\(\Psi\)</span> and <span class="math notranslate nohighlight">\(\Psi'\)</span> give</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}E_{gs}=\braket{\Psi|\hat H|\Psi}&lt;\braket{\Psi'|\hat H|\Psi'}= \braket{\Psi'|\hat H'+\hat V-\hat V'|\Psi'}=E_{gs}'+\int n'({\bf r}) (v({\bf r})-v'({\bf r}))\,\d^3 r\\E_{gs}'=\braket{\Psi'|\hat H'|\Psi'}&lt;\braket{\Psi|\hat H'|\Psi}= \braket{\Psi|\hat H+\hat V'-\hat V|\Psi}=E_{gs}+\int n({\bf r}) (v'({\bf r})-v({\bf r}))\,\d^3 r\end{aligned}\end{align} \]</div>
@@ -181,7 +181,7 @@ r_N})\)</span>, in other words, <span class="math notranslate nohighlight">\(\Ps
 \[E_0=\braket{\Psi_0[n_0]|\hat T+\hat U+\hat V_0|\Psi_0[n_0]}=E[n_0]\]</div>
 <p>We define an energy functional</p>
 <div class="math notranslate nohighlight" id="equation-efunct">
-<span class="eqno">(4)<a class="headerlink" href="#equation-efunct" title="Permalink to this equation">¶</a></span>\[E_{v_0}[n]=\braket{\Psi[n]|\hat T+\hat U+\hat V_0|\Psi[n]}= \braket{\Psi[n]|\hat T+\hat U|\Psi[n]}+\int v_0({\bf r})n({\bf r})\d^3r\]</div>
+<span class="eqno">(8.9.2.1)<a class="headerlink" href="#equation-efunct" title="Permalink to this equation">¶</a></span>\[E_{v_0}[n]=\braket{\Psi[n]|\hat T+\hat U+\hat V_0|\Psi[n]}= \braket{\Psi[n]|\hat T+\hat U|\Psi[n]}+\int v_0({\bf r})n({\bf r})\d^3r\]</div>
 <p>where <span class="math notranslate nohighlight">\(\ket{\Psi[n]}\)</span> is any ground state wavefunction (generated by an
 arbitrary potential), that is, <span class="math notranslate nohighlight">\(n\)</span> is a ground state density belonging to an
 arbitrary system. <span class="math notranslate nohighlight">\(E_0\)</span> which is generated by the potential <span class="math notranslate nohighlight">\(V_0\)</span> can then be
@@ -193,32 +193,32 @@ expressed as</p>
 \[E_0&lt;E_{v_0}[n]\]</div>
 <p>and one has to minimize the functional <span class="math notranslate nohighlight">\(E_{v_0}[n]\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-emin">
-<span class="eqno">(5)<a class="headerlink" href="#equation-emin" title="Permalink to this equation">¶</a></span>\[E_0=\min_n E_{v_0}[n]\]</div>
+<span class="eqno">(8.9.2.2)<a class="headerlink" href="#equation-emin" title="Permalink to this equation">¶</a></span>\[E_0=\min_n E_{v_0}[n]\]</div>
 <p>The term</p>
 <div class="math notranslate nohighlight">
 \[\braket{\Psi[n]|\hat T+\hat U|\Psi[n]}\equiv F[n]\]</div>
-<p>in <a class="reference internal" href="#equation-efunct">(4)</a> is universal in the sense that it doesn’t depend on <span class="math notranslate nohighlight">\(\hat
+<p>in <a class="reference internal" href="#equation-efunct">(8.9.2.1)</a> is universal in the sense that it doesn’t depend on <span class="math notranslate nohighlight">\(\hat
 V_0\)</span>. It can be proven <a class="reference internal" href="#dft" id="id1">[DFT]</a>, that <span class="math notranslate nohighlight">\(F[n]\)</span> is a functional of <span class="math notranslate nohighlight">\(n\)</span> for
-degenerated ground states too, so <a class="reference internal" href="#equation-emin">(5)</a> stays true as well.</p>
-<p>The ground state densities in <a class="reference internal" href="#equation-efunct">(4)</a> and <a class="reference internal" href="#equation-emin">(5)</a> are called
+degenerated ground states too, so <a class="reference internal" href="#equation-emin">(8.9.2.2)</a> stays true as well.</p>
+<p>The ground state densities in <a class="reference internal" href="#equation-efunct">(8.9.2.1)</a> and <a class="reference internal" href="#equation-emin">(8.9.2.2)</a> are called
 <em>pure-state v-representable</em> because they are the densities of (possible
 degenerate) ground state of the Hamiltonian with some local potential <span class="math notranslate nohighlight">\(v({\bf
 r})\)</span>. One may ask a question if all possible functions are v-representable
 (this is called the v-representability problem). The question is relevant,
 because we need to know which functions to take into account in the
-minimization process <a class="reference internal" href="#equation-emin">(5)</a>. Even though not every function is
+minimization process <a class="reference internal" href="#equation-emin">(8.9.2.2)</a>. Even though not every function is
 v-representable <a class="reference internal" href="#dft" id="id2">[DFT]</a>, every density defined on a grid (finite of
 infinite) which is strictly positive, normalized and consistent with the Pauli
 principle is ensemble v-representable. Ensemble v-representation is just a
 simple generalization of the above, for details see <a class="reference internal" href="#dft" id="id3">[DFT]</a>.</p>
-<p>The functional <span class="math notranslate nohighlight">\(E_{v_0}[n]\)</span> in <a class="reference internal" href="#equation-emin">(5)</a> depends on the particle number <span class="math notranslate nohighlight">\(N\)</span>,
+<p>The functional <span class="math notranslate nohighlight">\(E_{v_0}[n]\)</span> in <a class="reference internal" href="#equation-emin">(8.9.2.2)</a> depends on the particle number <span class="math notranslate nohighlight">\(N\)</span>,
 so in order to get <span class="math notranslate nohighlight">\(n\)</span>, we need to solve the variational formulation</p>
 <div class="math notranslate nohighlight">
 \[{\delta\over\delta n}\left(E_v[n]-\mu(N)\int n(\bf r)\d^3r\right)=0\]</div>
 <p>so</p>
 <div class="math notranslate nohighlight" id="equation-euler">
-<span class="eqno">(6)<a class="headerlink" href="#equation-euler" title="Permalink to this equation">¶</a></span>\[{\delta E_v[n]\over\delta n}=\mu(N)\]</div>
-<p>Let the <span class="math notranslate nohighlight">\(n_N(\bf r)\)</span> be the solution of <a class="reference internal" href="#equation-euler">(6)</a> with a particle number
+<span class="eqno">(8.9.2.3)<a class="headerlink" href="#equation-euler" title="Permalink to this equation">¶</a></span>\[{\delta E_v[n]\over\delta n}=\mu(N)\]</div>
+<p>Let the <span class="math notranslate nohighlight">\(n_N(\bf r)\)</span> be the solution of <a class="reference internal" href="#equation-euler">(8.9.2.3)</a> with a particle number
 <span class="math notranslate nohighlight">\(N\)</span> and the energy <span class="math notranslate nohighlight">\(E_N\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[E_N=E_v[n_N]\]</div>
@@ -233,7 +233,7 @@ so in order to get <span class="math notranslate nohighlight">\(n\)</span>, we n
 \[\mu(N)={E_{N+\epsilon}-E_N\over\epsilon} \ \longrightarrow \ {\partial E_N\over\partial N}\]</div>
 </div>
 <div class="section" id="the-kohn-sham-equations">
-<h2>The Kohn-Sham Equations<a class="headerlink" href="#the-kohn-sham-equations" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.3. The Kohn-Sham Equations<a class="headerlink" href="#the-kohn-sham-equations" title="Permalink to this headline">¶</a></h2>
 <p>Consider an auxiliary system of <span class="math notranslate nohighlight">\(N\)</span> noninteracting electrons (noninteracting
 gas):</p>
 <div class="math notranslate nohighlight">
@@ -265,11 +265,11 @@ independent particles) as expected. From the last equation it follows:</p>
 the sum of eigenvalues minus the potential energy coming from the total
 effective potential <span class="math notranslate nohighlight">\(v_s\)</span> used to construct the single particle orbitals
 <span class="math notranslate nohighlight">\(\psi_i\)</span>.</p>
-<p>From <a class="reference internal" href="#equation-euler">(6)</a> we get</p>
+<p>From <a class="reference internal" href="#equation-euler">(8.9.2.3)</a> we get</p>
 <div class="math notranslate nohighlight" id="equation-noninteract">
-<span class="eqno">(7)<a class="headerlink" href="#equation-noninteract" title="Permalink to this equation">¶</a></span>\[\mu={\delta E_s[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+{\delta V_s[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+v_s({\bf r})\]</div>
+<span class="eqno">(8.9.3.1)<a class="headerlink" href="#equation-noninteract" title="Permalink to this equation">¶</a></span>\[\mu={\delta E_s[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+{\delta V_s[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+v_s({\bf r})\]</div>
 <p>Solution to this equation gives the density <span class="math notranslate nohighlight">\(n_s\)</span>.</p>
-<p>Now we want to express the energy in <a class="reference internal" href="#equation-emanybody">(2)</a> using <span class="math notranslate nohighlight">\(T_s\)</span> and <span class="math notranslate nohighlight">\(E_H\)</span>
+<p>Now we want to express the energy in <a class="reference internal" href="#equation-emanybody">(8.9.1.2)</a> using <span class="math notranslate nohighlight">\(T_s\)</span> and <span class="math notranslate nohighlight">\(E_H\)</span>
 for convenience, where <span class="math notranslate nohighlight">\(E_H\)</span> is the classical electrostatic interaction energy
 of the charge distribution <span class="math notranslate nohighlight">\(\rho({\bf r})\)</span>, defined using following relations
 - we start with a Poisson equation in atomic units</p>
@@ -282,7 +282,7 @@ units:</p>
 \[\nabla^2 V_H({\bf r})=-4\pi q^2 n({\bf r}) = -4\pi n({\bf r})\]</div>
 <p>or equivalently by expressing <span class="math notranslate nohighlight">\(V_H\)</span> using the Green function:</p>
 <div class="math notranslate nohighlight" id="equation-v-h">
-<span class="eqno">(8)<a class="headerlink" href="#equation-v-h" title="Permalink to this equation">¶</a></span>\[V_H({\bf r})
+<span class="eqno">(8.9.3.2)<a class="headerlink" href="#equation-v-h" title="Permalink to this equation">¶</a></span>\[V_H({\bf r})
     = -{1\over 4\pi} \int {-4\pi n({\bf r'})\over|{\bf r}-{\bf r'}|} \d^3r'
     = \int {n({\bf r'})\over|{\bf r}-{\bf r'}|} \d^3r'\]</div>
 <p>and finally <span class="math notranslate nohighlight">\(E_H\)</span> is related to <span class="math notranslate nohighlight">\(V_H\)</span> using:</p>
@@ -303,47 +303,47 @@ units:</p>
 <p>Using the above relations, we can see that</p>
 <div class="math notranslate nohighlight">
 \[E_H[n]=\half\int V_H({\bf r}) n({\bf r}) \d^3r\]</div>
-<p>So from <a class="reference internal" href="#equation-efunct">(4)</a> we get</p>
+<p>So from <a class="reference internal" href="#equation-efunct">(8.9.2.1)</a> we get</p>
 <div class="math notranslate nohighlight" id="equation-efunctxc">
-<span class="eqno">(9)<a class="headerlink" href="#equation-efunctxc" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}E[n]=(T+U)[n]+V[n]=T_s[n]+E_H[n]+(T-T_s+U-E_H)[n]+V[n]=\\=T_s[n]+E_H[n]+E_{xc}[n]+V[n]\end{aligned}\end{align} \]</div>
+<span class="eqno">(8.9.3.3)<a class="headerlink" href="#equation-efunctxc" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}E[n]=(T+U)[n]+V[n]=T_s[n]+E_H[n]+(T-T_s+U-E_H)[n]+V[n]=\\=T_s[n]+E_H[n]+E_{xc}[n]+V[n]\end{aligned}\end{align} \]</div>
 <p>The rest of the energy is denoted by <span class="math notranslate nohighlight">\(E_{xc}=U-E_H+T-T_s\)</span> and it is called is
-the exchange and correlation energy functional. From <a class="reference internal" href="#equation-euler">(6)</a></p>
+the exchange and correlation energy functional. From <a class="reference internal" href="#equation-euler">(8.9.2.3)</a></p>
 <div class="math notranslate nohighlight">
 \[\mu={\delta E[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+ {\delta E_H[n]\over\delta n({\bf r})}+ {\delta E_{xc}[n]\over\delta n({\bf r})}+ {\delta V[n]\over\delta n({\bf r})}\]</div>
-<p>From <a class="reference internal" href="#equation-v-h">(8)</a> we have</p>
+<p>From <a class="reference internal" href="#equation-v-h">(8.9.3.2)</a> we have</p>
 <div class="math notranslate nohighlight">
 \[{\delta E_H\over\delta n({\bf r})}=V_H({\bf r})\]</div>
-<p>from <a class="reference internal" href="#equation-v-n">(3)</a> we get</p>
+<p>from <a class="reference internal" href="#equation-v-n">(8.9.1.3)</a> we get</p>
 <div class="math notranslate nohighlight">
 \[{\delta V[n]\over\delta n({\bf r})}=v({\bf r})\]</div>
 <p>we define</p>
 <div class="math notranslate nohighlight" id="equation-vxcpot">
-<span class="eqno">(10)<a class="headerlink" href="#equation-vxcpot" title="Permalink to this equation">¶</a></span>\[{\delta E_{xc}[n]\over\delta n({\bf r})}=V_{xc}({\bf r})\]</div>
+<span class="eqno">(8.9.3.4)<a class="headerlink" href="#equation-vxcpot" title="Permalink to this equation">¶</a></span>\[{\delta E_{xc}[n]\over\delta n({\bf r})}=V_{xc}({\bf r})\]</div>
 <p>so we arrive at</p>
 <div class="math notranslate nohighlight" id="equation-interact">
-<span class="eqno">(11)<a class="headerlink" href="#equation-interact" title="Permalink to this equation">¶</a></span>\[\mu={\delta E[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+V_H({\bf r})+V_{xc}({\bf r})+v({\bf r})\]</div>
-<p>Solution to this equation gives the density <span class="math notranslate nohighlight">\(n\)</span>. Comparing <a class="reference internal" href="#equation-interact">(11)</a> to
-<a class="reference internal" href="#equation-noninteract">(7)</a> we see that if we choose</p>
+<span class="eqno">(8.9.3.5)<a class="headerlink" href="#equation-interact" title="Permalink to this equation">¶</a></span>\[\mu={\delta E[n]\over\delta n({\bf r})}= {\delta T_s[n]\over\delta n({\bf r})}+V_H({\bf r})+V_{xc}({\bf r})+v({\bf r})\]</div>
+<p>Solution to this equation gives the density <span class="math notranslate nohighlight">\(n\)</span>. Comparing <a class="reference internal" href="#equation-interact">(8.9.3.5)</a> to
+<a class="reference internal" href="#equation-noninteract">(8.9.3.1)</a> we see that if we choose</p>
 <div class="math notranslate nohighlight" id="equation-v-in">
-<span class="eqno">(12)<a class="headerlink" href="#equation-v-in" title="Permalink to this equation">¶</a></span>\[v_s\equiv V_H+V_{xc}+v\]</div>
+<span class="eqno">(8.9.3.6)<a class="headerlink" href="#equation-v-in" title="Permalink to this equation">¶</a></span>\[v_s\equiv V_H+V_{xc}+v\]</div>
 <p>then <span class="math notranslate nohighlight">\(n_s({\bf r})\equiv n({\bf r})\)</span>. So we solve the Kohn-Sham equations of
 this auxiliary non-interacting system</p>
 <div class="math notranslate nohighlight" id="equation-kseq">
-<span class="eqno">(13)<a class="headerlink" href="#equation-kseq" title="Permalink to this equation">¶</a></span>\[(-\half\nabla^2+v_s({\bf r}))\psi_i({\bf r}) \equiv(-\half\nabla^2+V_H({\bf
+<span class="eqno">(8.9.3.7)<a class="headerlink" href="#equation-kseq" title="Permalink to this equation">¶</a></span>\[(-\half\nabla^2+v_s({\bf r}))\psi_i({\bf r}) \equiv(-\half\nabla^2+V_H({\bf
 r})+V_{xc}({\bf r})+v({\bf r}))\psi_i({\bf r}) =\epsilon_i\psi_i({\bf r})\]</div>
 <p>which yield the orbitals <span class="math notranslate nohighlight">\(\psi_i\)</span> that reproduce the density <span class="math notranslate nohighlight">\(n({\bf r})\)</span> of the original interacting system</p>
 <div class="math notranslate nohighlight" id="equation-ksdensity">
-<span class="eqno">(14)<a class="headerlink" href="#equation-ksdensity" title="Permalink to this equation">¶</a></span>\[n({\bf r})\equiv n_s({\bf r})=\sum_i^N|\psi_i({\bf r})|^2\]</div>
+<span class="eqno">(8.9.3.8)<a class="headerlink" href="#equation-ksdensity" title="Permalink to this equation">¶</a></span>\[n({\bf r})\equiv n_s({\bf r})=\sum_i^N|\psi_i({\bf r})|^2\]</div>
 <p>The sum is taken over the lowest <span class="math notranslate nohighlight">\(N\)</span> energies. Some of the <span class="math notranslate nohighlight">\(\psi_i\)</span> can be
 degenerated, but it doesn’t matter - the index <span class="math notranslate nohighlight">\(i\)</span> counts every eigenfunction
 including all the degenerated. In plain words, the trick is in realizing, that
 the ground state energy can be found by minimizing the energy functional
-<a class="reference internal" href="#equation-efunct">(4)</a> and in rewriting this functional into the form <a class="reference internal" href="#equation-efunctxc">(9)</a>,
+<a class="reference internal" href="#equation-efunct">(8.9.2.1)</a> and in rewriting this functional into the form <a class="reference internal" href="#equation-efunctxc">(8.9.3.3)</a>,
 which shows that the interacting system can be treated as a noninteracting one
 with a special potential.</p>
 </div>
 <div class="section" id="the-xc-term">
-<h2>The XC Term<a class="headerlink" href="#the-xc-term" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.4. The XC Term<a class="headerlink" href="#the-xc-term" title="Permalink to this headline">¶</a></h2>
 <p>The exchange and correlation functional</p>
 <div class="math notranslate nohighlight">
 \[E_{xc}[n]=(T+U)[n]-E_H[n]-T_S[n]\]</div>
@@ -358,7 +358,7 @@ The XC potential is defined as:</p>
         {\delta \epsilon_{xc}({\bf r}';n)\over\delta n({\bf r})}\d^3r'\]</div>
 </div>
 <div class="section" id="total-energy">
-<h2>Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.5. Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
 <p>We already derived all the necessary things above, so we just summarize it here.
 The total energy is given by:</p>
 <div class="math notranslate nohighlight">
@@ -373,7 +373,7 @@ from the derivation of the expression for <span class="math notranslate nohighli
 charge density to express <span class="math notranslate nohighlight">\(E_H[n]\)</span>, <span class="math notranslate nohighlight">\(E_{xc}[n]\)</span> and <span class="math notranslate nohighlight">\(V[n]\)</span>.</p>
 <p>If one is not careful about the potential associated with the eigenvalues,
 i.e., confusing <span class="math notranslate nohighlight">\(V_{in}\)</span> with <span class="math notranslate nohighlight">\(V_{out}\)</span>, one gets a slowly converging formula
-for the total energy. By expanding <span class="math notranslate nohighlight">\(v_s\)</span> using <a class="reference internal" href="#equation-v-in">(12)</a>:</p>
+for the total energy. By expanding <span class="math notranslate nohighlight">\(v_s\)</span> using <a class="reference internal" href="#equation-v-in">(8.9.3.6)</a>:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\int v_s n({\bf r})\d^3 r
     = \int (V_H + V_{xc} + v) n({\bf r})\d^3 r
@@ -396,7 +396,7 @@ achieved (i.e. <span class="math notranslate nohighlight">\(V_{in}=V_{out}\)</sp
 equivalent.</p>
 </div>
 <div class="section" id="xc-approximations">
-<h2>XC Approximations<a class="headerlink" href="#xc-approximations" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.6. XC Approximations<a class="headerlink" href="#xc-approximations" title="Permalink to this headline">¶</a></h2>
 <p>All the expressions above are exact (no approximation has been made so far).
 Unfortunately, no one knows <span class="math notranslate nohighlight">\(\epsilon_{xc}({\bf r}';n)\)</span> exactly (yet). As such,
 various approximations for it exist.</p>
@@ -409,12 +409,12 @@ electron gas (the nuclei are replaced by a uniform positively charged
 background, density <span class="math notranslate nohighlight">\(n=\rm const\)</span>) with the same local density:</p>
 <div class="math notranslate nohighlight">
 \[\epsilon_{xc}({\bf r};n)\approx\epsilon_{xc}^{LD}(n({\bf r}))\]</div>
-<p>The xc potential <span class="math notranslate nohighlight">\(V_{xc}\)</span> defined by <a class="reference internal" href="#equation-vxcpot">(10)</a> is then</p>
+<p>The xc potential <span class="math notranslate nohighlight">\(V_{xc}\)</span> defined by <a class="reference internal" href="#equation-vxcpot">(8.9.3.4)</a> is then</p>
 <div class="math notranslate nohighlight">
 \[V_{xc}({\bf r};n)={\delta E_{xc}[n]\over\delta n({\bf r})}= \epsilon_{xc}({\bf r};n)+ \int n({\bf r}'){\delta \epsilon_{xc}({\bf r}';n)\over\delta n({\bf r})}\d^3r'\]</div>
 <p>which in the LDA becomes</p>
 <div class="math notranslate nohighlight" id="equation-vxcld">
-<span class="eqno">(15)<a class="headerlink" href="#equation-vxcld" title="Permalink to this equation">¶</a></span>\[V_{xc}({\bf r};n) =\epsilon_{xc}^{LD}(n)+n{\d \epsilon_{xc}^{LD}(n)\over \d n}= {\d \over \d n}\left(n\epsilon_{xc}^{LD}(n)\right)= V_{xc}^{LD}(n)\]</div>
+<span class="eqno">(8.9.6.1)<a class="headerlink" href="#equation-vxcld" title="Permalink to this equation">¶</a></span>\[V_{xc}({\bf r};n) =\epsilon_{xc}^{LD}(n)+n{\d \epsilon_{xc}^{LD}(n)\over \d n}= {\d \over \d n}\left(n\epsilon_{xc}^{LD}(n)\right)= V_{xc}^{LD}(n)\]</div>
 <p>The xc energy density <span class="math notranslate nohighlight">\(\epsilon_{xc}^{LD}\)</span> of the homogeneous gas can be
 computed exactly:</p>
 <div class="math notranslate nohighlight">
@@ -438,7 +438,7 @@ is virtually known exactly. VWN result:</p>
 parameter, which gives the mean distance between electrons (in atomic units):</p>
 <div class="math notranslate nohighlight">
 \[r_s=\left(3\over4\pi n\right)^{1\over3}\]</div>
-<p>The xc potential is then computed from <a class="reference internal" href="#equation-vxcld">(15)</a>:</p>
+<p>The xc potential is then computed from <a class="reference internal" href="#equation-vxcld">(8.9.6.1)</a>:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}V_{xc}^{LD}=V_x^{LD}+V_c^{LD}\\V_x^{LD}=-{1\over\pi}(3\pi^2 n)^{1\over3} = {4\over 3}\epsilon_x^{LD}\\V_c^{LD}={A\over2}\left\{ \ln\left(y^2\over Y(y)\right)+{2b\over Q}\arctan\left(Q\over 2y+b\right)+ \right.\\\left. -{by_0\over Y(y_0)}\left[\ln\left((y-y_0)^2\over Y(y)\right) +{2(b+2y_0)\over Q}\arctan\left(Q\over 2y+b\right) \right] \right\}+\\-{A\over6}{c(y-y_0)-by_0y\over (y-y_0)Y(y)}\end{aligned}\end{align} \]</div>
 <p>Some people also use Perdew and Zunger formulas, but they give essentially the
@@ -463,7 +463,7 @@ by MacDonald and Vosko:</p>
 \[ \begin{align}\begin{aligned}\mu=\sqrt{1+\beta^2}\\\beta={(3\pi^2n)^{1\over3}\over c} = -{4\pi\over 3c} \epsilon_x^{LD}\\A = {\beta\mu-\log(\beta+\mu)\over\beta^2}\end{aligned}\end{align} \]</div>
 <p>We now calculate <span class="math notranslate nohighlight">\(V_x^{RLD}\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-rlda">
-<span class="eqno">(16)<a class="headerlink" href="#equation-rlda" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}V_x^{RLD}
+<span class="eqno">(8.9.6.2)<a class="headerlink" href="#equation-rlda" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}V_x^{RLD}
 =\epsilon_x^{LD}R+n{\d \epsilon_x^{LD}R\over\d n}=\\=\epsilon_x^{LD}R+n{\d \epsilon_x^{LD}\over\d n}R
     +n\epsilon_x^{LD}{\d R\over\d n}
     =\\=\epsilon_x^{LD}R+n{\d \epsilon_x^{LD}\over\d n}R
@@ -535,7 +535,7 @@ V_x^{LD}\left(1-{3\over2} \left(
 </div>
 </div>
 <div class="section" id="radial-dft-problem">
-<h2>Radial DFT Problem<a class="headerlink" href="#radial-dft-problem" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.7. Radial DFT Problem<a class="headerlink" href="#radial-dft-problem" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="kohn-sham-equations">
 <h3>Kohn-Sham Equations<a class="headerlink" href="#kohn-sham-equations" title="Permalink to this headline">¶</a></h3>
 <p>For spherically symmetric potentials, we write all eigenfunctions as:</p>
@@ -626,7 +626,7 @@ numbers (in the Dirac case).</p>
 </div>
 </div>
 <div class="section" id="dft-as-a-nonlinear-problem">
-<h2>DFT As a Nonlinear Problem<a class="headerlink" href="#dft-as-a-nonlinear-problem" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.8. DFT As a Nonlinear Problem<a class="headerlink" href="#dft-as-a-nonlinear-problem" title="Permalink to this headline">¶</a></h2>
 <p>The task is to find such a charge density <span class="math notranslate nohighlight">\(n\)</span>, so that all the equations below
 hold (e.g. are self-consistent):</p>
 <div class="math notranslate nohighlight">
@@ -722,7 +722,7 @@ making the Jacobian <span class="math notranslate nohighlight">\(J_{ik}\)</span>
 </div>
 </div>
 <div class="section" id="thomas-fermi-dirac-theory">
-<h2>Thomas-Fermi-Dirac Theory<a class="headerlink" href="#thomas-fermi-dirac-theory" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.9. Thomas-Fermi-Dirac Theory<a class="headerlink" href="#thomas-fermi-dirac-theory" title="Permalink to this headline">¶</a></h2>
 <p>There are two ways to derive equations for Thomas-Fermi-Dirac theory. One way
 is to start from grand potential and derive all equations from it. The other
 way is to start with low level equations and build our way up. Will start with
@@ -963,7 +963,7 @@ The number of states in a box of side <span class="math notranslate nohighlight"
 <p>We use atomic units, so <span class="math notranslate nohighlight">\(\hbar=1\)</span>.
 The electronic particle density is:</p>
 <div class="math notranslate nohighlight" id="equation-tf-low">
-<span class="eqno">(17)<a class="headerlink" href="#equation-tf-low" title="Permalink to this equation">¶</a></span>\[n_e({\bf x}) = {N \over L^3}
+<span class="eqno">(8.9.9.1)<a class="headerlink" href="#equation-tf-low" title="Permalink to this equation">¶</a></span>\[n_e({\bf x}) = {N \over L^3}
   = {1\over\pi^2} \int_0^{p_f} p^2 \d p
   = {p_f^3 \over 3\pi^2}
   = {\left[2(E_f - V({\bf x}))\right]^{3\over2} \over 3\pi^2}\]</div>
@@ -998,7 +998,7 @@ generalizes to:</p>
   {2\sqrt 2\over 3\pi^2 \beta^{3\over2}}
         \left(\beta(\mu - V({\bf x}))\right)^{3\over2}
   ={\left[2(\mu - V({\bf x}))\right]^{3\over2} \over 3\pi^2}\]</div>
-<p>Identical with <a class="reference internal" href="#equation-tf-low">(17)</a>. We can see that the chemical potential <span class="math notranslate nohighlight">\(\mu\)</span>
+<p>Identical with <a class="reference internal" href="#equation-tf-low">(8.9.9.1)</a>. We can see that the chemical potential <span class="math notranslate nohighlight">\(\mu\)</span>
 becomes the Fermi energy <span class="math notranslate nohighlight">\(E_f\)</span> in the limit <span class="math notranslate nohighlight">\(T\to0\)</span>. In the finite-temperature
 case, <span class="math notranslate nohighlight">\(\mu\)</span> is determined from the normalization condition for the number of
 electrons <span class="math notranslate nohighlight">\(N\)</span>:</p>
@@ -1088,7 +1088,7 @@ of the density:</p>
 </div>
 </div>
 <div class="section" id="orbital-free-density-functional-theory">
-<h2>Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.10. Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this headline">¶</a></h2>
 <p>The orbital-free electronic free energy is given by:</p>
 <div class="math notranslate nohighlight">
 \[F_e[n_e] = T_0[n_e] + U_{en}[n_e] + U_{ee}[n_e] + F_{xc}[n_e]\,,\]</div>
@@ -1145,10 +1145,10 @@ constrained functional is (we use <span class="math notranslate nohighlight">\(n
 \[{\delta \Omega[n] \over \delta n} = 0\]</div>
 <p>Or:</p>
 <div class="math notranslate nohighlight" id="equation-of-dft0">
-<span class="eqno">(18)<a class="headerlink" href="#equation-of-dft0" title="Permalink to this equation">¶</a></span>\[{\delta F_e[n] \over \delta n} = \epsilon\]</div>
+<span class="eqno">(8.9.10.1)<a class="headerlink" href="#equation-of-dft0" title="Permalink to this equation">¶</a></span>\[{\delta F_e[n] \over \delta n} = \epsilon\]</div>
 <p>Finally we get:</p>
 <div class="math notranslate nohighlight" id="equation-of-dft">
-<span class="eqno">(19)<a class="headerlink" href="#equation-of-dft" title="Permalink to this equation">¶</a></span>\[H[n] \equiv {\delta F_e[n] \over \delta n} =
+<span class="eqno">(8.9.10.2)<a class="headerlink" href="#equation-of-dft" title="Permalink to this equation">¶</a></span>\[H[n] \equiv {\delta F_e[n] \over \delta n} =
 {\delta T_0[n] \over \delta n}
 + {\delta U_{en}[n] \over \delta n}
 + {\delta U_{ee}[n] \over \delta n}
@@ -1205,10 +1205,10 @@ Using the relation</p>
 <div class="math notranslate nohighlight">
 \[{\delta \Omega[n] \over \delta \psi}
     = 2 \psi {\delta \Omega[n] \over \delta n} = 0 \,.\]</div>
-<p>So the equation <a class="reference internal" href="#equation-of-dft0">(18)</a> gets multiplied by <span class="math notranslate nohighlight">\(2\psi\)</span>:</p>
+<p>So the equation <a class="reference internal" href="#equation-of-dft0">(8.9.10.1)</a> gets multiplied by <span class="math notranslate nohighlight">\(2\psi\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[2\psi {\delta F_e[n] \over \delta n} = 2\epsilon \psi\]</div>
-<p>as well as the equation <a class="reference internal" href="#equation-of-dft">(19)</a>:</p>
+<p>as well as the equation <a class="reference internal" href="#equation-of-dft">(8.9.10.2)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\tilde H[\psi] \equiv {\delta \tilde F_e[\psi] \over \delta \psi}
     = {\delta F_e[n] \over \delta \psi}
@@ -1220,7 +1220,7 @@ Using the relation</p>
 <span class="math notranslate nohighlight">\(\tilde H[\psi] = 2 H[n] \psi\)</span>.</p>
 <div class="section" id="free-energy-minimization">
 <h3>Free Energy Minimization<a class="headerlink" href="#free-energy-minimization" title="Permalink to this headline">¶</a></h3>
-<p>For clarity, we will be using <span class="math notranslate nohighlight">\(H[n]\)</span> from equation <a class="reference internal" href="#equation-of-dft">(19)</a> as our main
+<p>For clarity, we will be using <span class="math notranslate nohighlight">\(H[n]\)</span> from equation <a class="reference internal" href="#equation-of-dft">(8.9.10.2)</a> as our main
 quantity, but we will also write the final relations using <span class="math notranslate nohighlight">\(\tilde H[\psi]\)</span> for
 completeness.</p>
 <p>We start with some initial guess for <span class="math notranslate nohighlight">\(\ket{\psi}\)</span> (it must be normalized
@@ -1269,7 +1269,7 @@ a function of <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 </div>
 </div>
 <div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<h2>8.9.11. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <table class="docutils citation" frame="void" id="dft" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -1305,49 +1305,49 @@ a function of <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Density Functional Theory (DFT)</a><ul>
-<li><a class="reference internal" href="#many-body-schrodinger-equation">Many Body Schrödinger Equation</a></li>
-<li><a class="reference internal" href="#the-hohenberg-kohn-theorem">The Hohenberg-Kohn Theorem</a></li>
-<li><a class="reference internal" href="#the-kohn-sham-equations">The Kohn-Sham Equations</a></li>
-<li><a class="reference internal" href="#the-xc-term">The XC Term</a></li>
-<li><a class="reference internal" href="#total-energy">Total Energy</a></li>
-<li><a class="reference internal" href="#xc-approximations">XC Approximations</a><ul>
+<li><a class="reference internal" href="#">8.9. Density Functional Theory (DFT)</a><ul>
+<li><a class="reference internal" href="#many-body-schrodinger-equation">8.9.1. Many Body Schrödinger Equation</a></li>
+<li><a class="reference internal" href="#the-hohenberg-kohn-theorem">8.9.2. The Hohenberg-Kohn Theorem</a></li>
+<li><a class="reference internal" href="#the-kohn-sham-equations">8.9.3. The Kohn-Sham Equations</a></li>
+<li><a class="reference internal" href="#the-xc-term">8.9.4. The XC Term</a></li>
+<li><a class="reference internal" href="#total-energy">8.9.5. Total Energy</a></li>
+<li><a class="reference internal" href="#xc-approximations">8.9.6. XC Approximations</a><ul>
 <li><a class="reference internal" href="#lda">LDA</a></li>
 <li><a class="reference internal" href="#rlda">RLDA</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#radial-dft-problem">Radial DFT Problem</a><ul>
+<li><a class="reference internal" href="#radial-dft-problem">8.9.7. Radial DFT Problem</a><ul>
 <li><a class="reference internal" href="#kohn-sham-equations">Kohn-Sham Equations</a></li>
 <li><a class="reference internal" href="#poisson-equation">Poisson Equation</a></li>
 <li><a class="reference internal" href="#id6">Total Energy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dft-as-a-nonlinear-problem">DFT As a Nonlinear Problem</a><ul>
+<li><a class="reference internal" href="#dft-as-a-nonlinear-problem">8.9.8. DFT As a Nonlinear Problem</a><ul>
 <li><a class="reference internal" href="#reformulation">Reformulation</a></li>
 <li><a class="reference internal" href="#fe-discretization">FE Discretization</a></li>
 <li><a class="reference internal" href="#jacobian">Jacobian</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#thomas-fermi-dirac-theory">Thomas-Fermi-Dirac Theory</a><ul>
+<li><a class="reference internal" href="#thomas-fermi-dirac-theory">8.9.9. Thomas-Fermi-Dirac Theory</a><ul>
 <li><a class="reference internal" href="#top-down-approach">Top Down Approach</a></li>
 <li><a class="reference internal" href="#bottom-up-approach">Bottom Up Approach</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#orbital-free-density-functional-theory">Orbital Free Density Functional Theory</a><ul>
+<li><a class="reference internal" href="#orbital-free-density-functional-theory">8.9.10. Orbital Free Density Functional Theory</a><ul>
 <li><a class="reference internal" href="#free-energy-minimization">Free Energy Minimization</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#references">References</a></li>
+<li><a class="reference internal" href="#references">8.9.11. References</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="radial.html"
-                        title="previous chapter">Radial Schrödinger and Dirac Equations</a></p>
+                        title="previous chapter">8.8. Radial Schrödinger and Dirac Equations</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="hf.html"
-                        title="next chapter">Hartree-Fock (HF) Method</a></p>
+                        title="next chapter">8.10. Hartree-Fock (HF) Method</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1378,13 +1378,13 @@ a function of <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="hf.html" title="Hartree-Fock (HF) Method"
+          <a href="hf.html" title="8.10. Hartree-Fock (HF) Method"
              >next</a> |</li>
         <li class="right" >
-          <a href="radial.html" title="Radial Schrödinger and Dirac Equations"
+          <a href="radial.html" title="8.8. Radial Schrödinger and Dirac Equations"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Linear Algebra &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.39. Linear Algebra &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Differential Geometry" href="differential-geometry.html" />
-    <link rel="prev" title="Ordinary Differential Equations" href="ode.html" />
+    <link rel="next" title="3.40. Differential Geometry" href="differential-geometry.html" />
+    <link rel="prev" title="3.38. Ordinary Differential Equations" href="ode.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="differential-geometry.html" title="Differential Geometry"
+          <a href="differential-geometry.html" title="3.40. Differential Geometry"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="ode.html" title="Ordinary Differential Equations"
+          <a href="ode.html" title="3.38. Ordinary Differential Equations"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,9 +72,9 @@
           <div class="body" role="main">
             
   <div class="section" id="linear-algebra">
-<h1>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h1>
+<h1>3.39. Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="scalar-product">
-<h2>Scalar Product<a class="headerlink" href="#scalar-product" title="Permalink to this headline">¶</a></h2>
+<h2>3.39.1. Scalar Product<a class="headerlink" href="#scalar-product" title="Permalink to this headline">¶</a></h2>
 <p>Virtually all spaces used in physics are Hilbert spaces (treated in the weak
 sense, i.e. equipped with distributions), which means that they have a scalar
 product and a norm.</p>
@@ -187,7 +187,7 @@ and <img class="math" src="../_images/math/1d2a86d01f3d6d4226d9fe0927c23a0fa7bc3
 </div>
 </div>
 <div class="section" id="projections">
-<h2>Projections<a class="headerlink" href="#projections" title="Permalink to this headline">¶</a></h2>
+<h2>3.39.2. Projections<a class="headerlink" href="#projections" title="Permalink to this headline">¶</a></h2>
 <p>Projection is a linear idempotent operator <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/>:</p>
 <div class="math">
 <p><img src="../_images/math/b5439b414dfed66d4dbb1ed16f648b03a1f16e6c.svg" alt="P^2 = P"/></p>
@@ -226,7 +226,7 @@ spaces <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806
 <p>If we choose any orthonormal basis <img class="math" src="../_images/math/063ee391e39be9a9a29d79236855539f3dfa67e0.svg" alt="\ket{w_0}"/>, <img class="math" src="../_images/math/15b2ccc479d27f584250fdb004d8ddd1f6f4a6ad.svg" alt="\ket{w_1}"/>,
 <img class="math" src="../_images/math/122dc5055e93afbe0bd84988dc063d6a730d0180.svg" alt="\ket{w_2}"/>, …, of the subspace <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/>, then the orthogonal projection <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> is:</p>
 <div class="math" id="equation-proj-ortho">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-proj-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/53354afd87845b5811f34a0a5570d7a537dbefec.svg" alt="P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}"/></p>
+<p><span class="eqno">(3.39.2.1)<a class="headerlink" href="#equation-proj-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/53354afd87845b5811f34a0a5570d7a537dbefec.svg" alt="P = \sum_{k=0}^\infty \ket{w_k}\bra{w_k}"/></p>
 </div><p>because:</p>
 <div class="math">
 <p><img src="../_images/math/31eac8048851c0e822092b33d5d87b1d24482c55.svg" alt="P^2 =
@@ -268,25 +268,25 @@ onto which it projects.</p>
 <p>Given the basis <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/> (orthogonal or non-orthogonal), we would like to
 find a formula for the projection coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/> defined by:</p>
 <div class="math" id="equation-proj-coeff">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-proj-coeff" title="Permalink to this equation">¶</a></span><img src="../_images/math/1e2caf904c4fab18107c1a8b8277fa98bd07f3b2.svg" alt="P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,."/></p>
+<p><span class="eqno">(3.39.2.2)<a class="headerlink" href="#equation-proj-coeff" title="Permalink to this equation">¶</a></span><img src="../_images/math/1e2caf904c4fab18107c1a8b8277fa98bd07f3b2.svg" alt="P \ket{u} = \sum_{k=0}^\infty \ket{v_k} \phi_k \,."/></p>
 </div><p>This holds, because <img class="math" src="../_images/math/2dd46189dffd8b4003e3049eed50432cd0580e73.svg" alt="P\ket{u}"/> belongs to the space <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> and every vector from
 it can be expressed as a linear combination of <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/>.</p>
 <div class="section" id="projecting-to-orthogonal-basis">
 <h4>Projecting to Orthogonal Basis<a class="headerlink" href="#projecting-to-orthogonal-basis" title="Permalink to this headline">¶</a></h4>
-<p>For orthogonal projections we simply substitute the equation <a class="reference internal" href="#equation-proj-ortho">(1)</a>
-into <a class="reference internal" href="#equation-proj-coeff">(2)</a> and get:</p>
+<p>For orthogonal projections we simply substitute the equation <a class="reference internal" href="#equation-proj-ortho">(3.39.2.1)</a>
+into <a class="reference internal" href="#equation-proj-coeff">(3.39.2.2)</a> and get:</p>
 <div class="math">
 <p><img src="../_images/math/feb066ff2f58d9e9ab23c142e58657a658c81974.svg" alt="P \ket{u} = \sum_{k=0}^\infty \ket{w_k}\braket{w_k | u}
     = \sum_{k=0}^\infty \ket{w_k} \phi_k \,,"/></p>
 </div><p>from which the projection coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/> are given by</p>
 <div class="math" id="equation-phi-ortho">
-<p><span class="eqno">(3)<a class="headerlink" href="#equation-phi-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/a3055073114d6f891700942b2d74895f30f01dcd.svg" alt="\phi_k = \braket{w_k | u} \,."/></p>
+<p><span class="eqno">(3.39.2.3)<a class="headerlink" href="#equation-phi-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/a3055073114d6f891700942b2d74895f30f01dcd.svg" alt="\phi_k = \braket{w_k | u} \,."/></p>
 </div></div>
 <div class="section" id="projecting-to-nonorthogonal-basis">
 <h4>Projecting to Nonorthogonal Basis<a class="headerlink" href="#projecting-to-nonorthogonal-basis" title="Permalink to this headline">¶</a></h4>
 <p>In order to project onto a nonorthogonal basis <img class="math" src="../_images/math/bb2ccb7aa85fa6835a6ddbb53b9f47cc6fe01bf4.svg" alt="\ket{v_k}"/> (for example a
 finite element basis),
-we multiply <a class="reference internal" href="#equation-proj-coeff">(2)</a> by <img class="math" src="../_images/math/7651d3954b6b283640eef17fedfcd52a1173512c.svg" alt="\bra{v_l}"/> from the left and simplify:</p>
+we multiply <a class="reference internal" href="#equation-proj-coeff">(3.39.2.2)</a> by <img class="math" src="../_images/math/7651d3954b6b283640eef17fedfcd52a1173512c.svg" alt="\bra{v_l}"/> from the left and simplify:</p>
 <div class="math">
 <p><img src="../_images/math/f393683861f1e9f127af936c1645c4b6b8101f11.svg" alt="\braket{v_l|P|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k
 
@@ -295,7 +295,7 @@ we multiply <a class="reference internal" href="#equation-proj-coeff">(2)</a> by
 \braket{v_l|u} = \sum_{k=0}^\infty \braket{v_l|v_k}\phi_k"/></p>
 </div><p>so we need to solve a linear system for the coefficients <img class="math" src="../_images/math/68d9f27885d739010a739f1d8f01db169234d26a.svg" alt="\phi_k"/>:</p>
 <div class="math" id="equation-linsystem-proj">
-<p><span class="eqno">(4)<a class="headerlink" href="#equation-linsystem-proj" title="Permalink to this equation">¶</a></span><img src="../_images/math/8991b4161fb55ede24e25d78d2334fed65bc8a0b.svg" alt="A_{lk}\phi_k = f_l \,,"/></p>
+<p><span class="eqno">(3.39.2.4)<a class="headerlink" href="#equation-linsystem-proj" title="Permalink to this equation">¶</a></span><img src="../_images/math/8991b4161fb55ede24e25d78d2334fed65bc8a0b.svg" alt="A_{lk}\phi_k = f_l \,,"/></p>
 </div><p>where</p>
 <div class="math">
 <p><img src="../_images/math/a650c2d861dae77e3e5b4badc02834f48e815e9c.svg" alt="A_{lk} = \braket{v_l|v_k}
@@ -303,10 +303,10 @@ we multiply <a class="reference internal" href="#equation-proj-coeff">(2)</a> by
 f_l = \braket{v_l|u} \,."/></p>
 </div><p>This works for any basis, it doesn’t have to be normalized nor orthogonal.
 In the special case of a (normalized) orthogonal basis, we get
-<img class="math" src="../_images/math/10504fb39211ecbd743c6f54605be771e7fd99f7.svg" alt="A_{lk} = \braket{v_l|v_k}=\delta_{lk}"/> and from <a class="reference internal" href="#equation-linsystem-proj">(4)</a> we get</p>
+<img class="math" src="../_images/math/10504fb39211ecbd743c6f54605be771e7fd99f7.svg" alt="A_{lk} = \braket{v_l|v_k}=\delta_{lk}"/> and from <a class="reference internal" href="#equation-linsystem-proj">(3.39.2.4)</a> we get</p>
 <div class="math">
 <p><img src="../_images/math/fde5aa692ec59a49c56981f81633cfa0437d6936.svg" alt="A_{lk}\phi_k = \delta_{lk} \phi_k = \phi_l = f_l = \braket{v_l|u}\,,"/></p>
-</div><p>so we recovered the equation <a class="reference internal" href="#equation-phi-ortho">(3)</a> as expected.</p>
+</div><p>so we recovered the equation <a class="reference internal" href="#equation-phi-ortho">(3.39.2.3)</a> as expected.</p>
 </div>
 </div>
 <div class="section" id="id1">
@@ -627,12 +627,12 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Linear Algebra</a><ul>
-<li><a class="reference internal" href="#scalar-product">Scalar Product</a><ul>
+<li><a class="reference internal" href="#">3.39. Linear Algebra</a><ul>
+<li><a class="reference internal" href="#scalar-product">3.39.1. Scalar Product</a><ul>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#projections">Projections</a><ul>
+<li><a class="reference internal" href="#projections">3.39.2. Projections</a><ul>
 <li><a class="reference internal" href="#projection-coefficients">Projection Coefficients</a><ul>
 <li><a class="reference internal" href="#projecting-to-orthogonal-basis">Projecting to Orthogonal Basis</a></li>
 <li><a class="reference internal" href="#projecting-to-nonorthogonal-basis">Projecting to Nonorthogonal Basis</a></li>
@@ -647,10 +647,10 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="ode.html"
-                        title="previous chapter">Ordinary Differential Equations</a></p>
+                        title="previous chapter">3.38. Ordinary Differential Equations</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="differential-geometry.html"
-                        title="next chapter">Differential Geometry</a></p>
+                        title="next chapter">3.40. Differential Geometry</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -681,13 +681,13 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="differential-geometry.html" title="Differential Geometry"
+          <a href="differential-geometry.html" title="3.40. Differential Geometry"
              >next</a> |</li>
         <li class="right" >
-          <a href="ode.html" title="Ordinary Differential Equations"
+          <a href="ode.html" title="3.38. Ordinary Differential Equations"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Hypergeometric Functions &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.34. Hypergeometric Functions &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Feynman Parameters" href="feynman-parameters.html" />
-    <link rel="prev" title="Legendre Polynomials" href="spherical-harmonics.html" />
+    <link rel="next" title="3.35. Feynman Parameters" href="feynman-parameters.html" />
+    <link rel="prev" title="3.29. Legendre Polynomials" href="spherical-harmonics.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="feynman-parameters.html" title="Feynman Parameters"
+          <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+          <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,7 +72,7 @@
           <div class="body" role="main">
             
   <div class="section" id="hypergeometric-functions">
-<span id="index-0"></span><h1>Hypergeometric Functions<a class="headerlink" href="#hypergeometric-functions" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>3.34. Hypergeometric Functions<a class="headerlink" href="#hypergeometric-functions" title="Permalink to this headline">¶</a></h1>
 <p>The series:</p>
 <div class="math">
 <p><img src="../_images/math/90b4f7c8781df1d60a8f17f259dbdbe1606698fd.svg" alt="\sum_{k=0}^\infty t_k"/></p>
@@ -92,7 +92,7 @@ respect to <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8
 </div><p>where <img class="math" src="../_images/math/0c9e226f2f0719a1cf768d1260e2eaef6b835245.svg" alt="P(k)"/> and <img class="math" src="../_images/math/29bef6c23f7eaf59f415c296ba1f60591fc8ccbf.svg" alt="Q(k)"/> are polynomials in <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/>, which we can completely factor
 into the form</p>
 <div class="math" id="equation-hyper-ratio">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-hyper-ratio" title="Permalink to this equation">¶</a></span><img src="../_images/math/69b6fd0b5ec0d1e622871082aa4118d6b33087ef.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}
+<p><span class="eqno">(3.34.1)<a class="headerlink" href="#equation-hyper-ratio" title="Permalink to this equation">¶</a></span><img src="../_images/math/69b6fd0b5ec0d1e622871082aa4118d6b33087ef.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}
     = {(k+a_1)(k+a_2)\cdots(k+a_p)\over
         (k+b_1)(k+b_2)\cdots(k+b_q)(k+1)} x"/></p>
 </div><p>where <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> is a constant and the <img class="math" src="../_images/math/aa7d697eb8e692774d506c20a0454d260f7f1164.svg" alt="(k+1)"/> factor is just a convention (if the
@@ -111,11 +111,11 @@ hypergeometric series is then given by:</p>
     \end{cases}"/></p>
 </div><p>is the rising factorial function (also called the Pochhammer symbol).</p>
 <p>To write a function as a hypergeometric series, we simply expand it in series
-and then write the ratio <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> in the form <a class="reference internal" href="#equation-hyper-ratio">(1)</a> and
+and then write the ratio <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> in the form <a class="reference internal" href="#equation-hyper-ratio">(3.34.1)</a> and
 immediately identify the proper <img class="math" src="../_images/math/9e2171da34b7fff9370160c75e3f128c7bae7d7a.svg" alt="{}_p F_q"/> function. If the ratio cannot be
-put into the form <a class="reference internal" href="#equation-hyper-ratio">(1)</a> then the function is not hypergeometric.</p>
+put into the form <a class="reference internal" href="#equation-hyper-ratio">(3.34.1)</a> then the function is not hypergeometric.</p>
 <div class="section" id="convergence-conditions">
-<h2>Convergence Conditions<a class="headerlink" href="#convergence-conditions" title="Permalink to this headline">¶</a></h2>
+<h2>3.34.1. Convergence Conditions<a class="headerlink" href="#convergence-conditions" title="Permalink to this headline">¶</a></h2>
 <p>If any <img class="math" src="../_images/math/ef84e0982216d41db2a82cf3905c946dacf3098f.svg" alt="a_i=0, -1, -2, \dots"/>, then the series is a polynomial of degree
 <img class="math" src="../_images/math/778c61c40af9bfb6e7fc5f9d39ee3d90e20cd388.svg" alt="-a_i"/>.</p>
 <p>If any <img class="math" src="../_images/math/77e0d098559d3db72768bb0ef7867a6741f4bd90.svg" alt="b_i=0, -1, -2, \dots"/> then the denominators eventually become 0 (unless
@@ -131,7 +131,7 @@ hypergeometric series is:</p>
     \end{cases}"/></p>
 </div></div>
 <div class="section" id="elementary-and-special-functions">
-<h2>Elementary and Special Functions<a class="headerlink" href="#elementary-and-special-functions" title="Permalink to this headline">¶</a></h2>
+<h2>3.34.2. Elementary and Special Functions<a class="headerlink" href="#elementary-and-special-functions" title="Permalink to this headline">¶</a></h2>
 <p>The hypergeometric functions for low <img class="math" src="../_images/math/e5d1ed584f05b4f69e8cd56b95e144968e3e8544.svg" alt="p"/> and <img class="math" src="../_images/math/b3b33120dca43a6a9be28a013eb95f50583e5f5c.svg" alt="q"/> have special names:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -231,9 +231,9 @@ H_{2n+1}(x) = (-1)^n {(2n+1)!\over n!}2x
     \ {}_1F_1(-n;{\textstyle{3\over2}}; x^2)"/></p>
 </div><p>Laguerre polynomials:</p>
 <div class="math" id="equation-laguerre-hyper">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-laguerre-hyper" title="Permalink to this equation">¶</a></span><img src="../_images/math/79cbea5788f646b00d878f63c6198f9c008b7a86.svg" alt="L_n^\alpha(x) = \binom{n+\alpha}{n}\ {}_1F_1(-n;\alpha+1;x)"/></p>
+<p><span class="eqno">(3.34.2.1)<a class="headerlink" href="#equation-laguerre-hyper" title="Permalink to this equation">¶</a></span><img src="../_images/math/79cbea5788f646b00d878f63c6198f9c008b7a86.svg" alt="L_n^\alpha(x) = \binom{n+\alpha}{n}\ {}_1F_1(-n;\alpha+1;x)"/></p>
 </div><p>Solution <img class="math" src="../_images/math/7f1f3bb821461713b2210cac3409b7dcf2d321ca.svg" alt="P_{nl}(r)=r R_{nl}(r)"/> of the radial Schrödinger equation in the
-Coulomb potential <img class="math" src="../_images/math/fb629a36756a31d351b8a6e55ea8dc59ee642cf8.svg" alt="V(r) = -{Z/r}"/> (we use <a class="reference internal" href="#equation-laguerre-hyper">(2)</a> in the second
+Coulomb potential <img class="math" src="../_images/math/fb629a36756a31d351b8a6e55ea8dc59ee642cf8.svg" alt="V(r) = -{Z/r}"/> (we use <a class="reference internal" href="#equation-laguerre-hyper">(3.34.2.1)</a> in the second
 equation below):</p>
 <div class="math">
 <p><img src="../_images/math/4b2acdbcd33ac7ad08d0c24b173e244c3533b251.svg" alt="P_{nl}(r) = N_{nl} \left(2Zr\over n\right)^{l+1} e^{-{Zr\over n}}
@@ -326,7 +326,7 @@ E(k) = {\pi\over 2}\ {}_2F_1(-\half, \half; 1; k^2)"/></p>
 </div></div>
 </div>
 <div class="section" id="example-i">
-<h2>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+<h2>3.34.3. Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
 <p>By writing out the series expansion for the <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> ratio we can prove
 that:</p>
 <div class="math">
@@ -356,7 +356,7 @@ the right hand side and we need to multiply it by the normalization factor <img 
 = p+q"/>.</p>
 </div>
 <div class="section" id="example-ii">
-<h2>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+<h2>3.34.4. Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
 <p>By writing out the series expansion for the <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> ratio we can prove
 that:</p>
 <div class="math">
@@ -373,7 +373,7 @@ that:</p>
 </div><p>for <img class="math" src="../_images/math/f694543d3c1150148fcfdc188ee62b930a586def.svg" alt="a={3\over 2}"/>.</p>
 </div>
 <div class="section" id="example-iii">
-<h2>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
+<h2>3.34.5. Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
 <p>One way to express <img class="math" src="../_images/math/62f34a78b0680bf436f19c0751ab8f3cb6275140.svg" alt="\sinh(z)"/> is:</p>
 <div class="math">
 <p><img src="../_images/math/f63245aa3051568b41c625d53317a0f91704d822.svg" alt="\sinh z = z e^{-z}\ {}_1F_1(1; 2; 2z)"/></p>
@@ -395,9 +395,9 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Hypergeometric Functions</a><ul>
-<li><a class="reference internal" href="#convergence-conditions">Convergence Conditions</a></li>
-<li><a class="reference internal" href="#elementary-and-special-functions">Elementary and Special Functions</a><ul>
+<li><a class="reference internal" href="#">3.34. Hypergeometric Functions</a><ul>
+<li><a class="reference internal" href="#convergence-conditions">3.34.1. Convergence Conditions</a></li>
+<li><a class="reference internal" href="#elementary-and-special-functions">3.34.2. Elementary and Special Functions</a><ul>
 <li><a class="reference internal" href="#the-series-0f0">The Series 0F0</a></li>
 <li><a class="reference internal" href="#the-series-1f0">The Series 1F0</a></li>
 <li><a class="reference internal" href="#the-series-0f1">The Series 0F1</a></li>
@@ -407,19 +407,19 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
 <li><a class="reference internal" href="#the-series-pfq">The Series pFq</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#example-i">Example I</a></li>
-<li><a class="reference internal" href="#example-ii">Example II</a></li>
-<li><a class="reference internal" href="#example-iii">Example III</a></li>
+<li><a class="reference internal" href="#example-i">3.34.3. Example I</a></li>
+<li><a class="reference internal" href="#example-ii">3.34.4. Example II</a></li>
+<li><a class="reference internal" href="#example-iii">3.34.5. Example III</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="spherical-harmonics.html"
-                        title="previous chapter">Legendre Polynomials</a></p>
+                        title="previous chapter">3.29. Legendre Polynomials</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="feynman-parameters.html"
-                        title="next chapter">Feynman Parameters</a></p>
+                        title="next chapter">3.35. Feynman Parameters</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -450,13 +450,13 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="feynman-parameters.html" title="Feynman Parameters"
+          <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              >next</a> |</li>
         <li class="right" >
-          <a href="spherical-harmonics.html" title="Legendre Polynomials"
+          <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

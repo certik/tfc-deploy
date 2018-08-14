@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Introduction &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>8.1. Introduction &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quantum Electrodynamics (QED)" href="qed.html" />
-    <link rel="prev" title="Quantum Field Theory and Quantum Mechanics" href="main.html" />
+    <link rel="next" title="8.3. Quantum Electrodynamics (QED)" href="qed.html" />
+    <link rel="prev" title="8. Quantum Field Theory and Quantum Mechanics" href="main.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -57,13 +57,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="qed.html" title="Quantum Electrodynamics (QED)"
+          <a href="qed.html" title="8.3. Quantum Electrodynamics (QED)"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="main.html" title="Quantum Field Theory and Quantum Mechanics"
+          <a href="main.html" title="8. Quantum Field Theory and Quantum Mechanics"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -73,16 +73,16 @@
           <div class="body" role="main">
             
   <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h1>8.1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <p>The aim of these (work in progress) notes is to use the Standard Model of particle physics to derive all equations in quantum mechanics (and quantum field theory) that we need for our research.</p>
 <p>We start by deriving the electroweak Standard Model from the <span class="math notranslate nohighlight">\(SU(2)\times U(1)\)</span> symmetry and couple other (standard) assumptions in the quantum field theory. After that, we only want to derive things and make nonrelativistic limits or other approximations in order to derive everything else in quantum mechanics. In particular we show how to derive the Dirac and Schrödinger equations (as a low energy limit). We then show some particular ways to solve those equations, like perturbation theory, scattering theory, …</p>
 <p>The goal is to have a complete theory on about 30 or 40 pages and then lots of examples (arbitrarily long), that use the theory (but do not develop new ideas), so that one can learn how the theory works from the examples. For instance, one can ask “why is there the term <span class="math notranslate nohighlight">\(({\bf p}-e{\bf A})^2\)</span> in the Schrödinger equation for electromagnetic field, why this and not something else?” or “why is there the <span class="math notranslate nohighlight">\(\boldsymbol\sigma\cdot{\bf B}\)</span> term in the Pauli equation?”, to find the answer, one just finds the Pauli equation in the theory and then looks at the derivation, so in this case one quickly finds that it follows from the minimal coupling in QED, e.g. it’s the easiest way how electron-foton interaction can be coupled, e.g. the <span class="math notranslate nohighlight">\(U(1)\)</span> symmetry. Nice thing about QFT is that one can find really nice geometrical reasons why things are that way and not some other way (just open any advance book on QFT), but the problem is that basically nowhere is some easy (but correct) translation of those results to regular QM, so that everything fits into just couple dozens pages, so that it can serve as a reference.</p>
 <p>The advantage of this top-down approach is that it is easy to see where things come from and also to understand exactly what approximations one is using when dealing with any equation in QM. However, as is well-known in physics, to be a good physicist one has to understand all the approaches, e.g. both top-down and bottom-up and all other approaches to QM and QFT, because there are no two approaches that would be 100% equivalent, so one has to use the right approach for the particular problem. So these notes do not aspire to be the right way to teach QM, but rather to serve as a reference to get quickly oriented and to find the equations to start from.</p>
 </div>
 <div class="section" id="standard-model">
-<span id="index-0"></span><h1>Standard Model<a class="headerlink" href="#standard-model" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1>8.2. Standard Model<a class="headerlink" href="#standard-model" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="electroweak-standard-model">
-<span id="index-1"></span><h2>Electroweak Standard Model<a class="headerlink" href="#electroweak-standard-model" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>8.2.1. Electroweak Standard Model<a class="headerlink" href="#electroweak-standard-model" title="Permalink to this headline">¶</a></h2>
 <p>Lagrangian with a global <span class="math notranslate nohighlight">\(SU(2)\times U(1)\)</span> symmetry:</p>
 <div class="math notranslate nohighlight">
 \[\L=i\bar L^{(l)}\gamma_\mu\partial^\mu L^{(l)}+i\bar l_R \gamma_\mu\partial^\mu l_R +\half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4} \lambda(\Phi^*\Phi)^2 -h_e\bar L^{(l)} \Phi e_R - \hbox{h.c.}\]</div>
@@ -332,7 +332,7 @@ measured and their experimental values are approximately:</p>
 </div>
 </div>
 <div class="section" id="qft">
-<h2>QFT<a class="headerlink" href="#qft" title="Permalink to this headline">¶</a></h2>
+<h2>8.2.2. QFT<a class="headerlink" href="#qft" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="field-operators">
 <h3>Field Operators<a class="headerlink" href="#field-operators" title="Permalink to this headline">¶</a></h3>
 <p>The free (non-interacting) fields in the interaction picture are expressed
@@ -1027,7 +1027,7 @@ vicinity of its positive frequency pole <span class="math notranslate nohighligh
     \omega-{{\bf p}^2\over 2m} + i\epsilon'}
 =\end{aligned}\end{align} \]</div>
 <div class="math notranslate nohighlight" id="equation-fermion-propagator-approx">
-<span class="eqno">(1)<a class="headerlink" href="#equation-fermion-propagator-approx" title="Permalink to this equation">¶</a></span>\[=
+<span class="eqno">(8.2.2.1)<a class="headerlink" href="#equation-fermion-propagator-approx" title="Permalink to this equation">¶</a></span>\[=
 {i\left(\half(\gamma_0+1) - {p^j\gamma_j\over2m}\right)\over
     \omega-{{\bf p}^2\over 2m} + i\epsilon'}\]</div>
 <p>The first term</p>
@@ -1046,7 +1046,7 @@ vicinity of its positive frequency pole <span class="math notranslate nohighligh
     }\]</div>
 <p>mixes the upper and lower components of the bispinor and the contribution of
 this term is quadratic in <span class="math notranslate nohighlight">\({\bf p}\over m\)</span> so it can be neglected. The
-numerator of <a class="reference internal" href="#equation-fermion-propagator-approx">(1)</a> reduces to a unit matrix (in spin
+numerator of <a class="reference internal" href="#equation-fermion-propagator-approx">(8.2.2.1)</a> reduces to a unit matrix (in spin
 space):</p>
 <div class="math notranslate nohighlight">
 \[\tilde S(p) \approx
@@ -1359,7 +1359,7 @@ nonzero order equal to:</p>
 </div>
 </div>
 <div class="section" id="low-energy-theories">
-<span id="index-13"></span><h2>Low energy theories<a class="headerlink" href="#low-energy-theories" title="Permalink to this headline">¶</a></h2>
+<span id="index-13"></span><h2>8.2.3. Low energy theories<a class="headerlink" href="#low-energy-theories" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="fermi-type-theory">
 <h3>Fermi-type theory<a class="headerlink" href="#fermi-type-theory" title="Permalink to this headline">¶</a></h3>
 <p>This is a low energy (<span class="math notranslate nohighlight">\(m_W^2 \gg m_\mu m_e\)</span>) model for the EW interactions, that can be derived for example from the muon decay:</p>
@@ -1399,9 +1399,9 @@ angle and <span class="math notranslate nohighlight">\(f\doteq 1.26\)</span>.</p
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Introduction</a></li>
-<li><a class="reference internal" href="#standard-model">Standard Model</a><ul>
-<li><a class="reference internal" href="#electroweak-standard-model">Electroweak Standard Model</a><ul>
+<li><a class="reference internal" href="#">8.1. Introduction</a></li>
+<li><a class="reference internal" href="#standard-model">8.2. Standard Model</a><ul>
+<li><a class="reference internal" href="#electroweak-standard-model">8.2.1. Electroweak Standard Model</a><ul>
 <li><a class="reference internal" href="#higgs-terms">Higgs Terms</a></li>
 <li><a class="reference internal" href="#yukawa-terms">Yukawa terms</a></li>
 <li><a class="reference internal" href="#leptonic-terms">Leptonic Terms</a></li>
@@ -1412,7 +1412,7 @@ angle and <span class="math notranslate nohighlight">\(f\doteq 1.26\)</span>.</p
 <li><a class="reference internal" href="#quarks">Quarks</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#qft">QFT</a><ul>
+<li><a class="reference internal" href="#qft">8.2.2. QFT</a><ul>
 <li><a class="reference internal" href="#field-operators">Field Operators</a></li>
 <li><a class="reference internal" href="#calculating-scattering-amplitudes-using-green-functions">Calculating Scattering Amplitudes using Green Functions</a><ul>
 <li><a class="reference internal" href="#example-1">Example 1</a></li>
@@ -1441,7 +1441,7 @@ angle and <span class="math notranslate nohighlight">\(f\doteq 1.26\)</span>.</p
 <li><a class="reference internal" href="#eeee-interaction">eeee interaction</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#low-energy-theories">Low energy theories</a><ul>
+<li><a class="reference internal" href="#low-energy-theories">8.2.3. Low energy theories</a><ul>
 <li><a class="reference internal" href="#fermi-type-theory">Fermi-type theory</a></li>
 </ul>
 </li>
@@ -1451,10 +1451,10 @@ angle and <span class="math notranslate nohighlight">\(f\doteq 1.26\)</span>.</p
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="main.html"
-                        title="previous chapter">Quantum Field Theory and Quantum Mechanics</a></p>
+                        title="previous chapter">8. Quantum Field Theory and Quantum Mechanics</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="qed.html"
-                        title="next chapter">Quantum Electrodynamics (QED)</a></p>
+                        title="next chapter">8.3. Quantum Electrodynamics (QED)</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1485,13 +1485,13 @@ angle and <span class="math notranslate nohighlight">\(f\doteq 1.26\)</span>.</p
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="qed.html" title="Quantum Electrodynamics (QED)"
+          <a href="qed.html" title="8.3. Quantum Electrodynamics (QED)"
              >next</a> |</li>
         <li class="right" >
-          <a href="main.html" title="Quantum Field Theory and Quantum Mechanics"
+          <a href="main.html" title="8. Quantum Field Theory and Quantum Mechanics"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Projector Augmented-Wave Method (PAW) &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>8.11. Projector Augmented-Wave Method (PAW) &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -16,7 +16,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Hartree-Fock (HF) Method" href="hf.html" />
+    <link rel="prev" title="8.10. Hartree-Fock (HF) Method" href="hf.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,10 +56,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="hf.html" title="Hartree-Fock (HF) Method"
+          <a href="hf.html" title="8.10. Hartree-Fock (HF) Method"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -69,7 +69,7 @@
           <div class="body" role="main">
             
   <div class="section" id="projector-augmented-wave-method-paw">
-<h1>Projector Augmented-Wave Method (PAW)<a class="headerlink" href="#projector-augmented-wave-method-paw" title="Permalink to this headline">¶</a></h1>
+<h1>8.11. Projector Augmented-Wave Method (PAW)<a class="headerlink" href="#projector-augmented-wave-method-paw" title="Permalink to this headline">¶</a></h1>
 <p>We can use the Density Functional Theory (DFT) to reduce the many body problem
 to solve a single particle Schrödinger equation:</p>
 <div class="math notranslate nohighlight">
@@ -82,7 +82,7 @@ incorporate the known physic in the basis (for example the partition of unity
 in the finite element method), or into the equations. PAW method uses the
 latter approach.</p>
 <div class="section" id="projectors-augmentation-spheres-and-smooth-wavefunctions">
-<h2>Projectors, Augmentation Spheres and Smooth Wavefunctions<a class="headerlink" href="#projectors-augmentation-spheres-and-smooth-wavefunctions" title="Permalink to this headline">¶</a></h2>
+<h2>8.11.1. Projectors, Augmentation Spheres and Smooth Wavefunctions<a class="headerlink" href="#projectors-augmentation-spheres-and-smooth-wavefunctions" title="Permalink to this headline">¶</a></h2>
 <p>We introduce <em>smooth wavefunctions</em> (we’ll use “~” for smooth functions) by
 a linear transformation operator <span class="math notranslate nohighlight">\(T\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -109,10 +109,10 @@ partial waves can be obtained using the <span class="math notranslate nohighligh
 for <span class="math notranslate nohighlight">\(r&gt;r_c^a\)</span>). We can now expand the smooth wavefunctions using the partial
 waves basis:</p>
 <div class="math notranslate nohighlight" id="equation-smooth-partial-waves">
-<span class="eqno">(1)<a class="headerlink" href="#equation-smooth-partial-waves" title="Permalink to this equation">¶</a></span>\[\ket{\tilde\psi_n} = \sum_i P_{ni}^a\ket{\tilde \phi_i^a}\]</div>
+<span class="eqno">(8.11.1.1)<a class="headerlink" href="#equation-smooth-partial-waves" title="Permalink to this equation">¶</a></span>\[\ket{\tilde\psi_n} = \sum_i P_{ni}^a\ket{\tilde \phi_i^a}\]</div>
 <p>inside the augmentation sphere. Multiplying both sides by <span class="math notranslate nohighlight">\(T\)</span>:</p>
 <div class="math notranslate nohighlight" id="equation-non-smooth-partial-waves">
-<span class="eqno">(2)<a class="headerlink" href="#equation-non-smooth-partial-waves" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}T\ket{\tilde\psi_n} = T\sum_i P_{ni}^a\ket{\tilde \phi_i^a}\\T\ket{\tilde\psi_n} = \sum_i P_{ni}^a\, T\ket{\tilde \phi_i^a}\\\ket{\psi_n} = \sum_i P_{ni}^a \ket{\phi_i^a}\end{aligned}\end{align} \]</div>
+<span class="eqno">(8.11.1.2)<a class="headerlink" href="#equation-non-smooth-partial-waves" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}T\ket{\tilde\psi_n} = T\sum_i P_{ni}^a\ket{\tilde \phi_i^a}\\T\ket{\tilde\psi_n} = \sum_i P_{ni}^a\, T\ket{\tilde \phi_i^a}\\\ket{\psi_n} = \sum_i P_{ni}^a \ket{\phi_i^a}\end{aligned}\end{align} \]</div>
 <p>So both smooth and non-smooth wavefunctions have the same expansion
 coefficients <span class="math notranslate nohighlight">\(P_{ni}^a\)</span>. We choose smooth <em>projector functions</em>
 <span class="math notranslate nohighlight">\(\ket{\tilde p_i^a}\)</span> satisfying the following
@@ -120,17 +120,17 @@ orthogonality and completeness relations inside the augmentation spheres (no
 restrictions are imposed outside the spheres, so we just define
 <span class="math notranslate nohighlight">\(\braket{{\bf r} | \tilde p_i^a} = 0\)</span>):</p>
 <div class="math notranslate nohighlight" id="equation-projector-functions">
-<span class="eqno">(3)<a class="headerlink" href="#equation-projector-functions" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\braket{\tilde p_i^a | \tilde \phi_j^a} = \delta_{ij}\\\sum_i \ket{\tilde \phi_i^a}\bra{\tilde p_i^a}  = \one\end{aligned}\end{align} \]</div>
-<p>then multiplying <a class="reference internal" href="#equation-smooth-partial-waves">(1)</a> by <span class="math notranslate nohighlight">\(\bra{\tilde p_i^a}\)</span>
-and using <a class="reference internal" href="#equation-projector-functions">(3)</a>:</p>
+<span class="eqno">(8.11.1.3)<a class="headerlink" href="#equation-projector-functions" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\braket{\tilde p_i^a | \tilde \phi_j^a} = \delta_{ij}\\\sum_i \ket{\tilde \phi_i^a}\bra{\tilde p_i^a}  = \one\end{aligned}\end{align} \]</div>
+<p>then multiplying <a class="reference internal" href="#equation-smooth-partial-waves">(8.11.1.1)</a> by <span class="math notranslate nohighlight">\(\bra{\tilde p_i^a}\)</span>
+and using <a class="reference internal" href="#equation-projector-functions">(8.11.1.3)</a>:</p>
 <div class="math notranslate nohighlight">
 \[\braket{\tilde p_i^a | \tilde \psi_n }
     = \sum_j P_{nj}^a\braket{\tilde p_i^a | \tilde \phi_j^a}
     = \sum_j P_{nj}^a\delta_{ij}
     = P_{ni}^a\]</div>
-<p>we can rewrite <a class="reference internal" href="#equation-smooth-partial-waves">(1)</a> and <a class="reference internal" href="#equation-non-smooth-partial-waves">(2)</a>:</p>
+<p>we can rewrite <a class="reference internal" href="#equation-smooth-partial-waves">(8.11.1.1)</a> and <a class="reference internal" href="#equation-non-smooth-partial-waves">(8.11.1.2)</a>:</p>
 <div class="math notranslate nohighlight" id="equation-partial-waves">
-<span class="eqno">(4)<a class="headerlink" href="#equation-partial-waves" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\ket{\tilde\psi_n} = \sum_i \braket{\tilde p_i^a | \tilde \psi_n }
+<span class="eqno">(8.11.1.4)<a class="headerlink" href="#equation-partial-waves" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\ket{\tilde\psi_n} = \sum_i \braket{\tilde p_i^a | \tilde \psi_n }
     \ket{\tilde \phi_i^a}\\\ket{\psi_n} = \sum_i \braket{\tilde p_i^a | \tilde \psi_n }
     \ket{\phi_i^a}\end{aligned}\end{align} \]</div>
 <p>Let’s write <span class="math notranslate nohighlight">\(T^a\)</span> using the projectors:</p>
@@ -169,7 +169,7 @@ electron” minus “1-center pseudo”.</p>
 the valence states.</p>
 </div>
 <div class="section" id="frozen-core-approximation">
-<h2>Frozen Core Approximation<a class="headerlink" href="#frozen-core-approximation" title="Permalink to this headline">¶</a></h2>
+<h2>8.11.2. Frozen Core Approximation<a class="headerlink" href="#frozen-core-approximation" title="Permalink to this headline">¶</a></h2>
 <p>One can either calculate all electrons in the eigenproblem, or only calculate
 the valence electrons and treat the core states separately. The simplest option
 is to introduce a <em>frozen core approximation</em>, where</p>
@@ -180,7 +180,7 @@ atom index and <span class="math notranslate nohighlight">\(\alpha\)</span> are 
 can also be relaxed in various ways.</p>
 </div>
 <div class="section" id="expectation-values-of-local-operators">
-<h2>Expectation Values of Local Operators<a class="headerlink" href="#expectation-values-of-local-operators" title="Permalink to this headline">¶</a></h2>
+<h2>8.11.3. Expectation Values of Local Operators<a class="headerlink" href="#expectation-values-of-local-operators" title="Permalink to this headline">¶</a></h2>
 <p>In the frozen core approximation:</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\braket{O} = \sum_n^{\mbox{val}} f_n \braket{\psi_n | O | \psi_n}
@@ -214,7 +214,7 @@ the augmentation sphere.</p>
 </div>
 </div>
 <div class="section" id="kohn-sham-equations">
-<h2>Kohn Sham Equations<a class="headerlink" href="#kohn-sham-equations" title="Permalink to this headline">¶</a></h2>
+<h2>8.11.4. Kohn Sham Equations<a class="headerlink" href="#kohn-sham-equations" title="Permalink to this headline">¶</a></h2>
 <p>We multiply the original equations by <span class="math notranslate nohighlight">\(T^\dag\)</span> from the left and introduce the
 smooth wavefunctions:</p>
 <div class="math notranslate nohighlight">
@@ -250,21 +250,21 @@ smooth wavefunctions:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Projector Augmented-Wave Method (PAW)</a><ul>
-<li><a class="reference internal" href="#projectors-augmentation-spheres-and-smooth-wavefunctions">Projectors, Augmentation Spheres and Smooth Wavefunctions</a></li>
-<li><a class="reference internal" href="#frozen-core-approximation">Frozen Core Approximation</a></li>
-<li><a class="reference internal" href="#expectation-values-of-local-operators">Expectation Values of Local Operators</a><ul>
+<li><a class="reference internal" href="#">8.11. Projector Augmented-Wave Method (PAW)</a><ul>
+<li><a class="reference internal" href="#projectors-augmentation-spheres-and-smooth-wavefunctions">8.11.1. Projectors, Augmentation Spheres and Smooth Wavefunctions</a></li>
+<li><a class="reference internal" href="#frozen-core-approximation">8.11.2. Frozen Core Approximation</a></li>
+<li><a class="reference internal" href="#expectation-values-of-local-operators">8.11.3. Expectation Values of Local Operators</a><ul>
 <li><a class="reference internal" href="#density">Density</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#kohn-sham-equations">Kohn Sham Equations</a></li>
+<li><a class="reference internal" href="#kohn-sham-equations">8.11.4. Kohn Sham Equations</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="hf.html"
-                        title="previous chapter">Hartree-Fock (HF) Method</a></p>
+                        title="previous chapter">8.10. Hartree-Fock (HF) Method</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -295,10 +295,10 @@ smooth wavefunctions:</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="hf.html" title="Hartree-Fock (HF) Method"
+          <a href="hf.html" title="8.10. Hartree-Fock (HF) Method"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

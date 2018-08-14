@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Groups &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <title>3.36. Groups &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Wigner D Function" href="wigner.html" />
-    <link rel="prev" title="Feynman Parameters" href="feynman-parameters.html" />
+    <link rel="next" title="3.37. Wigner D Function" href="wigner.html" />
+    <link rel="prev" title="3.35. Feynman Parameters" href="feynman-parameters.html" />
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,13 +56,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="wigner.html" title="Wigner D Function"
+          <a href="wigner.html" title="3.37. Wigner D Function"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="feynman-parameters.html" title="Feynman Parameters"
+          <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -72,13 +72,13 @@
           <div class="body" role="main">
             
   <div class="section" id="groups">
-<h1>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
+<h1>3.36. Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
 <p>These are notes of Karel Výborný and Ondřej Čertík on the group theory as a
 result of the first VDNK (Výprava do neznámých krajů) held between October 30
 and November 2, 2006 in Prague.  So that the next time we look at it we should
 be able to quickly recover our forgotten ideas.</p>
 <div class="section" id="theory">
-<h2>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
+<h2>3.36.1. Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
 <p>Definition of a group:</p>
 <blockquote>
 <div><ul class="simple">
@@ -112,7 +112,7 @@ relationship between <img class="math" src="../_images/math/e3e06ea859a26d9c5eef
 <p>Reducible representation <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/>: there exist an equivalent representation that
 is diagonal:</p>
 <div class="math" id="equation-eq-1-1">
-<p><span class="eqno">(1)<a class="headerlink" href="#equation-eq-1-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b91a5b2dd7cc4bfcab9e5dda7298974f6854d30.svg" alt="T'(x)=ST(x)S^{-1}=\begin{pmatrix}
+<p><span class="eqno">(3.36.1.1)<a class="headerlink" href="#equation-eq-1-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b91a5b2dd7cc4bfcab9e5dda7298974f6854d30.svg" alt="T'(x)=ST(x)S^{-1}=\begin{pmatrix}
     T_1' &amp; 0 \\
     0    &amp; T_2' \\
     \end{pmatrix}\,, \qquad \forall x\in G\,."/></p>
@@ -278,7 +278,7 @@ lives on the direct sum of the two vector spaces of <img class="math" src="../_i
 </dl>
 <p>Take an IR <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. Then <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> will also be a rep. of any subgroup
 <img class="math" src="../_images/math/3cbc98437f20101ff70ac6ca1b6f4b4d14978570.svg" alt="H\subset G"/>, but it need not be an IR, because the condition for
-reducibility, Eq. <a class="reference internal" href="#equation-eq-1-1">(1)</a>, is less strict: it suffices if the matrices
+reducibility, Eq. <a class="reference internal" href="#equation-eq-1-1">(3.36.1.1)</a>, is less strict: it suffices if the matrices
 <img class="math" src="../_images/math/40c844b0e81168b7ffcb8b9c09b2a18ad19264f2.svg" alt="T(g)"/> are simultaneously block diagonal only for <img class="math" src="../_images/math/54cac36f7c52968bda1f3d45235618c17815516b.svg" alt="g\in H"/>, not for all <img class="math" src="../_images/math/a07d90825f52c54e2791a11f5dec521f0e6d5c76.svg" alt="g\in
 G"/>. This is called <em>restriction</em> and it is denoted by <img class="math" src="../_images/math/cec4acb0c5e8c90798caed4886997787314e823c.svg" alt="\downarrow"/>.</p>
 <p><em>Induced representation</em>, denoted by <img class="math" src="../_images/math/c229839470b6e11788f3597b932377eb29c036fe.svg" alt="\uparrow"/>, is an opposite of the
@@ -322,7 +322,7 @@ not possible.</p>
 </div>
 </div>
 <div class="section" id="crystallographic-point-groups">
-<span id="point-groups"></span><h2>Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
+<span id="point-groups"></span><h2>3.36.2. Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
 <p>Point group is a subgroup of O(3).</p>
 <p>Crystallographic point groups are all subgroups of <img class="math" src="../_images/math/4687feb7cc342ce1a2a24aef5db08e39dd15f91f.svg" alt="O(3)"/>, which leave a
 monoatomic crystal lattice invariant. Those can be symmetries of an infinite
@@ -806,10 +806,10 @@ b &amp;= (-1)^l \\
 c &amp;= i^m    \\"/></p>
 </div><p>Rule 3 gives:</p>
 <div class="math" id="equation-xxy">
-<p><span class="eqno">(2)<a class="headerlink" href="#equation-xxy" title="Permalink to this equation">¶</a></span><img src="../_images/math/b1edcdaf92c925310df88d093577d5a376782e35.svg" alt="1 + a + b + c = 0"/></p>
+<p><span class="eqno">(3.36.2.1)<a class="headerlink" href="#equation-xxy" title="Permalink to this equation">¶</a></span><img src="../_images/math/b1edcdaf92c925310df88d093577d5a376782e35.svg" alt="1 + a + b + c = 0"/></p>
 </div><p>Using the rule 7. we know that at least one of <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>, <img class="math" src="../_images/math/e66b6375b23ad0ff2f82d21446be1e2ec8ce1681.svg" alt="A_3"/> and <img class="math" src="../_images/math/62dc070887eeaf15108f9bb89f1c63a07eb2e569.svg" alt="A_4"/> must be
 real, so let it be <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>.
-The only real solutions of the equation <a class="reference internal" href="#equation-xxy">(2)</a> are <img class="math" src="../_images/math/525bd4cb942f30b5817887941d0eefc10590cf46.svg" alt="a=1"/>, <img class="math" src="../_images/math/4d6235b36a3d31ebe2000d6009c5fd4b42753e14.svg" alt="b=-1"/>, <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>
+The only real solutions of the equation <a class="reference internal" href="#equation-xxy">(3.36.2.1)</a> are <img class="math" src="../_images/math/525bd4cb942f30b5817887941d0eefc10590cf46.svg" alt="a=1"/>, <img class="math" src="../_images/math/4d6235b36a3d31ebe2000d6009c5fd4b42753e14.svg" alt="b=-1"/>, <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>
 and permutations. The representation however must be isomorphic to the <img class="math" src="../_images/math/69260c76c8fab1b265773fa99c4e77bb040a429c.svg" alt="C_4"/>
 group, so in particular <img class="math" src="../_images/math/0b4a82d428c8fecfa649e93b626804ab1d535c7d.svg" alt="a^2 = b"/>, from which <img class="math" src="../_images/math/d8e4463a765511e4da907243b0ba8ca65f380c75.svg" alt="b=1"/> and then
 <img class="math" src="../_images/math/0603ff0327f06bef2105c8c459d97c72e2617768.svg" alt="a=-1"/> and <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>.</p>
@@ -895,7 +895,7 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 </div>
 </div>
 <div class="section" id="applications-of-finite-groups">
-<h2>Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
+<h2>3.36.3. Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="distinct-energy-levels-vibrations">
 <h3>Distinct energy levels (‘vibrations’)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this headline">¶</a></h3>
 <p>Assume that we know number of atoms in a molecule and measure the number of
@@ -914,11 +914,11 @@ accidentally happen to have the same frequencies (‘accidental degeneracy’).<
 <p>According to <a class="reference internal" href="#pilar" id="id18">[Pilar]</a>, p. 572.</p>
 <p>Probability of an optical transition is proportional to</p>
 <div class="math" id="equation-eq-1-2">
-<p><span class="eqno">(3)<a class="headerlink" href="#equation-eq-1-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/72e02cc5c150ae49a6f77a1d11170bafb7d66721.svg" alt="\braket{i| H_1 |f}\,,"/></p>
+<p><span class="eqno">(3.36.3.1)<a class="headerlink" href="#equation-eq-1-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/72e02cc5c150ae49a6f77a1d11170bafb7d66721.svg" alt="\braket{i| H_1 |f}\,,"/></p>
 </div><p>where <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/>, <img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> are the initial and final states and <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> is
 the operator of the interaction causing the transition. This is the
 Fermi golden rule (first order time dep. perturbation theory).</p>
-<p>The integral (<a class="reference internal" href="#equation-eq-1-2">(3)</a>) may vanish because of the symmetry. A simple 1D
+<p>The integral (<a class="reference internal" href="#equation-eq-1-2">(3.36.3.1)</a>) may vanish because of the symmetry. A simple 1D
 example is that <img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> is an even function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>, <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/> is an odd
 function <img class="math" src="../_images/math/8876f9e178022ea9c6bfb37024029fd3a0a07fd7.svg" alt="i(x)"/> and <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> is an even function <img class="math" src="../_images/math/4bab63e621fed56a6424a6ae5457af6794a74385.svg" alt="h_1(x)"/>. Then
 <img class="math" src="../_images/math/55d941c96d63f49d911368612ae11ded39576703.svg" alt="i^*(x)h_1(x)f(x)"/> is odd and thus the integral over <img class="math" src="../_images/math/215da7b0fd5c897ef882a82ff303dee29acf19ef.svg" alt="(-\infty,\infty)"/>
@@ -927,7 +927,7 @@ vanishes. The group theory only generalizes this observation.</p>
 <img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> belong and also <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/>, the regular rep of <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> in order to catch
 all IRs of <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> (is this procedure correct?). Then construct
 <img class="math" src="../_images/math/13161c43c4f8e8912879e1747ea6158876519fe2.svg" alt="\rho_i\otimes\rho\otimes\rho_f"/>, decompose it into IRs and see if the trivial
-rep is present. If not, the integral (<a class="reference internal" href="#equation-eq-1-2">(3)</a>) vanishes. This procedure
+rep is present. If not, the integral (<a class="reference internal" href="#equation-eq-1-2">(3.36.3.1)</a>) vanishes. This procedure
 is claimed to be equivalent to checking whether <img class="math" src="../_images/math/6b559a4d83baca3416bbdbad6be591ac5b6717c2.svg" alt="\rho_i\otimes \rho_f"/> and
 <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> contain at least one common IR.</p>
 <p>The infrared absorption (IRa) is described by <img class="math" src="../_images/math/81850fedf54e92c64f38cf6fcd5d7005ac0393c3.svg" alt="H_1\propto x"/> (or <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>, <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/>,
@@ -949,7 +949,7 @@ commonly used (<img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b
 </div>
 </div>
 <div class="section" id="continuous-groups">
-<h2>Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this headline">¶</a></h2>
+<h2>3.36.4. Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="lie-groups-algebras">
 <h3>Lie groups+algebras<a class="headerlink" href="#lie-groups-algebras" title="Permalink to this headline">¶</a></h3>
 <p>A continuous group with metrics is a Lie group (more exactly a differentiable
@@ -1026,7 +1026,7 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
 </div>
 </div>
 <div class="section" id="literature">
-<h2>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
+<h2>3.36.5. Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
 <p>Books:</p>
 <table class="docutils citation" frame="void" id="birss" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -1100,8 +1100,8 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Groups</a><ul>
-<li><a class="reference internal" href="#theory">Theory</a><ul>
+<li><a class="reference internal" href="#">3.36. Groups</a><ul>
+<li><a class="reference internal" href="#theory">3.36.1. Theory</a><ul>
 <li><a class="reference internal" href="#representation">Representation</a><ul>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
@@ -1110,7 +1110,7 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
 <li><a class="reference internal" href="#interesting-examples">Interesting examples</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#crystallographic-point-groups">Crystallographic Point Groups</a><ul>
+<li><a class="reference internal" href="#crystallographic-point-groups">3.36.2. Crystallographic Point Groups</a><ul>
 <li><a class="reference internal" href="#zoology">Zoology</a></li>
 <li><a class="reference internal" href="#construction-and-usage-of-the-character-table">Construction and usage of the character table</a><ul>
 <li><a class="reference internal" href="#example-i">Example I</a></li>
@@ -1123,13 +1123,13 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#applications-of-finite-groups">Applications of finite groups</a><ul>
+<li><a class="reference internal" href="#applications-of-finite-groups">3.36.3. Applications of finite groups</a><ul>
 <li><a class="reference internal" href="#distinct-energy-levels-vibrations">Distinct energy levels (‘vibrations’)</a></li>
 <li><a class="reference internal" href="#selection-rules-transitions">Selection rules (‘transitions’)</a></li>
 <li><a class="reference internal" href="#id19">Zoology</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#continuous-groups">Continuous Groups</a><ul>
+<li><a class="reference internal" href="#continuous-groups">3.36.4. Continuous Groups</a><ul>
 <li><a class="reference internal" href="#lie-groups-algebras">Lie groups+algebras</a><ul>
 <li><a class="reference internal" href="#irs-of-su-2">IRs of SU(2)</a></li>
 </ul>
@@ -1137,17 +1137,17 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
 <li><a class="reference internal" href="#young-diagrams">Young diagrams</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#literature">Literature</a></li>
+<li><a class="reference internal" href="#literature">3.36.5. Literature</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="feynman-parameters.html"
-                        title="previous chapter">Feynman Parameters</a></p>
+                        title="previous chapter">3.35. Feynman Parameters</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="wigner.html"
-                        title="next chapter">Wigner D Function</a></p>
+                        title="next chapter">3.37. Wigner D Function</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1178,13 +1178,13 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="wigner.html" title="Wigner D Function"
+          <a href="wigner.html" title="3.37. Wigner D Function"
              >next</a> |</li>
         <li class="right" >
-          <a href="feynman-parameters.html" title="Feynman Parameters"
+          <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

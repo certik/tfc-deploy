@@ -1,0 +1,248 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3.42. Variational Formulation of PDEs &#8212; Theoretical Physics Reference 0.5 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Classical Mechanics, Special and General Relativity" href="../relativity/main.html" />
+    <link rel="prev" title="3.41. Operators" href="operators.html" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28893880-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+     
+
+  </head><body>
+    <div style="display:none">
+    \(
+        \newcommand{\d}{\mathrm{d}}
+        \newcommand{\bomega}{\vec\omega}
+        \newcommand{\half}{ {1\over 2} }
+        \def\mathnot#1{\text{"$#1$"}}
+
+        %operators
+        \newcommand{\diag}{\mathrm{diag}}
+        \newcommand{\sinc}{\mathrm{sinc}}
+        \newcommand{\Sh}{ {\large\style{font-family:Times}{\text{Ш}}} }
+        \newcommand{\res}{\mathrm{Res}}
+    \)
+    </div>
+    
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../relativity/main.html" title="4. Classical Mechanics, Special and General Relativity"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="operators.html" title="3.41. Operators"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="variational-formulation-of-pdes">
+<h1>3.42. Variational Formulation of PDEs<a class="headerlink" href="#variational-formulation-of-pdes" title="Permalink to this headline">¶</a></h1>
+<p>Not every equation allows a variational formulation (e.g., Navier-Stokes or
+Euler equations do not have such a formulation), but many equations have one,
+and we explain how it works on several examples.</p>
+<div class="section" id="poisson-equation">
+<h2>3.42.1. Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h2>
+<p>The Lagrangian for Poisson equation is:</p>
+<div class="math">
+<p><img src="../_images/math/549bc386606c922d3a7e770e343e64d87b681a16.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) + f(x) u(x) \right] \d x
+    - [\hat g(x) u(x)]_a^b\,."/></p>
+</div><p>The variational formulation is:</p>
+<div class="math">
+<p><img src="../_images/math/992cc76b159414bdf505aea99f2cf174edcb64ac.svg" alt="\delta L = 0\,,"/></p>
+</div><p>which yields:</p>
+<div class="math" id="equation-poisson1">
+<p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson1" title="Permalink to this equation">¶</a></span><img src="../_images/math/1b306d2a9c04c0be7a2070f1579ac0f2290783ed.svg" alt="\delta L &amp;= \int_a^b \left[ u'(x) \delta u'(x)
+    + f(x) \delta u(x) \right] \d x
+    - [\hat g(x) \delta u(x)]_a^b
+
+         &amp;= \int_a^b \left[-u''(x) \delta u(x)
+    + f(x) \delta u(x) \right] \d x
+    + [u'(x) \delta u(x)]_a^b
+    - [\hat g(x) \delta u(x)]_a^b
+
+         &amp;= \int_a^b \left[-u''(x) + f(x)\right] \delta u(x) \d x
+    + [(u'(x) - \hat g(x)) \delta u(x)]_a^b
+
+         &amp;= 0\,,"/></p>
+</div><p>where we applied integration by parts.
+This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/>, and in particular it holds for
+<img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary (i.e., for <img class="math" src="../_images/math/bef5e618e8649551a70eb5750349fe03040513a5.svg" alt="\delta u(a) = 0"/> and
+<img class="math" src="../_images/math/df790de529b2231cee92567da29fa058c331dc84.svg" alt="\delta u(b) = 0"/>). Then the boundary term in <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> vanishes and we
+obtain:</p>
+<div class="math" id="equation-poisson2">
+<p><span class="eqno">(3.42.1.2)<a class="headerlink" href="#equation-poisson2" title="Permalink to this equation">¶</a></span><img src="../_images/math/85a9f67e857d7d93344cfc41a1870665ea01b6c6.svg" alt="\int_a^b \left[-u''(x) + f(x)\right] \delta u(x) \d x = 0\,,"/></p>
+</div><p>This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> that is zero at the boundary, and
+thus it implies:</p>
+<div class="math" id="equation-poisson3">
+<p><span class="eqno">(3.42.1.3)<a class="headerlink" href="#equation-poisson3" title="Permalink to this equation">¶</a></span><img src="../_images/math/16b93a0e5691cf5c975a7f3cacbe600da6e87cde.svg" alt="-u''(x) + f(x) = 0\,."/></p>
+</div><p>Now we substitute <a class="reference internal" href="#equation-poisson3">(3.42.1.3)</a> into <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> and obtain:</p>
+<div class="math" id="equation-poisson3-boundary">
+<p><span class="eqno">(3.42.1.4)<a class="headerlink" href="#equation-poisson3-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/fd77979b54cd004a21570a7bfd1776c41ac38e6e.svg" alt="[(u'(x) - \hat g(x)) \delta u(x)]_a^b = 0\,."/></p>
+</div><p>Thus <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> implies both <a class="reference internal" href="#equation-poisson3">(3.42.1.3)</a> and <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a>.
+The equation <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a> holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> (generally
+not zero at the boundary) and thus it implies:</p>
+<div class="math" id="equation-poisson3-boundary2">
+<p><span class="eqno">(3.42.1.5)<a class="headerlink" href="#equation-poisson3-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/35e2828f5f0577c08f1465980b45561164133cc3.svg" alt="u'(x) - \hat g(x) = 0"/></p>
+</div><p>at the boundary. Thus <img class="math" src="../_images/math/64a05275174b17c074f7402d08858e6165ef8b08.svg" alt="\hat g(x)"/> imposes the Neumann boundary condition, i.e.,
+the value of the derivative <img class="math" src="../_images/math/f2d7616a52afe56f975a5c1f3ee5ae311fbcd730.svg" alt="u'(x) = \hat g(x)"/> at the boundary. This condition
+is imposed variationally.</p>
+<p>To impose a Dirichlet boundary condition, we want to impose the value of
+<img class="math" src="../_images/math/9c1f4926c043c6eb440f886fd00ceccbb7f94136.svg" alt="u(x)=\hat u(x)"/> at the boundary for some constant <img class="math" src="../_images/math/ac04df5edc437f1e6a358aefa9c9e11a9cc9e125.svg" alt="\hat u(x)"/>. As such, <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/>
+is not allowed to vary at that part of the boundary, which means that the
+variation <img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary. So we restrict the variation
+<img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> to be zero at the Dirichlet part of the boundary in
+<a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> and thus also in <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a>. This implies that
+<a class="reference internal" href="#equation-poisson3-boundary2">(3.42.1.5)</a> does not hold at the Dirichlet part of the boundary
+and we have to set the value <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/> there directly.</p>
+</div>
+<div class="section" id="radial-schrodinger-equation">
+<h2>3.42.2. Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<p>The derivation is similar as for the Poisson equation, except that we have
+<img class="math" src="../_images/math/ab99d703d31fa8ec47316aa88084e30a85c32dea.svg" alt="\hat g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
+to a given value, or, alternatively, that we require the operator to be
+self-adjoint).</p>
+<p>The Lagrangian for the radial Schrödinger equation is:</p>
+<div class="math" id="equation-schr-radial0">
+<p><span class="eqno">(3.42.2.1)<a class="headerlink" href="#equation-schr-radial0" title="Permalink to this equation">¶</a></span><img src="../_images/math/2b9c9cca738f32504e65df99d622c8834ff76b40.svg" alt="L[R] = \int_0^\infty \left[\half R'^2(r)
+    + \left(V(r) + {l(l+1)\over 2 r^2}\right) R^2(r) \right] r^2 \,\d r\,."/></p>
+</div><p>We minimize the Lagrangian subject to the normalization condition
+<img class="math" src="../_images/math/8d9a7a138eb031f36f006a0453dfee7a4a64105e.svg" alt="N[R] = \int_0^\infty R^2(r) r^2\, \d r = 1"/> as follows:</p>
+<div class="math" id="equation-schr-radial1">
+<p><span class="eqno">(3.42.2.2)<a class="headerlink" href="#equation-schr-radial1" title="Permalink to this equation">¶</a></span><img src="../_images/math/c0e0496ba1a98425fa64e7c04c9406cbbe9a9f0c.svg" alt="0 &amp;= \delta (L - \epsilon (N-1))
+
+&amp;= \delta \int_0^\infty \left[ \half r^2 R'^2
++ (r^2 V + \half l(l+1)) R^2 - \epsilon r^2R^2 \right] \,\d r =
+
+&amp;= 2\int_0^\infty \left[ \half r^2 R'(\delta R)'
++ (r^2 V + \half l(l+1)) R\delta R - \epsilon r^2 R\delta R \right]
+  \,\d r =
+
+&amp;= 2\int_0^\infty \left[ -\half (r^2 R')'
++ (r^2 V + \half l(l+1)) R - \epsilon r^2 R\right]\delta R \,\d r
+  + [r^2 R' \delta R]_0^\infty"/></p>
+</div><p>This equation holds for any <img class="math" src="../_images/math/ff92ab74c48274e41951ece6ea443265ee2e27f2.svg" alt="\delta R(r)"/>, and so it also holds when we
+restrict <img class="math" src="../_images/math/f5ae2f43be319151339228449f138cabcb35bbe0.svg" alt="\delta R(r) = 0"/> on the boundary and the boundary term vanishes. Then
+it implies the radial Schrödinger equation:</p>
+<div class="math" id="equation-schr-radial2">
+<p><span class="eqno">(3.42.2.3)<a class="headerlink" href="#equation-schr-radial2" title="Permalink to this equation">¶</a></span><img src="../_images/math/09576744154d4d608355f0c67b51a3f4781be797.svg" alt="-\half (r^2 R'(r))' + (r^2 V(r) + \half l(l+1)) R(r) = \epsilon r^2 R(r)"/></p>
+</div><p>Substituting <a class="reference internal" href="#equation-schr-radial2">(3.42.2.3)</a> into <a class="reference internal" href="#equation-schr-radial1">(3.42.2.2)</a> we obtain:</p>
+<div class="math" id="equation-schr-radial-boundary">
+<p><span class="eqno">(3.42.2.4)<a class="headerlink" href="#equation-schr-radial-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/9a5759ac43f764d174c9fcc18aaa01816c725b9e.svg" alt="[r^2 R' \delta R]_0^\infty = 0"/></p>
+</div><p>And we can see that <a class="reference internal" href="#equation-schr-radial1">(3.42.2.2)</a> implies both the equation
+<a class="reference internal" href="#equation-schr-radial2">(3.42.2.3)</a> and the boundary term <a class="reference internal" href="#equation-schr-radial-boundary">(3.42.2.4)</a>. The
+boundary term is zero for <img class="math" src="../_images/math/3d83df94da83cbdc3b9f3114e724e93767b9e664.svg" alt="r=0"/>, so it reduces to:</p>
+<div class="math" id="equation-schr-radial-boundary2">
+<p><span class="eqno">(3.42.2.5)<a class="headerlink" href="#equation-schr-radial-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/b37b75f26da9c9ed6636aa7aebc9e0c5c756b51e.svg" alt="\lim_{r\to\infty} r^2 R'(r) \delta R(r) = 0"/></p>
+</div><p>We can see that there is no natural condition at <img class="math" src="../_images/math/3d83df94da83cbdc3b9f3114e724e93767b9e664.svg" alt="r=0"/>, and for <img class="math" src="../_images/math/47746b98205c880f9e965f15b8cceba266d17e07.svg" alt="r=\infty"/> we
+only have two possible options. Either we impose <img class="math" src="../_images/math/e6751f1ed598909350e7f70511268533bc7af21d.svg" alt="\delta R(\infty) = 0"/> and
+obtain the Dirichlet condition and the boundary term
+<a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> vanishes. Or we allow <img class="math" src="../_images/math/04a91caefc49808b79f5a5420796a703f2f60629.svg" alt="\delta R(\infty)"/> to vary,
+and then <a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> implies <img class="math" src="../_images/math/046a051905d6222a114048916681461ae6cb4dc6.svg" alt="R'(\infty) = 0"/>.</p>
+<p>Unlike for the Poisson equation we are not allowed to set <img class="math" src="../_images/math/ef3cc8734db9debd3eaf3b71cae9119611d2941d.svg" alt="R'(\infty)"/> to
+anything other than zero, and that’s why <a class="reference internal" href="#equation-schr-radial0">(3.42.2.1)</a> has no surface
+term.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.42. Variational Formulation of PDEs</a><ul>
+<li><a class="reference internal" href="#poisson-equation">3.42.1. Poisson Equation</a></li>
+<li><a class="reference internal" href="#radial-schrodinger-equation">3.42.2. Radial Schrödinger Equation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="operators.html"
+                        title="previous chapter">3.41. Operators</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../relativity/main.html"
+                        title="next chapter">4. Classical Mechanics, Special and General Relativity</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/math/variational-formulation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../relativity/main.html" title="4. Classical Mechanics, Special and General Relativity"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="operators.html" title="3.41. Operators"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2011, Ondřej Čertík.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>

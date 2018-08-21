@@ -79,62 +79,85 @@ and we explain how it works on several examples.</p>
 <div class="section" id="poisson-equation">
 <h2>3.42.1. Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h2>
 <p>The Lagrangian for Poisson equation is:</p>
-<div class="math">
-<p><img src="../_images/math/549bc386606c922d3a7e770e343e64d87b681a16.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) + f(x) u(x) \right] \d x
-    - [\hat g(x) u(x)]_a^b\,."/></p>
-</div><p>The variational formulation is:</p>
+<div class="math" id="equation-poisson0">
+<p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson0" title="Permalink to this equation">¶</a></span><img src="../_images/math/1664f84fd6279d04e9b9b4a6f23c62a91fe6809a.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x
+    - [g(x) u(x)]_a^b\,."/></p>
+</div><p>Important note: technically, as we will see below, this imposes the Neumann
+boundary condition and 1D Poisson equation with two Neumann boundary conditions
+does not have a unique solution. At least one Dirichlet boundary condition is
+needed for a unique solution. For example with <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/> the
+boundary term becomes just <img class="math" src="../_images/math/7d3c4ee5c1a1b9dd6cd85211b1849d923e8564ed.svg" alt="-gu(b)"/>. However, for simplicity, we will show the
+derivation with two Neumann boundary conditions first and we will discuss how
+to impose the Dirichlet boundary condition later.</p>
+<p>The variational formulation is:</p>
 <div class="math">
 <p><img src="../_images/math/992cc76b159414bdf505aea99f2cf174edcb64ac.svg" alt="\delta L = 0\,,"/></p>
 </div><p>which yields:</p>
 <div class="math" id="equation-poisson1">
-<p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson1" title="Permalink to this equation">¶</a></span><img src="../_images/math/1b306d2a9c04c0be7a2070f1579ac0f2290783ed.svg" alt="\delta L &amp;= \int_a^b \left[ u'(x) \delta u'(x)
-    + f(x) \delta u(x) \right] \d x
-    - [\hat g(x) \delta u(x)]_a^b
+<p><span class="eqno">(3.42.1.2)<a class="headerlink" href="#equation-poisson1" title="Permalink to this equation">¶</a></span><img src="../_images/math/05c89670be80946776c137b473f11edc6714dea3.svg" alt="\delta L &amp;= \int_a^b \left[ u'(x) \delta u'(x)
+    - f(x) \delta u(x) \right] \d x
+    - [g(x) \delta u(x)]_a^b
 
          &amp;= \int_a^b \left[-u''(x) \delta u(x)
-    + f(x) \delta u(x) \right] \d x
+    - f(x) \delta u(x) \right] \d x
     + [u'(x) \delta u(x)]_a^b
-    - [\hat g(x) \delta u(x)]_a^b
+    - [g(x) \delta u(x)]_a^b
 
-         &amp;= \int_a^b \left[-u''(x) + f(x)\right] \delta u(x) \d x
-    + [(u'(x) - \hat g(x)) \delta u(x)]_a^b
+         &amp;= \int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x
+    + [(u'(x) - g(x)) \delta u(x)]_a^b
 
          &amp;= 0\,,"/></p>
 </div><p>where we applied integration by parts.
 This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/>, and in particular it holds for
 <img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary (i.e., for <img class="math" src="../_images/math/bef5e618e8649551a70eb5750349fe03040513a5.svg" alt="\delta u(a) = 0"/> and
-<img class="math" src="../_images/math/df790de529b2231cee92567da29fa058c331dc84.svg" alt="\delta u(b) = 0"/>). Then the boundary term in <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> vanishes and we
+<img class="math" src="../_images/math/df790de529b2231cee92567da29fa058c331dc84.svg" alt="\delta u(b) = 0"/>). Then the boundary term in <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> vanishes and we
 obtain:</p>
 <div class="math" id="equation-poisson2">
-<p><span class="eqno">(3.42.1.2)<a class="headerlink" href="#equation-poisson2" title="Permalink to this equation">¶</a></span><img src="../_images/math/85a9f67e857d7d93344cfc41a1870665ea01b6c6.svg" alt="\int_a^b \left[-u''(x) + f(x)\right] \delta u(x) \d x = 0\,,"/></p>
+<p><span class="eqno">(3.42.1.3)<a class="headerlink" href="#equation-poisson2" title="Permalink to this equation">¶</a></span><img src="../_images/math/4227e4e7edf984e1b947aad2237114fac8593950.svg" alt="\int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x = 0\,,"/></p>
 </div><p>This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> that is zero at the boundary, and
 thus it implies:</p>
 <div class="math" id="equation-poisson3">
-<p><span class="eqno">(3.42.1.3)<a class="headerlink" href="#equation-poisson3" title="Permalink to this equation">¶</a></span><img src="../_images/math/16b93a0e5691cf5c975a7f3cacbe600da6e87cde.svg" alt="-u''(x) + f(x) = 0\,."/></p>
-</div><p>Now we substitute <a class="reference internal" href="#equation-poisson3">(3.42.1.3)</a> into <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> and obtain:</p>
+<p><span class="eqno">(3.42.1.4)<a class="headerlink" href="#equation-poisson3" title="Permalink to this equation">¶</a></span><img src="../_images/math/5ec6676a8b0012dd537831ce0880b54de17c2cea.svg" alt="u''(x) + f(x) = 0\,."/></p>
+</div><p>Now we substitute <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> into <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> and obtain:</p>
 <div class="math" id="equation-poisson3-boundary">
-<p><span class="eqno">(3.42.1.4)<a class="headerlink" href="#equation-poisson3-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/fd77979b54cd004a21570a7bfd1776c41ac38e6e.svg" alt="[(u'(x) - \hat g(x)) \delta u(x)]_a^b = 0\,."/></p>
-</div><p>Thus <a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> implies both <a class="reference internal" href="#equation-poisson3">(3.42.1.3)</a> and <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a>.
-The equation <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a> holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> (generally
+<p><span class="eqno">(3.42.1.5)<a class="headerlink" href="#equation-poisson3-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/c3a5aa703ba41ee30278d9337110e81be9ffc369.svg" alt="[(u'(x) - g(x)) \delta u(x)]_a^b = 0\,."/></p>
+</div><p>Thus <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> implies both <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> and <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a>.
+The equation <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a> holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> (generally
 not zero at the boundary) and thus it implies:</p>
 <div class="math" id="equation-poisson3-boundary2">
-<p><span class="eqno">(3.42.1.5)<a class="headerlink" href="#equation-poisson3-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/35e2828f5f0577c08f1465980b45561164133cc3.svg" alt="u'(x) - \hat g(x) = 0"/></p>
-</div><p>at the boundary. Thus <img class="math" src="../_images/math/64a05275174b17c074f7402d08858e6165ef8b08.svg" alt="\hat g(x)"/> imposes the Neumann boundary condition, i.e.,
-the value of the derivative <img class="math" src="../_images/math/f2d7616a52afe56f975a5c1f3ee5ae311fbcd730.svg" alt="u'(x) = \hat g(x)"/> at the boundary. This condition
+<p><span class="eqno">(3.42.1.6)<a class="headerlink" href="#equation-poisson3-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/6ef9d3f07d5ceb125fc198fc2912e9a025326b3d.svg" alt="u'(x) - g(x) = 0"/></p>
+</div><p>at the boundary. Thus <img class="math" src="../_images/math/43e03fc05d369d936c2857287cca76cd995ec0ac.svg" alt="g(x)"/> imposes the Neumann boundary condition, i.e.,
+the value of the derivative <img class="math" src="../_images/math/ce84019ce273c836c43064ab299c56fcb1cda9d2.svg" alt="u'(x) = g(x)"/> at the boundary. This condition
 is imposed variationally.</p>
 <p>To impose a Dirichlet boundary condition, we want to impose the value of
-<img class="math" src="../_images/math/9c1f4926c043c6eb440f886fd00ceccbb7f94136.svg" alt="u(x)=\hat u(x)"/> at the boundary for some constant <img class="math" src="../_images/math/ac04df5edc437f1e6a358aefa9c9e11a9cc9e125.svg" alt="\hat u(x)"/>. As such, <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/>
+<img class="math" src="../_images/math/b5053adf7205d25577dd1cb46aa42a2c403f4a98.svg" alt="u(x)=u_0(x)"/> at the boundary for some constant <img class="math" src="../_images/math/73c4ad6a6bb93b8501f0a8a1930b50298fcb756a.svg" alt="u_0(x)"/>. As such, <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/>
 is not allowed to vary at that part of the boundary, which means that the
 variation <img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary. So we restrict the variation
 <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> to be zero at the Dirichlet part of the boundary in
-<a class="reference internal" href="#equation-poisson1">(3.42.1.1)</a> and thus also in <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.4)</a>. This implies that
-<a class="reference internal" href="#equation-poisson3-boundary2">(3.42.1.5)</a> does not hold at the Dirichlet part of the boundary
+<a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> and thus also in <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a>. This implies that
+<a class="reference internal" href="#equation-poisson3-boundary2">(3.42.1.6)</a> does not hold at the Dirichlet part of the boundary
 and we have to set the value <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/> there directly.</p>
+<p>As a particular example, let <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/>. Then the Lagrangian
+<a class="reference internal" href="#equation-poisson0">(3.42.1.1)</a> becomes:</p>
+<div class="math">
+<p><img src="../_images/math/19493b922fa4c797b505d7003af359dadd96a0ba.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
+</div><p>The governing equation <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> is the same:</p>
+<div class="math">
+<p><img src="../_images/math/5ec6676a8b0012dd537831ce0880b54de17c2cea.svg" alt="u''(x) + f(x) = 0\,."/></p>
+</div><p>The boundary term <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a> becomes:</p>
+<div class="math">
+<p><img src="../_images/math/260f463b90eae5b8af11737f28e43f58aa3ac2ab.svg" alt="(u'(b) - g(b)) \delta u(b) = 0\,."/></p>
+</div><p>Which implies <img class="math" src="../_images/math/31273e2335a7297bebe4149f1769ccf3fc4a4274.svg" alt="u'(b) = g(b)"/>.
+The Dirichlet boundary condition is part of the definition of the function
+space <img class="math" src="../_images/math/b0f8ef928c3d8e289ef0298e6c2486bfa12ee377.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}"/>, so all trial functions <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/> that
+one can choose (admissible) and substitute in <img class="math" src="../_images/math/28bd2605cc88c74fcf4ba25eb45a97eb4c48a8cb.svg" alt="L[u]"/> must lie in <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/>. Since
+the value of <img class="math" src="../_images/math/ce0d883ae37e3997f13c0da53e4316aa0ab9dfaa.svg" alt="u(a)"/> is fixed, we always have <img class="math" src="../_images/math/bef5e618e8649551a70eb5750349fe03040513a5.svg" alt="\delta u(a) = 0"/>. On the other
+hand, since <img class="math" src="../_images/math/681779fdf6f02e5c47887998ee4d16ff6e64f4a7.svg" alt="u(b)"/> is not fixed, in general we have <img class="math" src="../_images/math/0ebc07596d00b01814a8b8d59f55b1634ed86e91.svg" alt="\delta u(b) \ne 0"/>.</p>
 </div>
 <div class="section" id="radial-schrodinger-equation">
 <h2>3.42.2. Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
 <p>The derivation is similar as for the Poisson equation, except that we have
-<img class="math" src="../_images/math/ab99d703d31fa8ec47316aa88084e30a85c32dea.svg" alt="\hat g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
+<img class="math" src="../_images/math/2f40e0b601c8909d33e20eaa580dea3cdd2a610b.svg" alt="g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
 to a given value, or, alternatively, that we require the operator to be
 self-adjoint).</p>
 <p>The Lagrangian for the radial Schrödinger equation is:</p>

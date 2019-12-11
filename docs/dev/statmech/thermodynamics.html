@@ -73,9 +73,24 @@
             
   <div class="section" id="thermodynamics">
 <h1>6.1. Thermodynamics<a class="headerlink" href="#thermodynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fundamental-thermodynamic-relation">
+<h2>6.1.1. Fundamental Thermodynamic Relation<a class="headerlink" href="#fundamental-thermodynamic-relation" title="Permalink to this headline">¶</a></h2>
+<p>The first law of thermodynamics is <img class="math" src="../_images/math/61c5738a8712efe69b1af048a97c044651f5e2f8.svg" alt="\d U = \d Q - \d W"/>, where <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/> is the heat
+supplied to the system and <img class="math" src="../_images/math/69d777bf93d65c44f97d80e69361d2e806b421a8.svg" alt="W"/> is the work done by the system.
+The second law of thermodynamics is <img class="math" src="../_images/math/479ead638325ac5a4c1f136c74a06b8fe3949ae7.svg" alt="\d S = {\d Q \over T}"/>. By substituting
+into the first law, and expressing the work <img class="math" src="../_images/math/45d43fc92bd8ea5c078bf73d4aad6be826ba2742.svg" alt="\d W = p \d V"/> using pressure and
+volume, we obtain:</p>
+<div class="math">
+<p><img src="../_images/math/4ec9e8874296008e2e37567f25e1c00958eacebf.svg" alt="\d U = T\d S - p \d V"/></p>
+</div><p>This can then be generalized to:</p>
+<div class="math">
+<p><img src="../_images/math/f4d9befc2709615829326c0083b38a1257e1138e.svg" alt="\d U = T\d S - p \d V + \mu \d N"/></p>
+</div><p>where <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> is the chemical potential and <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> the number of particles in the
+system.</p>
+</div>
 <div class="section" id="thermodynamic-potentials">
-<h2>6.1.1. Thermodynamic Potentials<a class="headerlink" href="#thermodynamic-potentials" title="Permalink to this headline">¶</a></h2>
-<p>We start by writing the internal energy</p>
+<h2>6.1.2. Thermodynamic Potentials<a class="headerlink" href="#thermodynamic-potentials" title="Permalink to this headline">¶</a></h2>
+<p>We start by writing the internal energy (derived in the previous section)</p>
 <div class="math">
 <p><img src="../_images/math/fe3dcf4339aa6711448419be8b5cad6d28216cd1.svg" alt="U=U(S, V, N)=\int(T\d S - p \d V + \mu \d N)"/></p>
 </div><p>as a function of entropy <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/>, volume <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and a number of particles <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/>. Now we
@@ -167,14 +182,98 @@ G(T, p, N) = U - TS + pV = \mu N
 X_2(S, p, \mu) = U + pV-\mu N = TS
 
 X_3(T, p, \mu) = U-TS+pV-\mu N = 0"/></p>
+</div><div class="section" id="other-first-derivatives">
+<h3>Other first derivatives<a class="headerlink" href="#other-first-derivatives" title="Permalink to this headline">¶</a></h3>
+<p>Other commonly used first derivatives are the heat capacity at constant volume:</p>
+<div class="math">
+<p><img src="../_images/math/1cabef3fb81d5d13bf312866c5fe67e65e452231.svg" alt="C_V = \left(\partial U \over \partial T\right)_{V, N}
+    = T \left(\partial S \over \partial T\right)_{V, N}
+    = -T \left(\partial^2 F \over \partial T^2\right)_{V, N}"/></p>
+</div><p>and the heat capacity at constant pressure</p>
+<div class="math">
+<p><img src="../_images/math/5162a31a9961e946c358d1f1992849e50bb0048d.svg" alt="C_p = \left(\partial H \over \partial T\right)_{p, N}
+    = T \left(\partial S \over \partial T\right)_{p, N}
+    = -T \left(\partial^2 G \over \partial T^2\right)_{p, N}"/></p>
+</div><p>Note that these first derivatives are differentiating the thermodynamic
+potential that is not expressed in its canonical variables (the only canonical
+first derivatives are already enumerated in the previous section). In both
+cases the quantity can be expressed as a second derivative of a potential in
+its canonical variables.  As shown below, the canonical second derivatives can
+also be enumerated.</p>
+</div>
+<div class="section" id="second-derivatives">
+<h3>Second derivatives<a class="headerlink" href="#second-derivatives" title="Permalink to this headline">¶</a></h3>
+<p>Here are the most commonly used second derivatives. The particle density:</p>
+<div class="math">
+<p><img src="../_images/math/2c19611436609158be20c9a39a5762a72f3b18e6.svg" alt="n = \left(\partial N \over \partial V\right)_{T, \mu}
+  = -\left(\partial^2 \Omega \over \partial V\partial\mu\right)_{T}
+  = \left(\partial p \over \partial \mu\right)_{T, V}"/></p>
+</div><p>The speed of sound:</p>
+<div class="math">
+<p><img src="../_images/math/74d3c1f3d8288aaa8ebb05365550b374045761e7.svg" alt="c = \sqrt{\left(\partial p \over \partial \rho\right)_{S,N}}
+  = \sqrt{-{V^2\over m}\left(\partial p \over \partial V\right)_{S,N}}
+  = \sqrt{{V^2\over m}\left(\partial^2 U \over \partial V^2\right)_{S,N}}
+  = \sqrt{-v^2\left(\partial p \over \partial v\right)_{S,N}}"/></p>
+</div><p>where <img class="math" src="../_images/math/26c5092b4682d1e23cf892c54e364888b27d0f49.svg" alt="\rho={m \over V}"/> is the density and <img class="math" src="../_images/math/fae0d8660b7c397908907cf92dc108f86e9feac2.svg" alt="v = {V \over m}"/> is the specific
+volume.
+The isothermal speed of sound:</p>
+<div class="math">
+<p><img src="../_images/math/71e374e121c38d9a0ba3c8ebdedcf5095ab23bfb.svg" alt="c_T = \sqrt{\left(\partial p \over \partial \rho\right)_{T,N}}
+  = \sqrt{{V^2\over m}\left(\partial^2 F \over \partial V^2\right)_{T,N}}"/></p>
+</div><p>The adiabatic bulk modulus:</p>
+<div class="math">
+<p><img src="../_images/math/eef562b6cc5a0f3b12d8db5c624ebf297f43870a.svg" alt="B_S = \rho \left(\partial p \over \partial \rho\right)_{S,N}
+      = \rho c^2
+      = V \left(\partial^2 U \over \partial V^2\right)_{S,N}"/></p>
+</div><p>Adiabatic coefficient of compressibility:</p>
+<div class="math">
+<p><img src="../_images/math/c5d884548bb1c9a6daf180345fb3739e9d02f039.svg" alt="\beta_S = {1 \over B_S}
+    = -{1\over V} \left(\partial V \over \partial p\right)_{S,N}
+    = -{1\over V} \left(\partial^2 H \over \partial p^2\right)_{S,N}"/></p>
+</div><p>The isothermal bulk modulus:</p>
+<div class="math">
+<p><img src="../_images/math/a53234368ff435b14008e8ac2a7898d1ad517475.svg" alt="B_T = \rho \left(\partial p \over \partial \rho\right)_{T,N}
+      = \rho c_T^2
+      = V \left(\partial^2 F \over \partial V^2\right)_{T,N}"/></p>
+</div><p>Isothermal coefficient of compressibility:</p>
+<div class="math">
+<p><img src="../_images/math/3318cfee342944175806d4f33d29cfff20e77247.svg" alt="\beta_T = {1 \over B_T}
+    = -{1\over V} \left(\partial V \over \partial p\right)_{T,N}
+    = -{1\over V} \left(\partial^2 G \over \partial p^2\right)_{T,N}"/></p>
+</div><p>The Grüneisen parameter:</p>
+<div class="math">
+<p><img src="../_images/math/6663eca46e6dcf3002b938356bbd4d4c40d604c7.svg" alt="\gamma = V \left(\partial p \over \partial U\right)_{V,N}"/></p>
+</div><p>The coefficient of thermal expansion</p>
+<div class="math">
+<p><img src="../_images/math/59dd3b1008a3ce625893a68d0c65a377977b0b88.svg" alt="\alpha = {1\over V} \left(\partial V \over \partial T\right)_{p,N}
+       = {1\over V} \left(\partial^2 G \over \partial T\partial p\right)_{N}"/></p>
+</div><p>Note: there are three possible second derivatives of the Gibbs free energy
+<img class="math" src="../_images/math/198537a16ef11b05696cd4c4c05f9bc4cb55e066.svg" alt="G(T,p,N)"/> with respect to <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> and <img class="math" src="../_images/math/e5d1ed584f05b4f69e8cd56b95e144968e3e8544.svg" alt="p"/>:</p>
+<div class="math">
+<p><img src="../_images/math/f08a1c18c7ac18a5c9e8d14036c9e39c80b2b31d.svg" alt="\left(\partial^2 G \over \partial T^2\right)_{p, N}
+    = - {C_p \over T}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/2e8f0af23ce656433692bd53e9cff6d2898301ae.svg" alt="\left(\partial^2 G \over \partial T\partial p\right)_{N}
+    = \alpha V"/></p>
+</div><div class="math">
+<p><img src="../_images/math/dcfb8f8c2f380d1a2f08aa0e08622750f0daa1ef.svg" alt="\left(\partial^2 G \over \partial p^2\right)_{T,N}
+    = -\beta_T V"/></p>
+</div><p>Every other second derivative of other thermodynamic potentials can be
+expressed using these three derivatives (i.e., using <img class="math" src="../_images/math/e330bcb575cb43977e4023aa608b9e0bb0b4f816.svg" alt="C_p"/>, <img class="math" src="../_images/math/b82ba6dfb1b5e6c00e647c1307ad786cf0d4fcd5.svg" alt="\alpha"/> and
+<img class="math" src="../_images/math/573cd4b35535185b1f5841b1ad13e7a5359ffc2e.svg" alt="\beta_T"/>). For example:</p>
+<div class="math">
+<p><img src="../_images/math/48e284d736e3865f0de5bfba98497693932d6be4.svg" alt="C_V = C_p - {T V \alpha^2 \over \beta_T}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/14d5c3c806dea5de98b41a6fa8519b6d938ee88b.svg" alt="\beta_S = \beta_T - {T V \alpha^2 \over C_p}"/></p>
 </div></div>
+</div>
 <div class="section" id="examples">
-<h2>6.1.2. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>6.1.3. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="ideal-gas">
 <span id="id1"></span><h3>Ideal Gas<a class="headerlink" href="#ideal-gas" title="Permalink to this headline">¶</a></h3>
 <p>The internal energy as a function of <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/>, <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> is equal to:</p>
 <div class="math" id="equation-ideal-gas-u">
-<p><span class="eqno">(6.1.2.1)<a class="headerlink" href="#equation-ideal-gas-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/98226623f86281a3ab5149a1d6bb0dc891fbeb8a.svg" alt="U(S, V, N) = c_V N k_\mathrm{B} \left({N\Phi\over V}
+<p><span class="eqno">(6.1.3.1)<a class="headerlink" href="#equation-ideal-gas-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/98226623f86281a3ab5149a1d6bb0dc891fbeb8a.svg" alt="U(S, V, N) = c_V N k_\mathrm{B} \left({N\Phi\over V}
     e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}"/></p>
 </div><p>where <img class="math" src="../_images/math/e80f80bd70814c3553968b521ee5a794ffa42079.svg" alt="c_V"/> is the heat capacity at a constant volume (<img class="math" src="../_images/math/d64532133b85bac288fa156deb6a49b218b03991.svg" alt="{3\over 2}"/> for
 monoatomic gases, <img class="math" src="../_images/math/b4430c5ae03c94bbf6876695ec1fe4c1490d14cb.svg" alt="{5\over2}"/> for diatomic gases), <img class="math" src="../_images/math/b59f2c1a1a6aa669b40d7a78029b312d699df0fe.svg" alt="k_\mathrm{B}"/> is the
@@ -185,7 +284,7 @@ statistical physics in order to calculate any of the thermodynamic potentials.</
 <p>Now we calculate the free energy <img class="math" src="../_images/math/0395e1cc4e36c259ab3c006ce603554a6bd665bf.svg" alt="F(T, V, N)"/>. First we must calculate the
 temperature <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>:</p>
 <div class="math" id="equation-ideal-gas-t">
-<p><span class="eqno">(6.1.2.2)<a class="headerlink" href="#equation-ideal-gas-t" title="Permalink to this equation">¶</a></span><img src="../_images/math/c613c0b2093ba049d1ba027f801978559ed993e5.svg" alt="T = \left(\partial U \over \partial S\right)_{V, N} =
+<p><span class="eqno">(6.1.3.2)<a class="headerlink" href="#equation-ideal-gas-t" title="Permalink to this equation">¶</a></span><img src="../_images/math/c613c0b2093ba049d1ba027f801978559ed993e5.svg" alt="T = \left(\partial U \over \partial S\right)_{V, N} =
 
     = {\partial \over \partial S} \left(
         c_V N k_\mathrm{B} \left({N\Phi\over V}
@@ -193,13 +292,13 @@ temperature <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d
 
     = \left({N\Phi\over V}
         e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,."/></p>
-</div><p>In order to calculate the the free energy, we must use <a class="reference internal" href="#equation-ideal-gas-t">(6.1.2.2)</a> to
+</div><p>In order to calculate the the free energy, we must use <a class="reference internal" href="#equation-ideal-gas-t">(6.1.3.2)</a> to
 eliminate <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/>:</p>
 <div class="math" id="equation-ideal-gas-s">
-<p><span class="eqno">(6.1.2.3)<a class="headerlink" href="#equation-ideal-gas-s" title="Permalink to this equation">¶</a></span><img src="../_images/math/f87049ef2b929fa0d21c07dea3e25543fd997ea7.svg" alt="S = N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)"/></p>
+<p><span class="eqno">(6.1.3.3)<a class="headerlink" href="#equation-ideal-gas-s" title="Permalink to this equation">¶</a></span><img src="../_images/math/f87049ef2b929fa0d21c07dea3e25543fd997ea7.svg" alt="S = N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)"/></p>
 </div><p>and then express <img class="math" src="../_images/math/c8c9187df79c442c27ef6ba80826246731c618ef.svg" alt="F"/> as a function of <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>, <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> only:</p>
 <div class="math" id="equation-ideal-gas-f">
-<p><span class="eqno">(6.1.2.4)<a class="headerlink" href="#equation-ideal-gas-f" title="Permalink to this equation">¶</a></span><img src="../_images/math/04813c490ecafda0044351d87703d94cd2cf7df8.svg" alt="F(T, V, N) = U - TS =
+<p><span class="eqno">(6.1.3.4)<a class="headerlink" href="#equation-ideal-gas-f" title="Permalink to this equation">¶</a></span><img src="../_images/math/04813c490ecafda0044351d87703d94cd2cf7df8.svg" alt="F(T, V, N) = U - TS =
 
     = c_V N k_\mathrm{B} \left({N\Phi\over V}
     e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
@@ -227,7 +326,7 @@ S = c_V N k_\mathrm{B} \log U + C
 
 U(S, V, N) = f(V, N) \left(e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,,"/></p>
 </div><p>we can see, that we recovered the correct formula for <img class="math" src="../_images/math/640bc3c32e3658a44d673f4747f7a8c4a9b99877.svg" alt="U(S, V, N)"/> except an
-arbitrary function <img class="math" src="../_images/math/fee51b57dece2d9625c6d4b861b743e19d31a568.svg" alt="f(V, N)"/> of <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/>. Compared to <a class="reference internal" href="#equation-ideal-gas-u">(6.1.2.1)</a> we
+arbitrary function <img class="math" src="../_images/math/fee51b57dece2d9625c6d4b861b743e19d31a568.svg" alt="f(V, N)"/> of <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> and <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/>. Compared to <a class="reference internal" href="#equation-ideal-gas-u">(6.1.3.1)</a> we
 can see that it must be <img class="math" src="../_images/math/88a86d3af2ad1322d77f6aa7b837c6d07213d85f.svg" alt="f(V, N) = c_V N k_\mathrm{B} \left({N\Phi\over V}
 \right)^{1\over c_V}"/>, but this information got lost. For this reason, only
 <img class="math" src="../_images/math/4e6581c8ed2105997184396505eaf7174c044f34.svg" alt="U=U(S, V, N)"/> as well as <img class="math" src="../_images/math/5c2b8ec246ce4332888808cf25165813de12178b.svg" alt="F=F(T, V, N)"/>, that we just calculated, are
@@ -249,9 +348,9 @@ N)"/> is not and it does not contain full information.</p>
         =
 
     = N k_\mathrm{B} \log \left({VT^{c_V}\over N\Phi}\right)\,,"/></p>
-</div><p>which is the same equation as <a class="reference internal" href="#equation-ideal-gas-s">(6.1.2.3)</a>. From this, we express <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>, we
-get <a class="reference internal" href="#equation-ideal-gas-t">(6.1.2.2)</a>. Finally, we can calculate the internal energy and
-substitute <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> for <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> using <a class="reference internal" href="#equation-ideal-gas-t">(6.1.2.2)</a>:</p>
+</div><p>which is the same equation as <a class="reference internal" href="#equation-ideal-gas-s">(6.1.3.3)</a>. From this, we express <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>, we
+get <a class="reference internal" href="#equation-ideal-gas-t">(6.1.3.2)</a>. Finally, we can calculate the internal energy and
+substitute <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> for <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> using <a class="reference internal" href="#equation-ideal-gas-t">(6.1.3.2)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/f3dabf3749f1f2f31200def4e809a9d5660567c7.svg" alt="U(S, V, N) = F + TS =
 
@@ -271,7 +370,7 @@ substitute <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d1
 
     = c_V N k_\mathrm{B} \left({N\Phi\over V}
         e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}\,."/></p>
-</div><p>This is the same equation as <a class="reference internal" href="#equation-ideal-gas-u">(6.1.2.1)</a>. This shows that all
+</div><p>This is the same equation as <a class="reference internal" href="#equation-ideal-gas-u">(6.1.3.1)</a>. This shows that all
 thermodynamic potentials contain the same information and can be converted to
 one another using the Legendre transformation.</p>
 <p>Note: in equations like <img class="math" src="../_images/math/3bad64d61868eb78be39efae7fa2c82f821ea896.svg" alt="F(T, V, N) = U - TS"/>, we can use any expressions for
@@ -297,7 +396,7 @@ N)"/> is the natural choice:</p>
 </div><p>and we get the ideal gas law <img class="math" src="../_images/math/002c15b57a2c38f76cb2724103aebe1e30677946.svg" alt="p V = N k_\mathrm{B} T"/>. The Gibbs energy is
 equal to:</p>
 <div class="math" id="equation-ideal-gas-g">
-<p><span class="eqno">(6.1.2.5)<a class="headerlink" href="#equation-ideal-gas-g" title="Permalink to this equation">¶</a></span><img src="../_images/math/135f11d8ce1f0d79b7fc7c348d1b270fe8ddd178.svg" alt="G(T, p, N) = U - TS + pV = F + pV =
+<p><span class="eqno">(6.1.3.5)<a class="headerlink" href="#equation-ideal-gas-g" title="Permalink to this equation">¶</a></span><img src="../_images/math/135f11d8ce1f0d79b7fc7c348d1b270fe8ddd178.svg" alt="G(T, p, N) = U - TS + pV = F + pV =
 
     = N k_\mathrm{B} T \left(c_V
         - \log \left({VT^{c_V}\over N\Phi}\right) \right)
@@ -329,7 +428,7 @@ V = \left({N^{c_V+1} k_\mathrm{B}^{c_V}\over p^{c_V}}\Phi
     e^{S\over N k_\mathrm{B}}\right)^{1\over c_V+1}"/></p>
 </div><p>now we can calculate <img class="math" src="../_images/math/6c5211fb9cddbd158bb15ebecc01d49798dcfd01.svg" alt="H(S, p, N)"/>:</p>
 <div class="math" id="equation-ideal-gas-h">
-<p><span class="eqno">(6.1.2.6)<a class="headerlink" href="#equation-ideal-gas-h" title="Permalink to this equation">¶</a></span><img src="../_images/math/5f5fb1e7111c01e612e58afb65176abc85ae23e1.svg" alt="H(S, p, N) = U + pV =
+<p><span class="eqno">(6.1.3.6)<a class="headerlink" href="#equation-ideal-gas-h" title="Permalink to this equation">¶</a></span><img src="../_images/math/5f5fb1e7111c01e612e58afb65176abc85ae23e1.svg" alt="H(S, p, N) = U + pV =
 
     = c_V N k_\mathrm{B} \left({N\Phi\over V}
     e^{S\over N k_\mathrm{B}}\right)^{1\over c_V}
@@ -351,7 +450,7 @@ V = \left({N^{c_V+1} k_\mathrm{B}^{c_V}\over p^{c_V}}\Phi
     = {1\over N k_\mathrm{B}}
         {\partial \over \partial T}\left(c_V N k_\mathrm{B} T\right)
     = c_V"/></p>
-</div><p>This provides proof that the <img class="math" src="../_images/math/e80f80bd70814c3553968b521ee5a794ffa42079.svg" alt="c_V"/> in <a class="reference internal" href="#equation-ideal-gas-u">(6.1.2.1)</a> is indeed the specific
+</div><p>This provides proof that the <img class="math" src="../_images/math/e80f80bd70814c3553968b521ee5a794ffa42079.svg" alt="c_V"/> in <a class="reference internal" href="#equation-ideal-gas-u">(6.1.3.1)</a> is indeed the specific
 heat capacity at a constant volume.</p>
 <p>The specific heat capacity at a constant pressure can be calculated as:</p>
 <div class="math">
@@ -364,7 +463,7 @@ heat capacity at a constant volume.</p>
     = {1\over N k_\mathrm{B}}
         {\partial \over \partial T}\left((c_V+1) N k_\mathrm{B} T\right)
     = c_V+1\,."/></p>
-</div><p>Using this relation <img class="math" src="../_images/math/4c958afd553a4d2e03f01c775edb015e54fe789c.svg" alt="c_p = c_V + 1"/> we can then express <a class="reference internal" href="#equation-ideal-gas-g">(6.1.2.5)</a>:</p>
+</div><p>Using this relation <img class="math" src="../_images/math/4c958afd553a4d2e03f01c775edb015e54fe789c.svg" alt="c_p = c_V + 1"/> we can then express <a class="reference internal" href="#equation-ideal-gas-g">(6.1.3.5)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/2301ea85e623e68d3b0d5b6820312f1178b83627.svg" alt="G(T, p, N)
     = N k_\mathrm{B} T \left((c_V + 1)
@@ -372,7 +471,7 @@ heat capacity at a constant volume.</p>
 
     = N k_\mathrm{B} T \left(c_p
         - \log \left({k_\mathrm{B} T^{c_p}\over p\Phi}\right) \right)\,,"/></p>
-</div><p>and <a class="reference internal" href="#equation-ideal-gas-h">(6.1.2.6)</a> as:</p>
+</div><p>and <a class="reference internal" href="#equation-ideal-gas-h">(6.1.3.6)</a> as:</p>
 <div class="math">
 <p><img src="../_images/math/7c929328e31e98b15d1f166c2bebc81833f00f37.svg" alt="H(S, p, N)
   = (c_V+1) N k_\mathrm{B} \left({ p\Phi \over k_\mathrm{B} }
@@ -397,7 +496,7 @@ potential:</p>
 <p><img src="../_images/math/4f83c366d9e4fcfb411b84f503d0d3c3e784c780.svg" alt="N = {V T^{c_V} \over \Phi e^{c_V+1-{\mu\over k_\mathrm{B} T}}}"/></p>
 </div><p>Now we can calculate <img class="math" src="../_images/math/0ef0824a32c8bd6b83e338a3a7179546f0855ab4.svg" alt="\Omega(T, V, \mu)"/>:</p>
 <div class="math" id="equation-ideal-gas-omega">
-<p><span class="eqno">(6.1.2.7)<a class="headerlink" href="#equation-ideal-gas-omega" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b17fd72b21ff87be889d87a2971463f99a0d2d0.svg" alt="\Omega(T, V, \mu) = U - TS - \mu N = F - \mu N =
+<p><span class="eqno">(6.1.3.7)<a class="headerlink" href="#equation-ideal-gas-omega" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b17fd72b21ff87be889d87a2971463f99a0d2d0.svg" alt="\Omega(T, V, \mu) = U - TS - \mu N = F - \mu N =
 
     = N k_\mathrm{B} T \left(c_V
         - \log \left({VT^{c_V}\over N\Phi}\right) \right)
@@ -426,8 +525,13 @@ potential:</p>
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">6.1. Thermodynamics</a><ul>
-<li><a class="reference internal" href="#thermodynamic-potentials">6.1.1. Thermodynamic Potentials</a></li>
-<li><a class="reference internal" href="#examples">6.1.2. Examples</a><ul>
+<li><a class="reference internal" href="#fundamental-thermodynamic-relation">6.1.1. Fundamental Thermodynamic Relation</a></li>
+<li><a class="reference internal" href="#thermodynamic-potentials">6.1.2. Thermodynamic Potentials</a><ul>
+<li><a class="reference internal" href="#other-first-derivatives">Other first derivatives</a></li>
+<li><a class="reference internal" href="#second-derivatives">Second derivatives</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">6.1.3. Examples</a><ul>
 <li><a class="reference internal" href="#ideal-gas">Ideal Gas</a></li>
 </ul>
 </li>

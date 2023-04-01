@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.36. Groups &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.37. Wigner D Function" href="wigner.html" />
@@ -62,7 +64,8 @@
           <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.36. </span>Groups</a></li> 
       </ul>
     </div>  
 
@@ -71,65 +74,65 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="groups">
-<h1>3.36. Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
+  <section id="groups">
+<h1><span class="section-number">3.36. </span>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
 <p>These are notes of Karel Výborný and Ondřej Čertík on the group theory as a
 result of the first VDNK (Výprava do neznámých krajů) held between October 30
 and November 2, 2006 in Prague.  So that the next time we look at it we should
 be able to quickly recover our forgotten ideas.</p>
-<div class="section" id="theory">
-<h2>3.36.1. Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
+<section id="theory">
+<h2><span class="section-number">3.36.1. </span>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
 <p>Definition of a group:</p>
 <blockquote>
 <div><ul class="simple">
-<li>I1: <img class="math" src="../_images/math/30776bf8d00bca8023057c763fda4fa9ebd1a724.svg" alt="x,y \in G  \Rightarrow  xy \in G"/></li>
-<li>I2: there exist <img class="math" src="../_images/math/dbd8f4c70b4bb981a710f0e5cc40808cd1523cfc.svg" alt="e"/> such that <img class="math" src="../_images/math/4c04ab0879c6ed234a99425c2b3f0e1d0ee827dc.svg" alt="ex=xe=x"/> for each <img class="math" src="../_images/math/d4bf696e1dfd07ee951a88397c778a2d6840ad23.svg" alt="x\in G"/></li>
-<li>I3: there exist <img class="math" src="../_images/math/dbfa786d9801051132c89534b7670a8fb0616f3e.svg" alt="x^{-1}"/> such that <img class="math" src="../_images/math/ffeb9dbc0531e563a0a0b044cd084f20794a97d4.svg" alt="xx^{-1}=x^{-1}x=e"/> for each <img class="math" src="../_images/math/d4bf696e1dfd07ee951a88397c778a2d6840ad23.svg" alt="x\in G"/></li>
-<li>I4: <img class="math" src="../_images/math/b571111920aa40a410e4c571c76061f3df6c22cf.svg" alt="(xy)z=x(yz)"/> for each <img class="math" src="../_images/math/82f57a05e035cf40975a89ce0748f7970679cdcc.svg" alt="x,y,z\in G"/></li>
+<li><p>I1: <img class="math" src="../_images/math/7ef59f5fbd9723ded1990fd136f98a8b9856d897.svg" alt="x,y \in G  \Rightarrow  xy \in G"/></p></li>
+<li><p>I2: there exist <img class="math" src="../_images/math/a951f919bde2f1ca341e453850f6769201b700b9.svg" alt="e"/> such that <img class="math" src="../_images/math/be0d78f8bec3a8c0699b17b589ee124aec9e79c7.svg" alt="ex=xe=x"/> for each <img class="math" src="../_images/math/82f462ffe45316d31057f829a6b76a0f299194d3.svg" alt="x\in G"/></p></li>
+<li><p>I3: there exist <img class="math" src="../_images/math/e746fb3d318b6675f456403b3d272b86b2517bad.svg" alt="x^{-1}"/> such that <img class="math" src="../_images/math/14fb6e5c6805e0ac5f9b4e80502263da467da889.svg" alt="xx^{-1}=x^{-1}x=e"/> for each <img class="math" src="../_images/math/82f462ffe45316d31057f829a6b76a0f299194d3.svg" alt="x\in G"/></p></li>
+<li><p>I4: <img class="math" src="../_images/math/a4bd88f8f39470095aa7eb281d00b62a3e05f917.svg" alt="(xy)z=x(yz)"/> for each <img class="math" src="../_images/math/b6bb9ab5d62a9ffcef896651859091782b1ed09a.svg" alt="x,y,z\in G"/></p></li>
 </ul>
 </div></blockquote>
-<p>Every finite group is isomorphic to a subgroup of <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/> (permutations).</p>
-<div class="section" id="representation">
+<p>Every finite group is isomorphic to a subgroup of <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/> (permutations).</p>
+<section id="representation">
 <h3>Representation<a class="headerlink" href="#representation" title="Permalink to this headline">¶</a></h3>
-<p>Set of linear operators <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/> (for each <img class="math" src="../_images/math/d4bf696e1dfd07ee951a88397c778a2d6840ad23.svg" alt="x\in G"/> there is one <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/>)</p>
+<p>Set of linear operators <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/> (for each <img class="math" src="../_images/math/82f462ffe45316d31057f829a6b76a0f299194d3.svg" alt="x\in G"/> there is one <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/>)</p>
 <div class="math">
-<p><img src="../_images/math/9526aa5b102fc933af45e489a9c878791c20de14.svg" alt="T(x)T(y)=T(xy),\quad T(e)={\hbox{\dsrom 1}}\,."/></p>
-</div><p><img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/> fulfills all the group axioms I1, I2, I3, I4. The requirement <img class="math" src="../_images/math/ed445277a5b2f8740c30941870de441bcda8c8fc.svg" alt="T(e)=1"/> is
+<p><img src="../_images/math/b9fb28fbc1bf8beaf6deb88abe5ef1303dbbc5d0.svg" alt="T(x)T(y)=T(xy),\quad T(e)={\hbox{\dsrom 1}}\,."/></p>
+</div><p><img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/> fulfills all the group axioms I1, I2, I3, I4. The requirement <img class="math" src="../_images/math/cc73baafaf28f52c28b4550f17dedc1d26736aad.svg" alt="T(e)=1"/> is
 non-trivial, consider for example the following 4 matrices</p>
 <div class="math">
-<p><img src="../_images/math/c2a162d80df82528507aa81e12529f0be4348d81.svg" alt="T(\bsigma)=\begin{pmatrix}
+<p><img src="../_images/math/f86466b89bd3ed9b48353408919150590c3f2da6.svg" alt="T(\bsigma)=\begin{pmatrix}
     \bsigma &amp; 0 \\
     0       &amp; 0 \\
             \end{pmatrix}, \quad T(e)=\begin{pmatrix}
                 \hbox{\dsrom 1} &amp; 0 \\
                 0               &amp; 0 \\
                             \end{pmatrix}\,,"/></p>
-</div><p>that fulfill <img class="math" src="../_images/math/e451799d92d8b38ef40aa907befcffe2c0ab1303.svg" alt="T(x)T(y)=T(xy)"/> but not <img class="math" src="../_images/math/ddb9f906a4f14c2c2254466aaec3defec1e99be9.svg" alt="T(e)={\hbox{\dsrom 1}}"/>.</p>
-<p>The representation <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/> is said to be <em>faithful</em> if there is a one-to-one
-relationship between <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/> and <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> (an isomorphism).</p>
-<p>Equivalent representations <img class="math" src="../_images/math/e3a44ffc9ce44c769229b7f03357455bf6b2805e.svg" alt="T_1"/> and <img class="math" src="../_images/math/f60c2718cbceececce0cf4b5a1d702fb67de64dc.svg" alt="T_2"/>: there exist <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> such that
-<img class="math" src="../_images/math/768d03078dde110dd5dc37293d7d61be06ac7848.svg" alt="T_2=ST_1(x)S^{-1}"/> for each <img class="math" src="../_images/math/d4bf696e1dfd07ee951a88397c778a2d6840ad23.svg" alt="x\in G"/>.</p>
-<p>Reducible representation <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/>: there exist an equivalent representation that
+</div><p>that fulfill <img class="math" src="../_images/math/6a2a89f47f69041a490e28891c5b349016884780.svg" alt="T(x)T(y)=T(xy)"/> but not <img class="math" src="../_images/math/a2941b5bbdc25bfe918e308ba28956ac8003bb45.svg" alt="T(e)={\hbox{\dsrom 1}}"/>.</p>
+<p>The representation <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/> is said to be <em>faithful</em> if there is a one-to-one
+relationship between <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/> and <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> (an isomorphism).</p>
+<p>Equivalent representations <img class="math" src="../_images/math/90a0f0b86a3733be1df23ebb3db3f1804e2712d9.svg" alt="T_1"/> and <img class="math" src="../_images/math/602623f16630bc3ac1f8eda11c304d50c949402f.svg" alt="T_2"/>: there exist <img class="math" src="../_images/math/802402937724139288418cbbd3d6f444d8e1a151.svg" alt="S"/> such that
+<img class="math" src="../_images/math/1dfe32bf9eea439c70113d1205ea90c55f5a7630.svg" alt="T_2=ST_1(x)S^{-1}"/> for each <img class="math" src="../_images/math/82f462ffe45316d31057f829a6b76a0f299194d3.svg" alt="x\in G"/>.</p>
+<p>Reducible representation <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/>: there exist an equivalent representation that
 is diagonal:</p>
 <div class="math" id="equation-eq-1-1">
-<p><span class="eqno">(3.36.1.1)<a class="headerlink" href="#equation-eq-1-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b91a5b2dd7cc4bfcab9e5dda7298974f6854d30.svg" alt="T'(x)=ST(x)S^{-1}=\begin{pmatrix}
+<p><span class="eqno">(3.36.1.1)<a class="headerlink" href="#equation-eq-1-1" title="Permalink to this equation">¶</a></span><img src="../_images/math/832d1533b203d669b671c55db95f99874d26c5a9.svg" alt="T'(x)=ST(x)S^{-1}=\begin{pmatrix}
     T_1' &amp; 0 \\
     0    &amp; T_2' \\
     \end{pmatrix}\,, \qquad \forall x\in G\,."/></p>
-</div><p>We say that <img class="math" src="../_images/math/d2d9b71fc72dffadebe42792bf50c8a8edd7394c.svg" alt="T'"/> is a direct sum of <img class="math" src="../_images/math/c7092c4f1730ac71e22ca749be09b173a4caa263.svg" alt="T_1'"/> and <img class="math" src="../_images/math/90ed5b1c659cd597585a7d03cda44507a2b375d8.svg" alt="T_2'"/>: <img class="math" src="../_images/math/71e89ec99ff531874e02cb15f643f2ab57359085.svg" alt="T'=T_1'\oplus T_2'"/>.</p>
+</div><p>We say that <img class="math" src="../_images/math/113aa323df70a97d5952d956e8c484019ad408bf.svg" alt="T'"/> is a direct sum of <img class="math" src="../_images/math/be44796230e6b2804cb78befb483f5dfde19ffe9.svg" alt="T_1'"/> and <img class="math" src="../_images/math/4f7f3dc216a83bc6ed2735bfaa732012a2a344d8.svg" alt="T_2'"/>: <img class="math" src="../_images/math/13703f55ddd3baedd7daa6c64e03561c7bf1e15d.svg" alt="T'=T_1'\oplus T_2'"/>.</p>
 <p>Irreducible representation: is not reducible.</p>
-<p>Conjugate element: <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> is conjugate to <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> (<img class="math" src="../_images/math/59e8f88072769b2859a1fc2ad6f4b0af26a83de9.svg" alt="x\sim y"/>) if there exist <img class="math" src="../_images/math/fbc61f23cc2b888220006641e38ddc9cf143e1d8.svg" alt="c"/> such that:</p>
+<p>Conjugate element: <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> is conjugate to <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/> (<img class="math" src="../_images/math/fe92dc8f2663edb35ca41091c30ec30783a7b90d.svg" alt="x\sim y"/>) if there exist <img class="math" src="../_images/math/126df75c6af8ea7f4b2fd80e7c903eb6be492525.svg" alt="c"/> such that:</p>
 <div class="math">
-<p><img src="../_images/math/948135003bf9065b0fca15a8d34028545049c7d9.svg" alt="x=cyc^{-1}"/></p>
-</div><p>if <img class="math" src="../_images/math/59e8f88072769b2859a1fc2ad6f4b0af26a83de9.svg" alt="x\sim y"/> and <img class="math" src="../_images/math/9681b91a5a581714bf2b98d9598bc5bc7f6f2864.svg" alt="y\sim z"/> then <img class="math" src="../_images/math/15c94c3c9287decded39d428c37c6d2e33bd749b.svg" alt="x\sim z"/>.</p>
+<p><img src="../_images/math/d53a8fa1943d6245f5d8c25cff34f2732f2f670d.svg" alt="x=cyc^{-1}"/></p>
+</div><p>if <img class="math" src="../_images/math/fe92dc8f2663edb35ca41091c30ec30783a7b90d.svg" alt="x\sim y"/> and <img class="math" src="../_images/math/f29157b85cc8413245156199cc544f3afd5ec99e.svg" alt="y\sim z"/> then <img class="math" src="../_images/math/dced25e9ff53aecca1240cb1258743d457526d28.svg" alt="x\sim z"/>.</p>
 <p>Conjugate class: elements which are all conjugate to each other</p>
-<p>No element may belong to more than one class <img class="math" src="../_images/math/e323046a904608dae5af6282ee1fb55722669fbf.svg" alt="\Rightarrow"/> every group may be
+<p>No element may belong to more than one class <img class="math" src="../_images/math/1e60581466f889d728be506f7ccca81e59c964e2.svg" alt="\Rightarrow"/> every group may be
 broken up into separate classes.</p>
-<p>Character <img class="math" src="../_images/math/90b2558db030d6f6b80c412a55a99e89d97073d0.svg" alt="\chi"/> of the representation <img class="math" src="../_images/math/e3e06ea859a26d9c5eefed113ac889253dbb8d3c.svg" alt="T(x)"/>: set of numbers <img class="math" src="../_images/math/be05554c85a5398b86ebbcc6a580498adc83cddc.svg" alt="\chi(x)=\Tr
-T(x)"/> as the group element <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> runs through the group.</p>
+<p>Character <img class="math" src="../_images/math/62e38649630cc3d82cd8219da3365b6340064c5f.svg" alt="\chi"/> of the representation <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/>: set of numbers <img class="math" src="../_images/math/c44fd806e0937ea0415821bb0365eaca69f6955c.svg" alt="\chi(x)=\Tr
+T(x)"/> as the group element <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> runs through the group.</p>
 <p>Equivalent representations have the same character:</p>
 <div class="math">
-<p><img src="../_images/math/adcd7f64c30fede047e9fa8818849c2c1d264dcb.svg" alt="\chi'(x)=\Tr T'(x)=\Tr ST(x)S^{-1}=\Tr T(x)=\chi(x)"/></p>
+<p><img src="../_images/math/b625d87a923b567dd07f0757e31c0482123f6f5e.svg" alt="\chi'(x)=\Tr T'(x)=\Tr ST(x)S^{-1}=\Tr T(x)=\chi(x)"/></p>
 </div><p>Representations having the same character are equivalent.</p>
 <p>Proof: Characters can be thought of as elements of a q-dimensional vector space
 where q is the number of conjugacy classes. Using the orthogonality relations
@@ -142,42 +145,41 @@ the sum of their characters, from linear algebra, we see they are equivalent.</p
 <p>Maschke’s theorem: for finite groups, every class of equivalent representations
 contains unitary representations. The theorem is also true for most infinite
 groups of interest in physics.</p>
-<p>Let <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> be a reducible representation, then:</p>
+<p>Let <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/> be a reducible representation, then:</p>
 <div class="math">
-<p><img src="../_images/math/fd4e92573e190e735032c8dd4d58801ef52e466b.svg" alt="T=m_1T^{(1)} \oplus m_2T^{(2)} \oplus m_3T^{(3)}\oplus \cdots"/></p>
-</div><p>where <img class="math" src="../_images/math/bf610d548d24f194ccb2974d1006e950177bfd60.svg" alt="T^{(1)}"/>, <img class="math" src="../_images/math/83cbed55fd3cb479dfb48b02940ac646b021bb40.svg" alt="T^{(2)}"/>, <img class="math" src="../_images/math/312d099fab5dccf218e344ed9fe78424d3ec10a1.svg" alt="T^{(3)}"/> dots are all the inequivalent
-irreducible representations and <img class="math" src="../_images/math/dee903d105bde0109b139f6f0946e46818c9ccf9.svg" alt="m_\alpha"/> (<img class="math" src="../_images/math/bf89a90477b57e85f97687f2594a8cebe98df2c7.svg" alt="\alpha=1,2,3,\dots"/>) gives the
-number of times that the irreducible representation <img class="math" src="../_images/math/03663829830f32f7216ff9d1daa138a09bf9b913.svg" alt="T^{(\alpha)}"/> occurs in
+<p><img src="../_images/math/c5461cdfa57fbabe46acbb14b1a2fcd263ad1199.svg" alt="T=m_1T^{(1)} \oplus m_2T^{(2)} \oplus m_3T^{(3)}\oplus \cdots"/></p>
+</div><p>where <img class="math" src="../_images/math/869ecaa14c7b5716b3074c746105688e4ad9cb86.svg" alt="T^{(1)}"/>, <img class="math" src="../_images/math/21674f20ec065a8af88159990772b155ce7fe394.svg" alt="T^{(2)}"/>, <img class="math" src="../_images/math/d7866c3e13ff474e324df4c79221ea381fbb7efe.svg" alt="T^{(3)}"/> dots are all the inequivalent
+irreducible representations and <img class="math" src="../_images/math/c1f1cf5819ea98095e6bca6f9f1e0601b419ff12.svg" alt="m_\alpha"/> (<img class="math" src="../_images/math/572566a6dd80efa0e0311c00c2ee04509aee05f3.svg" alt="\alpha=1,2,3,\dots"/>) gives the
+number of times that the irreducible representation <img class="math" src="../_images/math/835f4bdf3689c02ebd451e86c3842ad8b34f6813.svg" alt="T^{(\alpha)}"/> occurs in
 the reduction.</p>
 <p>Similar relation holds for group characters:</p>
 <div class="math">
-<p><img src="../_images/math/338b3e4a74afec2645ec3c53ddf3a317c418d8c1.svg" alt="\chi=m_1\chi^{(1)} + m_2\chi^{(2)} + m_3\chi^{(3)} + \cdots"/></p>
-</div><p>and it can be shown <a class="reference internal" href="#elliott" id="id1">[Elliott]</a> (eq. 4.28, page 63):</p>
+<p><img src="../_images/math/fe737ddd0f6134fbd4607dec48acd482e022b327.svg" alt="\chi=m_1\chi^{(1)} + m_2\chi^{(2)} + m_3\chi^{(3)} + \cdots"/></p>
+</div><p>and it can be shown <a class="reference internal" href="#elliott" id="id1"><span>[Elliott]</span></a> (eq. 4.28, page 63):</p>
 <div class="math">
-<p><img src="../_images/math/4e50e2385e405895ab4ef8410c89776d25c0a524.svg" alt="m_\alpha={1\over g}\sum_{x\in G} \chi^{(\alpha)*}(x)\chi(x)=
+<p><img src="../_images/math/627855c03cfa5445108935c824f9b8a740fe87e5.svg" alt="m_\alpha={1\over g}\sum_{x\in G} \chi^{(\alpha)*}(x)\chi(x)=
 
 = {1\over g}\sum_{p} c_p\chi^{(\alpha)*}_p\chi_p"/></p>
-</div><p>where <img class="math" src="../_images/math/7e0d4754dd9ac070057f361bb656a5190eb08fb3.svg" alt="c_p"/> is the number of elements in the class <img class="math" src="../_images/math/e5d1ed584f05b4f69e8cd56b95e144968e3e8544.svg" alt="p"/>, <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> is the number of
-elements in <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/> (the order of the group).</p>
-<div class="section" id="example">
+</div><p>where <img class="math" src="../_images/math/2d27c42f3ebeb8b80430a2597164f63c58738be5.svg" alt="c_p"/> is the number of elements in the class <img class="math" src="../_images/math/5c1c36d27e644f8fe00b58ddfc901826b621f5ef.svg" alt="p"/>, <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> is the number of
+elements in <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/> (the order of the group).</p>
+<section id="example">
 <h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
-<p>Consider the <img class="math" src="../_images/math/8473c0b526b6ae6dc960307a61b74bea44b9b6fb.svg" alt="S_3"/> permutation group. The character table is:</p>
+<p>Consider the <img class="math" src="../_images/math/c2df94f7698ff23f40599a1225c941567ce77027.svg" alt="S_3"/> permutation group. The character table is:</p>
 <div class="math">
-<p><img src="../_images/math/f3c1216cf2e0c74c4d9cfd350bc4c18d459f7218.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/6ba40aa983b182034beb6852f1f7fb60be85d8c3.svg" alt="\begin{array}{c|ccc}
 S_3    &amp; e &amp; 3 (1 2) &amp; 2 (1 2 3) \\
 \hline
  A_1   &amp; 1 &amp;   1     &amp;  1 \\
  A_2   &amp; 1 &amp;  -1     &amp;  1 \\
   E    &amp; 2 &amp;   0     &amp; -1 \\
 \end{array}"/></p>
-</div><p>From the table we read <img class="math" src="../_images/math/3dd195f1c9c2325e5c54615cf60441f3fff915e4.svg" alt="c_1 = 1"/>, <img class="math" src="../_images/math/b3637ea4e8cb0146d04519425cbd646162983e3a.svg" alt="c_2 = 3"/>, <img class="math" src="../_images/math/0985c351ed1645595963245b5ec61319545b1660.svg" alt="c_3 = 2"/> and
-<img class="math" src="../_images/math/c05392e0c53f37d32775d87aa44d75dafec38db8.svg" alt="g = c_1 + c_2 + c_3 = 1 + 3 + 2 = 6"/>. There are 3 classes and 3 irreducible
+</div><p>From the table we read <img class="math" src="../_images/math/69c64792c4b8eaea456212621062c4999e4c1d91.svg" alt="c_1 = 1"/>, <img class="math" src="../_images/math/5053351bf05101e9f79380a42bded126816b78e9.svg" alt="c_2 = 3"/>, <img class="math" src="../_images/math/fb97a5c4cd87404a003daa9630cc1d02d01d7ff3.svg" alt="c_3 = 2"/> and
+<img class="math" src="../_images/math/ed64ffff13f10f14d1a98d810e675f195b544fa7.svg" alt="g = c_1 + c_2 + c_3 = 1 + 3 + 2 = 6"/>. There are 3 classes and 3 irreducible
 representations.</p>
-<dl class="docutils">
-<dt>Case I</dt>
-<dd><p class="first">We are given a representation given by the following matrices:</p>
+<dl>
+<dt>Case I</dt><dd><p>We are given a representation given by the following matrices:</p>
 <div class="math">
-<p><img src="../_images/math/31bae332eb95782fd140a1b84f83cce19d7853de.svg" alt="e = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
+<p><img src="../_images/math/ad102a6b4df76b14738f5c6e751281ad24e4eaed.svg" alt="e = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = \half\begin{pmatrix} 1 &amp; -\sqrt{3} \\ -\sqrt{3} &amp; -1 \end{pmatrix},
     \quad\quad
 b = \half\begin{pmatrix} 1 &amp; \sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix},
@@ -187,149 +189,146 @@ d = \half\begin{pmatrix} -1 &amp; \sqrt{3} \\ -\sqrt{3} &amp; -1 \end{pmatrix},
     \quad\quad
 f = \half\begin{pmatrix} -1 &amp; -\sqrt{3} \\ \sqrt{3} &amp; -1 \end{pmatrix}."/></p>
 </div><p>These 6 matrices belong to the following three classes
-<img class="math" src="../_images/math/3b042ad23fae0c472126a7b2169e1caf86155b4f.svg" alt="\{e\}"/>, <img class="math" src="../_images/math/1edc9f3505c1fd30cfd2db6547a0c7be372f95ce.svg" alt="\{a, b, c\}"/>, <img class="math" src="../_images/math/ce7c198821cfcc4f69736f3c9239063504f0aa49.svg" alt="\{d, f\}"/> and the corresponding characters for
+<img class="math" src="../_images/math/dc5a0e612500768799038edbcb67c9ca21d2cf9f.svg" alt="\{e\}"/>, <img class="math" src="../_images/math/bd25e16a04518f862a5fa1bed1f710c983d760fb.svg" alt="\{a, b, c\}"/>, <img class="math" src="../_images/math/7afcb83731a5490815c5e729dcbd7cd3dac10497.svg" alt="\{d, f\}"/> and the corresponding characters for
 each class are:</p>
 <div class="math">
-<p><img src="../_images/math/333432bcd0a24cf35a98c22a137eed020c526635.svg" alt="\chi_1 &amp;= 2 \\
+<p><img src="../_images/math/45fd35fd441bd62b9fa99e08819d75db475c81a1.svg" alt="\chi_1 &amp;= 2 \\
 \chi_2 &amp;= 0 \\
 \chi_3 &amp;= -1"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/d5850a2daf098ece8122b85350dfa05df7a69f76.svg" alt="m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
+<p><img src="../_images/math/c9fac9e424b324bc91d32841747ba409a15e7fe4.svg" alt="m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
     + 2\cdot1\cdot (-1)) = 0 \\
 m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
     + 2\cdot1\cdot (-1)) = 0\\
 m_3 &amp;= {1\over 6} (1\cdot 2\cdot 2 + 3\cdot 0\cdot 0
     + 2\cdot(-1)\cdot (-1)) = 1\\"/></p>
-</div><p class="last">So this representation is irreducible and it is equivalent to
-<img class="math" src="../_images/math/ca2328e6c07ffcf1de43500eaedda2fcebaaa23a.svg" alt="m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = E"/>.</p>
+</div><p>So this representation is irreducible and it is equivalent to
+<img class="math" src="../_images/math/011858180625d5b7773b594bbbc1c9c1c05d623a.svg" alt="m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = E"/>.</p>
 </dd>
-<dt>Case II</dt>
-<dd><p class="first">We are given a representation given by the following matrices:</p>
+<dt>Case II</dt><dd><p>We are given a representation given by the following matrices:</p>
 <div class="math">
-<p><img src="../_images/math/31bfbd531b122ff302bdd0f2bd4c631f4a4f7988.svg" alt="e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
+<p><img src="../_images/math/652ef51b0b6ff946c6d9f104c920cf52d396bf99.svg" alt="e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = b = c = \half\begin{pmatrix} -1 &amp; -\sqrt{3} \\ -\sqrt{3} &amp; 1
     \end{pmatrix}."/></p>
 </div><p>These 6 matrices belong to the following three classes
-<img class="math" src="../_images/math/3b042ad23fae0c472126a7b2169e1caf86155b4f.svg" alt="\{e\}"/>, <img class="math" src="../_images/math/1edc9f3505c1fd30cfd2db6547a0c7be372f95ce.svg" alt="\{a, b, c\}"/>, <img class="math" src="../_images/math/ce7c198821cfcc4f69736f3c9239063504f0aa49.svg" alt="\{d, f\}"/> and the corresponding characters for
+<img class="math" src="../_images/math/dc5a0e612500768799038edbcb67c9ca21d2cf9f.svg" alt="\{e\}"/>, <img class="math" src="../_images/math/bd25e16a04518f862a5fa1bed1f710c983d760fb.svg" alt="\{a, b, c\}"/>, <img class="math" src="../_images/math/7afcb83731a5490815c5e729dcbd7cd3dac10497.svg" alt="\{d, f\}"/> and the corresponding characters for
 each class are:</p>
 <div class="math">
-<p><img src="../_images/math/fc4ba4aefefff4fb1ba847b299becce9d85f3ba1.svg" alt="\chi_1 &amp;= 2 \\
+<p><img src="../_images/math/19f7809b9f6a553e335db0885da855223ec878e1.svg" alt="\chi_1 &amp;= 2 \\
 \chi_2 &amp;= 0 \\
 \chi_3 &amp;= 2"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/8b7f4e7975caeb43b0be867e98b9208bca8ae225.svg" alt="m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
+<p><img src="../_images/math/3ed96d5c5e55cf70fcd72554847f7048a1ee19bc.svg" alt="m_1 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot1\cdot 0
     + 2\cdot1\cdot 2) = 1 \\
 m_2 &amp;= {1\over 6} (1\cdot 1\cdot 2 + 3\cdot(-1)\cdot 0
     + 2\cdot1\cdot 2) = 1\\
 m_3 &amp;= {1\over 6} (1\cdot 2\cdot 2 + 3\cdot 0\cdot 0
     + 2\cdot(-1)\cdot 2) = 0\\"/></p>
 </div><p>So this representation is reducible and it is equivalent to
-<img class="math" src="../_images/math/7cb49a950ebe0f14cd4b2036c5fb6893f978ba80.svg" alt="m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = A_1 \oplus A_2"/>.
+<img class="math" src="../_images/math/ed0d7e115812384dcb0fd139dd17e1763b822ace.svg" alt="m_1 A_1 \oplus m_2 A_2 \oplus m_3 E = A_1 \oplus A_2"/>.
 The matrices are equivalent to:</p>
-<div class="last math">
-<p><img src="../_images/math/6e0271858feed312dd1258f758d40c40112f9b37.svg" alt="e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
+<div class="math">
+<p><img src="../_images/math/b105b40421b40408d2378870a1c537cbc4e33ccd.svg" alt="e = d = f = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},\quad\quad
 a = b = c = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}."/></p>
 </div></dd>
 </dl>
-</div>
-</div>
-<div class="section" id="other-facts">
+</section>
+</section>
+<section id="other-facts">
 <h3>Other facts<a class="headerlink" href="#other-facts" title="Permalink to this headline">¶</a></h3>
-<p>Number of irreducible representations <img class="math" src="../_images/math/e460dc24d4cfae675a0536307a4054f8b6805154.svg" alt="="/> the number of classes.</p>
-<dl class="docutils">
-<dt>Regular representation of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>:</dt>
-<dd><p class="first">Take <img class="math" src="../_images/math/799173e5b72f2d8f277e842cc0a5ed1a3f6cdf76.svg" alt="R^n"/> with <img class="math" src="../_images/math/409b5142ae97e717c5f4a5793184f0161be5c218.svg" alt="n=\# G"/> and assign a canonical basis to the elements <img class="math" src="../_images/math/d79e778418c35b36f8f1ada75e4671c7be2e6653.svg" alt="g_i"/>
-of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. A matrix <img class="math" src="../_images/math/943e697f153f066292f23cd8f87b8cb2988a82ae.svg" alt="A_a"/> assigned to <img class="math" src="../_images/math/7667b7c1e4c8b3feccd14052daa467f690b521fe.svg" alt="a\in G"/> now describes the mapping
-<img class="math" src="../_images/math/de5d7e43bd58c91fee7dfdf9537f80237284da4d.svg" alt="(g_1,g_2,\ldots)\mapsto (ag_1,ag_2,\ldots)"/>, i.e. in if <img class="math" src="../_images/math/d34d7fd6db456b6910e47c46d20e11d177dae3f8.svg" alt="ag_1=g_5"/>, then
+<p>Number of irreducible representations <img class="math" src="../_images/math/a7ac89f5a659587416f09734559d4aaafde09535.svg" alt="="/> the number of classes.</p>
+<dl>
+<dt>Regular representation of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>:</dt><dd><p>Take <img class="math" src="../_images/math/9e8686cdc8c5c68d79cf4ad0655057fd9b022fa8.svg" alt="R^n"/> with <img class="math" src="../_images/math/a57d1a9f7d4a266765258d9b7a714647540b9ebe.svg" alt="n=\# G"/> and assign a canonical basis to the elements <img class="math" src="../_images/math/3b08cb1ede65b17f07bcee41960c594852d134fa.svg" alt="g_i"/>
+of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>. A matrix <img class="math" src="../_images/math/56c3d6f86f7fbe8e0e02a6ecb61499371b9b93c8.svg" alt="A_a"/> assigned to <img class="math" src="../_images/math/d5ce0d49893780e9f9dc6908b3f6dbe151adb2f8.svg" alt="a\in G"/> now describes the mapping
+<img class="math" src="../_images/math/f48abf31b6184ff4b573398511a8505ff3ea94fe.svg" alt="(g_1,g_2,\ldots)\mapsto (ag_1,ag_2,\ldots)"/>, i.e. in if <img class="math" src="../_images/math/f510dbf63d4536b3f5f9990a84d6a5164d3bc447.svg" alt="ag_1=g_5"/>, then
 the fifth element of the first row is one and others of that row are zero
-in <img class="math" src="../_images/math/943e697f153f066292f23cd8f87b8cb2988a82ae.svg" alt="A_a"/>. Each IR of the reg. rep. occurs in its decomposition with the
-multiplicity equal to its dimension. Thus (p. 65, <a class="reference internal" href="#sternberg" id="id2">[Sternberg]</a>)</p>
-<blockquote class="last">
+in <img class="math" src="../_images/math/56c3d6f86f7fbe8e0e02a6ecb61499371b9b93c8.svg" alt="A_a"/>. Each IR of the reg. rep. occurs in its decomposition with the
+multiplicity equal to its dimension. Thus (p. 65, <a class="reference internal" href="#sternberg" id="id2"><span>[Sternberg]</span></a>)</p>
+<blockquote>
 <div><div class="math">
-<p><img src="../_images/math/deb288aba4e4592b5b869d733e4a2db2bcdb596a.svg" alt="\# G = \sum p_i^2\,."/></p>
+<p><img src="../_images/math/8ff728d94aa44e2dae0169d0458442e46c413c34.svg" alt="\# G = \sum p_i^2\,."/></p>
 </div></div></blockquote>
 </dd>
-<dt>Element Order</dt>
-<dd>The order <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> of an element <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> is the least integer for which <img class="math" src="../_images/math/f4892de1dd915d20bff32fc1ca0fd464826a60c1.svg" alt="g^n=e"/>.
-The order <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> can be determined from the group multiplication table for
+<dt>Element Order</dt><dd><p>The order <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> of an element <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> is the least integer for which <img class="math" src="../_images/math/058f69dee209f49c9f65fec18602513a3390f01e.svg" alt="g^n=e"/>.
+The order <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> can be determined from the group multiplication table for
 example.
-Theorem: <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> must divide the size (order) of the group (for finite groups).
+Theorem: <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> must divide the size (order) of the group (for finite groups).
 Example: For a group of six elements, the only possible orders are 1, 2, 3
 and 6.
 Note: the element order is the same for the whole conjugacy class because:
-<img class="math" src="../_images/math/6c212a0f072bb4aa693ecca6b9cb70fcd0d1c01e.svg" alt="x^n = \left(c y c^{-1}\right)^n = c y^n c^{-1} = c e c^{-1} = e"/>.</dd>
-<dt>Schur’s lemma</dt>
-<dd><p class="first">(a) Be <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> an IR of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. If <img class="math" src="../_images/math/d309dd9f3069645c87c93251922d86ab41d49994.svg" alt="[r(a),T]=0"/>, <img class="math" src="../_images/math/0ab217b7df6ce4da41b673411d0606bacd78b326.svg" alt="\forall a\in G"/>, then
-<img class="math" src="../_images/math/c59d541d3423575fb64a3a3cb53c62176b550386.svg" alt="T=cI"/>.</p>
-<p class="last">(b) Be <img class="math" src="../_images/math/8899edd223ffd2a0161ac3b0713e3faee7553dd1.svg" alt="r_1"/>, <img class="math" src="../_images/math/a060662f1744e417014f4f56b29aa07de0c3bbf9.svg" alt="r_2"/> two inequivalent IRs of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. Then
-<img class="math" src="../_images/math/2ebc11c68db45d5f929d2f25c2eddc6f847923af.svg" alt="r_1(a)T=Tr_2(a)"/> valid <img class="math" src="../_images/math/0ab217b7df6ce4da41b673411d0606bacd78b326.svg" alt="\forall a\in G"/> implies <img class="math" src="../_images/math/25d854242eb08094db31f440358ba47d41f0b590.svg" alt="T=0"/>. See p. 55 in
-<a class="reference internal" href="#sternberg" id="id3">[Sternberg]</a>. This can be used to derive the orthogonality relations for
+<img class="math" src="../_images/math/9340856ca942c179f3cde38e55367156f1060ec2.svg" alt="x^n = \left(c y c^{-1}\right)^n = c y^n c^{-1} = c e c^{-1} = e"/>.</p>
+</dd>
+<dt>Schur’s lemma</dt><dd><p>(a) Be <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/> an IR of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>. If <img class="math" src="../_images/math/4ccaabe6c7bb21d0de3835ac8253e5a251e8b86e.svg" alt="[r(a),T]=0"/>, <img class="math" src="../_images/math/4004ccde5f805522351b3d0a4b9fcd2a96441be5.svg" alt="\forall a\in G"/>, then
+<img class="math" src="../_images/math/757adc9f411653075990bca7aa0ef58d4bbb7c12.svg" alt="T=cI"/>.</p>
+<p>(b) Be <img class="math" src="../_images/math/ae2cb70397f7ba87bae21b1395d0007411e30ec1.svg" alt="r_1"/>, <img class="math" src="../_images/math/69fc394862cf31a15b037e643c6f3b8909c9536b.svg" alt="r_2"/> two inequivalent IRs of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>. Then
+<img class="math" src="../_images/math/af07e8abc8794aa0c60de9adeb7903caa2dbb03f.svg" alt="r_1(a)T=Tr_2(a)"/> valid <img class="math" src="../_images/math/4004ccde5f805522351b3d0a4b9fcd2a96441be5.svg" alt="\forall a\in G"/> implies <img class="math" src="../_images/math/838979ca506b2d8bc0588d0704ebf76a405008b6.svg" alt="T=0"/>. See p. 55 in
+<a class="reference internal" href="#sternberg" id="id3"><span>[Sternberg]</span></a>. This can be used to derive the orthogonality relations for
 characters.</p>
 </dd>
-<dt>Complete reducibility</dt>
-<dd>Every rep can be decomposed into IRs: true for finite
-(p. 52) and compact (p. 179 in <a class="reference internal" href="#sternberg" id="id4">[Sternberg]</a>) groups. Counterexample for
-larger groups, p. 53.</dd>
-<dt>Sum of reps.</dt>
-<dd>Opposite process to reduction, <img class="math" src="../_images/math/b34ec074921979304e47fdedf26cec1c01b6ec34.svg" alt="\rho\oplus\sigma"/>, it
-lives on the direct sum of the two vector spaces of <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> and <img class="math" src="../_images/math/d70f1e109eb1c1af213e4e0ec48059404e3cedc8.svg" alt="\sigma"/>.</dd>
+<dt>Complete reducibility</dt><dd><p>Every rep can be decomposed into IRs: true for finite
+(p. 52) and compact (p. 179 in <a class="reference internal" href="#sternberg" id="id4"><span>[Sternberg]</span></a>) groups. Counterexample for
+larger groups, p. 53.</p>
+</dd>
+<dt>Sum of reps.</dt><dd><p>Opposite process to reduction, <img class="math" src="../_images/math/4039678a2101c30b89ce50fed58bdf0787e78c45.svg" alt="\rho\oplus\sigma"/>, it
+lives on the direct sum of the two vector spaces of <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/> and <img class="math" src="../_images/math/7ec169f547c086dcaaafdefcbde3835aada03b8c.svg" alt="\sigma"/>.</p>
+</dd>
 </dl>
-<p>Take an IR <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. Then <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> will also be a rep. of any subgroup
-<img class="math" src="../_images/math/3cbc98437f20101ff70ac6ca1b6f4b4d14978570.svg" alt="H\subset G"/>, but it need not be an IR, because the condition for
+<p>Take an IR <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/> of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>. Then <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/> will also be a rep. of any subgroup
+<img class="math" src="../_images/math/327b801f7c09109ee77f96bba595e9062b7fc95b.svg" alt="H\subset G"/>, but it need not be an IR, because the condition for
 reducibility, Eq. <a class="reference internal" href="#equation-eq-1-1">(3.36.1.1)</a>, is less strict: it suffices if the matrices
-<img class="math" src="../_images/math/40c844b0e81168b7ffcb8b9c09b2a18ad19264f2.svg" alt="T(g)"/> are simultaneously block diagonal only for <img class="math" src="../_images/math/54cac36f7c52968bda1f3d45235618c17815516b.svg" alt="g\in H"/>, not for all <img class="math" src="../_images/math/a07d90825f52c54e2791a11f5dec521f0e6d5c76.svg" alt="g\in
-G"/>. This is called <em>restriction</em> and it is denoted by <img class="math" src="../_images/math/cec4acb0c5e8c90798caed4886997787314e823c.svg" alt="\downarrow"/>.</p>
-<p><em>Induced representation</em>, denoted by <img class="math" src="../_images/math/c229839470b6e11788f3597b932377eb29c036fe.svg" alt="\uparrow"/>, is an opposite of the
-restriction. It works as follows: if <img class="math" src="../_images/math/96b73cbd23eaece2c5d686d9de5b264be64f2772.svg" alt="F=G\otimes H"/>, then
-<img class="math" src="../_images/math/5e4414508dce2bfa684ee135dbc9506251f6192a.svg" alt="\rho(f)=\rho(g)"/>, when <img class="math" src="../_images/math/73a16434d51a5d12df2cfd602b93a2253d01ebac.svg" alt="f=g\otimes h"/>.</p>
-<p><em>Product of representations</em>, <img class="math" src="../_images/math/6a06de744a2bc506988a051c4b4685c4135ab50c.svg" alt="\rho\otimes\sigma"/> lives on the direct product
+<img class="math" src="../_images/math/cf3cfd3e699bc777a3e1c6250ccc993924836f93.svg" alt="T(g)"/> are simultaneously block diagonal only for <img class="math" src="../_images/math/489e9b1d61d4873c4f69fb253f289df5d700dfab.svg" alt="g\in H"/>, not for all <img class="math" src="../_images/math/7be00b6d656e458161d867c644a4d624c076d069.svg" alt="g\in
+G"/>. This is called <em>restriction</em> and it is denoted by <img class="math" src="../_images/math/0200a2e88bdfdecfe7d6b0ee6407880f6c8c85fa.svg" alt="\downarrow"/>.</p>
+<p><em>Induced representation</em>, denoted by <img class="math" src="../_images/math/fa1cbf4fc88688b0b14d92218b4a49bdb13256b2.svg" alt="\uparrow"/>, is an opposite of the
+restriction. It works as follows: if <img class="math" src="../_images/math/f152dc6ccd3e8d938400baceea1135afc8cce199.svg" alt="F=G\otimes H"/>, then
+<img class="math" src="../_images/math/2dd66e39d9f7ee8624a293a0e2837c1f28b2580b.svg" alt="\rho(f)=\rho(g)"/>, when <img class="math" src="../_images/math/a972894ab1c3d30acb85b89d1a901d31aa003801.svg" alt="f=g\otimes h"/>.</p>
+<p><em>Product of representations</em>, <img class="math" src="../_images/math/2ac2f6c33381fda6baa06f40a3e6f6dea5870e83.svg" alt="\rho\otimes\sigma"/> lives on the direct product
 of the two vector spaces. Product of IRs need not be an IR. Most prominent
 example: adding of angular momenta.</p>
-</div>
-<div class="section" id="interesting-examples">
+</section>
+<section id="interesting-examples">
 <h3>Interesting examples<a class="headerlink" href="#interesting-examples" title="Permalink to this headline">¶</a></h3>
-<p><img class="math" src="../_images/math/f7591391c773b1dc813184acc4f6e34ad01d24a7.svg" alt="O"/> and <img class="math" src="../_images/math/3fa765e1b3a9c8a34a10826f7b86f8fc65ea0d42.svg" alt="T_d"/> (see <a class="reference internal" href="#point-groups"><span class="std std-ref">Crystallographic Point Groups</span></a>) are isomorphic to <img class="math" src="../_images/math/b8e7bceb70b0dcca07395eb80043880913dd66f5.svg" alt="S_4"/> (p. 35
-in <a class="reference internal" href="#sternberg" id="id5">[Sternberg]</a>). Written as matrices in 3D,
-they are 3D representations. Since <img class="math" src="../_images/math/f7591391c773b1dc813184acc4f6e34ad01d24a7.svg" alt="O"/> has only <img class="math" src="../_images/math/4c8775378ed1f07900eef61d0e7b044fe4963be0.svg" alt="\det A=1"/> matrices unlike
-<img class="math" src="../_images/math/3fa765e1b3a9c8a34a10826f7b86f8fc65ea0d42.svg" alt="T_d"/>, they are inequivalent.</p>
-<p>Homeomorphism of <img class="math" src="../_images/math/a0096b993279952de537b66971cfb8c12bbc8b0f.svg" alt="SL(2,C)"/> into the Lorentz group [or <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/> into <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/>],
-p. 7 <a class="reference internal" href="#sternberg" id="id6">[Sternberg]</a>}. Start with the following <img class="math" src="../_images/math/bfc5d629db84cf8a19642615b95084ebad14937a.svg" alt="1-1"/> correspondence between
-<img class="math" src="../_images/math/bdfe85e4b51c0fb5fb03bff2ce55dafa970f46e4.svg" alt="\vec{x}"/> and <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>:</p>
+<p><img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/16b9e52a05333277d0048b663b43ca61cc0ef463.svg" alt="T_d"/> (see <a class="reference internal" href="#point-groups"><span class="std std-ref">Crystallographic Point Groups</span></a>) are isomorphic to <img class="math" src="../_images/math/f2c06db5b193410fc72e9e6d5b6ac8cd45eb9e46.svg" alt="S_4"/> (p. 35
+in <a class="reference internal" href="#sternberg" id="id5"><span>[Sternberg]</span></a>). Written as matrices in 3D,
+they are 3D representations. Since <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> has only <img class="math" src="../_images/math/5c804ca028f9a8ae8b7f2138514c8796f8ed88f6.svg" alt="\det A=1"/> matrices unlike
+<img class="math" src="../_images/math/16b9e52a05333277d0048b663b43ca61cc0ef463.svg" alt="T_d"/>, they are inequivalent.</p>
+<p>Homeomorphism of <img class="math" src="../_images/math/10ce96aaa816a302f5c332f07fb3b6cae112a573.svg" alt="SL(2,C)"/> into the Lorentz group [or <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/> into <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/>],
+p. 7 <a class="reference internal" href="#sternberg" id="id6"><span>[Sternberg]</span></a>}. Start with the following <img class="math" src="../_images/math/92972084dd4d359418c508eeb41be03b1fc5ee17.svg" alt="1-1"/> correspondence between
+<img class="math" src="../_images/math/408acd699534565cf143025de535f5bebbc6cbd2.svg" alt="\vec{x}"/> and <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>:</p>
 <div class="math">
-<p><img src="../_images/math/76432983db78cdba3a4696895935d76f8ad2e343.svg" alt="\vec{x}=(x_0,x_1,x_2,x_3)^T\,,\qquad
+<p><img src="../_images/math/8db2bd81401ba4e06e9f2ad52e9c048af1972a2d.svg" alt="\vec{x}=(x_0,x_1,x_2,x_3)^T\,,\qquad
 x=\begin{pmatrix}
   x_0+x_3  &amp; x_1-ix_2 \\
   x_1+ix_2 &amp; x_0-x_3
   \end{pmatrix}\,."/></p>
-</div><p>For any matrix of <img class="math" src="../_images/math/0b93d2efc03309e7e5a015c34c67236e854aa372.svg" alt="A\in SL(2,C)"/> take <img class="math" src="../_images/math/17ce6e83472c2a3155d434f6f111ebc4f22e755f.svg" alt="AxA^*=x'"/>. Decode <img class="math" src="../_images/math/583b3e6f2f50ad78121ee1f56727580dc67b7928.svg" alt="x'"/> into <img class="math" src="../_images/math/c98ab8270a4daaddb1ab531837135039d67fce5b.svg" alt="\vec{x}'"/>
-and the relation between <img class="math" src="../_images/math/bdfe85e4b51c0fb5fb03bff2ce55dafa970f46e4.svg" alt="\vec{x}"/> and <img class="math" src="../_images/math/c98ab8270a4daaddb1ab531837135039d67fce5b.svg" alt="\vec{x}'"/> defines uniquely a Lorentz
-transformation; thus <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> was mapped into some Lorentz group element. If
-<img class="math" src="../_images/math/b228a9042ad787ec4397fdecc5fee888b1d8be74.svg" alt="x_0=0"/> this gives a mapping from <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/> into <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/>. The mapping is <img class="math" src="../_images/math/165f59bf5b17acf4dee263686d7364867ff2721d.svg" alt="2-1"/>
-because <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> and <img class="math" src="../_images/math/3d72c330cb531dcfdd962232fb6b278dfb87fe23.svg" alt="-A"/> give the same <img class="math" src="../_images/math/583b3e6f2f50ad78121ee1f56727580dc67b7928.svg" alt="x'"/>.</p>
-<p><img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> is not simply connected. Consider matrices
-<img class="math" src="../_images/math/42602de3f269e163c03bb0a94e768737f91dd82e.svg" alt="U_{\theta}=diag(e^{-i\theta}, e^{i\theta})\in SU(2)"/>, <img class="math" src="../_images/math/f779fad644559a1ee7a8db3b99c9a1233195375d.svg" alt="\theta\in[0,\pi]"/>.
-These map into <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> rotations by <img class="math" src="../_images/math/34ecbde5dddadeba22c218bd88faff916f2d48a5.svg" alt="2\theta"/> around the <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/>–axis. These
-matrices <img class="math" src="../_images/math/33f12ae09d5c6383f1df0f986216ec55e668db02.svg" alt="A_\theta=R_{z,2\theta}"/> in <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> form a closed loop,
-<img class="math" src="../_images/math/5e67c59848c6c4ed3b5fbd5df076eff412e0f8e1.svg" alt="R_{z,0}=R_{z,2\pi}"/>. If <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> were simply connected it would be possible to
-contract this loop into a point while keeping <img class="math" src="../_images/math/722669557c93d7eb2b57d56b93c411c89ba5cd4d.svg" alt="A_0"/> and <img class="math" src="../_images/math/926b8f2cea8b9c01b7e433d0174b7c85c0403461.svg" alt="A_\pi"/> unchanged. But
+</div><p>For any matrix of <img class="math" src="../_images/math/21bef700811779b99665444d6f6c96120c782ae5.svg" alt="A\in SL(2,C)"/> take <img class="math" src="../_images/math/3c2badebacb7b2c2a722f2dd37584b77eddd289e.svg" alt="AxA^*=x'"/>. Decode <img class="math" src="../_images/math/00edc22e5087916dc1b84166688385d211cb500e.svg" alt="x'"/> into <img class="math" src="../_images/math/4a7cfcccde89b0daf07d940626c25be3c501f7b3.svg" alt="\vec{x}'"/>
+and the relation between <img class="math" src="../_images/math/408acd699534565cf143025de535f5bebbc6cbd2.svg" alt="\vec{x}"/> and <img class="math" src="../_images/math/4a7cfcccde89b0daf07d940626c25be3c501f7b3.svg" alt="\vec{x}'"/> defines uniquely a Lorentz
+transformation; thus <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/> was mapped into some Lorentz group element. If
+<img class="math" src="../_images/math/bf0edc1d7329c38e351a79fd620fca6cb26c3288.svg" alt="x_0=0"/> this gives a mapping from <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/> into <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/>. The mapping is <img class="math" src="../_images/math/4a2969d12d5caafe5841d2aaf5be4019fba9dbed.svg" alt="2-1"/>
+because <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/> and <img class="math" src="../_images/math/22162f1a60296521d2290fb2109a357a689e5e94.svg" alt="-A"/> give the same <img class="math" src="../_images/math/00edc22e5087916dc1b84166688385d211cb500e.svg" alt="x'"/>.</p>
+<p><img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> is not simply connected. Consider matrices
+<img class="math" src="../_images/math/2efed255b92646034bc6ff47fb0477ea01ffce6a.svg" alt="U_{\theta}=diag(e^{-i\theta}, e^{i\theta})\in SU(2)"/>, <img class="math" src="../_images/math/d1f1237d6f209cc3eb1711cf7f3f3ed5302bd1dc.svg" alt="\theta\in[0,\pi]"/>.
+These map into <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> rotations by <img class="math" src="../_images/math/350ef4865c18759970cec3a416a9c7a77f0cca45.svg" alt="2\theta"/> around the <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/>–axis. These
+matrices <img class="math" src="../_images/math/32b1d732e53bd6a0d45a7ec41ef8afb9f81cd209.svg" alt="A_\theta=R_{z,2\theta}"/> in <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> form a closed loop,
+<img class="math" src="../_images/math/0265bb8ee6f67c17b631367b2ea3d37623371dd0.svg" alt="R_{z,0}=R_{z,2\pi}"/>. If <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> were simply connected it would be possible to
+contract this loop into a point while keeping <img class="math" src="../_images/math/517452af99079ca893401291e1987c0254447db3.svg" alt="A_0"/> and <img class="math" src="../_images/math/1a2f9737cba47f0ab3718733e52274858d99067b.svg" alt="A_\pi"/> unchanged. But
 then the same would have to happen with the original curve of matrices
-<img class="math" src="../_images/math/a0af3724bf7b29735e50a1528bd19f6e0fc0d272.svg" alt="U_\theta"/> while keeping <img class="math" src="../_images/math/d79c2b562b4904590fea46789a73a10e28b3702d.svg" alt="U_0"/> and <img class="math" src="../_images/math/f4866475262265261d1770ba8a0c9a86c5e5ddcd.svg" alt="U_\pi"/> at their place. Since
-<img class="math" src="../_images/math/deabc89f0e5beb174678d72a2af7a78e62e3d83e.svg" alt="U_{\pi}=-I\not= U_0=I"/>, this curve is not closed and such a contraction is
+<img class="math" src="../_images/math/fecec6b1a969a0d1a2866651e982bcf48a05cfff.svg" alt="U_\theta"/> while keeping <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f467c3ae1150.svg" alt="U_0"/> and <img class="math" src="../_images/math/e641417ff8ba261989b56fce606f61ef3b97078f.svg" alt="U_\pi"/> at their place. Since
+<img class="math" src="../_images/math/0eb38e37f2f19514413a4f3d475713f21910ad55.svg" alt="U_{\pi}=-I\not= U_0=I"/>, this curve is not closed and such a contraction is
 not possible.</p>
-<p>All IRs of <img class="math" src="../_images/math/8473c0b526b6ae6dc960307a61b74bea44b9b6fb.svg" alt="S_3"/> are in <a class="reference internal" href="#sternberg" id="id7">[Sternberg]</a>, p. 57.</p>
-</div>
-</div>
-<div class="section" id="crystallographic-point-groups">
-<span id="point-groups"></span><h2>3.36.2. Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
+<p>All IRs of <img class="math" src="../_images/math/c2df94f7698ff23f40599a1225c941567ce77027.svg" alt="S_3"/> are in <a class="reference internal" href="#sternberg" id="id7"><span>[Sternberg]</span></a>, p. 57.</p>
+</section>
+</section>
+<section id="crystallographic-point-groups">
+<span id="point-groups"></span><h2><span class="section-number">3.36.2. </span>Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
 <p>Point group is a subgroup of O(3).</p>
-<p>Crystallographic point groups are all subgroups of <img class="math" src="../_images/math/4687feb7cc342ce1a2a24aef5db08e39dd15f91f.svg" alt="O(3)"/>, which leave a
+<p>Crystallographic point groups are all subgroups of <img class="math" src="../_images/math/2513987bf28e923f7aa61590402e8dc742e1ef1b.svg" alt="O(3)"/>, which leave a
 monoatomic crystal lattice invariant. Those can be symmetries of an infinite
-crystal (e.g. <img class="math" src="../_images/math/68cfe81446b3507a0c07e3b3b8913b250cf5700a.svg" alt="C_5"/> is excluded since pentagons cannot cover the plane).</p>
-<p>There are only 7 crystallographic point groups: <img class="math" src="../_images/math/cc608c039a412b70f7d41b51a7fd847bc82f514f.svg" alt="S_2"/> (triclinic),
-<img class="math" src="../_images/math/a67f2451d49385e3d95c903041ee423da5291ecd.svg" alt="C_{2h}"/> (monoclinic), <img class="math" src="../_images/math/d13bb6e0761fd9bca388156f3be7e120356cb9cd.svg" alt="D_{2h}"/> (orthorhombic), <img class="math" src="../_images/math/3d484967c8690c08b8abc98e031905abe5554510.svg" alt="D_{3d}"/> (rhombohedral),
-<img class="math" src="../_images/math/32280c1ef35251a3258d15b0d45d7bc46a024237.svg" alt="D_{4h}"/> (tetragonal), <img class="math" src="../_images/math/6b3503d78ad697a18f26c0d6cd7f9a875df08146.svg" alt="D_{6h}"/> (hexagonal) and <img class="math" src="../_images/math/5896ccdc7ad93834b8d05cee650be9146d66f6f8.svg" alt="O_{h}"/> (cubic).</p>
+crystal (e.g. <img class="math" src="../_images/math/bda05ea424775ed62da7a9b822b612397add45ad.svg" alt="C_5"/> is excluded since pentagons cannot cover the plane).</p>
+<p>There are only 7 crystallographic point groups: <img class="math" src="../_images/math/019e16db70007fb005bc13835b9f68be186faf4a.svg" alt="S_2"/> (triclinic),
+<img class="math" src="../_images/math/e1ad84d1e8c7065f6d14e70d4dfb91b52d73a097.svg" alt="C_{2h}"/> (monoclinic), <img class="math" src="../_images/math/8cbdedf4af188a73376d7904a855c00dfd5f8f0a.svg" alt="D_{2h}"/> (orthorhombic), <img class="math" src="../_images/math/74b543a7f1b740389df405c07281c27b37533988.svg" alt="D_{3d}"/> (rhombohedral),
+<img class="math" src="../_images/math/8ef5863c756e439e6ca6b35e69850b611e7b3444.svg" alt="D_{4h}"/> (tetragonal), <img class="math" src="../_images/math/a869ea4b037f75aec9b747b24a8657d3f80f3a2f.svg" alt="D_{6h}"/> (hexagonal) and <img class="math" src="../_images/math/9c9c03c7be1f00b32e4003ead79946b2d0d742b4.svg" alt="O_{h}"/> (cubic).</p>
 <p>For simple monoatomic crystals with one atom per unit cell these seven are the
 only possible crystallographic point groups. For more complicated crystals
 with a molecule or an arrangement of atoms in the unit cell, the symmetry will
@@ -337,9 +336,9 @@ be reduced to the subgroup which leaves not only the lattice but also the unit
 cell invariant.</p>
 <p>The complete list of all possible crystallographic point groups will therefore
 be given by the above seven together with all their subgroups
-(Tab. 3 in <a class="reference internal" href="#birss" id="id8">[Birss]</a> or Tab. 4 in <a class="reference internal" href="#sternberg" id="id9">[Sternberg]</a>):</p>
+(Tab. 3 in <a class="reference internal" href="#birss" id="id8"><span>[Birss]</span></a> or Tab. 4 in <a class="reference internal" href="#sternberg" id="id9"><span>[Sternberg]</span></a>):</p>
 <div class="math">
-<p><img src="../_images/math/99407ac225809da3387f0ee851f6b48e8589110a.svg" alt="\begin{array}{cc}
+<p><img src="../_images/math/67733042e458bf027f640fa31fb91a8238d31884.svg" alt="\begin{array}{cc}
 S_2    &amp; C_{1h}, S_2 \\
 C_{2h} &amp; C_2, C_{1h}, C_{2h} \\
 D_{2h} &amp; D_2, C_{2v}, D_{2h} \\
@@ -349,154 +348,149 @@ D_{6h} &amp; C_3, S_6, D_3, C_{3v}, D_{3d}, C_6, C_{3h}, C_{6h}, D_6, C_{6v},
     D_{3h}, D_{6h} \\
 O_h    &amp; T, T_h, O, T_d, O_h \\
 \end{array}"/></p>
-</div><p>There are 37 subgroups together. <img class="math" src="../_images/math/3d484967c8690c08b8abc98e031905abe5554510.svg" alt="D_{3d}"/> is a subgroup of <img class="math" src="../_images/math/6b3503d78ad697a18f26c0d6cd7f9a875df08146.svg" alt="D_{6h}"/> (so all
-5 subgroups of <img class="math" src="../_images/math/3d484967c8690c08b8abc98e031905abe5554510.svg" alt="D_{3d}"/> are also subgroups of <img class="math" src="../_images/math/6b3503d78ad697a18f26c0d6cd7f9a875df08146.svg" alt="D_{6h}"/>).
+</div><p>There are 37 subgroups together. <img class="math" src="../_images/math/74b543a7f1b740389df405c07281c27b37533988.svg" alt="D_{3d}"/> is a subgroup of <img class="math" src="../_images/math/a869ea4b037f75aec9b747b24a8657d3f80f3a2f.svg" alt="D_{6h}"/> (so all
+5 subgroups of <img class="math" src="../_images/math/74b543a7f1b740389df405c07281c27b37533988.svg" alt="D_{3d}"/> are also subgroups of <img class="math" src="../_images/math/a869ea4b037f75aec9b747b24a8657d3f80f3a2f.svg" alt="D_{6h}"/>).
 Together we get 37-5 = 32
 distinct subgroups. Groups, which might at first sight appear to be missing
-from the list are <img class="math" src="../_images/math/81e25ab738af69c8441ad9068caba47bc503e46a.svg" alt="C_{1v}"/>, <img class="math" src="../_images/math/fe028af3be4ab8540b2ba575e2b90fbe7d83a8ff.svg" alt="D_1"/>, <img class="math" src="../_images/math/c044b607004fe7703bf4e94d35f00797a783be01.svg" alt="D_{1h}"/>, <img class="math" src="../_images/math/17c111a1c69f80780b0d736f9d0405fca806b0b1.svg" alt="S_1"/>, and <img class="math" src="../_images/math/8473c0b526b6ae6dc960307a61b74bea44b9b6fb.svg" alt="S_3"/>, but these are
-the same as <img class="math" src="../_images/math/3e6961589aefe62953c109fb9e5ed5d71fd06976.svg" alt="C_{1h}"/>, <img class="math" src="../_images/math/b3d96d1efc79ef20c02dbd95ff332128acddc544.svg" alt="C_2"/>, <img class="math" src="../_images/math/83b45d270a3888e7c79f8ba95941e7c699013816.svg" alt="C_{2v}"/>, <img class="math" src="../_images/math/3e6961589aefe62953c109fb9e5ed5d71fd06976.svg" alt="C_{1h}"/> and <img class="math" src="../_images/math/bc5d4202f94800eb4d35eb33eb4d6de0cec93d81.svg" alt="C_{3h}"/> respectively.</p>
+from the list are <img class="math" src="../_images/math/b0213c08160fe434dc0eef4815645ee9675f1ac2.svg" alt="C_{1v}"/>, <img class="math" src="../_images/math/2d32f41461e64d3f90e3bbcf14cc98c01873577b.svg" alt="D_1"/>, <img class="math" src="../_images/math/d03c2657a0025582a30300f79de539a7538c5903.svg" alt="D_{1h}"/>, <img class="math" src="../_images/math/488bd22fd2b5085cfa83df1c0cb81995fc79fdc6.svg" alt="S_1"/>, and <img class="math" src="../_images/math/c2df94f7698ff23f40599a1225c941567ce77027.svg" alt="S_3"/>, but these are
+the same as <img class="math" src="../_images/math/ef18375762c931038a6d63f79db620c916af0a28.svg" alt="C_{1h}"/>, <img class="math" src="../_images/math/73050221e3ea4ea958e9e81a76a1750bdaf30b38.svg" alt="C_2"/>, <img class="math" src="../_images/math/f92381bc03089f36459be6b8a8ee71de28a0e671.svg" alt="C_{2v}"/>, <img class="math" src="../_images/math/ef18375762c931038a6d63f79db620c916af0a28.svg" alt="C_{1h}"/> and <img class="math" src="../_images/math/38099332e04dc99d994af9d56ceecc4003abb4de.svg" alt="C_{3h}"/> respectively.</p>
 <p>The following groups are isomorphic:</p>
-<p><img class="math" src="../_images/math/3e6961589aefe62953c109fb9e5ed5d71fd06976.svg" alt="C_{1h}"/>, <img class="math" src="../_images/math/cc608c039a412b70f7d41b51a7fd847bc82f514f.svg" alt="S_2"/>, <img class="math" src="../_images/math/b3d96d1efc79ef20c02dbd95ff332128acddc544.svg" alt="C_2"/></p>
-<p><img class="math" src="../_images/math/b8e7bceb70b0dcca07395eb80043880913dd66f5.svg" alt="S_4"/>, <img class="math" src="../_images/math/69260c76c8fab1b265773fa99c4e77bb040a429c.svg" alt="C_4"/></p>
-<p><img class="math" src="../_images/math/e794c4fa6d0bc14846b14dbd5b7c8c2725c16a95.svg" alt="S_6"/>, <img class="math" src="../_images/math/bc5d4202f94800eb4d35eb33eb4d6de0cec93d81.svg" alt="C_{3h}"/>, <img class="math" src="../_images/math/c92ef3f96545c0a170fe98bb5463a25a50b82c4f.svg" alt="C_6"/></p>
-<p><img class="math" src="../_images/math/a67f2451d49385e3d95c903041ee423da5291ecd.svg" alt="C_{2h}"/>, <img class="math" src="../_images/math/83b45d270a3888e7c79f8ba95941e7c699013816.svg" alt="C_{2v}"/>, <img class="math" src="../_images/math/33aa2bf65777fb3d7b1061231fb5d6c24dbd817e.svg" alt="D_2"/></p>
-<p><img class="math" src="../_images/math/c66d9ea351e4fc6006b283134b4496ec4550bdab.svg" alt="C_{3v}"/>, <img class="math" src="../_images/math/6796949bae5cd494933f08781518ecb094df8a68.svg" alt="D_3"/></p>
-<p><img class="math" src="../_images/math/4bbfcff3b7ad786686ac9c19bde218e878ace906.svg" alt="D_{2d}"/>, <img class="math" src="../_images/math/2ca858661150bb349601da216038068c21a7eab0.svg" alt="C_{4v}"/>, <img class="math" src="../_images/math/8a706cf3f2f3033bee9395b4c28fd041deb6e71a.svg" alt="D_4"/></p>
-<p><img class="math" src="../_images/math/3d484967c8690c08b8abc98e031905abe5554510.svg" alt="D_{3d}"/>, <img class="math" src="../_images/math/a7125139cb46aa1eaafc8a612e9c3dc8261a0634.svg" alt="D_{3h}"/>, <img class="math" src="../_images/math/e65c4f2e87f021074a92032aae99aad92d463049.svg" alt="C_{6v}"/>, <img class="math" src="../_images/math/04300b0549c951d4bfc9db487dad2b03241d3b10.svg" alt="D_6"/></p>
-<p><img class="math" src="../_images/math/15628b35ddf9ad70df6e2d0129eacc543e21a9ac.svg" alt="T_d, O"/></p>
+<p><img class="math" src="../_images/math/ef18375762c931038a6d63f79db620c916af0a28.svg" alt="C_{1h}"/>, <img class="math" src="../_images/math/019e16db70007fb005bc13835b9f68be186faf4a.svg" alt="S_2"/>, <img class="math" src="../_images/math/73050221e3ea4ea958e9e81a76a1750bdaf30b38.svg" alt="C_2"/></p>
+<p><img class="math" src="../_images/math/f2c06db5b193410fc72e9e6d5b6ac8cd45eb9e46.svg" alt="S_4"/>, <img class="math" src="../_images/math/b133471c27e14f95849c46020934513df26a4b4c.svg" alt="C_4"/></p>
+<p><img class="math" src="../_images/math/96b9bcd84f17c1b5db8225db4b54cb0cd4489278.svg" alt="S_6"/>, <img class="math" src="../_images/math/38099332e04dc99d994af9d56ceecc4003abb4de.svg" alt="C_{3h}"/>, <img class="math" src="../_images/math/f089c19a9a7a4000963e91f326731c3ec418115d.svg" alt="C_6"/></p>
+<p><img class="math" src="../_images/math/e1ad84d1e8c7065f6d14e70d4dfb91b52d73a097.svg" alt="C_{2h}"/>, <img class="math" src="../_images/math/f92381bc03089f36459be6b8a8ee71de28a0e671.svg" alt="C_{2v}"/>, <img class="math" src="../_images/math/33dc556431c4a9d63f0e4e4f2f1b7629eaedb671.svg" alt="D_2"/></p>
+<p><img class="math" src="../_images/math/069511d251782d0241bcd17946df502283937fd7.svg" alt="C_{3v}"/>, <img class="math" src="../_images/math/9266f6ec0c29ce3bc445bfc3cb5571eb71d77f96.svg" alt="D_3"/></p>
+<p><img class="math" src="../_images/math/a2a1c2b7011adbe54c00faa9c78be3d114d9e7c0.svg" alt="D_{2d}"/>, <img class="math" src="../_images/math/523f01c71dc8a92e767d3bec6f3a46ef9c741a7b.svg" alt="C_{4v}"/>, <img class="math" src="../_images/math/42b3e7683e14e147a89e94815ccba1488851b3e5.svg" alt="D_4"/></p>
+<p><img class="math" src="../_images/math/74b543a7f1b740389df405c07281c27b37533988.svg" alt="D_{3d}"/>, <img class="math" src="../_images/math/e99e07eb501d0e2430638a75d841c116368283ef.svg" alt="D_{3h}"/>, <img class="math" src="../_images/math/77f8684e0831c09ff9fbaf02ad6f4642a116b2b7.svg" alt="C_{6v}"/>, <img class="math" src="../_images/math/4ba2af7668d4bb0575505bec74be74f1e0dd36a4.svg" alt="D_6"/></p>
+<p><img class="math" src="../_images/math/d8131a1a53de1f7e6d69d6880cef7c0c7d47c14c.svg" alt="T_d, O"/></p>
 <p>The way to derive the above lists is the following.</p>
 <p>Procedure:</p>
 <ol class="arabic simple">
-<li>Find all finite crystallographic subgroups of <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> called
-<em>rotation subgroups</em></li>
-<li>Take each subgroup from 1) and add <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/> and
-close the subgroup (‘non-rot containing <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/>‘)</li>
-<li>for each subgroup <img class="math" src="../_images/math/9de12d8c76dcce12a94189820040a9aefe83517a.svg" alt="G^\wedge"/> in 1), find whether it has some normal
-subgroups <img class="math" src="../_images/math/bef3ca77fad3df8a926c52aea0cdfb293b3cccca.svg" alt="G^+"/> of index 2 (half a size of <img class="math" src="../_images/math/9de12d8c76dcce12a94189820040a9aefe83517a.svg" alt="G^\wedge"/>) and construct
-<img class="math" src="../_images/math/421b199938defe1889e5b5e13feb587107d2da11.svg" alt="G^+\cup (-I)aG^+"/>, where <img class="math" src="../_images/math/9aab230d38f87000174ce0dcb4abc23b7b5c4d31.svg" alt="a\notin G^+"/> and <img class="math" src="../_images/math/7e42d1ed6573e8081997a645954602f474dcf87b.svg" alt="a\in G^\wedge"/>; this will be a
-‘non-rot not containing <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/>‘ (for each <img class="math" src="../_images/math/9de12d8c76dcce12a94189820040a9aefe83517a.svg" alt="G^\wedge"/> there can be zero, one or
-more such <img class="math" src="../_images/math/bef3ca77fad3df8a926c52aea0cdfb293b3cccca.svg" alt="G^+"/>).</li>
+<li><p>Find all finite crystallographic subgroups of <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> called
+<em>rotation subgroups</em></p></li>
+<li><p>Take each subgroup from 1) and add <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/> and
+close the subgroup (‘non-rot containing <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/>’)</p></li>
+<li><p>for each subgroup <img class="math" src="../_images/math/5de425188ebdb1a0aee3f174b03dc963c25f89a6.svg" alt="G^\wedge"/> in 1), find whether it has some normal
+subgroups <img class="math" src="../_images/math/56ee2fee4a106db2932e6fc268e07bedaee005d1.svg" alt="G^+"/> of index 2 (half a size of <img class="math" src="../_images/math/5de425188ebdb1a0aee3f174b03dc963c25f89a6.svg" alt="G^\wedge"/>) and construct
+<img class="math" src="../_images/math/82b177326dfc2d6a8946fd173bef023fc7c9098c.svg" alt="G^+\cup (-I)aG^+"/>, where <img class="math" src="../_images/math/c155a68a87d6a7e7f517786cbc0f38e58221b6a1.svg" alt="a\notin G^+"/> and <img class="math" src="../_images/math/5608a41e8c676cfcdaccbcb4dbeae46c9348c6e0.svg" alt="a\in G^\wedge"/>; this will be a
+‘non-rot not containing <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/>’ (for each <img class="math" src="../_images/math/5de425188ebdb1a0aee3f174b03dc963c25f89a6.svg" alt="G^\wedge"/> there can be zero, one or
+more such <img class="math" src="../_images/math/56ee2fee4a106db2932e6fc268e07bedaee005d1.svg" alt="G^+"/>).</p></li>
 </ol>
 <p>The sum of 1.,2.,3. are all finite crystallographic groups
-of <img class="math" src="../_images/math/4687feb7cc342ce1a2a24aef5db08e39dd15f91f.svg" alt="O(3)"/>.  The procedure is described in <a class="reference internal" href="#sternberg" id="id10">[Sternberg]</a>, p. 28-40.</p>
-<p>An example: <img class="math" src="../_images/math/f7591391c773b1dc813184acc4f6e34ad01d24a7.svg" alt="O"/> (all rot. symm. of a cube, i.e. no mirroring) is 1), <img class="math" src="../_images/math/c9abfcef7b006c3ced89de726c6bab98691db5ae.svg" alt="O^h"/>
-(all symm. of a cube) is 2) made of <img class="math" src="../_images/math/f7591391c773b1dc813184acc4f6e34ad01d24a7.svg" alt="O"/> and <img class="math" src="../_images/math/3fa765e1b3a9c8a34a10826f7b86f8fc65ea0d42.svg" alt="T_d"/> (all symm. of a tetrahedron)
+of <img class="math" src="../_images/math/2513987bf28e923f7aa61590402e8dc742e1ef1b.svg" alt="O(3)"/>.  The procedure is described in <a class="reference internal" href="#sternberg" id="id10"><span>[Sternberg]</span></a>, p. 28-40.</p>
+<p>An example: <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> (all rot. symm. of a cube, i.e. no mirroring) is 1), <img class="math" src="../_images/math/df081f66605c8e8975785f4b3e6d4512aacafaf3.svg" alt="O^h"/>
+(all symm. of a cube) is 2) made of <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/16b9e52a05333277d0048b663b43ca61cc0ef463.svg" alt="T_d"/> (all symm. of a tetrahedron)
 is 3) made of 1).</p>
-<div class="section" id="zoology">
+<section id="zoology">
 <h3>Zoology<a class="headerlink" href="#zoology" title="Permalink to this headline">¶</a></h3>
-<p>Schönflies notation: <img class="math" src="../_images/math/11b4621f521443af4d548345591ac4c71cf8ef80.svg" alt="C_n"/> is an <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/>–fold rotation (<img class="math" src="../_images/math/3377d3f90664f020cee0ce1405c0c692f714b9de.svg" alt="2_z"/>, <img class="math" src="../_images/math/b6b3288cc82978393a3b4671d1af24f22502522f.svg" alt="3_z"/> …)
-group (planar polygon), <img class="math" src="../_images/math/b523c6619aa889eb6f802183a97b335525012106.svg" alt="D_n"/> is a diedric group, i.e. <img class="math" src="../_images/math/11b4621f521443af4d548345591ac4c71cf8ef80.svg" alt="C_n"/> plus
-turn-the-page two-fold rotations (e.g. <img class="math" src="../_images/math/4bfda5fff14770ffb9f740de265905e8f9b71779.svg" alt="2_x"/>, <img class="math" src="../_images/math/1e1464a9f9303a0fbdcb9e7a53e685d46d3548c1.svg" alt="2_\perp"/>), <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>, <img class="math" src="../_images/math/f7591391c773b1dc813184acc4f6e34ad01d24a7.svg" alt="O"/> and <img class="math" src="../_images/math/12c28dc4bde9d63671497835d5c9601580f8724a.svg" alt="I"/>
-(= <img class="math" src="../_images/math/20cbd6d0f47dd58737f55ce7f24ee680f2a53c05.svg" alt="Y"/>) are the rotational symmetries of a tetrahedron, octahedron (identical
+<p>Schönflies notation: <img class="math" src="../_images/math/c6919afb2bbfe8ad96f8f76284b65ce8febbb69b.svg" alt="C_n"/> is an <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>–fold rotation (<img class="math" src="../_images/math/63819f51c8d667629011ee03d2432641d83e8621.svg" alt="2_z"/>, <img class="math" src="../_images/math/35d51271b0a0969434e3e2aab87cba4caa9da22c.svg" alt="3_z"/> …)
+group (planar polygon), <img class="math" src="../_images/math/01c7cac6725fc611d2a1e2b71e0ee63ae669ea30.svg" alt="D_n"/> is a diedric group, i.e. <img class="math" src="../_images/math/c6919afb2bbfe8ad96f8f76284b65ce8febbb69b.svg" alt="C_n"/> plus
+turn-the-page two-fold rotations (e.g. <img class="math" src="../_images/math/95872e87d203e3957c75b27208d64e39faaeb58b.svg" alt="2_x"/>, <img class="math" src="../_images/math/b66c89b1b19dee1306777be52af340f353987c55.svg" alt="2_\perp"/>), <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>, <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/0913e8ceeb1d494510842d10c091d5783ff4c4a2.svg" alt="I"/>
+(= <img class="math" src="../_images/math/98d5fad7269b23f347c1976c3b919eae0e41f99a.svg" alt="Y"/>) are the rotational symmetries of a tetrahedron, octahedron (identical
 to those of a cube) and icosahedron (identical to those of a dodecahedron),
 respectively. Additional indexes mean reflection planes, horizontal, vertical,
-diagonal (h,v,d) or <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/> (i). Some atypical notation: <img class="math" src="../_images/math/e231e9e036abb69f769f3b369d4ef0c6bcec02b8.svg" alt="S_2=C_i"/>,
-<img class="math" src="../_images/math/32f5e1f29623a4700e524c84dd269da3bc793031.svg" alt="S_6=C_{3i}"/>, <img class="math" src="../_images/math/07373d5976e5fb363b88ec252b65f08c4fcecd52.svg" alt="S_4=C_{2i}"/>, <img class="math" src="../_images/math/067e864bd426358124e76981e70943ca60815642.svg" alt="C_s=C_{1h}"/>.</p>
-<p>Hermann–Mauguin (HM, international) notation: 2,3,4 means <img class="math" src="../_images/math/11b4621f521443af4d548345591ac4c71cf8ef80.svg" alt="C_n"/>, <img class="math" src="../_images/math/2d45649b0d5afe9ac9938013ba664dc6bce2ce72.svg" alt="\bar{4}"/>
-means rotation-inversion axis (rotation followed by <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/>), <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> is a vertical
-mirror plane, <img class="math" src="../_images/math/ba4669c9838bf26d77fffccd5d583caa822ddf01.svg" alt="/m"/> is a horizontal mirror plane.</p>
-<p>Symmetry operations (in Table 3 of <a class="reference internal" href="#birss" id="id11">[Birss]</a>): like HM, <img class="math" src="../_images/math/4bfda5fff14770ffb9f740de265905e8f9b71779.svg" alt="2_x"/> means a
-two-fold rotation around <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>–axis, <img class="math" src="../_images/math/1e1464a9f9303a0fbdcb9e7a53e685d46d3548c1.svg" alt="2_\perp"/> means some other axis in the
-<img class="math" src="../_images/math/1828e45e671bf49c2bdca96d18dc00d8d8dd9b13.svg" alt="xy"/> plane than <img class="math" src="../_images/math/b63d9eb8071b845ad4aafc587ac70ed442224424.svg" alt="x,y"/> or <img class="math" src="../_images/math/1828e45e671bf49c2bdca96d18dc00d8d8dd9b13.svg" alt="xy"/> (diagonal), <img class="math" src="../_images/math/c41745337cc14a14ee312a67100b65c085048bf2.svg" alt="\bar{3}_z"/> is a rotation followed
-by <img class="math" src="../_images/math/9f8af4f138e97f2a5450f247400a75a172f61226.svg" alt="-I"/>. <img class="math" src="../_images/math/863bfd53504a9bc0e894c1399d1f6523bda232b9.svg" alt="3(2_\perp)"/> means three different two-fold axes <img class="math" src="../_images/math/1e1464a9f9303a0fbdcb9e7a53e685d46d3548c1.svg" alt="2_\perp"/>.</p>
-</div>
-<div class="section" id="construction-and-usage-of-the-character-table">
+diagonal (h,v,d) or <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/> (i). Some atypical notation: <img class="math" src="../_images/math/7cff757c32dc40111ae12e6e67bee64369ee161a.svg" alt="S_2=C_i"/>,
+<img class="math" src="../_images/math/8e9dfb96fedbd3b3a907d78f8890d6ea996d0ea0.svg" alt="S_6=C_{3i}"/>, <img class="math" src="../_images/math/9db0c9c00e4dfb5564a9709f32122d8dc7051bf0.svg" alt="S_4=C_{2i}"/>, <img class="math" src="../_images/math/05b1899063cbe405655fb1d7cfa94c755f6c2bf4.svg" alt="C_s=C_{1h}"/>.</p>
+<p>Hermann–Mauguin (HM, international) notation: 2,3,4 means <img class="math" src="../_images/math/c6919afb2bbfe8ad96f8f76284b65ce8febbb69b.svg" alt="C_n"/>, <img class="math" src="../_images/math/f10ed4d32664d6763df3afe46b63d65a6d014e1c.svg" alt="\bar{4}"/>
+means rotation-inversion axis (rotation followed by <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/>), <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> is a vertical
+mirror plane, <img class="math" src="../_images/math/eef5b079439b88ab3f4757db45effb8f35f120f6.svg" alt="/m"/> is a horizontal mirror plane.</p>
+<p>Symmetry operations (in Table 3 of <a class="reference internal" href="#birss" id="id11"><span>[Birss]</span></a>): like HM, <img class="math" src="../_images/math/95872e87d203e3957c75b27208d64e39faaeb58b.svg" alt="2_x"/> means a
+two-fold rotation around <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>–axis, <img class="math" src="../_images/math/b66c89b1b19dee1306777be52af340f353987c55.svg" alt="2_\perp"/> means some other axis in the
+<img class="math" src="../_images/math/05826a1241a53dbdda75c8133fa5cb01ed143ca5.svg" alt="xy"/> plane than <img class="math" src="../_images/math/f4ce1af6c04f7ccc50524eea582b7952c96e7b96.svg" alt="x,y"/> or <img class="math" src="../_images/math/05826a1241a53dbdda75c8133fa5cb01ed143ca5.svg" alt="xy"/> (diagonal), <img class="math" src="../_images/math/75cdd8b32cdb9dd64deb015989ff01d7f858d22a.svg" alt="\bar{3}_z"/> is a rotation followed
+by <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/>. <img class="math" src="../_images/math/fee27919b09e6f71b07ba5fa7f12f1b20f7c03fb.svg" alt="3(2_\perp)"/> means three different two-fold axes <img class="math" src="../_images/math/b66c89b1b19dee1306777be52af340f353987c55.svg" alt="2_\perp"/>.</p>
+</section>
+<section id="construction-and-usage-of-the-character-table">
 <h3>Construction and usage of the character table<a class="headerlink" href="#construction-and-usage-of-the-character-table" title="Permalink to this headline">¶</a></h3>
 <p>For simpler groups the character tables can be fully constructed by the
 following rules:</p>
 <ol class="arabic">
-<li><p class="first">The sum of the squares of the dimensions <img class="math" src="../_images/math/afbd5df6b280fe98534de681c84081c2979a5aa6.svg" alt="n_i"/> of the irreducible
-representations is equal to the order <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> of the point group:</p>
+<li><p>The sum of the squares of the dimensions <img class="math" src="../_images/math/1f1f19780ed9c5a0ec6fca8b5617a323ce8d5c4c.svg" alt="n_i"/> of the irreducible
+representations is equal to the order <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> of the point group:</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/b57f735220166bb836c1d17292542ecf1d145e47.svg" alt="\sum_{\mu=1}^k n_\mu^2 = g"/></p>
+<p><img src="../_images/math/9b1a61c107ea478a4c2882af4fff40ec84814d84.svg" alt="\sum_{\mu=1}^k n_\mu^2 = g"/></p>
 </div></div></blockquote>
-<p>The dimension <img class="math" src="../_images/math/edd054bdabd633774609d03f58c0767fdf76569a.svg" alt="n_\mu"/> is given by the character of the identity matrix
-(first column) <img class="math" src="../_images/math/0a713108d4144e0fb061bed671685eda16fa9f4e.svg" alt="n_\mu = \chi^\mu(E)"/>, so the sum of squares of the first
-column is <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/>. It is customary to put the characters of the one dimensional
-representation (<img class="math" src="../_images/math/e6e2dab9cfe488a6c45e6b8df5228c06355c989c.svg" alt="\chi^1(C_i)=1"/>) into the first row, so the first row
-is filled with 1s. Also, <img class="math" src="../_images/math/afbd5df6b280fe98534de681c84081c2979a5aa6.svg" alt="n_i"/> must divide <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/>.</p>
+<p>The dimension <img class="math" src="../_images/math/c2c275c0a5496e5c35d6385dba424bdcccaf2c99.svg" alt="n_\mu"/> is given by the character of the identity matrix
+(first column) <img class="math" src="../_images/math/bcc36c7d913651edbc16cc7e1c4063366d99fe3d.svg" alt="n_\mu = \chi^\mu(E)"/>, so the sum of squares of the first
+column is <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/>. It is customary to put the characters of the one dimensional
+representation (<img class="math" src="../_images/math/598e0182995fcdda0d57305aabd4c0077e150a6d.svg" alt="\chi^1(C_i)=1"/>) into the first row, so the first row
+is filled with 1s. Also, <img class="math" src="../_images/math/1f1f19780ed9c5a0ec6fca8b5617a323ce8d5c4c.svg" alt="n_i"/> must divide <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/>.</p>
 </li>
-<li><p class="first">The number of irreducible representations <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> (rows) is equal to the number
-of classes <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> (columns)</p>
-</li>
-<li><p class="first">The rows must satisfy</p>
+<li><p>The number of irreducible representations <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/> (rows) is equal to the number
+of classes <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> (columns)</p></li>
+<li><p>The rows must satisfy</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/279885c52228a8c9888e42edcc3b64d70dcbe351.svg" alt="\sum_{i=1}^k g_i \chi^\mu(C_i) \chi^\nu(C_i)^* = g \delta_{\mu\nu}"/></p>
+<p><img src="../_images/math/f44c3f940b2200aa38186e96c69d7c80329311a5.svg" alt="\sum_{i=1}^k g_i \chi^\mu(C_i) \chi^\nu(C_i)^* = g \delta_{\mu\nu}"/></p>
 </div></div></blockquote>
 </li>
-<li><p class="first">The columns must satisfy</p>
+<li><p>The columns must satisfy</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/c351b749af4ff9dfa7deee26d8aff561d87c7814.svg" alt="\sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i}
+<p><img src="../_images/math/4e16adf445dc46e6e121125b38b88bdb53bda311.svg" alt="\sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i}
     \delta_{ij}"/></p>
 </div></div></blockquote>
 </li>
-<li><p class="first">Characters of all one-dimensional representation must be roots of unity,
-equal to <img class="math" src="../_images/math/597a5968196a5ae7f49dacd08a8d1ddb1d5da4cc.svg" alt="\chi = e^{2\pi i k\over n}"/>, where <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> is the element order, which
-must divide the group size <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> (and it is the same for the whole conjugacy
-class). In general, <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> is any integer (for faithful representation it would
-be <img class="math" src="../_images/math/ca40308a8527b69893f78a385a32488bc34c7e7e.svg" alt="k=1"/>).
+<li><p>Characters of all one-dimensional representation must be roots of unity,
+equal to <img class="math" src="../_images/math/560e122a6c9f5ba0c208a3c45b630be88339fce5.svg" alt="\chi = e^{2\pi i k\over n}"/>, where <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> is the element order, which
+must divide the group size <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> (and it is the same for the whole conjugacy
+class). In general, <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> is any integer (for faithful representation it would
+be <img class="math" src="../_images/math/d5968e1886b4ea7cc06e537100fe2cacbf294a8d.svg" alt="k=1"/>).
 This follows from the fact, that the character is also the one-dimensional
 representation matrix and they all commute, thus the group is Abelian.
 Also, the characters (=representation matrices) must respect the group
-operations, so for example if for two group elements <img class="math" src="../_images/math/68cf20887b7d483f5e85e95933fd99cd50b44520.svg" alt="g_1^2=g_2"/>, then their
-characters must also obey <img class="math" src="../_images/math/ab388b534bb9f2387f1e3f7582ee7c78fcb79bcb.svg" alt="\chi_1^2 = \chi_2"/>.</p>
-</li>
-<li><p class="first">Character of an element is the complex conjugate of its inverse. If they
+operations, so for example if for two group elements <img class="math" src="../_images/math/9e1f1291a291e616ea33ace2e118355a8c00f57d.svg" alt="g_1^2=g_2"/>, then their
+characters must also obey <img class="math" src="../_images/math/635eea8bcb02c2b6c53d454dd4fb0d0da3375d0f.svg" alt="\chi_1^2 = \chi_2"/>.</p></li>
+<li><p>Character of an element is the complex conjugate of its inverse. If they
 both belong to the same conjugacy class, the character must be real. If the
 character is complex, it means that its inverse is not from the same
 conjugacy class and then there must be a complex conjugate for another
-conjugacy class from the same irreducible representation.</p>
-</li>
-<li><p class="first">Characters come in complex conjugate pairs, since complex conjugate of a
+conjugacy class from the same irreducible representation.</p></li>
+<li><p>Characters come in complex conjugate pairs, since complex conjugate of a
 representation is also a representation. If there is only one representation
-of the dimension <img class="math" src="../_images/math/be2dd9d27b966f0b791025bf0dcb014e85baa448.svg" alt="d"/>, then it must be real (since it is its own conjugate).
-If there are two representations of dimension <img class="math" src="../_images/math/be2dd9d27b966f0b791025bf0dcb014e85baa448.svg" alt="d"/> and one is complex, then
+of the dimension <img class="math" src="../_images/math/132f01e4838e08895989a5562fe5deb4c69270a2.svg" alt="d"/>, then it must be real (since it is its own conjugate).
+If there are two representations of dimension <img class="math" src="../_images/math/132f01e4838e08895989a5562fe5deb4c69270a2.svg" alt="d"/> and one is complex, then
 the other one must be its complex conjugate. Another way to look at this is
 that if we conjugate each entry of the character table, then we must get the
 same character table (up to a possible reordering of rows within the same
-dimension).</p>
-</li>
-<li><p class="first">If there is one dimensional representation <img class="math" src="../_images/math/5246b7c40ca8f7f0f41040d8c5d6f8304add9c13.svg" alt="A_1"/> (with characters <img class="math" src="../_images/math/81bf026b194ab515c474389817d43d0c1ecf3c6f.svg" alt="\chi_1"/>)
-and any other representation <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> of dimension <img class="math" src="../_images/math/be2dd9d27b966f0b791025bf0dcb014e85baa448.svg" alt="d"/> (with characters <img class="math" src="../_images/math/90b2558db030d6f6b80c412a55a99e89d97073d0.svg" alt="\chi"/>),
-then there must be a representation of dimension <img class="math" src="../_images/math/be2dd9d27b966f0b791025bf0dcb014e85baa448.svg" alt="d"/> with characters
-<img class="math" src="../_images/math/f000dd907c2aca051b1b0356104767360a4bcd4e.svg" alt="\chi_1\chi"/> (corresponding to the tensor product <img class="math" src="../_images/math/b07c2c2ca6869b5c0cfc429c3ca23b707717d627.svg" alt="A_1 \otimes T"/>).</p>
-</li>
+dimension).</p></li>
+<li><p>If there is one dimensional representation <img class="math" src="../_images/math/5307aad0fa2009ed05ecb28f3537f9d7e4b93187.svg" alt="A_1"/> (with characters <img class="math" src="../_images/math/51ce1da22fa94418633a53a11c062dbbf64655c9.svg" alt="\chi_1"/>)
+and any other representation <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/> of dimension <img class="math" src="../_images/math/132f01e4838e08895989a5562fe5deb4c69270a2.svg" alt="d"/> (with characters <img class="math" src="../_images/math/62e38649630cc3d82cd8219da3365b6340064c5f.svg" alt="\chi"/>),
+then there must be a representation of dimension <img class="math" src="../_images/math/132f01e4838e08895989a5562fe5deb4c69270a2.svg" alt="d"/> with characters
+<img class="math" src="../_images/math/2738a3207274c295ea5ebc68ed3db2cabd7dbe2e.svg" alt="\chi_1\chi"/> (corresponding to the tensor product <img class="math" src="../_images/math/4e12e842b277eadd129ff4384ac7ef2a841bde20.svg" alt="A_1 \otimes T"/>).</p></li>
 </ol>
 <p>There exists a systematic approach that works for any group, but it is
-complicated (see for example <a class="reference internal" href="#dixon67" id="id12">[Dixon67]</a>, <a class="reference internal" href="#blokker72" id="id13">[Blokker72]</a>, <a class="reference internal" href="#cannon69" id="id14">[Cannon69]</a>
-and <a class="reference internal" href="#chillag86" id="id15">[Chillag86]</a>).</p>
+complicated (see for example <a class="reference internal" href="#dixon67" id="id12"><span>[Dixon67]</span></a>, <a class="reference internal" href="#blokker72" id="id13"><span>[Blokker72]</span></a>, <a class="reference internal" href="#cannon69" id="id14"><span>[Cannon69]</span></a>
+and <a class="reference internal" href="#chillag86" id="id15"><span>[Chillag86]</span></a>).</p>
 <p>The notation for irreducible representation:
-One-dimensional irreducible representations are labeled either <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> or <img class="math" src="../_images/math/8eb7c8af84dc3945487fc2588e930f59b4aa574c.svg" alt="B"/>
-according to whether the character of a <img class="math" src="../_images/math/e4b3a70ce46213d88f7653e3d84481e3cbea76df.svg" alt="2\pi\over n"/> (proper or improper)
-rotation about the symmetry axis of highest order <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> is <img class="math" src="../_images/math/ab40989d88635712c114f6070bb7775f796e8ed7.svg" alt="+1"/> or <img class="math" src="../_images/math/ad9821e0899269c35ad9cb4f3de304318d7358f5.svg" alt="-1"/>. If there
-is no symmetry axis, all one-dimensional representations are labeled <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/>.</p>
-<p>For general information, see <a class="reference internal" href="#elliott" id="id16">[Elliott]</a> (sec. 4.15, page 67) and <a class="reference internal" href="#bishop" id="id17">[Bishop]</a>, page
+One-dimensional irreducible representations are labeled either <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/> or <img class="math" src="../_images/math/4dcc95bc878706ec1e357307fd8144bf417d170d.svg" alt="B"/>
+according to whether the character of a <img class="math" src="../_images/math/07e62359715c6bbd4eabd246a1bda9bedc6afa4b.svg" alt="2\pi\over n"/> (proper or improper)
+rotation about the symmetry axis of highest order <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> is <img class="math" src="../_images/math/beb14786eeb5ee8bb8f0a0d08ce32bcf0d2226f2.svg" alt="+1"/> or <img class="math" src="../_images/math/bf88207b01be67e923dd624fb35f8878e02b2a66.svg" alt="-1"/>. If there
+is no symmetry axis, all one-dimensional representations are labeled <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/>.</p>
+<p>For general information, see <a class="reference internal" href="#elliott" id="id16"><span>[Elliott]</span></a> (sec. 4.15, page 67) and <a class="reference internal" href="#bishop" id="id17"><span>[Bishop]</span></a>, page
 128.</p>
-<div class="section" id="example-i">
+<section id="example-i">
 <h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h4>
-<p>Let’s take the group <img class="math" src="../_images/math/c66d9ea351e4fc6006b283134b4496ec4550bdab.svg" alt="C_{3v}"/>, which has three classes <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> (1 element),
-<img class="math" src="../_images/math/3cc390884770cdd0b59230bf991c312c070a7617.svg" alt="C_3"/> (2 elements) and <img class="math" src="../_images/math/940909d4c8d868cb9b0ef91c840b5d884c63988f.svg" alt="\sigma_v"/> (3 elements).</p>
-<p>So <img class="math" src="../_images/math/465eed7b464e2171c4f72cac86f5d57d0d8be0f7.svg" alt="g_1=1"/>, <img class="math" src="../_images/math/8d91b159bba9d2109e53b1c41ddc09aa1ed16ad6.svg" alt="g_2=2"/> and <img class="math" src="../_images/math/b06d11bfbb07c3651845436f54d3bb1ce3db5543.svg" alt="g_3=3"/> and the order is
-<img class="math" src="../_images/math/2915a4675c7526609ddfe973d3256851fff44530.svg" alt="g=g_1+g_2+g_3=6"/>. Therefore it has three irreducible representations, whose
+<p>Let’s take the group <img class="math" src="../_images/math/069511d251782d0241bcd17946df502283937fd7.svg" alt="C_{3v}"/>, which has three classes <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> (1 element),
+<img class="math" src="../_images/math/19e2a1c61d60314d60d0781dc99296ddee20b4d6.svg" alt="C_3"/> (2 elements) and <img class="math" src="../_images/math/8ca3ed4d58b7afdc6ed0be2633546d767313d05a.svg" alt="\sigma_v"/> (3 elements).</p>
+<p>So <img class="math" src="../_images/math/f9e92a5b20c4a253346ad1daa2a9ae715a61273a.svg" alt="g_1=1"/>, <img class="math" src="../_images/math/7f7841c50efde935fab6901129f7d76d7e5abc00.svg" alt="g_2=2"/> and <img class="math" src="../_images/math/7e43a76bb80e0a1d6d382e06b53cc17154372671.svg" alt="g_3=3"/> and the order is
+<img class="math" src="../_images/math/20eeae7b91e9c3fb01511167da1bd13b98f8ec69.svg" alt="g=g_1+g_2+g_3=6"/>. Therefore it has three irreducible representations, whose
 dimensions must satisfy:</p>
 <div class="math">
-<p><img src="../_images/math/b1e4822aff96e58516ad26e4501a63286399f6af.svg" alt="n_1^2 + n_2^2 + n_3^2 = 6"/></p>
-</div><p>The only integer solution (up to a permutation) is <img class="math" src="../_images/math/6a1f1039eba0424e9c3601cbcd92f86667b768fd.svg" alt="n_1=n_2=1"/> and <img class="math" src="../_images/math/727df55db23755f53edd775b371f5ba381c823fb.svg" alt="n_3=2"/>. So
+<p><img src="../_images/math/c53d4482634be6718a9f21ad95e2ec14e75a908e.svg" alt="n_1^2 + n_2^2 + n_3^2 = 6"/></p>
+</div><p>The only integer solution (up to a permutation) is <img class="math" src="../_images/math/6ad8d7621f4750cd1605ea15335a99b2fe30e896.svg" alt="n_1=n_2=1"/> and <img class="math" src="../_images/math/ea832a6438ae4a025a65c97145aed03bf1e503cf.svg" alt="n_3=2"/>. So
 we immediately have:</p>
 <div class="math">
-<p><img src="../_images/math/7677bf31d48606178b41b6d404d2e5b398193fd8.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/e3d85a0e9b6511a99bbd0fbbf616c29b2e81296f.svg" alt="\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
        &amp; 1 &amp;   1   &amp; 1 \\
        &amp; 1 &amp;   a   &amp; b \\
        &amp; 2 &amp;   c   &amp; d \\
 \end{array}"/></p>
-</div><p>The rule 3. generates the following equations for all <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> and <img class="math" src="../_images/math/704fb4977ea13f062f302dbd515de73872aa4f16.svg" alt="\nu"/>:</p>
+</div><p>The rule 3. generates the following equations for all <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/> and <img class="math" src="../_images/math/810923b4d44a76e3f0dae9da45aea77a504980db.svg" alt="\nu"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9956cc2808ba3adc133bfb05099e52b9ac671a16.svg" alt="\begin{array}{cc|c}
+<p><img src="../_images/math/c31b1b1e79037f6678d619d58855026571c411fb.svg" alt="\begin{array}{cc|c}
 \mu &amp; \nu &amp; \sum_{i=1}^k g_i \chi^\mu(C_i) \chi^\nu(C_i)^* = g \delta_{\mu\nu} \\
 \hline
 1 &amp; 1 &amp;     6 = 6 \\
@@ -509,19 +503,19 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 </div><p>Solving all these equations simultaneously, we
 get two independent solutions. One is:</p>
 <div class="math">
-<p><img src="../_images/math/c3bdc463da53d87b755bcb90c7ac63aaf24be66a.svg" alt="a &amp;= 1 \\
+<p><img src="../_images/math/801632ded0e3284af90a81c2f4b399f8f64de160.svg" alt="a &amp;= 1 \\
 b &amp;= -1 \\
 c &amp;= -1 \\
 d &amp;= 0"/></p>
 </div><p>and the other is:</p>
 <div class="math">
-<p><img src="../_images/math/7833d72855dc2037c5fcb151aea0b8851ad1bd28.svg" alt="a &amp;= -{7\over 5} \\
+<p><img src="../_images/math/8adefd7e99f439a24ff42e4751029e9406f66656.svg" alt="a &amp;= -{7\over 5} \\
 b &amp;= {3\over 5} \\
 c &amp;= {1\over 5} \\
 d &amp;= -{4\over 5}"/></p>
-</div><p>The rule 4. generates the following equations for all <img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/> and <img class="math" src="../_images/math/300c37187c9d1b187e70d100b74d538fe12ef068.svg" alt="j"/>:</p>
+</div><p>The rule 4. generates the following equations for all <img class="math" src="../_images/math/26e02951ffb851bd3a9b32dd1e10e6de935a0c7f.svg" alt="i"/> and <img class="math" src="../_images/math/8f6b667ad368fdde8343f69afb27054230a75699.svg" alt="j"/>:</p>
 <div class="math">
-<p><img src="../_images/math/85f436ad02c6328db2c342e9742285eef3f7010d.svg" alt="\begin{array}{cc|c}
+<p><img src="../_images/math/e86f319d398ad6ba552576e722241e23581aa8fc.svg" alt="\begin{array}{cc|c}
 i &amp; j &amp; \sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i} \delta_{ij} \\
 \hline
 1 &amp; 1 &amp;     6 = 6 \\
@@ -531,12 +525,12 @@ i &amp; j &amp; \sum_{\nu=1}^k \chi^\nu(C_i) \chi^\nu(C_j)^* = {g\over g_i} \del
 2 &amp; 3 &amp;     1 + ab + cd = 0 \\
 3 &amp; 3 &amp;     1 + b^2 + d^2 = 2
 \end{array}"/></p>
-</div><p>Both of the above solutions for <img class="math" src="../_images/math/57a5ed75c738335bfd3417998d1bdbf66be14051.svg" alt="(a, b, c, d)"/> satisfy all of these equations,
+</div><p>Both of the above solutions for <img class="math" src="../_images/math/beea373dad5f441b16e4936504f8c8e14051a34d.svg" alt="(a, b, c, d)"/> satisfy all of these equations,
 so the column equations are redundant.</p>
 <p>Now we use the rule 5. and see that the second solution is not a root of unity,
 so we discard it. The final character table is:</p>
 <div class="math">
-<p><img src="../_images/math/ca02d1de8646b68ff02a673717b7e17058c454c6.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/63937c621bf4b77f2c7aa841ee5c2d10eaeb36b1.svg" alt="\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
  A_1   &amp; 1 &amp;   1   &amp;  1 \\
@@ -544,7 +538,7 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
   E    &amp; 2 &amp;  -1   &amp;  0 \\
 \end{array}"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">Matrix</span>
 <span class="n">var</span><span class="p">(</span><span class="s2">&quot;a, b, c, d&quot;</span><span class="p">)</span>
 <span class="n">g</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">M</span> <span class="o">=</span> <span class="n">Matrix</span><span class="p">([</span>
@@ -634,7 +628,7 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 <span class="mi">2</span> <span class="mi">3</span> <span class="p">:</span>     <span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">d</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="mi">3</span> <span class="mi">3</span> <span class="p">:</span>     <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="o">----------------------------------------</span>
-<span class="n">Solving</span> <span class="n">the</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="n">equations</span> <span class="n">out</span> <span class="n">of</span> <span class="mf">0.</span><span class="o">.</span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">rows</span> <span class="n">conditions</span>
+<span class="n">Solving</span> <span class="n">the</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="n">equations</span> <span class="n">out</span> <span class="n">of</span> <span class="mf">0..5</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">rows</span> <span class="n">conditions</span>
 <span class="p">[(</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="o">/</span><span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
 <span class="n">Test</span> <span class="n">that</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">solutions</span> <span class="n">satisfy</span> <span class="n">the</span> <span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">equations</span><span class="p">:</span>
 
@@ -659,16 +653,16 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 <span class="n">Equation</span> <span class="mi">5</span> <span class="kn">from</span> <span class="nn">columns</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">result</span><span class="p">:</span> <span class="mi">0</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="example-ii">
+</section>
+<section id="example-ii">
 <h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <img class="math" src="../_images/math/c66d9ea351e4fc6006b283134b4496ec4550bdab.svg" alt="C_{3v}"/> again, using another approach.
+<p>We derive the character table for <img class="math" src="../_images/math/069511d251782d0241bcd17946df502283937fd7.svg" alt="C_{3v}"/> again, using another approach.
 First we determine the element orders, that must divide the size of the group
-(possible values are 1, 2, 3, 6). Element order of the class <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> is 1, because
-<img class="math" src="../_images/math/2f53b25518834b93cdade2b9332b7923d1a17372.svg" alt="E^2=1"/>. The element order of <img class="math" src="../_images/math/3cc390884770cdd0b59230bf991c312c070a7617.svg" alt="C_3"/> is 3, because <img class="math" src="../_images/math/aac652cff77c954d692ec34d923d2199c01e1337.svg" alt="C_3^3 = 1"/>. Finally, the
-element order of <img class="math" src="../_images/math/940909d4c8d868cb9b0ef91c840b5d884c63988f.svg" alt="\sigma_v"/> is 2, because <img class="math" src="../_images/math/b7e5a9e31d9bdd9e9834ddfabeb2d160ec0470ce.svg" alt="\sigma_v^2=1"/>.</p>
+(possible values are 1, 2, 3, 6). Element order of the class <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> is 1, because
+<img class="math" src="../_images/math/cbd25b255cccc01bfee71d42713453a38274e6d3.svg" alt="E^2=1"/>. The element order of <img class="math" src="../_images/math/19e2a1c61d60314d60d0781dc99296ddee20b4d6.svg" alt="C_3"/> is 3, because <img class="math" src="../_images/math/ac3e98c748734e2ea2a7b141d19f22d8123e2403.svg" alt="C_3^3 = 1"/>. Finally, the
+element order of <img class="math" src="../_images/math/8ca3ed4d58b7afdc6ed0be2633546d767313d05a.svg" alt="\sigma_v"/> is 2, because <img class="math" src="../_images/math/3dfc525b18363fac6b60fdd9019831dafd74fe5f.svg" alt="\sigma_v^2=1"/>.</p>
 <div class="math">
-<p><img src="../_images/math/aa603b69df921848417b078dc23bb0b54dd76e72.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/3b1c878ca3127fec20ea6eb7fb798e19f293720d.svg" alt="\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \mbox{class sizes} &amp; 1 &amp; 2 &amp; 3 \\
 \mbox{element orders} &amp; 1 &amp; 3 &amp; 2 \\
@@ -677,45 +671,45 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
  A_2      &amp; 1 &amp;   a   &amp; b \\
   E       &amp; 2 &amp;   c   &amp; d \\
 \end{array}"/></p>
-</div><p>Rule 7: The characters of the representation <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/> must be real, because
-otherwise <img class="math" src="../_images/math/5246b7c40ca8f7f0f41040d8c5d6f8304add9c13.svg" alt="A_1"/> would have to be a complex conjugate. <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> is the only
+</div><p>Rule 7: The characters of the representation <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/> must be real, because
+otherwise <img class="math" src="../_images/math/5307aad0fa2009ed05ecb28f3537f9d7e4b93187.svg" alt="A_1"/> would have to be a complex conjugate. <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> is the only
 representation of dimension 2, so it must be real as well.</p>
-<p>Rule 5: <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/> is Abelian, with element orders 1, 3 and 2. As such, we must
+<p>Rule 5: <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/> is Abelian, with element orders 1, 3 and 2. As such, we must
 have:</p>
 <div class="math">
-<p><img src="../_images/math/8fc3a6e0c4278a23e9a72d6b7a708c3454933a4e.svg" alt="a = e^{2\pi i k\over 3} \\
+<p><img src="../_images/math/a440133e12ebe12d869f4cea860fb56db67bf4bc.svg" alt="a = e^{2\pi i k\over 3} \\
 b = e^{2\pi i l\over 2} \\"/></p>
-</div><p>Where <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> and <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> are unknown integers.
-However, since both <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/> and <img class="math" src="../_images/math/fb30453cb037350d0bc27d8abd617fdc563c635c.svg" alt="b"/> is real, the only solution is <img class="math" src="../_images/math/4cee3a63ffbbea2a53315c9a8ebc0f28a009c6d2.svg" alt="k=0"/>
-(corresponding to <img class="math" src="../_images/math/525bd4cb942f30b5817887941d0eefc10590cf46.svg" alt="a=1"/>) and <img class="math" src="../_images/math/cc0eeea238804fbb239c4261df74a68b715a62e0.svg" alt="l=0, 1"/> (corresponding to <img class="math" src="../_images/math/44f5190a07bf1213da47c1f5eaa699ab1a0e760a.svg" alt="b=\pm 1"/>).</p>
+</div><p>Where <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> and <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> are unknown integers.
+However, since both <img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/> and <img class="math" src="../_images/math/de059b8e0317d9f56bbfd2567f5d09337bc3901c.svg" alt="b"/> is real, the only solution is <img class="math" src="../_images/math/9cd439323f0e858f11186d3b341448704033b077.svg" alt="k=0"/>
+(corresponding to <img class="math" src="../_images/math/6aff4e1c02be174a71fcd4d4ec82b31a869eed5f.svg" alt="a=1"/>) and <img class="math" src="../_images/math/8c47bbf1abdb8d44bc3f9c5ffae9b6c34564a72a.svg" alt="l=0, 1"/> (corresponding to <img class="math" src="../_images/math/ca78673060823050944d93a743f7244457ee1761.svg" alt="b=\pm 1"/>).</p>
 <p>Rule 3 gives:</p>
 <div class="math">
-<p><img src="../_images/math/052a32bd0f52fe2afe5d7a27c015f9733c8db292.svg" alt="1 + 2a + 3b = 0"/></p>
-</div><p>And plugging in <img class="math" src="../_images/math/525bd4cb942f30b5817887941d0eefc10590cf46.svg" alt="a=1"/> this implies <img class="math" src="../_images/math/4d6235b36a3d31ebe2000d6009c5fd4b42753e14.svg" alt="b=-1"/>, consistent with the previous
+<p><img src="../_images/math/a0ca9da450c7fd954490767be9fa1431968cc107.svg" alt="1 + 2a + 3b = 0"/></p>
+</div><p>And plugging in <img class="math" src="../_images/math/6aff4e1c02be174a71fcd4d4ec82b31a869eed5f.svg" alt="a=1"/> this implies <img class="math" src="../_images/math/73a12d0161f581335be58d6b618fa37c2ab028de.svg" alt="b=-1"/>, consistent with the previous
 paragraph.</p>
-<p>Rule 8: multiplying <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/> by <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> must give characters of dimension 2, which is
-<img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/>, so we get:</p>
+<p>Rule 8: multiplying <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/> by <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> must give characters of dimension 2, which is
+<img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/>, so we get:</p>
 <div class="math">
-<p><img src="../_images/math/99a7799a125a47edd048857d8892eb6293ef2d73.svg" alt="+1 \cdot c &amp;= c \\
+<p><img src="../_images/math/4b67bc32e277bfa715464a8ba939b87097993f8d.svg" alt="+1 \cdot c &amp;= c \\
 -1 \cdot d &amp;= d \\"/></p>
-</div><p>From which <img class="math" src="../_images/math/913b36cbf793cc0893431af9dca1abffcfa8d961.svg" alt="d=0"/>. Rule 3 gives:</p>
+</div><p>From which <img class="math" src="../_images/math/c97eb6897352b7471a3900e965c8631c498fc701.svg" alt="d=0"/>. Rule 3 gives:</p>
 <div class="math">
-<p><img src="../_images/math/b222e95bce878a6f20d5e23696a2928493ecfdd0.svg" alt="2 + 2c + 3d = 0"/></p>
-</div><p>Where we use <img class="math" src="../_images/math/913b36cbf793cc0893431af9dca1abffcfa8d961.svg" alt="d=0"/> and we get <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>. The final character table is:</p>
+<p><img src="../_images/math/cc967e42db8341bffa6cb9a0e02c0350befe338c.svg" alt="2 + 2c + 3d = 0"/></p>
+</div><p>Where we use <img class="math" src="../_images/math/c97eb6897352b7471a3900e965c8631c498fc701.svg" alt="d=0"/> and we get <img class="math" src="../_images/math/03be772d40a6d4c9d9966082adcd763dc7de523a.svg" alt="c=-1"/>. The final character table is:</p>
 <div class="math">
-<p><img src="../_images/math/1afccf42d38c9aea0be33e238b20230884a07e16.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/4ef70866f55038cd5036899020efc38cf84bf40d.svg" alt="\begin{array}{c|ccc}
 C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \hline
  A_1      &amp; 1 &amp;   1   &amp; 1 \\
  A_2      &amp; 1 &amp;   1   &amp; -1 \\
   E       &amp; 2 &amp;   -1   &amp; 0 \\
 \end{array}"/></p>
-</div></div>
-<div class="section" id="example-iii">
+</div></section>
+<section id="example-iii">
 <h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <img class="math" src="../_images/math/b3d96d1efc79ef20c02dbd95ff332128acddc544.svg" alt="C_2"/>.</p>
+<p>We derive the character table for <img class="math" src="../_images/math/73050221e3ea4ea958e9e81a76a1750bdaf30b38.svg" alt="C_2"/>.</p>
 <div class="math">
-<p><img src="../_images/math/c9bca1271c1e41487a96c1b002b770a5c7c1c176.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/3a201a2ecb44df85075b058fdd9b383f22943cfd.svg" alt="\begin{array}{c|ccc}
 C_2 &amp; E &amp; C_2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 \\
 \mbox{element orders} &amp; 1 &amp; 2 \\
@@ -726,21 +720,21 @@ C_2 &amp; E &amp; C_2 \\
 </div><p>We have two classes, group order is 2, so we must have two representations of
 dimension 1. Using the rule 3. we get:</p>
 <div class="math">
-<p><img src="../_images/math/2317c703afc5dc4198e0a8979802bbf8a87887d6.svg" alt="1 + a = 0"/></p>
-</div><p>so <img class="math" src="../_images/math/0603ff0327f06bef2105c8c459d97c72e2617768.svg" alt="a=-1"/> and the final character table is:</p>
+<p><img src="../_images/math/d0e60deefd1c8aa83970e0823c4bc7eda26bfe72.svg" alt="1 + a = 0"/></p>
+</div><p>so <img class="math" src="../_images/math/ff3861cb6ac03cd34728104b982ba6f723cd2257.svg" alt="a=-1"/> and the final character table is:</p>
 <div class="math">
-<p><img src="../_images/math/241eccc3d83452e082bc4cb85f8d70f997562480.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/034b4bbe7f43b06f2e933f1974f1cc9c08586d6f.svg" alt="\begin{array}{c|ccc}
 C_2 &amp; E &amp; C_2 \\
 \hline
  A_1      &amp; 1 &amp;   1 \\
  A_2      &amp; 1 &amp;   -1 \\
 \end{array}"/></p>
-</div></div>
-<div class="section" id="example-iv">
+</div></section>
+<section id="example-iv">
 <h4>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h4>
-<p>We derive the character table for <img class="math" src="../_images/math/3cc390884770cdd0b59230bf991c312c070a7617.svg" alt="C_3"/>.</p>
+<p>We derive the character table for <img class="math" src="../_images/math/19e2a1c61d60314d60d0781dc99296ddee20b4d6.svg" alt="C_3"/>.</p>
 <div class="math">
-<p><img src="../_images/math/35e40c361177a59836e06347b8247ffe4a1e5a6d.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/ebe1174d24932aef5978bf4d3c81c3bbebea723c.svg" alt="\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 \\
 \mbox{element orders} &amp; 1 &amp; 3 &amp; 3 \\
@@ -749,7 +743,7 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 </div><p>We have 3 classes and representations, group order is 3, so they must be one
 dimensional:</p>
 <div class="math">
-<p><img src="../_images/math/3213e080ef7db731548c9c91c16f5bd49440dcf4.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/b99cf5ce6cd62f489770c61b0c4f21f0e1bb891e.svg" alt="\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 \\
 \mbox{element orders} &amp; 1 &amp; 3 &amp; 3 \\
@@ -760,22 +754,22 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \end{array}"/></p>
 </div><p>Rule 3 says:</p>
 <div class="math">
-<p><img src="../_images/math/133bd62302f6ce9cd5a5889b98d8eee2cba67425.svg" alt="1 + a + b = 0"/></p>
+<p><img src="../_images/math/f5c6e0ca8564d90166fd9d2a4260bbeccf337358.svg" alt="1 + a + b = 0"/></p>
 </div><p>Rule 5 says:</p>
 <div class="math">
-<p><img src="../_images/math/7099f5a83bf0ceb72f0ba0612f904268aecac42a.svg" alt="a &amp;= \omega^k \\
+<p><img src="../_images/math/8d2897462a744cd9e2610bd747ff92c515ba95a0.svg" alt="a &amp;= \omega^k \\
 b &amp;= \omega^l \\"/></p>
-</div><p>where <img class="math" src="../_images/math/cf7fb8599a28a00a99ee6fae158aa6c9465c7e78.svg" alt="\omega = e^{2\pi i \over 3}"/>, so:</p>
+</div><p>where <img class="math" src="../_images/math/be30224977bbe87773f92bd61f78c0acdcc727ed.svg" alt="\omega = e^{2\pi i \over 3}"/>, so:</p>
 <div class="math">
-<p><img src="../_images/math/c34d70415aa4f2b61f3679486bee88d55930a9d7.svg" alt="1 + \omega^k + \omega^l = 0"/></p>
-</div><p>Which has only two solutions: <img class="math" src="../_images/math/ca40308a8527b69893f78a385a32488bc34c7e7e.svg" alt="k=1"/>, <img class="math" src="../_images/math/8e310224308875200124714c4c5ce0e30dcaa291.svg" alt="l=2"/> and <img class="math" src="../_images/math/de63e9c48aef469525ff22d6ff8781e21f3d9f24.svg" alt="k=2"/>, <img class="math" src="../_images/math/bb0064281e349ff05e7b6d99c83940c64ca417f0.svg" alt="l=1"/>. If we choose the
-first solution, we get <img class="math" src="../_images/math/d8c6866df6d88b4ffc9c548cb334d59865d74830.svg" alt="a=\omega"/> and <img class="math" src="../_images/math/05970da888373549f5525145c99ef185531b49e2.svg" alt="b=\omega^2=\bar\omega"/>. Using the rule
-7. it follows that <img class="math" src="../_images/math/1d9b826f57adf2776f5f3568432692eeb42dce59.svg" alt="c=\bar a = \bar\omega=\omega^2"/> and <img class="math" src="../_images/math/20415234f9262a7fd5751ae69c6d8d7116d74440.svg" alt="d=\bar b = \omega"/>.
-If we choose the second solution, we get the pairs <img class="math" src="../_images/math/868083c0357d59e8ea23b2af7459fb55de517c19.svg" alt="a, b"/> and <img class="math" src="../_images/math/2ebb529ee804f9faeaefe7c1fdadb4931fefa792.svg" alt="c, d"/>
+<p><img src="../_images/math/bff683f5889e83d37242a0ba48ed74d2650c3167.svg" alt="1 + \omega^k + \omega^l = 0"/></p>
+</div><p>Which has only two solutions: <img class="math" src="../_images/math/d5968e1886b4ea7cc06e537100fe2cacbf294a8d.svg" alt="k=1"/>, <img class="math" src="../_images/math/ba3887d336ca860e9cd91ccdcb31b44107d27135.svg" alt="l=2"/> and <img class="math" src="../_images/math/7d9ad4b16d65aeab4e89519a02941bb7d9c3602a.svg" alt="k=2"/>, <img class="math" src="../_images/math/a8b25c93c3227095a80002299f8db12a0c74572b.svg" alt="l=1"/>. If we choose the
+first solution, we get <img class="math" src="../_images/math/8c2d08756c3387d97855ba1e8c201fed5a4a1d32.svg" alt="a=\omega"/> and <img class="math" src="../_images/math/9c3ad7266c9e274e3f6b2cd4258ba70d26da2f78.svg" alt="b=\omega^2=\bar\omega"/>. Using the rule
+7. it follows that <img class="math" src="../_images/math/d66aaa95ad141d0a981e1e057c70d9c1d29da063.svg" alt="c=\bar a = \bar\omega=\omega^2"/> and <img class="math" src="../_images/math/29a7f1819f684fb37110e92b3e8c1c85f6ea02c8.svg" alt="d=\bar b = \omega"/>.
+If we choose the second solution, we get the pairs <img class="math" src="../_images/math/5956973e4229439d67e422106d441b0344ff7850.svg" alt="a, b"/> and <img class="math" src="../_images/math/c038584997230999e0e5a9fdb00a86f52643e733.svg" alt="c, d"/>
 interchanged, however, we can reorder the rows, so these two options are
 equivalent. The final character table is:</p>
 <div class="math">
-<p><img src="../_images/math/ea60daf6e07f97392cbd7d8bec74d8e203a10f45.svg" alt="\begin{array}{c|ccc}
+<p><img src="../_images/math/deafa556aede159c6d6208d676a7ff0bf6510ff4.svg" alt="\begin{array}{c|ccc}
 C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \hline
  A_1      &amp; 1 &amp;   1   &amp; 1 \\
@@ -784,12 +778,12 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \end{array}
 
 \omega = e^{2\pi i \over 3} = {-1+i\sqrt 3 \over 2}"/></p>
-</div></div>
-<div class="section" id="example-v">
+</div></section>
+<section id="example-v">
 <h4>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h4>
-<p>Group <img class="math" src="../_images/math/69260c76c8fab1b265773fa99c4e77bb040a429c.svg" alt="C_4"/>:</p>
+<p>Group <img class="math" src="../_images/math/b133471c27e14f95849c46020934513df26a4b4c.svg" alt="C_4"/>:</p>
 <div class="math">
-<p><img src="../_images/math/117fa0f9372b1c9ac0c2822796de657c5869d830.svg" alt="\begin{array}{c|cccc}
+<p><img src="../_images/math/bcd55c61d4fc2750813bbb774af8a50349402422.svg" alt="\begin{array}{c|cccc}
 C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \mbox{class sizes} &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
 \mbox{element orders} &amp; 1 &amp; 4 &amp; 2 &amp; 4 \\
@@ -801,44 +795,44 @@ C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \end{array}"/></p>
 </div><p>Rule 5 gives:</p>
 <div class="math">
-<p><img src="../_images/math/d0f0023e968bf70d9b68aa3c3ce8bb67b83e3f9d.svg" alt="a &amp;= i^k    \\
+<p><img src="../_images/math/024f6bde2eefd0c1b22540d98644412b754d80f1.svg" alt="a &amp;= i^k    \\
 b &amp;= (-1)^l \\
 c &amp;= i^m    \\"/></p>
 </div><p>Rule 3 gives:</p>
 <div class="math" id="equation-xxy">
-<p><span class="eqno">(3.36.2.1)<a class="headerlink" href="#equation-xxy" title="Permalink to this equation">¶</a></span><img src="../_images/math/b1edcdaf92c925310df88d093577d5a376782e35.svg" alt="1 + a + b + c = 0"/></p>
-</div><p>Using the rule 7. we know that at least one of <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>, <img class="math" src="../_images/math/e66b6375b23ad0ff2f82d21446be1e2ec8ce1681.svg" alt="A_3"/> and <img class="math" src="../_images/math/62dc070887eeaf15108f9bb89f1c63a07eb2e569.svg" alt="A_4"/> must be
-real, so let it be <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>.
-The only real solutions of the equation <a class="reference internal" href="#equation-xxy">(3.36.2.1)</a> are <img class="math" src="../_images/math/525bd4cb942f30b5817887941d0eefc10590cf46.svg" alt="a=1"/>, <img class="math" src="../_images/math/4d6235b36a3d31ebe2000d6009c5fd4b42753e14.svg" alt="b=-1"/>, <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>
-and permutations. The representation however must be isomorphic to the <img class="math" src="../_images/math/69260c76c8fab1b265773fa99c4e77bb040a429c.svg" alt="C_4"/>
-group, so in particular <img class="math" src="../_images/math/0b4a82d428c8fecfa649e93b626804ab1d535c7d.svg" alt="a^2 = b"/>, from which <img class="math" src="../_images/math/d8e4463a765511e4da907243b0ba8ca65f380c75.svg" alt="b=1"/> and then
-<img class="math" src="../_images/math/0603ff0327f06bef2105c8c459d97c72e2617768.svg" alt="a=-1"/> and <img class="math" src="../_images/math/5d488e56577aacc99dbb90e8e62e718279d76289.svg" alt="c=-1"/>.</p>
+<p><span class="eqno">(3.36.2.1)<a class="headerlink" href="#equation-xxy" title="Permalink to this equation">¶</a></span><img src="../_images/math/f230a9d2f2ce8452f365c77fc576059c8c30d859.svg" alt="1 + a + b + c = 0"/></p>
+</div><p>Using the rule 7. we know that at least one of <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/>, <img class="math" src="../_images/math/664431d0a56662646c55c5f00ad952940ce4c825.svg" alt="A_3"/> and <img class="math" src="../_images/math/0b76e890f69c65afc82ae73cfb99c86b17f5f943.svg" alt="A_4"/> must be
+real, so let it be <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/>.
+The only real solutions of the equation <a class="reference internal" href="#equation-xxy">(3.36.2.1)</a> are <img class="math" src="../_images/math/6aff4e1c02be174a71fcd4d4ec82b31a869eed5f.svg" alt="a=1"/>, <img class="math" src="../_images/math/73a12d0161f581335be58d6b618fa37c2ab028de.svg" alt="b=-1"/>, <img class="math" src="../_images/math/03be772d40a6d4c9d9966082adcd763dc7de523a.svg" alt="c=-1"/>
+and permutations. The representation however must be isomorphic to the <img class="math" src="../_images/math/b133471c27e14f95849c46020934513df26a4b4c.svg" alt="C_4"/>
+group, so in particular <img class="math" src="../_images/math/c533c529700111ab64d330249ad9558d99e384ec.svg" alt="a^2 = b"/>, from which <img class="math" src="../_images/math/bf8f15f7c301478227d99dd48e0813bedd607472.svg" alt="b=1"/> and then
+<img class="math" src="../_images/math/ff3861cb6ac03cd34728104b982ba6f723cd2257.svg" alt="a=-1"/> and <img class="math" src="../_images/math/03be772d40a6d4c9d9966082adcd763dc7de523a.svg" alt="c=-1"/>.</p>
 <p>The group operations give:</p>
 <div class="math">
-<p><img src="../_images/math/08c52ffba895475cbbd0d631e7a341c64f4d888f.svg" alt="a^2 &amp;= b \\
+<p><img src="../_images/math/711718bb714fc0811f00a305b840baa37de79f5f.svg" alt="a^2 &amp;= b \\
 a b &amp;= c \\
 a c &amp;= 1 \\"/></p>
 </div><p>which gives:</p>
 <div class="math">
-<p><img src="../_images/math/555e1a3b94deae1e9130df1e70f21fbf022a4dd7.svg" alt="2k &amp;= l \\
+<p><img src="../_images/math/6a36789e15ae8ab96cb381977929250cc6970244.svg" alt="2k &amp;= l \\
 k +l &amp;= m \\
 k + m &amp;= 0, 4, 8, 12, ... \\"/></p>
 </div><p>The possible solutions are:</p>
 <div class="math">
-<p><img src="../_images/math/9e507369036442469f9e64205c3f64415db56a9a.svg" alt="\begin{array}{ccc}
+<p><img src="../_images/math/d04395c77b99b29997fe296e496ac98371087d24.svg" alt="\begin{array}{ccc}
 k &amp; l &amp; m \\
 \hline
 2 &amp; 0 &amp; 2 \\
 1 &amp; 2 &amp; 3 \\
 3 &amp; 2 &amp; 1 \\
 \end{array}"/></p>
-</div><p>The first solution is real and it is equal to <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>. The other two solutions
-are complex conjugate and they must be solutions of <img class="math" src="../_images/math/e66b6375b23ad0ff2f82d21446be1e2ec8ce1681.svg" alt="A_3"/> and <img class="math" src="../_images/math/62dc070887eeaf15108f9bb89f1c63a07eb2e569.svg" alt="A_4"/>,
-because <img class="math" src="../_images/math/e66b6375b23ad0ff2f82d21446be1e2ec8ce1681.svg" alt="A_3"/> and <img class="math" src="../_images/math/62dc070887eeaf15108f9bb89f1c63a07eb2e569.svg" alt="A_4"/> cannot be real (otherwise they would have to be equal
-to <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/> and the orthogonality relation for columns would not hold). The final
+</div><p>The first solution is real and it is equal to <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/>. The other two solutions
+are complex conjugate and they must be solutions of <img class="math" src="../_images/math/664431d0a56662646c55c5f00ad952940ce4c825.svg" alt="A_3"/> and <img class="math" src="../_images/math/0b76e890f69c65afc82ae73cfb99c86b17f5f943.svg" alt="A_4"/>,
+because <img class="math" src="../_images/math/664431d0a56662646c55c5f00ad952940ce4c825.svg" alt="A_3"/> and <img class="math" src="../_images/math/0b76e890f69c65afc82ae73cfb99c86b17f5f943.svg" alt="A_4"/> cannot be real (otherwise they would have to be equal
+to <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/> and the orthogonality relation for columns would not hold). The final
 character table is:</p>
 <div class="math">
-<p><img src="../_images/math/6c66b32994a3bb98c2fbfc7e941176040f6110e9.svg" alt="\begin{array}{c|cccc}
+<p><img src="../_images/math/deb9e107b031f9c1a39d4d633208c8a4db62a43a.svg" alt="\begin{array}{c|cccc}
 C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \hline
  A_1      &amp; 1 &amp;   1   &amp;  1   &amp;  1 \\
@@ -846,12 +840,12 @@ C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
  A_3      &amp; 1 &amp;   i   &amp; -1   &amp; -i \\
  A_4      &amp; 1 &amp;  -i   &amp; -1   &amp;  i \\
 \end{array}"/></p>
-</div></div>
-<div class="section" id="example-vi">
+</div></section>
+<section id="example-vi">
 <h4>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h4>
-<p>Group <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>:</p>
+<p>Group <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>:</p>
 <div class="math">
-<p><img src="../_images/math/5b44ceba99714fcf11669fde56ffa38f54f70580.svg" alt="\begin{array}{c|cccc}
+<p><img src="../_images/math/a6e0bec3c8aa83b76bfcf515359deeb347ee2a6f.svg" alt="\begin{array}{c|cccc}
 T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 \mbox{class sizes} &amp; 1 &amp; 4 &amp; 4 &amp; 3\\
 \mbox{element orders} &amp; 1 &amp; 3 &amp; 3 &amp; 2 \\
@@ -865,25 +859,25 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 for dimensions of the 4 representations is 1, 1, 1 and 3.</p>
 <p>Rule 5 gives:</p>
 <div class="math">
-<p><img src="../_images/math/e598bc26043c65981e29a83d985f4b7d6e6cb4d3.svg" alt="a &amp;= \omega^k    \\
+<p><img src="../_images/math/6b13f1eb9fac25270c6b429ad2496594d5b3a5d2.svg" alt="a &amp;= \omega^k    \\
 b &amp;= \omega^l \\
 c &amp;= (-1)^m    \\"/></p>
-</div><p>where <img class="math" src="../_images/math/cf7fb8599a28a00a99ee6fae158aa6c9465c7e78.svg" alt="\omega = e^{2\pi i \over 3}"/>.
+</div><p>where <img class="math" src="../_images/math/be30224977bbe87773f92bd61f78c0acdcc727ed.svg" alt="\omega = e^{2\pi i \over 3}"/>.
 Rule 3 gives:</p>
 <div class="math">
-<p><img src="../_images/math/9774d25e1cf9ced052ed83804b6049eb024d90c7.svg" alt="1 + 4 \omega^k + 4 \omega^l + 3 (-1)^m = 0"/></p>
-</div><p>The only solution is <img class="math" src="../_images/math/3d1a54922e06b04c7b99cdbb7cd2091d74f7ab0d.svg" alt="m=0"/>, <img class="math" src="../_images/math/ca40308a8527b69893f78a385a32488bc34c7e7e.svg" alt="k=1"/> and <img class="math" src="../_images/math/8e310224308875200124714c4c5ce0e30dcaa291.svg" alt="l=2"/> (and <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> with <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> interchanged).
-This fully determines <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/> and <img class="math" src="../_images/math/e66b6375b23ad0ff2f82d21446be1e2ec8ce1681.svg" alt="A_3"/>. The last row is determined from column
+<p><img src="../_images/math/205b1a75c81fd92fdac2136055e10e958775d8ef.svg" alt="1 + 4 \omega^k + 4 \omega^l + 3 (-1)^m = 0"/></p>
+</div><p>The only solution is <img class="math" src="../_images/math/9a2afef6e9ec9b0fbf326742478b32ccc5a913ae.svg" alt="m=0"/>, <img class="math" src="../_images/math/d5968e1886b4ea7cc06e537100fe2cacbf294a8d.svg" alt="k=1"/> and <img class="math" src="../_images/math/ba3887d336ca860e9cd91ccdcb31b44107d27135.svg" alt="l=2"/> (and <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> with <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> interchanged).
+This fully determines <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/> and <img class="math" src="../_images/math/664431d0a56662646c55c5f00ad952940ce4c825.svg" alt="A_3"/>. The last row is determined from column
 orthogonality conditions (we compare the given column with the first column):</p>
 <div class="math">
-<p><img src="../_images/math/efba0a7912dc9f51d20bf2dd1919f76fe9a45e1a.svg" alt="1 + \omega + \omega^2 + 3 d &amp; = 0 \\
+<p><img src="../_images/math/eaf64a4a3bf290234b6c2b4b681ce6a53afa60d6.svg" alt="1 + \omega + \omega^2 + 3 d &amp; = 0 \\
 1 + \omega^2 + \omega + 3 e &amp; = 0 \\
 1 + 1 + 1 + 3 f &amp; = 0 \\"/></p>
-</div><p>Using the relation <img class="math" src="../_images/math/913b1d6bad328d8b0d9d12b7605a8fa8932ff245.svg" alt="1 + \omega + \omega^2=0"/> we get <img class="math" src="../_images/math/e9030f989fc7e79aaa530231d3e94e781527387e.svg" alt="d = 0"/>, <img class="math" src="../_images/math/18fd76d76647fe36959617991dc7d48725b1f486.svg" alt="e=0"/>
-and <img class="math" src="../_images/math/95db12a7020e4ace75b9bebfdcce98836616c281.svg" alt="f=-1"/>.</p>
+</div><p>Using the relation <img class="math" src="../_images/math/4bd270dfe3106177d76a922b132d1c1086ac2964.svg" alt="1 + \omega + \omega^2=0"/> we get <img class="math" src="../_images/math/2491b28b50f7f66cb22501596c5a2c5e2bbb15f8.svg" alt="d = 0"/>, <img class="math" src="../_images/math/fd2d6666075ad1c792f43c6ecee5617ebb2862ec.svg" alt="e=0"/>
+and <img class="math" src="../_images/math/dbf9df8fdb7cf0737d3db5dedef31f4046159170.svg" alt="f=-1"/>.</p>
 <p>The final character table is:</p>
 <div class="math">
-<p><img src="../_images/math/de0d23d3dc51fd16512644d2c0dd7366bf94528c.svg" alt="\begin{array}{c|cccc}
+<p><img src="../_images/math/cbea3a351c6f2f4fc16b64e8cd00402aedec6e21.svg" alt="\begin{array}{c|cccc}
 T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 \hline
  A_1      &amp; 1 &amp;   1   &amp; 1 &amp; 1 \\
@@ -891,215 +885,191 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
  A_3      &amp; 1 &amp;   \omega^2 &amp; \omega  &amp;  1  \\
  T        &amp; 3 &amp;    0   &amp;  0  &amp;  -1  \\
 \end{array}"/></p>
-</div></div>
-</div>
-</div>
-<div class="section" id="applications-of-finite-groups">
-<h2>3.36.3. Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="distinct-energy-levels-vibrations">
+</div></section>
+</section>
+</section>
+<section id="applications-of-finite-groups">
+<h2><span class="section-number">3.36.3. </span>Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
+<section id="distinct-energy-levels-vibrations">
 <h3>Distinct energy levels (‘vibrations’)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this headline">¶</a></h3>
 <p>Assume that we know number of atoms in a molecule and measure the number of
 its distinct vibrational modes (frequencies) in a multiplet. We want to know
 its symmetry.</p>
-<p>We go through the list of all possible (point) symmetries <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> of such a
-molecule and look at what all reps. <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> has. If an <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/>–tuplet was observed
-among the vibrational modes and there is no <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/>-dimensional IR of <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/>, then
+<p>We go through the list of all possible (point) symmetries <img class="math" src="../_images/math/802402937724139288418cbbd3d6f444d8e1a151.svg" alt="S"/> of such a
+molecule and look at what all reps. <img class="math" src="../_images/math/802402937724139288418cbbd3d6f444d8e1a151.svg" alt="S"/> has. If an <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>–tuplet was observed
+among the vibrational modes and there is no <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>-dimensional IR of <img class="math" src="../_images/math/802402937724139288418cbbd3d6f444d8e1a151.svg" alt="S"/>, then
 can be excluded.</p>
-<p>This procedure assumes that (a) the original symmetry <img class="math" src="../_images/math/fce324b2575cdfe74dc11d6e1470c4754bd710f7.svg" alt="S"/> is slightly disturbed
-because of something and (b) two multiplets (<img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> and <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> dimensional) do not
+<p>This procedure assumes that (a) the original symmetry <img class="math" src="../_images/math/802402937724139288418cbbd3d6f444d8e1a151.svg" alt="S"/> is slightly disturbed
+because of something and (b) two multiplets (<img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> and <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> dimensional) do not
 accidentally happen to have the same frequencies (‘accidental degeneracy’).</p>
-</div>
-<div class="section" id="selection-rules-transitions">
+</section>
+<section id="selection-rules-transitions">
 <h3>Selection rules (‘transitions’)<a class="headerlink" href="#selection-rules-transitions" title="Permalink to this headline">¶</a></h3>
-<p>According to <a class="reference internal" href="#pilar" id="id18">[Pilar]</a>, p. 572.</p>
+<p>According to <a class="reference internal" href="#pilar" id="id18"><span>[Pilar]</span></a>, p. 572.</p>
 <p>Probability of an optical transition is proportional to</p>
 <div class="math" id="equation-eq-1-2">
-<p><span class="eqno">(3.36.3.1)<a class="headerlink" href="#equation-eq-1-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/72e02cc5c150ae49a6f77a1d11170bafb7d66721.svg" alt="\braket{i| H_1 |f}\,,"/></p>
-</div><p>where <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/>, <img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> are the initial and final states and <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> is
+<p><span class="eqno">(3.36.3.1)<a class="headerlink" href="#equation-eq-1-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/76eed62e6db4ffb0c56d9e4fd4ac5a684f4d043b.svg" alt="\braket{i| H_1 |f}\,,"/></p>
+</div><p>where <img class="math" src="../_images/math/809384a0f972a22be28907c5e693b5bf0641ba97.svg" alt="\ket{i}"/>, <img class="math" src="../_images/math/b74358aa0be1520c7c9bead72e963592d0481456.svg" alt="\ket{f}"/> are the initial and final states and <img class="math" src="../_images/math/85225f648d937765a13d9043dfc13488b7b9baa1.svg" alt="H_1"/> is
 the operator of the interaction causing the transition. This is the
 Fermi golden rule (first order time dep. perturbation theory).</p>
 <p>The integral (<a class="reference internal" href="#equation-eq-1-2">(3.36.3.1)</a>) may vanish because of the symmetry. A simple 1D
-example is that <img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> is an even function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/>, <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/> is an odd
-function <img class="math" src="../_images/math/8876f9e178022ea9c6bfb37024029fd3a0a07fd7.svg" alt="i(x)"/> and <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> is an even function <img class="math" src="../_images/math/4bab63e621fed56a6424a6ae5457af6794a74385.svg" alt="h_1(x)"/>. Then
-<img class="math" src="../_images/math/55d941c96d63f49d911368612ae11ded39576703.svg" alt="i^*(x)h_1(x)f(x)"/> is odd and thus the integral over <img class="math" src="../_images/math/215da7b0fd5c897ef882a82ff303dee29acf19ef.svg" alt="(-\infty,\infty)"/>
+example is that <img class="math" src="../_images/math/b74358aa0be1520c7c9bead72e963592d0481456.svg" alt="\ket{f}"/> is an even function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/>, <img class="math" src="../_images/math/809384a0f972a22be28907c5e693b5bf0641ba97.svg" alt="\ket{i}"/> is an odd
+function <img class="math" src="../_images/math/4e9d453bdb63766bf207955db98542df3a8ec56c.svg" alt="i(x)"/> and <img class="math" src="../_images/math/85225f648d937765a13d9043dfc13488b7b9baa1.svg" alt="H_1"/> is an even function <img class="math" src="../_images/math/498555cb45d8c13d895e1574bcd7e714a1e1adb2.svg" alt="h_1(x)"/>. Then
+<img class="math" src="../_images/math/0ce679197ec96b74b6e4fd8dc3c5f4b66dab7895.svg" alt="i^*(x)h_1(x)f(x)"/> is odd and thus the integral over <img class="math" src="../_images/math/71507e12fc9772b41041f8267dabb1e975601c04.svg" alt="(-\infty,\infty)"/>
 vanishes. The group theory only generalizes this observation.</p>
-<p>The procedure is: find the IRs <img class="math" src="../_images/math/e78d115df77b9484c14a7e6e3a9626a2523163e5.svg" alt="\rho_i"/>, <img class="math" src="../_images/math/a623c29a22258010b511af9137d522fc1e8787d7.svg" alt="\rho_f"/> to which <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/>,
-<img class="math" src="../_images/math/ab3d3dbdc3fb07e7068dd2fc4446f63d46f7d13b.svg" alt="\ket{f}"/> belong and also <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/>, the regular rep of <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> in order to catch
-all IRs of <img class="math" src="../_images/math/dfedd67f1eb63f8d705deff1a34f1c6c55636efe.svg" alt="H_1"/> (is this procedure correct?). Then construct
-<img class="math" src="../_images/math/13161c43c4f8e8912879e1747ea6158876519fe2.svg" alt="\rho_i\otimes\rho\otimes\rho_f"/>, decompose it into IRs and see if the trivial
+<p>The procedure is: find the IRs <img class="math" src="../_images/math/44b09cae474d3167eaa1af249513215d19e0e3c9.svg" alt="\rho_i"/>, <img class="math" src="../_images/math/a43855d7684e6d4ae6c4b3d3588c1579f6e4a73f.svg" alt="\rho_f"/> to which <img class="math" src="../_images/math/809384a0f972a22be28907c5e693b5bf0641ba97.svg" alt="\ket{i}"/>,
+<img class="math" src="../_images/math/b74358aa0be1520c7c9bead72e963592d0481456.svg" alt="\ket{f}"/> belong and also <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/>, the regular rep of <img class="math" src="../_images/math/85225f648d937765a13d9043dfc13488b7b9baa1.svg" alt="H_1"/> in order to catch
+all IRs of <img class="math" src="../_images/math/85225f648d937765a13d9043dfc13488b7b9baa1.svg" alt="H_1"/> (is this procedure correct?). Then construct
+<img class="math" src="../_images/math/8a4a418e7d78faee3cf54fcfb0aee91bc49454ea.svg" alt="\rho_i\otimes\rho\otimes\rho_f"/>, decompose it into IRs and see if the trivial
 rep is present. If not, the integral (<a class="reference internal" href="#equation-eq-1-2">(3.36.3.1)</a>) vanishes. This procedure
-is claimed to be equivalent to checking whether <img class="math" src="../_images/math/6b559a4d83baca3416bbdbad6be591ac5b6717c2.svg" alt="\rho_i\otimes \rho_f"/> and
-<img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> contain at least one common IR.</p>
-<p>The infrared absorption (IRa) is described by <img class="math" src="../_images/math/81850fedf54e92c64f38cf6fcd5d7005ac0393c3.svg" alt="H_1\propto x"/> (or <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>, <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/>,
+is claimed to be equivalent to checking whether <img class="math" src="../_images/math/f055f35d1f50fdf16f2b838ff3be14fd4ce44c1d.svg" alt="\rho_i\otimes \rho_f"/> and
+<img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/> contain at least one common IR.</p>
+<p>The infrared absorption (IRa) is described by <img class="math" src="../_images/math/957b1f7aca8900e439c7b484c90ffe8f25dc8417.svg" alt="H_1\propto x"/> (or <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/>, <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/>,
 depending probably on the polarization of light), the Raman scattering has
-<img class="math" src="../_images/math/ded50d7ce6171ca8a465f03071b589c98987d115.svg" alt="H_1\propto x^2"/> (it comes from the second order perturbation theory?).</p>
-</div>
-<div class="section" id="id19">
+<img class="math" src="../_images/math/aa2c9eed7574e6ef825b21ef3fdf07f8f6863062.svg" alt="H_1\propto x^2"/> (it comes from the second order perturbation theory?).</p>
+</section>
+<section id="id19">
 <h3>Zoology<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Todo:</p>
 <ul class="simple">
-<li>Describe the representations <img class="math" src="../_images/math/5246b7c40ca8f7f0f41040d8c5d6f8304add9c13.svg" alt="A_1"/>, <img class="math" src="../_images/math/291a0c5be2233ecb60b646bcf823fd93a671d933.svg" alt="A_2"/>, <img class="math" src="../_images/math/e1ee8b61f90e1e9faa5a6ca8d3ed2b202759f34f.svg" alt="B_1"/>, <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> etc.</li>
-<li>Reps are specified
-by the generating functions <img class="math" src="../_images/math/96c569bae7db473825cc73ad8c0a51f833fd43b4.svg" alt="f(x,y,z)"/> and the symmetry operations <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/> acting
-on these functions <img class="math" src="../_images/math/4fcfb68b7ce31f6a4d1ba0f9cd43ca6ab6a3af03.svg" alt="f(x,y,z)\mapsto f(x',y',z')"/>  then transform the
-arguments, <img class="math" src="../_images/math/ac0ca9ec4dcd20cea43bc9986419da7ad4c105da.svg" alt="(x,y,z)\mapsto (x',y',z')=T(x,y,z)"/>. Explain what functions are
-commonly used (<img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>, <img class="math" src="../_images/math/8fb86dd070c5ba3402c74daaba3e25180c1f0f21.svg" alt="R_x,\ldots"/>) and give maybe some examples.</li>
-<li>Further reading: Davydov, p. 318, 195. Joe Penrose: Symmetry in Science.</li>
+<li><p>Describe the representations <img class="math" src="../_images/math/5307aad0fa2009ed05ecb28f3537f9d7e4b93187.svg" alt="A_1"/>, <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/>, <img class="math" src="../_images/math/aa68fc3b7227a5e61ef388fedcc281e9c3572b1b.svg" alt="B_1"/>, <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> etc.</p></li>
+<li><p>Reps are specified
+by the generating functions <img class="math" src="../_images/math/394702b1ab85cb0780f89d4484917349bfc915dc.svg" alt="f(x,y,z)"/> and the symmetry operations <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/> acting
+on these functions <img class="math" src="../_images/math/6b7487a62e73247fd00c1a5e63e938b963378669.svg" alt="f(x,y,z)\mapsto f(x',y',z')"/>  then transform the
+arguments, <img class="math" src="../_images/math/cbf23b64d814a2da7d9c25496695d5df0e4a922e.svg" alt="(x,y,z)\mapsto (x',y',z')=T(x,y,z)"/>. Explain what functions are
+commonly used (<img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>, <img class="math" src="../_images/math/1fcc5b3256a40ce2ff21d0dd609a69c6b1cd2de5.svg" alt="R_x,\ldots"/>) and give maybe some examples.</p></li>
+<li><p>Further reading: Davydov, p. 318, 195. Joe Penrose: Symmetry in Science.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="continuous-groups">
-<h2>3.36.4. Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="lie-groups-algebras">
+</section>
+</section>
+<section id="continuous-groups">
+<h2><span class="section-number">3.36.4. </span>Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this headline">¶</a></h2>
+<section id="lie-groups-algebras">
 <h3>Lie groups+algebras<a class="headerlink" href="#lie-groups-algebras" title="Permalink to this headline">¶</a></h3>
 <p>A continuous group with metrics is a Lie group (more exactly a differentiable
-manifold and <img class="math" src="../_images/math/8c77d45da6477e08ede9ea889da51955c6e969b4.svg" alt="a\mapsto ag"/> and <img class="math" src="../_images/math/d22bc57bef87ef8a2f1cd08e727309bb2e41988a.svg" alt="a\mapsto a^{-1}"/> are differentiable <img class="math" src="../_images/math/15cbb8b4d61052ffb857214f35a7258cf3df6c3f.svg" alt="\forall
-g"/>, p. 172 in <a class="reference internal" href="#sternberg" id="id20">[Sternberg]</a>) usually a subgroup of <img class="math" src="../_images/math/96d14661e73564206930444bd762a9168825dfa0.svg" alt="GL(n)"/> is meant, a
+manifold and <img class="math" src="../_images/math/cd9f7f7483f686a1d9a410f31ed2c2b3ee9ec66a.svg" alt="a\mapsto ag"/> and <img class="math" src="../_images/math/5803af35a75cd91fb0472336737d27a8a5a0137d.svg" alt="a\mapsto a^{-1}"/> are differentiable <img class="math" src="../_images/math/c8c7ea798a669cb140d500a253aa17eb12841c80.svg" alt="\forall
+g"/>, p. 172 in <a class="reference internal" href="#sternberg" id="id20"><span>[Sternberg]</span></a>) usually a subgroup of <img class="math" src="../_images/math/20dccefb8976ecfb3130140fe249211fc90b0ff9.svg" alt="GL(n)"/> is meant, a
 linear Lie group (i.e. matrices). Peter–Weyl theorem (p. 179
-in <a class="reference internal" href="#sternberg" id="id21">[Sternberg]</a>) looks like that compact Lie groups are practically as
+in <a class="reference internal" href="#sternberg" id="id21"><span>[Sternberg]</span></a>) looks like that compact Lie groups are practically as
 nice as finite groups.</p>
-<p>Consider <img class="math" src="../_images/math/b53f7f30a7200532a76d5d48e454c89712c2305d.svg" alt="G=O(n)"/>, p. 234 in <a class="reference internal" href="#sternberg" id="id22">[Sternberg]</a>. If <img class="math" src="../_images/math/0039198f98c0404917378d348895a61db3aa0cfc.svg" alt="A\in G"/> then
-<img class="math" src="../_images/math/c0d9cee92360678f4bd666dac4b8302c2813f9e9.svg" alt="\exp(-tA)\subset G"/> where <img class="math" src="../_images/math/c1e0e9b6294abb0be498dfbc30d799476d3beb93.svg" alt="t\in R"/>. At least in <img class="math" src="../_images/math/4687feb7cc342ce1a2a24aef5db08e39dd15f91f.svg" alt="O(3)"/> and probably in any
-<img class="math" src="../_images/math/b69bf204b879980fce0d52d8fecd31e855df22b1.svg" alt="O(n)"/>, any element of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/> can be written as <img class="math" src="../_images/math/a19d32f14dc39b507ef6253469ee51d4efafee6d.svg" alt="\exp(-tA)"/> where <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/> is a
-<img class="math" src="../_images/math/e6c2355f94136a87595929e6f2e3c54b1a2493d3.svg" alt="\pi/2"/> rotation around some axis. These <img class="math" src="../_images/math/8118ffcbaf4ae98a9fae25d800a304a342eedb8d.svg" alt="A"/>‘s are the generators of <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>.</p>
+<p>Consider <img class="math" src="../_images/math/04e1bc575da1556a0b38084abae252ef2f69e4cb.svg" alt="G=O(n)"/>, p. 234 in <a class="reference internal" href="#sternberg" id="id22"><span>[Sternberg]</span></a>. If <img class="math" src="../_images/math/b7b349ab1fa0cb973e4191ebeadfcf0edf232bf2.svg" alt="A\in G"/> then
+<img class="math" src="../_images/math/10fd0367d23d27b5be09b91b26aa27b4d3712e8a.svg" alt="\exp(-tA)\subset G"/> where <img class="math" src="../_images/math/d040e08716d18c8239940ac34aa3884d24aeaa70.svg" alt="t\in R"/>. At least in <img class="math" src="../_images/math/2513987bf28e923f7aa61590402e8dc742e1ef1b.svg" alt="O(3)"/> and probably in any
+<img class="math" src="../_images/math/a5e6ef89a5c9740530e4fcfa54ef7e09ab5016e7.svg" alt="O(n)"/>, any element of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/> can be written as <img class="math" src="../_images/math/8d6bda56470f78cf4ed80f5d97f83fae0732c327.svg" alt="\exp(-tA)"/> where <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/> is a
+<img class="math" src="../_images/math/15334a121d4ec5cb114933f9a8c6388693453578.svg" alt="\pi/2"/> rotation around some axis. These <img class="math" src="../_images/math/0f88bc7cc73bc7fb906555e467ab7e829ababb91.svg" alt="A"/>’s are the generators of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>.</p>
 <p>Typical example: for
-<img class="math" src="../_images/math/451ddf7f2c84aab77c9e4d1e6a372d1778949d83.svg" alt="G=SO(3)"/> there are three generators, <img class="math" src="../_images/math/e86b49e295c48369c5aa39459da5726578832f90.svg" alt="iA_x"/>, <img class="math" src="../_images/math/0a328f61bd33b76da7bb06a872651ec6ed9efa54.svg" alt="iA_y"/>, <img class="math" src="../_images/math/8628edbee7e973e2455b5364ab16f495161f944a.svg" alt="iA_z"/>, where <img class="math" src="../_images/math/e25d7cb16dfb7b28ec0b98bdbf6fbdb633fcb5b6.svg" alt="A_x"/> is
-the rotation by <img class="math" src="../_images/math/e6c2355f94136a87595929e6f2e3c54b1a2493d3.svg" alt="\pi/2"/> around <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>–axis in <img class="math" src="../_images/math/3c631cfb6e990cae68d7906bcacc4193a425e53c.svg" alt="R^3"/>. The generators form a
-vector space (here the linear span of <img class="math" src="../_images/math/e86b49e295c48369c5aa39459da5726578832f90.svg" alt="iA_x"/>, <img class="math" src="../_images/math/0a328f61bd33b76da7bb06a872651ec6ed9efa54.svg" alt="iA_y"/>, <img class="math" src="../_images/math/8628edbee7e973e2455b5364ab16f495161f944a.svg" alt="iA_z"/>) with an
+<img class="math" src="../_images/math/685a42dfe31947de72f93401e0d2c7d99fea9545.svg" alt="G=SO(3)"/> there are three generators, <img class="math" src="../_images/math/67fae8fef7bbc76e04336596cfd474e4269e7f0e.svg" alt="iA_x"/>, <img class="math" src="../_images/math/c81e967d0cf5b227ff2689fb6773705f43e190f5.svg" alt="iA_y"/>, <img class="math" src="../_images/math/4697949a3663e2255f7090407dc11839917f18bd.svg" alt="iA_z"/>, where <img class="math" src="../_images/math/a904e6f5fce181f6538376bafb9d11f43eb0722e.svg" alt="A_x"/> is
+the rotation by <img class="math" src="../_images/math/15334a121d4ec5cb114933f9a8c6388693453578.svg" alt="\pi/2"/> around <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>–axis in <img class="math" src="../_images/math/367177fd019e4023bf5f6eb0f9a4ed44ecbb3952.svg" alt="R^3"/>. The generators form a
+vector space (here the linear span of <img class="math" src="../_images/math/67fae8fef7bbc76e04336596cfd474e4269e7f0e.svg" alt="iA_x"/>, <img class="math" src="../_images/math/c81e967d0cf5b227ff2689fb6773705f43e190f5.svg" alt="iA_y"/>, <img class="math" src="../_images/math/4697949a3663e2255f7090407dc11839917f18bd.svg" alt="iA_z"/>) with an
 additional operation of commutation. This structure is closed and it is called
-the Lie algebra of the group <img class="math" src="../_images/math/f08eba5e81a8f6a84b798464137a21afa3e59756.svg" alt="G"/>. The commutation relations between the
-generators fully specify the Lie algebra. E.g. <img class="math" src="../_images/math/f17cad105a30f122a95dab3e2624752e6b424371.svg" alt="[iA_x,iA_y]=iA_z"/>
+the Lie algebra of the group <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>. The commutation relations between the
+generators fully specify the Lie algebra. E.g. <img class="math" src="../_images/math/bfed68e84c9f10c31883acfac4481efb877cf780.svg" alt="[iA_x,iA_y]=iA_z"/>
 and the two other ones.</p>
 <p>This is a great simplification because a continuous (infinite) group was thus
 mapped on a vector space, the algebra, where it suffices to look at the basis
 elements, the generator. The net effect is that we have to watch only three
 objects instead of infinitely many in the example above.</p>
 <p>Todo: weights, roots and Dynkin diagrams. Octets and decuplets. Classification
-of IRs of <img class="math" src="../_images/math/0a901b3bc3e36c9990bd8d965127a304d76cd97b.svg" alt="SU(n)"/>. From <a class="reference internal" href="#georgi" id="id23">[Georgi]</a>.</p>
-<div class="section" id="irs-of-su-2">
+of IRs of <img class="math" src="../_images/math/19a4243fab3537a07c8b8864dd9f4a2b11e9382a.svg" alt="SU(n)"/>. From <a class="reference internal" href="#georgi" id="id23"><span>[Georgi]</span></a>.</p>
+<section id="irs-of-su-2">
 <h4>IRs of SU(2)<a class="headerlink" href="#irs-of-su-2" title="Permalink to this headline">¶</a></h4>
 <ol class="loweralpha simple" start="16">
-<li>181 in <a class="reference internal" href="#sternberg" id="id24">[Sternberg]</a>; alternative somewhere in <a class="reference internal" href="#georgi" id="id25">[Georgi]</a>.</li>
+<li><p>181 in <a class="reference internal" href="#sternberg" id="id24"><span>[Sternberg]</span></a>; alternative somewhere in <a class="reference internal" href="#georgi" id="id25"><span>[Georgi]</span></a>.</p></li>
 </ol>
 <p>The Peter-Weyl theorem concerns also the orthogonality of characters and that
-in turn strongly restricts any possible characters of <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/>. The conjugacy
-classes of <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/> are exemplified by matrices
-<img class="math" src="../_images/math/084f94e6992b640f35a7bcb69cf72003ffe5ccfd.svg" alt="U_\theta=\diag(e^{i\theta},e^{-i\theta})"/> and their possible characters can
+in turn strongly restricts any possible characters of <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/>. The conjugacy
+classes of <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/> are exemplified by matrices
+<img class="math" src="../_images/math/0d8d6d2b7a8c5d319bdf5a4026eb265a27fa87f0.svg" alt="U_\theta=\diag(e^{i\theta},e^{-i\theta})"/> and their possible characters can
 only be</p>
 <div class="math">
-<p><img src="../_images/math/211d6c8581b911601d95bec0e953d24cbd7313c4.svg" alt="\chi(\theta)=\sum_{k=-s}^{s} \exp(-i2k\theta)"/></p>
-</div><p>with <img class="math" src="../_images/math/8501c3c4ff5b7a3b1e465170dd4ba9bdf4c4fb76.svg" alt="2s"/> integer.</p>
+<p><img src="../_images/math/ada49df646b056cbe8065f163017d756ae6dc555.svg" alt="\chi(\theta)=\sum_{k=-s}^{s} \exp(-i2k\theta)"/></p>
+</div><p>with <img class="math" src="../_images/math/89501591cd921f2dbdbf44714658454e16478efe.svg" alt="2s"/> integer.</p>
 <p>All the corresponding reps exist, they are defined on the space
-<img class="math" src="../_images/math/8c25ffd82c8f5ce8d61ea2bd6f6766cb84cb6883.svg" alt="z_1^{2s},z_1^{2s-1}z_2,\ldots, z_2^{2s}"/> by
-<img class="math" src="../_images/math/c480ffcd6e51eed490e21c6f05dc81345afbfabb.svg" alt="U_{-\theta}z_1^{2s-k}z_2^k\mapsto [\exp i(2s-2k)\theta]z_1^{2s-k}z_2^k"/>.</p>
-<p>For an IR of <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/> the complex conjugate is just the original. For other
-<img class="math" src="../_images/math/0a901b3bc3e36c9990bd8d965127a304d76cd97b.svg" alt="SU(n)"/> it is not necessarily the case, p. 182 in <a class="reference internal" href="#sternberg" id="id26">[Sternberg]</a>.</p>
-<p>IRs of <img class="math" src="../_images/math/e1b130f1003c198ce130bcf20414426b20378b2f.svg" alt="SO(3)"/> are just those of <img class="math" src="../_images/math/040e3ff58800504adcaed5619678bc0cf7e11329.svg" alt="SU(2)"/> but <img class="math" src="../_images/math/deb2bb6206edaca480551ef2028840b95011da05.svg" alt="s"/> must be an integer.</p>
-</div>
-</div>
-<div class="section" id="young-diagrams">
+<img class="math" src="../_images/math/2383422ba450ee7c929314b64d7af3a1c53be95e.svg" alt="z_1^{2s},z_1^{2s-1}z_2,\ldots, z_2^{2s}"/> by
+<img class="math" src="../_images/math/be65c5863ec39782b58eabbba100b7dae62be37d.svg" alt="U_{-\theta}z_1^{2s-k}z_2^k\mapsto [\exp i(2s-2k)\theta]z_1^{2s-k}z_2^k"/>.</p>
+<p>For an IR of <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/> the complex conjugate is just the original. For other
+<img class="math" src="../_images/math/19a4243fab3537a07c8b8864dd9f4a2b11e9382a.svg" alt="SU(n)"/> it is not necessarily the case, p. 182 in <a class="reference internal" href="#sternberg" id="id26"><span>[Sternberg]</span></a>.</p>
+<p>IRs of <img class="math" src="../_images/math/02c6a0cb7a0d060e5b0ad765d938744a7bbdd347.svg" alt="SO(3)"/> are just those of <img class="math" src="../_images/math/d8e39ac0fec8af61cf509c8d9dc57f16d09c6d53.svg" alt="SU(2)"/> but <img class="math" src="../_images/math/45f3f4960bc99d1388078566f1a442578c4f3e15.svg" alt="s"/> must be an integer.</p>
+</section>
+</section>
+<section id="young-diagrams">
 <h3>Young diagrams<a class="headerlink" href="#young-diagrams" title="Permalink to this headline">¶</a></h3>
-<p>YD is a systematic method to find all IRs of any symmetric group <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/>
-(permutations of an <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/>-element set). The idea:</p>
+<p>YD is a systematic method to find all IRs of any symmetric group <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/>
+(permutations of an <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>-element set). The idea:</p>
 <ul class="simple">
-<li>find all conjugacy classes of <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/></li>
-<li>assign an IR to each of them</li>
+<li><p>find all conjugacy classes of <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/></p></li>
+<li><p>assign an IR to each of them</p></li>
 </ul>
 <p>Char’n of the conjugacy classes: each permutation can be decomposed into
 cycles. This cycle structure (i.e. how many cycles of length 1, how many of
-length 2, etc. <img class="math" src="../_images/math/abd5455b16e4796aa5b0a4891b5d21d65190c4cd.svg" alt="=[\nu_1,\nu_2\,\ldots,\nu_n]"/>) is a unique mark of each
+length 2, etc. <img class="math" src="../_images/math/16bece38a11f9180cfe2af880c70c4731f0ef76f.svg" alt="=[\nu_1,\nu_2\,\ldots,\nu_n]"/>) is a unique mark of each
 conjugation class. The Young diagram is written by rows, each row has
-<img class="math" src="../_images/math/501cceccdfdebce959845964678f2734b1b93fbe.svg" alt="\lambda_i"/> empty boxes and <img class="math" src="../_images/math/7e1a0fe5561062581041c07f63568d2c8a54cf49.svg" alt="\lambda_i-\lambda_{i+i}=\nu_i\ge 0"/>. Each
-conjugacy class has one YD. An YD of <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/> has <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> boxes.</p>
-<p>A Young tabloid (YTd) is obtained by filling an YD with numbers <img class="math" src="../_images/math/84f31eaed472874cb301d2d64d7b8e126b27853d.svg" alt="1,\ldots,n"/> where
+<img class="math" src="../_images/math/ce8c0741b1121d8f61557df9c6d0df2472beea25.svg" alt="\lambda_i"/> empty boxes and <img class="math" src="../_images/math/0e0da584ba1f793e7b64612c070634dfc1fcdf7f.svg" alt="\lambda_i-\lambda_{i+i}=\nu_i\ge 0"/>. Each
+conjugacy class has one YD. An YD of <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/> has <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> boxes.</p>
+<p>A Young tabloid (YTd) is obtained by filling an YD with numbers <img class="math" src="../_images/math/bfbbd9e2ccb29478a0ebc04f1556a07ceb0d4106.svg" alt="1,\ldots,n"/> where
 ordering in each row does not matter. A Young tableau is an YTd where all
 orderings (thus also in rows) matter.</p>
-<p>The IRs of <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/>. Take an YD <img class="math" src="../_images/math/61fb852c48771d1bde8fe37cf1ea56342b588515.svg" alt="\lambda"/>. On the space of all corresponding
-YTd’s (<img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91c75c514b.svg" alt="M_\lambda"/>) a rep. of the <img class="math" src="../_images/math/3f551f5478579c710f0c7ad077041368dba8a03d.svg" alt="S_n"/> is created. It is decomposed into IRs
-and shown to have some ‘new’ IR compared to <img class="math" src="../_images/math/f77c0700a9424bbe64bb7b1ce4ffd34e7e19bdad.svg" alt="\mu&gt;\lambda"/>.</p>
-<p>Details are explained in <a class="reference internal" href="#sternberg" id="id27">[Sternberg]</a>, p. 76 or in the lecture notes of
+<p>The IRs of <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/>. Take an YD <img class="math" src="../_images/math/165b0c434b8455be67011f1327cba822ddf25e63.svg" alt="\lambda"/>. On the space of all corresponding
+YTd’s (<img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae69776e1f.svg" alt="M_\lambda"/>) a rep. of the <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/> is created. It is decomposed into IRs
+and shown to have some ‘new’ IR compared to <img class="math" src="../_images/math/73d6eace1bbb5c74d16188c209ca6da362870c99.svg" alt="\mu&gt;\lambda"/>.</p>
+<p>Details are explained in <a class="reference internal" href="#sternberg" id="id27"><span>[Sternberg]</span></a>, p. 76 or in the lecture notes of
 J. Niederle.</p>
-<p>Comments from p. 82 of <a class="reference internal" href="#sternberg" id="id28">[Sternberg]</a>:
-Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91c75c514b.svg" alt="M_\lambda"/> is defined (<img class="math" src="../_images/math/5d0437b6d9197cd88d1436bd08903763b122c576.svg" alt="e_t"/>; <img class="math" src="../_images/math/1ddde94de96455cab1dc0331fc450f92198f0e50.svg" alt="\delta_{\{t\}}"/> means probably a function on
-<img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91c75c514b.svg" alt="M_\lambda"/> which is zero for all <img class="math" src="../_images/math/a56f54e4be311c70e5f5e969ddda1723d5a1308a.svg" alt="\{y\}"/> unless <img class="math" src="../_images/math/f87d47dff01ab02d3d230abc75bd0522c123fd75.svg" alt="\{y\}=\{t\}"/>). The action of
-<img class="math" src="../_images/math/74f741fd50ba4de0413ac25a410b2f5c763ec372.svg" alt="a\in S_n"/> on this basis functions is described.</p>
-</div>
-</div>
-<div class="section" id="literature">
-<h2>3.36.5. Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
+<p>Comments from p. 82 of <a class="reference internal" href="#sternberg" id="id28"><span>[Sternberg]</span></a>:
+Basis of <img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae69776e1f.svg" alt="M_\lambda"/> is defined (<img class="math" src="../_images/math/4749221ad8a549ba6ab7b0c0f776ed2a59888f4b.svg" alt="e_t"/>; <img class="math" src="../_images/math/0b73faed67eaee50e22981d88380469d77481cf1.svg" alt="\delta_{\{t\}}"/> means probably a function on
+<img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae69776e1f.svg" alt="M_\lambda"/> which is zero for all <img class="math" src="../_images/math/3b0b0596ebd101feaefd0bbccba33937449fc71b.svg" alt="\{y\}"/> unless <img class="math" src="../_images/math/769968e5773fa0d686293081976975c1b7308ebc.svg" alt="\{y\}=\{t\}"/>). The action of
+<img class="math" src="../_images/math/2464c0871aaf0b77e61855fa4ed527963c5c137d.svg" alt="a\in S_n"/> on this basis functions is described.</p>
+</section>
+</section>
+<section id="literature">
+<h2><span class="section-number">3.36.5. </span>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
 <p>Books:</p>
-<table class="docutils citation" frame="void" id="birss" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[Birss]</td><td><em>(<a class="fn-backref" href="#id8">1</a>, <a class="fn-backref" href="#id11">2</a>)</em> Birss, R.R. (1961). Symmetry and Magnetism. Volume III.  North-Holland Publishing Company.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="bishop" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id17">[Bishop]</a></td><td>Bishop D.M. (1993). Group theory and chemistry. Courier Dover Publications.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="elliott" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[Elliott]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id16">2</a>)</em> Elliott, J.P. and Dawber, P.G. (1979). Symmetry in Physics. The Macmillan Press Ltd.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="georgi" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[Georgi]</td><td><em>(<a class="fn-backref" href="#id23">1</a>, <a class="fn-backref" href="#id25">2</a>)</em> Georgi, H. (1990). Lie Algebras in Particle Physics. Addison-Wesley.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="pilar" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id18">[Pilar]</a></td><td>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw–Hill.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="sternberg" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[Sternberg]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id3">2</a>, <a class="fn-backref" href="#id4">3</a>, <a class="fn-backref" href="#id5">4</a>, <a class="fn-backref" href="#id6">5</a>, <a class="fn-backref" href="#id7">6</a>, <a class="fn-backref" href="#id9">7</a>, <a class="fn-backref" href="#id10">8</a>, <a class="fn-backref" href="#id20">9</a>, <a class="fn-backref" href="#id21">10</a>, <a class="fn-backref" href="#id22">11</a>, <a class="fn-backref" href="#id24">12</a>, <a class="fn-backref" href="#id26">13</a>, <a class="fn-backref" href="#id27">14</a>, <a class="fn-backref" href="#id28">15</a>)</em> Sternberg, S. (1994). Group theory and physics. Cambridge University Press</td></tr>
-</tbody>
-</table>
+<dl class="citation">
+<dt class="label" id="birss"><span class="brackets">Birss</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id11">2</a>)</span></dt>
+<dd><p>Birss, R.R. (1961). Symmetry and Magnetism. Volume III.  North-Holland Publishing Company.</p>
+</dd>
+<dt class="label" id="bishop"><span class="brackets"><a class="fn-backref" href="#id17">Bishop</a></span></dt>
+<dd><p>Bishop D.M. (1993). Group theory and chemistry. Courier Dover Publications.</p>
+</dd>
+<dt class="label" id="elliott"><span class="brackets">Elliott</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id16">2</a>)</span></dt>
+<dd><p>Elliott, J.P. and Dawber, P.G. (1979). Symmetry in Physics. The Macmillan Press Ltd.</p>
+</dd>
+<dt class="label" id="georgi"><span class="brackets">Georgi</span><span class="fn-backref">(<a href="#id23">1</a>,<a href="#id25">2</a>)</span></dt>
+<dd><p>Georgi, H. (1990). Lie Algebras in Particle Physics. Addison-Wesley.</p>
+</dd>
+<dt class="label" id="pilar"><span class="brackets"><a class="fn-backref" href="#id18">Pilar</a></span></dt>
+<dd><p>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw–Hill.</p>
+</dd>
+<dt class="label" id="sternberg"><span class="brackets">Sternberg</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id3">2</a>,<a href="#id4">3</a>,<a href="#id5">4</a>,<a href="#id6">5</a>,<a href="#id7">6</a>,<a href="#id9">7</a>,<a href="#id10">8</a>,<a href="#id20">9</a>,<a href="#id21">10</a>,<a href="#id22">11</a>,<a href="#id24">12</a>,<a href="#id26">13</a>,<a href="#id27">14</a>,<a href="#id28">15</a>)</span></dt>
+<dd><p>Sternberg, S. (1994). Group theory and physics. Cambridge University Press</p>
+</dd>
+</dl>
 <p>Articles:</p>
-<table class="docutils citation" frame="void" id="blokker72" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id13">[Blokker72]</a></td><td>Blokker, E. International journal of quantum chemistry VI, 925, (1972)</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="cannon69" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id14">[Cannon69]</a></td><td>Cannon, J.J. Communications of the association for computing machinery, <strong>12</strong>, 3 (1969)</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="chillag86" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id15">[Chillag86]</a></td><td>Chillag, D. (1986). Character Values of Finite Groups as Eigenvalues Of Nonnegative Integer Matrices. Proceedings of the American Mathematical Society, 97(3), 565-567.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="dixon67" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id12">[Dixon67]</a></td><td>Dixon, J.D. Numerische Mathematik <strong>10</strong>, 446 (1967)</td></tr>
-</tbody>
-</table>
-</div>
-</div>
+<dl class="citation">
+<dt class="label" id="blokker72"><span class="brackets"><a class="fn-backref" href="#id13">Blokker72</a></span></dt>
+<dd><p>Blokker, E. International journal of quantum chemistry VI, 925, (1972)</p>
+</dd>
+<dt class="label" id="cannon69"><span class="brackets"><a class="fn-backref" href="#id14">Cannon69</a></span></dt>
+<dd><p>Cannon, J.J. Communications of the association for computing machinery, <strong>12</strong>, 3 (1969)</p>
+</dd>
+<dt class="label" id="chillag86"><span class="brackets"><a class="fn-backref" href="#id15">Chillag86</a></span></dt>
+<dd><p>Chillag, D. (1986). Character Values of Finite Groups as Eigenvalues Of Nonnegative Integer Matrices. Proceedings of the American Mathematical Society, 97(3), 565-567.</p>
+</dd>
+<dt class="label" id="dixon67"><span class="brackets"><a class="fn-backref" href="#id12">Dixon67</a></span></dt>
+<dd><p>Dixon, J.D. Numerische Mathematik <strong>10</strong>, 446 (1967)</p>
+</dd>
+</dl>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.36. Groups</a><ul>
 <li><a class="reference internal" href="#theory">3.36.1. Theory</a><ul>
 <li><a class="reference internal" href="#representation">Representation</a><ul>
@@ -1142,12 +1112,17 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="feynman-parameters.html"
-                        title="previous chapter">3.35. Feynman Parameters</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="wigner.html"
-                        title="next chapter">3.37. Wigner D Function</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="feynman-parameters.html"
+                          title="previous chapter"><span class="section-number">3.35. </span>Feynman Parameters</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="wigner.html"
+                          title="next chapter"><span class="section-number">3.37. </span>Wigner D Function</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1156,17 +1131,15 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1184,12 +1157,13 @@ Basis of <img class="math" src="../_images/math/710cc850959b3d37ef83c90e8000ba91
           <a href="feynman-parameters.html" title="3.35. Feynman Parameters"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.36. </span>Groups</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

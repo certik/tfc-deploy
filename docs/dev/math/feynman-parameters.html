@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.35. Feynman Parameters &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.36. Groups" href="groups.html" />
@@ -62,7 +64,8 @@
           <a href="hyper.html" title="3.34. Hypergeometric Functions"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.35. </span>Feynman Parameters</a></li> 
       </ul>
     </div>  
 
@@ -71,13 +74,13 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="feynman-parameters">
-<h1>3.35. Feynman Parameters<a class="headerlink" href="#feynman-parameters" title="Permalink to this headline">¶</a></h1>
-<p>When integrating a denominator like <img class="math" src="../_images/math/8c71e952e9951f62c81ede026fbb761791d785a4.svg" alt="{1\over AB}"/>, the idea is to introduce
+  <section id="feynman-parameters">
+<h1><span class="section-number">3.35. </span>Feynman Parameters<a class="headerlink" href="#feynman-parameters" title="Permalink to this headline">¶</a></h1>
+<p>When integrating a denominator like <img class="math" src="../_images/math/6e87f547ccf3e0be89ecb5051a828c066f61d305.svg" alt="{1\over AB}"/>, the idea is to introduce
 auxiliary parameters in order to make the denominator simpler. We start with
 the identity:</p>
 <div class="math" id="equation-feynpar-2">
-<p><span class="eqno">(3.35.1)<a class="headerlink" href="#equation-feynpar-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/58b520277a6b06bed919d86fd1db262c88418f36.svg" alt="{1\over AB} = \int_0^1 \d x {1\over \left(xA + (1-x)B\right)^2}
+<p><span class="eqno">(3.35.1)<a class="headerlink" href="#equation-feynpar-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/798882b85ce2655f8971c6a6b55dcf3232dfeedf.svg" alt="{1\over AB} = \int_0^1 \d x {1\over \left(xA + (1-x)B\right)^2}
 =
 \int_0^1 \d x \int_0^1 \d y {\delta(x+y-1)
     \over \left(xA + yB\right)^2}"/></p>
@@ -92,7 +95,7 @@ the identity:</p>
 </div>
 <p>By repeatedly differentiating with respect to B:</p>
 <div class="math" id="equation-feynpar-abn">
-<p><span class="eqno">(3.35.2)<a class="headerlink" href="#equation-feynpar-abn" title="Permalink to this equation">¶</a></span><img src="../_images/math/92929e661987fe9d13cbe4f51f9f0f5375a6d12d.svg" alt="{1\over AB^2} = \int_0^1 \d x \int_0^1 \d y {2 y \delta(x+y-1)
+<p><span class="eqno">(3.35.2)<a class="headerlink" href="#equation-feynpar-abn" title="Permalink to this equation">¶</a></span><img src="../_images/math/4b66ff56ee6ed4050cf52725a442c856696326b9.svg" alt="{1\over AB^2} = \int_0^1 \d x \int_0^1 \d y {2 y \delta(x+y-1)
     \over \left(xA + yB\right)^3}
 
 {1\over AB^3} = \int_0^1 \d x \int_0^1 \d y {3 y^2 \delta(x+y-1)
@@ -102,14 +105,14 @@ the identity:</p>
     \over \left(xA + yB\right)^{n+1}}"/></p>
 </div><p>Then we prove:</p>
 <div class="math" id="equation-feynpar-n">
-<p><span class="eqno">(3.35.3)<a class="headerlink" href="#equation-feynpar-n" title="Permalink to this equation">¶</a></span><img src="../_images/math/02dd3f5dfaa0c828897f9a6a89c9f6c59c6c1d34.svg" alt="{1\over A_1A_2\cdots A_n} =
+<p><span class="eqno">(3.35.3)<a class="headerlink" href="#equation-feynpar-n" title="Permalink to this equation">¶</a></span><img src="../_images/math/5fd14c9f29f8ba8237961bb21fd3f4e28eadff98.svg" alt="{1\over A_1A_2\cdots A_n} =
     \int_0^1 \d x_1\cdots\int_0^1 \d x_n {(n-1)!\,
         \delta(x_1 + \cdots + x_n-1)
         \over \left(x_1A_1 + \cdots + x_nA_n\right)^n}"/></p>
-</div><p>For <img class="math" src="../_images/math/04a2ad26a0673175b0f14538007e83bab37a727d.svg" alt="n=2"/> we get <a class="reference internal" href="#equation-feynpar-2">(3.35.1)</a> and if it holds for <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> it also holds for
-<img class="math" src="../_images/math/6bf273026c657f9980a0cc63e10afd3c2a92f12a.svg" alt="n+1"/>, because we multiply <a class="reference internal" href="#equation-feynpar-n">(3.35.3)</a> by <img class="math" src="../_images/math/0303be4691551c1d4ffc1e4ad101f0a0afb34614.svg" alt="{1\over A_{n+1}}"/> and get:</p>
+</div><p>For <img class="math" src="../_images/math/c11097cda2da26bcd8afe9fbd776e24dde73e73a.svg" alt="n=2"/> we get <a class="reference internal" href="#equation-feynpar-2">(3.35.1)</a> and if it holds for <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> it also holds for
+<img class="math" src="../_images/math/b2e8426c503f76973655aa84d346fb0bfecd9428.svg" alt="n+1"/>, because we multiply <a class="reference internal" href="#equation-feynpar-n">(3.35.3)</a> by <img class="math" src="../_images/math/404f10faed947d7b5ab17866fde777e79617cb92.svg" alt="{1\over A_{n+1}}"/> and get:</p>
 <div class="math">
-<p><img src="../_images/math/33846e0199643afb78b16dfb7df9218ab303d8a3.svg" alt="{1\over A_1A_2\cdots A_n}{1\over A_{n+1}} =
+<p><img src="../_images/math/e08e0f8b009c93440b18f595929f0d1d1246caac.svg" alt="{1\over A_1A_2\cdots A_n}{1\over A_{n+1}} =
 
 = \int_0^1 \d x_1\cdots\int_0^1 \d x_n (n-1)!\,\delta(x_1 + \cdots +x_n-1)
 {1 \over \left(x_1A_1 + \cdots + x_nA_n\right)^n A_{n+1}} =
@@ -148,65 +151,65 @@ the identity:</p>
     \int_0^1 \d x_1\cdots\int_0^1 \d x_{n+1} {n!\,
         \delta(x_1 + \cdots + x_{n+1}-1)
         \over \left(x_1A_1 + \cdots + x_{n+1}A_{n+1}\right)^{n+1}}"/></p>
-</div><p>Where we used <a class="reference internal" href="#equation-feynpar-abn">(3.35.2)</a> and the fact, that <img class="math" src="../_images/math/f4febf80f4ec11b3f757572cb5c674b7efbb7866.svg" alt="\delta(x_1 + \cdots
+</div><p>Where we used <a class="reference internal" href="#equation-feynpar-abn">(3.35.2)</a> and the fact, that <img class="math" src="../_images/math/95ec5b25eed207cb2e02f816aaf00435970a08b8.svg" alt="\delta(x_1 + \cdots
 +x_n-1)=y\,\delta(yx_1 + \cdots +yx_n-y)"/>, after the substituation we also
-restricted the limits of integration from 1 to <img class="math" src="../_images/math/58fc3aff334145cb7bfd9860073c24339fc6a1f1.svg" alt="1\over y"/>, since <img class="math" src="../_images/math/3894518ab1bb277e2dcb35ca0ab07980476f56b1.svg" alt="x_1"/>, <img class="math" src="../_images/math/c1959a8e822eb72f3feda0cd1ebea073b3dcef96.svg" alt="x_2"/>,
+restricted the limits of integration from 1 to <img class="math" src="../_images/math/2b14274ff82e8aa3f5b270cf25eb66e778047dae.svg" alt="1\over y"/>, since <img class="math" src="../_images/math/3cbaf5c63029b99eef876930b1e0a32ba5f4d5a9.svg" alt="x_1"/>, <img class="math" src="../_images/math/694d6790ae97386776b4f37d46a9c00ddc9cd9e2.svg" alt="x_2"/>,
 … are all positive.</p>
-<div class="section" id="example-1">
-<h2>3.35.1. Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<section id="example-1">
+<h2><span class="section-number">3.35.1. </span>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/eb82ea5d3fdece1f444ded242f6bf035fb77617d.svg" alt="\int {\d^4 k\over (k-p)^2 (k^2 - m^2)}
+<p><img src="../_images/math/c29874f0827aea4c749f93c140b35845ca143950.svg" alt="\int {\d^4 k\over (k-p)^2 (k^2 - m^2)}
     = \int d^4 k \int_0^1\d x \d y {\delta(x+y-1)\over D^2}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/7009c5f576fbdc37665ea2011f3c197b873a981d.svg" alt="D = x (k-p)^2 + y(k^2 - m^2) = (x+y)k^2 - 2xk\cdot p +xp^2-ym^2
+<p><img src="../_images/math/7dcce0abdd63ae248c93debe0dd7018c0832513f.svg" alt="D = x (k-p)^2 + y(k^2 - m^2) = (x+y)k^2 - 2xk\cdot p +xp^2-ym^2
   = k^2 - 2xk\cdot p +xp^2-ym^2"/></p>
-</div><p>In the last part we used <img class="math" src="../_images/math/d23c1953d11b1db454ccf79a94f33ab50bef6aef.svg" alt="x+y=1"/>. We now shift <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> by introducing:</p>
+</div><p>In the last part we used <img class="math" src="../_images/math/bff69d019feed0787a8802b729f941dd69798594.svg" alt="x+y=1"/>. We now shift <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> by introducing:</p>
 <div class="math">
-<p><img src="../_images/math/751c08c1f8a7fcf9795158a851442195d85af1ee.svg" alt="l = k - xp
+<p><img src="../_images/math/f01083b549a0d44949444b205b25049ad58a73c6.svg" alt="l = k - xp
 
 \d^4k = \d^4 l"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/9f2c72643c5c8eb28c311104f385ab576ffbcdab.svg" alt="D = k^2 - 2xk\cdot p +xp^2-ym^2 = l^2 - x^2p^2 + xp^2 - ym^2"/></p>
+<p><img src="../_images/math/fd057f9b7738d341e75cda6e99d954bd954fe0d1.svg" alt="D = k^2 - 2xk\cdot p +xp^2-ym^2 = l^2 - x^2p^2 + xp^2 - ym^2"/></p>
 </div><p>thus:</p>
 <div class="math">
-<p><img src="../_images/math/40427d958df82d58c9fa86bbb3c6770502bf5f1c.svg" alt="\int d^4 k \int_0^1\d x \d y {\delta(x+y-1)\over D^2} =
+<p><img src="../_images/math/feb2b956e8b106f6dea07efadd2bf0b261dcbc3f.svg" alt="\int d^4 k \int_0^1\d x \d y {\delta(x+y-1)\over D^2} =
 
 = \int l^4 k \int_0^1\d x \d y {\delta(x+y-1)\over
     (l^2 - x^2p^2 + xp^2 - ym^2)^2}"/></p>
-</div></div>
-<div class="section" id="example-2">
-<h2>3.35.2. Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="example-2">
+<h2><span class="section-number">3.35.2. </span>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/e48eea20ee1004ef22269d547c79df724737dfd1.svg" alt="\int {\d^4 k\over (k^2-m^2+i\epsilon)((k+p)^2 - m^2 + i\epsilon)
+<p><img src="../_images/math/3fdc1bf4bf12b35576b579ad2b21905954afb3f1.svg" alt="\int {\d^4 k\over (k^2-m^2+i\epsilon)((k+p)^2 - m^2 + i\epsilon)
     ((k-p)^2+i\epsilon)}
     = \int d^4 k \int_0^1\d x \d y\d z {2\delta(x+y+z-1)\over D^3}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/9d783de6f98f41dc8a0755914a3ce8a8c03fbf4e.svg" alt="D = x (k^2-m^2+i\epsilon) + y((k+p)^2 - m^2 + i\epsilon) +
+<p><img src="../_images/math/fcba90719f5befab67869d776df4058200f714f9.svg" alt="D = x (k^2-m^2+i\epsilon) + y((k+p)^2 - m^2 + i\epsilon) +
     z((k-p)^2+i\epsilon) =
 
   = (x+y+z)k^2 + 2k\cdot(yq-zp) + yq^2 + zp^2 - (x+y)m^2 +
     (x+y+z)i\epsilon =
 
   = k^2 + 2k\cdot(yq-zp) + yq^2 + zp^2 - (x+y)m^2 + i\epsilon"/></p>
-</div><p>In the last part we used <img class="math" src="../_images/math/a4722cc5598e84b959eb5b28da9cee4712fa442d.svg" alt="x+y+z=1"/>. We now shift <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> by introducing:</p>
+</div><p>In the last part we used <img class="math" src="../_images/math/53bdec1bec55a1d05dec218e1b820e81b463f1b9.svg" alt="x+y+z=1"/>. We now shift <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> by introducing:</p>
 <div class="math">
-<p><img src="../_images/math/248f13360cae53fe0e632fab8808b5bcbb2e35de.svg" alt="l = k + yq - zp
+<p><img src="../_images/math/3e8509dfc1b8e9c21eecd1dc45870498578f31ad.svg" alt="l = k + yq - zp
 
 \d^4k = \d^4 l"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/b94938c6aba4d6b311eb8f6b69d09357643791db.svg" alt="D = k^2 + 2k\cdot(yq-zp) + yq^2 + zp^2 - (x+y)m^2 + i\epsilon =
+<p><img src="../_images/math/6f887bb3264e1527d6e01b5058ff7641bb9ef2d6.svg" alt="D = k^2 + 2k\cdot(yq-zp) + yq^2 + zp^2 - (x+y)m^2 + i\epsilon =
 
 = l^2 - \Delta + i\epsilon"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/fd79177369359f4f896945cc1b7343dce7482076.svg" alt="\Delta = -xyq^2 + (1-z)^2m^2"/></p>
+<p><img src="../_images/math/9a7b7245d8cb4ff26b65ac00fa2f11ec26b110fe.svg" alt="\Delta = -xyq^2 + (1-z)^2m^2"/></p>
 </div><p>thus:</p>
 <div class="math">
-<p><img src="../_images/math/fe0ba90fb2b47df5a8a5480d0ca1f86f76273ec2.svg" alt="\int d^4 k \int_0^1\d x \d y\d z {2\delta(x+y+z-1)\over D^3} =
+<p><img src="../_images/math/748703f33e325ea47d750d5a097b201149fedd1c.svg" alt="\int d^4 k \int_0^1\d x \d y\d z {2\delta(x+y+z-1)\over D^3} =
 
 = \int \d^4 l \int_0^1\d x \d y\d z {2\delta(x+y+z-1)\over
 (l^2 - \Delta + i\epsilon)^3 } =
@@ -230,24 +233,24 @@ restricted the limits of integration from 1 to <img class="math" src="../_images
 = (-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
      (1-z)^2m^2 - xyq^2}"/></p>
 </div><p>This integral has an infrared divergence. We can cure this by pretending that
-the photon has a small nonzero mass <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/>, then in the denominator of the
+the photon has a small nonzero mass <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/>, then in the denominator of the
 photon propagator we need to change:</p>
 <div class="math">
-<p><img src="../_images/math/98c6c8bd48b810cf5a97b386ca24c7d485d03ab0.svg" alt="(k-p)^2 \to (k-p)^2 - \mu^2"/></p>
-</div><p>This denominator is multiplied by <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/> later on, so at the end we need to do the
+<p><img src="../_images/math/5df7db0fd5cafab5d35c5537eee01af96e0d092f.svg" alt="(k-p)^2 \to (k-p)^2 - \mu^2"/></p>
+</div><p>This denominator is multiplied by <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/> later on, so at the end we need to do the
 change:</p>
 <div class="math">
-<p><img src="../_images/math/3617d0f4c09db3ea69e0e3f5cb555c18afd630b9.svg" alt="\Delta \to \Delta + z\mu^2"/></p>
+<p><img src="../_images/math/b449f8ea2617730c9e156ccb1cea1a26a8d2c7dd.svg" alt="\Delta \to \Delta + z\mu^2"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/17ae46633cf8774e6d140703c7bbe2f5e94c11e6.svg" alt="(-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
+<p><img src="../_images/math/dc21f203952a05eb8c1d5759796c678333350c63.svg" alt="(-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
      (1-z)^2m^2 - xyq^2} \to
 
 \to (-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
      (1-z)^2m^2 - xyq^2 + z\mu^2}"/></p>
-</div><p>for <img class="math" src="../_images/math/3c8565346f7af27d82daff549147078eafd6f2ab.svg" alt="q^2=0"/> we get:</p>
+</div><p>for <img class="math" src="../_images/math/da359ad64c05615da59c1695a69a5f545ef13f3d.svg" alt="q^2=0"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/41cce5d49d25f99201b22d51ec839d032302a366.svg" alt="(-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
+<p><img src="../_images/math/45a4a02861390792d0fd17af251ebc7d4b8cb153.svg" alt="(-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
      (1-z)^2m^2 - xyq^2 + z\mu^2} \to
 
 \to (-i\pi^2)\int_0^1\d x \d y\d z {\delta(x+y+z-1) \over
@@ -259,22 +262,22 @@ change:</p>
 = (-i\pi^2)\int_0^1\d z {1-z \over (1-z)^2m^2 + z\mu^2}"/></p>
 </div><p>We can use the following integral:</p>
 <div class="math">
-<p><img src="../_images/math/5a9f30ee4a809fa46747bcd99d58deb4569c5d2e.svg" alt="\int_{0}^{1} \frac{1 - z}{1 - 2 z + z^{2} + z \mu^{2}}\,dz = \frac{1}{2}
+<p><img src="../_images/math/45f0c65b9a968575dd5b0b3ce748af324a3fad16.svg" alt="\int_{0}^{1} \frac{1 - z}{1 - 2 z + z^{2} + z \mu^{2}}\,dz = \frac{1}{2}
 \operatorname{log}\left(\mu^{-2}\right) +
 \frac{\operatorname{atan}\left(\frac{1}{\sqrt{-1 +
 \frac{4}{\mu^{2}}}}\right)}{\sqrt{-1 + \frac{4}{\mu^{2}}}} -
 \frac{\operatorname{atan}\left(\frac{1 - \frac{2}{\mu^{2}}}{\sqrt{-1 +
 \frac{4}{\mu^{2}}}}\right)}{\sqrt{-1 + \frac{4}{\mu^{2}}}}"/></p>
-</div><p>that is equal to <img class="math" src="../_images/math/1fa87be51fa9d469c79c7c5e3de4990311f7f65a.svg" alt="\half\log({1\over\mu^2})"/> in the limit <img class="math" src="../_images/math/53a48a7afb2792bc46b3b1e7a4c6535f088c7b6a.svg" alt="\mu\to0"/>.</p>
-<p>here are a few special cases for <img class="math" src="../_images/math/3ec0f32a8e3cd0e02c3bf73b1b278029be0912aa.svg" alt="\mu = 1"/>, <img class="math" src="../_images/math/4e4f1e718968b67f5187ceece04708c25e02aa16.svg" alt="\mu=1/2"/> and <img class="math" src="../_images/math/ab5cd687b4dbb1d0fb42475242de16a495b498b7.svg" alt="\mu=1/3"/>:</p>
+</div><p>that is equal to <img class="math" src="../_images/math/15e3fd93945c8f485e2855d35ca9d245705cd1a4.svg" alt="\half\log({1\over\mu^2})"/> in the limit <img class="math" src="../_images/math/148a3a6a7ec605da442f9ec8e9f1c57383195cc6.svg" alt="\mu\to0"/>.</p>
+<p>here are a few special cases for <img class="math" src="../_images/math/e22f2ecf984e3ec20816960afe147f4bfd7dc1dc.svg" alt="\mu = 1"/>, <img class="math" src="../_images/math/39cd3c00adb03e0d5c2090cb762d3491c32dbc9a.svg" alt="\mu=1/2"/> and <img class="math" src="../_images/math/6831e05e1984667c66522542a481bae996809251.svg" alt="\mu=1/3"/>:</p>
 <div class="math">
-<p><img src="../_images/math/80783245fcea266df0634463f93cf95caee2a393.svg" alt="\int_{0}^{1} \frac{1 - z}{1 - z + z^{2}}\,dz = \frac{1}{9} \pi \sqrt{3}
+<p><img src="../_images/math/318ccd282204bf5d19f995b61e5f4e65052ab791.svg" alt="\int_{0}^{1} \frac{1 - z}{1 - z + z^{2}}\,dz = \frac{1}{9} \pi \sqrt{3}
 
 \int_{0}^{1} \frac{1 - z}{1 - \frac{7}{4} z + z^{2}}\,dz = \frac{1}{2} \operatorname{log}\left(4\right) + \frac{1}{15} \sqrt{15} \operatorname{atan}\left(\frac{1}{15} \sqrt{15}\right) + \frac{1}{15} \sqrt{15} \operatorname{atan}\left(\frac{7}{15} \sqrt{15}\right)
 
 \int_{0}^{1} \frac{1 - z}{1 - \frac{17}{9} z + z^{2}}\,dz = \frac{1}{2} \operatorname{log}\left(9\right) + \frac{1}{35} \sqrt{35} \operatorname{atan}\left(\frac{1}{35} \sqrt{35}\right) + \frac{1}{35} \sqrt{35} \operatorname{atan}\left(\frac{17}{35} \sqrt{35}\right)"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">log</span><span class="p">,</span> <span class="n">atan</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">Eq</span><span class="p">,</span> <span class="n">Integral</span><span class="p">,</span> <span class="n">S</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span> <span class="n">atan</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">Eq</span><span class="p">,</span> <span class="n">Integral</span><span class="p">,</span> <span class="n">S</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;z m mu&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">z</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">m</span> <span class="o">+</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> \
 <span class="go">        atan((1 - 2/m + 2*z/m)/sqrt(-1 + 4/m))/sqrt(-1 + 4/m)</span>
@@ -293,22 +296,24 @@ change:</p>
 <span class="go">Integral((1 - z)/(1 - 17*z/9 + z**2), (z, 0, 1)) == log(9)/2 + 35**(1/2)*atan(35**(1/2)/35)/35 + 35**(1/2)*atan(17*35**(1/2)/35)/35</span>
 </pre></div>
 </div>
-<p>Then for <img class="math" src="../_images/math/e610765d0dd3a93fe0e0b73bb7eb0c615a62b1ca.svg" alt="m=1"/> and small <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> we get:</p>
+<p>Then for <img class="math" src="../_images/math/ea04b8dfef2ec41cc5d1e7743f5b846ae9efd739.svg" alt="m=1"/> and small <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/03fec06feb03b840248a6c77c0b8e70f21dcf4b4.svg" alt="(-i\pi^2)\int_0^1\d z {1-z \over (1-z)^2m^2 + z\mu^2} =
+<p><img src="../_images/math/23b582bfb2c716d42f02cce6d6b5291b632ec9a1.svg" alt="(-i\pi^2)\int_0^1\d z {1-z \over (1-z)^2m^2 + z\mu^2} =
 
 = (-i\pi^2)\half\log{1\over\mu^2}"/></p>
-</div></div>
-</div>
+</div></section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.35. Feynman Parameters</a><ul>
 <li><a class="reference internal" href="#example-1">3.35.1. Example 1</a></li>
 <li><a class="reference internal" href="#example-2">3.35.2. Example 2</a></li>
@@ -316,12 +321,17 @@ change:</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="hyper.html"
-                        title="previous chapter">3.34. Hypergeometric Functions</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="groups.html"
-                        title="next chapter">3.36. Groups</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="hyper.html"
+                          title="previous chapter"><span class="section-number">3.34. </span>Hypergeometric Functions</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="groups.html"
+                          title="next chapter"><span class="section-number">3.36. </span>Groups</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -330,17 +340,15 @@ change:</p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -358,12 +366,13 @@ change:</p>
           <a href="hyper.html" title="3.34. Hypergeometric Functions"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.35. </span>Feynman Parameters</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

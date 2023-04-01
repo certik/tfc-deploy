@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.42. Variational Formulation of PDEs &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Classical Mechanics, Special and General Relativity" href="../relativity/main.html" />
@@ -62,7 +64,8 @@
           <a href="operators.html" title="3.41. Operators"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.42. </span>Variational Formulation of PDEs</a></li> 
       </ul>
     </div>  
 
@@ -71,30 +74,30 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="variational-formulation-of-pdes">
-<h1>3.42. Variational Formulation of PDEs<a class="headerlink" href="#variational-formulation-of-pdes" title="Permalink to this headline">¶</a></h1>
+  <section id="variational-formulation-of-pdes">
+<h1><span class="section-number">3.42. </span>Variational Formulation of PDEs<a class="headerlink" href="#variational-formulation-of-pdes" title="Permalink to this headline">¶</a></h1>
 <p>Not every equation allows a variational formulation (e.g., Navier-Stokes or
 Euler equations do not have such a formulation), but many equations have one,
 and we explain how it works on several examples.</p>
-<div class="section" id="poisson-equation">
-<h2>3.42.1. Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h2>
+<section id="poisson-equation">
+<h2><span class="section-number">3.42.1. </span>Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h2>
 <p>The Lagrangian for Poisson equation is:</p>
 <div class="math" id="equation-poisson0">
-<p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson0" title="Permalink to this equation">¶</a></span><img src="../_images/math/1664f84fd6279d04e9b9b4a6f23c62a91fe6809a.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x
+<p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson0" title="Permalink to this equation">¶</a></span><img src="../_images/math/89ce728b977ba3b0fe7a2d56e7bdd1ab3cb46e15.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x
     - [g(x) u(x)]_a^b\,."/></p>
 </div><p>Important note: technically, as we will see below, this imposes the Neumann
 boundary condition and 1D Poisson equation with two Neumann boundary conditions
 does not have a unique solution. At least one Dirichlet boundary condition is
-needed for a unique solution. For example with <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/> the
-boundary term becomes just <img class="math" src="../_images/math/7d3c4ee5c1a1b9dd6cd85211b1849d923e8564ed.svg" alt="-gu(b)"/>. However, for simplicity, we will show the
+needed for a unique solution. For example with <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/> the
+boundary term becomes just <img class="math" src="../_images/math/3859025e9a5fa9877a058af61f04a61cedfa38ac.svg" alt="-gu(b)"/>. However, for simplicity, we will show the
 derivation with two Neumann boundary conditions first and we will discuss how
 to impose the Dirichlet boundary condition later.</p>
 <p>The variational formulation is:</p>
 <div class="math">
-<p><img src="../_images/math/992cc76b159414bdf505aea99f2cf174edcb64ac.svg" alt="\delta L = 0\,,"/></p>
+<p><img src="../_images/math/d3b44c507bd730ad8c4b7dd27db9261680b256b8.svg" alt="\delta L = 0\,,"/></p>
 </div><p>which yields:</p>
 <div class="math" id="equation-poisson1">
-<p><span class="eqno">(3.42.1.2)<a class="headerlink" href="#equation-poisson1" title="Permalink to this equation">¶</a></span><img src="../_images/math/05c89670be80946776c137b473f11edc6714dea3.svg" alt="\delta L &amp;= \int_a^b \left[ u'(x) \delta u'(x)
+<p><span class="eqno">(3.42.1.2)<a class="headerlink" href="#equation-poisson1" title="Permalink to this equation">¶</a></span><img src="../_images/math/80c1c15854474144fb5edd27213b756a452347a6.svg" alt="\delta L &amp;= \int_a^b \left[ u'(x) \delta u'(x)
     - f(x) \delta u(x) \right] \d x
     - [g(x) \delta u(x)]_a^b
 
@@ -108,173 +111,173 @@ to impose the Dirichlet boundary condition later.</p>
 
          &amp;= 0\,,"/></p>
 </div><p>where we applied integration by parts.
-This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/>, and in particular it holds for
-<img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary (i.e., for <img class="math" src="../_images/math/bef5e618e8649551a70eb5750349fe03040513a5.svg" alt="\delta u(a) = 0"/> and
-<img class="math" src="../_images/math/df790de529b2231cee92567da29fa058c331dc84.svg" alt="\delta u(b) = 0"/>). Then the boundary term in <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> vanishes and we
+This equation holds for any <img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/>, and in particular it holds for
+<img class="math" src="../_images/math/5b3d606612f30fc85a8128a68373c1dd89198c1a.svg" alt="\delta u(x) = 0"/> at the boundary (i.e., for <img class="math" src="../_images/math/63bcd4b37d689382e0853d982f5e9e5f9434bb89.svg" alt="\delta u(a) = 0"/> and
+<img class="math" src="../_images/math/2c4a40e14a43de784e7b24182a93f6e11e8cde5e.svg" alt="\delta u(b) = 0"/>). Then the boundary term in <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> vanishes and we
 obtain:</p>
 <div class="math" id="equation-poisson2">
-<p><span class="eqno">(3.42.1.3)<a class="headerlink" href="#equation-poisson2" title="Permalink to this equation">¶</a></span><img src="../_images/math/4227e4e7edf984e1b947aad2237114fac8593950.svg" alt="\int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x = 0\,,"/></p>
-</div><p>This equation holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> that is zero at the boundary, and
+<p><span class="eqno">(3.42.1.3)<a class="headerlink" href="#equation-poisson2" title="Permalink to this equation">¶</a></span><img src="../_images/math/e973a67f296cd4550e3f1493b3e32ee22f111343.svg" alt="\int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x = 0\,,"/></p>
+</div><p>This equation holds for any <img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/> that is zero at the boundary, and
 thus it implies:</p>
 <div class="math" id="equation-poisson3">
-<p><span class="eqno">(3.42.1.4)<a class="headerlink" href="#equation-poisson3" title="Permalink to this equation">¶</a></span><img src="../_images/math/5ec6676a8b0012dd537831ce0880b54de17c2cea.svg" alt="u''(x) + f(x) = 0\,."/></p>
+<p><span class="eqno">(3.42.1.4)<a class="headerlink" href="#equation-poisson3" title="Permalink to this equation">¶</a></span><img src="../_images/math/45b748ef29532282cf3d9c2e9d11b94469845b2c.svg" alt="u''(x) + f(x) = 0\,."/></p>
 </div><p>Now we substitute <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> into <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> and obtain:</p>
 <div class="math" id="equation-poisson3-boundary">
-<p><span class="eqno">(3.42.1.5)<a class="headerlink" href="#equation-poisson3-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/c3a5aa703ba41ee30278d9337110e81be9ffc369.svg" alt="[(u'(x) - g(x)) \delta u(x)]_a^b = 0\,."/></p>
+<p><span class="eqno">(3.42.1.5)<a class="headerlink" href="#equation-poisson3-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/62c0daf38050e687db4182c60a3617c83d08923a.svg" alt="[(u'(x) - g(x)) \delta u(x)]_a^b = 0\,."/></p>
 </div><p>Thus <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> implies both <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> and <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a>.
-The equation <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a> holds for any <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> (generally
+The equation <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a> holds for any <img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/> (generally
 not zero at the boundary) and thus it implies:</p>
 <div class="math" id="equation-poisson3-boundary2">
-<p><span class="eqno">(3.42.1.6)<a class="headerlink" href="#equation-poisson3-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/6ef9d3f07d5ceb125fc198fc2912e9a025326b3d.svg" alt="u'(x) - g(x) = 0"/></p>
-</div><p>at the boundary. Thus <img class="math" src="../_images/math/43e03fc05d369d936c2857287cca76cd995ec0ac.svg" alt="g(x)"/> imposes the Neumann boundary condition, i.e.,
-the value of the derivative <img class="math" src="../_images/math/ce84019ce273c836c43064ab299c56fcb1cda9d2.svg" alt="u'(x) = g(x)"/> at the boundary. This condition
+<p><span class="eqno">(3.42.1.6)<a class="headerlink" href="#equation-poisson3-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/963b111ad7ded322f9c0befc6984f158dc1c44a2.svg" alt="u'(x) - g(x) = 0"/></p>
+</div><p>at the boundary. Thus <img class="math" src="../_images/math/c4727d22504c6ee317ab17b2f8abb9bf8cb10a35.svg" alt="g(x)"/> imposes the Neumann boundary condition, i.e.,
+the value of the derivative <img class="math" src="../_images/math/73de2eb00649a9ae15e8a1ddaa02c73197d53020.svg" alt="u'(x) = g(x)"/> at the boundary. This condition
 is imposed variationally.</p>
 <p>To impose a Dirichlet boundary condition, we want to impose the value of
-<img class="math" src="../_images/math/b5053adf7205d25577dd1cb46aa42a2c403f4a98.svg" alt="u(x)=u_0(x)"/> at the boundary for some constant <img class="math" src="../_images/math/73c4ad6a6bb93b8501f0a8a1930b50298fcb756a.svg" alt="u_0(x)"/>. As such, <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/>
+<img class="math" src="../_images/math/381203a7376e9f7be89efd74d5b6628031f334bc.svg" alt="u(x)=u_0(x)"/> at the boundary for some constant <img class="math" src="../_images/math/774787d0f79e53824c2714007bdc575602bf2c92.svg" alt="u_0(x)"/>. As such, <img class="math" src="../_images/math/d78ecf4cc8a1d1e9466abf94f1ae4a8a12692206.svg" alt="u(x)"/>
 is not allowed to vary at that part of the boundary, which means that the
-variation <img class="math" src="../_images/math/2f9a3281947794bdd53d4676ad373f92703b4d74.svg" alt="\delta u(x) = 0"/> at the boundary. So we restrict the variation
-<img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> to be zero at the Dirichlet part of the boundary in
+variation <img class="math" src="../_images/math/5b3d606612f30fc85a8128a68373c1dd89198c1a.svg" alt="\delta u(x) = 0"/> at the boundary. So we restrict the variation
+<img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/> to be zero at the Dirichlet part of the boundary in
 <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> and thus also in <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a>. This implies that
 <a class="reference internal" href="#equation-poisson3-boundary2">(3.42.1.6)</a> does not hold at the Dirichlet part of the boundary
-and we have to set the value <img class="math" src="../_images/math/a892486b1456272801dc0a5a8ac5f9e4b5fadb4d.svg" alt="u(x)"/> there directly.</p>
-<div class="section" id="example">
+and we have to set the value <img class="math" src="../_images/math/d78ecf4cc8a1d1e9466abf94f1ae4a8a12692206.svg" alt="u(x)"/> there directly.</p>
+<section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
-<p>As a particular example, let <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/>. Then the Lagrangian
+<p>As a particular example, let <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/>. Then the Lagrangian
 <a class="reference internal" href="#equation-poisson0">(3.42.1.1)</a> becomes:</p>
 <div class="math" id="equation-poisson-example-l">
-<p><span class="eqno">(3.42.1.7)<a class="headerlink" href="#equation-poisson-example-l" title="Permalink to this equation">¶</a></span><img src="../_images/math/19493b922fa4c797b505d7003af359dadd96a0ba.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
-</div><p>We can explicitly define the space <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/> of all trial functions <img class="math" src="../_images/math/c3c628c59222072e9280ab9291b3fa7496ee3df4.svg" alt="u \in U"/> that
+<p><span class="eqno">(3.42.1.7)<a class="headerlink" href="#equation-poisson-example-l" title="Permalink to this equation">¶</a></span><img src="../_images/math/b693b2136eddb3b8a78c8d2bf7c39f8fc57b9b01.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
+</div><p>We can explicitly define the space <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/> of all trial functions <img class="math" src="../_images/math/338cf4876156f59a0f6cbb0d931e7cd7e0c60410.svg" alt="u \in U"/> that
 one can choose (admissible) and substitute in <a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a> as
-follows. We have to impose the Dirichlet condition <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> on the space
+follows. We have to impose the Dirichlet condition <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> on the space
 itself, and we also have to choose how smooth functions we want. For finite
-element applications one typically chooses <img class="math" src="../_images/math/ee9547d9868b6c7df53e1427990bab7b47bec715.svg" alt="H^1"/> (i.e., values and first
-derivatives are from <img class="math" src="../_images/math/b6f15c13d01c54166ba345b5ac840650b1a875a1.svg" alt="L^2"/>) and we obtain:</p>
+element applications one typically chooses <img class="math" src="../_images/math/0bb2000f4e321d3fd165dc16837e293102a834a9.svg" alt="H^1"/> (i.e., values and first
+derivatives are from <img class="math" src="../_images/math/5d535a0ab47fc333f35a2613dee9b99a3abee514.svg" alt="L^2"/>) and we obtain:</p>
 <div class="math" id="equation-poisson-example-uu">
-<p><span class="eqno">(3.42.1.8)<a class="headerlink" href="#equation-poisson-example-uu" title="Permalink to this equation">¶</a></span><img src="../_images/math/605bc4ce3c6e8d18fed277cedba2debe82fbc73b.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}"/></p>
-</div><p>Now we derive what space the variation <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> belongs to. Let
-<img class="math" src="../_images/math/ce53c4873b1b7678d340c42d4046b7b36284297e.svg" alt="u_\textrm{min}"/> be the solution (the extremum of the functional
+<p><span class="eqno">(3.42.1.8)<a class="headerlink" href="#equation-poisson-example-uu" title="Permalink to this equation">¶</a></span><img src="../_images/math/09ac8f915738d5d3637dbe9086a2a29a9f523e7d.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}"/></p>
+</div><p>Now we derive what space the variation <img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/> belongs to. Let
+<img class="math" src="../_images/math/cbeb25d2694ecc05f50c2bbc72cf65f5345d1022.svg" alt="u_\textrm{min}"/> be the solution (the extremum of the functional
 <a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a>). Then from calculus of variations:</p>
 <div class="math" id="equation-poisson-example-u">
-<p><span class="eqno">(3.42.1.9)<a class="headerlink" href="#equation-poisson-example-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/af5650100c8f84d4fe541e3a210cc885dc845839.svg" alt="u = u_\textrm{min} + \varepsilon \delta u(x)"/></p>
-</div><p>Here <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/> is called the trial function and <img class="math" src="../_images/math/ec893a74daacb1cd27e14622b509e61599714173.svg" alt="\delta u(x)"/> is called the test
-function. Both <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/> and <img class="math" src="../_images/math/ce53c4873b1b7678d340c42d4046b7b36284297e.svg" alt="u_\textrm{min}"/> are from the space <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/>. Thus we can
+<p><span class="eqno">(3.42.1.9)<a class="headerlink" href="#equation-poisson-example-u" title="Permalink to this equation">¶</a></span><img src="../_images/math/cd9c17ab63e7ff33a8fdf850f75f927b23871401.svg" alt="u = u_\textrm{min} + \varepsilon \delta u(x)"/></p>
+</div><p>Here <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/> is called the trial function and <img class="math" src="../_images/math/b0069637bad63981fa6903fd70a9dc13a9a25eed.svg" alt="\delta u(x)"/> is called the test
+function. Both <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/> and <img class="math" src="../_images/math/cbeb25d2694ecc05f50c2bbc72cf65f5345d1022.svg" alt="u_\textrm{min}"/> are from the space <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/>. Thus we can
 compute:</p>
 <div class="math">
-<p><img src="../_images/math/e770a8502b70d67818c414a2afe6d653e7f85e87.svg" alt="\delta u(a) = {u(a) - u_\textrm{min}(a) \over \varepsilon}
+<p><img src="../_images/math/caf0f01c0e7a5724a4c2f70f0cff60808b81c91c.svg" alt="\delta u(a) = {u(a) - u_\textrm{min}(a) \over \varepsilon}
 = {u_0 - u_0 \over \varepsilon} = 0\,."/></p>
-</div><p>In addition, both <img class="math" src="../_images/math/01f99fa7cb99c6f51b7dd3311001b76dba72f816.svg" alt="u,u_\textrm{min}\in H^1(a,b)"/>, so also their difference
-<img class="math" src="../_images/math/a9214e593c14d6894f6efa79b4b911319e514ae4.svg" alt="u(x) - u_\textrm{min}(x)"/> and thus also <img class="math" src="../_images/math/228ff5aabd7264d6b2e28321c489e0e2087c8fff.svg" alt="\delta u(x)={u(x) - u_\textrm{min}(x)
-\over \varepsilon}"/> is from <img class="math" src="../_images/math/edd374849414beb2ff887e4847a1a4f707d397c9.svg" alt="H^1(a,b)"/>. There are no other conditions (<img class="math" src="../_images/math/681779fdf6f02e5c47887998ee4d16ff6e64f4a7.svg" alt="u(b)"/>
-and <img class="math" src="../_images/math/92f667803a7fdf678040f5aa32cc7a6c81fde76a.svg" alt="u_\textrm{min}(b)"/> are generally different, so in general <img class="math" src="../_images/math/3996a1ac15280ff1433f683f4d9d60924aaeec31.svg" alt="\delta u(b) \ne
-0"/>) and so <img class="math" src="../_images/math/66222926f5a326fde14b0eae8ce77c20dff220d7.svg" alt="\delta u(x) \in U_0"/> where the space <img class="math" src="../_images/math/d79c2b562b4904590fea46789a73a10e28b3702d.svg" alt="U_0"/> is:</p>
+</div><p>In addition, both <img class="math" src="../_images/math/cbd5ed9a0f1d4613f6be351ba7dc8445e20209ad.svg" alt="u,u_\textrm{min}\in H^1(a,b)"/>, so also their difference
+<img class="math" src="../_images/math/4e878218949387e6f6a4c836e1724148fb796ff5.svg" alt="u(x) - u_\textrm{min}(x)"/> and thus also <img class="math" src="../_images/math/470fb790948007948a20f9509c6ec590369ab962.svg" alt="\delta u(x)={u(x) - u_\textrm{min}(x)
+\over \varepsilon}"/> is from <img class="math" src="../_images/math/3b1f80d5773d628d0bd465d11f867317d9594f4c.svg" alt="H^1(a,b)"/>. There are no other conditions (<img class="math" src="../_images/math/23065f77a3cc14d09e7c1cd2adbd42f2219b87ff.svg" alt="u(b)"/>
+and <img class="math" src="../_images/math/216831b976a9c5d2b7b472d1ec27828c7e847100.svg" alt="u_\textrm{min}(b)"/> are generally different, so in general <img class="math" src="../_images/math/1ae83b7f7df39b10cf99943eaccadba100f2a653.svg" alt="\delta u(b) \ne
+0"/>) and so <img class="math" src="../_images/math/df1add4bd6b44b89111b1040948f30408c9e0307.svg" alt="\delta u(x) \in U_0"/> where the space <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f467c3ae1150.svg" alt="U_0"/> is:</p>
 <div class="math" id="equation-poisson-example-u0">
-<p><span class="eqno">(3.42.1.10)<a class="headerlink" href="#equation-poisson-example-u0" title="Permalink to this equation">¶</a></span><img src="../_images/math/171990b109d957ea3b958c76ebeafba0f9221bbb.svg" alt="U_0 := \{w : w \in H^1(a,b), w(a)=0\}\,."/></p>
-</div><p>The definition of the space <img class="math" src="../_images/math/d79c2b562b4904590fea46789a73a10e28b3702d.svg" alt="U_0"/> in <a class="reference internal" href="#equation-poisson-example-u0">(3.42.1.10)</a> is derived from
-the definition of the space <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/> in <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>.</p>
-<p>To compute the variation of <img class="math" src="../_images/math/467d2501c4c7e34af5b55619b31c59a48951310c.svg" alt="L"/>, we substitute <a class="reference internal" href="#equation-poisson-example-u">(3.42.1.9)</a> into
-<a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a>, differentiate with respect to <img class="math" src="../_images/math/aadff434f64150bd757efb35f827819180bd88fd.svg" alt="\varepsilon"/> and then
-set <img class="math" src="../_images/math/b45cc30a308c6aa8961badfb57eb13cf0b727da6.svg" alt="\varepsilon=0"/> using <a class="reference internal" href="other.html#equation-functional-deriv">(3.17.3.2)</a>:</p>
+<p><span class="eqno">(3.42.1.10)<a class="headerlink" href="#equation-poisson-example-u0" title="Permalink to this equation">¶</a></span><img src="../_images/math/4233ed18bd1136fcf2175fc6166ab3a5a509c3e9.svg" alt="U_0 := \{w : w \in H^1(a,b), w(a)=0\}\,."/></p>
+</div><p>The definition of the space <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f467c3ae1150.svg" alt="U_0"/> in <a class="reference internal" href="#equation-poisson-example-u0">(3.42.1.10)</a> is derived from
+the definition of the space <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/> in <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>.</p>
+<p>To compute the variation of <img class="math" src="../_images/math/961a0c55563970ae0b0074c740f76046460c654a.svg" alt="L"/>, we substitute <a class="reference internal" href="#equation-poisson-example-u">(3.42.1.9)</a> into
+<a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a>, differentiate with respect to <img class="math" src="../_images/math/f4a4de5632cd48364b85f320cc1e46e27449406c.svg" alt="\varepsilon"/> and then
+set <img class="math" src="../_images/math/d4ee9bf5f4a555e1161bf5e848b523f562fb39fb.svg" alt="\varepsilon=0"/> using <a class="reference internal" href="other.html#equation-functional-deriv">(3.17.3.2)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/08396681aaeb46273dad494f3874bbd75248fcc2.svg" alt="\delta L[u] = \left.{\d\over\d\varepsilon}L[u_\textrm{min}+\varepsilon
+<p><img src="../_images/math/4beea4866d46951649a0d0febd0f93c987d10eaa.svg" alt="\delta L[u] = \left.{\d\over\d\varepsilon}L[u_\textrm{min}+\varepsilon
     \delta u] \right|_{\varepsilon=0}"/></p>
 </div><p>as was done in <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a> and one obtains the weak form (below we drop the
-label <img class="math" src="../_images/math/facd4c0df3d3fe6a9dfd14102380960d1274cfd9.svg" alt="\textrm{min}"/> from <img class="math" src="../_images/math/ce53c4873b1b7678d340c42d4046b7b36284297e.svg" alt="u_\textrm{min}"/> and just use <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/>):</p>
+label <img class="math" src="../_images/math/c78c7de58a9c30b0744a017567b864f8a6b26d1b.svg" alt="\textrm{min}"/> from <img class="math" src="../_images/math/cbeb25d2694ecc05f50c2bbc72cf65f5345d1022.svg" alt="u_\textrm{min}"/> and just use <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/>):</p>
 <div class="math" id="equation-poisson-example-weak-form">
-<p><span class="eqno">(3.42.1.11)<a class="headerlink" href="#equation-poisson-example-weak-form" title="Permalink to this equation">¶</a></span><img src="../_images/math/cb189a3240e36ede872e5e801ee77a6b4739ddc8.svg" alt="\delta L[u] =
+<p><span class="eqno">(3.42.1.11)<a class="headerlink" href="#equation-poisson-example-weak-form" title="Permalink to this equation">¶</a></span><img src="../_images/math/6da4116593581250c1f66bdde32d5b328cf78ed1.svg" alt="\delta L[u] =
 \int_a^b \left[ u'(x) \delta u'(x) - f(x) \delta u(x) \right] \d x
     - g \delta u(b) = 0\,."/></p>
-</div><p>The task is to find such function <img class="math" src="../_images/math/502dd332af4ce9f2968a9faca62b05f8762b3931.svg" alt="u\in U"/> so that
-<a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a> holds for all <img class="math" src="../_images/math/7da7cb9634173255eed37017f6b01f65500c2f97.svg" alt="\delta u \in U_0"/>.  From
+</div><p>The task is to find such function <img class="math" src="../_images/math/6de074ade034be168979fbe89f67b3fbd4358b0c.svg" alt="u\in U"/> so that
+<a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a> holds for all <img class="math" src="../_images/math/6e891c6bb2e5d73e0c47e341577658e968790346.svg" alt="\delta u \in U_0"/>.  From
 <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a> one obtains (as in <a class="reference internal" href="#equation-poisson1">(3.42.1.2)</a>):</p>
 <div class="math" id="equation-poisson-example-2">
-<p><span class="eqno">(3.42.1.12)<a class="headerlink" href="#equation-poisson-example-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/a448b0fdac981d24e3627e778cee2a42bd8c2cc0.svg" alt="\int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x
+<p><span class="eqno">(3.42.1.12)<a class="headerlink" href="#equation-poisson-example-2" title="Permalink to this equation">¶</a></span><img src="../_images/math/74eea5f21126422f21afaab61b5c41660d1fbdb8.svg" alt="\int_a^b \left[-u''(x) - f(x)\right] \delta u(x) \d x
     + (u'(b) - g) \delta u(b) = 0\,."/></p>
 </div><p>The governing equation <a class="reference internal" href="#equation-poisson3">(3.42.1.4)</a> is the same:</p>
 <div class="math" id="equation-poisson-example-strong">
-<p><span class="eqno">(3.42.1.13)<a class="headerlink" href="#equation-poisson-example-strong" title="Permalink to this equation">¶</a></span><img src="../_images/math/5ec6676a8b0012dd537831ce0880b54de17c2cea.svg" alt="u''(x) + f(x) = 0\,."/></p>
+<p><span class="eqno">(3.42.1.13)<a class="headerlink" href="#equation-poisson-example-strong" title="Permalink to this equation">¶</a></span><img src="../_images/math/45b748ef29532282cf3d9c2e9d11b94469845b2c.svg" alt="u''(x) + f(x) = 0\,."/></p>
 </div><p>The boundary term <a class="reference internal" href="#equation-poisson3-boundary">(3.42.1.5)</a> becomes (see
 <a class="reference internal" href="#equation-poisson-example-2">(3.42.1.12)</a>):</p>
 <div class="math">
-<p><img src="../_images/math/c0b4b66be110e7c47318fdc2e6715f027beaf214.svg" alt="(u'(b) - g) \delta u(b) = 0\,."/></p>
-</div><p>Which implies <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/>.</p>
+<p><img src="../_images/math/3c24bc4e006adb32b4507bead80b493f0b68267d.svg" alt="(u'(b) - g) \delta u(b) = 0\,."/></p>
+</div><p>Which implies <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/>.</p>
 <p>The Dirichlet boundary condition is part of the definition of the function
-space <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>, so all trial functions <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/> that one can choose
-(admissible) and substitute in <img class="math" src="../_images/math/28bd2605cc88c74fcf4ba25eb45a97eb4c48a8cb.svg" alt="L[u]"/> must lie in <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/>. From the derivation of
-the space <img class="math" src="../_images/math/d79c2b562b4904590fea46789a73a10e28b3702d.svg" alt="U_0"/> in <a class="reference internal" href="#equation-poisson-example-u0">(3.42.1.10)</a> we can see that since the value of
-<img class="math" src="../_images/math/ce0d883ae37e3997f13c0da53e4316aa0ab9dfaa.svg" alt="u(a)"/> is fixed, we always have <img class="math" src="../_images/math/bef5e618e8649551a70eb5750349fe03040513a5.svg" alt="\delta u(a) = 0"/>; on the other hand, since
-<img class="math" src="../_images/math/681779fdf6f02e5c47887998ee4d16ff6e64f4a7.svg" alt="u(b)"/> is not fixed, in general we have <img class="math" src="../_images/math/0ebc07596d00b01814a8b8d59f55b1634ed86e91.svg" alt="\delta u(b) \ne 0"/>.</p>
+space <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>, so all trial functions <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/> that one can choose
+(admissible) and substitute in <img class="math" src="../_images/math/87267d6471b20a3f9be1d96648ffe0c9b06c5d4e.svg" alt="L[u]"/> must lie in <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/>. From the derivation of
+the space <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f467c3ae1150.svg" alt="U_0"/> in <a class="reference internal" href="#equation-poisson-example-u0">(3.42.1.10)</a> we can see that since the value of
+<img class="math" src="../_images/math/b0bc985221ccf81e7fc6b6de6e9e5443d4f92663.svg" alt="u(a)"/> is fixed, we always have <img class="math" src="../_images/math/63bcd4b37d689382e0853d982f5e9e5f9434bb89.svg" alt="\delta u(a) = 0"/>; on the other hand, since
+<img class="math" src="../_images/math/23065f77a3cc14d09e7c1cd2adbd42f2219b87ff.svg" alt="u(b)"/> is not fixed, in general we have <img class="math" src="../_images/math/86d85d3f94bb7cbc6bdf9dfd3fb5dc21c0863cee.svg" alt="\delta u(b) \ne 0"/>.</p>
 <p>The Neumann boundary condition is imposed variationally due to the surface term
 in the weak form <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a>.</p>
-<div class="section" id="summary">
+<section id="summary">
 <h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h4>
 <p>We have shown above that there are three equivalent formulations which
 fully and uniquely determine the solution and boundary conditions (both
 Dirichlet and Neumann):</p>
 <ol class="arabic simple">
-<li>Define the functional <img class="math" src="../_images/math/28bd2605cc88c74fcf4ba25eb45a97eb4c48a8cb.svg" alt="L[u]"/> in <a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a> and the space <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/>
-for the trial functions <img class="math" src="../_images/math/502dd332af4ce9f2968a9faca62b05f8762b3931.svg" alt="u\in U"/> in <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>.</li>
-<li>Define the weak form <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a> and the two spaces <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/>
-and <img class="math" src="../_images/math/d79c2b562b4904590fea46789a73a10e28b3702d.svg" alt="U_0"/>, where <img class="math" src="../_images/math/502dd332af4ce9f2968a9faca62b05f8762b3931.svg" alt="u\in U"/> and <img class="math" src="../_images/math/7da7cb9634173255eed37017f6b01f65500c2f97.svg" alt="\delta u \in U_0"/>.</li>
-<li>Define the strong form <a class="reference internal" href="#equation-poisson-example-strong">(3.42.1.13)</a> and the boundary
-conditions <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/>.</li>
+<li><p>Define the functional <img class="math" src="../_images/math/87267d6471b20a3f9be1d96648ffe0c9b06c5d4e.svg" alt="L[u]"/> in <a class="reference internal" href="#equation-poisson-example-l">(3.42.1.7)</a> and the space <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/>
+for the trial functions <img class="math" src="../_images/math/6de074ade034be168979fbe89f67b3fbd4358b0c.svg" alt="u\in U"/> in <a class="reference internal" href="#equation-poisson-example-uu">(3.42.1.8)</a>.</p></li>
+<li><p>Define the weak form <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a> and the two spaces <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/>
+and <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f467c3ae1150.svg" alt="U_0"/>, where <img class="math" src="../_images/math/6de074ade034be168979fbe89f67b3fbd4358b0c.svg" alt="u\in U"/> and <img class="math" src="../_images/math/6e891c6bb2e5d73e0c47e341577658e968790346.svg" alt="\delta u \in U_0"/>.</p></li>
+<li><p>Define the strong form <a class="reference internal" href="#equation-poisson-example-strong">(3.42.1.13)</a> and the boundary
+conditions <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/>.</p></li>
 </ol>
 <p>Let us write down the three formulations in detail.</p>
-</div>
-<div class="section" id="variational-formulation">
+</section>
+<section id="variational-formulation">
 <h4>Variational Formulation<a class="headerlink" href="#variational-formulation" title="Permalink to this headline">¶</a></h4>
 <p>The variational formulation is the formulation 1. above.</p>
 <div class="math">
-<p><img src="../_images/math/19493b922fa4c797b505d7003af359dadd96a0ba.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
-</div><p>The task is to find such <img class="math" src="../_images/math/502dd332af4ce9f2968a9faca62b05f8762b3931.svg" alt="u\in U"/> that extremizes this functional
-(<img class="math" src="../_images/math/8fe8c4da0ec88363b42acdc16df29a4eb34ddf76.svg" alt="\delta L[u] = 0"/>), where:</p>
+<p><img src="../_images/math/b693b2136eddb3b8a78c8d2bf7c39f8fc57b9b01.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
+</div><p>The task is to find such <img class="math" src="../_images/math/6de074ade034be168979fbe89f67b3fbd4358b0c.svg" alt="u\in U"/> that extremizes this functional
+(<img class="math" src="../_images/math/b16cf7ad7fb84c73384ea947b9dad99a12974464.svg" alt="\delta L[u] = 0"/>), where:</p>
 <div class="math">
-<p><img src="../_images/math/10a18ce0f48da8e5264c409635e94ca4f7f24fe3.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}\,."/></p>
-</div></div>
-<div class="section" id="weak-formulation">
+<p><img src="../_images/math/150344506c01e481480b92133e79075e5016dd10.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}\,."/></p>
+</div></section>
+<section id="weak-formulation">
 <h4>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h4>
 <p>Weak formulation is the formulation 2. above, and it is customary to
-write <img class="math" src="../_images/math/02552e2c1310014d0cafe004df91bdd623451f24.svg" alt="w(x) \equiv \delta u(x)"/> in the weak form
+write <img class="math" src="../_images/math/d9f84de6f9eed576b4ae8dd8c2f1b662cc0f7f27.svg" alt="w(x) \equiv \delta u(x)"/> in the weak form
 <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a>:</p>
 <div class="math" id="equation-poisson-example-weak-form2">
-<p><span class="eqno">(3.42.1.14)<a class="headerlink" href="#equation-poisson-example-weak-form2" title="Permalink to this equation">¶</a></span><img src="../_images/math/b3d66cabe092b98ee39fbcbe8adaa927af749e2d.svg" alt="\int_a^b \left[ u'(x) w'(x) - f(x) w(x) \right] \d x - g w(b) = 0\,."/></p>
-</div><p>The task is to find such <img class="math" src="../_images/math/502dd332af4ce9f2968a9faca62b05f8762b3931.svg" alt="u\in U"/> so that <a class="reference internal" href="#equation-poisson-example-weak-form2">(3.42.1.14)</a>
-holds for all <img class="math" src="../_images/math/41b86559378b976dfb02fa1086412581446d4711.svg" alt="w\in U_0"/>, where</p>
+<p><span class="eqno">(3.42.1.14)<a class="headerlink" href="#equation-poisson-example-weak-form2" title="Permalink to this equation">¶</a></span><img src="../_images/math/88e9ceb797ffa9a9436edf0ea575f12262bc0ccc.svg" alt="\int_a^b \left[ u'(x) w'(x) - f(x) w(x) \right] \d x - g w(b) = 0\,."/></p>
+</div><p>The task is to find such <img class="math" src="../_images/math/6de074ade034be168979fbe89f67b3fbd4358b0c.svg" alt="u\in U"/> so that <a class="reference internal" href="#equation-poisson-example-weak-form2">(3.42.1.14)</a>
+holds for all <img class="math" src="../_images/math/0726251dbe4ab65d1912b638ac3b7daf0399800e.svg" alt="w\in U_0"/>, where</p>
 <div class="math">
-<p><img src="../_images/math/60514e4aff07b5d887e7bf4cc40ce5e0be28b34b.svg" alt="U   &amp; := \{u : u \in H^1(a,b), u(a)=u_0\}\,,
+<p><img src="../_images/math/95e3abeabba3dafa7fef78371b1d0efbbb057cb4.svg" alt="U   &amp; := \{u : u \in H^1(a,b), u(a)=u_0\}\,,
 
 U_0 &amp; := \{w : w \in H^1(a,b), w(a)=0\}\,."/></p>
 </div><p>We can also define:</p>
 <div class="math">
-<p><img src="../_images/math/74e149b2ecaee3d501563486207eca182419e00c.svg" alt="a(u,w) &amp;= \int_a^b u'(x) w'(x) \d x\,,
+<p><img src="../_images/math/ae95e95c7d14bc4aa1d708d9e10f4cc37bac8ec9.svg" alt="a(u,w) &amp;= \int_a^b u'(x) w'(x) \d x\,,
 
 b(w)   &amp;= \int_a^b f(x) w(x) \d x + g w(b)"/></p>
 </div><p>and write <a class="reference internal" href="#equation-poisson-example-weak-form2">(3.42.1.14)</a> as:</p>
 <div class="math">
-<p><img src="../_images/math/7223ca4d14b361e55ca5bd02a431dad55f94fc16.svg" alt="a(u,w) = b(w)\,."/></p>
-</div></div>
-<div class="section" id="strong-formulation">
+<p><img src="../_images/math/22d37ece14d512491604b28a0ceae4023a109a21.svg" alt="a(u,w) = b(w)\,."/></p>
+</div></section>
+<section id="strong-formulation">
 <h4>Strong Formulation<a class="headerlink" href="#strong-formulation" title="Permalink to this headline">¶</a></h4>
 <p>Strong formulation is the formulation 3. above. We are solving the equation:</p>
 <div class="math">
-<p><img src="../_images/math/c638dfc1aa948c2f6a6eea25022959cd3a70d7e4.svg" alt="u''(x) + f(x) = 0"/></p>
-</div><p>subject to boundary conditions <img class="math" src="../_images/math/cc6e65a72b756a28248f98f5f78653f4586c2650.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/02ad5fa4a088ff3cc3e824212a87c6169b6277ff.svg" alt="u'(b) = g"/>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="radial-schrodinger-equation">
-<h2>3.42.2. Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<p><img src="../_images/math/76f4dda36a6a5d05563984125032e1785c66c0e7.svg" alt="u''(x) + f(x) = 0"/></p>
+</div><p>subject to boundary conditions <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/>.</p>
+</section>
+</section>
+</section>
+<section id="radial-schrodinger-equation">
+<h2><span class="section-number">3.42.2. </span>Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
 <p>The derivation is similar as for the Poisson equation, except that we have
-<img class="math" src="../_images/math/2f40e0b601c8909d33e20eaa580dea3cdd2a610b.svg" alt="g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
+<img class="math" src="../_images/math/462aac6f96dd69047537bb5f37013a5b1cc560a5.svg" alt="g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
 to a given value, or, alternatively, that we require the operator to be
 self-adjoint).</p>
 <p>The Lagrangian for the radial Schrödinger equation is:</p>
 <div class="math" id="equation-schr-radial0">
-<p><span class="eqno">(3.42.2.1)<a class="headerlink" href="#equation-schr-radial0" title="Permalink to this equation">¶</a></span><img src="../_images/math/2b9c9cca738f32504e65df99d622c8834ff76b40.svg" alt="L[R] = \int_0^\infty \left[\half R'^2(r)
+<p><span class="eqno">(3.42.2.1)<a class="headerlink" href="#equation-schr-radial0" title="Permalink to this equation">¶</a></span><img src="../_images/math/00acfb87f7e5b7b1a4b4d693b25e93e9eadee758.svg" alt="L[R] = \int_0^\infty \left[\half R'^2(r)
     + \left(V(r) + {l(l+1)\over 2 r^2}\right) R^2(r) \right] r^2 \,\d r\,."/></p>
 </div><p>We minimize the Lagrangian subject to the normalization condition
-<img class="math" src="../_images/math/8d9a7a138eb031f36f006a0453dfee7a4a64105e.svg" alt="N[R] = \int_0^\infty R^2(r) r^2\, \d r = 1"/> as follows:</p>
+<img class="math" src="../_images/math/e6a5e2515acd5588bc663decf15464ea4066fa37.svg" alt="N[R] = \int_0^\infty R^2(r) r^2\, \d r = 1"/> as follows:</p>
 <div class="math" id="equation-schr-radial1">
-<p><span class="eqno">(3.42.2.2)<a class="headerlink" href="#equation-schr-radial1" title="Permalink to this equation">¶</a></span><img src="../_images/math/c0e0496ba1a98425fa64e7c04c9406cbbe9a9f0c.svg" alt="0 &amp;= \delta (L - \epsilon (N-1))
+<p><span class="eqno">(3.42.2.2)<a class="headerlink" href="#equation-schr-radial1" title="Permalink to this equation">¶</a></span><img src="../_images/math/e5c59e5d4e0f265373541fa5bfac9109f1cea4b6.svg" alt="0 &amp;= \delta (L - \epsilon (N-1))
 
 &amp;= \delta \int_0^\infty \left[ \half r^2 R'^2
 + (r^2 V + \half l(l+1)) R^2 - \epsilon r^2R^2 \right] \,\d r =
@@ -286,38 +289,40 @@ self-adjoint).</p>
 &amp;= 2\int_0^\infty \left[ -\half (r^2 R')'
 + (r^2 V + \half l(l+1)) R - \epsilon r^2 R\right]\delta R \,\d r
   + [r^2 R' \delta R]_0^\infty"/></p>
-</div><p>This equation holds for any <img class="math" src="../_images/math/ff92ab74c48274e41951ece6ea443265ee2e27f2.svg" alt="\delta R(r)"/>, and so it also holds when we
-restrict <img class="math" src="../_images/math/f5ae2f43be319151339228449f138cabcb35bbe0.svg" alt="\delta R(r) = 0"/> on the boundary and the boundary term vanishes. Then
+</div><p>This equation holds for any <img class="math" src="../_images/math/6b2eabc459e38e3bf97bd66388617da79f74d857.svg" alt="\delta R(r)"/>, and so it also holds when we
+restrict <img class="math" src="../_images/math/84a2946d645421d73709afff94de9212a2baa45f.svg" alt="\delta R(r) = 0"/> on the boundary and the boundary term vanishes. Then
 it implies the radial Schrödinger equation:</p>
 <div class="math" id="equation-schr-radial2">
-<p><span class="eqno">(3.42.2.3)<a class="headerlink" href="#equation-schr-radial2" title="Permalink to this equation">¶</a></span><img src="../_images/math/09576744154d4d608355f0c67b51a3f4781be797.svg" alt="-\half (r^2 R'(r))' + (r^2 V(r) + \half l(l+1)) R(r) = \epsilon r^2 R(r)"/></p>
+<p><span class="eqno">(3.42.2.3)<a class="headerlink" href="#equation-schr-radial2" title="Permalink to this equation">¶</a></span><img src="../_images/math/6a16274c36bcaf3bbb5de77a8416f6f54291d0e6.svg" alt="-\half (r^2 R'(r))' + (r^2 V(r) + \half l(l+1)) R(r) = \epsilon r^2 R(r)"/></p>
 </div><p>Substituting <a class="reference internal" href="#equation-schr-radial2">(3.42.2.3)</a> into <a class="reference internal" href="#equation-schr-radial1">(3.42.2.2)</a> we obtain:</p>
 <div class="math" id="equation-schr-radial-boundary">
-<p><span class="eqno">(3.42.2.4)<a class="headerlink" href="#equation-schr-radial-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/9a5759ac43f764d174c9fcc18aaa01816c725b9e.svg" alt="[r^2 R' \delta R]_0^\infty = 0"/></p>
+<p><span class="eqno">(3.42.2.4)<a class="headerlink" href="#equation-schr-radial-boundary" title="Permalink to this equation">¶</a></span><img src="../_images/math/1a759cfe2918d956fe51e859bec7a7231a990c53.svg" alt="[r^2 R' \delta R]_0^\infty = 0"/></p>
 </div><p>And we can see that <a class="reference internal" href="#equation-schr-radial1">(3.42.2.2)</a> implies both the equation
 <a class="reference internal" href="#equation-schr-radial2">(3.42.2.3)</a> and the boundary term <a class="reference internal" href="#equation-schr-radial-boundary">(3.42.2.4)</a>. The
-boundary term is zero for <img class="math" src="../_images/math/3d83df94da83cbdc3b9f3114e724e93767b9e664.svg" alt="r=0"/>, so it reduces to:</p>
+boundary term is zero for <img class="math" src="../_images/math/f17cf255fee0732a30b1b4b881e55a385fc3309e.svg" alt="r=0"/>, so it reduces to:</p>
 <div class="math" id="equation-schr-radial-boundary2">
-<p><span class="eqno">(3.42.2.5)<a class="headerlink" href="#equation-schr-radial-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/b37b75f26da9c9ed6636aa7aebc9e0c5c756b51e.svg" alt="\lim_{r\to\infty} r^2 R'(r) \delta R(r) = 0"/></p>
-</div><p>We can see that there is no natural condition at <img class="math" src="../_images/math/3d83df94da83cbdc3b9f3114e724e93767b9e664.svg" alt="r=0"/>, and for <img class="math" src="../_images/math/47746b98205c880f9e965f15b8cceba266d17e07.svg" alt="r=\infty"/> we
-only have two possible options. Either we impose <img class="math" src="../_images/math/e6751f1ed598909350e7f70511268533bc7af21d.svg" alt="\delta R(\infty) = 0"/> and
+<p><span class="eqno">(3.42.2.5)<a class="headerlink" href="#equation-schr-radial-boundary2" title="Permalink to this equation">¶</a></span><img src="../_images/math/eaf6554e1becc2f08fcb6b0fcdea7d55343217e8.svg" alt="\lim_{r\to\infty} r^2 R'(r) \delta R(r) = 0"/></p>
+</div><p>We can see that there is no natural condition at <img class="math" src="../_images/math/f17cf255fee0732a30b1b4b881e55a385fc3309e.svg" alt="r=0"/>, and for <img class="math" src="../_images/math/f5a0086d8f30307b5c65982351ad7b8b46b9398c.svg" alt="r=\infty"/> we
+only have two possible options. Either we impose <img class="math" src="../_images/math/550adf217b8bd981de8b542dffb9fa048b13b1e9.svg" alt="\delta R(\infty) = 0"/> and
 obtain the Dirichlet condition and the boundary term
-<a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> vanishes. Or we allow <img class="math" src="../_images/math/04a91caefc49808b79f5a5420796a703f2f60629.svg" alt="\delta R(\infty)"/> to vary,
-and then <a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> implies <img class="math" src="../_images/math/046a051905d6222a114048916681461ae6cb4dc6.svg" alt="R'(\infty) = 0"/>.</p>
-<p>Unlike for the Poisson equation we are not allowed to set <img class="math" src="../_images/math/ef3cc8734db9debd3eaf3b71cae9119611d2941d.svg" alt="R'(\infty)"/> to
+<a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> vanishes. Or we allow <img class="math" src="../_images/math/b86f6b666049f14a6cd0ca17c9114dbfa2213540.svg" alt="\delta R(\infty)"/> to vary,
+and then <a class="reference internal" href="#equation-schr-radial-boundary2">(3.42.2.5)</a> implies <img class="math" src="../_images/math/e175d6485ff130d26372921837b83039efb096ec.svg" alt="R'(\infty) = 0"/>.</p>
+<p>Unlike for the Poisson equation we are not allowed to set <img class="math" src="../_images/math/9f2b5db06fbb18269b157f142912a221c835b7ce.svg" alt="R'(\infty)"/> to
 anything other than zero, and that’s why <a class="reference internal" href="#equation-schr-radial0">(3.42.2.1)</a> has no surface
 term.</p>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.42. Variational Formulation of PDEs</a><ul>
 <li><a class="reference internal" href="#poisson-equation">3.42.1. Poisson Equation</a><ul>
 <li><a class="reference internal" href="#example">Example</a><ul>
@@ -334,12 +339,17 @@ term.</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="operators.html"
-                        title="previous chapter">3.41. Operators</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="../relativity/main.html"
-                        title="next chapter">4. Classical Mechanics, Special and General Relativity</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="operators.html"
+                          title="previous chapter"><span class="section-number">3.41. </span>Operators</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../relativity/main.html"
+                          title="next chapter"><span class="section-number">4. </span>Classical Mechanics, Special and General Relativity</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -348,17 +358,15 @@ term.</p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -376,12 +384,13 @@ term.</p>
           <a href="operators.html" title="3.41. Operators"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.42. </span>Variational Formulation of PDEs</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

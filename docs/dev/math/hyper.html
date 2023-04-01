@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.34. Hypergeometric Functions &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.35. Feynman Parameters" href="feynman-parameters.html" />
@@ -62,7 +64,8 @@
           <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.34. </span>Hypergeometric Functions</a></li> 
       </ul>
     </div>  
 
@@ -71,99 +74,99 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="hypergeometric-functions">
-<span id="index-0"></span><h1>3.34. Hypergeometric Functions<a class="headerlink" href="#hypergeometric-functions" title="Permalink to this headline">¶</a></h1>
+  <section id="hypergeometric-functions">
+<span id="index-0"></span><h1><span class="section-number">3.34. </span>Hypergeometric Functions<a class="headerlink" href="#hypergeometric-functions" title="Permalink to this headline">¶</a></h1>
 <p>The series:</p>
 <div class="math">
-<p><img src="../_images/math/90b4f7c8781df1d60a8f17f259dbdbe1606698fd.svg" alt="\sum_{k=0}^\infty t_k"/></p>
-</div><p>with <img class="math" src="../_images/math/963239f1d7d2b3cd18d3b397606ce90e8014f7bf.svg" alt="t_0=1"/>
-is geometric if the ratio of two consecutive terms <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> is a constant
-(with respect to <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/>):</p>
+<p><img src="../_images/math/71a5e94243e895ca77d1d254d563536e475287d8.svg" alt="\sum_{k=0}^\infty t_k"/></p>
+</div><p>with <img class="math" src="../_images/math/f5cd06566aea588730706b82b36d3a5e305d4740.svg" alt="t_0=1"/>
+is geometric if the ratio of two consecutive terms <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> is a constant
+(with respect to <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/>):</p>
 <div class="math">
-<p><img src="../_images/math/8d4a4a61e2dc63d772f8fc9a86f7b33cd2d1c86e.svg" alt="{t_{k+1} \over t_k} = x"/></p>
+<p><img src="../_images/math/8f6c1581aef4c982d103cae92748937e3a550c4c.svg" alt="{t_{k+1} \over t_k} = x"/></p>
 </div><p>then we get:</p>
 <div class="math">
-<p><img src="../_images/math/4894e81d5f9fd8be8a64e9abfa1b11fe457cd66c.svg" alt="\sum_{k=0}^\infty t_k =
+<p><img src="../_images/math/6de5aded229fbf6028d190c5ca3e47bf2d357535.svg" alt="\sum_{k=0}^\infty t_k =
     \sum_{k=0}^\infty x^k"/></p>
-</div><p>It is hypergeometric if the ratio <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> is a rational function (with
-respect to <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/>):</p>
+</div><p>It is hypergeometric if the ratio <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> is a rational function (with
+respect to <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/>):</p>
 <div class="math">
-<p><img src="../_images/math/922e4b6be5316d702600528c088b630caaa38a08.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}"/></p>
-</div><p>where <img class="math" src="../_images/math/0c9e226f2f0719a1cf768d1260e2eaef6b835245.svg" alt="P(k)"/> and <img class="math" src="../_images/math/29bef6c23f7eaf59f415c296ba1f60591fc8ccbf.svg" alt="Q(k)"/> are polynomials in <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/>, which we can completely factor
+<p><img src="../_images/math/fe33f45053ab9981792ea8f78966ae4ec851829f.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}"/></p>
+</div><p>where <img class="math" src="../_images/math/09e3f8a74abd5b3fe7d947660bd59cbade71e028.svg" alt="P(k)"/> and <img class="math" src="../_images/math/732939f4bf56c94c7cd423445d4064340704f0aa.svg" alt="Q(k)"/> are polynomials in <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/>, which we can completely factor
 into the form</p>
 <div class="math" id="equation-hyper-ratio">
-<p><span class="eqno">(3.34.1)<a class="headerlink" href="#equation-hyper-ratio" title="Permalink to this equation">¶</a></span><img src="../_images/math/69b6fd0b5ec0d1e622871082aa4118d6b33087ef.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}
+<p><span class="eqno">(3.34.1)<a class="headerlink" href="#equation-hyper-ratio" title="Permalink to this equation">¶</a></span><img src="../_images/math/72c44daf1617c245c807698c91921a3fd7d5d79a.svg" alt="{t_{k+1} \over t_k} = {P(k)\over Q(k)}
     = {(k+a_1)(k+a_2)\cdots(k+a_p)\over
         (k+b_1)(k+b_2)\cdots(k+b_q)(k+1)} x"/></p>
-</div><p>where <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> is a constant and the <img class="math" src="../_images/math/aa7d697eb8e692774d506c20a0454d260f7f1164.svg" alt="(k+1)"/> factor is just a convention (if the
-polynomial <img class="math" src="../_images/math/29bef6c23f7eaf59f415c296ba1f60591fc8ccbf.svg" alt="Q(k)"/> does not contain the factor <img class="math" src="../_images/math/aa7d697eb8e692774d506c20a0454d260f7f1164.svg" alt="(k+1)"/> we can just add it to
-both numerator and denominator and absorb the “1” into <img class="math" src="../_images/math/1add8b66ab36340f23fa334acb3fc612657718c0.svg" alt="a_p"/>). The
+</div><p>where <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> is a constant and the <img class="math" src="../_images/math/99832e86b4ec79a7bcfbae1c3ed1c167a2381451.svg" alt="(k+1)"/> factor is just a convention (if the
+polynomial <img class="math" src="../_images/math/732939f4bf56c94c7cd423445d4064340704f0aa.svg" alt="Q(k)"/> does not contain the factor <img class="math" src="../_images/math/99832e86b4ec79a7bcfbae1c3ed1c167a2381451.svg" alt="(k+1)"/> we can just add it to
+both numerator and denominator and absorb the “1” into <img class="math" src="../_images/math/5aea7be0c4291745ea605979383e591a2fefcc5d.svg" alt="a_p"/>). The
 hypergeometric series is then given by:</p>
 <div class="math">
-<p><img src="../_images/math/f373596a41ac49b0f02f8333dac8980b95685ca3.svg" alt="{}_p F_q(a_1, a_2, \dots, a_p; b_1, b_2, \dots, b_q; x)
+<p><img src="../_images/math/58071a647b4ac0e3296b72e33c68b38792ddd794.svg" alt="{}_p F_q(a_1, a_2, \dots, a_p; b_1, b_2, \dots, b_q; x)
     = \sum_{k=0}^\infty {(a_1)_k (a_2)_k \cdots (a_p)_k \over
         (b_1)_k (b_2)_k \cdots (b_q)_k} {x^k\over k!}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/556c6c48c415cd55589ae030dbe0d8419dbca5b1.svg" alt="(a)_k = {\Gamma(a+k)\over\Gamma(a)} = \begin{cases}
+<p><img src="../_images/math/f1837a9195baea1da7d803c887e0290d0c013f04.svg" alt="(a)_k = {\Gamma(a+k)\over\Gamma(a)} = \begin{cases}
     a(a+1)(a+2)\cdots(a+k-1), &amp; \mbox{if $k\ge 1$;} \\
     1, &amp; \mbox{if $k=0$}\\
     \end{cases}"/></p>
 </div><p>is the rising factorial function (also called the Pochhammer symbol).</p>
 <p>To write a function as a hypergeometric series, we simply expand it in series
-and then write the ratio <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> in the form <a class="reference internal" href="#equation-hyper-ratio">(3.34.1)</a> and
-immediately identify the proper <img class="math" src="../_images/math/9e2171da34b7fff9370160c75e3f128c7bae7d7a.svg" alt="{}_p F_q"/> function. If the ratio cannot be
+and then write the ratio <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> in the form <a class="reference internal" href="#equation-hyper-ratio">(3.34.1)</a> and
+immediately identify the proper <img class="math" src="../_images/math/c97ef72f9c4fdb005e45388805e80eef770bb72d.svg" alt="{}_p F_q"/> function. If the ratio cannot be
 put into the form <a class="reference internal" href="#equation-hyper-ratio">(3.34.1)</a> then the function is not hypergeometric.</p>
-<div class="section" id="convergence-conditions">
-<h2>3.34.1. Convergence Conditions<a class="headerlink" href="#convergence-conditions" title="Permalink to this headline">¶</a></h2>
-<p>If any <img class="math" src="../_images/math/ef84e0982216d41db2a82cf3905c946dacf3098f.svg" alt="a_i=0, -1, -2, \dots"/>, then the series is a polynomial of degree
-<img class="math" src="../_images/math/778c61c40af9bfb6e7fc5f9d39ee3d90e20cd388.svg" alt="-a_i"/>.</p>
-<p>If any <img class="math" src="../_images/math/77e0d098559d3db72768bb0ef7867a6741f4bd90.svg" alt="b_i=0, -1, -2, \dots"/> then the denominators eventually become 0 (unless
+<section id="convergence-conditions">
+<h2><span class="section-number">3.34.1. </span>Convergence Conditions<a class="headerlink" href="#convergence-conditions" title="Permalink to this headline">¶</a></h2>
+<p>If any <img class="math" src="../_images/math/17b02db18f16c19e1f08ade9667b1e4911bbe3dd.svg" alt="a_i=0, -1, -2, \dots"/>, then the series is a polynomial of degree
+<img class="math" src="../_images/math/734675c55f9868647eda63c5b1407317e07fbbe7.svg" alt="-a_i"/>.</p>
+<p>If any <img class="math" src="../_images/math/e607510cf87af93299795231a3f0457264fee9dd.svg" alt="b_i=0, -1, -2, \dots"/> then the denominators eventually become 0 (unless
 the series is terminated as a polynomial before that, due to the previous
 point) and the series is undefined.</p>
-<p>Except the previous two cases, the radius of convergence <img class="math" src="../_images/math/a15901c03c5ae8e9a3a2b70b19fd6551c65d850e.svg" alt="R"/> of the
+<p>Except the previous two cases, the radius of convergence <img class="math" src="../_images/math/4fe1885a18460fa5f70897676c7e3a671509daa6.svg" alt="R"/> of the
 hypergeometric series is:</p>
 <div class="math">
-<p><img src="../_images/math/15b9f5c46a1b52975137f6f5cfcd0918bc488fd1.svg" alt="R = \begin{cases}
+<p><img src="../_images/math/d75140b4c2e9a5ab3226ce04fec329f9eb57b6b3.svg" alt="R = \begin{cases}
     \infty &amp; \mbox{if $p \le q$;} \\
     1 &amp; \mbox{if $p = q+1$;} \\
     0 &amp; \mbox{if $p &gt; q+1$.} \\
     \end{cases}"/></p>
-</div></div>
-<div class="section" id="elementary-and-special-functions">
-<h2>3.34.2. Elementary and Special Functions<a class="headerlink" href="#elementary-and-special-functions" title="Permalink to this headline">¶</a></h2>
-<p>The hypergeometric functions for low <img class="math" src="../_images/math/e5d1ed584f05b4f69e8cd56b95e144968e3e8544.svg" alt="p"/> and <img class="math" src="../_images/math/b3b33120dca43a6a9be28a013eb95f50583e5f5c.svg" alt="q"/> have special names:</p>
-<table border="1" class="docutils">
+</div></section>
+<section id="elementary-and-special-functions">
+<h2><span class="section-number">3.34.2. </span>Elementary and Special Functions<a class="headerlink" href="#elementary-and-special-functions" title="Permalink to this headline">¶</a></h2>
+<p>The hypergeometric functions for low <img class="math" src="../_images/math/5c1c36d27e644f8fe00b58ddfc901826b621f5ef.svg" alt="p"/> and <img class="math" src="../_images/math/4fe2c00f66c77092e4bfb2d1b19fb0e20c404322.svg" alt="q"/> have special names:</p>
+<table class="docutils align-default">
 <colgroup>
-<col width="21%" />
-<col width="79%" />
+<col style="width: 21%" />
+<col style="width: 79%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a8873.svg" alt="{}_0F_1"/></td>
-<td>confluent hypergeometric limit function</td>
+<tbody>
+<tr class="row-odd"><td><p><img class="math" src="../_images/math/bf311674b6455819a4e2541b30c3f40118936c4f.svg" alt="{}_0F_1"/></p></td>
+<td><p>confluent hypergeometric limit function</p></td>
 </tr>
-<tr class="row-even"><td><img class="math" src="../_images/math/76def7244de3364581993843ee95e792ae75ccd0.svg" alt="{}_1F_1"/></td>
-<td>Kummer’s confluent hypergeometric function of the first kind</td>
+<tr class="row-even"><td><p><img class="math" src="../_images/math/bbcdb85545c3e5ad1920cbe1ff80d35d459415ab.svg" alt="{}_1F_1"/></p></td>
+<td><p>Kummer’s confluent hypergeometric function of the first kind</p></td>
 </tr>
-<tr class="row-odd"><td><img class="math" src="../_images/math/a7b49e5db628f62f9e45d048c25804c839dc93ca.svg" alt="{}_2F_1"/></td>
-<td>Gauss’ hypergeometric function</td>
+<tr class="row-odd"><td><p><img class="math" src="../_images/math/fb905b2016be03304399bfc0ce82e0908ab881dd.svg" alt="{}_2F_1"/></p></td>
+<td><p>Gauss’ hypergeometric function</p></td>
 </tr>
 </tbody>
 </table>
-<p>Most common functions can be expressed using <img class="math" src="../_images/math/9e2171da34b7fff9370160c75e3f128c7bae7d7a.svg" alt="{}_p F_q"/> as follows:</p>
-<div class="section" id="the-series-0f0">
+<p>Most common functions can be expressed using <img class="math" src="../_images/math/c97ef72f9c4fdb005e45388805e80eef770bb72d.svg" alt="{}_p F_q"/> as follows:</p>
+<section id="the-series-0f0">
 <h3>The Series 0F0<a class="headerlink" href="#the-series-0f0" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/b522888384b0ccaf78b97299388dde278f2667f9.svg" alt="e^{x}
+<p><img src="../_images/math/30a83307243d313c65db0a10a8eddf5523b57224.svg" alt="e^{x}
     = \sum_{k=0}^\infty {x^k\over k!}
     = {}_0 F_0(x)"/></p>
-</div></div>
-<div class="section" id="the-series-1f0">
+</div></section>
+<section id="the-series-1f0">
 <h3>The Series 1F0<a class="headerlink" href="#the-series-1f0" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/37c9006424fde743f9aec0fc0a2e4d14ce1fcda0.svg" alt="{1\over 1-x} = \sum_{k=0}^\infty x^k = {}_1 F_0(1; x)
+<p><img src="../_images/math/7030f7871708ab987ef14ef7ea7b4482b7df0c41.svg" alt="{1\over 1-x} = \sum_{k=0}^\infty x^k = {}_1 F_0(1; x)
 
 {1\over (1-x)^a} = \sum_{k=0}^\infty {(a+k-1)!\over (a-1)! k!} x^k
     = {}_1 F_0(a; x)
@@ -171,12 +174,12 @@ hypergeometric series is:</p>
 x^a = {}_1 F_0(-a; 1-x)
 
 \sqrt x = {}_1 F_0(-\half; 1-x)"/></p>
-</div></div>
-<div class="section" id="the-series-0f1">
+</div></section>
+<section id="the-series-0f1">
 <h3>The Series 0F1<a class="headerlink" href="#the-series-0f1" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/57ce91bdf2963f9610070055158e7ef695202844.svg" alt="\sin z = z \ {}_0F_1({\textstyle{3\over2}}; -{z^2\over 4})
+<p><img src="../_images/math/36e1ee4b8b450ca9351b53891f5b07c4c8128aea.svg" alt="\sin z = z \ {}_0F_1({\textstyle{3\over2}}; -{z^2\over 4})
 
 \cos z = {}_0F_1(\half; -{z^2\over 4})
 
@@ -185,18 +188,18 @@ x^a = {}_1 F_0(-a; 1-x)
 \cosh z = {}_0F_1(\half; {z^2\over 4})"/></p>
 </div><p>Bessel function:</p>
 <div class="math">
-<p><img src="../_images/math/a0011af8f1cb9cd0dceb6ae69ed063ca5229fa50.svg" alt="J_\alpha(x) = \sum_{k=0}^\infty {(-1)^k \left(x\over 2\right)^{2k+\alpha}
+<p><img src="../_images/math/b6b9cb9798aecf654e8dcabd00afe9e18959115a.svg" alt="J_\alpha(x) = \sum_{k=0}^\infty {(-1)^k \left(x\over 2\right)^{2k+\alpha}
         \over k! (k+\alpha)!}
     = {\left(x\over2\right)^\alpha \over \Gamma(\alpha+1)}
         \ {}_0F_1\left(\alpha+1; -{x^2\over 4}\right)"/></p>
 </div><p>Spherical Bessel function of the first kind:</p>
 <div class="math">
-<p><img src="../_images/math/806b1f9cc1a639ef62627cc73313149c865f808d.svg" alt="j_\nu(x) = \sqrt{\pi\over 2x} J_{\nu+\half}(x)
+<p><img src="../_images/math/699cf00a7a06ca6b10aca762b81afc2ebbbe6ff3.svg" alt="j_\nu(x) = \sqrt{\pi\over 2x} J_{\nu+\half}(x)
     = {\sqrt\pi\left(x\over2\right)^\nu \over 2\Gamma(\nu+{3\over2})}
         \ {}_0F_1\left(\nu+{3\over2}; -{x^2\over 4}\right)"/></p>
 </div><p>Modified Bessel functions:</p>
 <div class="math">
-<p><img src="../_images/math/b5c050b46533dd7060da30d4481eef7cf4912dc4.svg" alt="I_\nu(z) = i^{-\nu} J_\nu(iz)
+<p><img src="../_images/math/91eb859f17853eda317ee765bb53603eced4ac3f.svg" alt="I_\nu(z) = i^{-\nu} J_\nu(iz)
     = \sum_{k=0}^\infty {\left(x\over 2\right)^{2k+\nu}
         \over k! (k+\nu)!}
     = {1\over \Gamma(\nu+1)} \left(z\over 2\right)^\nu
@@ -206,37 +209,37 @@ K_\nu(z) = {\Gamma(\nu)\over 2} \left(2\over z\right)^\nu
     {}_0F_1\left(1-\nu; {z^2\over 4}\right)
         + {\Gamma(-\nu)\over 2} \left(z\over 2\right)^\nu
     {}_0F_1\left(\nu+1; {z^2\over 4}\right)"/></p>
-</div></div>
-<div class="section" id="the-series-1f1">
+</div></section>
+<section id="the-series-1f1">
 <h3>The Series 1F1<a class="headerlink" href="#the-series-1f1" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/6198b28edc3fa8e325ac413dbe049300272b337f.svg" alt="z^a e^z = {}_1F_1(a; a-\half; -2z)"/></p>
+<p><img src="../_images/math/4bae8f8b7aadcdeb2af8be0208408924db38ad57.svg" alt="z^a e^z = {}_1F_1(a; a-\half; -2z)"/></p>
 </div><p>Lower incomplete gamma function:</p>
 <div class="math">
-<p><img src="../_images/math/715d6034ce639d9f7e24459c2730973223b209cc.svg" alt="\gamma(z, x)
+<p><img src="../_images/math/541fe3e461198fe299e2d709e019ad2726be26ab.svg" alt="\gamma(z, x)
     = x^z \Gamma(z) e^{-x} \sum_{k=0}^\infty {x^k\over \Gamma(z+k+1)}
     = x^z z^{-1} e^{-x}\ {}_1F_1(1; z+1; x)
     = x^z z^{-1}\ {}_1F_1(z; z+1; -x)"/></p>
 </div><p>Error function:</p>
 <div class="math">
-<p><img src="../_images/math/01f5f56adcc2725a055181cb107aa081c90bce63.svg" alt="\mbox{erf}(x)
+<p><img src="../_images/math/92e87fce6507780b3b8b06699d1da6f72debb096.svg" alt="\mbox{erf}(x)
     = {1\over\sqrt\pi}\gamma(\half, x^2)
     = {2x\over\sqrt\pi}\ {}_1F_1(\half; {\textstyle{3\over2}}, -x^2)"/></p>
 </div><p>Hermite polynomials:</p>
 <div class="math">
-<p><img src="../_images/math/7e0c7a00f78bdc6bca820d0e087b747c7a34af04.svg" alt="H_{2n}(x) = (-1)^n {(2n)!\over n!}\ {}_1F_1(-n;\half; x^2)
+<p><img src="../_images/math/8ffd82224a4a55021d400b7a8086122e20dd8474.svg" alt="H_{2n}(x) = (-1)^n {(2n)!\over n!}\ {}_1F_1(-n;\half; x^2)
 
 H_{2n+1}(x) = (-1)^n {(2n+1)!\over n!}2x
     \ {}_1F_1(-n;{\textstyle{3\over2}}; x^2)"/></p>
 </div><p>Laguerre polynomials:</p>
 <div class="math" id="equation-laguerre-hyper">
-<p><span class="eqno">(3.34.2.1)<a class="headerlink" href="#equation-laguerre-hyper" title="Permalink to this equation">¶</a></span><img src="../_images/math/79cbea5788f646b00d878f63c6198f9c008b7a86.svg" alt="L_n^\alpha(x) = \binom{n+\alpha}{n}\ {}_1F_1(-n;\alpha+1;x)"/></p>
-</div><p>Solution <img class="math" src="../_images/math/7f1f3bb821461713b2210cac3409b7dcf2d321ca.svg" alt="P_{nl}(r)=r R_{nl}(r)"/> of the radial Schrödinger equation in the
-Coulomb potential <img class="math" src="../_images/math/fb629a36756a31d351b8a6e55ea8dc59ee642cf8.svg" alt="V(r) = -{Z/r}"/> (we use <a class="reference internal" href="#equation-laguerre-hyper">(3.34.2.1)</a> in the second
+<p><span class="eqno">(3.34.2.1)<a class="headerlink" href="#equation-laguerre-hyper" title="Permalink to this equation">¶</a></span><img src="../_images/math/915cd7d775cf1ddc7c1475c8d34820d183376094.svg" alt="L_n^\alpha(x) = \binom{n+\alpha}{n}\ {}_1F_1(-n;\alpha+1;x)"/></p>
+</div><p>Solution <img class="math" src="../_images/math/4ab8801e52f99a57292759f4752eb16886098ddb.svg" alt="P_{nl}(r)=r R_{nl}(r)"/> of the radial Schrödinger equation in the
+Coulomb potential <img class="math" src="../_images/math/0e41d1931c7aaec496c3cc2d5c00f5ed28524d60.svg" alt="V(r) = -{Z/r}"/> (we use <a class="reference internal" href="#equation-laguerre-hyper">(3.34.2.1)</a> in the second
 equation below):</p>
 <div class="math">
-<p><img src="../_images/math/4b2acdbcd33ac7ad08d0c24b173e244c3533b251.svg" alt="P_{nl}(r) = N_{nl} \left(2Zr\over n\right)^{l+1} e^{-{Zr\over n}}
+<p><img src="../_images/math/a7851d3b1405419dd2678edbeb4fea10ec7638db.svg" alt="P_{nl}(r) = N_{nl} \left(2Zr\over n\right)^{l+1} e^{-{Zr\over n}}
     \ {}_1F_1\left(-n+l+1; 2l+2; {2Zr\over n}\right) =
 
 = N_{nl} \left(2Zr\over n\right)^{l+1} e^{-{Zr\over n}}
@@ -248,12 +251,12 @@ equation below):</p>
         \ L_{n-l-1}^{2l+1}\left({2Zr\over n}\right)
 
 N_{nl} = {1\over n(2l+1)!} \sqrt{Z(n+l)!\over (n-l-1)!}"/></p>
-</div></div>
-<div class="section" id="the-series-2f1">
+</div></section>
+<section id="the-series-2f1">
 <h3>The Series 2F1<a class="headerlink" href="#the-series-2f1" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/3efd054e199aead31781712733f27e05d1512d37.svg" alt="\log(1+z) = z\ {}_2F_1(1, 1; 2; -z)
+<p><img src="../_images/math/c1d5073980265ed5796c68dc9671821b7e815323.svg" alt="\log(1+z) = z\ {}_2F_1(1, 1; 2; -z)
 
 \log(z) = (z-1)\ {}_2F_1(1, 1; 2; 1-z)
 
@@ -264,46 +267,46 @@ N_{nl} = {1\over n(2l+1)!} \sqrt{Z(n+l)!\over (n-l-1)!}"/></p>
 \arctan z = z\ {}_2F_1(1, \half; {\textstyle{3\over2}}; -z^2)"/></p>
 </div><p>Legendre polynomials (and associated Legendre polynomials):</p>
 <div class="math">
-<p><img src="../_images/math/527c58c44cf7d8468af6e371f173ea2bf483a5bb.svg" alt="P_n(z) = {}_2F_1\left(-n, n+1; 1; {1-z\over 2}\right)
+<p><img src="../_images/math/c0cdb72ab3e9ca1b3eef2218ba843e5a9288f38e.svg" alt="P_n(z) = {}_2F_1\left(-n, n+1; 1; {1-z\over 2}\right)
 
 P_n^\mu(z) = {1\over\Gamma(1-\mu)} \left(1+z\over1-z\right)^{\mu\over2}
     {}_2F_1\left(-n, n+1; 1-\mu; {1-z\over 2}\right)"/></p>
 </div><p>Chebyshev polynomials:</p>
 <div class="math">
-<p><img src="../_images/math/5fb46619e6cb15171164b8e57606a19dab6b3517.svg" alt="T_n(z) = {}_2F_1\left(-n, n;\half; {1-z\over 2}\right)
+<p><img src="../_images/math/0a01a7c617723bb87dae78d2178280f64bd7abec.svg" alt="T_n(z) = {}_2F_1\left(-n, n;\half; {1-z\over 2}\right)
 
 U_n(z) = (n+1)\ {}_2F_1\left(-n, n+2;{\textstyle{3\over2}};
     {1-z\over 2}\right)"/></p>
 </div><p>Gegenbauer polynomials:</p>
 <div class="math">
-<p><img src="../_images/math/2e9f65610fe337044bd903bec807bd52357d428e.svg" alt="C_n^\alpha(z) = {(2\alpha)_n \over n!}
+<p><img src="../_images/math/1fe929454bd135261a04b9596403145f32d7bf92.svg" alt="C_n^\alpha(z) = {(2\alpha)_n \over n!}
     \ {}_2F_1\left(-n, 2\alpha + n;\alpha+\half; {1-z\over 2}\right)"/></p>
 </div><p>Jacobi polynomials:</p>
 <div class="math">
-<p><img src="../_images/math/6b9b70a94faa5158dc901cd7489ba06d318b4ebe.svg" alt="P_n^{(\alpha, \beta)}(z) = {(\alpha+1)_n \over n!}
+<p><img src="../_images/math/f248b0b8ea2ba360503ca196293847ceff7e6a28.svg" alt="P_n^{(\alpha, \beta)}(z) = {(\alpha+1)_n \over n!}
     \ {}_2F_1\left(-n, 1+\alpha+\beta+n;\alpha+1; {1-z\over 2}\right)"/></p>
 </div><p>Complete elliptic integrals:</p>
 <div class="math">
-<p><img src="../_images/math/850797a174a6533d0d16de58cd7bb6a57c4c1977.svg" alt="K(k) = {\pi\over 2}\ {}_2F_1( \half, \half; 1; k^2)
+<p><img src="../_images/math/c504d71e808a39ccebf4510a95a8034ad8977da8.svg" alt="K(k) = {\pi\over 2}\ {}_2F_1( \half, \half; 1; k^2)
 
 E(k) = {\pi\over 2}\ {}_2F_1(-\half, \half; 1; k^2)"/></p>
-</div></div>
-<div class="section" id="the-series-3f2">
+</div></section>
+<section id="the-series-3f2">
 <h3>The Series 3F2<a class="headerlink" href="#the-series-3f2" title="Permalink to this headline">¶</a></h3>
 <p>Elementary functions:</p>
 <div class="math">
-<p><img src="../_images/math/6903a2bd68a4043dc8e8cec39a331822d3a39195.svg" alt="\tan(z) = {8z\over \pi^2-4z^2}
+<p><img src="../_images/math/051b1f1a568aee00e17666d2257949448e1b42e9.svg" alt="\tan(z) = {8z\over \pi^2-4z^2}
 \ {}_3F_2(1, \half-{z\over\pi}, \half + {z\over\pi};
     {\textstyle{3\over2}}-{z\over\pi}, {\textstyle{3\over2}} + {z\over\pi}; 1)"/></p>
 </div><p>Dilogarithm:</p>
 <div class="math">
-<p><img src="../_images/math/649ea8dae0625924dd48738bb82077210fb57f55.svg" alt="\mbox{Li}_2(z) = z\ {}_3F_2(1, 1, 1; 2, 2; z)"/></p>
+<p><img src="../_images/math/2ce050b74776b7f5fd09bdcb61095287eac128f7.svg" alt="\mbox{Li}_2(z) = z\ {}_3F_2(1, 1, 1; 2, 2; z)"/></p>
 </div><p>Digamma:</p>
 <div class="math">
-<p><img src="../_images/math/bb430ebad8a95b297505a22625c5e7cdea177e9c.svg" alt="\psi(z) = (z-1)\ {}_3F_2(1, 1, 2-z; 2, 2; 1) -\gamma"/></p>
+<p><img src="../_images/math/c3810f80a13b6db912906dbec381aeac5e57d9ce.svg" alt="\psi(z) = (z-1)\ {}_3F_2(1, 1, 2-z; 2, 2; 1) -\gamma"/></p>
 </div><p>The Wigner 3j symbol:</p>
 <div class="math">
-<p><img src="../_images/math/11a9a10e83161954bd9a51f87d36a3786cf9bf07.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
+<p><img src="../_images/math/cf91ae18f5c8fce133ae7fd2a0c9c50eb39339e8.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
 = (-1)^{-j_1 + j_2 + m_3} \delta_{-m_3, m_1+m_2}
 {1\over(-j_2+j_3+m_1)! (-j_1+j_3-m_2)!}
 
@@ -313,88 +316,90 @@ E(k) = {\pi\over 2}\ {}_2F_1(-\half, \half; 1; k^2)"/></p>
 
 {}_3F_2(-j_1-j_2+j_3, m_1-j_1, -j_2-m_2;
     -j_1+j_3-m_2+1, -j_2+j_3+m_1+1; 1)"/></p>
-</div></div>
-<div class="section" id="the-series-pfq">
+</div></section>
+<section id="the-series-pfq">
 <span id="fermi-dirac-poly"></span><h3>The Series pFq<a class="headerlink" href="#the-series-pfq" title="Permalink to this headline">¶</a></h3>
 <p>Polylogarithm:</p>
 <div class="math">
-<p><img src="../_images/math/12ddf4054050eac1bb708ba147bea4e3ac12f2b4.svg" alt="\mbox{Li}_s(z) = z\ {}_{s+1}F_s(1, 1, \dots, 1; 2, \dots, 2; z)"/></p>
+<p><img src="../_images/math/1ba05bc487c6c6bee393c9bfe7f429354877e60d.svg" alt="\mbox{Li}_s(z) = z\ {}_{s+1}F_s(1, 1, \dots, 1; 2, \dots, 2; z)"/></p>
 </div><p>Fermi-Dirac integral:</p>
 <div class="math">
-<p><img src="../_images/math/b12ee9b9d7b25241cba9fcd13553554fe6893cf0.svg" alt="I_\nu(x) = \int_0^\infty {t^\nu\over 1 + e^{t-x}} \d t
+<p><img src="../_images/math/4cf5de6e2e42d6df586a44894343418d8cb3a196.svg" alt="I_\nu(x) = \int_0^\infty {t^\nu\over 1 + e^{t-x}} \d t
     = -\Gamma(\nu+1) \mbox{Li}_{\nu+1}(-e^x)"/></p>
-</div></div>
-</div>
-<div class="section" id="example-i">
-<h2>3.34.3. Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
-<p>By writing out the series expansion for the <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> ratio we can prove
+</div></section>
+</section>
+<section id="example-i">
+<h2><span class="section-number">3.34.3. </span>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+<p>By writing out the series expansion for the <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> ratio we can prove
 that:</p>
 <div class="math">
-<p><img src="../_images/math/9dba12bc658fe229f56e2b6fdf548cf5f150e252.svg" alt="p\ {}_1F_1(a; b; x) +
+<p><img src="../_images/math/f88c4c1e0ca71f79bcd277e7550b62eb338e2cc8.svg" alt="p\ {}_1F_1(a; b; x) +
 q\ {}_1F_1(a+1; b; x) =
     (p+q)\ {}_2F_2\left(a, a\left({p\over q}+1\right)+1;
         b, a\left({p\over q}+1\right); x \right)"/></p>
 </div><p>The left hand side is equal to:</p>
 <div class="math">
-<p><img src="../_images/math/ccb9e37afd45a58de78f8b4232a8936249ce9ef0.svg" alt="p\ {}_1F_1(a; b; x) +
+<p><img src="../_images/math/c3f0bc48a58ccb58ad9d11e852ad9c1ca3ccc162.svg" alt="p\ {}_1F_1(a; b; x) +
 q\ {}_1F_1(a+1; b; x) =
     \sum_{k=0}^\infty {p (a)_k + q(a+1)_k \over (b)_k k!} x^k"/></p>
-</div><p>We simplify the <img class="math" src="../_images/math/436d1a10a56fb3771c1b5b125e02bb7e97102a23.svg" alt="t_k"/> term:</p>
+</div><p>We simplify the <img class="math" src="../_images/math/28c1c683c378335669523c3c06398d93e10a1a51.svg" alt="t_k"/> term:</p>
 <div class="math">
-<p><img src="../_images/math/fa13cb737d4f7f5badfeaaaf97a0eef9cd644e48.svg" alt="t_k = {p (a)_k + q(a+1)_k \over (b)_k k!} x^k
+<p><img src="../_images/math/11c15764fe68cc64516c5a410c021501c39e4219.svg" alt="t_k = {p (a)_k + q(a+1)_k \over (b)_k k!} x^k
     = {(a)_k \left(p+q+{qk\over a}\right) \over (b)_k k!} x^k"/></p>
-</div><p>We calculate the ratio <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> as well as <img class="math" src="../_images/math/77c719419fd16d185abc4675c8e73222c9fe7b96.svg" alt="t_0"/> to get the normalization:</p>
+</div><p>We calculate the ratio <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> as well as <img class="math" src="../_images/math/eb78ee188a6f32977ffdc638b21ce51a0a023e0b.svg" alt="t_0"/> to get the normalization:</p>
 <div class="math">
-<p><img src="../_images/math/10880416353c73a981da72bc98a8d3f075dfdefa.svg" alt="t_0 = p + q
+<p><img src="../_images/math/11c555c53a0acd7e9233466352343fd4e04744dd.svg" alt="t_0 = p + q
 
 {t_{k+1}\over t_k} = {(k+a)\left(p+q+{q(k+1)\over a}\right) \over
         (k+b)(k+1) \left(p+q+{qk\over a}\right)} x
     = {(k+a)\left(k + a\left({p\over q}+1\right)+1\right) \over
     (k+b)\left(k + a\left({p\over q}+1\right)\right)(k+1)} x"/></p>
-</div><p>From which we read the arguments of the hypergeometric function <img class="math" src="../_images/math/76763e1c8258a9e46fc6bce4f654af64e857b98d.svg" alt="{}_2F_2"/> on
-the right hand side and we need to multiply it by the normalization factor <img class="math" src="../_images/math/0f0efcc4b036986b2137d7c922a01b9331da2bda.svg" alt="t_0
+</div><p>From which we read the arguments of the hypergeometric function <img class="math" src="../_images/math/3948c05a740ffa1dd69bd49a24dcb21d359736b3.svg" alt="{}_2F_2"/> on
+the right hand side and we need to multiply it by the normalization factor <img class="math" src="../_images/math/f67976c20878afc1f4992f5d09cbb78cc8edad40.svg" alt="t_0
 = p+q"/>.</p>
-</div>
-<div class="section" id="example-ii">
-<h2>3.34.4. Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
-<p>By writing out the series expansion for the <img class="math" src="../_images/math/702477e1ce7f59082eabe4f0c6c80ecd878337f1.svg" alt="t_{k+1}/t_k"/> ratio we can prove
+</section>
+<section id="example-ii">
+<h2><span class="section-number">3.34.4. </span>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+<p>By writing out the series expansion for the <img class="math" src="../_images/math/4f074407a8cb35937f833212a82f1583f32bcda4.svg" alt="t_{k+1}/t_k"/> ratio we can prove
 that:</p>
 <div class="math">
-<p><img src="../_images/math/32dc782b39e324fddc31b027b2243abc99e472f0.svg" alt="e^{-x}\ {}_1F_1(1; 2; 2x)
+<p><img src="../_images/math/7e811e044fa62312d81412173cadc2de77919f5d.svg" alt="e^{-x}\ {}_1F_1(1; 2; 2x)
     = {}_0F_1\left({\textstyle{3\over 2}}; {x^2\over 4}\right)"/></p>
-</div><p>We can also use the substitution <img class="math" src="../_images/math/163350794592a0eff8108c1950d4c90f19226b07.svg" alt="z={x^2\over 4}"/>:</p>
+</div><p>We can also use the substitution <img class="math" src="../_images/math/ab7e19fd27d636c7849aeb20b2013f1bcfeebaa7.svg" alt="z={x^2\over 4}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/fed74247e756489baf695aa6173438403d62e799.svg" alt="e^{-2\sqrt z}\ {}_1F_1(1; 2; 4\sqrt z)
+<p><img src="../_images/math/3e8c1f85c3a6a239fe97f1fdc9302461d767d0ff.svg" alt="e^{-2\sqrt z}\ {}_1F_1(1; 2; 4\sqrt z)
     = {}_0F_1\left({\textstyle{3\over 2}}; z\right)"/></p>
 </div><p>Which is a special case of</p>
 <div class="math">
-<p><img src="../_images/math/3aa13acb7b6525700669a31263de4e9195cafc33.svg" alt="{}_0F_1\left(a; z\right)
+<p><img src="../_images/math/ee62d79b4a4b7d1d2f831ad81bbd9ba0fe82a3cc.svg" alt="{}_0F_1\left(a; z\right)
     = e^{-2\sqrt z}\ {}_1F_1(a-\half; 2a-1; 4\sqrt z)"/></p>
-</div><p>for <img class="math" src="../_images/math/f694543d3c1150148fcfdc188ee62b930a586def.svg" alt="a={3\over 2}"/>.</p>
-</div>
-<div class="section" id="example-iii">
-<h2>3.34.5. Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
-<p>One way to express <img class="math" src="../_images/math/62f34a78b0680bf436f19c0751ab8f3cb6275140.svg" alt="\sinh(z)"/> is:</p>
+</div><p>for <img class="math" src="../_images/math/edbf6c79489d186e23302d942ae83cbcb8a00955.svg" alt="a={3\over 2}"/>.</p>
+</section>
+<section id="example-iii">
+<h2><span class="section-number">3.34.5. </span>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
+<p>One way to express <img class="math" src="../_images/math/9f41facae6f4fec38b904860905b9b72687ca154.svg" alt="\sinh(z)"/> is:</p>
 <div class="math">
-<p><img src="../_images/math/f63245aa3051568b41c625d53317a0f91704d822.svg" alt="\sinh z = z e^{-z}\ {}_1F_1(1; 2; 2z)"/></p>
+<p><img src="../_images/math/0fd34bd4edf81baec20285188ecb4349188270d2.svg" alt="\sinh z = z e^{-z}\ {}_1F_1(1; 2; 2z)"/></p>
 </div><p>using the previous example, this is equal to:</p>
 <div class="math">
-<p><img src="../_images/math/bd20eaa743f80b119e93013012f26a01e28516f5.svg" alt="\sinh z
+<p><img src="../_images/math/ed8be553fd9e66a3aae69bbeab0f842ba661529d.svg" alt="\sinh z
     = z e^{-z}\ {}_1F_1(1; 2; 2z)
     = z\ {}_0F_1\left({\textstyle{3\over 2}}; {z^2\over 4}\right)"/></p>
-</div><p>So the lowest hypergeometric function that can express <img class="math" src="../_images/math/62f34a78b0680bf436f19c0751ab8f3cb6275140.svg" alt="\sinh(z)"/>
-is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a8873.svg" alt="{}_0F_1"/>.</p>
-</div>
-</div>
+</div><p>So the lowest hypergeometric function that can express <img class="math" src="../_images/math/9f41facae6f4fec38b904860905b9b72687ca154.svg" alt="\sinh(z)"/>
+is <img class="math" src="../_images/math/bf311674b6455819a4e2541b30c3f40118936c4f.svg" alt="{}_0F_1"/>.</p>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.34. Hypergeometric Functions</a><ul>
 <li><a class="reference internal" href="#convergence-conditions">3.34.1. Convergence Conditions</a></li>
 <li><a class="reference internal" href="#elementary-and-special-functions">3.34.2. Elementary and Special Functions</a><ul>
@@ -414,12 +419,17 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="spherical-harmonics.html"
-                        title="previous chapter">3.29. Legendre Polynomials</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="feynman-parameters.html"
-                        title="next chapter">3.35. Feynman Parameters</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="spherical-harmonics.html"
+                          title="previous chapter"><span class="section-number">3.29. </span>Legendre Polynomials</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="feynman-parameters.html"
+                          title="next chapter"><span class="section-number">3.35. </span>Feynman Parameters</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -428,17 +438,15 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -456,12 +464,13 @@ is <img class="math" src="../_images/math/8cd1f338fc437a9dff3fe1e6589c06fcd17a88
           <a href="spherical-harmonics.html" title="3.29. Legendre Polynomials"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.34. </span>Hypergeometric Functions</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

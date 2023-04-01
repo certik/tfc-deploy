@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.3. Residue Theorem &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.4. Fourier Transform" href="transforms.html" />
@@ -62,7 +64,8 @@
           <a href="complex.html" title="3.2. Complex Numbers"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.3. </span>Residue Theorem</a></li> 
       </ul>
     </div>  
 
@@ -71,21 +74,21 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="residue-theorem">
-<span id="index-0"></span><h1>3.3. Residue Theorem<a class="headerlink" href="#residue-theorem" title="Permalink to this headline">¶</a></h1>
-<p>The Residue Theorem says that a contour integral of an analytic function <img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/>
-over a closed curve <img class="math" src="../_images/math/d4bb39b643f2b1300f9e87afaa691c4d41d46f9f.svg" alt="\gamma"/> (loop) is equal to the sum of residues
-<img class="math" src="../_images/math/77eb2e12b4d416a13566504e32888f2d6759648d.svg" alt="\res_{z_k}f(z)"/> of the function at all singularities <img class="math" src="../_images/math/88fe9303f3832e71659453c549a2b9d4a718fb55.svg" alt="z_k"/> inside the loop:</p>
+  <section id="residue-theorem">
+<span id="index-0"></span><h1><span class="section-number">3.3. </span>Residue Theorem<a class="headerlink" href="#residue-theorem" title="Permalink to this headline">¶</a></h1>
+<p>The Residue Theorem says that a contour integral of an analytic function <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/>
+over a closed curve <img class="math" src="../_images/math/5cc660a0b09d78cbb844d701971410d22189d28a.svg" alt="\gamma"/> (loop) is equal to the sum of residues
+<img class="math" src="../_images/math/8dfe6cb55f045235a1d6ab9a74ab189d135adbfb.svg" alt="\res_{z_k}f(z)"/> of the function at all singularities <img class="math" src="../_images/math/7e7dd4248da6a2315463e63c5dacda43a950825e.svg" alt="z_k"/> inside the loop:</p>
 <div class="math">
-<p><img src="../_images/math/2212bc8271d0d070aa6ec916244b2cf19641acb5.svg" alt="\int_\gamma f(z) \d z = 2\pi i \sum_{z_k} \res_{z=z_k} f(z)"/></p>
-</div><p>Residue <img class="math" src="../_images/math/4b15bb44c09506dae70840040fc9928e332ebdd6.svg" alt="\res_{z_0}f(z)"/> is defined as the contour integral around <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>
-divided by <img class="math" src="../_images/math/d5c0b971cedf4acdf5e5a6f9518fcb5a9a7c71d9.svg" alt="2\pi i"/>:</p>
+<p><img src="../_images/math/a2246912c69c98cc4e4191e502874efff70a54e0.svg" alt="\int_\gamma f(z) \d z = 2\pi i \sum_{z_k} \res_{z=z_k} f(z)"/></p>
+</div><p>Residue <img class="math" src="../_images/math/be6f6ddefd8f2a59208aaa680dc80c84962ebc82.svg" alt="\res_{z_0}f(z)"/> is defined as the contour integral around <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>
+divided by <img class="math" src="../_images/math/2906b11f0c6955a3caf14e6767cba63989f8c2fc.svg" alt="2\pi i"/>:</p>
 <div class="math">
-<p><img src="../_images/math/74f50c49044f78bedd21965e2f4c3fa17b18bde9.svg" alt="\res_{z=z_0} f(z) = {1\over 2\pi i}\int_{|z - z_0| = \epsilon} f(z) \d z"/></p>
-</div><p>and it is equal to the coefficient of <img class="math" src="../_images/math/a199b401d12900c85bff7c6f31c66a36c4a451ec.svg" alt="1\over z-z_0"/> in the
-Laurent series of <img class="math" src="../_images/math/85163d7190fc1a3ef140a6a181661d3397667ae3.svg" alt="f(z)"/> around the point <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>, as can be easily calculated:</p>
+<p><img src="../_images/math/20c5ff933a05045468758bf27bfca300c53bfc7f.svg" alt="\res_{z=z_0} f(z) = {1\over 2\pi i}\int_{|z - z_0| = \epsilon} f(z) \d z"/></p>
+</div><p>and it is equal to the coefficient of <img class="math" src="../_images/math/52b55942c1585837be7477cda8113442aa109a7d.svg" alt="1\over z-z_0"/> in the
+Laurent series of <img class="math" src="../_images/math/16a24f34e2e75b5ef8fb3649f1fce9a03a832735.svg" alt="f(z)"/> around the point <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>, as can be easily calculated:</p>
 <div class="math">
-<p><img src="../_images/math/0658e13089ba522a2b518b0a652d61bbfe12ebca.svg" alt="\res_{z=z_0} f(z) = {1\over 2\pi i}\int\limits_{|z - z_0| = \epsilon} f(z) \d z
+<p><img src="../_images/math/88872a41bd0437e661acd11c8c3213c69dc9123f.svg" alt="\res_{z=z_0} f(z) = {1\over 2\pi i}\int\limits_{|z - z_0| = \epsilon} f(z) \d z
 = {1\over 2\pi i}\int\limits_{|z - z_0| = \epsilon} \sum_{n=-\infty}^\infty c_n
 (z-z_0)^n \d z
 =
@@ -94,10 +97,10 @@ Laurent series of <img class="math" src="../_images/math/85163d7190fc1a3ef140a6a
 (z-z_0)^n \d z
 = \sum_{n=-\infty}^\infty c_n \delta_{n, -1} = c_{-1}"/></p>
 </div><p>where we used the result of the following integral (we integrate over the curve
-<img class="math" src="../_images/math/1eec78e874c28eaad0ed2c041ff6d2a09eb7265c.svg" alt="z = z_0 + \epsilon e^{i\varphi}"/>, <img class="math" src="../_images/math/4af9e92fc2a0255abeee3c5ef1a4108afbcd307a.svg" alt="0\le\varphi&lt;2\pi"/>, so <img class="math" src="../_images/math/7bc9539d57e3bc6faa25a8a329ab804164bf6e3b.svg" alt="\d z = i\epsilon
+<img class="math" src="../_images/math/bda1abc326349191a6975131d2b59e6500de9e27.svg" alt="z = z_0 + \epsilon e^{i\varphi}"/>, <img class="math" src="../_images/math/8196f32921a97088421d238b63c99203d559a501.svg" alt="0\le\varphi&lt;2\pi"/>, so <img class="math" src="../_images/math/cc8b65bd385020fd46bfb00a578e77147c5e45a9.svg" alt="\d z = i\epsilon
 e^{i\varphi}\d\varphi"/>):</p>
 <div class="math">
-<p><img src="../_images/math/134a10082cf5a1f62a463b0a9634fa53a30524e3.svg" alt="{1\over 2\pi i}\int\limits_{|z - z_0| = \epsilon} (z-z_0)^n \d z
+<p><img src="../_images/math/4f1569ace0ca8fc262f9c1c3afd71669effe288c.svg" alt="{1\over 2\pi i}\int\limits_{|z - z_0| = \epsilon} (z-z_0)^n \d z
 =
 {1\over 2\pi i}\int\limits_0^{2\pi} (z_0+\epsilon e^{i\varphi}-z_0)^n
 i\epsilon e^{i\varphi}\d\varphi
@@ -112,61 +115,61 @@ i\epsilon e^{i\varphi}\d\varphi
 {1\over 2\pi}\int\limits_0^{2\pi} \d\varphi=1\quad\text{for $n=-1$}\cr
 \end{cases}
 =\delta_{n, -1}"/></p>
-</div><div class="section" id="computation-of-residues">
-<span id="index-1"></span><h2>3.3.1. Computation of Residues<a class="headerlink" href="#computation-of-residues" title="Permalink to this headline">¶</a></h2>
-<p>One has to calculate the <img class="math" src="../_images/math/101eeab67dafc57be532cd1bf7c051b2a6483f19.svg" alt="c_{-1}"/> coefficient in the Laurent series. One way to
-do that is to write <img class="math" src="../_images/math/85163d7190fc1a3ef140a6a181661d3397667ae3.svg" alt="f(z)"/> as:</p>
+</div><section id="computation-of-residues">
+<span id="index-1"></span><h2><span class="section-number">3.3.1. </span>Computation of Residues<a class="headerlink" href="#computation-of-residues" title="Permalink to this headline">¶</a></h2>
+<p>One has to calculate the <img class="math" src="../_images/math/437c85c4f834a168cc0f4b9fd85af39478228903.svg" alt="c_{-1}"/> coefficient in the Laurent series. One way to
+do that is to write <img class="math" src="../_images/math/16a24f34e2e75b5ef8fb3649f1fce9a03a832735.svg" alt="f(z)"/> as:</p>
 <div class="math">
-<p><img src="../_images/math/19f273b65ac3145b8ae8744deef4893aa24d6b91.svg" alt="f(z) = {H(z)\over (z-z_0)^m}"/></p>
-</div><p>where <img class="math" src="../_images/math/731b691ec13b22fa2376f8d0636633d06b65c2ad.svg" alt="H(z)"/> is analytic in the vicinity of <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>, e.g. <img class="math" src="../_images/math/85163d7190fc1a3ef140a6a181661d3397667ae3.svg" alt="f(z)"/> has a pole of
-order <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> at <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>. Then:</p>
+<p><img src="../_images/math/f06cc0390103f62686192e429541d35eb218b395.svg" alt="f(z) = {H(z)\over (z-z_0)^m}"/></p>
+</div><p>where <img class="math" src="../_images/math/cfca693d52ec4ab99eaa560a6fc754d62096f642.svg" alt="H(z)"/> is analytic in the vicinity of <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>, e.g. <img class="math" src="../_images/math/16a24f34e2e75b5ef8fb3649f1fce9a03a832735.svg" alt="f(z)"/> has a pole of
+order <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> at <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>. Then:</p>
 <div class="math">
-<p><img src="../_images/math/c1bb3d01a711d9da587ec934d6fa8193a9079a09.svg" alt="\res_{z=z_0} f(z) = c_{-1} = {1\over(m-1)!}
+<p><img src="../_images/math/e6c27e277731f921a3d3c6998a2332f1d8d428bd.svg" alt="\res_{z=z_0} f(z) = c_{-1} = {1\over(m-1)!}
 \left.{\d^m H(z)\over\d z^m}\right|_{z = z_0}"/></p>
-</div><p>in particular for <img class="math" src="../_images/math/e610765d0dd3a93fe0e0b73bb7eb0c615a62b1ca.svg" alt="m=1"/>:</p>
+</div><p>in particular for <img class="math" src="../_images/math/ea04b8dfef2ec41cc5d1e7743f5b846ae9efd739.svg" alt="m=1"/>:</p>
 <div class="math">
-<p><img src="../_images/math/8690ec9ea246ebd0493f6675932013b64f577c16.svg" alt="\res_{z=z_0} f(z) = H(z_0) = \lim_{z\to z_0}(z-z_0) f(z)"/></p>
-</div><p>for <img class="math" src="../_images/math/83ae7cd29a0f99182baaaf88fe598e5772687828.svg" alt="m=2"/>:</p>
+<p><img src="../_images/math/d45321f62d639c7dddd3bd59422a98c72094100b.svg" alt="\res_{z=z_0} f(z) = H(z_0) = \lim_{z\to z_0}(z-z_0) f(z)"/></p>
+</div><p>for <img class="math" src="../_images/math/f9885fac3921d1a5d4f8abd4aabf60e534318300.svg" alt="m=2"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f1db6844015de6f9348250d87c9ee9a86da79400.svg" alt="\res_{z=z_0} f(z) = H'(z_0) = \lim_{z\to z_0}{\d\over\d z}[(z-z_0)^2 f(z)]"/></p>
-</div><p><img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/> has a pole of order 1 at <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>, <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> is analytic at <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>:</p>
+<p><img src="../_images/math/3f9e39908f64677c124c1f88018dcf625e9a7b12.svg" alt="\res_{z=z_0} f(z) = H'(z_0) = \lim_{z\to z_0}{\d\over\d z}[(z-z_0)^2 f(z)]"/></p>
+</div><p><img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/> has a pole of order 1 at <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>, <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> is analytic at <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/e652ffe89214e5d828b8df721adf868d0ce1055b.svg" alt="\res_{z=z_0} f(z)g(z) = \lim_{z\to z_0}(z-z_0) f(z)g(z)
+<p><img src="../_images/math/103c6f5a93db0fbcb94d9e0a28d0976a811e21b3.svg" alt="\res_{z=z_0} f(z)g(z) = \lim_{z\to z_0}(z-z_0) f(z)g(z)
 = g(z_0)\lim_{z\to z_0}(z-z_0) f(z) = g(z_0)\res_{z=z_0}f(z)"/></p>
-</div><p><img class="math" src="../_images/math/763bf179da84a6e8d40036262e6cca6eaaa86b5b.svg" alt="f(z_0) = 0"/>, but <img class="math" src="../_images/math/bdc9feeac04c31f72aeb041ec61523e8a64781a7.svg" alt="f'(z_0) \neq 0"/> and <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> is analytic at <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>:</p>
+</div><p><img class="math" src="../_images/math/805940cc287344a8644e9639675ac33004e425b1.svg" alt="f(z_0) = 0"/>, but <img class="math" src="../_images/math/9b3ba0c07447bd1079df558ee66ac1bf7a8353c3.svg" alt="f'(z_0) \neq 0"/> and <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> is analytic at <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/5097f848a70832ffbaa5801db3408fd3e37ddfc6.svg" alt="\res_{z=z_0} {g(z)\over f(z)} = g(z_0)\lim_{z\to z_0}{z-z_0\over f(z)}
+<p><img src="../_images/math/542815c7d6f6cde3ab628969e7efe1564aba95fe.svg" alt="\res_{z=z_0} {g(z)\over f(z)} = g(z_0)\lim_{z\to z_0}{z-z_0\over f(z)}
 = g(z_0)\lim_{z\to z_0}{z-z_0\over f(z)-f(z_0)}
 = {g(z_0)\over f'(z_0)}"/></p>
-</div></div>
-<div class="section" id="useful-formulas">
-<h2>3.3.2. Useful Formulas<a class="headerlink" href="#useful-formulas" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="jordan-s-lemma">
+</div></section>
+<section id="useful-formulas">
+<h2><span class="section-number">3.3.2. </span>Useful Formulas<a class="headerlink" href="#useful-formulas" title="Permalink to this headline">¶</a></h2>
+<section id="jordan-s-lemma">
 <span id="index-2"></span><h3>Jordan’s Lemma<a class="headerlink" href="#jordan-s-lemma" title="Permalink to this headline">¶</a></h3>
-<p>For estimating integrals over semicircles <img class="math" src="../_images/math/bf0470ca7a0edbd34d787a3c8f42184565f3ec87.svg" alt="\Omega"/> (<img class="math" src="../_images/math/4a1f1dd184b0fd2a40a3eb8c42f2866df467f0c2.svg" alt="z = Re^{i\varphi}"/>,
-<img class="math" src="../_images/math/5edd9576ce1be8a1de504ea7b4987dad27cf3817.svg" alt="0\le\varphi\le\pi"/>), we can use the following estimates:</p>
+<p>For estimating integrals over semicircles <img class="math" src="../_images/math/c7080a6364482c5654d3e33992a59f803f887a7a.svg" alt="\Omega"/> (<img class="math" src="../_images/math/102ff7ea1ce2a9c849ae52d971e3cf20fde0a9c6.svg" alt="z = Re^{i\varphi}"/>,
+<img class="math" src="../_images/math/75bea923120e6b5a9c6341cc09f45faf05f37363.svg" alt="0\le\varphi\le\pi"/>), we can use the following estimates:</p>
 <div class="math">
-<p><img src="../_images/math/4ded102144837819e394a41bdffa7605eaa58146.svg" alt="\left|\int_\Omega g(z) \d z \right| \le \pi R \max_\Omega |g(z)|
+<p><img src="../_images/math/29effc71d1d4cd35582c5a42548c928258345b34.svg" alt="\left|\int_\Omega g(z) \d z \right| \le \pi R \max_\Omega |g(z)|
 
 \left|\int_\Omega e^{i\alpha z}g(z) \d z \right| \le {\pi\over\alpha}
 \max_\Omega |g(z)|\quad\text{for $\alpha&gt;0$}"/></p>
 </div><p>(In the first case the integration path can be extended to the full circle if
-needed (<img class="math" src="../_images/math/5670e67f63d8a8253fe9e7eee5bb28c7d9e37472.svg" alt="0\le\varphi\le2\pi"/>), in the second case the semicircle is the maximum
-path. Also if <img class="math" src="../_images/math/bba2a46df3dc6da28093d1b57d9dfeffbc33f018.svg" alt="\alpha&lt;0"/>, we need to integrate over the lower semicircle.)
+needed (<img class="math" src="../_images/math/96902431ba03a0e2e51bb8191aa80ff02a405d65.svg" alt="0\le\varphi\le2\pi"/>), in the second case the semicircle is the maximum
+path. Also if <img class="math" src="../_images/math/37676a9c7b045d200308a6b0d7ab15b989a8d9c8.svg" alt="\alpha&lt;0"/>, we need to integrate over the lower semicircle.)
 These formulas can be used to make sure the integral over the semicircle goes to
-zero as <img class="math" src="../_images/math/02648af6a75d84c86133acf13aa2cb76f85a8e7a.svg" alt="R\to\infty"/>. Intuitively speaking, in the first case <img class="math" src="../_images/math/ccf9d88732476529e85b3f235c50055b95fba5b7.svg" alt="g(z)"/> must
-vanish faster than <img class="math" src="../_images/math/3a34e966870e26cd7f11694e50542773148de3d0.svg" alt="1\over R"/> (e.g. <img class="math" src="../_images/math/7ca40d0e5910c350a5ef5e52bed437c22e97b059.svg" alt="1\over R^2"/> is ok), in the second case
-it’s enough if <img class="math" src="../_images/math/ccf9d88732476529e85b3f235c50055b95fba5b7.svg" alt="g(z)"/> just goes to 0 (no matter how fast).</p>
+zero as <img class="math" src="../_images/math/cad0a370866b9e75f6e2237964bda3e46eeec162.svg" alt="R\to\infty"/>. Intuitively speaking, in the first case <img class="math" src="../_images/math/9fb1bec6e4c2e03ef3a5069e8b5cf5ff06286f1d.svg" alt="g(z)"/> must
+vanish faster than <img class="math" src="../_images/math/7f845c213de3743162c4e35a4922330f8bf9623a.svg" alt="1\over R"/> (e.g. <img class="math" src="../_images/math/223998b46e9721006bbfbcbb04f373989c909057.svg" alt="1\over R^2"/> is ok), in the second case
+it’s enough if <img class="math" src="../_images/math/9fb1bec6e4c2e03ef3a5069e8b5cf5ff06286f1d.svg" alt="g(z)"/> just goes to 0 (no matter how fast).</p>
 <p>The estimates can be proved easily:</p>
 <div class="math">
-<p><img src="../_images/math/d4f740a73c0c398f0668c1e7fc6721cdb6bc9628.svg" alt="\left|\int_\Omega g(z) \d z \right|
+<p><img src="../_images/math/fdfd761bfe7e7f7caf4fccf30d3f5a1c9ade9bf1.svg" alt="\left|\int_\Omega g(z) \d z \right|
 = \left|\int_0^\pi g(Re^{i\varphi})iRe^{i\varphi} \d\varphi \right|
 \le \int_0^\pi \left|g(Re^{i\varphi})\right|R \d\varphi
 \le R\max_\Omega |g(z)| \int_0^\pi \d\varphi
 = \pi R \max_\Omega |g(z)|"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/d00811733ea5a2eeeab50a9dc8c2a1c6432b6a66.svg" alt="\left|\int_\Omega e^{i\alpha z}g(z) \d z \right|
+<p><img src="../_images/math/89bc1ef67c2237a677bab543afd0aa6530283f1b.svg" alt="\left|\int_\Omega e^{i\alpha z}g(z) \d z \right|
 =\left|\int_0^\pi e^{i\alpha
 Re^{i\varphi}}g(Re^{i\varphi})iRe^{i\varphi}\d\varphi\right|
 \le
@@ -177,9 +180,9 @@ Re^{i\varphi}}g(Re^{i\varphi})iRe^{i\varphi}\d\varphi\right|
 
 &lt; {\pi\over\alpha} \max_\Omega |g(z)|"/></p>
 </div><p>where we use the following useful estimate for the integral
-(valid for <img class="math" src="../_images/math/e77d6321c80baf4d79d8ec41e391ee92e4636f36.svg" alt="\alpha&gt;0"/>):</p>
+(valid for <img class="math" src="../_images/math/a4b4a60d3dea4877427017dea3282dd6c1f36be2.svg" alt="\alpha&gt;0"/>):</p>
 <div class="math">
-<p><img src="../_images/math/62f662d2b6ceab353c09b001de92bfbb1c4e1717.svg" alt="\int_0^\pi e^{-\alpha R\sin\varphi}\d\varphi
+<p><img src="../_images/math/6775f900550281bee3e7af1b243614f502d525f9.svg" alt="\int_0^\pi e^{-\alpha R\sin\varphi}\d\varphi
 &lt; 2\int_0^{\pi\over2} e^{-\alpha R{2\over\pi}\varphi}\d\varphi
 = 2 \left[e^{-\alpha R{2\over\pi}\varphi}\over
     -\alpha R {2\over\pi}\right]_0^{\pi/2}
@@ -188,20 +191,20 @@ Re^{i\varphi}}g(Re^{i\varphi})iRe^{i\varphi}\d\varphi\right|
 = {2\over-\alpha R {2\over\pi}}
     \left[e^{-\alpha R} - 1\right]
 = {\pi\over\alpha R} (1-e^{-\alpha R}) &lt; {\pi\over\alpha R}"/></p>
-</div></div>
-<div class="section" id="other">
+</div></section>
+<section id="other">
 <h3>Other<a class="headerlink" href="#other" title="Permalink to this headline">¶</a></h3>
-<p>Sometimes it is useful to integrate over the arc <img class="math" src="../_images/math/92263f981715eb5372de77abe55cbaac2b9d123d.svg" alt="z = z_0 + \epsilon
-e^{i\varphi}"/>, <img class="math" src="../_images/math/c7f76c4fee6ff7291ecb0b8e34863ae3b568b4af.svg" alt="\varphi_0 \le \varphi \le \varphi_0 + \alpha"/>, and let
-<img class="math" src="../_images/math/cd73eee0421fa1ca56c4760dc31ba609c3caaafa.svg" alt="\epsilon\to0"/> at the end. If the function is analytic, the result is <img class="math" src="../_images/math/d4419423d0fadb5da9acc994400016b992ff7e1a.svg" alt="0"/>. If the
-function has a pole of order <img class="math" src="../_images/math/133c133828661a863912e03663eccb2f63424c87.svg" alt="n &gt; 1"/>, the result is infinity, unless it’s a full
+<p>Sometimes it is useful to integrate over the arc <img class="math" src="../_images/math/ac40464f28f088ea26b8e6166e9b87a734b174cd.svg" alt="z = z_0 + \epsilon
+e^{i\varphi}"/>, <img class="math" src="../_images/math/f6962a192e5898812257fc5be03186cc60c7c161.svg" alt="\varphi_0 \le \varphi \le \varphi_0 + \alpha"/>, and let
+<img class="math" src="../_images/math/11f1f4422624164008923e6cd84f2c77cf87c336.svg" alt="\epsilon\to0"/> at the end. If the function is analytic, the result is <img class="math" src="../_images/math/6279a4189a38bf425eed7c528d4cc74753df8961.svg" alt="0"/>. If the
+function has a pole of order <img class="math" src="../_images/math/854df056c1d3a1a95568d551173c81322362eeda.svg" alt="n &gt; 1"/>, the result is infinity, unless it’s a full
 circle (in which case the result is 0). The remaining case is if the function
-has a pole of order one, e.g. it can be written (<img class="math" src="../_images/math/731b691ec13b22fa2376f8d0636633d06b65c2ad.svg" alt="H(z)"/> is analytic at <img class="math" src="../_images/math/65f6e4f562e12e613afb55015bc34ff16db65f47.svg" alt="z_0"/>):</p>
+has a pole of order one, e.g. it can be written (<img class="math" src="../_images/math/cfca693d52ec4ab99eaa560a6fc754d62096f642.svg" alt="H(z)"/> is analytic at <img class="math" src="../_images/math/a9bdba08824e99e233414a4832dba62de5603237.svg" alt="z_0"/>):</p>
 <div class="math">
-<p><img src="../_images/math/0f1575e1774a1b52ec52127deeb72013dc3dcefb.svg" alt="f(z) = {H(z)\over z - z_0}"/></p>
+<p><img src="../_images/math/14aa7c562d1eee76fd229631d97232b285df4115.svg" alt="f(z) = {H(z)\over z - z_0}"/></p>
 </div><p>Then:</p>
 <div class="math">
-<p><img src="../_images/math/5086c18d4ae925d9077f1accc61ba5af1a62fcb3.svg" alt="\int_\Omega f(z) \d z =
+<p><img src="../_images/math/b795a19b94db06cfab37566c17ed5df77c496d1c.svg" alt="\int_\Omega f(z) \d z =
 \int_\Omega {H(z)\over z - z_0} \d z = \int_{\varphi_0}^{\varphi_0+\alpha}{H(z_0 +
 \epsilon e^{i\varphi})\over z_0 + \epsilon e^{i\varphi} - z_0}\epsilon i
 e^{i\varphi} \d \varphi
@@ -210,18 +213,18 @@ e^{i\varphi} \d \varphi
 =\int_{\varphi_0}^{\varphi_0+\alpha}H(z_0 + \epsilon e^{i\varphi}) i \d \varphi
 \to\int_{\varphi_0}^{\varphi_0+\alpha}H(z_0) i \d \varphi = i\alpha H(z_0)
 = i\alpha \res_{z = z_0}f(z)"/></p>
-</div></div>
-</div>
-<div class="section" id="complex-substitution">
-<h2>3.3.3. Complex Substitution<a class="headerlink" href="#complex-substitution" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="complex-substitution">
+<h2><span class="section-number">3.3.3. </span>Complex Substitution<a class="headerlink" href="#complex-substitution" title="Permalink to this headline">¶</a></h2>
 <p>When substituting in integrals, as long as we just substitute for real
-functions, we use the regular substitution theorem, e.g. <img class="math" src="../_images/math/e8f1018eebde3885fdd2e81f44bf946c0636bda5.svg" alt="x = y+1"/> (<img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> can
+functions, we use the regular substitution theorem, e.g. <img class="math" src="../_images/math/532c57677af234bfee1278d78352670ac89e0b45.svg" alt="x = y+1"/> (<img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> can
 be a complex function):</p>
 <div class="math">
-<p><img src="../_images/math/07f9a1bdd2384ecb0ebae39ebbe338cb859ace47.svg" alt="\int_{-\infty}^\infty f(x) \d x = \int_{-\infty}^\infty f(y+1) \d y"/></p>
-</div><p>if, on the other hand, we substitute for complex functions, e.g. <img class="math" src="../_images/math/1aefbb83ff9d41b07bb33c69930d3000010a8a39.svg" alt="x = iy"/>:</p>
+<p><img src="../_images/math/a2d88130fb68e70f6619c602219f6b5a2c6c8f62.svg" alt="\int_{-\infty}^\infty f(x) \d x = \int_{-\infty}^\infty f(y+1) \d y"/></p>
+</div><p>if, on the other hand, we substitute for complex functions, e.g. <img class="math" src="../_images/math/e3904e40f42ec8d640d7030565e83b4564951ec8.svg" alt="x = iy"/>:</p>
 <div class="math">
-<p><img src="../_images/math/39cf0b161a5bec241e7db7593c3c82cae8f17e28.svg" alt="\int_{-\infty}^\infty f(x) \d x = \int_{i\infty}^{-i\infty} f(iy) i\d y
+<p><img src="../_images/math/e85c35d870ea3b4b948d6dbea7a4d9c7eaf9485d.svg" alt="\int_{-\infty}^\infty f(x) \d x = \int_{i\infty}^{-i\infty} f(iy) i\d y
 \to \int_{\infty}^{-\infty} f(iy) i\d y"/></p>
 </div><p>then the first two integrals in the left hand side are equal, however the
 integral on the right hand side is over a different integration path and we
@@ -230,17 +233,19 @@ two integrals on the LHS and the integral on the RHS are not equal. However the
 idea is that the integral after the substitution (and changing the limits, e.g.
 the integration path) is easier to evaluate, so the substitution guides us
 which integration path to choose for the Residue Theorem.</p>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.3. Residue Theorem</a><ul>
 <li><a class="reference internal" href="#computation-of-residues">3.3.1. Computation of Residues</a></li>
 <li><a class="reference internal" href="#useful-formulas">3.3.2. Useful Formulas</a><ul>
@@ -253,12 +258,17 @@ which integration path to choose for the Residue Theorem.</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="complex.html"
-                        title="previous chapter">3.2. Complex Numbers</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="transforms.html"
-                        title="next chapter">3.4. Fourier Transform</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="complex.html"
+                          title="previous chapter"><span class="section-number">3.2. </span>Complex Numbers</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="transforms.html"
+                          title="next chapter"><span class="section-number">3.4. </span>Fourier Transform</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -267,17 +277,15 @@ which integration path to choose for the Residue Theorem.</p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -295,12 +303,13 @@ which integration path to choose for the Residue Theorem.</p>
           <a href="complex.html" title="3.2. Complex Numbers"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.3. </span>Residue Theorem</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

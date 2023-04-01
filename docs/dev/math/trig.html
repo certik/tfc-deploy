@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.10. Periodic Functions &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.15. Delta Function" href="other.html" />
@@ -62,7 +64,8 @@
           <a href="transforms.html" title="3.4. Fourier Transform"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.10. </span>Periodic Functions</a></li> 
       </ul>
     </div>  
 
@@ -71,20 +74,20 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="periodic-functions">
-<h1>3.10. Periodic Functions<a class="headerlink" href="#periodic-functions" title="Permalink to this headline">¶</a></h1>
-<p>A function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> is periodic with period <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>:</p>
+  <section id="periodic-functions">
+<h1><span class="section-number">3.10. </span>Periodic Functions<a class="headerlink" href="#periodic-functions" title="Permalink to this headline">¶</a></h1>
+<p>A function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> is periodic with period <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>:</p>
 <div class="math">
-<p><img src="../_images/math/231b9514c30a1ac71c31e8fca286493d6ced7885.svg" alt="f(x+T) = f(x)"/></p>
-</div><p>Then you can shift the integration limits by the period <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>:</p>
+<p><img src="../_images/math/135695093851a403dd1af79b0cc6325590b7acc6.svg" alt="f(x+T) = f(x)"/></p>
+</div><p>Then you can shift the integration limits by the period <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>:</p>
 <div class="math">
-<p><img src="../_images/math/41d21539236f1542605985524fc8f6b607342f09.svg" alt="\int_a^b f(x) \d x
+<p><img src="../_images/math/57a95e041912524cd788e34304750fe86113d0d2.svg" alt="\int_a^b f(x) \d x
     = \int_a^b f(x+T) \d x
     = \int_{a+T}^{b+T} f(x) \d x"/></p>
-</div><p>If you integrate <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> from <img class="math" src="../_images/math/d4419423d0fadb5da9acc994400016b992ff7e1a.svg" alt="0"/> to <img class="math" src="../_images/math/c091b16256210e88da5fe2bf2617d16ece4e1f55.svg" alt="T"/>, you can shift <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> in <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> by any
-constant <img class="math" src="../_images/math/b82ba6dfb1b5e6c00e647c1307ad786cf0d4fcd5.svg" alt="\alpha"/>:</p>
+</div><p>If you integrate <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> from <img class="math" src="../_images/math/6279a4189a38bf425eed7c528d4cc74753df8961.svg" alt="0"/> to <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>, you can shift <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> in <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> by any
+constant <img class="math" src="../_images/math/6c182559a4ad1fe7fb703f4975a28338e470724e.svg" alt="\alpha"/>:</p>
 <div class="math">
-<p><img src="../_images/math/05c03051dd4bbbf2e903062efc9d47529ecb5ff8.svg" alt="\int_0^T f(x+\alpha) \d x =
+<p><img src="../_images/math/d3299a2eba89e46d007fa8a5f1746fb234cabc83.svg" alt="\int_0^T f(x+\alpha) \d x =
 
 = \int_\alpha^{T+\alpha} f(x) \d x =
 
@@ -97,25 +100,25 @@ constant <img class="math" src="../_images/math/b82ba6dfb1b5e6c00e647c1307ad786c
 + \int_0^\alpha f(x) \d x =
 
 = \int_0^T f(x) \d x"/></p>
-</div></div>
-<div class="section" id="polar-coordinates">
-<h1>3.11. Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>Polar coordinates (radial, azimuth) <img class="math" src="../_images/math/f17fb7971284d0d710324edcebb886b6a6c5e8c6.svg" alt="(r,\phi)"/> are defined by</p>
+</div></section>
+<section id="polar-coordinates">
+<h1><span class="section-number">3.11. </span>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this headline">¶</a></h1>
+<p>Polar coordinates (radial, azimuth) <img class="math" src="../_images/math/d4b59ec89aa94b21a211820a4c56743dee845181.svg" alt="(r,\phi)"/> are defined by</p>
 <div class="math">
-<p><img src="../_images/math/826121b7da3d476daf371732e1861beb3ae6cbfb.svg" alt="\begin{eqnarray*} x&amp;=&amp;r\cos\phi \\ y&amp;=&amp;r\sin\phi \\ \end{eqnarray*}"/></p>
-</div><div class="section" id="example">
-<h2>3.11.1. Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img src="../_images/math/c935c00585ad76940cba658aef5b998bef17fdf3.svg" alt="\begin{eqnarray*} x&amp;=&amp;r\cos\phi \\ y&amp;=&amp;r\sin\phi \\ \end{eqnarray*}"/></p>
+</div><section id="example">
+<h2><span class="section-number">3.11.1. </span>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>When evaluating integrals of the type:</p>
 <div class="math">
-<p><img src="../_images/math/9d03869c8761f3f815c3d37a8925cd443b367fdc.svg" alt="l(x, y) = \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi"/></p>
-</div><p>we write <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> and <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> using polar coordinates:</p>
+<p><img src="../_images/math/99e2801582198f61d5f6865d543fe9f4e382eb26.svg" alt="l(x, y) = \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi"/></p>
+</div><p>we write <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> and <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/> using polar coordinates:</p>
 <div class="math">
-<p><img src="../_images/math/fb48b1452f6c8d171a5d1b45730d6f91a537e310.svg" alt="x = r' \cos \phi'
+<p><img src="../_images/math/a34986084c27b112ee15f3996939fcf38b3acc5d.svg" alt="x = r' \cos \phi'
 
 y = r' \sin \phi'"/></p>
-</div><p>and then use the <img class="math" src="../_images/math/c229b070cd679f34c6f5219fa8b9809adbfaa2bc.svg" alt="2\pi"/> periodicity of <img class="math" src="../_images/math/63e1c037d9733ad36efd9819320ee7148aba394b.svg" alt="\cos x"/>:</p>
+</div><p>and then use the <img class="math" src="../_images/math/d2317648535c006baa0c0fe6b365fb2285aeba02.svg" alt="2\pi"/> periodicity of <img class="math" src="../_images/math/c07d54e39953c848d59ad3421e9f1d06850c408b.svg" alt="\cos x"/>:</p>
 <div class="math">
-<p><img src="../_images/math/c95025b941b1a82f8493fbbf60722cf1dac74534.svg" alt="l(x, y)
+<p><img src="../_images/math/d635611d85520242c7d9313ca3d2e6a3cdf45e15.svg" alt="l(x, y)
 = \int_0^{2\pi} \sqrt{(x-r\cos\phi)^2 + (y-r\sin\phi)^2} \,\d \phi =
 
 = \int_0^{2\pi} \sqrt{x^2 + y^2 + r^2 - 2r(x\cos\phi + y\sin\phi)} \,\d \phi =
@@ -129,64 +132,64 @@ y = r' \sin \phi'"/></p>
 = \int_0^{2\pi} \sqrt{r'^2 + r^2 - 2rr'\cos\phi} \,\d \phi ="/></p>
 </div><p>comparing to:</p>
 <div class="math">
-<p><img src="../_images/math/1d4243542687d361a1531af4729738b4d116783b.svg" alt="l(0, y) = \int_0^{2\pi} \sqrt{y^2 + r^2 - 2ry\sin\phi} \,\d \phi"/></p>
-</div><p>we can see that because the integral is symmetric, we can just set <img class="math" src="../_images/math/6b53e6952fea027614c5cc403821c6f9b7bd8395.svg" alt="x=0"/> and
-then replace <img class="math" src="../_images/math/28cc1cd3649a69ed0b045c83c65ed184a9925d1c.svg" alt="y \to r'"/>. The above method does everything algebraically, but
+<p><img src="../_images/math/bf17318bc1f4e5b22330c552a3a6273a325337b3.svg" alt="l(0, y) = \int_0^{2\pi} \sqrt{y^2 + r^2 - 2ry\sin\phi} \,\d \phi"/></p>
+</div><p>we can see that because the integral is symmetric, we can just set <img class="math" src="../_images/math/26e8590da27e35c2ffb1cba390ae0984c4d06b04.svg" alt="x=0"/> and
+then replace <img class="math" src="../_images/math/bb104bf4dc34a8c687bc3cd0cd8aab0fc81341be.svg" alt="y \to r'"/>. The above method does everything algebraically, but
 you can use this symmetry argument to remember what to do, or even skip the
 calculation if you are sure that you didn’t make a mistake in the “symmetry
 argument”.</p>
-</div>
-</div>
-<div class="section" id="spherical-coordinates">
-<h1>3.12. Spherical Coordinates<a class="headerlink" href="#spherical-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>Spherical coordinates radial (<img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/>), zenith (<img class="math" src="../_images/math/5debff8d4966e4c1ca24e947b3190c3008b5b36f.svg" alt="\theta"/>), azimuth (<img class="math" src="../_images/math/c3840070bf80f9ae1042948615aee7e95b959b25.svg" alt="\phi"/>):</p>
+</section>
+</section>
+<section id="spherical-coordinates">
+<h1><span class="section-number">3.12. </span>Spherical Coordinates<a class="headerlink" href="#spherical-coordinates" title="Permalink to this headline">¶</a></h1>
+<p>Spherical coordinates radial (<img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/>), zenith (<img class="math" src="../_images/math/6fb7931886034ccad92f96457979b906fad8ea0c.svg" alt="\theta"/>), azimuth (<img class="math" src="../_images/math/9245f1100f089a4aed7c6f6bee3ce84343b2194f.svg" alt="\phi"/>):</p>
 <div class="math" id="equation-spherical-coordinates">
-<p><span class="eqno">(3.12.1)<a class="headerlink" href="#equation-spherical-coordinates" title="Permalink to this equation">¶</a></span><img src="../_images/math/54962bad69ade277361f5879a81907a44ee55c26.svg" alt="x &amp;= \rho\sin\theta\cos\phi \\
+<p><span class="eqno">(3.12.1)<a class="headerlink" href="#equation-spherical-coordinates" title="Permalink to this equation">¶</a></span><img src="../_images/math/8d532df2dd827d214a24502d0ceba8ba966edcf7.svg" alt="x &amp;= \rho\sin\theta\cos\phi \\
 y &amp;= \rho\sin\theta\sin\phi \\
 z &amp;= \rho\cos\theta \\"/></p>
-</div><p>Note: this meaning of <img class="math" src="../_images/math/a6079127857ea106454d57cdb091246d969eb094.svg" alt="(\theta,\phi)"/> is mostly used in the USA and in many
-books. In Europe people usually use different symbols, like <img class="math" src="../_images/math/d35bfb2f5577c7d777db5fdf1b84eb88e1cecec6.svg" alt="(\phi,\theta)"/>,
-<img class="math" src="../_images/math/cf5cc17a46858315c0a8dbc6cbc3c7cf1fb9ae82.svg" alt="(\vartheta,\varphi)"/> and others.</p>
-<p>The motivation is to first write <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> and <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> using polar coordinates:</p>
+</div><p>Note: this meaning of <img class="math" src="../_images/math/89c49ed99fd3fba87b359658261783a7edcfff3d.svg" alt="(\theta,\phi)"/> is mostly used in the USA and in many
+books. In Europe people usually use different symbols, like <img class="math" src="../_images/math/cc8f4060eb3afc8b0a53ef01327a3d5a93a2ea0e.svg" alt="(\phi,\theta)"/>,
+<img class="math" src="../_images/math/63f0353fdae91df8966cb1a8a11345f923975542.svg" alt="(\vartheta,\varphi)"/> and others.</p>
+<p>The motivation is to first write <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> and <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/> using polar coordinates:</p>
 <div class="math">
-<p><img src="../_images/math/8e97f8c77b675336a764f8f95f7a1df98dedc11f.svg" alt="x = \rho_{xy}\cos\phi
+<p><img src="../_images/math/ee9c40678c74d31c7f04b5b3a3b80895a294825b.svg" alt="x = \rho_{xy}\cos\phi
 
 y = \rho_{xy}\sin\phi"/></p>
-</div><p>and then write <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/> and the projection <img class="math" src="../_images/math/03d33c17bfadf1d0dcfa6b52654c192488ec5496.svg" alt="\rho_{xy}"/> of <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/> onto the plane
-<img class="math" src="../_images/math/cd15c1df7280392c435ad9cf8993f1ff01934759.svg" alt="x-y"/> using polar coordinates:</p>
+</div><p>and then write <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/> and the projection <img class="math" src="../_images/math/5191884731a4821046a87e2bff3bb70f13247089.svg" alt="\rho_{xy}"/> of <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/> onto the plane
+<img class="math" src="../_images/math/368c85ab2cc918b8f10e4aa56e37e7792f974878.svg" alt="x-y"/> using polar coordinates:</p>
 <div class="math">
-<p><img src="../_images/math/1ce598dec7cfeea8df4be1bf4f8a6b37d367cc4b.svg" alt="z = \rho\cos\theta
+<p><img src="../_images/math/fca571fda4a0092dea57ec6b1394dbade11e6ea1.svg" alt="z = \rho\cos\theta
 
 \rho_{xy} = \rho\sin\theta"/></p>
 </div><p>so by combining these two we get:</p>
 <div class="math">
-<p><img src="../_images/math/4c3f52ed65d04f3ebf6601d26361e956613b961a.svg" alt="x = \rho_{xy}\cos\phi = \rho\sin\theta\cos\phi
+<p><img src="../_images/math/e2691e34565787324cc38c3bc384a1b4253a9f44.svg" alt="x = \rho_{xy}\cos\phi = \rho\sin\theta\cos\phi
 
 y = \rho_{xy}\sin\phi = \rho\sin\theta\sin\phi
 
 z = \rho\cos\theta"/></p>
-</div><div class="section" id="example-i">
-<h2>3.12.1. Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
-<p>To transform differential operators such as <img class="math" src="../_images/math/fef111f1c212cefff4a4f429d860bbfb230dd2d6.svg" alt="\d\over\d x"/>
+</div><section id="example-i">
+<h2><span class="section-number">3.12.1. </span>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+<p>To transform differential operators such as <img class="math" src="../_images/math/f06a56662b57963ac501e62f409c82e1799ffa62.svg" alt="\d\over\d x"/>
 into spherical coordinates, we make use of the chain rule:</p>
 <div class="math">
-<p><img src="../_images/math/d8dd10cf2849358feac6b0b379ed0cffc17665bf.svg" alt="\frac{\partial}{\partial x}=
+<p><img src="../_images/math/8eed50ff1305d2538b9e5cc54626c66c8c82b97f.svg" alt="\frac{\partial}{\partial x}=
 \frac{\partial \rho}{\partial x}
 \frac{\partial}{\partial \rho}
 +\frac{\partial\theta}{\partial x}
 \frac{\partial}{\partial \theta}
 +\frac{\partial\phi}{\partial x}
 \frac{\partial}{\partial \phi}"/></p>
-</div><p>where <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/>, <img class="math" src="../_images/math/5debff8d4966e4c1ca24e947b3190c3008b5b36f.svg" alt="\theta"/> and <img class="math" src="../_images/math/c3840070bf80f9ae1042948615aee7e95b959b25.svg" alt="\phi"/> are functions of <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>, <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>, <img class="math" src="../_images/math/56e3821daac476e92ff7e7e1fb9469c400bf42ab.svg" alt="z"/> to be expressed
+</div><p>where <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/>, <img class="math" src="../_images/math/6fb7931886034ccad92f96457979b906fad8ea0c.svg" alt="\theta"/> and <img class="math" src="../_images/math/9245f1100f089a4aed7c6f6bee3ce84343b2194f.svg" alt="\phi"/> are functions of <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>, <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/>, <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/> to be expressed
 by inverting <a class="reference internal" href="#equation-spherical-coordinates">(3.12.1)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/3f17e2ba8fc1c7cbc5b5ecd959d9b50ec485ebff.svg" alt="\rho(x, y, z)   &amp;= \sqrt{x^2+y^2+z^2}                \\
+<p><img src="../_images/math/bb1a7aa67fb3894c2c1b3c674d3c26c3ea0a46a5.svg" alt="\rho(x, y, z)   &amp;= \sqrt{x^2+y^2+z^2}                \\
 \theta(x, y, z) &amp;= \arccos{z\over\sqrt{x^2+y^2+z^2}} \\
 \phi(x, y, z)   &amp;= \arctan{y\over x}                 \\"/></p>
-</div><p>At the end, the derivatives are expressed using <img class="math" src="../_images/math/a717f9a06abf6e51f23a3b75f9785db5b2cc4d3b.svg" alt="\rho"/>, <img class="math" src="../_images/math/5debff8d4966e4c1ca24e947b3190c3008b5b36f.svg" alt="\theta"/>,
-<img class="math" src="../_images/math/c3840070bf80f9ae1042948615aee7e95b959b25.svg" alt="\phi"/> again. For example</p>
+</div><p>At the end, the derivatives are expressed using <img class="math" src="../_images/math/3c77dea29128643eecf479e904b1d27115e05e5c.svg" alt="\rho"/>, <img class="math" src="../_images/math/6fb7931886034ccad92f96457979b906fad8ea0c.svg" alt="\theta"/>,
+<img class="math" src="../_images/math/9245f1100f089a4aed7c6f6bee3ce84343b2194f.svg" alt="\phi"/> again. For example</p>
 <div class="math">
-<p><img src="../_images/math/a8d6e08fe07e288340bb2f160555cb7a62108027.svg" alt="{\partial\rho\over\partial x} =
+<p><img src="../_images/math/371f5f8460c6b27ca3cb9f04952470f2020b4ddb.svg" alt="{\partial\rho\over\partial x} =
     {\partial\sqrt{x^2+y^2+z^2}\over\partial x} =
 
     = {x \over \sqrt{x^2+y^2+z^2}} =
@@ -194,7 +197,7 @@ by inverting <a class="reference internal" href="#equation-spherical-coordinates
     = {\rho\sin\theta\cos\phi \over \rho} = \sin\theta\cos\phi"/></p>
 </div><p>Finally we obtain</p>
 <div class="math" id="equation-differentials-spherical">
-<p><span class="eqno">(3.12.1.1)<a class="headerlink" href="#equation-differentials-spherical" title="Permalink to this equation">¶</a></span><img src="../_images/math/1041c6e3df1a12e3915e5ec232eae36bb8b2078a.svg" alt="\frac{\partial}{\partial x}=
+<p><span class="eqno">(3.12.1.1)<a class="headerlink" href="#equation-differentials-spherical" title="Permalink to this equation">¶</a></span><img src="../_images/math/1a724ecb248e4a00d85f66a0bcd9bb625d1b1d32.svg" alt="\frac{\partial}{\partial x}=
     \sin\theta\cos\phi
     \frac{\partial}{\partial\rho}
     +\frac{\cos\theta\cos\phi}{\rho}
@@ -221,24 +224,24 @@ discussed in the <a class="reference internal" href="differential-geometry.html#
 geometry (where it is shown, that the coefficients in
 <a class="reference internal" href="#equation-differentials-spherical">(3.12.1.1)</a> are simply the matrix elements of the inverse
 Jacobian).</p>
-</div>
-<div class="section" id="example-ii">
-<span id="spherical-int-example"></span><h2>3.12.2. Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="example-ii">
+<span id="spherical-int-example"></span><h2><span class="section-number">3.12.2. </span>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
 <p>When evaluating integrals of the type:</p>
 <div class="math">
-<p><img src="../_images/math/7c1f1dad4abdb951f8505cd0c79634723c84a2f8.svg" alt="l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+<p><img src="../_images/math/736a86dc0473700653f39184dc980e626c53ff0c.svg" alt="l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{(x-r\sin\theta\cos\phi)^2
     + (y-r\sin\theta\sin\phi)^2
     + (z-r\cos\theta)^2
       } \,\sin\theta"/></p>
-</div><p>we write <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> and <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> using polar coordinates:</p>
+</div><p>we write <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> and <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/> using polar coordinates:</p>
 <div class="math">
-<p><img src="../_images/math/86b98f58aa4056d1ed1600e78fb13b9cd8d4f866.svg" alt="x = \rho_{xy} \cos \phi'
+<p><img src="../_images/math/840c301b08ef5f96a8015b8ab4264993b8d7d93f.svg" alt="x = \rho_{xy} \cos \phi'
 
 y = \rho_{xy} \sin \phi'"/></p>
 </div><p>and simplify:</p>
 <div class="math">
-<p><img src="../_images/math/6a072e56885acc93f9dd34cf52c64fb44e2a84f6.svg" alt="l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
+<p><img src="../_images/math/02f78b5f81dc39e51a1925beff217a00600c75a3.svg" alt="l(x, y, z) = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{(x-r\sin\theta\cos\phi)^2
     + (y-r\sin\theta\sin\phi)^2
     + (z-r\cos\theta)^2
@@ -275,43 +278,43 @@ y = \rho_{xy} \sin \phi'"/></p>
       } \,\sin\theta"/></p>
 </div><p>comparing to:</p>
 <div class="math">
-<p><img src="../_images/math/fe2dd752f29b6382c5af488cacaf623b66cbf6a2.svg" alt="l(0, 0, z)
+<p><img src="../_images/math/d456eb9bf79df2dfa95650d54d59e1217c7fb25b.svg" alt="l(0, 0, z)
 = \int_0^\pi\d\theta \int_0^{2\pi} \d\phi
     \sqrt{z^2 + r^2 -2rz\cos\theta } \,\sin\theta ="/></p>
-</div><p>we can see that because the integral is symmetric, we can just set <img class="math" src="../_images/math/6b53e6952fea027614c5cc403821c6f9b7bd8395.svg" alt="x=0"/>,
-<img class="math" src="../_images/math/d0ae27d61bf54627f00990479d1a9f6dc13d872d.svg" alt="y=0"/> and then replace <img class="math" src="../_images/math/fd25ec0f846d6ad0b225fbf113df0894ad27fcd7.svg" alt="z \to \rho"/>.</p>
-</div>
-</div>
-<div class="section" id="argument-function-atan2">
-<span id="index-0"></span><h1>3.13. Argument function, atan2<a class="headerlink" href="#argument-function-atan2" title="Permalink to this headline">¶</a></h1>
-<p>Argument function <img class="math" src="../_images/math/50cb661faff3e65e384f5ba4c15627a667d5871f.svg" alt="\arg(z)"/> is any <img class="math" src="../_images/math/baa852693fcee4a167cc657f705fc8b36ab0ebc4.svg" alt="\varphi"/> such that</p>
+</div><p>we can see that because the integral is symmetric, we can just set <img class="math" src="../_images/math/26e8590da27e35c2ffb1cba390ae0984c4d06b04.svg" alt="x=0"/>,
+<img class="math" src="../_images/math/be20c17dca196f5d48ed05dc6c35e5acfa68f099.svg" alt="y=0"/> and then replace <img class="math" src="../_images/math/c182ffbd3988d02ac0ae326bac1eb133c47b53d9.svg" alt="z \to \rho"/>.</p>
+</section>
+</section>
+<section id="argument-function-atan2">
+<span id="index-0"></span><h1><span class="section-number">3.13. </span>Argument function, atan2<a class="headerlink" href="#argument-function-atan2" title="Permalink to this headline">¶</a></h1>
+<p>Argument function <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> is any <img class="math" src="../_images/math/9e03e4e0c754926c8757ed0a48a603c4289a3517.svg" alt="\varphi"/> such that</p>
 <div class="math">
-<p><img src="../_images/math/6c9a1cb49b75ce554d863e32e5183801fb95f6f9.svg" alt="z = r e^{i\varphi}"/></p>
-</div><p>Obviously <img class="math" src="../_images/math/50cb661faff3e65e384f5ba4c15627a667d5871f.svg" alt="\arg(z)"/> is unique up to any integer multiple of <img class="math" src="../_images/math/c229b070cd679f34c6f5219fa8b9809adbfaa2bc.svg" alt="2\pi"/>. By taking
-the principal value of the <img class="math" src="../_images/math/50cb661faff3e65e384f5ba4c15627a667d5871f.svg" alt="\arg(z)"/> function, e.g. fixing <img class="math" src="../_images/math/50cb661faff3e65e384f5ba4c15627a667d5871f.svg" alt="\arg(z)"/> to the
-interval <img class="math" src="../_images/math/2afbcab6fb0ffe3eb66373889e5900c563aa55ac.svg" alt="(-\pi, \pi]"/> (so that the branch cut is on the negative <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-axis, as
-usual), we get the <img class="math" src="../_images/math/e74df441c65a70fe1572f51e398bdabaa3287e0e.svg" alt="\Arg(z)"/> function:</p>
+<p><img src="../_images/math/93b11d107a72334ce8014452c1861218cb6afc4b.svg" alt="z = r e^{i\varphi}"/></p>
+</div><p>Obviously <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> is unique up to any integer multiple of <img class="math" src="../_images/math/d2317648535c006baa0c0fe6b365fb2285aeba02.svg" alt="2\pi"/>. By taking
+the principal value of the <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> function, e.g. fixing <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> to the
+interval <img class="math" src="../_images/math/d4043b57052297ff9bd20c7b17ab44833aac6c1c.svg" alt="(-\pi, \pi]"/> (so that the branch cut is on the negative <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>-axis, as
+usual), we get the <img class="math" src="../_images/math/ae40c75d6f967807dacc03e7291c547e2ad6f8ba.svg" alt="\Arg(z)"/> function:</p>
 <div class="math">
-<p><img src="../_images/math/74182672a023982c7ac77179eaab7e31b9081e6d.svg" alt="-\pi &lt; \Arg z \le \pi"/></p>
-</div><p>then <img class="math" src="../_images/math/125c14f7a1366d76933c741784f82337840aa09c.svg" alt="\arg z = \Arg z + 2\pi n"/>, where <img class="math" src="../_images/math/3aa83add07bbd6e97ed5e2c682ec530367b7b229.svg" alt="n=0, \pm 1, \pm 2, \dots"/>. We can then
-use the following formula to easily calculate <img class="math" src="../_images/math/5aaf1100967f88d684c7abece95eaa6131f32ce5.svg" alt="\Arg z"/> for any <img class="math" src="../_images/math/cc0bbdcc26a8df19862c611fd4e8e04860315314.svg" alt="z=x+iy"/> (except
-<img class="math" src="../_images/math/0493837b443e56f379c3c9b7168bc3540ac5483d.svg" alt="x=y=0"/>, i.e. <img class="math" src="../_images/math/c517ea7bc1592d0482c470011f56983e8f36baf6.svg" alt="z=0"/>, where it is not defined):</p>
+<p><img src="../_images/math/512c7ac8afe97d7c5c7f7d36da99babdc66c833d.svg" alt="-\pi &lt; \Arg z \le \pi"/></p>
+</div><p>then <img class="math" src="../_images/math/3fed3326c0d06e6a9d2c67f5a41db0f34a049325.svg" alt="\arg z = \Arg z + 2\pi n"/>, where <img class="math" src="../_images/math/d3d31c957e2b6663814f3f36c22e3ab041466835.svg" alt="n=0, \pm 1, \pm 2, \dots"/>. We can then
+use the following formula to easily calculate <img class="math" src="../_images/math/829f3b6526b2fc214033a5f3546410a43d7798fd.svg" alt="\Arg z"/> for any <img class="math" src="../_images/math/74b1e768e0ad5fcc797f7b84fe0ded14078842ed.svg" alt="z=x+iy"/> (except
+<img class="math" src="../_images/math/46349d072b4d0f88cb8814c5b2416944274e244d.svg" alt="x=y=0"/>, i.e. <img class="math" src="../_images/math/07e15ca57ff43864f481a07f29c0c3172ffb260f.svg" alt="z=0"/>, where it is not defined):</p>
 <div class="math">
-<p><img src="../_images/math/cd831bdd9cc9d79fd6b2757a88744bf46c5aa46f.svg" alt="\Arg(x+iy) =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
+<p><img src="../_images/math/de0ef1a6d67ef3dd1f1e0d0343e1b2516fde5d66.svg" alt="\Arg(x+iy) =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
     2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}"/></p>
-</div><p>Finally we define <img class="math" src="../_images/math/aaeefc40cb59d64eee852518a739605df034b66f.svg" alt="\atan2(y, x)"/> as:</p>
+</div><p>Finally we define <img class="math" src="../_images/math/b7eb618d17179a1d22a576c1db528faa1b42fba6.svg" alt="\atan2(y, x)"/> as:</p>
 <div class="math">
-<p><img src="../_images/math/7f21ce3296b73213346b0ffae5abf35acf635dc9.svg" alt="\atan2(y, x) = \Arg(x+iy) =
+<p><img src="../_images/math/ad931d4d94285e1ce24dfbe25769652b9072e020.svg" alt="\atan2(y, x) = \Arg(x+iy) =
     \begin{cases}\pi&amp;y=0;x&lt;0;\cr
         2\,\atan{y\over\sqrt{x^2+y^2}+x}&amp;\rm otherwise\cr\end{cases}"/></p>
-</div><p>The angle <img class="math" src="../_images/math/8873b9e784e7496d6902a3e7fdfc4c928ff7c719.svg" alt="\phi=\atan2(y, x)"/> is the angle of the point <img class="math" src="../_images/math/12411adbc06e3306be64acbc5d919c86843c38a6.svg" alt="(x, y)"/> on the unit
+</div><p>The angle <img class="math" src="../_images/math/9db5a1cdcc87a20d0ee719d7589fb30c0855bad3.svg" alt="\phi=\atan2(y, x)"/> is the angle of the point <img class="math" src="../_images/math/6085779a1cc41012ac0234e2a5851de29fa6c2e2.svg" alt="(x, y)"/> on the unit
 circle (assuming the usual conventions), and it works for all quadrants
-(<img class="math" src="../_images/math/f9104d87718bb081e152c584d80a2f24e90bf609.svg" alt="\phi=\atan({y\over x})"/> only works for the first and fourth quadrant, where
-<img class="math" src="../_images/math/447d80051f8309e0fc0665f992c5b9cbfdbdea55.svg" alt="\atan({y\over x})=\atan2(y, x)"/>, but in the second and third qudrant,
-<img class="math" src="../_images/math/530d6cc163affca4adb166048bf066531665c44c.svg" alt="\atan({y\over x})"/> gives the wrong angles, while <img class="math" src="../_images/math/aaeefc40cb59d64eee852518a739605df034b66f.svg" alt="\atan2(y, x)"/> gives the
+(<img class="math" src="../_images/math/b21c975f4cb79d16671126b5072e3ebb11ddd72e.svg" alt="\phi=\atan({y\over x})"/> only works for the first and fourth quadrant, where
+<img class="math" src="../_images/math/9ba2f7f9f02b75872b2c46e213667436274d0d22.svg" alt="\atan({y\over x})=\atan2(y, x)"/>, but in the second and third qudrant,
+<img class="math" src="../_images/math/2640f6b09c934d2cc12ab64ec55aedd130804107.svg" alt="\atan({y\over x})"/> gives the wrong angles, while <img class="math" src="../_images/math/b7eb618d17179a1d22a576c1db528faa1b42fba6.svg" alt="\atan2(y, x)"/> gives the
 correct angles). So in particular:</p>
 <div class="math">
-<p><img src="../_images/math/36ea39c4ddbde3e425a45e2da9a0a3704f60d030.svg" alt="\atan2(0, 1) = 2\,\atan{0\over\sqrt{1^2+0^2}+1} = 0
+<p><img src="../_images/math/6e90d3313402e02744e56d83a7dc2503132a18c5.svg" alt="\atan2(0, 1) = 2\,\atan{0\over\sqrt{1^2+0^2}+1} = 0
 
 \atan2(0, -1) = \pi
 
@@ -320,12 +323,12 @@ correct angles). So in particular:</p>
 
 \atan2(-1, 0) = 2\,\atan{-1\over\sqrt{0^2+1^2}+0} = -2\,\atan 1 =
     -{\pi\over 2}"/></p>
-</div><p>This convention (<img class="math" src="../_images/math/aaeefc40cb59d64eee852518a739605df034b66f.svg" alt="\atan2(y, x)"/>) is used for example in Python, C or Fortran.
-Some people might interchange <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/> with <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/> in the definition (i.e. <img class="math" src="../_images/math/1f74d06ed502c0d98da05435b7558cabb9d68a11.svg" alt="\atan2(x,
+</div><p>This convention (<img class="math" src="../_images/math/b7eb618d17179a1d22a576c1db528faa1b42fba6.svg" alt="\atan2(y, x)"/>) is used for example in Python, C or Fortran.
+Some people might interchange <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> with <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/> in the definition (i.e. <img class="math" src="../_images/math/5ae809d0b4f65d8982353e4a1d8e1c34d0a83f96.svg" alt="\atan2(x,
 y)= \Arg(y+ix)"/>), but it is not very common.</p>
 <p>The following useful relations hold:</p>
 <div class="math">
-<p><img src="../_images/math/8c11fe5377f2302fd6f2321ee4af4c8130821951.svg" alt="\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
+<p><img src="../_images/math/f761f35dd472a095b35aa17d1d9dd422efe31fc7.svg" alt="\sin\atan2(y, x) = {y\over \sqrt{x^2+y^2}}
     \quad\quad\quad\mbox{except $x=y=0$}
 
 \cos\atan2(y, x) = {x\over \sqrt{x^2+y^2}}
@@ -348,9 +351,9 @@ y)= \Arg(y+ix)"/>), but it is not very common.</p>
 
 {\partial \over \partial x} \atan2(y, x)
     = -{y\over x^2 + y^2}"/></p>
-</div><p>We now prove them. The following works for all <img class="math" src="../_images/math/b684fbf5700dccd82bb5b3d8a95f67963b64b128.svg" alt="x, y"/> except for <img class="math" src="../_images/math/0493837b443e56f379c3c9b7168bc3540ac5483d.svg" alt="x=y=0"/>:</p>
+</div><p>We now prove them. The following works for all <img class="math" src="../_images/math/70eb306637fd7a36f5cd170d235daf18fd2ccdf0.svg" alt="x, y"/> except for <img class="math" src="../_images/math/46349d072b4d0f88cb8814c5b2416944274e244d.svg" alt="x=y=0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/bcb1f6aeba3fb5af795fb64a4bf6a4fdc78d5a0e.svg" alt="\sin\atan2(y, x)
+<p><img src="../_images/math/d5312f983a6649c5b80c2b8ca3c6a98fe33ba797.svg" alt="\sin\atan2(y, x)
     =\begin{cases}\sin\pi&amp;y=0;x&lt;0;\cr
         \sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
             &amp;\rm otherwise\cr\end{cases}
@@ -379,10 +382,10 @@ y)= \Arg(y+ix)"/>), but it is not very common.</p>
 =\begin{cases}{x\over \sqrt{x^2+y^2}}&amp;y=0;x&lt;0;\cr
     {x\over \sqrt{x^2+y^2}}&amp;\rm otherwise\cr\end{cases}
     ={x\over \sqrt{x^2+y^2}}"/></p>
-</div><p>Tangent is infinite for <img class="math" src="../_images/math/7461a92adb8a97a1e1554eefe93cd7513be0b315.svg" alt="\pm{\pi\over 2}"/>, which corresponds to <img class="math" src="../_images/math/6b53e6952fea027614c5cc403821c6f9b7bd8395.svg" alt="x=0"/>, so the
-following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec23b4710c182336c7f8c6da8.svg" alt="x\neq 0"/>:</p>
+</div><p>Tangent is infinite for <img class="math" src="../_images/math/27c6c9e649bf6a38d8aa7abd08f3da150b4e686f.svg" alt="\pm{\pi\over 2}"/>, which corresponds to <img class="math" src="../_images/math/26e8590da27e35c2ffb1cba390ae0984c4d06b04.svg" alt="x=0"/>, so the
+following works for all <img class="math" src="../_images/math/2ee4384edaaa25b6e246f3eb443130ebfd4a41d2.svg" alt="x\neq 0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/82c2dd0a3325907f98cb45d6c11aae4d223de2c8.svg" alt="\tan\atan2(y, x)
+<p><img src="../_images/math/acb574b69cfc9ce4a1125f73a6bf5764d1f6767f.svg" alt="\tan\atan2(y, x)
     =\begin{cases}\tan\pi&amp;y=0;x&lt;0;\cr
         \tan\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right)
             &amp;\rm otherwise\cr\end{cases}
@@ -397,7 +400,7 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
     ={y\over x}"/></p>
 </div><p>Finally:</p>
 <div class="math">
-<p><img src="../_images/math/d4a879aa037ff4a0da4116f913c1f273e995570d.svg" alt="\atan2(\sin x, \cos x)
+<p><img src="../_images/math/c46ecfe2b20b8aa83fd006f403e8f3f995d4eb89.svg" alt="\atan2(\sin x, \cos x)
     =\begin{cases}\pi &amp;x=\pi;\cr
         2\,\atan{\sin x\over\sqrt{\cos^2x+\sin^2x}+\cos x}&amp;
             \rm otherwise\cr\end{cases}
@@ -415,14 +418,14 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
     \left\lfloor \pi-x \over 2\pi \right\rfloor"/></p>
 </div><p>In the above, we used the following double angle formulas:</p>
 <div class="math">
-<p><img src="../_images/math/cefeca41f863c625bb0482d0f94fe207d2b5da00.svg" alt="\sin 2x = {2\tan x\over 1+\tan^2 x}
+<p><img src="../_images/math/2695b1701825566a2a2047df1338707c4f0aab5d.svg" alt="\sin 2x = {2\tan x\over 1+\tan^2 x}
 
 \cos 2x = {1-\tan^2x\over 1+\tan^2 x}
 
 \tan 2x = {2\tan x\over 1-\tan^2 x}"/></p>
 </div><p>to simplify the following expressions:</p>
 <div class="math">
-<p><img src="../_images/math/821f9a9aafc9167703be2cf92243d9bdb0001d65.svg" alt="\sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
+<p><img src="../_images/math/421b734c1222987d15d21439b6b16ea830e45215.svg" alt="\sin\left(2\,\atan{y\over\sqrt{x^2+y^2}+x}\right) =
     {2\tan\atan{y\over\sqrt{x^2+y^2}+x}\over1+\tan^2\atan{y\over\sqrt{x^2+y^2}+x}}
     =
 
@@ -488,9 +491,9 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
     {y\left(\sqrt{x^2+y^2}+x\right)\over
         x\left(\sqrt{x^2+y^2}+x\right)}
     = {y\over x}"/></p>
-</div><p>Finally, for all <img class="math" src="../_images/math/deb96a79299bc23316f286c9aca7506a8a7024b3.svg" alt="k&gt;0"/> we get:</p>
+</div><p>Finally, for all <img class="math" src="../_images/math/434aa52a97a8dd44eb66b5a3ca1e0ded143d3705.svg" alt="k&gt;0"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/1dffb80e3c6854e589f6a96bf1468aa7c6cc9a87.svg" alt="\atan2(ky, kx) = \Arg(kx + iky)
+<p><img src="../_images/math/9de6e3f15b6b2de3590fbc465ff5f6e00e119ec3.svg" alt="\atan2(ky, kx) = \Arg(kx + iky)
 =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
     2\,\atan{ky\over\sqrt{(kx)^2+(ky)^2}+kx}&amp;\rm otherwise\cr\end{cases}
 =
@@ -500,7 +503,7 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
 = \Arg(x+iy) = \atan2(y, x)"/></p>
 </div><p>The symmetry property can be proven by:</p>
 <div class="math">
-<p><img src="../_images/math/e3181d41206e21246636cf4a9387bd47fd80ab3e.svg" alt="\atan2(-y, x)
+<p><img src="../_images/math/a3a2d39e23c6f94f67d53b031b82b40d574f2dbc.svg" alt="\atan2(-y, x)
     =\begin{cases}\pi&amp;y=0;x&lt;0;\cr
         2\,\atan{-y\over\sqrt{x^2+(-y)^2}+x}
             &amp;\rm otherwise\cr\end{cases} =
@@ -513,7 +516,7 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
         \left\lfloor \atan2(y, x)+\pi \over 2\pi \right\rfloor"/></p>
 </div><p>To prove the derivatives, we do:</p>
 <div class="math">
-<p><img src="../_images/math/a185cd3833022a634b1e32fa3be8dc5e2bd721bf.svg" alt="{\partial \over \partial y} \atan2(y, x)
+<p><img src="../_images/math/f2575fe747f55a0202557674f8ab6d2012ae35b0.svg" alt="{\partial \over \partial y} \atan2(y, x)
     = 2{\partial \over \partial y} \atan{y\over\sqrt{x^2+y^2}+x}
     = {x\over x^2 + y^2}
 
@@ -521,7 +524,7 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
     = 2{\partial \over \partial x} \atan{y\over\sqrt{x^2+y^2}+x}
     = -{y\over x^2 + y^2}"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">atan</span><span class="p">,</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x y&quot;</span><span class="p">)</span>
 <span class="go">(x, y)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">atan</span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
@@ -532,7 +535,7 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
 </div>
 <p>An example of an application:</p>
 <div class="math">
-<p><img src="../_images/math/c5861c8feaff03714045fb7b631331591d3a83d1.svg" alt="A\sin x + B\cos x = \sqrt{A^2+B^2}\left(
+<p><img src="../_images/math/188b5bd641fa1eaca0e1c34d009610c050ca3bb2.svg" alt="A\sin x + B\cos x = \sqrt{A^2+B^2}\left(
     {A\over\sqrt{A^2+B^2}}\sin x + {B\over\sqrt{A^2+B^2}}\cos x\right)
 =
 
@@ -543,26 +546,26 @@ following works for all <img class="math" src="../_images/math/83a4a3970cf24c7ec
 = \sqrt{A^2+B^2}\sin(x+\atan2(B, A))"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/e1265c98b4cbac01d91b23955a83f008a013cd63.svg" alt="\delta = \atan2\left({B\over\sqrt{A^2+B^2}}, {A\over\sqrt{A^2+B^2}}\right)
+<p><img src="../_images/math/d753abae1d171264c60625c508a96dbda338d33c.svg" alt="\delta = \atan2\left({B\over\sqrt{A^2+B^2}}, {A\over\sqrt{A^2+B^2}}\right)
 =\atan2(B, A)"/></p>
 </div><p>Another application</p>
 <div class="math">
-<p><img src="../_images/math/6ef5858e9bbf7f250d698cced769b15c056d2641.svg" alt="\atan2(\cos x, -\sin x)
+<p><img src="../_images/math/b42b610ec917a0169a96b707d94160d5235197b1.svg" alt="\atan2(\cos x, -\sin x)
     = \atan2\left(\sin\left(x+{\pi\over2}\right),
         \cos\left(x+{\pi\over2}\right)\right)
     = x + {\pi\over2}"/></p>
-</div></div>
-<div class="section" id="multiple-argument-formulas">
-<h1>3.14. Multiple Argument Formulas<a class="headerlink" href="#multiple-argument-formulas" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="sin-a-x">
-<h2>3.14.1. sin(a x)<a class="headerlink" href="#sin-a-x" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="multiple-argument-formulas">
+<h1><span class="section-number">3.14. </span>Multiple Argument Formulas<a class="headerlink" href="#multiple-argument-formulas" title="Permalink to this headline">¶</a></h1>
+<section id="sin-a-x">
+<h2><span class="section-number">3.14.1. </span>sin(a x)<a class="headerlink" href="#sin-a-x" title="Permalink to this headline">¶</a></h2>
 <p>Systematic way to derive all multiple argument formulas is to use the following
 relation:</p>
 <div class="math">
-<p><img src="../_images/math/8ab9205804a45d536edb7b6808cee483f7a6ef96.svg" alt="\sin(ax) = U_{a-1}(\cos x) \sin x"/></p>
-</div><p>where <img class="math" src="../_images/math/c3bba3a8e571d2a5f8aacd882549cfc806e9750f.svg" alt="U_n(x)"/> are the Chebyshev polynomials of the second kind, first few are:</p>
+<p><img src="../_images/math/6017a4ff35f21fe9e61d5a8e1adba2e41970f936.svg" alt="\sin(ax) = U_{a-1}(\cos x) \sin x"/></p>
+</div><p>where <img class="math" src="../_images/math/5fc91b0ee4de771d166faa30a0f3748e3e47e575.svg" alt="U_n(x)"/> are the Chebyshev polynomials of the second kind, first few are:</p>
 <div class="math">
-<p><img src="../_images/math/bcaab54ce6c87cca9a03a1e16461b20c24038e85.svg" alt="U_{-3}(x) = -2x
+<p><img src="../_images/math/01a5711faed15890cf8f73c9eeccdfaf9d5f2d7e.svg" alt="U_{-3}(x) = -2x
 
 U_{-2}(x) = -1
 
@@ -586,7 +589,7 @@ U_5(x) = 32x^5 - 32x^3 + 6x
 
 U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;U_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">U_0(x) = 1</span>
@@ -600,7 +603,7 @@ U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1"/></p>
 </div>
 <p>One can then use this to calculate:</p>
 <div class="math">
-<p><img src="../_images/math/bac1e507c61de6dfeb372246eea9ba0ad91ff37b.svg" alt="\sin (-2x) = U_{-3}(\cos x) \sin x = -2\cos x\sin x
+<p><img src="../_images/math/2ec962329ddbdc0e68eff70ee36578db289c2ba6.svg" alt="\sin (-2x) = U_{-3}(\cos x) \sin x = -2\cos x\sin x
 
 \sin (-x) = U_{-2}(\cos x) \sin x = -\sin x
 
@@ -622,7 +625,7 @@ U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1"/></p>
 
 \sin 3x = U_2(\cos x) \sin x = (4\cos^2 x-1)\sin x"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevu</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;sin(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevu</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 <span class="go">sin(1*x) = sin(x)</span>
@@ -633,15 +636,15 @@ U_6(x) = 64x^6 - 80x^4 + 24x^2 - 1"/></p>
 <span class="go">sin(6*x) = (6*cos(x) - 32*cos(x)**3 + 32*cos(x)**5)*sin(x)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="cos-a-x">
-<h2>3.14.2. cos(a x)<a class="headerlink" href="#cos-a-x" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="cos-a-x">
+<h2><span class="section-number">3.14.2. </span>cos(a x)<a class="headerlink" href="#cos-a-x" title="Permalink to this headline">¶</a></h2>
 <p>Similarly as above, we use:</p>
 <div class="math">
-<p><img src="../_images/math/93ad99b2c4ad17609ce88957cb19a7f17f896d5f.svg" alt="\cos(ax) = T_a(\cos x)"/></p>
-</div><p>where <img class="math" src="../_images/math/f804222528ca3625dd30a79df2fa9f69a2b3f0d9.svg" alt="T_n(x)"/> are the Chebyshev polynomials of the first kind, first few are:</p>
+<p><img src="../_images/math/8dd678e5fc68f30871ca0d138af05f5d521b125c.svg" alt="\cos(ax) = T_a(\cos x)"/></p>
+</div><p>where <img class="math" src="../_images/math/7f150d09224232d43d2f43317ad7455c7350dd27.svg" alt="T_n(x)"/> are the Chebyshev polynomials of the first kind, first few are:</p>
 <div class="math">
-<p><img src="../_images/math/918ddfd78a3099d6b8fdb6209770639e34ca8bb8.svg" alt="T_0(x) = 1
+<p><img src="../_images/math/7e2f9baaf2c0caad609fd8ed8b4c2ab6fa898bf7.svg" alt="T_0(x) = 1
 
 T_{1\over2}(x) = {\sqrt{x+1}\over \sqrt 2}
 
@@ -659,7 +662,7 @@ T_5(x) = 16x^5 - 20x^3 + 5x
 
 T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;T_</span><span class="si">%d</span><span class="s2">(x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="go">T_0(x) = 1</span>
@@ -673,7 +676,7 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
 </div>
 <p>One can then use this to calculate:</p>
 <div class="math">
-<p><img src="../_images/math/286f4811c57a4a9b9a333290ed0158b0e763b0be.svg" alt="\cos 0 = T_0(\cos x) = 1
+<p><img src="../_images/math/d271f11b7361a27c4241145750798b90e14acb7d.svg" alt="\cos 0 = T_0(\cos x) = 1
 
 \cos {x\over 2} = T_{1\over 2}(\cos x) = {\sqrt{1+\cos x}\over\sqrt 2}
 
@@ -686,7 +689,7 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
 
 \cos 3x = T_3(\cos x) = 4\cos^3 x - 3\cos x"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">chebyshevt</span><span class="p">,</span> <span class="n">var</span><span class="p">,</span> <span class="n">cos</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span> <span class="nb">print</span> <span class="s2">&quot;cos(</span><span class="si">%d</span><span class="s2">*x) = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">chebyshevt</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
 <span class="go">cos(0*x) = 1</span>
@@ -698,17 +701,19 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
 <span class="go">cos(6*x) = -1 + 18*cos(x)**2 - 48*cos(x)**4 + 32*cos(x)**6</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.10. Periodic Functions</a></li>
 <li><a class="reference internal" href="#polar-coordinates">3.11. Polar Coordinates</a><ul>
 <li><a class="reference internal" href="#example">3.11.1. Example</a></li>
@@ -727,12 +732,17 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="transforms.html"
-                        title="previous chapter">3.4. Fourier Transform</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="other.html"
-                        title="next chapter">3.15. Delta Function</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="transforms.html"
+                          title="previous chapter"><span class="section-number">3.4. </span>Fourier Transform</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="other.html"
+                          title="next chapter"><span class="section-number">3.15. </span>Delta Function</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -741,17 +751,15 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -769,12 +777,13 @@ T_6(x) = 32x^6 - 48x^4 + 18x^2 - 1"/></p>
           <a href="transforms.html" title="3.4. Fourier Transform"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.10. </span>Periodic Functions</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

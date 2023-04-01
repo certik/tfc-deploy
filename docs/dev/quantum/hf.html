@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>8.11. Hartree-Fock (HF) Method &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8.12. Projector Augmented-Wave Method (PAW)" href="paw.html" />
@@ -62,7 +64,8 @@
           <a href="fermi.html" title="8.10. Ideal Fermi Gas"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.11. </span>Hartree-Fock (HF) Method</a></li> 
       </ul>
     </div>  
 
@@ -71,21 +74,21 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="hartree-fock-hf-method">
-<h1>8.11. Hartree-Fock (HF) Method<a class="headerlink" href="#hartree-fock-hf-method" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="derivation">
-<h2>8.11.1. Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
+  <section id="hartree-fock-hf-method">
+<h1><span class="section-number">8.11. </span>Hartree-Fock (HF) Method<a class="headerlink" href="#hartree-fock-hf-method" title="Permalink to this headline">¶</a></h1>
+<section id="derivation">
+<h2><span class="section-number">8.11.1. </span>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
 <p>The interacting Hamiltonian for many body Schrödinger equation
 is (see the general QFT notes for derivation):</p>
 <div class="math">
-<p><img src="../_images/math/83b0ffcf4063fa1fbbca33473b9a67d404467613.svg" alt="i\hbar\partial_t\ket{\Psi(t)} = \hat H\ket{\Psi(t)}
+<p><img src="../_images/math/8180be5beb85441612700b39f11435da24aad13f.svg" alt="i\hbar\partial_t\ket{\Psi(t)} = \hat H\ket{\Psi(t)}
 
 \hat H = \hat T + \hat V = \sum_{ij} c_i^\dag\braket{i|T|j}c_j +
     \half \sum_{ijkl} c_i^\dag c_j^\dag\braket{ij|V|kl}c_l c_k"/></p>
-</div><p>where <img class="math" src="../_images/math/9ac1fa630e3a69609c6a9e6a128ddda39891e969.svg" alt="\ket{i}"/> are spin orbitals (thus the integration over <img class="math" src="../_images/math/31d7a5b013e3f7aad998c72901021df2bffdaf10.svg" alt="\omega"/> below)
+</div><p>where <img class="math" src="../_images/math/809384a0f972a22be28907c5e693b5bf0641ba97.svg" alt="\ket{i}"/> are spin orbitals (thus the integration over <img class="math" src="../_images/math/d7c1b0d194c088484db7f93d988258c536727873.svg" alt="\omega"/> below)
 and:</p>
 <div class="math">
-<p><img src="../_images/math/0cac2fc753c3af68ab836fc0eee5c2f29b09061b.svg" alt="\braket{i|T|j} = \int \chi_i^*({\bf x}) \left(
+<p><img src="../_images/math/feb0d2f01e2029882ee9e7722707b2f51868f02a.svg" alt="\braket{i|T|j} = \int \chi_i^*({\bf x}) \left(
     -\half\nabla^2 - \sum_n {Z_n\over | {\bf x} -{\bf R}_n | }\right)
         \chi_j({\bf x})\d^3 x\, \d\omega
 
@@ -93,13 +96,13 @@ and:</p>
     {1\over | {\bf x} - {\bf y} | } \chi_k({\bf x}) \chi_l({\bf y})
         \d^3 x\, \d\omega_x\,
         \d^3 y\, \d\omega_y"/></p>
-</div><p>We would like to minimize the energy <img class="math" src="../_images/math/f006d392254f18027ee261b10844bffca8c6b7a4.svg" alt="E = \braket{\Psi | \hat H | \Psi }"/> using
-the following basis for <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/> electrons:</p>
+</div><p>We would like to minimize the energy <img class="math" src="../_images/math/f8a1c7957577d0d3906e0e52ca0929e86f4054f3.svg" alt="E = \braket{\Psi | \hat H | \Psi }"/> using
+the following basis for <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/> electrons:</p>
 <div class="math">
-<p><img src="../_images/math/fd8051f47a9680da9e4b74024396c0f9d29f7b33.svg" alt="\ket{\Psi} = c_1^\dag c_2^\dag \cdots c_Z^\dag\ket{0}"/></p>
-</div><p>We express the energy <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/> in this basis:</p>
+<p><img src="../_images/math/28b16a098ea8184563a4a2b79984ed51d91f327b.svg" alt="\ket{\Psi} = c_1^\dag c_2^\dag \cdots c_Z^\dag\ket{0}"/></p>
+</div><p>We express the energy <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> in this basis:</p>
 <div class="math">
-<p><img src="../_images/math/f19a78077b1fd55128dd2b7affc7bae54b57c5bc.svg" alt="E = \braket{\Psi | \hat H | \Psi } =
+<p><img src="../_images/math/5e02a626aeb2989db722a3254620b36f7eb361ad.svg" alt="E = \braket{\Psi | \hat H | \Psi } =
 
 = \bra{0}c_Z\cdots c_2 c_1 \hat H
     c_1^\dag c_2^\dag \cdots c_Z^\dag\ket{0} =
@@ -111,16 +114,16 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
 
 = \sum_{i=1}^Z \braket{i|T|i} +
     \half \sum_{i,j=1}^Z \left(\braket{ij|V|ij}-\braket{ij|V|ji}\right)"/></p>
-</div><p>We minimize it with the constrain <img class="math" src="../_images/math/391d5aa0e9e6771ef1f6b809a90257ee697f5756.svg" alt="\braket{i|j} = \delta_{ij}"/>:</p>
+</div><p>We minimize it with the constrain <img class="math" src="../_images/math/56c38e5ea4f3fe7d31771d6db63e5344ec91e674.svg" alt="\braket{i|j} = \delta_{ij}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9a4f1392d6a0dcf67ff0920fc6659fb3385e5714.svg" alt="\delta \left(E - \sum_{i,j=1}^Z \epsilon_{ij} \braket{i|j}\right) = 0"/></p>
+<p><img src="../_images/math/5c528ca61258910bb08d07118ad2c13a7ce22b93.svg" alt="\delta \left(E - \sum_{i,j=1}^Z \epsilon_{ij} \braket{i|j}\right) = 0"/></p>
 </div><p>We obtain:</p>
 <div class="math" id="equation-hfeq0">
-<p><span class="eqno">(8.11.1.1)<a class="headerlink" href="#equation-hfeq0" title="Permalink to this equation">¶</a></span><img src="../_images/math/fdc5eccb13a26f15cd0f7c1c2fe7e40a63a08f3d.svg" alt="T \ket{i} + \sum_{j=1}^Z \left(\braket{j|V|ij}-\braket{j|V|ji}\right)
+<p><span class="eqno">(8.11.1.1)<a class="headerlink" href="#equation-hfeq0" title="Permalink to this equation">¶</a></span><img src="../_images/math/4702c62e4eb03e1cb6e8d68fcfde27a59610b548.svg" alt="T \ket{i} + \sum_{j=1}^Z \left(\braket{j|V|ij}-\braket{j|V|ji}\right)
     = \epsilon_i \ket{i}"/></p>
-</div><p>in the <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-representation:</p>
+</div><p>in the <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>-representation:</p>
 <div class="math">
-<p><img src="../_images/math/f1183942004d48d3e9d0d80706b7130543f139fa.svg" alt="\braket{{\bf x} | T | i}
+<p><img src="../_images/math/cc0adc0a364f732611608c26f5d14514f484c6c8.svg" alt="\braket{{\bf x} | T | i}
     + \sum_{j=1}^Z \left(\bra{{\bf x}}\braket{j|V|ij}-
         \bra{{\bf x}}\braket{j|V|ji}\right)
     = \epsilon_i \braket{{\bf x} | i}
@@ -132,7 +135,7 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
 </div><p>And writing the individual terms explicitly (in this section, all orbitals are
 <em>spin</em> orbitals):</p>
 <div class="math">
-<p><img src="../_images/math/738758cd7de7eb24efb67facfe478c905be756d0.svg" alt="\braket{{\bf x} | i} = \psi_i({\bf x})
+<p><img src="../_images/math/06119121badede3ebe95177be09ce2b7fff1aa3a.svg" alt="\braket{{\bf x} | i} = \psi_i({\bf x})
 
 \braket{{\bf x} | T | i}
     = \left(-\half \nabla^2 -\sum_n {Z_n\over | {\bf x} -{\bf R}_n | }
@@ -151,7 +154,7 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
         \d^3 y\,\,\psi_j({\bf x})"/></p>
 </div><p>we get the Hartree-Fock equations:</p>
 <div class="math" id="equation-hfeq">
-<p><span class="eqno">(8.11.1.2)<a class="headerlink" href="#equation-hfeq" title="Permalink to this equation">¶</a></span><img src="../_images/math/3af166b071b795077144f6fe303e44deab183bba.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
+<p><span class="eqno">(8.11.1.2)<a class="headerlink" href="#equation-hfeq" title="Permalink to this equation">¶</a></span><img src="../_images/math/18c897f6d9645be84482b31c0875eceb88677dc0.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
 +
 \int {\sum_{j=1}^Z|\psi_j({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y\right)\psi_i({\bf x})
@@ -159,11 +162,11 @@ the following basis for <img class="math" src="../_images/math/11fbe21c5214ca737
         \d^3 y\,\,\psi_j({\bf x})
 =
 \epsilon_i \psi_i({\bf x})"/></p>
-</div><p>Let’s introduce the number density <img class="math" src="../_images/math/bf1ec45b1b52743dccce5cbb754c4f20ff0f6dc4.svg" alt="n({\bf x})"/>, Hartree potential <img class="math" src="../_images/math/fc505910ffc0e339f20ac71e718dfca6e92c4231.svg" alt="V_H({\bf
-x})"/> and nonlocal exchange potential <img class="math" src="../_images/math/6c5be6201fff7681d14240cb6af076aac68a4bfa.svg" alt="V_x"/> with its kernel <img class="math" src="../_images/math/2ecda90d516b9cabb999be4c1886d68a157d9b10.svg" alt="U({\bf x}, {\bf
+</div><p>Let’s introduce the number density <img class="math" src="../_images/math/3a12e9964ff967b84be6240b248ed7fdb95dd4b8.svg" alt="n({\bf x})"/>, Hartree potential <img class="math" src="../_images/math/56f9912729f2a461feec55d37bafa0f3a59a76c6.svg" alt="V_H({\bf
+x})"/> and nonlocal exchange potential <img class="math" src="../_images/math/c5523b4e3ee26c20c07ca85dedf5e1beb6c4422b.svg" alt="V_x"/> with its kernel <img class="math" src="../_images/math/3f99e05ae620de8590f2d3e7f7ec50fe76f7cc9e.svg" alt="U({\bf x}, {\bf
 y})"/>:</p>
 <div class="math">
-<p><img src="../_images/math/0a2bac0a5a78bbe3e63be1dad3c164cfa0dd0680.svg" alt="n({\bf x}) = \sum_{j=1}^Z|\psi_j({\bf y})|^2
+<p><img src="../_images/math/8e93576ffceb46a0d16e7fc1d7f4f611f6ff8c24.svg" alt="n({\bf x}) = \sum_{j=1}^Z|\psi_j({\bf y})|^2
 
 V_H({\bf x}) = \int {\sum_{j=1}^Z|\psi_j({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y
@@ -178,7 +181,7 @@ U({\bf x}, {\bf y}) =
 - \sum_{j=1}^Z {\psi_j({\bf x})\psi_j^*({\bf y})\over|{\bf x}-{\bf y}|}"/></p>
 </div><p>then we can write the HF equations as:</p>
 <div class="math">
-<p><img src="../_images/math/191b3422e3ed38d62187010e81ab7aec092be951.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|} + V_H({\bf x})
+<p><img src="../_images/math/17b582588847f7def8e18f53acbabc5fa89c0fee.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|} + V_H({\bf x})
     + \hat V_x
     \right)\psi_i({\bf x})
 =
@@ -191,40 +194,40 @@ U({\bf x}, {\bf y}) =
 \epsilon_i \psi_i({\bf x})"/></p>
 </div><p>The Hartree potential can be calculated by solving the Poisson equation:</p>
 <div class="math">
-<p><img src="../_images/math/b24c4a7857a8853393d59fe23d0a1b3334fa88c6.svg" alt="\nabla^2V_H({\bf x}) = -4\pi n({\bf x})"/></p>
+<p><img src="../_images/math/1d2a27b4df91d93cb33783f8c301da2ba3fcba3c.svg" alt="\nabla^2V_H({\bf x}) = -4\pi n({\bf x})"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/9667b6034d936d48979b75cd6bd5a6d0ea956472.svg" alt="n({\bf x}) = \sum_{i=1}^Z |\psi_i({\bf x})|^2"/></p>
-</div><p>The application of the exchange potential <img class="math" src="../_images/math/b01c14cbeae3ab19a730d62edfc3f3515ab144ff.svg" alt="\hat V_x"/> on any function
-<img class="math" src="../_images/math/98dfcdf4d8276f91cbcfd8410e85514fb86c0895.svg" alt="f({\bf x})"/> can be calculated by:</p>
+<p><img src="../_images/math/d4d74711b312ca5bc9d77a351602cca689d27ccc.svg" alt="n({\bf x}) = \sum_{i=1}^Z |\psi_i({\bf x})|^2"/></p>
+</div><p>The application of the exchange potential <img class="math" src="../_images/math/5401cff27ceea4ab1da05438d90c7c53d2796638.svg" alt="\hat V_x"/> on any function
+<img class="math" src="../_images/math/c27af997f3af90d4b23fce7567a8f1eeb65e3654.svg" alt="f({\bf x})"/> can be calculated by:</p>
 <div class="math">
-<p><img src="../_images/math/224becbafda658d72fd41641c01818eb61940a24.svg" alt="\hat V_x f({\bf x}) = - \sum_{j=1}^Z W_{fj}({\bf x})\psi_j({\bf x})
+<p><img src="../_images/math/dcffcf019dd771296ecb655eee1d4a032e633247.svg" alt="\hat V_x f({\bf x}) = - \sum_{j=1}^Z W_{fj}({\bf x})\psi_j({\bf x})
 
 W_{fj}({\bf x}) = \int {f({\bf y})\psi_j^*({\bf y})\over|{\bf x}-{\bf y}|}
         \d^3 y
 
 \nabla^2 W_{fj}({\bf x}) = -4\pi f({\bf x})\psi_j^*({\bf x})"/></p>
-</div></div>
-<div class="section" id="roothaan-equations-for-closed-shell-systems">
-<h2>8.11.2. Roothaan Equations For Closed Shell Systems<a class="headerlink" href="#roothaan-equations-for-closed-shell-systems" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="roothaan-equations-for-closed-shell-systems">
+<h2><span class="section-number">8.11.2. </span>Roothaan Equations For Closed Shell Systems<a class="headerlink" href="#roothaan-equations-for-closed-shell-systems" title="Permalink to this headline">¶</a></h2>
 <p>Starting from <a class="reference internal" href="#equation-hfeq0">(8.11.1.1)</a> and integrating over spins we get (here
-<img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/>, <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> are spatial orbitals, not spin orbitals):</p>
+<img class="math" src="../_images/math/26e02951ffb851bd3a9b32dd1e10e6de935a0c7f.svg" alt="i"/>, <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> are spatial orbitals, not spin orbitals):</p>
 <div class="math" id="equation-hfeq01">
-<p><span class="eqno">(8.11.2.1)<a class="headerlink" href="#equation-hfeq01" title="Permalink to this equation">¶</a></span><img src="../_images/math/16b0ebad4ad0665b751df528f8ae1a18fe77e6a6.svg" alt="T \ket{i} + \sum_{k=1}^{N/2}
+<p><span class="eqno">(8.11.2.1)<a class="headerlink" href="#equation-hfeq01" title="Permalink to this equation">¶</a></span><img src="../_images/math/79a4b2002ae625e0da96687da911d3227f312fe0.svg" alt="T \ket{i} + \sum_{k=1}^{N/2}
     \left(2\braket{k|V|ik}-\braket{k|V|ki}\right) = \epsilon_i \ket{i}"/></p>
-</div><p>We introduce basis functions <img class="math" src="../_images/math/1a75a845bf9de324a7c3a2a830bc22c35a658dd8.svg" alt="\ket{\mu}"/> by (below the greek letters are basis
+</div><p>We introduce basis functions <img class="math" src="../_images/math/c63bcf4ef9b03a06bc8638e8cb92dfb4731460f5.svg" alt="\ket{\mu}"/> by (below the greek letters are basis
 functions, latin letters are spatial orbitals):</p>
 <div class="math">
-<p><img src="../_images/math/d2b9c4da5e310a86d506b9518b4ea1004ab695ec.svg" alt="\ket{i} = \sum_\nu C_{\nu i} \ket{\nu}"/></p>
-</div><p>substitute into <a class="reference internal" href="#equation-hfeq01">(8.11.2.1)</a> and multiply by <img class="math" src="../_images/math/73baebaa6c17e5b44ff79f0e90d009cf35fc9a64.svg" alt="\bra{\mu}"/> from the left:</p>
+<p><img src="../_images/math/d037aaae91c715f4904be027784f6c4ff74b1319.svg" alt="\ket{i} = \sum_\nu C_{\nu i} \ket{\nu}"/></p>
+</div><p>substitute into <a class="reference internal" href="#equation-hfeq01">(8.11.2.1)</a> and multiply by <img class="math" src="../_images/math/5849af230b47d79f12544ebeba0ebfb8c5ab0592.svg" alt="\bra{\mu}"/> from the left:</p>
 <div class="math" id="equation-hfeq02">
-<p><span class="eqno">(8.11.2.2)<a class="headerlink" href="#equation-hfeq02" title="Permalink to this equation">¶</a></span><img src="../_images/math/6d49a1f82d5b5fbee686ec9006f265f25a404024.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
+<p><span class="eqno">(8.11.2.2)<a class="headerlink" href="#equation-hfeq02" title="Permalink to this equation">¶</a></span><img src="../_images/math/508b61cf6bdd2e2cd363d256242357ec57dedbd1.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
     + \sum_\nu\sum_{k=1}^{N/2} \left(2\braket{\mu k|V|\nu k}
         -\braket{\mu k|V|k\nu}\right) C_{\nu i}
     = \epsilon_i \sum_\nu \braket{\mu | \nu} C_{\nu i}"/></p>
-</div><p>Now we expand the functions <img class="math" src="../_images/math/397e484b0faf352ed22dd4d7109b4273103a98e7.svg" alt="\ket{k}"/>:</p>
+</div><p>Now we expand the functions <img class="math" src="../_images/math/ea6066856727ca4bdb9f129806e0de1060232d74.svg" alt="\ket{k}"/>:</p>
 <div class="math" id="equation-hfeq03">
-<p><span class="eqno">(8.11.2.3)<a class="headerlink" href="#equation-hfeq03" title="Permalink to this equation">¶</a></span><img src="../_images/math/d78f3c27c22db3372f33f62de8218cd08605f405.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
+<p><span class="eqno">(8.11.2.3)<a class="headerlink" href="#equation-hfeq03" title="Permalink to this equation">¶</a></span><img src="../_images/math/7b8e4a7d7f30371fd86a6b9e012fe17428489c9d.svg" alt="\sum_\nu \braket{\mu | T | \nu} C_{\nu i}
     + \sum_\nu \sum_{\alpha\beta}
         \left(2\sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^* \right)
         \left(\braket{\mu \beta|V|\nu \alpha}
@@ -232,7 +235,7 @@ functions, latin letters are spatial orbitals):</p>
     = \epsilon_i \sum_\nu \braket{\mu | \nu} C_{\nu i}"/></p>
 </div><p>we introduce the density matrix:</p>
 <div class="math">
-<p><img src="../_images/math/ed1a7bdf577ea691d5cc14896b9991c477cac667.svg" alt="\hat\rho
+<p><img src="../_images/math/35e65433d62664efdce4708f70f7d734424ad0c8.svg" alt="\hat\rho
     = 2 \sum_{k=1}^{N/2} \ket{k}\bra{k}
     = \sum_{\alpha\beta} \ket{\alpha} 2 \sum_{k=1}^{N/2}
         C_{\alpha k} C_{\beta k}^*\bra{\beta}
@@ -241,7 +244,7 @@ functions, latin letters are spatial orbitals):</p>
 P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*"/></p>
 </div><p>and get:</p>
 <div class="math" id="equation-hfeq04">
-<p><span class="eqno">(8.11.2.4)<a class="headerlink" href="#equation-hfeq04" title="Permalink to this equation">¶</a></span><img src="../_images/math/93caf87335817e33d9373b2210ac9b8bc7f32652.svg" alt="\sum_\nu \left( \braket{\mu | T | \nu}
+<p><span class="eqno">(8.11.2.4)<a class="headerlink" href="#equation-hfeq04" title="Permalink to this equation">¶</a></span><img src="../_images/math/820b8b9209e51954b08dea2bfec09c5f9271a488.svg" alt="\sum_\nu \left( \braket{\mu | T | \nu}
     + \sum_{\alpha\beta}
         P_{\alpha\beta}
         \left(\braket{\mu \beta|V|\nu \alpha}
@@ -249,7 +252,7 @@ P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*"/></p>
     = \epsilon_i \sum_\nu \braket{\mu | \nu} C_{\nu i}"/></p>
 </div><p>introducing:</p>
 <div class="math">
-<p><img src="../_images/math/3e0ec9adc7045cab46354d1475257bafe633ca80.svg" alt="F_{\mu\nu} = H_{\mu\nu}^{\mbox{core}} + G_{\mu\nu}
+<p><img src="../_images/math/e7aed3b9f0dc718bfdc982123c4631210f5524b7.svg" alt="F_{\mu\nu} = H_{\mu\nu}^{\mbox{core}} + G_{\mu\nu}
 
 H_{\mu\nu}^{\mbox{core}} = \braket{\mu | T | \nu}
 
@@ -260,13 +263,13 @@ G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
 S_{\mu\nu} = \braket{\mu | \nu}"/></p>
 </div><p>the equation <a class="reference internal" href="#equation-hfeq04">(8.11.2.4)</a> is:</p>
 <div class="math" id="equation-roothaan1">
-<p><span class="eqno">(8.11.2.5)<a class="headerlink" href="#equation-roothaan1" title="Permalink to this equation">¶</a></span><img src="../_images/math/d92aa9223236aeb2208f3a8c820b09b52be861b7.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i}
+<p><span class="eqno">(8.11.2.5)<a class="headerlink" href="#equation-roothaan1" title="Permalink to this equation">¶</a></span><img src="../_images/math/49091a855e1bea69a1e7fef0fe88046a196b75e0.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i}
     = \epsilon_i \sum_\nu S_{\mu\nu} C_{\nu i}"/></p>
 </div><p>These are the Roothaan equations. It is a generalized eigenvalue problem.</p>
-<p>Total energy is given by (the <img class="math" src="../_images/math/c82b7276809f5a3c1c4f091de9dccee1d0b4988d.svg" alt="i,j"/> in the first equation are spin orbitals,
-in the other equations <img class="math" src="../_images/math/c82b7276809f5a3c1c4f091de9dccee1d0b4988d.svg" alt="i,j"/> are spatial orbitals):</p>
+<p>Total energy is given by (the <img class="math" src="../_images/math/3f3a9e084281c99c635d496ecfa26fd46045da13.svg" alt="i,j"/> in the first equation are spin orbitals,
+in the other equations <img class="math" src="../_images/math/3f3a9e084281c99c635d496ecfa26fd46045da13.svg" alt="i,j"/> are spatial orbitals):</p>
 <div class="math">
-<p><img src="../_images/math/5e53dfa2bfb6074c6909b55ed39200ed3c241790.svg" alt="E = \sum_{i} \braket{i|T|i} +
+<p><img src="../_images/math/75d70ab435bbfc44988913547ed84d405def4cc2.svg" alt="E = \sum_{i} \braket{i|T|i} +
     \half \sum_{i,j} \left(\braket{ij|V|ij}-\braket{ij|V|ji}\right) =
 
 = \sum_{i} 2 I(i) + \sum_{i,j} \left(2 J(i, j) - K(i, j)\right) =
@@ -300,10 +303,10 @@ in the other equations <img class="math" src="../_images/math/c82b7276809f5a3c1c
 
 = \half \sum_{\mu\nu} P_{\nu\mu} (H_{\mu\nu}^{\mbox{core}}
     +F_{\mu\nu})"/></p>
-</div><p>The same thing can be derived in <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-representation
+</div><p>The same thing can be derived in <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>-representation
 starting from <a class="reference internal" href="#equation-hfeq">(8.11.1.2)</a> and introducing spatial orbitals:</p>
 <div class="math" id="equation-hfeq2">
-<p><span class="eqno">(8.11.2.6)<a class="headerlink" href="#equation-hfeq2" title="Permalink to this equation">¶</a></span><img src="../_images/math/f6eb813892958592f267d30a85e510afd89f4965.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
+<p><span class="eqno">(8.11.2.6)<a class="headerlink" href="#equation-hfeq2" title="Permalink to this equation">¶</a></span><img src="../_images/math/1f9828cf57e6da3ec3c176fa0148749643d185d7.svg" alt="\left(-\half \nabla^2 -{Z\over |{\bf x}|}
 +
 \int {2\sum_{k=1}^{N/2}|\psi_k({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y\right)\psi_i({\bf x})
@@ -311,13 +314,13 @@ starting from <a class="reference internal" href="#equation-hfeq">(8.11.1.2)</a>
         \d^3 y\,\,\psi_k({\bf x})
 =
 \epsilon_i \psi_i({\bf x})"/></p>
-</div><p>We introduce basis functions <img class="math" src="../_images/math/bd58575e743a9ea9f2312e335d9bdff979f22107.svg" alt="\phi_\mu"/>:</p>
+</div><p>We introduce basis functions <img class="math" src="../_images/math/6cd9f837281cd8bfe5e4c8441bfef8c91826ab0b.svg" alt="\phi_\mu"/>:</p>
 <div class="math">
-<p><img src="../_images/math/40586b181dbeb747a6d723b151613395ec5a20e6.svg" alt="\psi_i({\bf x}) = \sum_\nu C_{\nu i} \phi_\nu({\bf x})"/></p>
+<p><img src="../_images/math/f7d13ae58d89776d3d03200460a8410d89c02625.svg" alt="\psi_i({\bf x}) = \sum_\nu C_{\nu i} \phi_\nu({\bf x})"/></p>
 </div><p>substitute into <a class="reference internal" href="#equation-hfeq2">(8.11.2.6)</a> and also multiply the whole equation by
-<img class="math" src="../_images/math/88abfb00d2130ac097b74c6d3ca2988e0efc3c42.svg" alt="\phi_\mu^*"/> and integrate over <img class="math" src="../_images/math/bd379d76154aa25ae8d397923e27bf9581f1e57c.svg" alt="{\bf x}"/>:</p>
+<img class="math" src="../_images/math/a3fe5c3e394b3b1a342ba7592e7a3899bfc98017.svg" alt="\phi_\mu^*"/> and integrate over <img class="math" src="../_images/math/45d9694d60e7810ecbdcbca7ce4ee5f280d4f1cc.svg" alt="{\bf x}"/>:</p>
 <div class="math" id="equation-hfeq3">
-<p><span class="eqno">(8.11.2.7)<a class="headerlink" href="#equation-hfeq3" title="Permalink to this equation">¶</a></span><img src="../_images/math/6ee58e66706047ccf81d894337942a31fc87fdde.svg" alt="\sum_\nu
+<p><span class="eqno">(8.11.2.7)<a class="headerlink" href="#equation-hfeq3" title="Permalink to this equation">¶</a></span><img src="../_images/math/e04e9e53ab9f671fb34da7223195246d9786228c.svg" alt="\sum_\nu
 \int
 \phi_\mu^*({\bf x})
 \left(-\half \nabla^2 -{Z\over |{\bf x}|}
@@ -337,13 +340,13 @@ starting from <a class="reference internal" href="#equation-hfeq">(8.11.1.2)</a>
 \, C_{\nu i}"/></p>
 </div><p>This can be written as:</p>
 <div class="math">
-<p><img src="../_images/math/9f51703bf135c611fd25bf197213fad0e72dad8e.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i} = \epsilon_i \sum_\nu S_{\mu\nu} C_{\nu i}
+<p><img src="../_images/math/b9419e3dd0bda760cbaa0e17f9b32eb80654ee45.svg" alt="\sum_\nu F_{\mu\nu} C_{\nu i} = \epsilon_i \sum_\nu S_{\mu\nu} C_{\nu i}
 
 F_{\mu\nu} = H_{\mu\nu}^{\mbox{core}} + G_{\mu\nu}
     = T_{\mu\nu} + V_{\mu\nu} + G_{\mu\nu}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/39a48543ef1229743167b3b9a6a90d4de98fbdc5.svg" alt="T_{\mu\nu} =
+<p><img src="../_images/math/96beff67e6211b68a257bfc264346bf489991efa.svg" alt="T_{\mu\nu} =
         \int \phi_\mu^*({\bf x}) \left(-\half \nabla^2 \right)
         \phi_\nu({\bf x}) \d^3 x
     =
@@ -367,7 +370,7 @@ G_{\mu\nu} =
 S_{\mu\nu} = \int \phi_\mu^*({\bf x}) \phi_\nu({\bf x})\d^3 x"/></p>
 </div><p>Introducing the density matrix and density:</p>
 <div class="math">
-<p><img src="../_images/math/ba6cb45c96480776f80c61480a487a8077eca266.svg" alt="\rho({\bf x}, {\bf y}) = \braket{{\bf x} | \hat \rho | {\bf y}}
+<p><img src="../_images/math/145d15b35d08d340f2619d54ca974b1ff28209b4.svg" alt="\rho({\bf x}, {\bf y}) = \braket{{\bf x} | \hat \rho | {\bf y}}
 = \sum_{\alpha\beta} \braket{{\bf x}|\alpha}P_{\alpha\beta}
     \braket{\beta|{\bf y}}
 = \sum_{\alpha\beta} \phi_\alpha({\bf x}) P_{\alpha\beta}
@@ -382,10 +385,10 @@ P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*
     = \braket{{\bf x}|\hat \rho|{\bf x}}
     = \sum_{\alpha\beta} \phi_\alpha({\bf x}) P_{\alpha\beta}
         \phi_\beta^*({\bf x})"/></p>
-</div><p>Expanding the <img class="math" src="../_images/math/594cee4382a13f8e3588e8e2603383b2da9016bf.svg" alt="\psi_k"/> functions and using the density matrix we get for
-<img class="math" src="../_images/math/37ed47150f4c212d16a3b09f079d30f678a34332.svg" alt="G_{\mu\nu}"/>:</p>
+</div><p>Expanding the <img class="math" src="../_images/math/b20dbca8006493660e7b6d1dae010fe41bac9950.svg" alt="\psi_k"/> functions and using the density matrix we get for
+<img class="math" src="../_images/math/33d1a791b42ec692a9a5cc956dee40029964f463.svg" alt="G_{\mu\nu}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/22d335d6981e4e3b63b6fa969e54d7a86a21a06e.svg" alt="G_{\mu\nu} =
+<p><img src="../_images/math/934663745cff551041b5a17e506039100e57d9ab.svg" alt="G_{\mu\nu} =
     \sum_{\alpha\beta} P_{\alpha\beta}
     \int \phi_\mu^*({\bf x}) \left(
 \int {\phi_\beta^*({\bf y})\phi_\alpha({\bf y})\over|{\bf x}-{\bf y}|}
@@ -397,7 +400,7 @@ P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*
         \d^3 y\,\,\phi_\alpha({\bf x})\d^3 x"/></p>
 </div><p>or</p>
 <div class="math">
-<p><img src="../_images/math/30a2c672324c23ecae76a9eef9a43e5c09831800.svg" alt="G_{\mu\nu} =
+<p><img src="../_images/math/9eccc1ef8b49479276e239ee3867b8a71f8a574e.svg" alt="G_{\mu\nu} =
     \sum_{\alpha\beta} P_{\alpha\beta}
     \int {\phi_\mu^*({\bf x}) \phi_\nu({\bf x}) \phi_\beta^*({\bf y})
             \phi_\alpha({\bf y})
@@ -412,37 +415,37 @@ P_{\alpha\beta} = 2 \sum_{k=1}^{N/2} C_{\alpha k} C_{\beta k}^*
             -\half \braket{\mu \beta|{1\over r_{12}}|\alpha \nu}\right)"/></p>
 </div><p>In physical and chemistry notation this is written as:</p>
 <div class="math">
-<p><img src="../_images/math/e40ad57f49ce0f585f3d500cb061177dd876b81d.svg" alt="G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
+<p><img src="../_images/math/4763203facb9d8de06359973c0f0910c41fe782b.svg" alt="G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
         \left(\braket{\mu \beta|\nu \alpha}
             -\half \braket{\mu \beta|\alpha \nu}\right)
     = \sum_{\alpha\beta} P_{\alpha\beta}
         \left((\mu \nu|\beta \alpha) -\half (\mu \alpha|\beta \nu)\right)"/></p>
-</div><p>Note that this notation implicitly assumes the <img class="math" src="../_images/math/d6f7971bfd49a6f0520c456eebf6c5a336fe1fda.svg" alt="{1\over r_{12}}"/> factor, so
-for example <img class="math" src="../_images/math/fad4dc24ee2efb2dd960db38040099b44b1dced3.svg" alt="\braket{\mu \beta|\nu \alpha}"/> actually means
-<img class="math" src="../_images/math/19750780d8c8fd1cc2cc0158f1a891e57923e541.svg" alt="\braket{\mu \beta|{1\over r_{12}}|\nu \alpha}"/> and one has to understand this
+</div><p>Note that this notation implicitly assumes the <img class="math" src="../_images/math/31ea26e20e26ff58c0487e18cec41167bfa13bcc.svg" alt="{1\over r_{12}}"/> factor, so
+for example <img class="math" src="../_images/math/454edd7bdff36651a4c29941e701614a6b15b17d.svg" alt="\braket{\mu \beta|\nu \alpha}"/> actually means
+<img class="math" src="../_images/math/6dcbceadd44d3a40a6c7ad5827212578e09e9103.svg" alt="\braket{\mu \beta|{1\over r_{12}}|\nu \alpha}"/> and one has to understand this
 from the context.</p>
-</div>
-<div class="section" id="two-particle-matrix-element">
-<h2>8.11.3. Two Particle Matrix Element<a class="headerlink" href="#two-particle-matrix-element" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="two-particle-matrix-element">
+<h2><span class="section-number">8.11.3. </span>Two Particle Matrix Element<a class="headerlink" href="#two-particle-matrix-element" title="Permalink to this headline">¶</a></h2>
 <p>The two particle matrix element is:</p>
 <div class="math" id="equation-twoint">
-<p><span class="eqno">(8.11.3.1)<a class="headerlink" href="#equation-twoint" title="Permalink to this equation">¶</a></span><img src="../_images/math/ad13c2e483c1aa6f83a4ef0b94f640e83935a518.svg" alt="(ij|kl) =
+<p><span class="eqno">(8.11.3.1)<a class="headerlink" href="#equation-twoint" title="Permalink to this equation">¶</a></span><img src="../_images/math/690bd2e5c0f409af97188fc4802ee4e0cc9ae8ef.svg" alt="(ij|kl) =
     \int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_k^*({\bf x}')\psi_l({\bf x}')
         \over | {\bf x} - {\bf x}' |} \d^3 x \d^3 x' =
 
 = \braket{ik|jl} =
     \int {\psi_i^*({\bf x})\psi_k^*({\bf x}')\psi_j({\bf x})\psi_l({\bf x}')
         \over | {\bf x} - {\bf x}' |} \d^3 x \d^3 x'"/></p>
-</div><p>The <img class="math" src="../_images/math/ba678c827218d7310f5cfc992a86aa30b7808505.svg" alt="\braket{ik|jl}"/> is called the physicists’ notation because
-the <img class="math" src="../_images/math/ef301ec22362b3ec6d3f929b4b43b21686bb61dc.svg" alt="\ket{jl}"/> and <img class="math" src="../_images/math/4b6c7bafbd522777d8a8a7b401686174b1a014ff.svg" alt="\ket{ik}"/> kets are:</p>
+</div><p>The <img class="math" src="../_images/math/67a97bbce5c1ebeeadc3a6540a04e2a615480371.svg" alt="\braket{ik|jl}"/> is called the physicists’ notation because
+the <img class="math" src="../_images/math/54e0a7780efd80a1ac0d782d4bb0dfe9ea897b10.svg" alt="\ket{jl}"/> and <img class="math" src="../_images/math/e876751c9cde2a5049bbb3c8afaa9ee751c16afb.svg" alt="\ket{ik}"/> kets are:</p>
 <div class="math">
-<p><img src="../_images/math/0f9870642c1ff57cf23a2cca13d2fbb92fa34fb5.svg" alt="\ket{jl}=\psi_j({\bf x})\psi_l({\bf x}')
+<p><img src="../_images/math/be52f18d5d2212cddb4ff842cb5b31a10009daf1.svg" alt="\ket{jl}=\psi_j({\bf x})\psi_l({\bf x}')
 
 \ket{ik}=\psi_i({\bf x})\psi_k({\bf x}')"/></p>
-</div><p>The <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/> is called the chemists’ notation. From <a class="reference internal" href="#equation-twoint">(8.11.3.1)</a> there
+</div><p>The <img class="math" src="../_images/math/85414856577759e4a4c18eaeeace0fc8b06ad491.svg" alt="(ij|kl)"/> is called the chemists’ notation. From <a class="reference internal" href="#equation-twoint">(8.11.3.1)</a> there
 are two types of symmetries — interchanging of the dummy variables:</p>
 <div class="math">
-<p><img src="../_images/math/8976984315d279f2ee2847d6a186d30b69f0ad9a.svg" alt="(ij|kl) = \braket{ik|jl} =
+<p><img src="../_images/math/91d1e66482f8267e3f2c577b13134f97b9d09ec7.svg" alt="(ij|kl) = \braket{ik|jl} =
     \int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_k^*({\bf x}')\psi_l({\bf x}')
         \over | {\bf x} - {\bf x}' |} \d^3 x \d^3 x' =
 
@@ -452,7 +455,7 @@ are two types of symmetries — interchanging of the dummy variables:</p>
     = (kl|ij) = \braket{ki|lj}"/></p>
 </div><p>and taking complex conjugate:</p>
 <div class="math">
-<p><img src="../_images/math/61648d4514b2fc684a7114421a828ad80927b8b3.svg" alt="(ij|kl)^*
+<p><img src="../_images/math/c0fdece4f5e8fb8e3414a463130388503e56ffe1.svg" alt="(ij|kl)^*
 = \braket{ik|jl}^* =
     \left(
     \int {\psi_i^*({\bf x})\psi_k^*({\bf x}')\psi_j({\bf x})\psi_l({\bf x}')
@@ -464,34 +467,34 @@ are two types of symmetries — interchanging of the dummy variables:</p>
     \braket{jl|ik} = (ji|lk)"/></p>
 </div><p>If the matrix elements are real, then:</p>
 <div class="math">
-<p><img src="../_images/math/10989751218b6b4cf63e9c12358811e9c216711d.svg" alt="(ij|kl) = \braket{ik|jl} =
+<p><img src="../_images/math/90c75c2b7ec0099b91c285191aa85ed08c232e4b.svg" alt="(ij|kl) = \braket{ik|jl} =
     \braket{jl|ik} = (ji|lk)"/></p>
 </div><p>In general those are the only symmetries (4 total).</p>
 <p>If however,
-the <img class="math" src="../_images/math/6ddc121fe8e2ed60a9d4b2bf2098e2e7a7a0cfb1.svg" alt="\psi_i({\bf x})"/> functions are real, then there are additional symmetries:
-an exchange <img class="math" src="../_images/math/59f26ade702fb8486fe8f80e0964d8203a2e4642.svg" alt="i \leftrightarrow j"/> and <img class="math" src="../_images/math/4a73844f6558ab063b94e1a528bc8154c7c2f0de.svg" alt="k \leftrightarrow l"/>.
-The symmetries of <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/> are exchange of <img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/> with <img class="math" src="../_images/math/300c37187c9d1b187e70d100b74d538fe12ef068.svg" alt="j"/> or <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> with <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> or the
-<img class="math" src="../_images/math/bb3a899ef2d014352630b063fde352430108138f.svg" alt="ij"/> and <img class="math" src="../_images/math/69b3264653669594d125a15eedd9c4b5e0827f1d.svg" alt="kl"/> pairs (8 total):</p>
+the <img class="math" src="../_images/math/bde1a675692fa1a148a7c54588aa6e6f25049cd5.svg" alt="\psi_i({\bf x})"/> functions are real, then there are additional symmetries:
+an exchange <img class="math" src="../_images/math/f8986ad56531fe8a73b2f82debf961192569d13d.svg" alt="i \leftrightarrow j"/> and <img class="math" src="../_images/math/d35d0c4be062c9d0112321808ba8790e1fd49725.svg" alt="k \leftrightarrow l"/>.
+The symmetries of <img class="math" src="../_images/math/85414856577759e4a4c18eaeeace0fc8b06ad491.svg" alt="(ij|kl)"/> are exchange of <img class="math" src="../_images/math/26e02951ffb851bd3a9b32dd1e10e6de935a0c7f.svg" alt="i"/> with <img class="math" src="../_images/math/8f6b667ad368fdde8343f69afb27054230a75699.svg" alt="j"/> or <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> with <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> or the
+<img class="math" src="../_images/math/7ec73fc933617e00f392177768e415765520d7a3.svg" alt="ij"/> and <img class="math" src="../_images/math/3dfbe04eb746b1e1f8212f09a25668b83454346a.svg" alt="kl"/> pairs (8 total):</p>
 <div class="math">
-<p><img src="../_images/math/665eb69813a3e6389a8b71d1b9dc2d8e723bde91.svg" alt="(ij|kl) = (ji|kl) = (ij|lk) = (ji|lk) =
+<p><img src="../_images/math/d4140141ef6cff5208cbd18e65e62b6d8a46e07e.svg" alt="(ij|kl) = (ji|kl) = (ij|lk) = (ji|lk) =
 
 = (kl|ij) = (lk|ij) = (kl|ji) = (lk|ji)"/></p>
-</div><p>So if we view <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/> as two boxes <img class="math" src="../_images/math/b72daaf53ac64f87ddc7c7c81aaa77e1d6ab039b.svg" alt="(\cdot | \cdot )"/> then we can permute the
-labels in the given box “<img class="math" src="../_images/math/309f1676bfd22e96489b08b913e3dea73edff866.svg" alt="\cdot"/>”, as well as exchange the boxes (the only
+</div><p>So if we view <img class="math" src="../_images/math/85414856577759e4a4c18eaeeace0fc8b06ad491.svg" alt="(ij|kl)"/> as two boxes <img class="math" src="../_images/math/715a29dcd574459c3206cc78f1deb793e938708f.svg" alt="(\cdot | \cdot )"/> then we can permute the
+labels in the given box “<img class="math" src="../_images/math/8a29305d094cf688683627aab0c3878e5c8928f9.svg" alt="\cdot"/>”, as well as exchange the boxes (the only
 thing we cannot do is to take one particle from one box and put it into the
-other). As such the box “<img class="math" src="../_images/math/309f1676bfd22e96489b08b913e3dea73edff866.svg" alt="\cdot"/>” is a pair of two electrons (in any order) and
+other). As such the box “<img class="math" src="../_images/math/8a29305d094cf688683627aab0c3878e5c8928f9.svg" alt="\cdot"/>” is a pair of two electrons (in any order) and
 the two electron integral assigns a unique number to a pair of such boxes (in
-any order). The symmetries of the <img class="math" src="../_images/math/ba678c827218d7310f5cfc992a86aa30b7808505.svg" alt="\braket{ik|jl}"/> symbol are:</p>
+any order). The symmetries of the <img class="math" src="../_images/math/67a97bbce5c1ebeeadc3a6540a04e2a615480371.svg" alt="\braket{ik|jl}"/> symbol are:</p>
 <div class="math">
-<p><img src="../_images/math/589243a6f0d870a2808a29ca346fb13b9fdb1d85.svg" alt="\braket{ik|jl} = \braket{jk|il} = \braket{il|jk} = \braket{jl|ik} =
+<p><img src="../_images/math/0016d7d5bbf5bce91c1ca8706acc9ee225611f49.svg" alt="\braket{ik|jl} = \braket{jk|il} = \braket{il|jk} = \braket{jl|ik} =
 
 = \braket{ki|lj} = \braket{li|kj} = \braket{kj|li} = \braket{lj|ki}"/></p>
-</div><p>Example I: the Slater integral <img class="math" src="../_images/math/e14c5158e74bb27601efde526eb288dfaffa31d7.svg" alt="R^k(i, j, k, l)"/> has all 8 symmetries (Slater
+</div><p>Example I: the Slater integral <img class="math" src="../_images/math/cb9377f0070d5662adece4b7cff415922cc0dbc2.svg" alt="R^k(i, j, k, l)"/> has all 8 symmetries (Slater
 integral uses physical notation).</p>
 <p>Example II: In spherical symmetry, the 2-particle integrals can be written as
 (see below for derivation):</p>
 <div class="math">
-<p><img src="../_images/math/7d0a84baf2d94450bdf97cf916489c4ddbde779b.svg" alt="\braket{\alpha \beta | \gamma \delta}
+<p><img src="../_images/math/0d6cb3f0d4105318d8b7145447a3a32b93f85266.svg" alt="\braket{\alpha \beta | \gamma \delta}
 =
 \braket{n_\alpha l_\alpha m_\alpha \ n_\beta l_\beta m_\beta |
 n_\gamma l_\gamma m_\gamma \ n_\delta l_\delta m_\delta}
@@ -512,7 +515,7 @@ R^k(n_\alpha l_\alpha, n_\beta l_\beta, n_\gamma l_\gamma,
 </div><p>They only have 4 symmetries, because spherical harmonics are complex. In
 particular:</p>
 <div class="math">
-<p><img src="../_images/math/ab66ecea46caff9002709c76891ba5e6fcad1c62.svg" alt="\braket{\beta \alpha | \delta \gamma}
+<p><img src="../_images/math/9765f0c510221243d93f42f16fc1a138b77d943f.svg" alt="\braket{\beta \alpha | \delta \gamma}
 =
 \sum_{k=\max(| l_\beta-l_\delta| ,| l_\alpha-l_\gamma| , | m_\beta-m_\delta| )}^{
     \min(l_\beta+l_\delta, l_\alpha+l_\gamma)
@@ -538,7 +541,7 @@ R^k(n_\alpha l_\alpha, n_\beta l_\beta, n_\gamma l_\gamma,
     n_\delta l_\delta) = \braket{\alpha \beta | \gamma \delta}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/7b7a3f26e2e542edbb0a46fde02e52c7a94045e5.svg" alt="\braket{\gamma \delta | \alpha \beta}
+<p><img src="../_images/math/64cc676880bab41bf07b2b29026c600516fe8515.svg" alt="\braket{\gamma \delta | \alpha \beta}
 =
 \braket{n_\gamma l_\gamma m_\gamma \ n_\delta l_\delta m_\delta |
 n_\alpha l_\alpha m_\alpha \ n_\beta l_\beta m_\beta}
@@ -560,28 +563,28 @@ R^k(n_\gamma l_\gamma, n_\delta l_\delta, n_\alpha l_\alpha,
 
 =
 \braket{\alpha \beta | \gamma \delta}"/></p>
-</div><p>We used the symmetries of the Slater integrals as well as the <img class="math" src="../_images/math/e6522f6ddaa813ffb67d9fe7468890992174c8bd.svg" alt="c^k"/>
-coefficients that change a sign, but thanks to the <img class="math" src="../_images/math/d0308329707c547cd35ded331d77e5494800b01c.svg" alt="\delta_{m_\gamma+m_\delta-
+</div><p>We used the symmetries of the Slater integrals as well as the <img class="math" src="../_images/math/ffe0d5354f3f386ad70d4ab01309fb208a12ed29.svg" alt="c^k"/>
+coefficients that change a sign, but thanks to the <img class="math" src="../_images/math/952c93b6858c5b602134d0dc8a40a58ea5c483b8.svg" alt="\delta_{m_\gamma+m_\delta-
 m_\alpha-m_\beta, 0}"/>, the overall sign does not change. The other two
 symmetries are missing, i.e.
-<img class="math" src="../_images/math/7ee8e79f50b1c2788ff68f04c0fdf038a1e06624.svg" alt="\braket{\gamma \beta | \alpha \delta} \ne
+<img class="math" src="../_images/math/e96a5d758b980025c545b387736024dd84aca13a.svg" alt="\braket{\gamma \beta | \alpha \delta} \ne
 \braket{\alpha \beta | \gamma \delta}"/> and
-<img class="math" src="../_images/math/0e5a706df6f2aa9d86b5703912bd60b25d869312.svg" alt="\braket{\alpha \delta | \gamma \beta} \ne
+<img class="math" src="../_images/math/123283f52c82ba32906e9bd6447ce8db57a6a410.svg" alt="\braket{\alpha \delta | \gamma \beta} \ne
 \braket{\alpha \beta | \gamma \delta}"/>.</p>
-</div>
-<div class="section" id="general-matrix-elements-in-spherical-symmetry">
-<h2>8.11.4. General Matrix Elements in Spherical Symmetry<a class="headerlink" href="#general-matrix-elements-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="general-matrix-elements-in-spherical-symmetry">
+<h2><span class="section-number">8.11.4. </span>General Matrix Elements in Spherical Symmetry<a class="headerlink" href="#general-matrix-elements-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Spherical symmetry is this particular choice of a basis:</p>
 <div class="math">
-<p><img src="../_images/math/0d52fcbe45a20ed5bc9de0991e69a528f4fe2889.svg" alt="\phi_\mu({\bf x}) =
+<p><img src="../_images/math/eb8560d1c6e10622c69de02e55831c98d94dd319.svg" alt="\phi_\mu({\bf x}) =
 \phi_{n_\mu l_\mu m_\mu}({\bf x}) =
     {\phi_{n_\mu l_\mu}(r)\over r} Y_{l_\mu m_\mu}(\Omega)"/></p>
 </div><p>It can be shown that the solutions are of the form:</p>
 <div class="math">
-<p><img src="../_images/math/a35f11e0409aa8855a421ec3eb28e7217853f4c9.svg" alt="\psi_i({\bf x}) = \psi_{nlm}({\bf x}) = {P_{n l}(r)\over r} Y_{l m}(\Omega)"/></p>
+<p><img src="../_images/math/d65101658678b7e7c58d268fc32ec8fba83a0ad4.svg" alt="\psi_i({\bf x}) = \psi_{nlm}({\bf x}) = {P_{n l}(r)\over r} Y_{l m}(\Omega)"/></p>
 </div><p>We can now write:</p>
 <div class="math">
-<p><img src="../_images/math/2f78ed78f636ffb6b5e8fe775dc678c3e5d9c656.svg" alt="\psi_i({\bf x}) = \sum_\nu C_{\nu i} \phi_\nu({\bf x})
+<p><img src="../_images/math/f74d8371caf729f96c10b7d930f87dd72772b5b4.svg" alt="\psi_i({\bf x}) = \sum_\nu C_{\nu i} \phi_\nu({\bf x})
 
 \int \phi_\mu({\bf x})\psi_i({\bf x}) \d^3 x
     = \sum_\nu S_{\mu\nu} C_{\nu i}
@@ -626,7 +629,7 @@ symmetries are missing, i.e.
     = C_{n_\nu l_\nu m_\nu; n l m}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/0c79e07300ddac5143f1392a7537cdff19ec0016.svg" alt="C_{n_\nu n}^l =
+<p><img src="../_images/math/a1ed3144e705ba4c8ef97f916541fa7db0dbc435.svg" alt="C_{n_\nu n}^l =
 \sum_{n_\mu}
     \left(S_{n_\mu n_\nu}^{l}\right)^{-1}
     \int
@@ -634,7 +637,7 @@ symmetries are missing, i.e.
         P_{n l}(r) \d r"/></p>
 </div><p>Also we get:</p>
 <div class="math">
-<p><img src="../_images/math/37ac0acd55051136db886f3babbc65b896d83bf3.svg" alt="\psi_{nlm}({\bf x}) = \sum_\nu
+<p><img src="../_images/math/dc2b5887d181b43e75cf7f1ca3b9548bf251ca6c.svg" alt="\psi_{nlm}({\bf x}) = \sum_\nu
     C_{n_\nu l_\nu m_\nu; n l m} \phi_{n_\nu l_\nu m_\nu}({\bf x})
 
 {P_{n l}(r)\over r} Y_{l m}(\Omega) = \sum_\nu
@@ -651,12 +654,12 @@ symmetries are missing, i.e.
         {\phi_{n_\nu l}(r)\over r} Y_{l m}(\Omega)"/></p>
 </div><p>From which it follows:</p>
 <div class="math">
-<p><img src="../_images/math/b778f3b9ec2e5fe650d0baef5c0b01c8481c8f39.svg" alt="P_{n l}(r) = \sum_{n_\nu} C_{n_\nu n}^l \phi_{n_\nu l}(r)"/></p>
-</div><p>The <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> index runs over all combinations of <img class="math" src="../_images/math/767f733ffc4418abff37e9f14e411e5fe85d9511.svg" alt="n l m"/>.
+<p><img src="../_images/math/f953ca89930a128098a1c1d1aab954a611f95aef.svg" alt="P_{n l}(r) = \sum_{n_\nu} C_{n_\nu n}^l \phi_{n_\nu l}(r)"/></p>
+</div><p>The <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/> index runs over all combinations of <img class="math" src="../_images/math/4f2507e97dc013485931a733d86dc7c70b8884a0.svg" alt="n l m"/>.
 In particular, here is an example of one possible way to index the
-basis of 12 radial functions for each <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>:</p>
+basis of 12 radial functions for each <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>:</p>
 <div class="math">
-<p><img src="../_images/math/d9b4d4fe21c20820a8b1f755dc55daa35b7e9a58.svg" alt="\begin{array}{r|rrr}
+<p><img src="../_images/math/acfa35f9c231a5ab4cc1c12737941363ab1d0d08.svg" alt="\begin{array}{r|rrr}
     \mu &amp; n_\mu &amp; l_\mu &amp; m_\mu \\
     \hline
     1 &amp; 1 &amp; 0 &amp; 0 \\
@@ -684,15 +687,15 @@ basis of 12 radial functions for each <img class="math" src="../_images/math/b97
     51 &amp; 3 &amp; 2 &amp; -2 \\
     \cdots &amp; \cdots &amp; &amp;  \\
 \end{array}"/></p>
-</div><p>So the radial index <img class="math" src="../_images/math/edd054bdabd633774609d03f58c0767fdf76569a.svg" alt="n_\mu"/> always starts from 1 for each <img class="math" src="../_images/math/f0e3533ce4ce3a8d0fdc00b06c05ada7b584c52b.svg" alt="l_\mu"/>.</p>
-<div class="section" id="overlap">
+</div><p>So the radial index <img class="math" src="../_images/math/c2c275c0a5496e5c35d6385dba424bdcccaf2c99.svg" alt="n_\mu"/> always starts from 1 for each <img class="math" src="../_images/math/ec317170095a938339a47612888aa9c991a38c71.svg" alt="l_\mu"/>.</p>
+<section id="overlap">
 <h3>Overlap<a class="headerlink" href="#overlap" title="Permalink to this headline">¶</a></h3>
 <p>The overlap matrix element</p>
 <div class="math">
-<p><img src="../_images/math/2f77cd75d7a235b4bd3f5cc54e4828bf20b5a789.svg" alt="S_{\mu\nu} = \int \phi_\mu^*({\bf x}) \phi_\nu({\bf x})\d^3 x"/></p>
+<p><img src="../_images/math/3f44759d9efa0dbe8b9d43ca60dfe3ad7824054d.svg" alt="S_{\mu\nu} = \int \phi_\mu^*({\bf x}) \phi_\nu({\bf x})\d^3 x"/></p>
 </div><p>becomes</p>
 <div class="math">
-<p><img src="../_images/math/78b1419b69985695d4a86b6a086036639af86552.svg" alt="S_{\mu\nu} = S_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
+<p><img src="../_images/math/6c814276a934e2520aab8b3e6209be93d822781b.svg" alt="S_{\mu\nu} = S_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
     = \int {\phi_{n_\mu l_\mu}(r)\over r}
     Y_{l_\mu m_\mu}^*(\Omega)
     {\phi_{n_\nu l_\nu}(r)\over r} Y_{l_\nu m_\nu}(\Omega)
@@ -707,17 +710,17 @@ basis of 12 radial functions for each <img class="math" src="../_images/math/b97
 = \delta_{l_\mu l_\nu} \delta_{m_\mu m_\nu} S^{l_\mu}_{n_\mu n_\nu}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/2a3588b6ad7b2dccc07c64f9799d6a51745c1e6a.svg" alt="S^l_{n_\mu n_\nu} = \int_0^\infty \phi_{n_\mu l}(r) \phi_{n_\nu l}(r) \d r"/></p>
-</div></div>
-<div class="section" id="potential">
+<p><img src="../_images/math/4ace38831d7afdddc78d7e8d5a4f44de44a250e8.svg" alt="S^l_{n_\mu n_\nu} = \int_0^\infty \phi_{n_\mu l}(r) \phi_{n_\nu l}(r) \d r"/></p>
+</div></section>
+<section id="potential">
 <h3>Potential<a class="headerlink" href="#potential" title="Permalink to this headline">¶</a></h3>
 <p>The potential matrix element</p>
 <div class="math">
-<p><img src="../_images/math/b2c2af7e4a2a698ec31a41f1680c559d9ec2f305.svg" alt="V_{\mu\nu} = \int \phi_\mu^*({\bf x}) \left(-{Z\over |{\bf x}|}\right)
+<p><img src="../_images/math/2e007bf3eb0196e79e997cf760789c19c81d90ed.svg" alt="V_{\mu\nu} = \int \phi_\mu^*({\bf x}) \left(-{Z\over |{\bf x}|}\right)
     \phi_\nu({\bf x})\d^3 x"/></p>
 </div><p>becomes</p>
 <div class="math">
-<p><img src="../_images/math/e2caec6a79311313f6542ada2c23b38246dbcce0.svg" alt="V_{\mu\nu} =
+<p><img src="../_images/math/6cdb011f57dac4f74d93afc64ac69354af60a50c.svg" alt="V_{\mu\nu} =
 V_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu} = \int {\phi_{n_\mu l_\mu}(r)
     \over r}
     Y_{l_\mu m_\mu}^*(\Omega)
@@ -738,19 +741,19 @@ V_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu} = \int {\phi_{n_\mu l_\mu}(r)
 = \delta_{l_\mu l_\nu} \delta_{m_\mu m_\nu} V^{l_\mu}_{n_\mu n_\nu}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/974ab4b42a4abc3b2bc1bfa735b2bb20ccbdc721.svg" alt="V^l_{n_\mu n_\nu} = \int_0^\infty \phi_{n_\mu l}(r)
+<p><img src="../_images/math/981768eaf7dda895ca9b1f876e004feeb95a4720.svg" alt="V^l_{n_\mu n_\nu} = \int_0^\infty \phi_{n_\mu l}(r)
     \left(-{Z\over r}\right) \phi_{n_\nu l}(r) \d r"/></p>
-</div></div>
-<div class="section" id="kinetic">
+</div></section>
+<section id="kinetic">
 <h3>Kinetic<a class="headerlink" href="#kinetic" title="Permalink to this headline">¶</a></h3>
 <p>The kinetic matrix element</p>
 <div class="math">
-<p><img src="../_images/math/03cf4b8d24971c2011a2bab213f19c96fe12b791.svg" alt="T_{\mu\nu} =
+<p><img src="../_images/math/f363d7e0c844ef4d6d59342a748956d0b7eaf138.svg" alt="T_{\mu\nu} =
         \int \phi_\mu^*({\bf x}) \left(-\half \nabla^2 \right)
         \phi_\nu({\bf x}) \d^3 x"/></p>
 </div><p>becomes</p>
 <div class="math">
-<p><img src="../_images/math/5fe8b445159f8ff079de4cbac685a574a9aed493.svg" alt="T_{\mu\nu} =
+<p><img src="../_images/math/ce14fc1b53c1c5a58a24635ad6d54d61c390e37e.svg" alt="T_{\mu\nu} =
 T_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
     = \int {\phi_{n_\mu l_\mu}(r)\over r} Y_{l_\mu m_\mu}^*(\Omega)
         \left(\left(-\half \nabla^2\right)
@@ -774,7 +777,7 @@ T_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
     = \delta_{l_\mu l_\nu} \delta_{m_\mu m_\nu} T^{l_\mu}_{\mu\nu}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/4e959c0709e6d57fbde0a89a0bb5ae85bd28afff.svg" alt="T^l_{n_\mu n_\nu} =
+<p><img src="../_images/math/7df69a1dd77eee63638030645afa8977a0da283c.svg" alt="T^l_{n_\mu n_\nu} =
     \int_0^\infty {\phi_{n_\mu l}(r)\over r}
         \left(\left(-\half {\partial^2\over\partial r^2}
             -{1\over r}{\partial\over\partial r}
@@ -798,19 +801,19 @@ T_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
     = \int_0^\infty \left( \half \phi_{n_\mu l}'(r) \phi_{n_\nu l}'(r)
             +\phi_{n_\mu l}(r) {l (l+1)\over 2 r^2} \phi_{n_\nu l}(r)\right)
         \d r"/></p>
-</div></div>
-<div class="section" id="g-matrix">
+</div></section>
+<section id="g-matrix">
 <h3>G Matrix<a class="headerlink" href="#g-matrix" title="Permalink to this headline">¶</a></h3>
 <p>The G matrix is given by:</p>
 <div class="math">
-<p><img src="../_images/math/e40ad57f49ce0f585f3d500cb061177dd876b81d.svg" alt="G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
+<p><img src="../_images/math/4763203facb9d8de06359973c0f0910c41fe782b.svg" alt="G_{\mu\nu} = \sum_{\alpha\beta} P_{\alpha\beta}
         \left(\braket{\mu \beta|\nu \alpha}
             -\half \braket{\mu \beta|\alpha \nu}\right)
     = \sum_{\alpha\beta} P_{\alpha\beta}
         \left((\mu \nu|\beta \alpha) -\half (\mu \alpha|\beta \nu)\right)"/></p>
 </div><p>Now we use:</p>
 <div class="math">
-<p><img src="../_images/math/7d0a84baf2d94450bdf97cf916489c4ddbde779b.svg" alt="\braket{\alpha \beta | \gamma \delta}
+<p><img src="../_images/math/0d6cb3f0d4105318d8b7145447a3a32b93f85266.svg" alt="\braket{\alpha \beta | \gamma \delta}
 =
 \braket{n_\alpha l_\alpha m_\alpha \ n_\beta l_\beta m_\beta |
 n_\gamma l_\gamma m_\gamma \ n_\delta l_\delta m_\delta}
@@ -830,7 +833,7 @@ R^k(n_\alpha l_\alpha, n_\beta l_\beta, n_\gamma l_\gamma,
     n_\delta l_\delta)"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/fd0b8074cf278ae0e41d9d3ca4a0d7d07421ad69.svg" alt="P_{\alpha\beta} = 2 \sum_{i} C_{\alpha i} C_{\beta i}
+<p><img src="../_images/math/f28942870e4296880e0b7e0aabe5cceb0a35f7ad.svg" alt="P_{\alpha\beta} = 2 \sum_{i} C_{\alpha i} C_{\beta i}
 
 P_{n_\alpha l_\alpha m_\alpha; n_\beta l_\beta m_\beta}
     = 2 \sum_{i}
@@ -852,15 +855,15 @@ P_{n_\alpha l_\alpha m_\alpha; n_\beta l_\beta m_\beta}
         P^{l_\alpha}_{n_\alpha n_\beta}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/75510529305753ff272d07e9ade80dddbf11526b.svg" alt="P^l_{n_\alpha n_\beta} = 2 \sum_{n_i} C_{n_\alpha n_i}^l C_{n_\beta n_i}^l"/></p>
-</div><p>Where the sum over all occupied orbitals <img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/> can be written as:</p>
+<p><img src="../_images/math/82fdc916db01521e9d64c74361e21b97a6d340ed.svg" alt="P^l_{n_\alpha n_\beta} = 2 \sum_{n_i} C_{n_\alpha n_i}^l C_{n_\beta n_i}^l"/></p>
+</div><p>Where the sum over all occupied orbitals <img class="math" src="../_images/math/26e02951ffb851bd3a9b32dd1e10e6de935a0c7f.svg" alt="i"/> can be written as:</p>
 <div class="math">
-<p><img src="../_images/math/e79a1494f10ebb2ad0088ad6d3d4b92708be4df4.svg" alt="\sum_i = \sum_{n_i l_i m_i} = \sum_{l=0}^\infty \sum_{m_l=-l}^l
+<p><img src="../_images/math/1bb21ca965de2778eaf751cd799f887a7ac388dd.svg" alt="\sum_i = \sum_{n_i l_i m_i} = \sum_{l=0}^\infty \sum_{m_l=-l}^l
     \sum_{n_l=1}^\infty"/></p>
-</div><p>Where the sum over <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> is the outer sum, both <img class="math" src="../_images/math/4222d9e1010de34d39b2ca83a61b0271520f2650.svg" alt="m=m_l"/> and <img class="math" src="../_images/math/1ec03b5897bcd6e3b1630a0b99f9e5368fc858d8.svg" alt="n=n_l"/> depend on <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>.
+</div><p>Where the sum over <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> is the outer sum, both <img class="math" src="../_images/math/345c5b2c2d545e22603ee1d5358815115abe42fd.svg" alt="m=m_l"/> and <img class="math" src="../_images/math/b42344d95b591943870dbf1aef7af470ee341d5e.svg" alt="n=n_l"/> depend on <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>.
 We get:</p>
 <div class="math">
-<p><img src="../_images/math/76c2f4c70acd178e77ffeb4cbd19fb47bb46ddd0.svg" alt="G_{\mu\nu} =
+<p><img src="../_images/math/8ab71f2c1d2a04ef43944c030026e2ca9018d41e.svg" alt="G_{\mu\nu} =
 G_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu} =
         \sum_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
         P_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
@@ -870,7 +873,7 @@ G_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu} =
 </div><p>The first part is the direct term, the second part the exchange term.
 Let’s treat the direct term first:</p>
 <div class="math">
-<p><img src="../_images/math/2cb2b993b6ab6168dc71ca24945b2795c1d2a3d4.svg" alt="J_{\mu\nu} = \sum_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
+<p><img src="../_images/math/a764cc59e5da81ebb400ce306e62632a76ad90cb.svg" alt="J_{\mu\nu} = \sum_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
         P_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
         \braket{\mu \beta|\nu \alpha} =
 
@@ -927,7 +930,7 @@ R^0(n_\mu l_\mu, n_\beta l, n_\nu l_\nu, n_\alpha l) =
 R^0(n_\mu l_\mu, n_\beta l, n_\nu l_\mu, n_\alpha l)"/></p>
 </div><p>For the exchange term we get:</p>
 <div class="math">
-<p><img src="../_images/math/ca6fc7df929d192f553fc8e38a101531f764745a.svg" alt="K_{\mu\nu} = \half \sum_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
+<p><img src="../_images/math/74915a7ed4224747edf0765c6c43c353ee93f2bf.svg" alt="K_{\mu\nu} = \half \sum_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
         P_{n_\alpha l_\alpha m_\alpha n_\beta l_\beta m_\beta}
         \braket{\mu \beta|\alpha \nu} =
 
@@ -983,9 +986,9 @@ c^k(l_\mu, m_\mu, l, m)
 c^k(l_\nu, m_\mu, l, m)
 
 R^k(n_\mu l_\mu, n_\beta l, n_\alpha l, n_\nu l_\nu)"/></p>
-</div><p>For <img class="math" src="../_images/math/40d97e887a0e00dd3b2ec90c36f61bdf6d4885bb.svg" alt="l_\mu = l_\nu"/> this can be written as:</p>
+</div><p>For <img class="math" src="../_images/math/3591cc5c788b08b5dcb992589f2cf20525829b9a.svg" alt="l_\mu = l_\nu"/> this can be written as:</p>
 <div class="math">
-<p><img src="../_images/math/56c879d4827e241f269fb397e8258c868239e909.svg" alt="K_{\mu\nu} = \half \delta_{l_\mu l_\nu} \delta_{m_\mu m_\nu}
+<p><img src="../_images/math/7b89a36378ddbf29cbfeb789dcc437422c62c3bf.svg" alt="K_{\mu\nu} = \half \delta_{l_\mu l_\nu} \delta_{m_\mu m_\nu}
 \sum_{n_\alpha n_\beta} \sum_{l m}
     P^l_{n_\alpha n_\beta}
 \sum_{k=\max(| l_\mu-l|,
@@ -1016,7 +1019,7 @@ R^k(n_\mu l_\mu, n_\beta l, n_\alpha l, n_\nu l_\mu) =
 R^k(n_\mu l_\mu, n_\beta l, n_\alpha l, n_\nu l_\mu)"/></p>
 </div><p>All together we get:</p>
 <div class="math">
-<p><img src="../_images/math/d77660df5b0ebf93e4becfe56a02c68e234e2b46.svg" alt="G_{\mu\nu}
+<p><img src="../_images/math/af84402786fa07230e345ea4e2fe6784e9e6b2e9.svg" alt="G_{\mu\nu}
 = \delta_{l_\mu l_\nu} \delta_{m_\mu  m_\nu}
  \sum_{l}
 (2l+1)\sum_{n_\alpha n_\beta}
@@ -1033,7 +1036,7 @@ R^k(n_\mu l_\mu, n_\beta l, n_\alpha l, n_\nu l_\mu) \right) =
 = \delta_{l_\mu l_\nu} \delta_{m_\mu  m_\nu} G^{l_\mu}_{n_\mu n_\nu}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/706347a163eebd75c8316e2c4573bc299bff1fa9.svg" alt="G^{l}_{n_\mu n_\nu} =
+<p><img src="../_images/math/da5bc3e71752b4c9a0fc79d0b622af6118116c8f.svg" alt="G^{l}_{n_\mu n_\nu} =
  \sum_{l'}
 (2l'+1)\sum_{n_\alpha n_\beta}
     P^{l'}_{n_\alpha n_\beta}
@@ -1045,9 +1048,9 @@ R^k(n_\mu l_\mu, n_\beta l, n_\alpha l, n_\nu l_\mu) \right) =
 \half
 \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
 R^k(n_\mu l, n_\beta l', n_\alpha l', n_\nu l) \right)"/></p>
-</div><p>Note: performing the sum over <img class="math" src="../_images/math/2814d005eb03e707a0fcf18f2bb28a6586a5604b.svg" alt="n_\alpha"/> and <img class="math" src="../_images/math/9d25605162aba445bf88ed2e828e02b0ccd7d8b9.svg" alt="n_\beta"/> we get:</p>
+</div><p>Note: performing the sum over <img class="math" src="../_images/math/cef882756ca890e863d137591ac1fe174ed8fca0.svg" alt="n_\alpha"/> and <img class="math" src="../_images/math/fcc2b7ca18dfd2eba6c6b05f1d5126b1867c595a.svg" alt="n_\beta"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/c498911356c627e6799ebce0fefa404b28991d6d.svg" alt="G^{l}_{n_\mu n_\nu} =
+<p><img src="../_images/math/fe8ec5df14aa587903627daf20310ffcebc21c64.svg" alt="G^{l}_{n_\mu n_\nu} =
  \sum_{l'}
 2(2l'+1)\sum_{n'}\sum_{n_\alpha n_\beta}
     C^{l'}_{n_\alpha n'}C^{l'}_{n_\beta n'}
@@ -1071,12 +1074,12 @@ R^k(n_\mu l, n_\beta l', n_\alpha l', n_\nu l) \right) =
 \half
 \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
 R^k(n_\mu l, n' l', n' l', n_\nu l) \right)"/></p>
-</div></div>
-<div class="section" id="radial-roothaan-equations">
+</div></section>
+<section id="radial-roothaan-equations">
 <h3>Radial Roothaan Equations<a class="headerlink" href="#radial-roothaan-equations" title="Permalink to this headline">¶</a></h3>
 <p>The Roothaan equations are:</p>
 <div class="math">
-<p><img src="../_images/math/f2b0f98e62c79754abe662a3de88b0df62da4d2b.svg" alt="\sum_\nu (T + V + G)_{\mu\nu} C_{\nu i} = \epsilon_i \sum_\nu S_{\mu\nu}
+<p><img src="../_images/math/0cced22bfc0c3fc5e7de0be711e83940d372fd2c.svg" alt="\sum_\nu (T + V + G)_{\mu\nu} C_{\nu i} = \epsilon_i \sum_\nu S_{\mu\nu}
     C_{\nu i}
 
 \sum_\nu (T + V + G)_{n_\mu l_\mu m_\mu n_\nu l_\nu m_\nu}
@@ -1105,10 +1108,10 @@ R^k(n_\mu l, n' l', n' l', n_\nu l) \right)"/></p>
         \sum_{n_\nu}
         S_{n_\mu n_\nu}^{l_i}
     C_{n_\nu n_i}^{l_i}"/></p>
-</div><p>The eigenvalues will be degenerate with respect to <img class="math" src="../_images/math/e6a298a1b0cf97636d467dad02fcd9a496cea4ac.svg" alt="m_i"/>
-and so the radial Roothaan equations are to be solved for each <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>:</p>
+</div><p>The eigenvalues will be degenerate with respect to <img class="math" src="../_images/math/0488f1f58eaa851804e195f61da56ffdb2bf88cd.svg" alt="m_i"/>
+and so the radial Roothaan equations are to be solved for each <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>:</p>
 <div class="math">
-<p><img src="../_images/math/85c2bf7897863a40c6e1e873d74292e4ba885ec5.svg" alt="\sum_{n_\nu}
+<p><img src="../_images/math/31af2fa1d8e5d60b4b2bbab257d12311e451a72d.svg" alt="\sum_{n_\nu}
     (T + V + G)_{n_\mu n_\nu}^l
     C_{n_\nu n_i}^l =
     \epsilon_{n_i l}
@@ -1117,7 +1120,7 @@ and so the radial Roothaan equations are to be solved for each <img class="math"
     C_{n_\nu n_i}^l"/></p>
 </div><p>The total energy is:</p>
 <div class="math">
-<p><img src="../_images/math/c2d3e845b7dbddc563354b2a22343f2eafe8b91b.svg" alt="E = \half \sum_{\mu\nu} P_{\nu\mu} (H_{\mu\nu}^{\mbox{core}}
+<p><img src="../_images/math/818a0c81c32857a0e9be7cee174a0584682ae875.svg" alt="E = \half \sum_{\mu\nu} P_{\nu\mu} (H_{\mu\nu}^{\mbox{core}}
     +F_{\mu\nu}) =
 
 = \sum_{\mu\nu} P_{\nu\mu} (F_{\mu\nu} - \half G_{\mu\nu}) =
@@ -1170,12 +1173,12 @@ R^k(n_\mu l, n' l', n' l', n_\nu l) \right) \right) =
              \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
             R^k(n l, n' l', n' l', n l) \right)
     \right)"/></p>
-</div></div>
-<div class="section" id="two-particle">
+</div></section>
+<section id="two-particle">
 <h3>Two particle<a class="headerlink" href="#two-particle" title="Permalink to this headline">¶</a></h3>
-<p>We use the following functions for <img class="math" src="../_images/math/618880262d4d186b3ab349b49a37b3d500f34344.svg" alt="\psi"/>:</p>
+<p>We use the following functions for <img class="math" src="../_images/math/324a74caf91c8857598cd0ad4b7cae90eccaffb1.svg" alt="\psi"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9500f45a2568a5e2431b0623ca658bae76a5a36d.svg" alt="\psi_i({\bf x}) = {P_{n_1l_1}(r)\over r} Y_{l_1m_1}(\Omega)
+<p><img src="../_images/math/35790c02c2046b011649a5d82190e09c3ae35db4.svg" alt="\psi_i({\bf x}) = {P_{n_1l_1}(r)\over r} Y_{l_1m_1}(\Omega)
 
 \psi_j({\bf x}) = {P_{n_1'l_1'}(r)\over r} Y_{l_1'm_1'}(\Omega)
 
@@ -1184,12 +1187,12 @@ R^k(n_\mu l, n' l', n' l', n_\nu l) \right) \right) =
 \psi_l({\bf x}) = {P_{n_2'l_2'}(r)\over r} Y_{l_2'm_2'}(\Omega)"/></p>
 </div><p>And the multipole expansion:</p>
 <div class="math">
-<p><img src="../_images/math/11f8af5103995762af34062335ddfd5fc46661d8.svg" alt="{1\over |{\bf x}-{\bf x}'|}
+<p><img src="../_images/math/f321dddf72a280fb1142508bdc9b03eee8bcbf14.svg" alt="{1\over |{\bf x}-{\bf x}'|}
     = \sum_{k,q}{r_{&lt;}^k\over r_{&gt;}^{k+1}}
         {4\pi\over 2k+1}Y_{kq}(\Omega)Y_{kq}^*(\Omega')"/></p>
 </div><p>And we get:</p>
 <div class="math">
-<p><img src="../_images/math/38cc92d295844c7afb0819f4cf2ad4fa63e2dc35.svg" alt="(ij|kl) = \braket{ik|jl} = (1 1' | 2 2') = \braket{1 2 | 1' 2'} =
+<p><img src="../_images/math/e541cd62fa03603aaedfba8ec75613a24666e32b.svg" alt="(ij|kl) = \braket{ik|jl} = (1 1' | 2 2') = \braket{1 2 | 1' 2'} =
 
 = \braket{l_1 m_1 l_2 m_2 |
     {1\over |{\bf x} - {\bf x}'|} | l_1' m_1' l_2' m_2'} =
@@ -1307,24 +1310,24 @@ R^k(n_\mu l, n' l', n' l', n_\nu l) \right) \right) =
     P_{n_2l_2}(r')
     P_{n_2'l_2'}(r')
     \d r \d r'"/></p>
-</div><p>In the last step we used the fact that the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols are zero unless
-<img class="math" src="../_images/math/fb051c05ceaa8195f652143df546eb91253f39ab.svg" alt="-m_1+m_1'+q=0"/>
-and <img class="math" src="../_images/math/d2e5303d0c73840d97cc69183ca7c8f6b5abad32.svg" alt="-m_2+m_2'-q=0"/>, from which it follows
-that <img class="math" src="../_images/math/1a15cb14d32044fffa0448905871b04c3a3a5f29.svg" alt="q=m_1-m_1'=-m_2+m_2'"/> and so one of the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols is zero
-unless <img class="math" src="../_images/math/390ed9506fc35519c1f023541887b1eb07831840.svg" alt="m_1+m_2-m_1'-m_2'=0"/>, which is expressed by
-<img class="math" src="../_images/math/81ffca1e43eaa02a19518ee5bad4df5af399d7a5.svg" alt="\delta_{m_1+m_2- m_1'-m_2', 0}"/>.
-Given this condition, the sum over <img class="math" src="../_images/math/b3b33120dca43a6a9be28a013eb95f50583e5f5c.svg" alt="q"/> must be such
-that one <img class="math" src="../_images/math/b3b33120dca43a6a9be28a013eb95f50583e5f5c.svg" alt="q"/> is equal to <img class="math" src="../_images/math/2a873f059dd854e7f332b1c2776514b1ddab797c.svg" alt="m_1-m_1'=-m_2+m_2'"/>, which means that
-<img class="math" src="../_images/math/e8ce75a53d9df16a472786c019c95d56b5c68472.svg" alt="k \ge |m_1 - m_1'| = |m_2 - m_2'|"/> otherwise the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols will be zero.
-Finally, <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> must also satisfy the conditions
-<img class="math" src="../_images/math/0ea46bafaadc167440f5ab9a71e25f5d629d4c86.svg" alt="|l_1-l_1'| \le k \le l_1+l_1'"/> and <img class="math" src="../_images/math/5b00ec811699b45adbf664c9c78d2df156bb7fc5.svg" alt="|l_2-l_2'| \le k \le l_2+l_2'"/>.
+</div><p>In the last step we used the fact that the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols are zero unless
+<img class="math" src="../_images/math/f11d22537afbe55e976265f592c5ac9204a2d28a.svg" alt="-m_1+m_1'+q=0"/>
+and <img class="math" src="../_images/math/3895cead1112ebb7b4e186f78356966ec88c6300.svg" alt="-m_2+m_2'-q=0"/>, from which it follows
+that <img class="math" src="../_images/math/324ffbf83df6436089a632b4292f3fdd696fca0d.svg" alt="q=m_1-m_1'=-m_2+m_2'"/> and so one of the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols is zero
+unless <img class="math" src="../_images/math/d6100fed6130f773f29ca3283c290b3f87ee94cc.svg" alt="m_1+m_2-m_1'-m_2'=0"/>, which is expressed by
+<img class="math" src="../_images/math/c8b2f31e6df5ae6047279093f3b73b9dc125a5e5.svg" alt="\delta_{m_1+m_2- m_1'-m_2', 0}"/>.
+Given this condition, the sum over <img class="math" src="../_images/math/4fe2c00f66c77092e4bfb2d1b19fb0e20c404322.svg" alt="q"/> must be such
+that one <img class="math" src="../_images/math/4fe2c00f66c77092e4bfb2d1b19fb0e20c404322.svg" alt="q"/> is equal to <img class="math" src="../_images/math/2a436570f72cdebafe64f1a9e45f22a2f7157ad6.svg" alt="m_1-m_1'=-m_2+m_2'"/>, which means that
+<img class="math" src="../_images/math/0b96ca5fad000642c000bd5103bcca350af4ba9d.svg" alt="k \ge |m_1 - m_1'| = |m_2 - m_2'|"/> otherwise the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols will be zero.
+Finally, <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> must also satisfy the conditions
+<img class="math" src="../_images/math/ebf83dbc321381c1d4b11fe7a078b4f02c66c941.svg" alt="|l_1-l_1'| \le k \le l_1+l_1'"/> and <img class="math" src="../_images/math/de12b4f76da6d2390bc48cce4b6242b5f66205e0.svg" alt="|l_2-l_2'| \le k \le l_2+l_2'"/>.
 The sign factor
-<img class="math" src="../_images/math/efbe90cfc1edce5cfe5c022f3638945afe1eba79.svg" alt="(-1)^{m_1+m_2+q} = (-1)^{m_1+m_2+m_1-m_1'} =(-1)^{m_1+m_2-m_2+m_2'}"/>
-is equal to both <img class="math" src="../_images/math/694aeaebf503189d3a630850386756d3342657c4.svg" alt="(-1)^{m_1+m_2'}"/> and <img class="math" src="../_images/math/8faca1cb8eef89633650157e3bb11be291763c99.svg" alt="(-1)^{m_2-m_1'}"/> so we just used the
+<img class="math" src="../_images/math/f795f2c1feadb7230001c4dbcf5e56fbe87a7707.svg" alt="(-1)^{m_1+m_2+q} = (-1)^{m_1+m_2+m_1-m_1'} =(-1)^{m_1+m_2-m_2+m_2'}"/>
+is equal to both <img class="math" src="../_images/math/6014fb942c76bfd6fe108555486247ed9633695b.svg" alt="(-1)^{m_1+m_2'}"/> and <img class="math" src="../_images/math/ae711e6d0f83a4df7a20d41057a41f9a081542c6.svg" alt="(-1)^{m_2-m_1'}"/> so we just used the
 former.</p>
-<p>We can write this using the <img class="math" src="../_images/math/e6522f6ddaa813ffb67d9fe7468890992174c8bd.svg" alt="c^k"/> symbols as:</p>
+<p>We can write this using the <img class="math" src="../_images/math/ffe0d5354f3f386ad70d4ab01309fb208a12ed29.svg" alt="c^k"/> symbols as:</p>
 <div class="math">
-<p><img src="../_images/math/54b1e856df779af2d944c8eb7fce0918d99b4c82.svg" alt="(ij|kl) =
+<p><img src="../_images/math/b045d90da2471f141b72fa87402d86ebcb14874c.svg" alt="(ij|kl) =
 \sum_{k=\max(| l_1-l_1'| ,| l_2-l_2'| , | m_1-m_1'| )}^{
     \min(l_1+l_1', l_2+l_2')
 }\!\!\!\!\!\!\!\!\!\!\!\!
@@ -1388,7 +1391,7 @@ c^k(l_2', m_2', l_2, m_2)
 R^k(n_1 l_1, n_2 l_2, n_1' l_1', n_2' l_2')"/></p>
 </div><p>We can also couple the angular momenta as follows:</p>
 <div class="math">
-<p><img src="../_images/math/71196323e6eccc6ea1a7048a357e1a0aa09b2171.svg" alt="\ket{l_1 l_2 LM} = \sum_{m_1 m_2} (l_1 m_1 l_2 m_2 | LM)
+<p><img src="../_images/math/9ecf9db80af055db34fccbabdd3a98606b270abf.svg" alt="\ket{l_1 l_2 LM} = \sum_{m_1 m_2} (l_1 m_1 l_2 m_2 | LM)
     \ket{l_1 m_1} \ket{l_2 m_2} =
 
 = \sum_{m_1 m_2} (-1)^{l_1-l_2+M}\sqrt{2L+1}
@@ -1396,7 +1399,7 @@ R^k(n_1 l_1, n_2 l_2, n_1' l_1', n_2' l_2')"/></p>
     \ket{l_1 m_1} \ket{l_2 m_2}"/></p>
 </div><p>and we get for the matrix elements:</p>
 <div class="math">
-<p><img src="../_images/math/7629c269e329db6a320f4e7e42cb8c4c6ce12152.svg" alt="\braket{l_1 l_2 LM  | {1\over |{\bf x} - {\bf x}'|} | l_1' l_2' L' M'} =
+<p><img src="../_images/math/8ed8585abd3baacf60233c8465dc276efd9381c1.svg" alt="\braket{l_1 l_2 LM  | {1\over |{\bf x} - {\bf x}'|} | l_1' l_2' L' M'} =
 
 = \sum_{m_1 m_2} \sum_{m_1' m_2'} (-1)^{l_1-l_2+l_1'-l_2'+M+M'}
     \sqrt{(2L+1)(2L'+1)}
@@ -1508,9 +1511,9 @@ R^k(n_1 l_1, n_2 l_2, n_1' l_1', n_2' l_2')"/></p>
 \begin{pmatrix} l_1 &amp; k &amp; l_1' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
 \begin{pmatrix} l_2 &amp; k &amp; l_2' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
 \begin{Bmatrix} l_1 &amp; l_2 &amp; L \\ l_2' &amp; l_1' &amp; k \end{Bmatrix}"/></p>
-</div><p>Where we used the <img class="math" src="../_images/math/a7cd3552dac031a31eafe9ce22b983e654ec14c1.svg" alt="6j"/> symbol:</p>
+</div><p>Where we used the <img class="math" src="../_images/math/a78f7abb3b1d569a9a27a62ba465a57241ff9346.svg" alt="6j"/> symbol:</p>
 <div class="math">
-<p><img src="../_images/math/598c5b4abe049738f7fc2b720b8b91c9ada8ad03.svg" alt="\begin{Bmatrix} l_1 &amp; l_2 &amp; L \\ l_2' &amp; l_1' &amp; k \end{Bmatrix}
+<p><img src="../_images/math/3241af601e93dc0bc28dc401536bf4cfac54bda7.svg" alt="\begin{Bmatrix} l_1 &amp; l_2 &amp; L \\ l_2' &amp; l_1' &amp; k \end{Bmatrix}
 =\sum_{m_1 m_2 m_1' m_2' M q} (-1)^{l_1+l_2+l_1'+l_2'+L+k
     -m_1-m_2-m_1'-m_2'-M-q}
 
@@ -1537,41 +1540,41 @@ R^k(n_1 l_1, n_2 l_2, n_1' l_1', n_2' l_2')"/></p>
 \begin{pmatrix} l_1 &amp; l_1' &amp; k \\ -m_1 &amp; m_1' &amp; q \end{pmatrix}
 \begin{pmatrix} l_1' &amp; l_2' &amp; L \\ m_1' &amp; +m_2' &amp; -M \end{pmatrix}
 \begin{pmatrix} l_2 &amp; l_2' &amp; k \\ -m_2 &amp; +m_2' &amp; -q \end{pmatrix}"/></p>
-</div><p>Where we have renamed <img class="math" src="../_images/math/956f801b770a6a3e2fa03719119e2c90e1f378bb.svg" alt="-m_2'"/> to <img class="math" src="../_images/math/45249da1837734c604076e9c10d5a8628d0527f9.svg" alt="m_2'"/>.</p>
-</div>
-</div>
-<div class="section" id="slater-type-orbitals-sto">
-<h2>8.11.5. Slater Type Orbitals (STO)<a class="headerlink" href="#slater-type-orbitals-sto" title="Permalink to this headline">¶</a></h2>
+</div><p>Where we have renamed <img class="math" src="../_images/math/fd307532be760ef160eafe7263f2283b8ff30702.svg" alt="-m_2'"/> to <img class="math" src="../_images/math/57b107f325491be88a3ec9ef78b9c7f3b3b53532.svg" alt="m_2'"/>.</p>
+</section>
+</section>
+<section id="slater-type-orbitals-sto">
+<h2><span class="section-number">8.11.5. </span>Slater Type Orbitals (STO)<a class="headerlink" href="#slater-type-orbitals-sto" title="Permalink to this headline">¶</a></h2>
 <p>In this section we express the matrix elements in the STO basis.
 It turns out that all integrals that we need can be expressed in terms
-of the following simple integral (where <img class="math" src="../_images/math/322b5f8a09d4d1b05e8438cd6d716f932d73ad3b.svg" alt="n,\zeta \ge 0"/>):</p>
+of the following simple integral (where <img class="math" src="../_images/math/9fc73705b72b847524337ee163bc88dc277cf96a.svg" alt="n,\zeta \ge 0"/>):</p>
 <div class="math" id="equation-slater-basic">
-<p><span class="eqno">(8.11.5.1)<a class="headerlink" href="#equation-slater-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/749ce0bb21607122dc348cc1b65cc9468329a9ce.svg" alt="\int_0^\infty r^n e^{-\zeta r} \d r
+<p><span class="eqno">(8.11.5.1)<a class="headerlink" href="#equation-slater-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/d7a64a6b14b3f46969e58a3b05e44bd0296e9f01.svg" alt="\int_0^\infty r^n e^{-\zeta r} \d r
     =\int_0^\infty \left(x\over\zeta\right)^n e^{-x} {\d x\over\zeta}
     ={1\over\zeta^{n+1}} \int_0^\infty x^n e^{-x} \d x
     ={\Gamma(n+1)\over\zeta^{n+1}}
     ={n!\over\zeta^{n+1}}"/></p>
-</div><p>The STO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/> is:</p>
+</div><p>The STO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/d856fd22ef2f988fe74c5dd736d64d0ab5e1123e.svg" alt="P(r)"/> is:</p>
 <div class="math" id="equation-sto-p">
-<p><span class="eqno">(8.11.5.2)<a class="headerlink" href="#equation-sto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/574b2a235470fb54c775bf917dead8eb54565269.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r}"/></p>
-</div><p>Where the normalization constant <img class="math" src="../_images/math/a05c95dc1898bb6b4fe1bf1515d5a628ddc02fb6.svg" alt="N_{n\zeta}"/> is such that the STO orbital is
-normalized as the radial wavefunction <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/>:</p>
+<p><span class="eqno">(8.11.5.2)<a class="headerlink" href="#equation-sto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/54d83621842a5b43d3f4993dfac5a32ca268ecc4.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r}"/></p>
+</div><p>Where the normalization constant <img class="math" src="../_images/math/584fb8158a8a738771a4779ac93cbbadd9409ffd.svg" alt="N_{n\zeta}"/> is such that the STO orbital is
+normalized as the radial wavefunction <img class="math" src="../_images/math/d856fd22ef2f988fe74c5dd736d64d0ab5e1123e.svg" alt="P(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/5a4df8e19ada605d62cb2995493a9fac4c037022.svg" alt="1 = \int_0^\infty P_{n\zeta}^2(r) \d r
+<p><img src="../_images/math/f38179b6faf5cf3774029ca162327e64255f3bf3.svg" alt="1 = \int_0^\infty P_{n\zeta}^2(r) \d r
     = N_{n\zeta}^2 \int_0^\infty r^{2n} e^{-2\zeta r} \d r
     = N_{n\zeta}^2 {(2n)!\over (2\zeta)^{2n+1}}"/></p>
 </div><p>from which we get:</p>
 <div class="math">
-<p><img src="../_images/math/ca1a8db9e47967928cd89c409d4293121676048e.svg" alt="N_{n\zeta} = \sqrt{(2\zeta)^{2n+1}\over (2n)!}"/></p>
-</div><p>Note that for <img class="math" src="../_images/math/64579655afce336b43d779ce69db40c431555e94.svg" alt="R(r)={P(r)\over r}"/> we get the following STO basis function:</p>
+<p><img src="../_images/math/b2738d3124936a22ae926ee05c5b5a5eb609789e.svg" alt="N_{n\zeta} = \sqrt{(2\zeta)^{2n+1}\over (2n)!}"/></p>
+</div><p>Note that for <img class="math" src="../_images/math/05342e5435a93b9ceafdc11c8a736c18372c1b50.svg" alt="R(r)={P(r)\over r}"/> we get the following STO basis function:</p>
 <div class="math" id="equation-sto-r">
-<p><span class="eqno">(8.11.5.3)<a class="headerlink" href="#equation-sto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/d37e166f1c61cb88ca8de3ff961b5b136f5d01f6.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r}"/></p>
+<p><span class="eqno">(8.11.5.3)<a class="headerlink" href="#equation-sto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/83835c7aee362a43e87e6ddd46b7d55181d4712c.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r}"/></p>
 </div><p>One uses either <a class="reference internal" href="#equation-sto-p">(8.11.5.2)</a> or <a class="reference internal" href="#equation-sto-r">(8.11.5.3)</a> depending on whether one solves the
-radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> or for <img class="math" src="../_images/math/2ee68628330142c892400d22d22b483f3ae9f890.svg" alt="R={P\over r}"/>.</p>
-<div class="section" id="id1">
+radial Schrödinger equation for <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> or for <img class="math" src="../_images/math/bf9801f06f9e21bbdbe1860c023f27cbb5a0534f.svg" alt="R={P\over r}"/>.</p>
+<section id="id1">
 <h3>Overlap<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/dfac5b0546571f837b0ef1b250f2a45381897cc5.svg" alt="S_{ij} =
+<p><img src="../_images/math/e1fd145ffbdd4d6cb0f1cf04669448a256fa4b8c.svg" alt="S_{ij} =
 \int P_{n_i \zeta_i}(r) P_{n_j \zeta_j}(r) \d r =
 
     = \int
@@ -1585,11 +1588,11 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
 
     = N_{n_i\zeta_i} N_{n_j\zeta_j}
         {(n_i + n_j)! \over  (\zeta_i+\zeta_j)^{n_i+n_j+1}}"/></p>
-</div></div>
-<div class="section" id="id2">
+</div></section>
+<section id="id2">
 <h3>Potential<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/47bcf0c111774cf742747ca541d6a78e8f763b57.svg" alt="V_{ij} =
+<p><img src="../_images/math/28c58795a74973e1400009de3e1771c6a3435bb7.svg" alt="V_{ij} =
 \int P_{n_i\zeta_i}(r) \left(-{Z\over r}\right) P_{n_j\zeta_j}(r) \d r =
 
 = \int
@@ -1604,11 +1607,11 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
 
 = -Z N_{n_i\zeta_i} N_{n_j\zeta_j}
     {(n_i + n_j - 1)! \over  (\zeta_i+\zeta_j)^{n_i+n_j}}"/></p>
-</div></div>
-<div class="section" id="id3">
+</div></section>
+<section id="id3">
 <h3>Kinetic<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/884fbaa9ee3edd223fd2fcb5c6e6709e843186b5.svg" alt="T_{ij} =
+<p><img src="../_images/math/38001589b3d53b9443b7f2e97f729ecf6e346684.svg" alt="T_{ij} =
 \int \left( \half P_{n_i\zeta_i}'(r) P_{n_j\zeta_j}'(r)
         +P_{n_i\zeta_i}(r) {l (l+1)\over 2 r^2} P_{n_j\zeta_j}(r) \right)
     \d r =
@@ -1655,24 +1658,24 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
    +\zeta_i \zeta_j
         {(n_i + n_j    )! \over  (\zeta_i+\zeta_j)^{n_i +n_j + 1}}
         \right)"/></p>
-</div></div>
-<div class="section" id="id4">
+</div></section>
+<section id="id4">
 <h3>Two particle<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>In this section we also need the following integral:</p>
 <div class="math">
-<p><img src="../_images/math/d98c9d48d4a1ab3f032660771dd1e1a209ed684b.svg" alt="\int_u^\infty r^n e^{-\zeta r} \d r
+<p><img src="../_images/math/073c0d26e1965ed5bd4764f7adec0b6c562bb72f.svg" alt="\int_u^\infty r^n e^{-\zeta r} \d r
     = {1\over\zeta^{n+1}} \int_{\zeta u}^\infty x^n e^{-x} \d x
     = {\Gamma(n+1, \zeta u)\over\zeta^{n+1}}
     = {n!\over \zeta^{n+1}}
     e^{-\zeta u} \sum_{\nu=0}^n {u^\nu \zeta^\nu \over \nu!}"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/22b6cec140ec6ebbb8cc52dd52347e115b3308c3.svg" alt="\Gamma(n, x) = \int_x^\infty t^{n-1} e^{-t}\d t
+<p><img src="../_images/math/5338ea7cacaa3cefda665b121232c3179751370c.svg" alt="\Gamma(n, x) = \int_x^\infty t^{n-1} e^{-t}\d t
     = (n-1)! e^{-x} \sum_{\nu=0}^{n-1} {x^\nu\over \nu!}"/></p>
 </div><p>is the incomplete gamma function.</p>
 <p>The Slater integral is</p>
 <div class="math">
-<p><img src="../_images/math/11cbe2a04b3c7fe728de2091d5e9fb9909d6a308.svg" alt="R^k(i, j, k, l) = \int_0^\infty \int_0^\infty
+<p><img src="../_images/math/977422a5505ee1731b6a680465edf757bf6311d0.svg" alt="R^k(i, j, k, l) = \int_0^\infty \int_0^\infty
     {r_&lt;^k\over r_&gt;^{k+1}} P_i(r) P_k(r) P_j(r') P_l(r') \d r \d r' =
 
 = \int_0^\infty \d r \int_0^r \d r'
@@ -1694,10 +1697,10 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
     {r'^k\over r^{k+1}} P_i(r') P_k(r') P_j(r) P_l(r) =
 
 = R^k_\triangle(i, j, k, l) + R^k_\triangle(j, i, l, k)"/></p>
-</div><p>where <img class="math" src="../_images/math/f68fea6d3024a27d70b2e5912b9d4d1cb854474a.svg" alt="R^k_\triangle(i, j, k, l)"/> is the integral over the lower triangle
-(assuming <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> is the <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-axis and <img class="math" src="../_images/math/66efaea0993fa40cf1054f13784a4ce600eebb83.svg" alt="r'"/> is the <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>-axis), that is <img class="math" src="../_images/math/c7ea5f47fe0054e576ca224e59d30305b195e348.svg" alt="r&gt;r'"/>:</p>
+</div><p>where <img class="math" src="../_images/math/9a22e867ccf5b7c1c5fbcc401e0fd07564b41930.svg" alt="R^k_\triangle(i, j, k, l)"/> is the integral over the lower triangle
+(assuming <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/> is the <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>-axis and <img class="math" src="../_images/math/65118ffd20285f35f81407d0883bfd2f28552e60.svg" alt="r'"/> is the <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/>-axis), that is <img class="math" src="../_images/math/e4bb3e4717a2a6e0a61e0168a0cb33440a7ac53e.svg" alt="r&gt;r'"/>:</p>
 <div class="math">
-<p><img src="../_images/math/64aae612555a618032382137eaa99044c845042c.svg" alt="R^k_\triangle(i, j, k, l)
+<p><img src="../_images/math/894b742f0f829b470a4c4168f0ca582b09952b52.svg" alt="R^k_\triangle(i, j, k, l)
     = \int_0^\infty \d r \int_0^{r} \d r'
         {r'^k\over r^{k+1}} P_i(r) P_k(r) P_j(r') P_l(r') =
 
@@ -1733,30 +1736,30 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
             H^k_{ijkl}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/20b78c9e78d885fdd2dcb501b79a7fb588bacbc4.svg" alt="H^k_{ijkl} =
+<p><img src="../_images/math/18f3c023935254a76c73e12f16df7fb15a41e147.svg" alt="H^k_{ijkl} =
             \sum_{\nu=0}^{n_i+n_k-k-1}{
                 (n_j+n_l+k+\nu)! (\zeta_i+\zeta_k)^\nu\over
                 \nu!(\zeta_i+\zeta_j+\zeta_k+\zeta_l)^{n_j+n_l+k+\nu+1}}"/></p>
 </div><p>Much more tedious method is the following:</p>
 <div class="math">
-<p><img src="../_images/math/90621bf6ba7055d1016f4f4ed1ee0058599a15fa.svg" alt="\int_0^u r^n e^{-\zeta r} \d r = \int_0^\infty r^n e^{-\zeta r} \d r
+<p><img src="../_images/math/6894694173ea30df929652c1b6f76b34c8f56646.svg" alt="\int_0^u r^n e^{-\zeta r} \d r = \int_0^\infty r^n e^{-\zeta r} \d r
     -\int_u^\infty r^n e^{-\zeta r} \d r =
 {n!\over \zeta^{n+1}}\left(1-
     e^{-\zeta u} \sum_{\nu=0}^n {u^\nu \zeta^\nu \over \nu!}\right)"/></p>
 </div><p>The Slater integral is given by:</p>
 <div class="math">
-<p><img src="../_images/math/6de2008873d6c2a1c2fd1c216919c4d2704f214d.svg" alt="R^k(i, j, k, l) = \int_0^\infty {r_&lt;^k\over r_&gt;^{k+1}} P_i(r) P_k(r)
+<p><img src="../_images/math/8b5407aca2ea6bf5d9a8f112e209c3f225ecab25.svg" alt="R^k(i, j, k, l) = \int_0^\infty {r_&lt;^k\over r_&gt;^{k+1}} P_i(r) P_k(r)
     P_j(r') P_l(r') \d r \d r' =
 
     = \int_0^\infty P_i(r) P_k(r) {Y^k(P_j P_l, r)\over r} \d r"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/4d0392ba48f7a2009219667fdffaa4b7ed8d0810.svg" alt="Y^k(f(r), r) = r \int_0^\infty {r_&lt;^k\over r_&gt;^{k+1}} f(r') \d r'
+<p><img src="../_images/math/74e8266d85d38d5b4559680d545209b9c900d2de.svg" alt="Y^k(f(r), r) = r \int_0^\infty {r_&lt;^k\over r_&gt;^{k+1}} f(r') \d r'
     = {1\over r^k} \int_0^r r'^k f(r') \d r' + r^{k+1} \int_r^\infty
         {1\over r'^{k+1}} f(r') \d r'"/></p>
 </div><p>and we get:</p>
 <div class="math">
-<p><img src="../_images/math/4d82086667ecbc8acdf284df43bf3d21cb8b31b7.svg" alt="Y^k(P_j(r) P_l(r), r)
+<p><img src="../_images/math/3bd00c936649a455a7e9de7f65a3e6b907313027.svg" alt="Y^k(P_j(r) P_l(r), r)
     = {1\over r^k} \int_0^r r'^k P_j(r') P_l(r') \d r'
         + r^{k+1} \int_r^\infty {1\over r'^{k+1}} P_j(r') P_l(r') \d r' =
 
@@ -1786,7 +1789,7 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
             \sum_{\nu=0}^{n_j+n_l-k-1}{r^\nu(\zeta_j+\zeta_l)^\nu\over \nu!}"/></p>
 </div><p>Putting everything together we get:</p>
 <div class="math">
-<p><img src="../_images/math/a046dc5d9e823078b0431caa1e0c7cc847864ba2.svg" alt="R^k(i, j, k, l)
+<p><img src="../_images/math/62ab00359641be089c188aff09c9ecad37ab5b37.svg" alt="R^k(i, j, k, l)
     = N_{n_i \zeta_i}N_{n_j \zeta_j}N_{n_k \zeta_k}N_{n_l \zeta_l}
         \int_0^\infty
         r^{n_i}e^{-\zeta_i r}
@@ -1865,19 +1868,19 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
         \right)"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/20b78c9e78d885fdd2dcb501b79a7fb588bacbc4.svg" alt="H^k_{ijkl} =
+<p><img src="../_images/math/18f3c023935254a76c73e12f16df7fb15a41e147.svg" alt="H^k_{ijkl} =
             \sum_{\nu=0}^{n_i+n_k-k-1}{
                 (n_j+n_l+k+\nu)! (\zeta_i+\zeta_k)^\nu\over
                 \nu!(\zeta_i+\zeta_j+\zeta_k+\zeta_l)^{n_j+n_l+k+\nu+1}}"/></p>
-</div></div>
-</div>
-<div class="section" id="gaussian-type-orbitals-gto">
-<h2>8.11.6. Gaussian Type Orbitals (GTO)<a class="headerlink" href="#gaussian-type-orbitals-gto" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="gaussian-type-orbitals-gto">
+<h2><span class="section-number">8.11.6. </span>Gaussian Type Orbitals (GTO)<a class="headerlink" href="#gaussian-type-orbitals-gto" title="Permalink to this headline">¶</a></h2>
 <p>In this section we express the matrix elements in the GTO basis.
 It turns out that all integrals that we need can be expressed in terms
-of the following simple integral (where <img class="math" src="../_images/math/322b5f8a09d4d1b05e8438cd6d716f932d73ad3b.svg" alt="n,\zeta \ge 0"/>):</p>
+of the following simple integral (where <img class="math" src="../_images/math/9fc73705b72b847524337ee163bc88dc277cf96a.svg" alt="n,\zeta \ge 0"/>):</p>
 <div class="math" id="equation-gto-basic">
-<p><span class="eqno">(8.11.6.1)<a class="headerlink" href="#equation-gto-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/ae544b414a8e2704ecfa1746ff5d5229c5bfb1fa.svg" alt="\int_0^\infty r^n e^{-\zeta r^2} \d r
+<p><span class="eqno">(8.11.6.1)<a class="headerlink" href="#equation-gto-basic" title="Permalink to this equation">¶</a></span><img src="../_images/math/dde7d97ef076ff975ea63f990783d70d7d13c3d8.svg" alt="\int_0^\infty r^n e^{-\zeta r^2} \d r
     = {1\over\sqrt{\zeta^{n+1}}} \int_0^\infty x^n e^{-x^2} \d x
     = {1\over2\sqrt{\zeta^{n+1}}} \int_0^\infty t^{n-1\over 2} e^{-t} \d t
     = {\Gamma({n+1\over2})\over2 \zeta^{n+1\over2}} =
@@ -1887,30 +1890,30 @@ of the following simple integral (where <img class="math" src="../_images/math/3
     {\left(n-1\over2\right)!\over 2 \sqrt{\zeta^{n+1}}} &amp;
         \text{for odd $n$} \\
     \end{cases}"/></p>
-</div><p>The GTO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/> is:</p>
+</div><p>The GTO basis function for the radial Schrödinger equation for <img class="math" src="../_images/math/d856fd22ef2f988fe74c5dd736d64d0ab5e1123e.svg" alt="P(r)"/> is:</p>
 <div class="math" id="equation-gto-p">
-<p><span class="eqno">(8.11.6.2)<a class="headerlink" href="#equation-gto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/1b81256da3d7ec64ba6cec7eb071c07677d1058c.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r^2}"/></p>
+<p><span class="eqno">(8.11.6.2)<a class="headerlink" href="#equation-gto-p" title="Permalink to this equation">¶</a></span><img src="../_images/math/19e0d3e905d72d96ee8d57d08a9bdbcb3fb4744a.svg" alt="P_{n\zeta}(r) = N_{n\zeta} r^n e^{-\zeta r^2}"/></p>
 </div><p>However, unlike STO, the GTO functions must satisfy the condition
-<img class="math" src="../_images/math/16abee4c212a3876b3fb07eebd97f7891be9b63a.svg" alt="n = l + 2i + 1"/> where <img class="math" src="../_images/math/551aa8d3c2795c2a93f5971bd9e7f9ff7e4dc591.svg" alt="i=0, 1, 2, \dots"/> (this condition is later used
-in <a class="reference internal" href="#equation-gto-basic">(8.11.6.1)</a> to determine whether <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> is even or odd).
-The normalization constant <img class="math" src="../_images/math/a05c95dc1898bb6b4fe1bf1515d5a628ddc02fb6.svg" alt="N_{n\zeta}"/> is such that the GTO orbital is
-normalized as the radial wavefunction <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/>:</p>
+<img class="math" src="../_images/math/23db2d40e29917c767b756f515137590580ef3ee.svg" alt="n = l + 2i + 1"/> where <img class="math" src="../_images/math/4e8fa2aad50f40a85568739f1bb547045fcbd0f0.svg" alt="i=0, 1, 2, \dots"/> (this condition is later used
+in <a class="reference internal" href="#equation-gto-basic">(8.11.6.1)</a> to determine whether <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> is even or odd).
+The normalization constant <img class="math" src="../_images/math/584fb8158a8a738771a4779ac93cbbadd9409ffd.svg" alt="N_{n\zeta}"/> is such that the GTO orbital is
+normalized as the radial wavefunction <img class="math" src="../_images/math/d856fd22ef2f988fe74c5dd736d64d0ab5e1123e.svg" alt="P(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f5e657cd347727c94974aff2e9cf7bec494aebce.svg" alt="1 = \int_0^\infty P_{n\zeta}^2(r) \d r
+<p><img src="../_images/math/f21c7b949ef77f9667c8920b297ce7d260ff80ee.svg" alt="1 = \int_0^\infty P_{n\zeta}^2(r) \d r
     = N_{n\zeta}^2 \int_0^\infty r^{2n} e^{-2\zeta r^2} \d r
     = N_{n\zeta}^2 (2n-1)!! \sqrt{\pi\over 2 (4\zeta)^{2n+1}}"/></p>
 </div><p>from which we get:</p>
 <div class="math">
-<p><img src="../_images/math/dd15687baeedac3e7ec805b0b2b86604e1b51ede.svg" alt="N_{n\zeta} = \sqrt{{1\over (2n-1)!!}\sqrt{2 (4\zeta)^{2n+1}\over\pi}}"/></p>
-</div><p>Note that for <img class="math" src="../_images/math/64579655afce336b43d779ce69db40c431555e94.svg" alt="R(r)={P(r)\over r}"/> we get the following GTO basis function:</p>
+<p><img src="../_images/math/f1ac0121960537c31db71c647594ead1abe325bf.svg" alt="N_{n\zeta} = \sqrt{{1\over (2n-1)!!}\sqrt{2 (4\zeta)^{2n+1}\over\pi}}"/></p>
+</div><p>Note that for <img class="math" src="../_images/math/05342e5435a93b9ceafdc11c8a736c18372c1b50.svg" alt="R(r)={P(r)\over r}"/> we get the following GTO basis function:</p>
 <div class="math" id="equation-gto-r">
-<p><span class="eqno">(8.11.6.3)<a class="headerlink" href="#equation-gto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/4b59101c9f726525b1bc0bcdbaaa8b38383bd729.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r^2}"/></p>
+<p><span class="eqno">(8.11.6.3)<a class="headerlink" href="#equation-gto-r" title="Permalink to this equation">¶</a></span><img src="../_images/math/26385926a971ec930d7ade64ca3045d823f5df2c.svg" alt="R_{n\zeta}(r) = {P_{n\zeta}(r)\over r} = N_{n\zeta} r^{n-1} e^{-\zeta r^2}"/></p>
 </div><p>One uses either <a class="reference internal" href="#equation-sto-p">(8.11.5.2)</a> or <a class="reference internal" href="#equation-sto-r">(8.11.5.3)</a> depending on whether one solves the
-radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> or for <img class="math" src="../_images/math/2ee68628330142c892400d22d22b483f3ae9f890.svg" alt="R={P\over r}"/>.</p>
-<div class="section" id="id5">
+radial Schrödinger equation for <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> or for <img class="math" src="../_images/math/bf9801f06f9e21bbdbe1860c023f27cbb5a0534f.svg" alt="R={P\over r}"/>.</p>
+<section id="id5">
 <h3>Overlap<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/5b1bcefa64e528d1471dfc5d5a97ac0a286cd9ae.svg" alt="S_{ij} = \int P_{n_i \zeta_i}(r) P_{n_j \zeta_j}(r) \d r =
+<p><img src="../_images/math/538736042996abf70cf34d04de956d8a7b96affa.svg" alt="S_{ij} = \int P_{n_i \zeta_i}(r) P_{n_j \zeta_j}(r) \d r =
 
     = \int
         N_{n_i\zeta_i} r^{n_i} e^{-\zeta_i r^2}
@@ -1927,11 +1930,11 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
     = N_{n_i\zeta_i} N_{n_j\zeta_j}
         (n_i + n_j -1)!! \sqrt{\pi\over
             2(2\zeta_i+2\zeta_j)^{n_i+n_j+1}}"/></p>
-</div></div>
-<div class="section" id="id6">
+</div></section>
+<section id="id6">
 <h3>Potential<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/2f626a1ef66ce04ef76cf6b562edab31286c8b53.svg" alt="V_{ij} =
+<p><img src="../_images/math/28d4005ecf7dc48adb124f9d2dc38ef43b131bba.svg" alt="V_{ij} =
 \int P_{n_i\zeta_i}(r) \left(-{Z\over r}\right) P_{n_j\zeta_j}(r) \d r =
 
 = \int
@@ -1951,11 +1954,11 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
 = -Z N_{n_i\zeta_i} N_{n_j\zeta_j}
     {\left(n_i + n_j - 2\over 2\right)! \over
         2\sqrt{(\zeta_i+\zeta_j)^{n_i+n_j}}}"/></p>
-</div></div>
-<div class="section" id="id7">
+</div></section>
+<section id="id7">
 <h3>Kinetic<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/aedd0d039b1f43f605c95e808e1bfb9f589330f8.svg" alt="T_{ij} =
+<p><img src="../_images/math/605dfc7070cf9e0cebb99f338c1aa769ea445091.svg" alt="T_{ij} =
 \int \left( \half P_{n_i\zeta_i}'(r) P_{n_j\zeta_j}'(r)
         +P_{n_i\zeta_i}(r) {l (l+1)\over 2 r^2} P_{n_j\zeta_j}(r) \right)
     \d r =
@@ -2017,23 +2020,23 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
         {(n_i + n_j + 1)!! \sqrt{\pi\over
             2(2\zeta_i+2\zeta_j)^{n_i + n_j + 3}}}
         \Bigg)"/></p>
-</div></div>
-<div class="section" id="id8">
+</div></section>
+<section id="id8">
 <h3>Two particle<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>We will need the following integral:</p>
 <div class="math">
-<p><img src="../_images/math/d869892eae66f9e1a1715eeddc8d3f5d18806fb4.svg" alt="\int_u^\infty r^n e^{-\zeta r^2} \d r
+<p><img src="../_images/math/09fafd588c634478d1a84c588f19a68b842d8eca.svg" alt="\int_u^\infty r^n e^{-\zeta r^2} \d r
     = {1\over2\zeta^{n+1\over2}}
         \int_{\zeta u^2}^\infty x^{n-1\over2} e^{-x} \d x
     = {\Gamma({n+1\over2}, \zeta u^2)\over2\zeta^{n+1\over2}}"/></p>
 </div><p>Just like for STO, we get:</p>
 <div class="math">
-<p><img src="../_images/math/8eb107cc8979752bef23e2edf60962bc74be97a8.svg" alt="R^k(i, j, k, l)
+<p><img src="../_images/math/d1ddfade56c784857d16996e51018f26b7bce8df.svg" alt="R^k(i, j, k, l)
     = R^k_\triangle(i, j, k, l) + R^k_\triangle(j, i, l, k)"/></p>
-</div><p>where <img class="math" src="../_images/math/f68fea6d3024a27d70b2e5912b9d4d1cb854474a.svg" alt="R^k_\triangle(i, j, k, l)"/> is the integral over the lower triangle
-(assuming <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> is the <img class="math" src="../_images/math/633a14fadd0f9ca589e6c3d62b4c1e1e6a0a3dbf.svg" alt="x"/>-axis and <img class="math" src="../_images/math/66efaea0993fa40cf1054f13784a4ce600eebb83.svg" alt="r'"/> is the <img class="math" src="../_images/math/a46ed113fa9363753d8ed0f06488bfd5a51db564.svg" alt="y"/>-axis), that is <img class="math" src="../_images/math/c7ea5f47fe0054e576ca224e59d30305b195e348.svg" alt="r&gt;r'"/>:</p>
+</div><p>where <img class="math" src="../_images/math/9a22e867ccf5b7c1c5fbcc401e0fd07564b41930.svg" alt="R^k_\triangle(i, j, k, l)"/> is the integral over the lower triangle
+(assuming <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/> is the <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/>-axis and <img class="math" src="../_images/math/65118ffd20285f35f81407d0883bfd2f28552e60.svg" alt="r'"/> is the <img class="math" src="../_images/math/b27a6e505ab16a1e68c6ecb7b9c9861c58122ee0.svg" alt="y"/>-axis), that is <img class="math" src="../_images/math/e4bb3e4717a2a6e0a61e0168a0cb33440a7ac53e.svg" alt="r&gt;r'"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f673fb170308f7de567ca8073dd0b9cde8a45cca.svg" alt="R^k_\triangle(i, j, k, l)
+<p><img src="../_images/math/fda5575a26f30dbacca664f94fe8502f6f33609d.svg" alt="R^k_\triangle(i, j, k, l)
     = \int_0^\infty \d r \int_0^{r} \d r'
         {r'^k\over r^{k+1}} P_i(r) P_k(r) P_j(r') P_l(r') =
 
@@ -2083,34 +2086,34 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
         {\sqrt{\pi}\over 2^{p+2}\sqrt{(\zeta_i+\zeta_j+\zeta_k
             +\zeta_l)^{2p+1}}}
             H^k_{ijkl}"/></p>
-</div><p>where <img class="math" src="../_images/math/2e8dd2f553ca36f0e9055099951f48000187dd45.svg" alt="p={n_i+n_j+n_k+n_l-2\over2}"/> and:</p>
+</div><p>where <img class="math" src="../_images/math/5efb9d547138fed736604b18ae67fea3d4582064.svg" alt="p={n_i+n_j+n_k+n_l-2\over2}"/> and:</p>
 <div class="math">
-<p><img src="../_images/math/da74b5544fd9a99a735aa6eef283dd512b24423a.svg" alt="H^k_{ijkl} =
+<p><img src="../_images/math/b253b7b247c1c32db15e5e4446550d27fc26e998.svg" alt="H^k_{ijkl} =
             \sum_{\nu=0}^{n_i+n_k-k\over2}{
                 (2p-2\nu-1)!! \left(n_i+n_k-k\over 2\right)!
                     2^\nu (\zeta_i+\zeta_j+\zeta_k+\zeta_l)^\nu \over
                         (n_i+n_k-\nu)! (\lambda_i + \lambda_k)^{1+\nu}}"/></p>
-</div></div>
-</div>
-<div class="section" id="exchange-integral-in-spherical-symmetry">
-<h2>8.11.7. Exchange Integral in Spherical Symmetry<a class="headerlink" href="#exchange-integral-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="exchange-integral-in-spherical-symmetry">
+<h2><span class="section-number">8.11.7. </span>Exchange Integral in Spherical Symmetry<a class="headerlink" href="#exchange-integral-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Let’s calculate the exchange integral</p>
 <div class="math">
-<p><img src="../_images/math/0448afac81e1fd2fb7cf2332addeebd9ef921960.svg" alt="\int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_j^*({\bf x}')\psi_i({\bf x}')
+<p><img src="../_images/math/9ba290fff03c3a1817a1acbd31ac197de23d4ec0.svg" alt="\int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_j^*({\bf x}')\psi_i({\bf x}')
     \over |{\bf x} - {\bf x}'|} \d^3 x \d^3 x'"/></p>
-</div><p>for the particular choice of the functions <img class="math" src="../_images/math/618880262d4d186b3ab349b49a37b3d500f34344.svg" alt="\psi"/>:</p>
+</div><p>for the particular choice of the functions <img class="math" src="../_images/math/324a74caf91c8857598cd0ad4b7cae90eccaffb1.svg" alt="\psi"/>:</p>
 <div class="math">
-<p><img src="../_images/math/b631a69763fda5c382cf2fa52452998f2264ffcf.svg" alt="\psi_i({\bf x}) = {P_{nl}(r)\over r} Y_{lm}(\Omega)
+<p><img src="../_images/math/449e955f14bb2ab76bfc2af6210741799bd0da96.svg" alt="\psi_i({\bf x}) = {P_{nl}(r)\over r} Y_{lm}(\Omega)
 
 \psi_j({\bf x}) = {P_{n'l'}(r)\over r} Y_{l'm'}(\Omega)"/></p>
 </div><p>We use multipole expansion:</p>
 <div class="math">
-<p><img src="../_images/math/11f8af5103995762af34062335ddfd5fc46661d8.svg" alt="{1\over |{\bf x}-{\bf x}'|}
+<p><img src="../_images/math/f321dddf72a280fb1142508bdc9b03eee8bcbf14.svg" alt="{1\over |{\bf x}-{\bf x}'|}
     = \sum_{k,q}{r_{&lt;}^k\over r_{&gt;}^{k+1}}
         {4\pi\over 2k+1}Y_{kq}(\Omega)Y_{kq}^*(\Omega')"/></p>
 </div><p>And we get:</p>
 <div class="math">
-<p><img src="../_images/math/94f35c1bd7befbb024bbc52a389f950333454e0c.svg" alt="\int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_j^*({\bf x}')\psi_i({\bf x}')
+<p><img src="../_images/math/57062044b8bec770e2a363e304609c244c9c7344.svg" alt="\int {\psi_i^*({\bf x})\psi_j({\bf x})\psi_j^*({\bf x}')\psi_i({\bf x}')
     \over |{\bf x} - {\bf x}'|} \d^3 x \d^3 x' =
 
 = \int
@@ -2213,60 +2216,60 @@ radial Schrödinger equation for <img class="math" src="../_images/math/0c68bacb
     P_{n'l'}(r')
     P_{nl}(r')
     \d r \d r'"/></p>
-</div></div>
-<div class="section" id="occupation-numbers">
-<h2>8.11.8. Occupation Numbers<a class="headerlink" href="#occupation-numbers" title="Permalink to this headline">¶</a></h2>
-<p>We have a sum over <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> electron states like this:</p>
+</div></section>
+<section id="occupation-numbers">
+<h2><span class="section-number">8.11.8. </span>Occupation Numbers<a class="headerlink" href="#occupation-numbers" title="Permalink to this headline">¶</a></h2>
+<p>We have a sum over <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/> electron states like this:</p>
 <div class="math">
-<p><img src="../_images/math/7a39f647c24d24b49035351975f59311875daaf5.svg" alt="\sum_{i=1}^N A_i({\bf x}) = \sum_{nlms} A_{nlms}({\bf x})"/></p>
-</div><p>where <img class="math" src="../_images/math/2aef115117952a0761be4062171bfbe3a1ab5453.svg" alt="A_{nlms}({\bf x})"/> are some functions that depend on the state numbers
+<p><img src="../_images/math/3a28afc613fb42302a50e7a08dd3ec3608ab5666.svg" alt="\sum_{i=1}^N A_i({\bf x}) = \sum_{nlms} A_{nlms}({\bf x})"/></p>
+</div><p>where <img class="math" src="../_images/math/26a3b185cfad636c7525172c8044ad71bd361a96.svg" alt="A_{nlms}({\bf x})"/> are some functions that depend on the state numbers
 (for example squares of the wavefunctions). Then there are two options —
-either there is a way to sum over the <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> and <img class="math" src="../_images/math/deb2bb6206edaca480551ef2028840b95011da05.svg" alt="s"/> degrees of freedom, so that
+either there is a way to sum over the <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> and <img class="math" src="../_images/math/45f3f4960bc99d1388078566f1a442578c4f3e15.svg" alt="s"/> degrees of freedom, so that
 the sum can be written exactly as:</p>
 <div class="math">
-<p><img src="../_images/math/baade20c685eecd91f3d39a18bf581214a5c5dda.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nlms} B_{nl}({\bf x})"/></p>
-</div><p>where <img class="math" src="../_images/math/725ef500a19c503cae1f9439db4e5aaf067fca8f.svg" alt="B_{nl}"/> (that don’t depend on <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> and <img class="math" src="../_images/math/deb2bb6206edaca480551ef2028840b95011da05.svg" alt="s"/>) will in general be different
-to <img class="math" src="../_images/math/4124ca6ac2b5d71ed0a15947fc88f56ff6ec81d7.svg" alt="A_{nlms}"/>, but the sum will be the same. Or we have to approximate the sum
+<p><img src="../_images/math/79f89532c88fdc8fb371cdff190b522848d30164.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nlms} B_{nl}({\bf x})"/></p>
+</div><p>where <img class="math" src="../_images/math/abc132b69f466556e5ee4d83a5f00e757bc3502e.svg" alt="B_{nl}"/> (that don’t depend on <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> and <img class="math" src="../_images/math/45f3f4960bc99d1388078566f1a442578c4f3e15.svg" alt="s"/>) will in general be different
+to <img class="math" src="../_images/math/0cab458ae24e852914608b6432adce1e08177f5a.svg" alt="A_{nlms}"/>, but the sum will be the same. Or we have to approximate the sum
 (for example by averaging over the angles, or in some other way) as:</p>
 <div class="math">
-<p><img src="../_images/math/ad1025e8afca8bcf26c672d496a85cd5683442bc.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlms} B_{nl}({\bf x})"/></p>
-</div><p>In either case, the occupation numbers <img class="math" src="../_images/math/b368932d75bc763e50a886dbb394172b7c390300.svg" alt="f_{nl}"/> are simply the number of times
-the functions <img class="math" src="../_images/math/d32a8e18b7d86b8681601a9b85c1ef3c3134daa7.svg" alt="B_{nl}({\bf x})"/> appear in the sum for the given <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> and <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>:</p>
+<p><img src="../_images/math/c3aba5633252e28c43be97769b9c17ac1936c940.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlms} B_{nl}({\bf x})"/></p>
+</div><p>In either case, the occupation numbers <img class="math" src="../_images/math/82a627d0a6e0550b22108d3371081a9173ccb01c.svg" alt="f_{nl}"/> are simply the number of times
+the functions <img class="math" src="../_images/math/6dc9c5cc14c2eba974ffa42f9eef51c32a7781b2.svg" alt="B_{nl}({\bf x})"/> appear in the sum for the given <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> and <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>:</p>
 <div class="math">
-<p><img src="../_images/math/456dce29f86164e16e3497243af2eff0f65ebc8e.svg" alt="\sum_{nlms} B_{nl}({\bf x}) = \sum_{nl} f_{nl} B_{nl}({\bf x})"/></p>
+<p><img src="../_images/math/131dde957c5446d61235653be123158ca71a5231.svg" alt="\sum_{nlms} B_{nl}({\bf x}) = \sum_{nl} f_{nl} B_{nl}({\bf x})"/></p>
 </div><p>So for closed shells atoms, it is always:</p>
 <div class="math">
-<p><img src="../_images/math/06c959a5fb8f3c8a1641358215cc4f0b1d995b93.svg" alt="f_{nl} = 2(2l+1)"/></p>
-</div><p>because there are two spins, and <img class="math" src="../_images/math/df97a32320830f726cf5e855443736c199713a1e.svg" alt="2l+1"/> possibilities for <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/>, for open shell
-atoms, <img class="math" src="../_images/math/b368932d75bc763e50a886dbb394172b7c390300.svg" alt="f_{nl}"/> is anything between <img class="math" src="../_images/math/d4419423d0fadb5da9acc994400016b992ff7e1a.svg" alt="0"/> and <img class="math" src="../_images/math/df97a32320830f726cf5e855443736c199713a1e.svg" alt="2l+1"/>.</p>
-<div class="section" id="example-i">
+<p><img src="../_images/math/a768295bf4f2704e5436dfc093c2687d2b383582.svg" alt="f_{nl} = 2(2l+1)"/></p>
+</div><p>because there are two spins, and <img class="math" src="../_images/math/489dd5603f8db137bc136efed383f819d883ad60.svg" alt="2l+1"/> possibilities for <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/>, for open shell
+atoms, <img class="math" src="../_images/math/82a627d0a6e0550b22108d3371081a9173ccb01c.svg" alt="f_{nl}"/> is anything between <img class="math" src="../_images/math/6279a4189a38bf425eed7c528d4cc74753df8961.svg" alt="0"/> and <img class="math" src="../_images/math/489dd5603f8db137bc136efed383f819d883ad60.svg" alt="2l+1"/>.</p>
+<section id="example-i">
 <h3>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h3>
 <p>As an example, let’s say that after some calculation for closed shell systems
 we get exactly:</p>
 <div class="math">
-<p><img src="../_images/math/8812ae32b7755bf94b77e5bca91f6833fa682a89.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nl} 2(2l+1) B_{nl}({\bf x})"/></p>
-</div><p>Then because there are exactly <img class="math" src="../_images/math/a2723ffda09d60d76aa8d5b973856127a8698f7d.svg" alt="2(2l+1)"/> states in the <img class="math" src="../_images/math/334e33b70c9b9be207603c544773f551a6e95fab.svg" alt="nl"/> shell, we write the
+<p><img src="../_images/math/796015566183dea281b3fd3468aa3efd26758e3a.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nl} 2(2l+1) B_{nl}({\bf x})"/></p>
+</div><p>Then because there are exactly <img class="math" src="../_images/math/1cde6357cf75739fb18e778e1c0bd77ca671c3d9.svg" alt="2(2l+1)"/> states in the <img class="math" src="../_images/math/93ec2a2eeafa3f5a86e03c51ff35693f369f930c.svg" alt="nl"/> shell, we write the
 above as:</p>
 <div class="math">
-<p><img src="../_images/math/c7d156919fd0421fb636fe1ef566682d92f3bb09.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nl} 2(2l+1) B_{nl}({\bf x})
+<p><img src="../_images/math/a101dffaf8ea62e7def66ae661b4eb6e385bc07e.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) = \sum_{nl} 2(2l+1) B_{nl}({\bf x})
     = \sum_{nl} f_{nl} B_{nl}({\bf x})"/></p>
 </div><p>Then we do similar calculation for the open shell system, and we have to use
-some approximations to get the following formula, where the <img class="math" src="../_images/math/d32a8e18b7d86b8681601a9b85c1ef3c3134daa7.svg" alt="B_{nl}({\bf x})"/>
+some approximations to get the following formula, where the <img class="math" src="../_images/math/6dc9c5cc14c2eba974ffa42f9eef51c32a7781b2.svg" alt="B_{nl}({\bf x})"/>
 happen to be exactly the same as for the closed shell system:</p>
 <div class="math">
-<p><img src="../_images/math/3ba786fff4e7834a6039a60b12ed9aec6fc4dfdd.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlm} 2 B_{nl}({\bf x})"/></p>
-</div><p>Then we denote by <img class="math" src="../_images/math/b368932d75bc763e50a886dbb394172b7c390300.svg" alt="f_{nl}"/> the number of electrons in the shell <img class="math" src="../_images/math/334e33b70c9b9be207603c544773f551a6e95fab.svg" alt="nl"/> (at least
-one of them will be open, for which <img class="math" src="../_images/math/334e33b70c9b9be207603c544773f551a6e95fab.svg" alt="nl"/> we have <img class="math" src="../_images/math/4ec49b37d8212f210bfa74ba7b880a59ea673bd0.svg" alt="f_{nl} &lt; 2(2l+1)"/>), and we
+<p><img src="../_images/math/e5a77122e590e73a5651dc5e89cde89dd01a20b9.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlm} 2 B_{nl}({\bf x})"/></p>
+</div><p>Then we denote by <img class="math" src="../_images/math/82a627d0a6e0550b22108d3371081a9173ccb01c.svg" alt="f_{nl}"/> the number of electrons in the shell <img class="math" src="../_images/math/93ec2a2eeafa3f5a86e03c51ff35693f369f930c.svg" alt="nl"/> (at least
+one of them will be open, for which <img class="math" src="../_images/math/93ec2a2eeafa3f5a86e03c51ff35693f369f930c.svg" alt="nl"/> we have <img class="math" src="../_images/math/1bded33065ec6f8e36d9ca23b93879d60618b8c3.svg" alt="f_{nl} &lt; 2(2l+1)"/>), and we
 can write the above as:</p>
 <div class="math">
-<p><img src="../_images/math/df27f7f1ab21e0c12c9308f78a7eeaf92ba0f451.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlm} 2 B_{nl}({\bf x})
+<p><img src="../_images/math/025aa40cd7ec9a12efbe39cf9f14aad13034dcb6.svg" alt="\sum_{nlms} A_{nlms}({\bf x}) \to \sum_{nlm} 2 B_{nl}({\bf x})
     = \sum_{nl} f_{nl} B_{nl}({\bf x})"/></p>
-</div></div>
-<div class="section" id="example-ii">
+</div></section>
+<section id="example-ii">
 <h3>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h3>
 <p>The usual chemical occupation numbers for the Uranium atom are:</p>
 <div class="math">
-<p><img src="../_images/math/4cac84520f6f58db03aa3a229f0ef2b7b395a392.svg" alt="f_{1l} &amp; = 2 (2l+1)    \\
+<p><img src="../_images/math/5e7d530c14a11055877db38658ecf67d9fe22d84.svg" alt="f_{1l} &amp; = 2 (2l+1)    \\
 f_{2l} &amp; = 2 (2l+1)    \\
 f_{3l} &amp; = 2 (2l+1)    \\
 f_{4l} &amp; = 2 (2l+1)    \\
@@ -2276,10 +2279,10 @@ f_{60} &amp; = 2    \\
 f_{61} &amp; = 6    \\
 f_{62} &amp; = 1    \\
 f_{70} &amp; = 2    \\"/></p>
-</div><p>So the <img class="math" src="../_images/math/dcf5ae9837dba226809fbfa8698d36a426097a2b.svg" alt="n=5"/>, <img class="math" src="../_images/math/a59a98ef3ec21d206afd29c9f5ef07457b4683e6.svg" alt="l=3"/> and <img class="math" src="../_images/math/2403648b1afc3b6e7beba6049144cbee16dd5661.svg" alt="n=6"/>, <img class="math" src="../_images/math/8e310224308875200124714c4c5ce0e30dcaa291.svg" alt="l=2"/> shells are open, all others are closed.
-By summing all these <img class="math" src="../_images/math/b368932d75bc763e50a886dbb394172b7c390300.svg" alt="f_{nl}"/>, we get 92 states as expected:</p>
+</div><p>So the <img class="math" src="../_images/math/1211ad142acdbc2173d154bd34c13d3a7db3563d.svg" alt="n=5"/>, <img class="math" src="../_images/math/7ef98e63f13926b953d1f3f7aa4062ca8b1337ec.svg" alt="l=3"/> and <img class="math" src="../_images/math/ad63a90729ab7e76ef41dc49539a80a26bdd627c.svg" alt="n=6"/>, <img class="math" src="../_images/math/ba3887d336ca860e9cd91ccdcb31b44107d27135.svg" alt="l=2"/> shells are open, all others are closed.
+By summing all these <img class="math" src="../_images/math/82a627d0a6e0550b22108d3371081a9173ccb01c.svg" alt="f_{nl}"/>, we get 92 states as expected:</p>
 <div class="math">
-<p><img src="../_images/math/2fcea08ed45ddfe47a7588c55a9bc539f171ef5a.svg" alt="\sum_{nl} f_{nl} = 2 + (2+6) + (2+6+10) + (2+6+10+14) + (2+6+10) +
+<p><img src="../_images/math/72cd0d84960886e929d1927d075676270dde1f16.svg" alt="\sum_{nl} f_{nl} = 2 + (2+6) + (2+6+10) + (2+6+10+14) + (2+6+10) +
 
     + 3 + 2 + 6 + 1 + 2 = 92"/></p>
 </div><p>Code:</p>
@@ -2306,22 +2309,22 @@ By summing all these <img class="math" src="../_images/math/b368932d75bc763e50a8
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sum</span> <span class="n">f_nl</span> <span class="o">=</span> <span class="mi">92</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="hartree-screening-functions">
-<h2>8.11.9. Hartree Screening Functions<a class="headerlink" href="#hartree-screening-functions" title="Permalink to this headline">¶</a></h2>
-<p>Hartree screening function <img class="math" src="../_images/math/36a594d2af3278dfe9533f620a9f134417f6ad8a.svg" alt="Y^k(f, r)"/> is defined as:</p>
+</section>
+</section>
+<section id="hartree-screening-functions">
+<h2><span class="section-number">8.11.9. </span>Hartree Screening Functions<a class="headerlink" href="#hartree-screening-functions" title="Permalink to this headline">¶</a></h2>
+<p>Hartree screening function <img class="math" src="../_images/math/e5304e5b839810e2ad4f1255ae62e5c08c8cb898.svg" alt="Y^k(f, r)"/> is defined as:</p>
 <div class="math">
-<p><img src="../_images/math/ef28243d46aab9fe7065ef6fd5b24953bd1370f6.svg" alt="Y^k(f, r) = r
+<p><img src="../_images/math/a30345fc09c0689dfb0cf66ca4c2b5b8dfeb14b5.svg" alt="Y^k(f, r) = r
 \int_0^\infty
 {r_{&lt;}^k\over r_{&gt;}^{k+1}}
 f(r')
 \d r'"/></p>
 </div><p>and it occurs in many formulas in the Hartree Fock theory, so this section shows
-how to calculate it. It depends on <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> and a function <img class="math" src="../_images/math/16b73a62f6ae533a27ef5406c28e0b0d9289ce1a.svg" alt="f(r)"/>.</p>
+how to calculate it. It depends on <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> and a function <img class="math" src="../_images/math/963a5b4bf5c40d0f75f1de2c65875828d555b1d3.svg" alt="f(r)"/>.</p>
 <p>We first do the integral:</p>
 <div class="math">
-<p><img src="../_images/math/f4b9f795bc19bd25efa477e4ab03df92ebf9be89.svg" alt="Y^k(f, r) = r
+<p><img src="../_images/math/05819c0b0f7d5c7cef20f5a7abdda28799a7d6aa.svg" alt="Y^k(f, r) = r
 \int_0^\infty
 {r_{&lt;}^k\over r_{&gt;}^{k+1}}
 f(r')
@@ -2356,7 +2359,7 @@ r^{k+1}
 \int_r^\infty {1\over x^{k+1}} f(x) \d x"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/5dbc25673f59396037b7ec2bedc850785da2a182.svg" alt="Z^k(r) =
+<p><img src="../_images/math/c17510fd977ecb1e5e787c5100a266a7dc0b804b.svg" alt="Z^k(r) =
 {1\over r^k}
 \int_0^r
 {x^k}
@@ -2366,9 +2369,9 @@ f(x)
 {\d Z^k(r) \over \d r}= -{k\over r} Z^k(r) + f(r)
 
 Z^k(0) = 0"/></p>
-</div><p>Now we differentiate <img class="math" src="../_images/math/42a877979c912a76f7ac85cbe378aec39185379d.svg" alt="Y^k(r)"/>:</p>
+</div><p>Now we differentiate <img class="math" src="../_images/math/bda402b617a3870b8787d48b7148f98269bdc2dc.svg" alt="Y^k(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/14ce9658d5f05287609130651edf26ebf95dc051.svg" alt="{\d Y^k(r) \over \d r} = {\d Z^k(r) \over \d r}
+<p><img src="../_images/math/239623c51099752cfed40260aff809ff8cd75c89.svg" alt="{\d Y^k(r) \over \d r} = {\d Z^k(r) \over \d r}
     + {k+1\over r} r^{k+1}
     \int_r^\infty {1\over x^{k+1}} f(x) \d x
     -f(r)
@@ -2391,10 +2394,10 @@ Z^k(0) = 0"/></p>
 
 =
 -{2k+1\over r} Z^k(r) + {k+1\over r} Y^k(r)"/></p>
-</div><p>Also <img class="math" src="../_images/math/b613f210396837d2a86639a7ae9a830791638a48.svg" alt="Y^k(\infty) = Z^k(\infty)"/>, so we get the following set of first order
+</div><p>Also <img class="math" src="../_images/math/102a790648ad7a9178b735ee909e8eada63a00f8.svg" alt="Y^k(\infty) = Z^k(\infty)"/>, so we get the following set of first order
 differential equations with boundary conditions:</p>
 <div class="math">
-<p><img src="../_images/math/09deea4be5a81a502cc8e1eb565ee0b8ad8ad8fc.svg" alt="\left({\d\over\d r} - {k+1\over r}\right) Y^k(r) = -{2k+1\over r} Z^k(r)
+<p><img src="../_images/math/08dd3f729ac8e2f4c71547a68f37d4c3d756feb5.svg" alt="\left({\d\over\d r} - {k+1\over r}\right) Y^k(r) = -{2k+1\over r} Z^k(r)
 
 \left({\d\over\d r} + {k\over r}\right) Z^k(r) = f(r)
 
@@ -2402,18 +2405,18 @@ Y^k(\infty) = Z^k(\infty)
 
 Z^k(0) = 0"/></p>
 </div><p>One way to calculate the Hartree screening function is to integrate the second
-equation from the left using the boundary condition <img class="math" src="../_images/math/872a736279dea1f80ade03143817723c7180fca0.svg" alt="Z^k(0) = 0"/> and then
+equation from the left using the boundary condition <img class="math" src="../_images/math/c468b8af81aa4fcc2a74afff3c95a60a07d7f571.svg" alt="Z^k(0) = 0"/> and then
 integrate the first equation from the right, using the boundary condition
-<img class="math" src="../_images/math/b613f210396837d2a86639a7ae9a830791638a48.svg" alt="Y^k(\infty) = Z^k(\infty)"/>.</p>
-<p>Another way is to obtain one second order equation. Expressing <img class="math" src="../_images/math/ba3e5a3b0db3f561832a14a8a4435d5b4bb8d3d8.svg" alt="Z^k"/> from the
+<img class="math" src="../_images/math/102a790648ad7a9178b735ee909e8eada63a00f8.svg" alt="Y^k(\infty) = Z^k(\infty)"/>.</p>
+<p>Another way is to obtain one second order equation. Expressing <img class="math" src="../_images/math/72025f6c46bedc952e2197ec4b0baa9f51ef9012.svg" alt="Z^k"/> from the
 first equation:</p>
 <div class="math">
-<p><img src="../_images/math/64d069aa05de15afb1e7376413c0158162433134.svg" alt="Z^k(r) = -{r\over 2k+1}\left({\d\over\d r} - {k+1\over r}\right) Y^k(r) =
+<p><img src="../_images/math/b0ba2d1565323755b9b35560f3097ffb622c7fae.svg" alt="Z^k(r) = -{r\over 2k+1}\left({\d\over\d r} - {k+1\over r}\right) Y^k(r) =
 
 =-{r\over 2k+1}{\d Y^k(r)\over \d r} + {k+1\over 2k+1} Y^k(r)"/></p>
 </div><p>and substituting into the second equation we get:</p>
 <div class="math">
-<p><img src="../_images/math/7fc8dbcd366f6b2f19ead9fcf2a119aea63c7727.svg" alt="-\left({\d\over\d r} + {k\over r}\right)
+<p><img src="../_images/math/ad2b0e93bc1bfe1deabf6fef864de86cb26b5c71.svg" alt="-\left({\d\over\d r} + {k\over r}\right)
     \left({r\over 2k+1}{\d Y^k(r)\over \d r} + {k+1\over 2k+1} Y^k\right)
     = f(r)
 
@@ -2425,56 +2428,56 @@ first equation:</p>
     = {2k+1\over r} f(r)"/></p>
 </div><p>With boundary condition on the left:</p>
 <div class="math">
-<p><img src="../_images/math/f6400ac5556c5da345c41042e766ded7bb47800c.svg" alt="Z^k(0) = {k+1\over 2k+1} Y^k(0) = 0
+<p><img src="../_images/math/c10e8283440ab43d48f2408de1fbde62cc16dfce.svg" alt="Z^k(0) = {k+1\over 2k+1} Y^k(0) = 0
 
 Y^k(0) = 0"/></p>
 </div><p>and on the right:</p>
 <div class="math">
-<p><img src="../_images/math/258671cdb5b0fd376d9402bdb980161b5619ff0e.svg" alt="Z^k(r)
+<p><img src="../_images/math/5e6ab61ff242e27974914243eb4753a2a803b922.svg" alt="Z^k(r)
     =-{r\over 2k+1}{\d Y^k(r)\over \d r} + {k+1\over 2k+1} Y^k(r)
     = Y^k(r)
 
 -{r\over 2k+1}{\d Y^k(r)\over \d r} - {k\over 2k+1} Y^k(r) = 0
 
 {\d Y^k(r)\over \d r} + {k\over r} Y^k(r) = 0"/></p>
-</div><p>which for <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/> becomes:</p>
+</div><p>which for <img class="math" src="../_images/math/2f6f98a12ab61f7f20f096db90d0fddadd0a3b7c.svg" alt="r\to\infty"/> becomes:</p>
 <div class="math">
-<p><img src="../_images/math/051e613d718bac156a919006e1aa1e047c339216.svg" alt="\left.{\d Y^k(r)\over \d r}\right|_{r=\infty} = 0"/></p>
+<p><img src="../_images/math/e7c3de1a3b757d8954ab07b75b824320d768808c.svg" alt="\left.{\d Y^k(r)\over \d r}\right|_{r=\infty} = 0"/></p>
 </div><p>but in practise, it’s better to use the former Newton (Robin) boundary
-condition. We have obtained one second order equation for <img class="math" src="../_images/math/42a877979c912a76f7ac85cbe378aec39185379d.svg" alt="Y^k(r)"/></p>
+condition. We have obtained one second order equation for <img class="math" src="../_images/math/bda402b617a3870b8787d48b7148f98269bdc2dc.svg" alt="Y^k(r)"/></p>
 <div class="math">
-<p><img src="../_images/math/e7774863efaa28729485419d95fb2839a3b3bdc8.svg" alt="\left(-{\d^2\over\d r^2} + {k(k+1)\over r^2}\right) Y^k(r)
+<p><img src="../_images/math/6a935469232c1e66f697b0869233bdb30a975eb2.svg" alt="\left(-{\d^2\over\d r^2} + {k(k+1)\over r^2}\right) Y^k(r)
     = {2k+1\over r} f(r)"/></p>
 </div><p>with boundary conditions:</p>
 <div class="math">
-<p><img src="../_images/math/ba9103d9665127aea6960cb5c45836b15e244c15.svg" alt="Y^k(0) = 0
+<p><img src="../_images/math/d579314c9a5c13f1515414afe2d769f866486b21.svg" alt="Y^k(0) = 0
 
 {\d Y^k(r)\over \d r} + {k\over r} Y^k(r) = 0"/></p>
 </div><p>The
 weak formulation is:</p>
 <div class="math">
-<p><img src="../_images/math/6ef91d0c4b0ff9b617522d58e686e7fd93578864.svg" alt="\int_0^{r_{max}} Y^k{}'(r) v'(r) + {k(k+1)\over r^2} Y^k(r) v(r) \d r
+<p><img src="../_images/math/e81c506eed5b53e518230834f4d8eb55a54df20a.svg" alt="\int_0^{r_{max}} Y^k{}'(r) v'(r) + {k(k+1)\over r^2} Y^k(r) v(r) \d r
     -[Y^k{}'(r)v(r)]_0^{r_{max}}
     = \int_0^{r_{max}} {2k+1\over r}f(r)v(r) \d r"/></p>
 </div><p>The boundary term can be simplified using the boundary conditions as:</p>
 <div class="math">
-<p><img src="../_images/math/43e9d326ab4b6bbe82262766a86faf46f97a18c3.svg" alt="-[Y^k{}'(r)v(r)]_0^{r_{max}}
+<p><img src="../_images/math/44d783e222de50d08180871367b0f93a5cd5c78c.svg" alt="-[Y^k{}'(r)v(r)]_0^{r_{max}}
 = -Y^k{}'(r_{max})v(r_{max}) + Y^k{}'(0) v(0)
 = -Y^k{}'(r_{max})v(r_{max})
 = {k\over r_{max}} Y^k(r_{max})v(r_{max})"/></p>
 </div><p>so we get</p>
 <div class="math">
-<p><img src="../_images/math/6b0a936f95e6ad90522fc29296a6ed88153de1c6.svg" alt="\int_0^{r_{max}} Y^k{}'(r) v'(r) + {k(k+1)\over r^2} Y^k(r) v(r) \d r
+<p><img src="../_images/math/4720f1cd4fce16f7c2f2c2478af0dbb1d7416444.svg" alt="\int_0^{r_{max}} Y^k{}'(r) v'(r) + {k(k+1)\over r^2} Y^k(r) v(r) \d r
     + {k\over r_{max}} Y^k(r_{max})v(r_{max})
     = \int_0^{r_{max}} {2k+1\over r}f(r)v(r) \d r"/></p>
-</div><p>where the test functions <img class="math" src="../_images/math/505ecefbb35230cd797f7e7455d793f98faaeddb.svg" alt="v(r)"/> have the constrain <img class="math" src="../_images/math/b5425ace7191542c18e8adb2e771cd5889e3826c.svg" alt="v(0)=0"/> on the left
+</div><p>where the test functions <img class="math" src="../_images/math/d3d37609607e735092354c679b5837b85a393ac5.svg" alt="v(r)"/> have the constrain <img class="math" src="../_images/math/6feda8e9d05143b7bec4653afcb6c767b977aeb7.svg" alt="v(0)=0"/> on the left
 boundary and no constrain on the right.</p>
-</div>
-<div class="section" id="hartree-potential-in-spherical-symmetry">
-<span id="hartree-spherical"></span><h2>8.11.10. Hartree Potential in Spherical Symmetry<a class="headerlink" href="#hartree-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="hartree-potential-in-spherical-symmetry">
+<span id="hartree-spherical"></span><h2><span class="section-number">8.11.10. </span>Hartree Potential in Spherical Symmetry<a class="headerlink" href="#hartree-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>For both open and closed shell atoms we get exactly:</p>
 <div class="math">
-<p><img src="../_images/math/d446c156b4b13fb50c87667f22d33eb59ff9b11b.svg" alt="V_H({\bf x})
+<p><img src="../_images/math/359f49c71835a82228f108515a355cc9180478aa.svg" alt="V_H({\bf x})
     = \int {n({\bf y})\over|{\bf x}-{\bf y}|} \d^3 y
     = \int {\sum_{j=1}^Z|\psi_j({\bf y})|^2\over|{\bf x}-{\bf y}|}
         \d^3 y =
@@ -2531,42 +2534,42 @@ boundary and no constrain on the right.</p>
       \int {r_&lt;^{l'}\over r_&gt;^{l'+1}} P_{nl}^2(r') \d r'"/></p>
 </div><p>For closed shell atoms we use the fact, that</p>
 <div class="math">
-<p><img src="../_images/math/24db34bebecf0327e6e46fa6d69be7b421bdee39.svg" alt="\sum_{m=-l}^l c^{l'}(l, m, l, m) = (2l+1) \delta_{l' 0}"/></p>
+<p><img src="../_images/math/2fee956621929fedc0d833234d8b19a41dadafb0.svg" alt="\sum_{m=-l}^l c^{l'}(l, m, l, m) = (2l+1) \delta_{l' 0}"/></p>
 </div><p>and the second term disappears, and for open shell atoms
 we have to use the central field approximation: we average
-the integral for <img class="math" src="../_images/math/f2a9a3a75187a34a921425cab1f81dd344eddedf.svg" alt="V_H"/> over the angles:</p>
+the integral for <img class="math" src="../_images/math/e1fa8fc95396332ac02b1218af9ed6b919a5b120.svg" alt="V_H"/> over the angles:</p>
 <div class="math">
-<p><img src="../_images/math/ba3abdf824f59d6b0e4672979fea162772a02df2.svg" alt="V_H({\bf x}) \to V_H(r) = {1\over 4\pi} \int V_H({\bf x})\, \d \Omega"/></p>
+<p><img src="../_images/math/c59beb7eb3909116c028cd835a98117dedaecd05.svg" alt="V_H({\bf x}) \to V_H(r) = {1\over 4\pi} \int V_H({\bf x})\, \d \Omega"/></p>
 </div><p>and using the fact, that</p>
 <div class="math">
-<p><img src="../_images/math/506a58f76bdf245eb6980d407b82ef3b0fd54a66.svg" alt="\int Y_{l'0}^*(\Omega)\, \d \Omega = \sqrt{4\pi} \delta_{l' 0}"/></p>
+<p><img src="../_images/math/04e05cd2f1e25bee1c16486de66d723c85f30703.svg" alt="\int Y_{l'0}^*(\Omega)\, \d \Omega = \sqrt{4\pi} \delta_{l' 0}"/></p>
 </div><p>the second term disappears as well. We got the same expression for both open
 shell (with central field approximation) and closed shell (no approximation)
 atoms.  The radial charge density is:</p>
 <div class="math">
-<p><img src="../_images/math/581d6cdbeca3c54d0d95bad0f3c46e09e85d92ad.svg" alt="n(r) = {1\over 4\pi} \sum_{nl} f_{nl} \left(P_{nl}(r)\over r\right)^2"/></p>
+<p><img src="../_images/math/4e75340608011987e9dd6d2ce221e520d4505c37.svg" alt="n(r) = {1\over 4\pi} \sum_{nl} f_{nl} \left(P_{nl}(r)\over r\right)^2"/></p>
 </div><p>So we got:</p>
 <div class="math">
-<p><img src="../_images/math/f3a40ebd0b2fe196dfd4903eabaf1b267d6dd368.svg" alt="V_H(r) =
+<p><img src="../_images/math/8514f4020f0f847970788080cf967127984cc43a.svg" alt="V_H(r) =
    \sum_{nl} f_{nl} \int {1\over r_&gt;} P_{nl}^2(r') \d r'
    =\int {4\pi n(r') r'^2 \over r_&gt;} \d r'
    = {Y^0(4\pi n(r) r^2, r) \over r}"/></p>
-</div><p>The Hartree screening function <img class="math" src="../_images/math/8030ae8318a7087e5d6eb06c487c05a348652005.svg" alt="Y^0(4\pi n(r) r^2, r)"/> is given by the equation:</p>
+</div><p>The Hartree screening function <img class="math" src="../_images/math/7b5ab113ba63e3a9f25451e93c5d7fbf25603074.svg" alt="Y^0(4\pi n(r) r^2, r)"/> is given by the equation:</p>
 <div class="math">
-<p><img src="../_images/math/3f191e783a8c52e338b8a7942694c95ea38ae31a.svg" alt="-{\d^2\over\d r^2} Y^0(r) = {1\over r} 4\pi n(r) r^2"/></p>
-</div><p>So <img class="math" src="../_images/math/53a89e5827e527cf1b414835dc9929ad31388704.svg" alt="V_H(r)"/> satisfies the radial Poisson equation:</p>
+<p><img src="../_images/math/0ce9c3180da3b28d230e2123986ca055e809e0a9.svg" alt="-{\d^2\over\d r^2} Y^0(r) = {1\over r} 4\pi n(r) r^2"/></p>
+</div><p>So <img class="math" src="../_images/math/b9090278a89becf1e1262113121df8c1267f3d38.svg" alt="V_H(r)"/> satisfies the radial Poisson equation:</p>
 <div class="math">
-<p><img src="../_images/math/79f28975eee07a1bf718a886ae65d8812de8b8fa.svg" alt="(V_H(r) r)'' = -{1\over r} 4\pi n(r) r^2
+<p><img src="../_images/math/4902d1610e075c20fd8e470694662108246b7ae6.svg" alt="(V_H(r) r)'' = -{1\over r} 4\pi n(r) r^2
 
 V_H''(r) r + 2V_H'(r) = - 4\pi n(r) r
 
 V_H''(r) + {2\over r}V_H'(r) = -4\pi n(r)"/></p>
-</div></div>
-<div class="section" id="nonlocal-exchange-potential-in-spherical-symmetry">
-<h2>8.11.11. Nonlocal Exchange Potential in Spherical Symmetry<a class="headerlink" href="#nonlocal-exchange-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="nonlocal-exchange-potential-in-spherical-symmetry">
+<h2><span class="section-number">8.11.11. </span>Nonlocal Exchange Potential in Spherical Symmetry<a class="headerlink" href="#nonlocal-exchange-potential-in-spherical-symmetry" title="Permalink to this headline">¶</a></h2>
 <p>Similarly, we calculate:</p>
 <div class="math">
-<p><img src="../_images/math/12d43ec3e04f07030480cbb1a35d9f3476db4c09.svg" alt="\sum_{j=1}^Z\int {\psi_i({\bf x'})\psi_j^*({\bf x'})\over|{\bf x}-{\bf x'}|}
+<p><img src="../_images/math/6d60f5f1b3caa3eaeff8ce23d23204cde4dface4.svg" alt="\sum_{j=1}^Z\int {\psi_i({\bf x'})\psi_j^*({\bf x'})\over|{\bf x}-{\bf x'}|}
         \d^3 x'\,\,\psi_j({\bf x}) =
 
 = \sum_{n'l'm'}\sum_{k,q}\int
@@ -2638,22 +2641,22 @@ V_H''(r) + {2\over r}V_H'(r) = -4\pi n(r)"/></p>
     \d r'\,
         P_{n'l'}(r)"/></p>
 </div><p>Functions with different spins don’t contribute to the sum, so there is no
-multiplication by 2. We assumed closed shells atoms (we summed over all <img class="math" src="../_images/math/9292f1df6e61b6dc7423527ca8c5c85c4aba4d60.svg" alt="m'"/> in
+multiplication by 2. We assumed closed shells atoms (we summed over all <img class="math" src="../_images/math/ea645062ed9d3e53981febbecc86bacec83b1085.svg" alt="m'"/> in
 the above). We used the result of the integral in
 <a class="reference internal" href="../math/spherical-harmonics.html#five-spherical-harmonics"><span class="std std-ref">Example VI</span></a> and also:</p>
 <div class="math" id="equation-using3j">
-<p><span class="eqno">(8.11.11.1)<a class="headerlink" href="#equation-using3j" title="Permalink to this equation">¶</a></span><img src="../_images/math/0c07d0a270013406e83b53fa5ee8a6a5750fc1f5.svg" alt="\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)
+<p><span class="eqno">(8.11.11.1)<a class="headerlink" href="#equation-using3j" title="Permalink to this equation">¶</a></span><img src="../_images/math/be8ac621d875b6b5c2e832082fc2a9c400e3b85e.svg" alt="\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)
     = \sqrt{2l'+1\over 2l+1}
         \sqrt{(2l'+1)(2l+1)}
         \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
     = (2l'+1)
         \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2"/></p>
-</div></div>
-<div class="section" id="radial-hartree-fock-equations">
-<h2>8.11.12. Radial Hartree-Fock Equations<a class="headerlink" href="#radial-hartree-fock-equations" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="radial-hartree-fock-equations">
+<h2><span class="section-number">8.11.12. </span>Radial Hartree-Fock Equations<a class="headerlink" href="#radial-hartree-fock-equations" title="Permalink to this headline">¶</a></h2>
 <p>Using the above integrals, the HF equations become:</p>
 <div class="math">
-<p><img src="../_images/math/9ff90119416ff9f054175a1461a06fecb4f60f69.svg" alt="-\half P_{nl}''(r) +
+<p><img src="../_images/math/3b7a5685dc8cdc1ae47d4fc8c84fba9e008ce7cf.svg" alt="-\half P_{nl}''(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)P_{nl}(r) +
 
         -\sum_{n'l'}
@@ -2669,11 +2672,11 @@ the above). We used the result of the integral in
     = \epsilon_{nl} P_{nl}(r)"/></p>
 </div><p>with:</p>
 <div class="math">
-<p><img src="../_images/math/823ee99c075ac382fe472a7a776b4445c35086e3.svg" alt="V_H(r) =
+<p><img src="../_images/math/9bddb5bfa18d6e269fff8b8d7f0ae7bb9b2f2b27.svg" alt="V_H(r) =
    \sum_{nl} f_{nl} \int {1\over r_&gt;} P_{nl}^2(r') \d r'"/></p>
 </div><p>Using the Hartree screening functions, the HF equations are:</p>
 <div class="math">
-<p><img src="../_images/math/044c58fd043d60fa5889f67556e63b0b53303fd5.svg" alt="-\half P_{nl}''(r) +
+<p><img src="../_images/math/dee9ed73fc4c6ff466958bcb8c11072786c1c62e.svg" alt="-\half P_{nl}''(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)P_{nl}(r) +
 
         -\sum_{n'l'}
@@ -2685,14 +2688,14 @@ the above). We used the result of the integral in
     = \epsilon_{nl} P_{nl}(r)"/></p>
 </div><p>with:</p>
 <div class="math">
-<p><img src="../_images/math/e7c1f2a138279d1cac39971105692c62b4476f5d.svg" alt="V_H(r) = \sum_{nl} f_{nl} {Y^0(P_{nl}^2(r), r) \over r}
+<p><img src="../_images/math/f9e48575ba8d4cfee7dd061daa6e2bb7841103bd.svg" alt="V_H(r) = \sum_{nl} f_{nl} {Y^0(P_{nl}^2(r), r) \over r}
     = {Y^0(4\pi n(r) r^2, r) \over r}"/></p>
-</div></div>
-<div class="section" id="total-energy">
-<h2>8.11.13. Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="total-energy">
+<h2><span class="section-number">8.11.13. </span>Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
 <p>The total energy is:</p>
 <div class="math">
-<p><img src="../_images/math/03f91b2c4d9c2987cf8c340b5d28d6d0d409d882.svg" alt="E = \sum_a 2(2l_a+1) \left( \epsilon_a
+<p><img src="../_images/math/6e8e36e2979cbba0b030c62e1ccbe6ff18137811.svg" alt="E = \sum_a 2(2l_a+1) \left( \epsilon_a
     -\sum_b (2l_b+1) \left( R_0(a, b, a, b)-\sum_l
         \half \begin{pmatrix} l_a &amp; l &amp; l_b \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
         R_l(a, b, b, a)\right) \right) =
@@ -2730,50 +2733,50 @@ the above). We used the result of the integral in
                     {Y^l(P_{nl}(r) P_{n'l'}(r), r)\over r} \d r"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/029cdd981d86a1cb0914d8b895207db86f0ce12a.svg" alt="R_l(a, b, c, d) = \int_0^\infty P_a(r) P_c(r) {Y^l(P_b(r) P_d(r), r)\over r} \d r"/></p>
-</div><div class="section" id="example-helium">
+<p><img src="../_images/math/d9a7bedbae1a98f19b5394eb4e5dafd9ce7a1258.svg" alt="R_l(a, b, c, d) = \int_0^\infty P_a(r) P_c(r) {Y^l(P_b(r) P_d(r), r)\over r} \d r"/></p>
+</div><section id="example-helium">
 <h3>Example: Helium<a class="headerlink" href="#example-helium" title="Permalink to this headline">¶</a></h3>
 <p>For Helium atom, the only nonzero occupation numbers are:</p>
 <div class="math">
-<p><img src="../_images/math/85de925375c568ac94e52c493ac58d91f7ff9fab.svg" alt="f_{10} = 2"/></p>
-</div><p>and the sum over <img class="math" src="../_images/math/f0720eaf889b7147db989b85247138ffffb01150.svg" alt="n'l'"/> simplifies to:</p>
+<p><img src="../_images/math/a3b947ad8202aa4a7011717af8d396dcf38232d8.svg" alt="f_{10} = 2"/></p>
+</div><p>and the sum over <img class="math" src="../_images/math/9bca460ae8e273a4179364ebf98d9da7996edf35.svg" alt="n'l'"/> simplifies to:</p>
 <div class="math">
-<p><img src="../_images/math/61866e42c746ab614d135bc75271ece0dce4946d.svg" alt="\sum_{n'l'}
+<p><img src="../_images/math/08ff9c27dc7e9709d983c640cc2e57f4002e03cd.svg" alt="\sum_{n'l'}
     f_{n'l'}
     \sum_{k=|l-l'|}^{k=l+l'}
     \half \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
 = f_{10} \half \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
 = f_{10} \half = 1"/></p>
-</div><p>so we only need to solve for the <img class="math" src="../_images/math/f1bb993f71f315a5349b0262d36827b77d38e90c.svg" alt="1s"/> state and we get:</p>
+</div><p>so we only need to solve for the <img class="math" src="../_images/math/c4863ff1c8cc48cf5f389117adfa30d374d72d3a.svg" alt="1s"/> state and we get:</p>
 <div class="math">
-<p><img src="../_images/math/af784d41a6c03ed0eaa52c416afa6d52adee829d.svg" alt="-\half P_{10}''(r) +
+<p><img src="../_images/math/31c58e45514c3c27dc74458a77a251dcf067a2ff.svg" alt="-\half P_{10}''(r) +
     \left(-{Z\over r} + V_H(r)\right)P_{10}(r)
         -{Y^0(P_{10}(r) P_{10}(r), r) \over r}
             P_{10}(r)
     = \epsilon_{10} P_{10}(r)"/></p>
 </div><p>with:</p>
 <div class="math">
-<p><img src="../_images/math/d4d1a9754312ef154e9bb024b4922d066f7142ce.svg" alt="V_H(r) = 2 {Y^0(P_{10}^2(r), r) \over r}
+<p><img src="../_images/math/0680e2f502e0222d2ea752f219d4350af9109acb.svg" alt="V_H(r) = 2 {Y^0(P_{10}^2(r), r) \over r}
     = {Y^0(4\pi n(r) r^2, r) \over r}"/></p>
 </div><p>We can combine the equations:</p>
 <div class="math">
-<p><img src="../_images/math/99c9ebb17e88a18cad07cfab782230c1cb715fbe.svg" alt="-\half P_{10}''(r) +
+<p><img src="../_images/math/53160046b085711be31b105766bad8f79b91df2d.svg" alt="-\half P_{10}''(r) +
     \left(-{Z\over r} + 2 {Y^0(P_{10}^2(r), r) \over r}\right)P_{10}(r)
         -{Y^0(P_{10}^2(r), r) \over r}
             P_{10}(r)
     = \epsilon_{10} P_{10}(r)"/></p>
 </div><p>and we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/23b5b37164ce4bbfe440c188a0f380b2a5725ac9.svg" alt="-\half P_{10}''(r) +
+<p><img src="../_images/math/7d5f6f461409546b4d899b211eb9dafd8d146a0d.svg" alt="-\half P_{10}''(r) +
     \left(-{Z\over r} + {Y^0(P_{10}^2(r), r) \over r}\right)P_{10}(r)
     = \epsilon_{10} P_{10}(r)"/></p>
-</div></div>
-</div>
-<div class="section" id="fem">
-<h2>8.11.14. FEM<a class="headerlink" href="#fem" title="Permalink to this headline">¶</a></h2>
-<p>The weak formulation is (<img class="math" src="../_images/math/16a7354d55f6a651cba318c1fd8f06eab0873f09.svg" alt="u(r) = P_{nl}(r)"/>):</p>
+</div></section>
+</section>
+<section id="fem">
+<h2><span class="section-number">8.11.14. </span>FEM<a class="headerlink" href="#fem" title="Permalink to this headline">¶</a></h2>
+<p>The weak formulation is (<img class="math" src="../_images/math/cb691fa0d1e106282e2b6d27d6811eabd91507a0.svg" alt="u(r) = P_{nl}(r)"/>):</p>
 <div class="math">
-<p><img src="../_images/math/e818d651fffa75e82f362b9b472c795246c7f2c8.svg" alt="\int_0^\infty \left( \half u'(r) v'(r) +
+<p><img src="../_images/math/3fc1df934bcec280c21cac32e6bbf8420e5772f6.svg" alt="\int_0^\infty \left( \half u'(r) v'(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)u(r)v(r)
         \right) \d r+
 
@@ -2789,7 +2792,7 @@ the above). We used the result of the integral in
     = \epsilon \int_0^\infty u(r)v(r)\d r"/></p>
 </div><p>for closed shell atoms:</p>
 <div class="math">
-<p><img src="../_images/math/6a4772a59777a30c4a3992ac00ef46bb58f433f7.svg" alt="\int_0^\infty \left( \half u'(r) v'(r) +
+<p><img src="../_images/math/4aa480dd45df745bdc4aa98c4c74b009e3950e7e.svg" alt="\int_0^\infty \left( \half u'(r) v'(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)u(r)v(r)
         \right) \d r+
 
@@ -2803,9 +2806,9 @@ the above). We used the result of the integral in
             {Y^k(u(r) P_{n'l'}(r), r)\over r}
             \d r
     = \epsilon \int_0^\infty u(r)v(r)\d r"/></p>
-</div><p>or (here we use the <img class="math" src="../_images/math/a736e62923c37a268ac9e6467053bfbb9971de7e.svg" alt="il"/> index to label all functions <img class="math" src="../_images/math/8e80ac37e9d1cfc224217889d042927d3d68acd0.svg" alt="u_i"/> for the given <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>)</p>
+</div><p>or (here we use the <img class="math" src="../_images/math/d5a518e9143a7352c91ad8302130cf17f26888aa.svg" alt="il"/> index to label all functions <img class="math" src="../_images/math/289c4f117f14c3b1dad4351b66014617cc7d648f.svg" alt="u_i"/> for the given <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>)</p>
 <div class="math">
-<p><img src="../_images/math/aa1189e839b34dab4d4188b5271d17658abc8260.svg" alt="\int_0^\infty \left( \half u_{il}'(r) v'(r) +
+<p><img src="../_images/math/b901f5db6e088c1f22ad2018b350eb02ef4d16cd.svg" alt="\int_0^\infty \left( \half u_{il}'(r) v'(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)u_{il}(r)v(r)
         \right) \d r+
 
@@ -2818,16 +2821,16 @@ the above). We used the result of the integral in
             {Y^k(u_{il}(r) P_{n'l'}(r), r)\over r}
             \d r
     = \epsilon \int_0^\infty u_{il}(r)v(r)\d r"/></p>
-</div><p>Introducing radial basis <img class="math" src="../_images/math/80cd98bc1d3f97bb6d8860478fe77e4b83f4157f.svg" alt="\phi_{\mu l}(r)"/> (where
-<img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/>, <img class="math" src="../_images/math/704fb4977ea13f062f302dbd515de73872aa4f16.svg" alt="\nu"/> labels all basis functions for the given <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>):</p>
+</div><p>Introducing radial basis <img class="math" src="../_images/math/34faac767856b670023f600bb959ea309f6e2799.svg" alt="\phi_{\mu l}(r)"/> (where
+<img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/>, <img class="math" src="../_images/math/810923b4d44a76e3f0dae9da45aea77a504980db.svg" alt="\nu"/> labels all basis functions for the given <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>):</p>
 <div class="math">
-<p><img src="../_images/math/d859eedcb0b9866533fc1b7f981ee73ffe5c6de5.svg" alt="u_{il}(r) = \sum_\nu C_{\nu i l} \phi_{\nu l}(r)
+<p><img src="../_images/math/fe16a203e0941d19d8c3bdf375ad2a9b3ae3d6c7.svg" alt="u_{il}(r) = \sum_\nu C_{\nu i l} \phi_{\nu l}(r)
 
 v(r) = \phi_{\mu l}(r)"/></p>
-</div><p>we get (here <img class="math" src="../_images/math/202529267140dfd4b8b09b73bbbf9ed5f06707f4.svg" alt="i"/> is again restricted for the subset corresponding to the given
-<img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>):</p>
+</div><p>we get (here <img class="math" src="../_images/math/26e02951ffb851bd3a9b32dd1e10e6de935a0c7f.svg" alt="i"/> is again restricted for the subset corresponding to the given
+<img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>):</p>
 <div class="math">
-<p><img src="../_images/math/242300ccffebcbd9146cf5bc323c510968fdb398.svg" alt="\sum_\nu \int_0^\infty \left( \half \phi_{\mu l}'(r) \phi_{\nu l}'(r) +
+<p><img src="../_images/math/95957248ca8cc1794fa18870efe229d592e66041.svg" alt="\sum_\nu \int_0^\infty \left( \half \phi_{\mu l}'(r) \phi_{\nu l}'(r) +
     \left({l(l+1)\over 2r^2} -{Z\over r} + V_H(r)\right)
         \phi_{\mu l}(r) \phi_{\nu l}(r)
         \right) \d r\,C_{\nu i l}+
@@ -2844,14 +2847,14 @@ v(r) = \phi_{\mu l}(r)"/></p>
         \phi_{\mu l}(r)\phi_{\nu l}(r) \d r\,C_{\nu i l}"/></p>
 </div><p>This can be written as</p>
 <div class="math">
-<p><img src="../_images/math/98ff0b2c62e460d6041d5b39ddb1c97b632679f9.svg" alt="\sum_\nu F_{\mu\nu}^l C_{\nu i l} = \epsilon_i \sum_\nu S_{\mu\nu}^l
+<p><img src="../_images/math/ed5636bfd9e422ff75d37b770a57413e03f2b4ba.svg" alt="\sum_\nu F_{\mu\nu}^l C_{\nu i l} = \epsilon_i \sum_\nu S_{\mu\nu}^l
     C_{\nu i l}
 
 F_{\mu\nu}^l = H_{\mu\nu}^{l \mbox{core}} + G_{\mu\nu}^l
     = T_{\mu\nu}^l + V_{\mu\nu}^l + G_{\mu\nu}^l"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/f3843ccde77d859e4fbeb28bd42fd0c26239136c.svg" alt="T_{\mu\nu}^l = \int_0^\infty \half \phi_{\mu l}'(r) \phi_{\nu l}'(r)
+<p><img src="../_images/math/e0e20910bb2dce2ff070bf07a7871117ad93321a.svg" alt="T_{\mu\nu}^l = \int_0^\infty \half \phi_{\mu l}'(r) \phi_{\nu l}'(r)
     + \phi_{\mu l}(r){l(l+1)\over 2r^2} \phi_{\nu l}(r) \d r
 
 V_{\mu\nu}^l = \int_0^\infty \phi_{\mu l}(r)\left(-{Z\over r}\right)
@@ -2871,26 +2874,26 @@ G_{\mu\nu}^l = \int_0^\infty \phi_{\mu l}(r) V_H(r) \phi_{\nu l}(r) \d r +
 S_{\mu\nu}^l = \int_0^\infty \phi_{\mu l}(r)\phi_{\nu l}(r) \d r
 
 V_H(r) = \sum_{n'l'} 2(2l'+1) {Y^0(P_{n'l'}^2(r), r) \over r}"/></p>
-</div><p>The indices <img class="math" src="../_images/math/afbd9e2259d0ff7d7cc15c1c63f8ab8b1c9e2f64.svg" alt="n' l'"/> go over all occupied orbitals <img class="math" src="../_images/math/f65bfea07bf092e3dd0e7ed90f385fb1a9df6577.svg" alt="P_{n' l'}"/>.
+</div><p>The indices <img class="math" src="../_images/math/d3ad922e8ae328701392245136d070af71d0b51a.svg" alt="n' l'"/> go over all occupied orbitals <img class="math" src="../_images/math/63a2c1467fee768746de9d87936b82e3ae5131e0.svg" alt="P_{n' l'}"/>.
 Introducing density:</p>
 <div class="math">
-<p><img src="../_images/math/ebc5bc8556927a45624e0af34e64ab252e3045d0.svg" alt="n({\bf x}) = 2 \sum_{k=1}^{N/2} | \psi_k({\bf x})|^2
+<p><img src="../_images/math/835b6b9677a7485cae313a05f29f9db25553ff31.svg" alt="n({\bf x}) = 2 \sum_{k=1}^{N/2} | \psi_k({\bf x})|^2
     = 2 \sum_{nlm} | \psi_{nlm}({\bf x})|^2
     = 2 \sum_{nlm} {P_{nl}^2(r)\over r^2} |Y_{lm}(\Omega)|^2 =
 
     = 2 \sum_{nl} {P_{nl}^2(r)\over r^2} {2l+1\over 4\pi}
     = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
     = n(r)"/></p>
-</div><p>We introduce the density matrix <img class="math" src="../_images/math/22ab7c517338a8d8b3f13fc30197e4f47d8c872f.svg" alt="P_{\alpha\beta}^l"/> (where as before <img class="math" src="../_images/math/b82ba6dfb1b5e6c00e647c1307ad786cf0d4fcd5.svg" alt="\alpha"/>,
-<img class="math" src="../_images/math/78462d9549fd018a7ab12f80e113803fcd46a616.svg" alt="\beta"/> run over basis functions for the given <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> only):</p>
+</div><p>We introduce the density matrix <img class="math" src="../_images/math/d5546f931ab2d0d270eeccbedab64172586f33cc.svg" alt="P_{\alpha\beta}^l"/> (where as before <img class="math" src="../_images/math/6c182559a4ad1fe7fb703f4975a28338e470724e.svg" alt="\alpha"/>,
+<img class="math" src="../_images/math/4e178786bb713b00e2cb8d024dfe70345159d1f1.svg" alt="\beta"/> run over basis functions for the given <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> only):</p>
 <div class="math">
-<p><img src="../_images/math/ad1d09683bc3c47aa2bcb3bf2e9b7bbdf723cab8.svg" alt="P_{\alpha\beta}^l = 2 \sum_{nm} C_{\alpha nlm} C_{\beta nlm}
+<p><img src="../_images/math/fe134b4aab6371984dbbbe733552deeceff8ef94.svg" alt="P_{\alpha\beta}^l = 2 \sum_{nm} C_{\alpha nlm} C_{\beta nlm}
     = \sum_{n} 2(2l+1) C_{\alpha nl} C_{\beta nl}"/></p>
-</div><p>where the <img class="math" src="../_images/math/0a8127933194e2b8cbaf9588804e40e2460b3f20.svg" alt="C_{\alpha nl}"/> coefficients are the same for all <img class="math" src="../_images/math/4ad331de8bfc36f67c0dd158e9bb1ba5fc5b96a1.svg" alt="m"/> corresponding
-to the given <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>. The index <img class="math" src="../_images/math/fbcc38c1860a75469d635199ce378ced98a95236.svg" alt="n"/> runs over all occupied states for the given
-<img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>. We can write <img class="math" src="../_images/math/70a3b77789654e5324af7f780f01b7d9a5620954.svg" alt="n(r)"/> as</p>
+</div><p>where the <img class="math" src="../_images/math/c7e37b1ff2a977141fd4d2d025766397fb18a7a2.svg" alt="C_{\alpha nl}"/> coefficients are the same for all <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5d6e98.svg" alt="m"/> corresponding
+to the given <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>. The index <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> runs over all occupied states for the given
+<img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>. We can write <img class="math" src="../_images/math/81c0fc2b8253bda6b26f2d2a8dc06a982d2966fa.svg" alt="n(r)"/> as</p>
 <div class="math">
-<p><img src="../_images/math/54aafb34823d53392e1ec998c1ee7251aa320285.svg" alt="P_{nl}(r) = \sum_\alpha C_{\alpha nl} \phi_{\alpha l}(r)
+<p><img src="../_images/math/b2668eb2a186beffc13f62fa3ce941b7e31fd5dc.svg" alt="P_{nl}(r) = \sum_\alpha C_{\alpha nl} \phi_{\alpha l}(r)
 
 n(r) = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
     = {1\over 4\pi} \sum_{nl} 2(2l+1) \sum_{\alpha\beta}
@@ -2901,7 +2904,7 @@ n(r) = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
         {\phi_{\alpha l}(r) P_{\alpha\beta}^l \phi_{\beta l}(r)\over r^2}"/></p>
 </div><p>Finally we get:</p>
 <div class="math">
-<p><img src="../_images/math/e21313b110a300c15755e5ff41426fbe4f125e34.svg" alt="V_H(r) = \sum_{nl} 2(2l+1) {Y^0(P_{nl}^2(r), r) \over r}
+<p><img src="../_images/math/8de82d2f749c50bfd318dd52ad0a61c70083534c.svg" alt="V_H(r) = \sum_{nl} 2(2l+1) {Y^0(P_{nl}^2(r), r) \over r}
     = {Y^0(4\pi n(r) r^2, r) \over r}
     = \sum_l \sum_{\alpha\beta} P_{\alpha\beta}^l
         {Y^0(\phi_{\alpha l}(r) \phi_{\beta l}(r), r) \over r}
@@ -2914,7 +2917,7 @@ n(r) = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
     R^0(\mu l, \beta l', \nu l, \alpha l')"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/394fa626e586810d1ca295b222e8f3954bdd3595.svg" alt="-\sum_{n'l'}
+<p><img src="../_images/math/4a81feeb2153ba80e50d24bd302b713794313394.svg" alt="-\sum_{n'l'}
     \sum_{k=|l-l'|}^{k=l+l'}
     \sqrt{2l'+1\over 2l+1}c^k(l, 0, l', 0)
     \int_0^\infty
@@ -2945,7 +2948,7 @@ n(r) = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
     R^k(\mu l, \beta l', \alpha l', \nu l)"/></p>
 </div><p>So we get:</p>
 <div class="math">
-<p><img src="../_images/math/be205468be4838b1462e30e561e83f6c96d3622b.svg" alt="G_{\mu\nu}^l
+<p><img src="../_images/math/352d907207c825b44671d5ec309d941ad17290e4.svg" alt="G_{\mu\nu}^l
  = \sum_{l'} \sum_{\alpha\beta}
     P_{\alpha\beta}^{l'} R^0(\mu l, \beta l', \nu l, \alpha l')
     -\half \sum_{l'}
@@ -2961,10 +2964,10 @@ n(r) = {1\over 4\pi} \sum_{nl} 2(2l+1) {P_{nl}^2(r)\over r^2}
              \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
             R^k(\mu l, \beta l', \alpha l', \nu l) \right)"/></p>
 </div><p>The density matrix is zero if there are no occupied orbitals for the given
-<img class="math" src="../_images/math/cb0cd6144d1272fab003c35d7361021e1f279859.svg" alt="l'"/>.</p>
+<img class="math" src="../_images/math/cef0d1fe8df2a8d877d5a2fdbbc0cec93151c5b5.svg" alt="l'"/>.</p>
 <p>The total energy is:</p>
 <div class="math">
-<p><img src="../_images/math/d1235364aab8cd878e2d85468dfe98d7ac619b54.svg" alt="E = \half \sum_{\mu\nu} P_{\mu\nu} (H_{\mu\nu}^{\mbox{core}} + F_{\mu\nu}) =
+<p><img src="../_images/math/601c5a92bcc8be60a69b762559a39525f81cfef0.svg" alt="E = \half \sum_{\mu\nu} P_{\mu\nu} (H_{\mu\nu}^{\mbox{core}} + F_{\mu\nu}) =
 
 E = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
     (H^{l\mbox{core}}_{\mu\nu} + F^l_{\mu\nu}) =
@@ -2981,7 +2984,7 @@ E = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
     \right)"/></p>
 </div><p>where we used:</p>
 <div class="math">
-<p><img src="../_images/math/8fbe8cbe6da8a381a2e785615880d5037fb4d466.svg" alt="\sum_l \sum_{\mu\nu} P^l_{\mu\nu} F^l_{\mu\nu} =
+<p><img src="../_images/math/8835160ed8cf72ebe1d7c6824ca13ea30f41c830.svg" alt="\sum_l \sum_{\mu\nu} P^l_{\mu\nu} F^l_{\mu\nu} =
 
 = \sum_l \sum_{\mu\nu} \sum_n 2(2l+1) C_{\mu nl}C_{\nu nl} F^l_{\mu\nu} =
 
@@ -2991,7 +2994,7 @@ E = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
 = \sum_l \sum_n 2(2l+1) \epsilon_{n l}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/3d13c3d6521d8a1d31b2c93557152c2fd885a706.svg" alt="\half \sum_l \sum_{\mu\nu} P^l_{\mu\nu} G^l_{\mu\nu} =
+<p><img src="../_images/math/a0f9e958afa4cd6432ef6b41477d59fdb9b1ddbb.svg" alt="\half \sum_l \sum_{\mu\nu} P^l_{\mu\nu} G^l_{\mu\nu} =
 
 = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
  \sum_{l'} \sum_{\alpha\beta} P^{l'}_{\alpha\beta} \left(
@@ -3017,48 +3020,48 @@ E = \half \sum_l \sum_{\mu\nu} P^l_{\mu\nu}
             -\half \sum_{k=|l-l'|}^{k=l+l'}
              \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
             R^k(n l, n' l', n' l', n l) \right)"/></p>
-</div></div>
-<div class="section" id="index-transformation">
-<h2>8.11.15. 4-Index Transformation<a class="headerlink" href="#index-transformation" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="index-transformation">
+<h2><span class="section-number">8.11.15. </span>4-Index Transformation<a class="headerlink" href="#index-transformation" title="Permalink to this headline">¶</a></h2>
 <p>The 4-index transformation is a way to convert the two particle
-integrals over basis functions <img class="math" src="../_images/math/60baba702241cb7c138a19f75928c6c679686d17.svg" alt="(\alpha \beta | \gamma \delta)"/> into
-two particle integrals over atomic (or molecular) orbitals <img class="math" src="../_images/math/8dbf9927514b498516e81a60ad894911aa4a8f11.svg" alt="(ij|kl)"/>:</p>
+integrals over basis functions <img class="math" src="../_images/math/e07d1b18e02cae6bf77ad04c9037162d1670634c.svg" alt="(\alpha \beta | \gamma \delta)"/> into
+two particle integrals over atomic (or molecular) orbitals <img class="math" src="../_images/math/85414856577759e4a4c18eaeeace0fc8b06ad491.svg" alt="(ij|kl)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/a91a965ccc9c0c4d8723398b95e661a54b8fb59b.svg" alt="(ij | kl) = \sum_{\alpha \beta \gamma \delta}
+<p><img src="../_images/math/e28789f37a1182114cb9eb4398ed5cf903fce079.svg" alt="(ij | kl) = \sum_{\alpha \beta \gamma \delta}
     C_{\alpha i}
     C_{\beta j}
     C_{\gamma k}
     C_{\delta l} (\alpha \beta | \gamma \delta)"/></p>
-</div></div>
-<div class="section" id="green-s-functions">
-<h2>8.11.16. Green’s Functions<a class="headerlink" href="#green-s-functions" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="green-s-functions">
+<h2><span class="section-number">8.11.16. </span>Green’s Functions<a class="headerlink" href="#green-s-functions" title="Permalink to this headline">¶</a></h2>
 <p>The self energy up to a second order is given by:</p>
 <div class="math">
-<p><img src="../_images/math/b7e90cf6ff7e500aa98e1452c33e5570325a469d.svg" alt="\Sigma_{ij}(E) =
+<p><img src="../_images/math/bb1197024d6486a2094419269c5748c297862e64.svg" alt="\Sigma_{ij}(E) =
     \sum_{ars} {(ir|as) (2(jr|as)-(js|ar))\over E + \epsilon_a
         -\epsilon_r - \epsilon_s} +
     \sum_{abr} {(ia|br) (2(ja|br)-(jb|ar))\over E + \epsilon_r
         -\epsilon_a - \epsilon_b}"/></p>
-</div><p>The <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/>, <img class="math" src="../_images/math/fb30453cb037350d0bc27d8abd617fdc563c635c.svg" alt="b"/> are occupied orbitals, <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/>, <img class="math" src="../_images/math/deb2bb6206edaca480551ef2028840b95011da05.svg" alt="s"/> are virtual orbitals.
+</div><p>The <img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/>, <img class="math" src="../_images/math/de059b8e0317d9f56bbfd2567f5d09337bc3901c.svg" alt="b"/> are occupied orbitals, <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/>, <img class="math" src="../_images/math/45f3f4960bc99d1388078566f1a442578c4f3e15.svg" alt="s"/> are virtual orbitals.
 The Dyson equation is:</p>
 <div class="math" id="equation-dyson">
-<p><span class="eqno">(8.11.16.1)<a class="headerlink" href="#equation-dyson" title="Permalink to this equation">¶</a></span><img src="../_images/math/15f4cf262cc181a38db7f65dd47f3f1b5ee08fc8.svg" alt="{\bf G}(E) = {\bf G}_0(E) + {\bf G}_0(E) {\boldsymbol\Sigma}(E) {\bf G}(E)"/></p>
+<p><span class="eqno">(8.11.16.1)<a class="headerlink" href="#equation-dyson" title="Permalink to this equation">¶</a></span><img src="../_images/math/2898c6d753865f483773e8424446a1a4413ecac1.svg" alt="{\bf G}(E) = {\bf G}_0(E) + {\bf G}_0(E) {\boldsymbol\Sigma}(E) {\bf G}(E)"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/c790f2e254a74e5d173c7953e1a82ff6045a7f9a.svg" alt="{\bf G}_0(E) = {1\over E - {\boldsymbol \epsilon}}
+<p><img src="../_images/math/4bf71297b12bff839481c35ed9621f8a2e6462b7.svg" alt="{\bf G}_0(E) = {1\over E - {\boldsymbol \epsilon}}
     = \sum_k {\ket{k}\bra{k}\over E - \epsilon_k}
 
 {\bf G}(E) = {1\over E - {\bf E}}
     = \sum_k {\ket{k_{int}}\bra{k_{int}}\over E - E_k}"/></p>
-</div><p>The <img class="math" src="../_images/math/4729f5f3d03ca0975302d5ce8ffa4b70cdaf4a45.svg" alt="\epsilon_k"/> and <img class="math" src="../_images/math/397e484b0faf352ed22dd4d7109b4273103a98e7.svg" alt="\ket{k}"/> are HF energies and eigenvectors, <img class="math" src="../_images/math/99818fb80540cd710c6fe6322d264d443757cef2.svg" alt="E_k"/>
-and <img class="math" src="../_images/math/69d06f18f59a8758a793c5e53c877154274f8977.svg" alt="\ket{k_{int}}"/> are
+</div><p>The <img class="math" src="../_images/math/1873012e31f6e6b207f4ba51d6b3d87dfaf7834d.svg" alt="\epsilon_k"/> and <img class="math" src="../_images/math/ea6066856727ca4bdb9f129806e0de1060232d74.svg" alt="\ket{k}"/> are HF energies and eigenvectors, <img class="math" src="../_images/math/7f7b2aad5d850b7c05d2080d24c94a0bbd5472ea.svg" alt="E_k"/>
+and <img class="math" src="../_images/math/5b676a4a97955cc34e52935443b03f6093f8d871.svg" alt="\ket{k_{int}}"/> are
 interacting energies and eigenvectors.
-The matrix <img class="math" src="../_images/math/802b636811d4b96921178c60bf7f0cffd3c40958.svg" alt="\boldsymbol\epsilon"/> is a diagonal matrix of the <img class="math" src="../_images/math/4729f5f3d03ca0975302d5ce8ffa4b70cdaf4a45.svg" alt="\epsilon_k"/>
-eigenvalues, <img class="math" src="../_images/math/a52e78896a07f5da462bdf07e1a8c4a692d17d3e.svg" alt="\bf E"/> is a diagonal matrix of the <img class="math" src="../_images/math/99818fb80540cd710c6fe6322d264d443757cef2.svg" alt="E_k"/> eigenvalues.
-Any Green’s function <img class="math" src="../_images/math/b7c732155c17d99dc0b69be8f349bd9eb5e60f87.svg" alt="{\bf G}(E)"/> (interacting or not) can be written using the
-spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a3cc4c9c43ceb3d5e7aa9cb8f9.svg" alt="{\bf A}(z)"/> as follows:</p>
+The matrix <img class="math" src="../_images/math/7767d49435f50578fdf459b0c62e66ea6d213046.svg" alt="\boldsymbol\epsilon"/> is a diagonal matrix of the <img class="math" src="../_images/math/1873012e31f6e6b207f4ba51d6b3d87dfaf7834d.svg" alt="\epsilon_k"/>
+eigenvalues, <img class="math" src="../_images/math/f2d15e6362aa5b1d012d66896ea28a858f0e8375.svg" alt="\bf E"/> is a diagonal matrix of the <img class="math" src="../_images/math/7f7b2aad5d850b7c05d2080d24c94a0bbd5472ea.svg" alt="E_k"/> eigenvalues.
+Any Green’s function <img class="math" src="../_images/math/6015fb011182c799ecff4aaaba64fbc7836b171a.svg" alt="{\bf G}(E)"/> (interacting or not) can be written using the
+spectral density function <img class="math" src="../_images/math/ef8f373256bba6138c44c5e83c7b446a30f4bd7c.svg" alt="{\bf A}(z)"/> as follows:</p>
 <div class="math">
-<p><img src="../_images/math/7159b2adfa59a5b64992a48728782c33cd811c4c.svg" alt="{\bf G}(E) = {1\over E - {\boldsymbol \epsilon}}
+<p><img src="../_images/math/97e91bf45b5cacbb765e22485214f0c5e61c2c9d.svg" alt="{\bf G}(E) = {1\over E - {\boldsymbol \epsilon}}
     = \sum_k {\ket{k}\bra{k}\over E - \epsilon_k} =
 
     = \sum_k \int_{-\infty}^{\infty}
@@ -3067,7 +3070,7 @@ spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a
     = \int_{-\infty}^{\infty} {{\bf A}(z)\over E-z} \d z"/></p>
 </div><p>where</p>
 <div class="math">
-<p><img src="../_images/math/1d7a2671b1139db4eb1c82f53eb64a63da5c1f03.svg" alt="{\bf A}(z) = \sum_k \ket{k}\bra{k} \delta(z-\epsilon_k) =
+<p><img src="../_images/math/e7ef41571619ca0ab73d762ab10a86ccc283fe2e.svg" alt="{\bf A}(z) = \sum_k \ket{k}\bra{k} \delta(z-\epsilon_k) =
 
 = \sum_k \ket{k}\bra{k} \lim_{\eta\to0} {\eta\over\pi}
     {1\over (z-\epsilon_k)^2 + \eta^2} =
@@ -3079,22 +3082,22 @@ spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a
     \left({\bf G}(z+i\eta) - {\bf G}(z-i\eta)\right)"/></p>
 </div><p>From <a class="reference internal" href="#equation-dyson">(8.11.16.1)</a> we get:</p>
 <div class="math">
-<p><img src="../_images/math/ad9e6a4ff00b75326906ad97276ed9eae3ce4870.svg" alt="{1\over {\bf G}_0(E)} {\bf G}(E) = 1 + {\boldsymbol \Sigma}(E) {\bf G}(E)
+<p><img src="../_images/math/1ec611e6293e28e11f5fb0839c4452892f5493e4.svg" alt="{1\over {\bf G}_0(E)} {\bf G}(E) = 1 + {\boldsymbol \Sigma}(E) {\bf G}(E)
 
 {1\over {\bf G}_0(E)} = {1\over {\bf G}(E)} + {\boldsymbol\Sigma}(E)
 
 {\bf G}(E) = {1\over {1\over {\bf G}_0(E)} - {\boldsymbol \Sigma}(E)}
     = {1\over E - {\boldsymbol \epsilon} - {\boldsymbol \Sigma}(E)}"/></p>
-</div><p>The poles <img class="math" src="../_images/math/99818fb80540cd710c6fe6322d264d443757cef2.svg" alt="E_k"/> of the Green’s function <img class="math" src="../_images/math/b7c732155c17d99dc0b69be8f349bd9eb5e60f87.svg" alt="{\bf G}(E)"/> are then given by:</p>
+</div><p>The poles <img class="math" src="../_images/math/7f7b2aad5d850b7c05d2080d24c94a0bbd5472ea.svg" alt="E_k"/> of the Green’s function <img class="math" src="../_images/math/6015fb011182c799ecff4aaaba64fbc7836b171a.svg" alt="{\bf G}(E)"/> are then given by:</p>
 <div class="math">
-<p><img src="../_images/math/f740be443463707c4a1dcf126ef38a663407a239.svg" alt="D(E) =
+<p><img src="../_images/math/4794ccc510e819d2dfbf7ce1dcaefb5006ec1381.svg" alt="D(E) =
 \det (E - {\boldsymbol \epsilon} - {\boldsymbol \Sigma}(E)) = 0"/></p>
 </div><p>or equivalently:</p>
 <div class="math">
-<p><img src="../_images/math/8d1bd0d52467a6b1b006d9aa6ccc7e5d6c3250b1.svg" alt="({\boldsymbol \Sigma}(E_k) + {\boldsymbol \epsilon})\ket{v} = E_k\ket{v}"/></p>
+<p><img src="../_images/math/89b8db03f120fad22bce724a8fc52b14cbed862f.svg" alt="({\boldsymbol \Sigma}(E_k) + {\boldsymbol \epsilon})\ket{v} = E_k\ket{v}"/></p>
 </div><p>and from the theory of matrices:</p>
 <div class="math">
-<p><img src="../_images/math/1b0ebdd8c4d59cb84bb0972c59758b8496d33a98.svg" alt="\Tr {1\over E-{\bf h}}
+<p><img src="../_images/math/23a01272c26737b1654ad25eb87753c2e5896eab.svg" alt="\Tr {1\over E-{\bf h}}
 = \Tr {{\partial\over\partial E} (E-{\bf h})\over E-{\bf h}}
 = \Tr {\partial\over\partial E}\log(E-{\bf h})
 = {\partial\over\partial E} \Tr \log(E-{\bf h}) =
@@ -3103,16 +3106,16 @@ spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a
 = {1\over\det(E-{\bf h})} {\partial \det(E-{\bf h}) \over\partial E}"/></p>
 </div><p>one obtains that</p>
 <div class="math">
-<p><img src="../_images/math/f689892afa47527052110facab9a78f00e79f0ba.svg" alt="G_{ij}(E) = (-1)^{i+j+1} {\partial \log D(E) \over \partial
+<p><img src="../_images/math/a00b770a742fb8f90f58f64e644c0ab44a36f3a3.svg" alt="G_{ij}(E) = (-1)^{i+j+1} {\partial \log D(E) \over \partial
   ({\boldsymbol \Sigma}(E_k) + {\boldsymbol \epsilon})_{ji}}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/a4813628e96bad0a3dbf18ed37cbbff8c0c1971d.svg" alt="\Tr {\bf G}(E) = \sum_{k} G_{kk}(E)
+<p><img src="../_images/math/fdfeef06ed06431a6f4cc4611b71c82670e7e60e.svg" alt="\Tr {\bf G}(E) = \sum_{k} G_{kk}(E)
     = {\partial \log | D(E) | \over\partial E}"/></p>
-</div><p>The number of particles <img class="math" src="../_images/math/3e7e6b33c03ed829ada1a2d4f6d0abb5bcdfe7e8.svg" alt="N"/> can be calculated as follows
-(<img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/> are occupied orbitals, <img class="math" src="../_images/math/7b5f8f49e0623523265bebfc96ebe8f61e322e04.svg" alt="k"/> are all orbitals):</p>
+</div><p>The number of particles <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/> can be calculated as follows
+(<img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/> are occupied orbitals, <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/> are all orbitals):</p>
 <div class="math">
-<p><img src="../_images/math/88d59ea6a632362c662bf5a388a0a9d0a1b219e0.svg" alt="N = \sum_a | \braket{{\bf r} | a}|^2 =
+<p><img src="../_images/math/d6871f8fec12e113d1d7c334c11d4d470ba62414.svg" alt="N = \sum_a | \braket{{\bf r} | a}|^2 =
 
 = \sum_a \braket{{\bf r} | a}\braket{a | {\bf r}} =
 
@@ -3123,11 +3126,11 @@ spectral density function <img class="math" src="../_images/math/1fd07d9badbea8a
 = {1\over 2\pi i} \int_C \Tr {\bf G}(E) \,\d E =
 
 = {1\over 2\pi i} \int_C {\partial \log | D(E) | \over\partial E} \,\d E"/></p>
-</div><p>The countour <img class="math" src="../_images/math/6e7e2a5448a5278e14f22e7184aba8f70c6d0c58.svg" alt="C"/> only encloses poles <img class="math" src="../_images/math/f733913e6eff3833e3e5a4700e9836d0713da147.svg" alt="E_a"/> corresponding to occupied orbitals
-<img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/>.
-Similarly for the total energy <img class="math" src="../_images/math/5e8476b62749e2048208eda47c6408e122deaa6e.svg" alt="E_{tot}"/>:</p>
+</div><p>The countour <img class="math" src="../_images/math/99da25fa534c059ff52edfb38be4b1cf61ee0162.svg" alt="C"/> only encloses poles <img class="math" src="../_images/math/995e2c4ceba409da031f15ef44b06965fc6df3b7.svg" alt="E_a"/> corresponding to occupied orbitals
+<img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/>.
+Similarly for the total energy <img class="math" src="../_images/math/cb711bee86e52099b4b7000546f46bcddaada42b.svg" alt="E_{tot}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/a75c85f1578094cc45ed86872bb29aa1040f8584.svg" alt="E_{tot} = \sum_a E_a | \braket{{\bf r} | a}|^2 =
+<p><img src="../_images/math/6c2ab7ecc3e023dc33ba7ac4b77fe953e75ac270.svg" alt="E_{tot} = \sum_a E_a | \braket{{\bf r} | a}|^2 =
 
 = \sum_a \braket{{\bf r} | a} E_a \braket{a | {\bf r}} =
 
@@ -3140,17 +3143,19 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
 
 = {1\over 2\pi i} \int_C {\partial \log | D(E) | \over\partial E} E\,\d E"/></p>
 </div><p>For doubly filled orbitals we multiply the expressions by 2.</p>
-</div>
-</div>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">8.11. Hartree-Fock (HF) Method</a><ul>
 <li><a class="reference internal" href="#derivation">8.11.1. Derivation</a></li>
 <li><a class="reference internal" href="#roothaan-equations-for-closed-shell-systems">8.11.2. Roothaan Equations For Closed Shell Systems</a></li>
@@ -3199,12 +3204,17 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="fermi.html"
-                        title="previous chapter">8.10. Ideal Fermi Gas</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="paw.html"
-                        title="next chapter">8.12. Projector Augmented-Wave Method (PAW)</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="fermi.html"
+                          title="previous chapter"><span class="section-number">8.10. </span>Ideal Fermi Gas</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="paw.html"
+                          title="next chapter"><span class="section-number">8.12. </span>Projector Augmented-Wave Method (PAW)</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -3213,17 +3223,15 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -3241,12 +3249,13 @@ Similarly for the total energy <img class="math" src="../_images/math/5e8476b627
           <a href="fermi.html" title="8.10. Ideal Fermi Gas"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.11. </span>Hartree-Fock (HF) Method</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

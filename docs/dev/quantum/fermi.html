@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>8.10. Ideal Fermi Gas &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8.11. Hartree-Fock (HF) Method" href="hf.html" />
@@ -62,7 +64,8 @@
           <a href="dft.html" title="8.9. Density Functional Theory (DFT)"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.10. </span>Ideal Fermi Gas</a></li> 
       </ul>
     </div>  
 
@@ -71,13 +74,13 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="ideal-fermi-gas">
-<h1>8.10. Ideal Fermi Gas<a class="headerlink" href="#ideal-fermi-gas" title="Permalink to this headline">¶</a></h1>
+  <section id="ideal-fermi-gas">
+<h1><span class="section-number">8.10. </span>Ideal Fermi Gas<a class="headerlink" href="#ideal-fermi-gas" title="Permalink to this headline">¶</a></h1>
 <p>We start with a grand potential for fermions and use a Thomas-Fermi
 approximation (that allows us to change the discrete sum below into a
 continuous integral):</p>
 <div class="math">
-<p><img src="../_images/math/759c5b1a875cf6d07e3a1a78425b9f68b8edf7ed.svg" alt="\Omega(\beta, V, \mu)
+<p><img src="../_images/math/476e90ff6511250c2690c6a8e96e1a7b234857f3.svg" alt="\Omega(\beta, V, \mu)
 = -\sum_i {1\over\beta}
     \log\left(\sum_{N=0}^1 e^{-\beta\left(N\epsilon_i - N\mu\right)}\right)
         =
@@ -113,15 +116,15 @@ continuous integral):</p>
 = -{2\sqrt2 V \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right) \,."/></p>
 </div><p>Note: to write this thermodynamic potential in the canonical form
-<img class="math" src="../_images/math/ed71ba1c1625e1d034c8fd37d18f8afd5417b13b.svg" alt="\Omega=\Omega(T, V, \mu)"/>, we simply
-use the relation <img class="math" src="../_images/math/c0e43bd42de6214d4a6a37c015188a0664fccf38.svg" alt="\beta = {1 \over k_B T}"/> and get:</p>
+<img class="math" src="../_images/math/5e356c7505fafa986c4ad011ae1b65394bf9abc7.svg" alt="\Omega=\Omega(T, V, \mu)"/>, we simply
+use the relation <img class="math" src="../_images/math/c0c7260218a0cf5f62562cb63f91c0a713598a7c.svg" alt="\beta = {1 \over k_B T}"/> and get:</p>
 <div class="math">
-<p><img src="../_images/math/4997cb6f8afe41d629083ab641527e669afadc36.svg" alt="\Omega(T, V, \mu)
+<p><img src="../_images/math/c26db6cc7e5c976e7b920084be493d8b0e38140d.svg" alt="\Omega(T, V, \mu)
     = -{2\sqrt2 V (k_B T)^{5\over2} \over 3 \pi^2}
         I_{3\over2}\left(\mu\over k_B T\right) \,."/></p>
 </div><p>Let us compute the particle density:</p>
 <div class="math">
-<p><img src="../_images/math/9b038bf354df8353d235aa95e35224b74bce662a.svg" alt="n_e = - \left({\partial^2 \Omega(\beta, V, \mu) \over
+<p><img src="../_images/math/e10ff55289cbaece87db11bd23d484396e8fe465.svg" alt="n_e = - \left({\partial^2 \Omega(\beta, V, \mu) \over
         \partial V \partial \mu}\right)_\beta
     = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
         {\partial \over \partial \mu}
@@ -131,15 +134,15 @@ use the relation <img class="math" src="../_images/math/c0e43bd42de6214d4a6a37c0
             \left(\beta\mu\right)
     = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
             \left(\beta\mu\right)"/></p>
-</div><p>and express the chemical potential <img class="math" src="../_images/math/a5966276cb1d242021fe9dda6b1e48e6d5ba199a.svg" alt="\mu=\mu(n_e)"/> as a function of the particle
-density <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf321bebc.svg" alt="n_e"/>:</p>
+</div><p>and express the chemical potential <img class="math" src="../_images/math/a5111ca993663829c61b903e915f3b2e20896166.svg" alt="\mu=\mu(n_e)"/> as a function of the particle
+density <img class="math" src="../_images/math/f73adb4ed205ccdaddc84c1d4ed9ba3d3bc7c673.svg" alt="n_e"/>:</p>
 <div class="math" id="equation-mu-ne">
-<p><span class="eqno">(8.10.1)<a class="headerlink" href="#equation-mu-ne" title="Permalink to this equation">¶</a></span><img src="../_images/math/4a5d6d530bbe73dc267151888035dbb306fb8f20.svg" alt="\mu = {1\over\beta} I_{1\over2}^{-1}\left(
+<p><span class="eqno">(8.10.1)<a class="headerlink" href="#equation-mu-ne" title="Permalink to this equation">¶</a></span><img src="../_images/math/fe5b36e9291c5c753e469607ea18b0a7e1080f8d.svg" alt="\mu = {1\over\beta} I_{1\over2}^{-1}\left(
             {\pi^2 \beta^{3\over2} \over \sqrt 2} n_e
         \right)"/></p>
-</div><p>We write the grand potential using <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf321bebc.svg" alt="n_e"/> as follows:</p>
+</div><p>We write the grand potential using <img class="math" src="../_images/math/f73adb4ed205ccdaddc84c1d4ed9ba3d3bc7c673.svg" alt="n_e"/> as follows:</p>
 <div class="math" id="equation-omega-ne">
-<p><span class="eqno">(8.10.2)<a class="headerlink" href="#equation-omega-ne" title="Permalink to this equation">¶</a></span><img src="../_images/math/9f41dde1f0d328b577b0e7625ace88ce6a3d28bb.svg" alt="\Omega(\beta, V, n_e)
+<p><span class="eqno">(8.10.2)<a class="headerlink" href="#equation-omega-ne" title="Permalink to this equation">¶</a></span><img src="../_images/math/72d31616dc14886c66b7640dc483ed4a6c55830f.svg" alt="\Omega(\beta, V, n_e)
     = -{2\sqrt2 V \over 3 \pi^2 \beta^{5\over2}}
         I_{3\over2}\left(
         I_{1\over2}^{-1}\left(
@@ -148,7 +151,7 @@ density <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf
         \right)\,."/></p>
 </div><p>Now we can calculate the free energy:</p>
 <div class="math">
-<p><img src="../_images/math/2c4aca2f6dc24f7cce83daf19e08b6098b6cdb78.svg" alt="F_e(\beta, V, n_e) = \Omega(\beta, V, n_e) + \mu N =
+<p><img src="../_images/math/706a567422c728d21d35ec5929eb445fde4e6a2f.svg" alt="F_e(\beta, V, n_e) = \Omega(\beta, V, n_e) + \mu N =
 
     = -{2\sqrt2 V \over 3 \pi^2 \beta^{5\over2}}
         I_{3\over2}\left(\beta\mu \right)
@@ -164,11 +167,11 @@ density <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf
         {1\over\beta} I_{1\over2}^{-1}\left(
                         {\pi^2 \beta^{3\over2} \over \sqrt 2} n_e
                     \right) n_e V"/></p>
-</div><p>where we used <a class="reference internal" href="#equation-omega-ne">(8.10.2)</a>, <a class="reference internal" href="#equation-mu-ne">(8.10.1)</a> and the fact that <img class="math" src="../_images/math/05640d64b4a0e44f57039b2549279c7ce45b2211.svg" alt="n_e = N / V"/>.
-Note: we can express the free energy in canonical form <img class="math" src="../_images/math/d6acc75a6328cff75dc1c8b772c85264dca65be5.svg" alt="F = F(T, V, N)"/> using
-<img class="math" src="../_images/math/c0e43bd42de6214d4a6a37c015188a0664fccf38.svg" alt="\beta = {1 \over k_B T}"/> and <img class="math" src="../_images/math/05640d64b4a0e44f57039b2549279c7ce45b2211.svg" alt="n_e = N / V"/>:</p>
+</div><p>where we used <a class="reference internal" href="#equation-omega-ne">(8.10.2)</a>, <a class="reference internal" href="#equation-mu-ne">(8.10.1)</a> and the fact that <img class="math" src="../_images/math/c4b95d9be86e55af056e3def5a727b8583b57504.svg" alt="n_e = N / V"/>.
+Note: we can express the free energy in canonical form <img class="math" src="../_images/math/6c26ee8cc9f09a3b193d15c0512e000f944c928f.svg" alt="F = F(T, V, N)"/> using
+<img class="math" src="../_images/math/c0c7260218a0cf5f62562cb63f91c0a713598a7c.svg" alt="\beta = {1 \over k_B T}"/> and <img class="math" src="../_images/math/c4b95d9be86e55af056e3def5a727b8583b57504.svg" alt="n_e = N / V"/>:</p>
 <div class="math">
-<p><img src="../_images/math/17f2561d9a0670ab3cefb351056dea5389b30c26.svg" alt="F_e(T, V, N)
+<p><img src="../_images/math/918755a181014090d302686d80bfa03d9237f784.svg" alt="F_e(T, V, N)
     = -{2\sqrt2 V (k_B T)^{5\over2} \over 3 \pi^2 }
         I_{3\over2}\left(
         I_{1\over2}^{-1}\left(
@@ -180,9 +183,9 @@ Note: we can express the free energy in canonical form <img class="math" src="..
                         {\pi^2 N \over \sqrt 2 (k_B T)^{3\over2} V}
                     \right) N \,."/></p>
 </div><p>We can calculate the entropy
-<img class="math" src="../_images/math/54d3f193e2f0f29d9e50f43ebf7bec389da03701.svg" alt="S=-\left(\partial\Omega\over\partial T\right)_{V,\mu}"/> as follows:</p>
+<img class="math" src="../_images/math/74b0ea8c513d49ae321fc0fe31dc43e4cfd5d36d.svg" alt="S=-\left(\partial\Omega\over\partial T\right)_{V,\mu}"/> as follows:</p>
 <div class="math">
-<p><img src="../_images/math/9fe9741383a7f2216c78c6fd388df87d9ebd05aa.svg" alt="TS
+<p><img src="../_images/math/ea7bb1f2f798b1ef1b7f8c9aed7346b4f8da8bd5.svg" alt="TS
     =-T \left(\partial\Omega\over\partial T\right)_{V,\mu} =
 
     =\beta \left(\partial\Omega\over\partial \beta\right)_{V,\mu} =
@@ -207,9 +210,9 @@ Note: we can express the free energy in canonical form <img class="math" src="..
 
     = {5\over3}{\sqrt2 V \over \pi^2 \beta^{5\over2}} I_{3\over2}(\beta\mu)
         -\mu N \,."/></p>
-</div><p>The total energy <img class="math" src="../_images/math/fca41f429e0685bacaf66cecf6e96b85309c92e2.svg" alt="U"/> is then equal to:</p>
+</div><p>The total energy <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/> is then equal to:</p>
 <div class="math">
-<p><img src="../_images/math/f1e41a72463a0c40471f0aec9d3b8571be5b2b7f.svg" alt="U = \Omega + \mu N + TS =
+<p><img src="../_images/math/d06f3592019b74bd6db33d33a280f832ae436664.svg" alt="U = \Omega + \mu N + TS =
 
     = -{2\sqrt2 V \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right)
@@ -219,11 +222,11 @@ Note: we can express the free energy in canonical form <img class="math" src="..
 
     = {\sqrt2 V \over \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right) \,."/></p>
-</div><p>Note: the kinetic energy <img class="math" src="../_images/math/4e3ccdef40df533375f49599e608f189e4a2c976.svg" alt="E_{kin} = U"/> is equal to the total energy, as the gas
+</div><p>Note: the kinetic energy <img class="math" src="../_images/math/3bfde68ea03e8f1e23c87d0a1f26d948a100b6f3.svg" alt="E_{kin} = U"/> is equal to the total energy, as the gas
 is non-interacting.</p>
-<p>The pressure <img class="math" src="../_images/math/e5d1ed584f05b4f69e8cd56b95e144968e3e8544.svg" alt="p"/> can be calculated from:</p>
+<p>The pressure <img class="math" src="../_images/math/5c1c36d27e644f8fe00b58ddfc901826b621f5ef.svg" alt="p"/> can be calculated from:</p>
 <div class="math">
-<p><img src="../_images/math/6f566c38d94e4ebf7b50c5c367d299f1a75a34e7.svg" alt="p = - \left(\partial\Omega\over\partial V\right)_{\mu,\beta}
+<p><img src="../_images/math/0beb5a7c96a8ee89dd966b562d8a7f6ef37d492e.svg" alt="p = - \left(\partial\Omega\over\partial V\right)_{\mu,\beta}
 = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right) =
 
@@ -233,55 +236,55 @@ is non-interacting.</p>
                         {\pi^2 \beta^{3\over2} \over \sqrt 2} n_e
                     \right)
         \right) \,."/></p>
-</div><p>Note that we got <img class="math" src="../_images/math/51ce1287e497d1efd09729b9b8a4088f7ccd6408.svg" alt="p = {2 U \over 3 V}"/>, <img class="math" src="../_images/math/f052c5ae22506435073e0a2d55b90cf91613c9d3.svg" alt="\Omega=-{2\over3} U"/>,
-<img class="math" src="../_images/math/d87569404be85894100af22af1f711d989b766a9.svg" alt="F=-{2\over3} U + \mu N"/> and <img class="math" src="../_images/math/a0e2ce2758442555f40a9c609bf84aa1adf0e686.svg" alt="TS = {5\over 3} U -\mu N"/>.</p>
-<div class="section" id="low-temperature-limit">
-<h2>8.10.1. Low Temperature Limit<a class="headerlink" href="#low-temperature-limit" title="Permalink to this headline">¶</a></h2>
-<p>At low temperature (<img class="math" src="../_images/math/9802b9830be30cab09000629d24f49f4ef982869.svg" alt="T\to0"/>) we have
-<img class="math" src="../_images/math/41dadd7024e939f08b375c09a523a3ee413572bd.svg" alt="\beta \to \infty"/>, <img class="math" src="../_images/math/ab2ae12ccc3da8528836018c0d8560db0d58c081.svg" alt="I_{1\over2}(x) \to {2\over3} x^{3\over 2}"/>
-(for <img class="math" src="../_images/math/881027bb84b59bd1af2acf71322110a4faa36c94.svg" alt="x\to\infty"/>) and we obtain:</p>
+</div><p>Note that we got <img class="math" src="../_images/math/e8690e12dd6444fdd13c6815af1a922e6a92d3dc.svg" alt="p = {2 U \over 3 V}"/>, <img class="math" src="../_images/math/7e4dbd93618aaacf47c69ebf8abcff7bad6c569e.svg" alt="\Omega=-{2\over3} U"/>,
+<img class="math" src="../_images/math/645d89865fc59abca3c49d67023859752eca966e.svg" alt="F=-{2\over3} U + \mu N"/> and <img class="math" src="../_images/math/b1dffc84912a71c5d92ed3b9f310e524e0d90661.svg" alt="TS = {5\over 3} U -\mu N"/>.</p>
+<section id="low-temperature-limit">
+<h2><span class="section-number">8.10.1. </span>Low Temperature Limit<a class="headerlink" href="#low-temperature-limit" title="Permalink to this headline">¶</a></h2>
+<p>At low temperature (<img class="math" src="../_images/math/1f06104312488711f7d1f744495f2e83779f23d0.svg" alt="T\to0"/>) we have
+<img class="math" src="../_images/math/714177fe22f91fb9a9803456d931f969f1cb0e60.svg" alt="\beta \to \infty"/>, <img class="math" src="../_images/math/0bccce644bf5d187b23e9324f47b683877be0999.svg" alt="I_{1\over2}(x) \to {2\over3} x^{3\over 2}"/>
+(for <img class="math" src="../_images/math/4e4c7bd6fc9e55cfeefc945fc8d70ef196326ce8.svg" alt="x\to\infty"/>) and we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/62dc22d62d8d5d551cbbe805f1eb71494758d3c2.svg" alt="n_e = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
+<p><img src="../_images/math/85a73dcd5e229bac13ec6484d7e1f676da54c61f.svg" alt="n_e = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
             \left(\beta\mu\right)
     \to
   {2\sqrt 2\over 3\pi^2 \beta^{3\over2}} (\beta\mu)^{3\over2}
   ={(2\mu)^{3\over2} \over 3\pi^2}"/></p>
 </div><p>Identical with the zero temperature Thomas-Fermi equation where the chemical
-potential <img class="math" src="../_images/math/bbe57ca8c4d709a0c6a443dcd4780b97cdf6af8b.svg" alt="\mu = E_f = {p_f^2\over 2}"/> becomes the Fermi energy in the limit <img class="math" src="../_images/math/cc0a67046c66db2ea123a06ef2974651796dd335.svg" alt="T
-\to 0"/>. We now express <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> in terms of <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf321bebc.svg" alt="n_e"/> at <img class="math" src="../_images/math/25d854242eb08094db31f440358ba47d41f0b590.svg" alt="T=0"/>:</p>
+potential <img class="math" src="../_images/math/a7c9a74a365cb92270fe09cb8a57666ae7f6e664.svg" alt="\mu = E_f = {p_f^2\over 2}"/> becomes the Fermi energy in the limit <img class="math" src="../_images/math/daace65458cc5ee696ae1a7aa687db66762fa0f3.svg" alt="T
+\to 0"/>. We now express <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/> in terms of <img class="math" src="../_images/math/f73adb4ed205ccdaddc84c1d4ed9ba3d3bc7c673.svg" alt="n_e"/> at <img class="math" src="../_images/math/838979ca506b2d8bc0588d0704ebf76a405008b6.svg" alt="T=0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/05c97e751ea05acb0b0a1e56fdb3c858248b772c.svg" alt="\mu \to \half (3\pi^2 n_e)^{2\over 3}"/></p>
-</div><p>and compute pressure at <img class="math" src="../_images/math/25d854242eb08094db31f440358ba47d41f0b590.svg" alt="T=0"/> using <img class="math" src="../_images/math/a2e20dceef3e6a86a265c4fb5dc3e36a5f0dc5d8.svg" alt="I_{3\over2}(x) \to {2\over5} x^{5\over 2}"/>
-for <img class="math" src="../_images/math/881027bb84b59bd1af2acf71322110a4faa36c94.svg" alt="x\to\infty"/>:</p>
+<p><img src="../_images/math/6d6c0acc99f77bb2acc9063c9687d86fe101205c.svg" alt="\mu \to \half (3\pi^2 n_e)^{2\over 3}"/></p>
+</div><p>and compute pressure at <img class="math" src="../_images/math/838979ca506b2d8bc0588d0704ebf76a405008b6.svg" alt="T=0"/> using <img class="math" src="../_images/math/bbd2080e9408329c681aa544348a1727acf2edfb.svg" alt="I_{3\over2}(x) \to {2\over5} x^{5\over 2}"/>
+for <img class="math" src="../_images/math/4e4c7bd6fc9e55cfeefc945fc8d70ef196326ce8.svg" alt="x\to\infty"/>:</p>
 <div class="math">
-<p><img src="../_images/math/406bd027ee740678bb9b8baa498452392ac5f41c.svg" alt="p = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+<p><img src="../_images/math/3671a822ee5ed63c26837168a29c3c8305f8dd06.svg" alt="p = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right)
   \to {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta \half (3\pi^2 n_e)^{2\over 3} \right)
   \to {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     {2\over 5} \left(\beta \half (3\pi^2 n_e)^{2\over 3} \right)^{5\over 2}
  = {3^{2\over 3} \pi^{4\over 3} \over 5} n_e^{5\over 3}"/></p>
-</div></div>
-<div class="section" id="high-temperature-limit">
-<h2>8.10.2. High Temperature Limit<a class="headerlink" href="#high-temperature-limit" title="Permalink to this headline">¶</a></h2>
-<p>At high temperature (<img class="math" src="../_images/math/88f6e5995853aed16193b10f93576a7d6b5e4236.svg" alt="T\to\infty"/>) we have
-<img class="math" src="../_images/math/fb8505f94fbf008d734cf7af2a76efdafe1f47fc.svg" alt="\beta \to 0"/>, <img class="math" src="../_images/math/5a5049ce49c28ecc657be3c78f29fea159247eae.svg" alt="I_{1\over2}(x) \to {\sqrt\pi\over2} e^x"/>
-(for <img class="math" src="../_images/math/70062f08f91e35dbc4aae560fad22428f3e61132.svg" alt="x\to0"/>) and we obtain:</p>
+</div></section>
+<section id="high-temperature-limit">
+<h2><span class="section-number">8.10.2. </span>High Temperature Limit<a class="headerlink" href="#high-temperature-limit" title="Permalink to this headline">¶</a></h2>
+<p>At high temperature (<img class="math" src="../_images/math/18a1975e4dece756190404c3c5563720fbfad8e6.svg" alt="T\to\infty"/>) we have
+<img class="math" src="../_images/math/35c053a657b7ae5cfa9d97bed55190836290ff9a.svg" alt="\beta \to 0"/>, <img class="math" src="../_images/math/4b18997f357b5516aba86faab5d4209ce6fa0363.svg" alt="I_{1\over2}(x) \to {\sqrt\pi\over2} e^x"/>
+(for <img class="math" src="../_images/math/e2a6a66a639120207cc7f81e6486a400fdd45b36.svg" alt="x\to0"/>) and we obtain:</p>
 <div class="math">
-<p><img src="../_images/math/fd89ba2bbb936aa296d11a2bfb2bcf2775f6fbf3.svg" alt="n_e = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
+<p><img src="../_images/math/fce060387b296850577647b5d9187796f2371140.svg" alt="n_e = {\sqrt2 \over \pi^2 \beta^{3\over2}} I_{1\over2}
             \left(\beta\mu\right)
     \to
   {\sqrt 2\over\pi^2 \beta^{3\over2}} {\sqrt\pi\over2} e^{\beta\mu}"/></p>
-</div><p>We now express <img class="math" src="../_images/math/7f3979c488322e962c38ddef2a5f452ac8df645f.svg" alt="\mu"/> in terms of <img class="math" src="../_images/math/4ac332d2de141ef6d3755917bc1731bcf321bebc.svg" alt="n_e"/> at <img class="math" src="../_images/math/88f6e5995853aed16193b10f93576a7d6b5e4236.svg" alt="T\to\infty"/>:</p>
+</div><p>We now express <img class="math" src="../_images/math/ad1b5e1523a12eb371617b6364fa0be5af2d4520.svg" alt="\mu"/> in terms of <img class="math" src="../_images/math/f73adb4ed205ccdaddc84c1d4ed9ba3d3bc7c673.svg" alt="n_e"/> at <img class="math" src="../_images/math/18a1975e4dece756190404c3c5563720fbfad8e6.svg" alt="T\to\infty"/>:</p>
 <div class="math">
-<p><img src="../_images/math/bb5066dca2ab586ae0757af93e5b4eb644b197cf.svg" alt="\mu \to {1\over\beta}\log\left( n_e
+<p><img src="../_images/math/950aa4295652d33afb450ea7d98a5962e9310fa7.svg" alt="\mu \to {1\over\beta}\log\left( n_e
     {2\pi^2 \beta^{3\over2} \over \sqrt 2 \sqrt\pi}
 \right)"/></p>
-</div><p>In the limit <img class="math" src="../_images/math/3661f117c133e6100fbf46074bba580a0eb40c44.svg" alt="\beta\to0"/> we get <img class="math" src="../_images/math/c005428a98dd7cba61a7fdeb1658e643ab6b63eb.svg" alt="\beta\mu\to-\infty"/>.
-Let us compute pressure at <img class="math" src="../_images/math/88f6e5995853aed16193b10f93576a7d6b5e4236.svg" alt="T\to\infty"/> using <img class="math" src="../_images/math/5533ef46382a8d4e8f921c72a3b8a02de9a51865.svg" alt="I_{3\over2}(x) \to
-{3\sqrt\pi\over4} e^x"/> for <img class="math" src="../_images/math/bfe1ceefa5f9079e91e9eea06075a0ba217658f9.svg" alt="x\to-\infty"/>:</p>
+</div><p>In the limit <img class="math" src="../_images/math/4f7ed735b7b556e9c676b2882b52f36486943fad.svg" alt="\beta\to0"/> we get <img class="math" src="../_images/math/2c8d083bcf00725ad0524ae7cd6afa1075861dca.svg" alt="\beta\mu\to-\infty"/>.
+Let us compute pressure at <img class="math" src="../_images/math/18a1975e4dece756190404c3c5563720fbfad8e6.svg" alt="T\to\infty"/> using <img class="math" src="../_images/math/8a12502b4ee4bfcad06729f7131bc79fc3a5331e.svg" alt="I_{3\over2}(x) \to
+{3\sqrt\pi\over4} e^x"/> for <img class="math" src="../_images/math/e0fc3eb72a776fa451fe9c11d5faad3d0a0b6fa9.svg" alt="x\to-\infty"/>:</p>
 <div class="math">
-<p><img src="../_images/math/e575e6eb7521fbb13493eaedeabb2e1fc1c45833.svg" alt="p = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
+<p><img src="../_images/math/937e1a58e830f9184d963db8e154f41fa61fe8a1.svg" alt="p = {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(\beta\mu\right)
   \to {2\sqrt2 \over 3 \pi^2 \beta^{5\over2}}
     I_{3\over2}\left(
@@ -296,18 +299,20 @@ Let us compute pressure at <img class="math" src="../_images/math/88f6e5995853ae
             \right) =
 
   = {n_e \over \beta} = n_e k_B T = {N k_B T \over V}\,."/></p>
-</div><p>We obtained the ideal gas equation <img class="math" src="../_images/math/3dee75c8bb7093c698c92f62ba6c12347bae9576.svg" alt="pV = N k_B T"/>.</p>
-</div>
-</div>
+</div><p>We obtained the ideal gas equation <img class="math" src="../_images/math/8ee09976d046d13959f72695b9008e61f957adfa.svg" alt="pV = N k_B T"/>.</p>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">8.10. Ideal Fermi Gas</a><ul>
 <li><a class="reference internal" href="#low-temperature-limit">8.10.1. Low Temperature Limit</a></li>
 <li><a class="reference internal" href="#high-temperature-limit">8.10.2. High Temperature Limit</a></li>
@@ -315,12 +320,17 @@ Let us compute pressure at <img class="math" src="../_images/math/88f6e5995853ae
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="dft.html"
-                        title="previous chapter">8.9. Density Functional Theory (DFT)</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="hf.html"
-                        title="next chapter">8.11. Hartree-Fock (HF) Method</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="dft.html"
+                          title="previous chapter"><span class="section-number">8.9. </span>Density Functional Theory (DFT)</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="hf.html"
+                          title="next chapter"><span class="section-number">8.11. </span>Hartree-Fock (HF) Method</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -329,17 +339,15 @@ Let us compute pressure at <img class="math" src="../_images/math/88f6e5995853ae
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -357,12 +365,13 @@ Let us compute pressure at <img class="math" src="../_images/math/88f6e5995853ae
           <a href="dft.html" title="8.9. Density Functional Theory (DFT)"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.10. </span>Ideal Fermi Gas</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

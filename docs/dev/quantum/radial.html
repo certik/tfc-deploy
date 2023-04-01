@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>8.8. Radial Schrödinger and Dirac Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8.9. Density Functional Theory (DFT)" href="dft.html" />
@@ -62,7 +64,8 @@
           <a href="examples.html" title="8.7. Examples"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.8. </span>Radial Schrödinger and Dirac Equations</a></li> 
       </ul>
     </div>  
 
@@ -71,22 +74,22 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="radial-schrodinger-and-dirac-equations">
-<h1>8.8. Radial Schrödinger and Dirac Equations<a class="headerlink" href="#radial-schrodinger-and-dirac-equations" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="variational-formulation-of-the-schrodinger-equation">
-<h2>8.8.1. Variational Formulation of the Schrödinger equation<a class="headerlink" href="#variational-formulation-of-the-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+  <section id="radial-schrodinger-and-dirac-equations">
+<h1><span class="section-number">8.8. </span>Radial Schrödinger and Dirac Equations<a class="headerlink" href="#radial-schrodinger-and-dirac-equations" title="Permalink to this headline">¶</a></h1>
+<section id="variational-formulation-of-the-schrodinger-equation">
+<h2><span class="section-number">8.8.1. </span>Variational Formulation of the Schrödinger equation<a class="headerlink" href="#variational-formulation-of-the-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
 <p>Lagrangian is:</p>
 <div class="math">
-<p><img src="../_images/math/d72bd76dd27c40bf5965794d27419487b0615e5c.svg" alt="\L(\psi) = \half (\nabla \psi)^2 + V(x) \psi^2(x)"/></p>
+<p><img src="../_images/math/ec15bfd324355d0ff6331c80ebce4b442a46e759.svg" alt="\L(\psi) = \half (\nabla \psi)^2 + V(x) \psi^2(x)"/></p>
 </div><p>Subject to the normalization constrain:</p>
 <div class="math">
-<p><img src="../_images/math/4837ba3424b88f12436d32509ff75908ce3e5663.svg" alt="N[\psi] = \int|\psi(x)|^2 \d^3 x - 1 = 0"/></p>
+<p><img src="../_images/math/4f4483597a4248762da74ec19709045b6a9f639c.svg" alt="N[\psi] = \int|\psi(x)|^2 \d^3 x - 1 = 0"/></p>
 </div><p>The action is:</p>
 <div class="math">
-<p><img src="../_images/math/cf7bb36902e2054e9c3dc1a0c15655e68db9cfdb.svg" alt="S[\psi] = \int \L \d^3 x"/></p>
+<p><img src="../_images/math/9e9dfffd3be09a6d8832e218db189518452c7601.svg" alt="S[\psi] = \int \L \d^3 x"/></p>
 </div><p>Variating it (subject to the normalization condition) we get:</p>
 <div class="math">
-<p><img src="../_images/math/97cc8214bc9173b2e3a7174c1124196a7128bbfa.svg" alt="0 = \delta (S - \epsilon N) =
+<p><img src="../_images/math/f1b996c7b49df8b671c9c095cb222d75f27e3e43.svg" alt="0 = \delta (S - \epsilon N) =
 \delta\int\half (\nabla \psi)^2 + V(x) \psi^2(x) \d^3x
  - \epsilon \left(\int|\psi(x)|^2 \d^3 x - 1\right)
 =
@@ -97,57 +100,57 @@
 = 2\int \left(-\half\nabla^2 \psi + V \psi - \epsilon\psi\right) \delta \psi
         \d^3 x + \int ({\bf n}\cdot\nabla\psi) \delta \psi\, \d^2 x"/></p>
 </div><p>Which gives the Schrödinger equation assuming the surface integral vanishes.</p>
-<p>Note: to apply the variation <img class="math" src="../_images/math/59945a872a8d66e4ba951f0d3b5913721fefd454.svg" alt="\delta"/> correctly, one uses the definition:</p>
+<p>Note: to apply the variation <img class="math" src="../_images/math/d3eba29d795252212afb9268c5afa550b0249815.svg" alt="\delta"/> correctly, one uses the definition:</p>
 <div class="math">
-<p><img src="../_images/math/e8753f6b51cc13e506974559048119834c022708.svg" alt="\delta F[\psi] \equiv \left.{\d\over\d\epsilon}F[\psi + \epsilon \delta\psi]
+<p><img src="../_images/math/40246b8b8fa55ecb37aa9f220724fc5aee0903d9.svg" alt="\delta F[\psi] \equiv \left.{\d\over\d\epsilon}F[\psi + \epsilon \delta\psi]
     \right|_{\epsilon=0}"/></p>
-</div><div class="section" id="weak-formulation">
+</div><section id="weak-formulation">
 <h3>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h3>
-<p>The weak formulation is obtained from the above by substituting <img class="math" src="../_images/math/ad42b30097acf64116afdf6e6262d3f075dd5173.svg" alt="\delta\psi
+<p>The weak formulation is obtained from the above by substituting <img class="math" src="../_images/math/baae99d654886c4adc0f41d11816766d48e977f8.svg" alt="\delta\psi
 \to v"/> (the test function) so we get:</p>
 <div class="math">
-<p><img src="../_images/math/021feedc15cb904b28a7e1b59e03b35274747f48.svg" alt="\int \half(\nabla \psi)\cdot(\nabla v) + V \psi v - \epsilon\psi v\,\d^3 x"/></p>
-</div></div>
-</div>
-<div class="section" id="radial-schrodinger-equation">
-<h2>8.8.2. Radial Schrödinger equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<p><img src="../_images/math/0370700b96e2d686845d5c3f6252b23c663b5bf5.svg" alt="\int \half(\nabla \psi)\cdot(\nabla v) + V \psi v - \epsilon\psi v\,\d^3 x"/></p>
+</div></section>
+</section>
+<section id="radial-schrodinger-equation">
+<h2><span class="section-number">8.8.2. </span>Radial Schrödinger equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
 <p>There are two ways to obtain the radial Schrödinger equation. Either from the
 Lagrangian, or from the equation itself.</p>
-<div class="section" id="from-the-equation">
+<section id="from-the-equation">
 <h3>From the Equation<a class="headerlink" href="#from-the-equation" title="Permalink to this headline">¶</a></h3>
 <div class="math">
-<p><img src="../_images/math/2e884450bfb8fd34958eb5081a4c8d9430005716.svg" alt="-{1\over2}\nabla^2\psi({\bf x})+V(r)\psi({\bf x})=E\psi({\bf x})"/></p>
+<p><img src="../_images/math/7c1c949d7d236613a4735d073e0c6e744ef23204.svg" alt="-{1\over2}\nabla^2\psi({\bf x})+V(r)\psi({\bf x})=E\psi({\bf x})"/></p>
 </div><p>The way to solve it is to separate the equation into radial and angular parts
 by writing the Laplace operator in spherical coordinates as:</p>
 <div class="math">
-<p><img src="../_images/math/d59b337093d861a970d4c4576b8e652eeed68544.svg" alt="\nabla^2f =  {\partial^2 f\over\partial\rho^2} +{2\over \rho}{\partial f\over\partial\rho} -{L^2 f\over \rho^2}"/></p>
+<p><img src="../_images/math/88c5e9fe27bf30c143ce3679ecdb1b87a7688fba.svg" alt="\nabla^2f =  {\partial^2 f\over\partial\rho^2} +{2\over \rho}{\partial f\over\partial\rho} -{L^2 f\over \rho^2}"/></p>
 </div><div class="math">
-<p><img src="../_images/math/240211596e26f087404f6104a048a72466c73b60.svg" alt="L^2= -{\partial^2\over\partial\theta^2} -{1\over\sin^2\theta}{\partial^2\over\partial\phi^2} -{1\over\tan\theta}{\partial\over\partial\theta}"/></p>
-</div><p>Substituting <img class="math" src="../_images/math/837904531f9f9d28db34be8897b13364cae1eb13.svg" alt="\psi({\bf x})=R(\rho)Y(\theta,\phi)"/> into the Schrödinger equation
+<p><img src="../_images/math/d1c3eb18136e929da274cd983b2176ca3976b4e4.svg" alt="L^2= -{\partial^2\over\partial\theta^2} -{1\over\sin^2\theta}{\partial^2\over\partial\phi^2} -{1\over\tan\theta}{\partial\over\partial\theta}"/></p>
+</div><p>Substituting <img class="math" src="../_images/math/6e0ad645139d14573614f1250f8385b1e6947311.svg" alt="\psi({\bf x})=R(\rho)Y(\theta,\phi)"/> into the Schrödinger equation
 yields:</p>
 <div class="math">
-<p><img src="../_images/math/02433185c5fb5d4816a4c9fc4d913fd2b58bf2b6.svg" alt="-{1\over2}\nabla^2(RY)+VRY=ERY"/></p>
+<p><img src="../_images/math/c8232835c0bd68ff7baba8859d456f765be6aab5.svg" alt="-{1\over2}\nabla^2(RY)+VRY=ERY"/></p>
 </div><div class="math">
-<p><img src="../_images/math/f6f958e2525bf2e57167fdf311d102994757239f.svg" alt="-{1\over2}R''Y-{1\over\rho}R'Y+{L^2RY\over2\rho^2}+VRY=ERY"/></p>
-</div><p>Using the fact that <img class="math" src="../_images/math/8c9615f00eb82811d93bf6cae359b885746efbfa.svg" alt="L^2Y=l(l+1)Y"/> we can cancel <img class="math" src="../_images/math/20cbd6d0f47dd58737f55ce7f24ee680f2a53c05.svg" alt="Y"/> and we get the radial
+<p><img src="../_images/math/8b57a05e681f83aac64537251823b414cbf9174d.svg" alt="-{1\over2}R''Y-{1\over\rho}R'Y+{L^2RY\over2\rho^2}+VRY=ERY"/></p>
+</div><p>Using the fact that <img class="math" src="../_images/math/f51bb0c5dfd1b9907d6e66229db4212ca2f0bada.svg" alt="L^2Y=l(l+1)Y"/> we can cancel <img class="math" src="../_images/math/98d5fad7269b23f347c1976c3b919eae0e41f99a.svg" alt="Y"/> and we get the radial
 Schrödinger equation:</p>
 <div class="math">
-<p><img src="../_images/math/5745febec0a7119d759fcd4e6d3c1d359f1fc166.svg" alt="-{1\over2}R''-{1\over\rho}R'+{l(l+1)R\over2\rho^2}+VR=ER"/></p>
+<p><img src="../_images/math/97cc2ecb581b3f5827b6e14f7362256144c12cc4.svg" alt="-{1\over2}R''-{1\over\rho}R'+{l(l+1)R\over2\rho^2}+VR=ER"/></p>
 </div><p>Normalization:</p>
 <div class="math">
-<p><img src="../_images/math/d5ee0592018a44ffb9e9fed64fb004c79c4540de.svg" alt="1 = \int |\psi|^2 \d^3 x
+<p><img src="../_images/math/266c1a4bebd79f01a54898c5441d6dcb3077565a.svg" alt="1 = \int |\psi|^2 \d^3 x
   = \int R^2 |Y|^2 \d^3 x
   = \int R^2 |Y|^2 \rho^2\d\Omega\d \rho
   = \int R^2 \rho^2 \d\rho \int |Y|^2 \d\Omega
   = \int R^2 \rho^2 \d \rho"/></p>
-</div></div>
-<div class="section" id="from-the-lagrangian">
+</div></section>
+<section id="from-the-lagrangian">
 <h3>From the Lagrangian<a class="headerlink" href="#from-the-lagrangian" title="Permalink to this headline">¶</a></h3>
 <p>We need to convert the Lagrangian to spherical coordinates. In order to easily
 make sure we do things covariantly, we start from the action (which is a
 scalar):</p>
 <div class="math">
-<p><img src="../_images/math/0fb08d49eda876f0b28c764ef0efeca129aa7e5e.svg" alt="S[\psi] = \int \half (\nabla \psi)^2 + V(x) \psi^2(x) \, \d^3 x =
+<p><img src="../_images/math/32a56e226dcbb3feadedc124d7f9f046903db28b.svg" alt="S[\psi] = \int \half (\nabla \psi)^2 + V(x) \psi^2(x) \, \d^3 x =
 
 = \int (\half (\nabla (RY))^2 + V (RY)^2  )\rho^2\d \rho \d\Omega =
 
@@ -158,15 +161,15 @@ scalar):</p>
 = \int \half \rho^2 R'^2 + (\rho^2 V + \half l(l+1)) R^2\,\d \rho\,,"/></p>
 </div><p>where we used the following properties of spherical harmonics:</p>
 <div class="math">
-<p><img src="../_images/math/14ee180be15cb51df8dc7818b1131bdfb07d7644.svg" alt="\int Y^2\d\Omega = 1
+<p><img src="../_images/math/e5058d7d4c3ceff9e97e0f865e0be04f70294af3.svg" alt="\int Y^2\d\Omega = 1
 
 \int \rho^2 (\nabla Y)^2\d\Omega = l(l+1)
 
 (Y{\bf \hat \rho})\cdot(\rho \nabla Y) = 0"/></p>
-</div><p>We now minimize the action (subject to the normalization <img class="math" src="../_images/math/0a75f90410472c5a42390e8922180e619d2846ca.svg" alt="\int \rho^2 R^2\d\rho
+</div><p>We now minimize the action (subject to the normalization <img class="math" src="../_images/math/4c995717440ceef4c12f8352386c39c47a76814e.svg" alt="\int \rho^2 R^2\d\rho
 = 1"/>) to obtain the radial equation:</p>
 <div class="math">
-<p><img src="../_images/math/cba8f0083c0b00b7d655e471fb503c9f3f9f5b3c.svg" alt="0 = \delta (S - \epsilon N) = \delta
+<p><img src="../_images/math/9706dd7a56ab97307c3688c959cefcab1cf62cc6.svg" alt="0 = \delta (S - \epsilon N) = \delta
 \int \half \rho^2 R'^2 + (\rho^2 V + \half l(l+1)) R^2 - \epsilon \rho^2R^2
     \,\d \rho =
 
@@ -177,156 +180,156 @@ scalar):</p>
 R\right)\delta R \,\d \rho + [\rho^2 R' \delta R]^a_b"/></p>
 </div><p>So the radial equation is:</p>
 <div class="math" id="equation-radial2">
-<p><span class="eqno">(8.8.2.1)<a class="headerlink" href="#equation-radial2" title="Permalink to this equation">¶</a></span><img src="../_images/math/e553cb64a064126ea95421c02ea467d3b3c6a9b4.svg" alt="(-\half \rho^2 R')' + (\rho^2 V + \half l(l+1)) R = \epsilon \rho^2 R"/></p>
+<p><span class="eqno">(8.8.2.1)<a class="headerlink" href="#equation-radial2" title="Permalink to this equation">¶</a></span><img src="../_images/math/d35228d8d1827a53bb2143ce56566f633fd63734.svg" alt="(-\half \rho^2 R')' + (\rho^2 V + \half l(l+1)) R = \epsilon \rho^2 R"/></p>
 </div><p>In agreement with the previous result.</p>
-</div>
-<div class="section" id="solving-for-u-rr">
+</section>
+<section id="solving-for-u-rr">
 <h3>Solving for u=rR<a class="headerlink" href="#solving-for-u-rr" title="Permalink to this headline">¶</a></h3>
-<p>We can also make the substitution <img class="math" src="../_images/math/be0ffbb3b6f2166ba07895c935b4a5bf6819ddcb.svg" alt="u = rR"/> and solve for <img class="math" src="../_images/math/190de9803ed51a0e302c9d8bbc1349d46afcfd86.svg" alt="u"/>:</p>
+<p>We can also make the substitution <img class="math" src="../_images/math/aaf7acf0a67c4bd7d165e6c5676c249256e999db.svg" alt="u = rR"/> and solve for <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/>:</p>
 <div class="math">
-<p><img src="../_images/math/00a6c2e784ae76d80a5281ee599a5e917740b60d.svg" alt="R = {u\over r}
+<p><img src="../_images/math/754a9884ea08f12eac1d33252eb3ceb423d74326.svg" alt="R = {u\over r}
 
 R' = {u'\over r} - {u\over r^2}"/></p>
 </div><p>and we substitute this to <a class="reference internal" href="#equation-radial2">(8.8.2.1)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/7ad49401d13de298b580b04aaa5ef9a41aaa5151.svg" alt="-\half \left(r^2\left({u'\over r} - {u\over r^2}\right)\right)'+
+<p><img src="../_images/math/918820a93f0e31beb30a4a019073426b1ce6c070.svg" alt="-\half \left(r^2\left({u'\over r} - {u\over r^2}\right)\right)'+
     \left(V + {l(l+1)\over 2 r^2}\right) r u = \epsilon r u
 
 -\half ru''+ \left(V + {l(l+1)\over 2 r^2}\right) r u = \epsilon r u
 
 -\half u''+ \left(V + {l(l+1)\over 2 r^2}\right) u = \epsilon u"/></p>
-</div></div>
-<div class="section" id="perturbative-correction-to-energy">
+</div></section>
+<section id="perturbative-correction-to-energy">
 <h3>Perturbative Correction to Energy<a class="headerlink" href="#perturbative-correction-to-energy" title="Permalink to this headline">¶</a></h3>
-<p>We introduce <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> and <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/> by <img class="math" src="../_images/math/977bc0d5fd672bef1337f0a74b5ae09673d046c6.svg" alt="P(r) = u(r)"/> and <img class="math" src="../_images/math/c6539c94b5b11fd4e05ee9b78f7b943a2e351891.svg" alt="Q(r) = P'(r) = u'(r)"/>. The
+<p>We introduce <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> by <img class="math" src="../_images/math/fe39b8d75bbf745479865cf0f51966bd0a5063e2.svg" alt="P(r) = u(r)"/> and <img class="math" src="../_images/math/4752daba7f386715de81d3f16eaa4245233c2785.svg" alt="Q(r) = P'(r) = u'(r)"/>. The
 radial Schrödinger equation is then:</p>
 <div class="math">
-<p><img src="../_images/math/c0c07b16938e340adca52c961d334adf9f406dbd.svg" alt="P'(r) = Q(r)
+<p><img src="../_images/math/aff4bb2a57aac8227ef4af8b5b355200d82ae1d0.svg" alt="P'(r) = Q(r)
 
 Q'(r) = -2\left(E - V(r) - {l(l+1)\over 2 r^2}\right)P(r)"/></p>
-</div><p>Let <img class="math" src="../_images/math/34baa1f77c21936f6960da174f8b008c31d15f12.svg" alt="P_1"/> and <img class="math" src="../_images/math/93699f94b2133438a28093d84c844577b0f0820c.svg" alt="Q_1"/> represent the radial wave function and its derivative at
-<img class="math" src="../_images/math/aa29cf66b48e3dd19bb4dbfee57a2569a014ab0a.svg" alt="E_1"/> and <img class="math" src="../_images/math/0fd0c63f85a61fe49e1cea202beaabf6c0154cfa.svg" alt="P_2"/>, <img class="math" src="../_images/math/9916ba6b15986914c79c09d74c8e48acbd92fc2c.svg" alt="Q_2"/> at <img class="math" src="../_images/math/96e3e0e2281fa97961a0ffd7a01887b17a55b92f.svg" alt="E_2"/>, so the following holds:</p>
+</div><p>Let <img class="math" src="../_images/math/1805f603fdbf3dc199c39cdacb08b14c4667443f.svg" alt="P_1"/> and <img class="math" src="../_images/math/97425f466d742cca280a19c7eef923e3c37d01e9.svg" alt="Q_1"/> represent the radial wave function and its derivative at
+<img class="math" src="../_images/math/d13aca8907df09b9c951f1e02e12e9852227cb25.svg" alt="E_1"/> and <img class="math" src="../_images/math/509549be165e7eb7b22c60ac165ae8033e5a3063.svg" alt="P_2"/>, <img class="math" src="../_images/math/643ac889faefdb65db848d3676c4a2af918af046.svg" alt="Q_2"/> at <img class="math" src="../_images/math/8208a42bcd39433afae962cd0d0fdf765ef2bf83.svg" alt="E_2"/>, so the following holds:</p>
 <div class="math">
-<p><img src="../_images/math/4d3995bd8d1c793e9ada4eda6f6f689964246eb8.svg" alt="Q_1'(r) = -2\left(E_1 - V(r) - {l(l+1)\over 2 r^2}\right)P_1(r)
+<p><img src="../_images/math/8a4bb2fb51b3f450cde801b646b26fa065cae69b.svg" alt="Q_1'(r) = -2\left(E_1 - V(r) - {l(l+1)\over 2 r^2}\right)P_1(r)
 
 Q_2'(r) = -2\left(E_2 - V(r) - {l(l+1)\over 2 r^2}\right)P_2(r)"/></p>
-</div><p>Now we evaluate <img class="math" src="../_images/math/686b2fddab8b9daddc52deb85e192500b16b72e5.svg" alt="(Q_2 P_1 - P_2 Q_1)'"/> using the relations above:</p>
+</div><p>Now we evaluate <img class="math" src="../_images/math/73ab2e893059323dfbb4e203b85166f5b9b32e2c.svg" alt="(Q_2 P_1 - P_2 Q_1)'"/> using the relations above:</p>
 <div class="math">
-<p><img src="../_images/math/33369387ba4bfaf55b0f603c30afc1e75763504f.svg" alt="(Q_2 P_1 - P_2 Q_1)' = Q_2' P_1 + Q_2 P_1' - P_2'Q_1 - P_2 Q_1'
+<p><img src="../_images/math/cec1ba2aee2cded40fe31a3301351b16b22f41e9.svg" alt="(Q_2 P_1 - P_2 Q_1)' = Q_2' P_1 + Q_2 P_1' - P_2'Q_1 - P_2 Q_1'
 = Q_2' P_1 + Q_2 Q_1' - Q_2'Q_1 - P_2 Q_1'
 = Q_2' P_1 - P_2 Q_1'
 = 2 (E_1 - E_2) P_1 P_2"/></p>
-</div><p>We integrate the last formula on the intervals <img class="math" src="../_images/math/47a32dce27d1d93a7376806a1d820aed01597ece.svg" alt="(0, a_c)"/> and <img class="math" src="../_images/math/c8abab0926bdc268e831d07ae64b7ebfd779744f.svg" alt="(a_c, \infty)"/>:</p>
+</div><p>We integrate the last formula on the intervals <img class="math" src="../_images/math/85dd3bccee39b3244bf195a54570e12dfe4eb3dc.svg" alt="(0, a_c)"/> and <img class="math" src="../_images/math/1822fb21f39e5d4ed4dac26e970fb3e02fe6fcf8.svg" alt="(a_c, \infty)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9644aad71622bf0c5197ac3facbdeb2be1120d4d.svg" alt="[Q_2 P_1 - P_2 Q_1]^{a_c}_0
+<p><img src="../_images/math/a69ca60c2914e82b881c0ad1d3dd164bf7ce4f7f.svg" alt="[Q_2 P_1 - P_2 Q_1]^{a_c}_0
     = 2 (E_1 - E_2) \int^{a_c}_0 P_1(r) P_2(r) \,\d r
 
 [Q_2 P_1 - P_2 Q_1]^\infty_{a_c}
     = 2 (E_1 - E_2) \int^\infty_{a_c} P_1(r) P_2(r) \,\d r"/></p>
-</div><p>On the interval <img class="math" src="../_images/math/47a32dce27d1d93a7376806a1d820aed01597ece.svg" alt="(0, a_c)"/> we know the exact solution corresponding to the
-energies <img class="math" src="../_images/math/aa29cf66b48e3dd19bb4dbfee57a2569a014ab0a.svg" alt="E_1"/> and <img class="math" src="../_images/math/96e3e0e2281fa97961a0ffd7a01887b17a55b92f.svg" alt="E_2"/> by integrating outwards (the solution will eventually
-diverge for large <img class="math" src="../_images/math/c3d0937ae47b2f52cec7965ba469ca54a3403a43.svg" alt="r"/> except for the eigenvalues, but we only need it up to
-<img class="math" src="../_images/math/c58f5f9c3f88a80aeb2c230ae61fed7fd17a70e0.svg" alt="a_c"/>) and we know that <img class="math" src="../_images/math/1fc372809e419ab73968f91259c05e73b1580330.svg" alt="P_1(0) = P_2(0) = 0"/>, so we get:</p>
+</div><p>On the interval <img class="math" src="../_images/math/85dd3bccee39b3244bf195a54570e12dfe4eb3dc.svg" alt="(0, a_c)"/> we know the exact solution corresponding to the
+energies <img class="math" src="../_images/math/d13aca8907df09b9c951f1e02e12e9852227cb25.svg" alt="E_1"/> and <img class="math" src="../_images/math/8208a42bcd39433afae962cd0d0fdf765ef2bf83.svg" alt="E_2"/> by integrating outwards (the solution will eventually
+diverge for large <img class="math" src="../_images/math/4143a785963d35a54e3a8fafaef2d319728ec056.svg" alt="r"/> except for the eigenvalues, but we only need it up to
+<img class="math" src="../_images/math/d29371055baa159c74844bcbdb78332e1d33c458.svg" alt="a_c"/>) and we know that <img class="math" src="../_images/math/8bcc721bf39182e180d3bbc1f0439d47d71bdf65.svg" alt="P_1(0) = P_2(0) = 0"/>, so we get:</p>
 <div class="math">
-<p><img src="../_images/math/a61ffadb4bb1bd6b4f137dca21c91205a7ea6421.svg" alt="Q_2(a_c^-) P_1(a_c^-) - P_2(a_c^-) Q_1(a_c^-)
+<p><img src="../_images/math/686f68a0fcf969c3a8b7c0fa2d074539168ae26b.svg" alt="Q_2(a_c^-) P_1(a_c^-) - P_2(a_c^-) Q_1(a_c^-)
     = 2 (E_1 - E_2) \int^{a_c}_0 P_1(r) P_2(r) \,\d r"/></p>
-</div><p>where <img class="math" src="../_images/math/336c2762fc64a8fc1ea934795814d9d1a6adef1b.svg" alt="a_c^-"/> means that we need the values at <img class="math" src="../_images/math/c58f5f9c3f88a80aeb2c230ae61fed7fd17a70e0.svg" alt="a_c"/> when integrating the
+</div><p>where <img class="math" src="../_images/math/482d2efc7c56a4a7ede1af80015b9dd8649d4f8d.svg" alt="a_c^-"/> means that we need the values at <img class="math" src="../_images/math/d29371055baa159c74844bcbdb78332e1d33c458.svg" alt="a_c"/> when integrating the
 equation from the left (the value will generally be different when integrating
 the equation from the right, unless the energy is an eigenvalue).
-Similarly on the other interval where <img class="math" src="../_images/math/3fdbb87dd78aacc665e7bd5eee4f628769449819.svg" alt="P_1(\infty) = P_2(\infty)=0"/>:</p>
+Similarly on the other interval where <img class="math" src="../_images/math/c2c2c1cd3acb62bc29330a05486beb997951bc75.svg" alt="P_1(\infty) = P_2(\infty)=0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/2915c93a567857478821a86e1f2ceffb6f85f00f.svg" alt="-(Q_2(a_c^+) P_1(a_c^+) - P_2(a_c^+) Q_1(a_c^+))
+<p><img src="../_images/math/2c54a58e6d040ac7c9c2e8ca9ca7592351bf51f4.svg" alt="-(Q_2(a_c^+) P_1(a_c^+) - P_2(a_c^+) Q_1(a_c^+))
     = 2 (E_1 - E_2) \int^\infty_{a_c} P_1(r) P_2(r) \,\d r"/></p>
 </div><p>Taking the sum of the last two expressions:</p>
 <div class="math">
-<p><img src="../_images/math/cb42473dfb88af3315831dcdd077ad20ebb6991e.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
+<p><img src="../_images/math/1cda3f7e0d65342f998f196b52aa8fc66c93bb42.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
     = Q_2(a_c^-) P_1(a_c^-) - P_2(a_c^-) Q_1(a_c^-)
         -(Q_2(a_c^+) P_1(a_c^+) - P_2(a_c^+) Q_1(a_c^+))"/></p>
-</div><p>Now we use the fact that <img class="math" src="../_images/math/3375637c4ec9b00d9449336167bffeb12358ccf0.svg" alt="P_1(a_c^-) = P_1(a_c^+)"/> and
-<img class="math" src="../_images/math/f3a75e03632d9893007706ae835d0d9e13799f82.svg" alt="P_2(a_c^-) = P_2(a_c^+)"/>, because we match the two solutions from the left and
+</div><p>Now we use the fact that <img class="math" src="../_images/math/731f81e4ca446cf2030692486dfbb62baceda5d8.svg" alt="P_1(a_c^-) = P_1(a_c^+)"/> and
+<img class="math" src="../_images/math/6d0c8496213d5047d1a32500a86b2c74c5d93160.svg" alt="P_2(a_c^-) = P_2(a_c^+)"/>, because we match the two solutions from the left and
 right, so that the function is continuous (it’s derivative will have a jump
 though):</p>
 <div class="math">
-<p><img src="../_images/math/cae97f4460f170f0173c872a8976454182ea7662.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
+<p><img src="../_images/math/0d48cda9a795240732afedce0166aa919b13fd2b.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
     = P_1(a_c) (Q_2(a_c^-)-Q_2(a_c^+)) - P_2(a_c)(Q_1(a_c^-)-Q_1(a_c^+))"/></p>
-</div><p>By requiring, that the energy <img class="math" src="../_images/math/96e3e0e2281fa97961a0ffd7a01887b17a55b92f.svg" alt="E_2"/> is an eigenvalue, it follows that there is
-no jump in the derivative, so we set <img class="math" src="../_images/math/8baa122a0781ff313372b6e5e6619b4b8276efbd.svg" alt="Q_2(a_c^-)=Q_2(a_c^+)"/> and we get:</p>
+</div><p>By requiring, that the energy <img class="math" src="../_images/math/8208a42bcd39433afae962cd0d0fdf765ef2bf83.svg" alt="E_2"/> is an eigenvalue, it follows that there is
+no jump in the derivative, so we set <img class="math" src="../_images/math/37375ec76899e8c021169c3bfc7f3c8ad16c820d.svg" alt="Q_2(a_c^-)=Q_2(a_c^+)"/> and we get:</p>
 <div class="math">
-<p><img src="../_images/math/9b2b87afc076e1a3bb126ed45765712ea3ebe1d0.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
+<p><img src="../_images/math/e9684c2c8def32ab69554a321f7c3203dda30d63.svg" alt="2 (E_1 - E_2) \int^\infty_0 P_1(r) P_2(r) \,\d r
     = -P_2(a_c)(Q_1(a_c^-)-Q_1(a_c^+))"/></p>
-</div><p>that gives us an exact formula for the eigenvalue <img class="math" src="../_images/math/96e3e0e2281fa97961a0ffd7a01887b17a55b92f.svg" alt="E_2"/>:</p>
+</div><p>that gives us an exact formula for the eigenvalue <img class="math" src="../_images/math/8208a42bcd39433afae962cd0d0fdf765ef2bf83.svg" alt="E_2"/>:</p>
 <div class="math">
-<p><img src="../_images/math/aa986221d3251da1c5b5486a49dbbeb3258d69c5.svg" alt="E_2 = E_1 +
+<p><img src="../_images/math/9d74b059e2805a9592e3feddaf05de01d0dc94b9.svg" alt="E_2 = E_1 +
 {P_2(a_c)(Q_1(a_c^-)-Q_1(a_c^+))\over 2\int^\infty_0 P_1(r) P_2(r) \,\d r}"/></p>
-</div><p>We approximate the value of <img class="math" src="../_images/math/10f96a129658c506c7ceb1dca1395b3e55d1525b.svg" alt="P_2(a_c)"/> by <img class="math" src="../_images/math/96ead24506171191d4d3bf1b9f0e752a31a30405.svg" alt="P_1(a_c)"/> as well as the integral
-<img class="math" src="../_images/math/3df83bf56f411746c626b7e537fae873a262ed90.svg" alt="\int^\infty_0 P_1(r) P_2(r) \,\d r"/> by <img class="math" src="../_images/math/126701a92d02a09d6ed2f58e9cc9fb2726b38e54.svg" alt="\int^\infty_0 P_1^2(r) \,\d r"/> and we
+</div><p>We approximate the value of <img class="math" src="../_images/math/23625fd54fcbeaf1d073402179fc34b00c27d03b.svg" alt="P_2(a_c)"/> by <img class="math" src="../_images/math/280d1733ab6e75bfb3307f736f14bc131cdf03f7.svg" alt="P_1(a_c)"/> as well as the integral
+<img class="math" src="../_images/math/87f8e317467249b1ade8f1b5eeddecbcc65651cf.svg" alt="\int^\infty_0 P_1(r) P_2(r) \,\d r"/> by <img class="math" src="../_images/math/8281a06a53e7cd0332c4f83191a2497dc25196a4.svg" alt="\int^\infty_0 P_1^2(r) \,\d r"/> and we
 get an approximation for the eigenenergy:</p>
 <div class="math">
-<p><img src="../_images/math/154e1c8adfdc49e3c2832e5de51efc967535cc34.svg" alt="E_2 \approx E_1 +
+<p><img src="../_images/math/e14f44152a3f8a93f1c7a86616a3858bf7f567e5.svg" alt="E_2 \approx E_1 +
     {P_1(a_c)(Q_1(a_c^-)-Q_1(a_c^+))\over 2\int^\infty_0 P_1^2(r) \,\d r}"/></p>
 </div><p>We use this approximation iteratively until the convergence is achieved (the
-discontinuity in <img class="math" src="../_images/math/2e11a5793f87c3e0c9eca6f463e5c9795c584b88.svg" alt="Q(r)"/> at <img class="math" src="../_images/math/e5ce7d71d21689f365492a23a278ddd1a4c0f2f6.svg" alt="r=a_c"/> is small enough, or equivalently, the
+discontinuity in <img class="math" src="../_images/math/85ac709fbcfcca2eb1b6461b2befc619aca99d23.svg" alt="Q(r)"/> at <img class="math" src="../_images/math/b33a7c41340d255857a47b64213bde73e3dc7488.svg" alt="r=a_c"/> is small enough, or equivalently, the
 correction to the energy is small enough).</p>
 <p>For Dirac equation, one obtains a similar formula:</p>
 <div class="math">
-<p><img src="../_images/math/2b459dee73207d6dc75484d0436e196b6e7aa987.svg" alt="E_2 \approx E_1 +
+<p><img src="../_images/math/c338a313b09f88c3e74212052cb389aa6808e747.svg" alt="E_2 \approx E_1 +
     c {P_1(a_c)(Q_1(a_c^-)-Q_1(a_c^+))\over \int^\infty_0 P_1^2(r)
         +Q_1^2(r) \,\d r}"/></p>
-</div><p>So it is just the previous formula multiplied by <img class="math" src="../_images/math/f895105be5c52ff0dcb97250944d0a078eed9ca6.svg" alt="2c"/> and the normalization is
-calculated using both <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> and <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/> (as usual for the Dirac equation).</p>
-</div>
-<div class="section" id="id1">
+</div><p>So it is just the previous formula multiplied by <img class="math" src="../_images/math/e264233162cce4aef416b29f761dc4e1d338098a.svg" alt="2c"/> and the normalization is
+calculated using both <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> (as usual for the Dirac equation).</p>
+</section>
+<section id="id1">
 <h3>Weak Formulation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>The weak formulation is obtained from the action above by substituting <img class="math" src="../_images/math/23c8dcc7b97603b38a5c3d0171afe4753e86e780.svg" alt="\delta R
+<p>The weak formulation is obtained from the action above by substituting <img class="math" src="../_images/math/efa4391c8e1a33edc9c42ac4ddaa8edb7a34dc10.svg" alt="\delta R
 \to v"/> (the test function) so we get:</p>
 <div class="math">
-<p><img src="../_images/math/4868333ab6475599e6cf728ea2c75e7a34174a16.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv\,\d\rho =
+<p><img src="../_images/math/63e9a25e5653238929705fd25c340cbd0f45529e.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv\,\d\rho =
 \epsilon \int \rho^2 Rv \,\d \rho"/></p>
-</div><p>We can also start from the equation itself, multiply by a test function <img class="math" src="../_images/math/2fe790b55be86dd7c6ff2555da33da82b08f8c9d.svg" alt="v"/>:</p>
+</div><p>We can also start from the equation itself, multiply by a test function <img class="math" src="../_images/math/a245c7010258a6f58e42c5b5b4384005b89538fb.svg" alt="v"/>:</p>
 <div class="math">
-<p><img src="../_images/math/80bee01c77e4f28a70b3fe876a3bf306f1a9ba76.svg" alt="(-\half \rho^2 R')'v + (\rho^2 V + \half l(l+1)) Rv = \epsilon \rho^2 Rv"/></p>
-</div><p>We integrate it. Normally we need to be using <img class="math" src="../_images/math/a3207bf3b4d3735498f71a3e78ae7c0ddb7a092c.svg" alt="\rho^2\d\rho"/> in order to
+<p><img src="../_images/math/89c9899b592c506482a2f8c5e07a33e53a7f1df3.svg" alt="(-\half \rho^2 R')'v + (\rho^2 V + \half l(l+1)) Rv = \epsilon \rho^2 Rv"/></p>
+</div><p>We integrate it. Normally we need to be using <img class="math" src="../_images/math/8da9feee42ca49f4e6a0cbe409dc44713337331f.svg" alt="\rho^2\d\rho"/> in order to
 integrate covariantly, but the above equation was already multiplied by
-<img class="math" src="../_images/math/d3107bbcdeba3d5651d3c681f455dd7264c2f6d2.svg" alt="\rho^2"/> (i.e. strictly speaking, it is not coordinate independent anymore), so
-we only integrate by <img class="math" src="../_images/math/4fd7f750aff1cec164cb966eebf9bc208849ef5e.svg" alt="\d\rho"/>:</p>
+<img class="math" src="../_images/math/48a2698a8599c67fbb47b45627688fd6cff27d97.svg" alt="\rho^2"/> (i.e. strictly speaking, it is not coordinate independent anymore), so
+we only integrate by <img class="math" src="../_images/math/3f2e188bc72b46aa43f64334ae0147d99f93859d.svg" alt="\d\rho"/>:</p>
 <div class="math">
-<p><img src="../_images/math/f79a629f101f91d0070b2425578eb144588f7ec4.svg" alt="\int (-\half \rho^2 R')'v + (\rho^2 V + \half l(l+1)) Rv \d\rho =
+<p><img src="../_images/math/36450d6b82f8de2ef62bfdbd52e185a5c8011c4d.svg" alt="\int (-\half \rho^2 R')'v + (\rho^2 V + \half l(l+1)) Rv \d\rho =
     \epsilon \int \rho^2 Rv \d\rho"/></p>
 </div><p>After integration by parts:</p>
 <div class="math">
-<p><img src="../_images/math/f8becbb3ffae983a9e6393c05ebd4d9d2925f84f.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv \d\rho
+<p><img src="../_images/math/80bc3704a356fced6ce2ceeac7461e1f9dc27357.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv \d\rho
     -\half[\rho^2R'v]_0^a
 =
     \epsilon \int \rho^2 Rv \d\rho"/></p>
-</div><p>Where <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/> is the end of the domain (the origin is at <img class="math" src="../_images/math/d4419423d0fadb5da9acc994400016b992ff7e1a.svg" alt="0"/>).
+</div><p>Where <img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/> is the end of the domain (the origin is at <img class="math" src="../_images/math/6279a4189a38bf425eed7c528d4cc74753df8961.svg" alt="0"/>).
 The boundary term is zero at the origin, so we get:</p>
 <div class="math">
-<p><img src="../_images/math/348c3e895c0e24ddefc6f4739922524f469deecc.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv \d\rho
+<p><img src="../_images/math/935784fabd2299bc2bd22c9ae333c8d92c1f2670.svg" alt="\int \half \rho^2 R'v' + (\rho^2 V + \half l(l+1)) Rv \d\rho
     +\half\rho^2R'(a)v(a)
 =
     \epsilon \int \rho^2 Rv \d\rho"/></p>
-</div><p>We usually want to have the boundary term <img class="math" src="../_images/math/79b43e983b73ecf1bb1c1744c682d8e555c2322c.svg" alt="\half\rho^2R'(a)v(a)"/> equal to zero.
-This is equivalent to either letting <img class="math" src="../_images/math/737fe95f074dd042c3f8a7a4a6af00fb9f4f43bb.svg" alt="R'(a) = 0"/> (we prescribe the zero
-derivative of the radial wave function at <img class="math" src="../_images/math/ff066e4162ecea3b1eeadcc4c6fa8ced9cfaf575.svg" alt="a"/>) or we set <img class="math" src="../_images/math/6c47b8daf4ae7a26d8548d4c80b3e895a6d802fe.svg" alt="v(a)=0"/> (which
-corresponds to zero Dirichlet condition for <img class="math" src="../_images/math/a15901c03c5ae8e9a3a2b70b19fd6551c65d850e.svg" alt="R"/>, i.e. setting <img class="math" src="../_images/math/2786056726542feacc5156910a9103404f511ea5.svg" alt="R(a)=0"/>).</p>
-<div class="section" id="weak-formulation-for-u">
+</div><p>We usually want to have the boundary term <img class="math" src="../_images/math/6f1b48080a66d9de44625179eacd2c17760aaa4c.svg" alt="\half\rho^2R'(a)v(a)"/> equal to zero.
+This is equivalent to either letting <img class="math" src="../_images/math/0187b727387529a9267f8f44040c8c0c00e845cb.svg" alt="R'(a) = 0"/> (we prescribe the zero
+derivative of the radial wave function at <img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/>) or we set <img class="math" src="../_images/math/91a33871b84a0bfa8022d294f5f00a8ce5151d6e.svg" alt="v(a)=0"/> (which
+corresponds to zero Dirichlet condition for <img class="math" src="../_images/math/4fe1885a18460fa5f70897676c7e3a671509daa6.svg" alt="R"/>, i.e. setting <img class="math" src="../_images/math/85c8cc4bb0cbc0d5cc93dad1b59db67684ab727b.svg" alt="R(a)=0"/>).</p>
+<section id="weak-formulation-for-u">
 <h4>Weak Formulation for u<a class="headerlink" href="#weak-formulation-for-u" title="Permalink to this headline">¶</a></h4>
 <div class="math">
-<p><img src="../_images/math/59e9184754c7244abb2f0ddcc935826528fff549.svg" alt="\int \half u'v' + \left(V + {l(l+1)\over 2\rho^2}\right) uv \,\d\rho
+<p><img src="../_images/math/6a4c80c2de120452a61d888974baef0ae4d80815.svg" alt="\int \half u'v' + \left(V + {l(l+1)\over 2\rho^2}\right) uv \,\d\rho
     -\half\left[u'v\right]_0^R
 =
     \epsilon \int uv \,\d\rho"/></p>
-</div><p>We prescribe <img class="math" src="../_images/math/29ef7a6ddc48815261e2c4658bc21e14af59b4af.svg" alt="u(0) = u(R) = 0"/>, so we get:</p>
+</div><p>We prescribe <img class="math" src="../_images/math/c07ff21b6b1f48bede3b33d0753e192a5b84fb6a.svg" alt="u(0) = u(R) = 0"/>, so we get:</p>
 <div class="math">
-<p><img src="../_images/math/4386d81a5436835f0cfae297baf5aa8c210a6783.svg" alt="\int \half u'v' + \left(V + {l(l+1)\over 2\rho^2}\right) uv \,\d\rho
+<p><img src="../_images/math/814c2169c78f225b8545956db6e7a6415c3ec8b8.svg" alt="\int \half u'v' + \left(V + {l(l+1)\over 2\rho^2}\right) uv \,\d\rho
 =
     \epsilon \int uv \,\d\rho"/></p>
-</div></div>
-<div class="section" id="dirac-notation">
+</div></section>
+<section id="dirac-notation">
 <h4>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">¶</a></h4>
 <p>We can also write all the formulas using the Dirac notation:</p>
 <div class="math">
-<p><img src="../_images/math/12f20c639d64cec4aa55f1f57a3a775285c9fa18.svg" alt="\one = \int \d\rho \rho^2 \ket{\rho}\bra{\rho}
+<p><img src="../_images/math/b8dcbc478a1737f66d7eebac562ff53895f05e66.svg" alt="\one = \int \d\rho \rho^2 \ket{\rho}\bra{\rho}
 
 \braket{\rho|\rho'} = {\delta(\rho-\rho')\over \rho^2}
 
@@ -338,17 +341,17 @@ corresponds to zero Dirichlet condition for <img class="math" src="../_images/ma
 \hat H \ket{R} = E\ket{R}"/></p>
 </div><p>Then normalization is:</p>
 <div class="math">
-<p><img src="../_images/math/9c72a253b9c59016d27c2a1df390987a0b693cb5.svg" alt="\braket{R|R} = \int \d\rho \rho^2 \braket{R|\rho}\braket{\rho|R} =
+<p><img src="../_images/math/a0f31c81fc112f4db06c9e07176d7d4dfd441027.svg" alt="\braket{R|R} = \int \d\rho \rho^2 \braket{R|\rho}\braket{\rho|R} =
     \int \d\rho \rho^2 R^2(\rho)"/></p>
-</div><p>The operator <img class="math" src="../_images/math/28f1144ae0a354074179b03d60108e586dd35a92.svg" alt="\hat H"/> can be written as:</p>
+</div><p>The operator <img class="math" src="../_images/math/0238b2a14be79f0a6ce2408cb3ee64db6d2dcaf8.svg" alt="\hat H"/> can be written as:</p>
 <div class="math">
-<p><img src="../_images/math/05fc18d75f6672bcd07dbbff06c3ba712c62cc9d.svg" alt="\braket{\rho|\hat H|\rho'} = \braket{\rho|\rho'}\left(
+<p><img src="../_images/math/32a3e6d9486f905dabb59d3478e167205c7c5f65.svg" alt="\braket{\rho|\hat H|\rho'} = \braket{\rho|\rho'}\left(
     -\half{1\over\rho^2}{\d\over\d\rho}\left(\rho^2{\d\over\d\rho}\right)
     + (V + \half {l(l+1)\over\rho^2})
     \right)"/></p>
 </div><p>so to recover the above formula, we do:</p>
 <div class="math">
-<p><img src="../_images/math/22a4a2549d217a304095afe281dafc8a7bfbbed9.svg" alt="\braket{\rho|\hat H| R} = \int\d\rho'\rho'^2\braket{\rho|\hat H|\rho'}
+<p><img src="../_images/math/fc858eb19ffb480efb578cdeb304f5811ef4c31b.svg" alt="\braket{\rho|\hat H| R} = \int\d\rho'\rho'^2\braket{\rho|\hat H|\rho'}
     \braket{\rho'|R}=
 
 =\int\d\rho'\rho'^2
@@ -360,13 +363,13 @@ corresponds to zero Dirichlet condition for <img class="math" src="../_images/ma
 R(\rho')
 =
     {1\over\rho^2}(-\half \rho^2 R')' + (V + \half {l(l+1)\over\rho^2}) R"/></p>
-</div><p>Operator <img class="math" src="../_images/math/28f1144ae0a354074179b03d60108e586dd35a92.svg" alt="\hat H"/> is symmetric, because:</p>
+</div><p>Operator <img class="math" src="../_images/math/0238b2a14be79f0a6ce2408cb3ee64db6d2dcaf8.svg" alt="\hat H"/> is symmetric, because:</p>
 <div class="math">
-<p><img src="../_images/math/6dc74aaa34a3f932d5abc7d5ebaac3459a68773b.svg" alt="\int f{1\over\rho^2}(\rho^2 g')' \rho^2\d\rho =
+<p><img src="../_images/math/20a3733bd35f37e6a323267e2657d7d29f027844.svg" alt="\int f{1\over\rho^2}(\rho^2 g')' \rho^2\d\rho =
 \int {1\over\rho^2}(\rho^2 f')'g \rho^2\d\rho"/></p>
 </div><p>The weak formulation is:</p>
 <div class="math">
-<p><img src="../_images/math/63e083650231d9692968fbeb01d063f318c759a9.svg" alt="\braket{v|H|R} = E\braket{v|R}
+<p><img src="../_images/math/44d98491460036c3a88ed2dfceedc5114d5f93c0.svg" alt="\braket{v|H|R} = E\braket{v|R}
 
 \int\d\rho\rho^2 \braket{v|\rho}\braket{\rho|H|R} = E
     \int\d\rho\rho^2\braket{v|\rho}\braket{\rho|R}
@@ -375,37 +378,37 @@ R(\rho')
     {1\over\rho^2}(-\half \rho^2 R')' + (V + \half {l(l+1)\over\rho^2}) R
 \right) = E
     \int\d\rho\rho^2v(\rho)R(\rho)"/></p>
-</div><p>and we obtain the FE formulation by expanding <img class="math" src="../_images/math/95042b791664786d450adcd79ab1aea2b5bc297f.svg" alt="\ket{R} =\sum_j R_j \ket{j}"/>
-(note that the basis <img class="math" src="../_images/math/335a6d8258ef0a5a33dcdcd2a4a4e21813006d8b.svg" alt="\ket{j}"/> is not orthogonal, so in particular <img class="math" src="../_images/math/b8175a3efb0a69416b736b5e6de2cee9a177032c.svg" alt="\sum_j
+</div><p>and we obtain the FE formulation by expanding <img class="math" src="../_images/math/bb1ff04a1f40ee9ff335d63d7c2c23a2c999564f.svg" alt="\ket{R} =\sum_j R_j \ket{j}"/>
+(note that the basis <img class="math" src="../_images/math/4514b52771a9b84d23b7f6db9052bc74608ede1a.svg" alt="\ket{j}"/> is not orthogonal, so in particular <img class="math" src="../_images/math/08cf6a70ef597ebeb4146dd110637064a743ff65.svg" alt="\sum_j
 \ket{j}\bra{j} \neq 1"/>):</p>
 <div class="math">
-<p><img src="../_images/math/41bfee737278ddf52bed3c51ae15afb5f2779d4e.svg" alt="\sum_j\braket{i|H|j}R_j = E\sum_j\braket{i|j}R_j"/></p>
+<p><img src="../_images/math/c0aee4c75ed851c53602f3ddaba84620026ebfd3.svg" alt="\sum_j\braket{i|H|j}R_j = E\sum_j\braket{i|j}R_j"/></p>
 </div><p>This is a generalized eigenvalue problem.
-In the special case of an orthonormal basis, <img class="math" src="../_images/math/391d5aa0e9e6771ef1f6b809a90257ee697f5756.svg" alt="\braket{i|j} = \delta_{ij}"/>
+In the special case of an orthonormal basis, <img class="math" src="../_images/math/56c38e5ea4f3fe7d31771d6db63e5344ec91e674.svg" alt="\braket{i|j} = \delta_{ij}"/>
 (which FE is not), we get:</p>
 <div class="math">
-<p><img src="../_images/math/b2c6831868ff607c61e11d4196f4f0d4a367c755.svg" alt="\sum_j\braket{i|H|j}R_j = R_i
+<p><img src="../_images/math/b3abc4309a0ee78a0fb584cb9ec73043836708c4.svg" alt="\sum_j\braket{i|H|j}R_j = R_i
 
 R_i = \braket{i|R}"/></p>
 </div><p>Which is an eigenvalue problem.</p>
-</div>
-</div>
-</div>
-<div class="section" id="variational-formulation-of-the-dirac-equation">
-<h2>8.8.3. Variational Formulation of the Dirac equation<a class="headerlink" href="#variational-formulation-of-the-dirac-equation" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="variational-formulation-of-the-dirac-equation">
+<h2><span class="section-number">8.8.3. </span>Variational Formulation of the Dirac equation<a class="headerlink" href="#variational-formulation-of-the-dirac-equation" title="Permalink to this headline">¶</a></h2>
 <p>The QED Lagrangian density is</p>
 <div class="math">
-<p><img src="../_images/math/733e1ef2025cf1a4931e00003ce252f5c55da689.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
+<p><img src="../_images/math/bb6ff8e19a73879d4fe808598a639fecb980f959.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/68d3a3d9ff357715e2a6c9b63d7cc554ab88ab12.svg" alt="D_\mu=\partial_\mu+{i\over \hbar}eA_\mu
+<p><img src="../_images/math/ddc33fcff8a573d852e270071ef00a5f404fddc6.svg" alt="D_\mu=\partial_\mu+{i\over \hbar}eA_\mu
 
 F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu"/></p>
 </div><p>We will treat the fields as classical fields, so we get the classical wave
 Dirac equation, after plugging this Lagrangian into the Euler-Lagrange equation
 of motion:</p>
 <div class="math">
-<p><img src="../_images/math/620f435054bafc4f97aa0deadbe01d7983f9400a.svg" alt="(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=0
+<p><img src="../_images/math/222bfa81ae5f18d795d7d8315bc9154f56aced6d.svg" alt="(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=0
 
 \partial_\nu F^{\nu\mu}=-ec\bar\psi\gamma^\mu\psi"/></p>
 </div><p>Notice that the Lagrangian happens to be zero for the solution of Dirac
@@ -414,7 +417,7 @@ variational principle itself, it’s just a coincindence.</p>
 <p>In this section we are only interested in the Dirac equation, so we write the
 Lagrangian as:</p>
 <div class="math">
-<p><img src="../_images/math/cb69996a1019a02395da77ab899532b27fe73452.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi =
+<p><img src="../_images/math/316b6d19efb00cd3effc68350cf00e6d4bb9813e.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi =
 
 =\psi^\dag\gamma^0(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=
 
@@ -427,32 +430,32 @@ Lagrangian as:</p>
 =-\psi^\dag(-i\hbar{\partial\over\partial t}+c\alpha^i (-p_i+eA_i)+\beta mc^2+ceA_0)\psi=
 
 =-\psi^\dag(-i\hbar{\partial\over\partial t}+c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi"/></p>
-</div><p>where we introduced the potential by <img class="math" src="../_images/math/0e1780d11256429b679c628ade4d93706588e53b.svg" alt="V = c e A_0"/>. We also could have done the
+</div><p>where we introduced the potential by <img class="math" src="../_images/math/0d38df4865880a4aab11c837b5bb236f080fdf4f.svg" alt="V = c e A_0"/>. We also could have done the
 same manipulation to the dirac equation itself and we would get the same
 expression:</p>
 <div class="math">
-<p><img src="../_images/math/93f5fa8775da868cd19e5e939eb0fdbb88df6d3c.svg" alt="(-i\hbar{\partial\over\partial t}+c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi = 0"/></p>
+<p><img src="../_images/math/bf7cd258c1693ac8adbcbe9cb956b241f3bac03a.svg" alt="(-i\hbar{\partial\over\partial t}+c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi = 0"/></p>
 </div><p>The corresponding eigenvalue problem is:</p>
 <div class="math">
-<p><img src="../_images/math/9a8b3302209dc7786a7240d30ec28356671bfbf8.svg" alt="(c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi = W\psi"/></p>
-</div></div>
-<div class="section" id="radial-dirac-equation">
-<h2>8.8.4. Radial Dirac equation<a class="headerlink" href="#radial-dirac-equation" title="Permalink to this headline">¶</a></h2>
+<p><img src="../_images/math/67a1dfdee5bebc238ea2a06d7699ae582cef4f9b.svg" alt="(c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi = W\psi"/></p>
+</div></section>
+<section id="radial-dirac-equation">
+<h2><span class="section-number">8.8.4. </span>Radial Dirac equation<a class="headerlink" href="#radial-dirac-equation" title="Permalink to this headline">¶</a></h2>
 <p>As for the Schrödinger equation, there are two ways to obtain the radial Dirac
 equation. Either from the Lagrangian, or from the equation itself.</p>
-<div class="section" id="id2">
+<section id="id2">
 <h3>From the Equation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>The manipulations are well known, one starts by writing the Dirac spinors using
-the spin angular functions and radial components <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> and <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/>:</p>
+the spin angular functions and radial components <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/>:</p>
 <div class="math">
-<p><img src="../_images/math/3e1c9781103f3b3ea4f87eba4af4fd04beede1be.svg" alt="\psi = \left(\begin{array}{c}{P\over\rho}\chi^{j_3}_\kappa\\
+<p><img src="../_images/math/2516fad11b11265af91139155933aea32867c5a8.svg" alt="\psi = \left(\begin{array}{c}{P\over\rho}\chi^{j_3}_\kappa\\
     i{Q\over\rho}\chi^{j_3}_{-\kappa}\end{array}\right)
 
 \psi^\dag = \left(\begin{array}{cc}{P\over\rho}\chi^{j_3}_\kappa &amp;
     -i{Q\over\rho}\chi^{j_3}_{-\kappa}\end{array}\right)"/></p>
 </div><p>and putting this into the Dirac equation one obtains:</p>
 <div class="math">
-<p><img src="../_images/math/c72be25663be3aef0cb87d1e50ba44bba69202a2.svg" alt="\left(\begin{array}{cc}
+<p><img src="../_images/math/9e14e9fe139a03c32e9ca9575ed299d7cb744f8e.svg" alt="\left(\begin{array}{cc}
     \left(-\hbar c \left({\d\over\d\rho} - {\kappa\over\rho}\right)Q + (V+mc^2-W)P\right)  &amp; 0\\
     0 &amp; \left(\hbar c \left({\d\over\d\rho} + {\kappa\over\rho}\right)P + (V-mc^2-W)Q\right)
     \end{array}\right)
@@ -465,16 +468,16 @@ the spin angular functions and radial components <img class="math" src="../_imag
     =0"/></p>
 </div><p>So one obtains the following radial equations:</p>
 <div class="math">
-<p><img src="../_images/math/98fe0ffde1b31e644b3d436f8acd452420355744.svg" alt="-\hbar c \left({\d\over\d\rho} - {\kappa\over\rho}\right)Q + (V+mc^2-W)P=0
+<p><img src="../_images/math/26b452999a082d4174baacb14033598c19f2f3fe.svg" alt="-\hbar c \left({\d\over\d\rho} - {\kappa\over\rho}\right)Q + (V+mc^2-W)P=0
 
 \hbar c \left({\d\over\d\rho} + {\kappa\over\rho}\right)P + (V-mc^2-W)Q=0"/></p>
-</div></div>
-<div class="section" id="id3">
+</div></section>
+<section id="id3">
 <h3>From the Lagrangian<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>We can reuse the calculations from the previous sections, because the Lagrangian
 happens to be zero for the solution of the Dirac equation:</p>
 <div class="math">
-<p><img src="../_images/math/1b4c2c0aa4a99948929507bb74fc0df031a4d063.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi =
+<p><img src="../_images/math/6925c23aa12f1b0c7ded1256690ac0c1ca340f85.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi =
 
 =-\psi^\dag(-i\hbar{\partial\over\partial t}+c{\boldsymbol\alpha}\cdot({\bf
     p}-e{\bf A})+\beta mc^2+V)\psi=
@@ -506,16 +509,16 @@ Q
 \chi^{j_3}_{-\kappa}\chi^{j_3}_{-\kappa}"/></p>
 </div><p>We can now write the action:</p>
 <div class="math">
-<p><img src="../_images/math/5a01276b1a6c652a2218ebcaf8f29aae43981cf9.svg" alt="S = \int \L \,\rho^2 \,\d\rho\d\Omega"/></p>
-</div><p>the spin angular functions integrate to <img class="math" src="../_images/math/5f50f1baddcc3ea9ed8a4cd68a9ae401da7cff37.svg" alt="1"/>:</p>
+<p><img src="../_images/math/5120eec04920edc95109bad8cd63eebf08c896aa.svg" alt="S = \int \L \,\rho^2 \,\d\rho\d\Omega"/></p>
+</div><p>the spin angular functions integrate to <img class="math" src="../_images/math/aec0c2ed032042bcd0c9b819e0f67defc33ac950.svg" alt="1"/>:</p>
 <div class="math">
-<p><img src="../_images/math/abfbc3de33aac3f4f776c9a1b49485bd72446d36.svg" alt="\int \chi^{j_3}_\kappa\chi^{j_3}_\kappa \d\Omega = 1
+<p><img src="../_images/math/e0c1fa6611bc34d7025701532c5f9568bfbafec1.svg" alt="\int \chi^{j_3}_\kappa\chi^{j_3}_\kappa \d\Omega = 1
 
 \int \chi^{j_3}_{-\kappa}\chi^{j_3}_{-\kappa} \d\Omega = 1"/></p>
-</div><p>the <img class="math" src="../_images/math/d3107bbcdeba3d5651d3c681f455dd7264c2f6d2.svg" alt="\rho^2"/> cancels out and we
+</div><p>the <img class="math" src="../_images/math/48a2698a8599c67fbb47b45627688fd6cff27d97.svg" alt="\rho^2"/> cancels out and we
 get:</p>
 <div class="math">
-<p><img src="../_images/math/8a92400fa7b13a25e0d41d141a7f1d6e8fa6d9be.svg" alt="S[P, Q] = \int
+<p><img src="../_images/math/58f8b3e3979de6d07c46e6e407c569fee697cb78.svg" alt="S[P, Q] = \int
 P
 \left(-\hbar c \left({\d\over\d\rho} - {\kappa\over\rho}\right)Q + (V+mc^2)P\right)
 +
@@ -527,15 +530,15 @@ Q
     V(P^2+Q^2) + m c^2 (P^2 - Q^2) \d\rho"/></p>
 </div><p>the normalization condition is:</p>
 <div class="math">
-<p><img src="../_images/math/fc8df29934825c815ff8b18aabc3759ea6fe781c.svg" alt="N = \int P^2 + Q^2 \d\rho - 1 = 0"/></p>
-</div><p>and we can variate the action, we also shift the energy <img class="math" src="../_images/math/2b2392611d3ef95554d75f931f683480b74512d6.svg" alt="W=\epsilon + mc^2"/>:</p>
+<p><img src="../_images/math/b7ccf3cfb8847c00b192d59add9a4ccc9c27905e.svg" alt="N = \int P^2 + Q^2 \d\rho - 1 = 0"/></p>
+</div><p>and we can variate the action, we also shift the energy <img class="math" src="../_images/math/9a6326d020602a920b4a547e2dadd5cc1a31194a.svg" alt="W=\epsilon + mc^2"/>:</p>
 <div class="math">
-<p><img src="../_images/math/c062002de10779161ed1db1db3c586c3a9f7f4c9.svg" alt="0 = \delta (S - W N) = \delta (S - \epsilon N - mc^2N)"/></p>
-</div><p>which effectively adds <img class="math" src="../_images/math/ff94d7a98fc7f80292806b441564cff6e3ac8a2b.svg" alt="-mc^2(P^2+Q^2)"/> into the Lagrangian, which changes the
-term <img class="math" src="../_images/math/68a85a98cd2b39178cef72de7f6bf02613f80d59.svg" alt="mc^2(P^2 - Q^2)"/> into <img class="math" src="../_images/math/6cadd9c3f6077f4f419afaea13c40a17db57556e.svg" alt="-2mc^2 Q^2"/>.
+<p><img src="../_images/math/516c2e4f9c681c0ad6c71a0c7320ba5ad0135ccf.svg" alt="0 = \delta (S - W N) = \delta (S - \epsilon N - mc^2N)"/></p>
+</div><p>which effectively adds <img class="math" src="../_images/math/6d4749290b7c9a477b22d3c29fa99354e2ddd4cb.svg" alt="-mc^2(P^2+Q^2)"/> into the Lagrangian, which changes the
+term <img class="math" src="../_images/math/82e3b76fcce5f13ca6cccf0f2a5517c91ba33355.svg" alt="mc^2(P^2 - Q^2)"/> into <img class="math" src="../_images/math/327bca4a8d142ee4f324bd3bccd0e1e74b73ebc8.svg" alt="-2mc^2 Q^2"/>.
 We can now variate the (constrained) action:</p>
 <div class="math">
-<p><img src="../_images/math/201860ec5a1418fe01b71edfd9dec7d34fdb48fc.svg" alt="0=\delta\int -\hbar c(PQ' - QP') + \hbar c {2\kappa\over\rho} PQ +
+<p><img src="../_images/math/0ebb88af83ff584e34ec3db207abbadbfa0c90e3.svg" alt="0=\delta\int -\hbar c(PQ' - QP') + \hbar c {2\kappa\over\rho} PQ +
     V(P^2+Q^2) - 2m c^2 Q^2 \d\rho=
 
 = 2\int \left(-\hbar c((\delta P)Q' - P'\delta Q) + \hbar c{\kappa\over\rho}
@@ -552,17 +555,17 @@ We can now variate the (constrained) action:</p>
     +[P\delta Q - Q\delta P]^R_0 ="/></p>
 </div><p>which gives the two radial equations:</p>
 <div class="math">
-<p><img src="../_images/math/75dc768960681cd830242342376e16fe9e2dfde3.svg" alt="-\hbar c Q' + \hbar c{\kappa\over\rho}Q + PV          = \epsilon P
+<p><img src="../_images/math/90a2b759b13f4b8acbb95213ebac8cc7b3fbc1bf.svg" alt="-\hbar c Q' + \hbar c{\kappa\over\rho}Q + PV          = \epsilon P
 
  \hbar c P' + \hbar c{\kappa\over\rho}P + QV - 2mc^2Q = \epsilon Q"/></p>
-</div></div>
-<div class="section" id="id4">
+</div></section>
+<section id="id4">
 <h3>Weak Formulation<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>The weak formulation can be obtained by substituting <img class="math" src="../_images/math/0e2fa52733611da851edd8173810fb9426e68635.svg" alt="\delta P \to v_1"/> and
-<img class="math" src="../_images/math/5dc4dab5e57d0a8e6ae12057be1461571c653604.svg" alt="\delta Q\to v_2"/> into the action above (and separating the integrals) and
+<p>The weak formulation can be obtained by substituting <img class="math" src="../_images/math/29e8b7f1ec5a2b7cb37fe9e750b48736fef69af4.svg" alt="\delta P \to v_1"/> and
+<img class="math" src="../_images/math/4ed8f60dcec95df059853aac0f988af991725ed1.svg" alt="\delta Q\to v_2"/> into the action above (and separating the integrals) and
 omitting the the boundary term:</p>
 <div class="math">
-<p><img src="../_images/math/d708da976543da484c500eda2cb8ff118f7f7ad5.svg" alt="\int -\hbar c Q'v_1 + \hbar c{\kappa\over\rho}Qv_1 + PVv_1\d\rho =
+<p><img src="../_images/math/69dc71338d805c9b3fb5d5b6bf570948ba7e02c1.svg" alt="\int -\hbar c Q'v_1 + \hbar c{\kappa\over\rho}Qv_1 + PVv_1\d\rho =
 \epsilon \int Pv_1 \d\rho
 
 \int \hbar c P'v_2 + \hbar c{\kappa\over\rho}Pv_2 + QVv_2 -2mc^2Qv_2\d\rho =
@@ -573,7 +576,7 @@ approach), there are no boundary terms (because we didn’t integrate by parts).
 We can separate the integrals according to the matrix elements that they
 contribute to:</p>
 <div class="math">
-<p><img src="../_images/math/f5b0311cf52e05f5c208bb3ba5c03b50b9eaf36c.svg" alt="\int PVv_1 \d\rho + \int -\hbar c Q'v_1 +
+<p><img src="../_images/math/6b3bfc78b0beb9807ec3c1b25689ff898421a33c.svg" alt="\int PVv_1 \d\rho + \int -\hbar c Q'v_1 +
     \hbar c{\kappa\over\rho}Qv_1 \d\rho =
 \epsilon \int Pv_1 \d\rho
 
@@ -583,27 +586,27 @@ contribute to:</p>
 </div><p>To show that this problem generates a symmetric matrix, it is helpful to write
 the radial equations in the following form:</p>
 <div class="math">
-<p><img src="../_images/math/8d7537f7c77b2f6d22afb05f1e062da8ec85a4f7.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}"/></p>
+<p><img src="../_images/math/41c9b5d4825bc9e9fe7a0a7275dd83d62ee0e0f3.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/12fc1af18a9ab2c8f44e3f89f0ca8906a31a106e.svg" alt="\ket{P, Q} = \left(\begin{array}{c} P(\rho) \\ Q(\rho)\end{array}\right)
+<p><img src="../_images/math/a82e24200f28e336219adb237ecf55c3bd9025f8.svg" alt="\ket{P, Q} = \left(\begin{array}{c} P(\rho) \\ Q(\rho)\end{array}\right)
 
 \hat H = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div><p>the operator <img class="math" src="../_images/math/28f1144ae0a354074179b03d60108e586dd35a92.svg" alt="\hat H"/> is Hermitean (<img class="math" src="../_images/math/3123194e5c0389afbea5543c61cd98b1d6c14a49.svg" alt="\hat H^\dag = \hat H"/>), because
-<img class="math" src="../_images/math/81aa3b731689e1b952e8a50bf749fd371edab4c1.svg" alt="\left(-{\d\over\d\rho}\right)^\dag = {\d\over\d\rho}"/>:</p>
+</div><p>the operator <img class="math" src="../_images/math/0238b2a14be79f0a6ce2408cb3ee64db6d2dcaf8.svg" alt="\hat H"/> is Hermitean (<img class="math" src="../_images/math/ae55d06696649f437afd61722993753dff9dec12.svg" alt="\hat H^\dag = \hat H"/>), because
+<img class="math" src="../_images/math/79dac22a2c3abdd5753ed9a0dfd2a4e9296c8538.svg" alt="\left(-{\d\over\d\rho}\right)^\dag = {\d\over\d\rho}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/5ef5c7d8d15583c3002195614a2697164e139889.svg" alt="\int f{\d\over\d\rho}g \d\rho =
+<p><img src="../_images/math/f7535b45f3daaa01b9bf1dafe20ff7cb57e10e77.svg" alt="\int f{\d\over\d\rho}g \d\rho =
 \int \left(-{\d\over\d\rho}\right)f g \d\rho"/></p>
 </div><p>and all the other
 quantities are just scalars.</p>
 <p>Stricly speaking, the exact Dirac notation (that is coordinate/representation
-independent) would be the following (notice the missing <img class="math" src="../_images/math/d3107bbcdeba3d5651d3c681f455dd7264c2f6d2.svg" alt="\rho^2"/> in the
+independent) would be the following (notice the missing <img class="math" src="../_images/math/48a2698a8599c67fbb47b45627688fd6cff27d97.svg" alt="\rho^2"/> in the
 completeness relation, which is different to the radial Schrödinger equation):</p>
 <div class="math">
-<p><img src="../_images/math/8e19e62e986e6ab3c61f37d69162b3ca035d9e11.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
+<p><img src="../_images/math/641a9ae186576582d0fe22bd30af46ff63470530.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
 
 \one = \int \d\rho \ket{\rho}\bra{\rho}
 
@@ -623,49 +626,49 @@ completeness relation, which is different to the radial Schrödinger equation):<
     \end{array}\right)"/></p>
 </div><p>The normalization is:</p>
 <div class="math">
-<p><img src="../_images/math/e478153d6c3a339fa4c8ad4ededb09b14dc2cec0.svg" alt="\braket{P, Q| P, Q} = \int \d\rho \braket{P, Q|\rho}\braket{\rho|P, Q} =
+<p><img src="../_images/math/2fcc35c501e562ea3a5fad0e78b8ca6eb8f56597.svg" alt="\braket{P, Q| P, Q} = \int \d\rho \braket{P, Q|\rho}\braket{\rho|P, Q} =
     \int \d\rho (P^2+Q^2) = 1"/></p>
 </div><p>The weak formulation is:</p>
 <div class="math">
-<p><img src="../_images/math/cb1789b169e28fed2373713ce413ff2cba66f9df.svg" alt="\braket{v|\hat H|P, Q} =
+<p><img src="../_images/math/7b892ab11b7a034d39b7088e5b46f27b92995247.svg" alt="\braket{v|\hat H|P, Q} =
     \epsilon \braket{v|P, Q}"/></p>
-</div><p>where the test function <img class="math" src="../_images/math/97be2d8418bc735860a8028ec09782a882545601.svg" alt="\ket{v}"/> is one of:</p>
+</div><p>where the test function <img class="math" src="../_images/math/1eb197e3463fb5db8442d0ba4edb726967696763.svg" alt="\ket{v}"/> is one of:</p>
 <div class="math">
-<p><img src="../_images/math/fd05c2deb512c37fd5d7b211e28013b75ac20a9f.svg" alt="\ket{v} = \begin{cases}
+<p><img src="../_images/math/fbdbf2846fa8331ca7afa39b9bc5c5b58c2aeee4.svg" alt="\ket{v} = \begin{cases}
     \ket{v_1}\left(\begin{array}{c}1\\0\\\end{array}\right) \cr
     \ket{v_2}\left(\begin{array}{c}0\\1\\\end{array}\right) \cr
     \end{cases}"/></p>
-</div><p>The FE formulation is then obtained by expanding <img class="math" src="../_images/math/494e3bb8f019e213720c3f2185d0ecbb7100df8c.svg" alt="\ket{P, Q} = \sum_k q_k \ket{k}"/>:</p>
+</div><p>The FE formulation is then obtained by expanding <img class="math" src="../_images/math/cad76b73076c28f43dba8ed5c724eb0dfc6a7e95.svg" alt="\ket{P, Q} = \sum_k q_k \ket{k}"/>:</p>
 <div class="math">
-<p><img src="../_images/math/19287869d13649f8e83a7fba75a97428eb6ee434.svg" alt="\sum_l \braket{k|\hat H|l}q_l =
+<p><img src="../_images/math/07e321b30495454dde40601aad04926d9b01989f.svg" alt="\sum_l \braket{k|\hat H|l}q_l =
     \epsilon \sum_l\braket{k|l}q_l"/></p>
-</div><p>The basis <img class="math" src="../_images/math/397e484b0faf352ed22dd4d7109b4273103a98e7.svg" alt="\ket{k}"/> can be for example the FE basis, some spline basis set, or
-gaussians. The basis has actually <img class="math" src="../_images/math/d52ce4c6857ca4a734a23ad83f15c4ea5caa412b.svg" alt="2n"/> base functions and it enumerates each
+</div><p>The basis <img class="math" src="../_images/math/ea6066856727ca4bdb9f129806e0de1060232d74.svg" alt="\ket{k}"/> can be for example the FE basis, some spline basis set, or
+gaussians. The basis has actually <img class="math" src="../_images/math/023ba089bfcc1e7c4a5b7b8eecdf731e971ae506.svg" alt="2n"/> base functions and it enumerates each
 equation like this:</p>
 <div class="math">
-<p><img src="../_images/math/f589723f1c6db0b7366cbc5b33a33b85002d5221.svg" alt="\ket{k} = \begin{cases}
+<p><img src="../_images/math/1b68c5938e12b1265c26307b08bab39ccf7b210a.svg" alt="\ket{k} = \begin{cases}
     \ket{i}\left(\begin{array}{c}1\\0\\\end{array}\right) &amp;
         \mbox{for } i=k &lt; n\cr
     \ket{i}\left(\begin{array}{c}0\\1\\\end{array}\right) &amp;
         \mbox{for } i=k &gt;= n\cr
     \end{cases}"/></p>
-</div><p>So at the end of the day, the <img class="math" src="../_images/math/827d1df32a8f2f6e3c676d32aa90be2d518e8f64.svg" alt="\braket{k|\hat H|l}"/> matrix looks like this:</p>
+</div><p>So at the end of the day, the <img class="math" src="../_images/math/afc761a316753467d9ee5fe058ec1d42bbec6085.svg" alt="\braket{k|\hat H|l}"/> matrix looks like this:</p>
 <div class="math">
-<p><img src="../_images/math/71a0f1b44274d4cf1538df752e349de18beaf663.svg" alt="\braket{k|\hat H|l} = \left(\begin{array}{cc}
+<p><img src="../_images/math/bbff8b6d30ca20e81d3bff709477d3363498c18c.svg" alt="\braket{k|\hat H|l} = \left(\begin{array}{cc}
     \braket{i|V(r)|j} &amp; \hbar c \braket{i|-{\d\over\d\rho}+{\kappa\over\rho}|j} \\
     \hbar c \braket{i|{\d\over\d\rho}+{\kappa\over\rho}|j} &amp; \braket{i|V(r) - 2mc^2|j} \\
     \end{array}\right)"/></p>
-</div><p>The matrix is <img class="math" src="../_images/math/dbfbeb19fa091454ceb835a7e61c46ea8a61bbd2.svg" alt="2n \times 2n"/>, composed of those 4 matrices <img class="math" src="../_images/math/ef783ba2b3daf124a128abe0715195072861eabc.svg" alt="n \times n"/>. The
-<img class="math" src="../_images/math/2dfe25287dd832f0b47aff1fd152ce9846a8c437.svg" alt="\braket{k|l}"/> matrix looks like this:</p>
+</div><p>The matrix is <img class="math" src="../_images/math/1bf51c76f6f46ce19bb6f8ab9506ad287a6df64b.svg" alt="2n \times 2n"/>, composed of those 4 matrices <img class="math" src="../_images/math/6de0292a3e3700d82fee20daee095ace42208172.svg" alt="n \times n"/>. The
+<img class="math" src="../_images/math/284ddefdd000022f5c9040963e44c2c0d9766ef7.svg" alt="\braket{k|l}"/> matrix looks like this:</p>
 <div class="math">
-<p><img src="../_images/math/8e1d793aaaf75a74be62f40847fd895d3e0b6355.svg" alt="\braket{k|l} = \left(\begin{array}{cc}
+<p><img src="../_images/math/eeae43b91d96929b661e2324eec7875b05243dc4.svg" alt="\braket{k|l} = \left(\begin{array}{cc}
     \braket{i|j} &amp; 0 \\
     0            &amp; \braket{i|j} \\
     \end{array}\right)"/></p>
-</div><p>We can also write the matrix elements explicitly. Let <img class="math" src="../_images/math/ba8fa51f7d860da5c523937c53b808d982f6e54f.svg" alt="\ket{i} = B_i(\rho)"/>,
+</div><p>We can also write the matrix elements explicitly. Let <img class="math" src="../_images/math/9a9ae6c280486bd70f5d2009fc373511995093ab.svg" alt="\ket{i} = B_i(\rho)"/>,
 then:</p>
 <div class="math">
-<p><img src="../_images/math/e6b0f5b4e809392d7dd43b10c41830d5055e85f5.svg" alt="\braket{i|j} = \int B_i B_j \,\d\rho
+<p><img src="../_images/math/3e447bce2405b3c5ea842cfbdce53825c28d13bd.svg" alt="\braket{i|j} = \int B_i B_j \,\d\rho
 
 \braket{i|V|j} = \int B_i V B_j \,\d\rho
 
@@ -676,13 +679,13 @@ then:</p>
 
 \hbar c \braket{i|-{\d\over\d\rho}+{\kappa\over\rho}|j} =
     \hbar c\int -B_i B_j' + B_i {\kappa\over\rho} B_j \,\d\rho"/></p>
-</div></div>
-</div>
-<div class="section" id="other-forms-of-dirac-equations">
-<h2>8.8.5. Other Forms of Dirac Equations<a class="headerlink" href="#other-forms-of-dirac-equations" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="other-forms-of-dirac-equations">
+<h2><span class="section-number">8.8.5. </span>Other Forms of Dirac Equations<a class="headerlink" href="#other-forms-of-dirac-equations" title="Permalink to this headline">¶</a></h2>
 <p>The radial Dirac equations are:</p>
 <div class="math">
-<p><img src="../_images/math/d6c4b373ee98b2c0f5f3298e78f688c7ec50f5d0.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
+<p><img src="../_images/math/91cd8f07ee5751b55a3c997c92fd549fd0a1b666.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
 
 \ket{P, Q} = \left(\begin{array}{c} P(\rho) \\ Q(\rho)\end{array}\right)
 
@@ -690,16 +693,16 @@ then:</p>
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div><p>After substitution <img class="math" src="../_images/math/d7f2d4f919d1659ec1f085faf4753971f96207d2.svg" alt="S = f(r)P"/> and <img class="math" src="../_images/math/42ac37d58274c0183f51067687612059988560d3.svg" alt="T = f(r)Q"/>, we get:</p>
+</div><p>After substitution <img class="math" src="../_images/math/69dcdd3a2759831f689be91369ae25fae947e710.svg" alt="S = f(r)P"/> and <img class="math" src="../_images/math/914a663cd0a623f99fe89d813ad13c2378e17c81.svg" alt="T = f(r)Q"/>, we get:</p>
 <div class="math">
-<p><img src="../_images/math/565ad27828879328db524a45d5fe84e685891d07.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
+<p><img src="../_images/math/71fc8a3c66792edbf75b68c1ee55763a3e7db7ff.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
 
 \hat H {1\over f} \ket{S, T} = \epsilon {1\over f}\ket{S, T}
 
 f\hat H {1\over f} \ket{S, T} = \epsilon \ket{S, T}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/2f0a08fc1e7347499278a94947875c50d6f88c2e.svg" alt="f\hat H {1\over f}= f\left(\begin{array}{cc}
+<p><img src="../_images/math/d63af4f506fd9a388d902e5c5f8c2ba66d7821d4.svg" alt="f\hat H {1\over f}= f\left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right){1\over f}
@@ -711,138 +714,138 @@ f\hat H {1\over f} \ket{S, T} = \epsilon \ket{S, T}"/></p>
     \end{array}\right)"/></p>
 </div><p>and after using:</p>
 <div class="math">
-<p><img src="../_images/math/41989dc6261702f6af5a18e04d48514ec552bfe5.svg" alt="f{\d\over\d\rho}{1\over f} = {\d\over\d\rho} - {f'\over f}"/></p>
+<p><img src="../_images/math/02e1317869a5c6c4d62304854d2eb3c14eab6b70.svg" alt="f{\d\over\d\rho}{1\over f} = {\d\over\d\rho} - {f'\over f}"/></p>
 </div><p>we get:</p>
 <div class="math">
-<p><img src="../_images/math/1b0d877339e479684ff19b570169cf09d7190946.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/2e0d661b3fe9bffba59410dd60aa4c54d3ccf7ac.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}+{f'\over f}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}-{f'\over f}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div><div class="section" id="example-i">
+</div><section id="example-i">
 <h3>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h3>
-<p>In order to obtain equations for <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> and <img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/>, related to <img class="math" src="../_images/math/0c68bacb49644a798e533fb2116913be5f2dc150.svg" alt="P"/> and <img class="math" src="../_images/math/bbf94025659d6b619a223561bfe944c7ecc466eb.svg" alt="Q"/> by:</p>
+<p>In order to obtain equations for <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> and <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/>, related to <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> by:</p>
 <div class="math">
-<p><img src="../_images/math/5dc8076453d58bef0e51241e4e6d51666215857c.svg" alt="P = \rho g
+<p><img src="../_images/math/e31ae4890b5b50ab2284f90e9e868f848f5a5f11.svg" alt="P = \rho g
 
 Q = \rho f"/></p>
-</div><p>so <img class="math" src="../_images/math/9805d154e47bc83d66d14a800a334f55a0814ab1.svg" alt="f(r) = {1\over \rho}"/> and</p>
+</div><p>so <img class="math" src="../_images/math/4815655e38ac5e4692e1474f69eb5dc96d7256fc.svg" alt="f(r) = {1\over \rho}"/> and</p>
 <div class="math">
-<p><img src="../_images/math/bf9771a00da81cd3c28c4533ddc629bd178132f0.svg" alt="{f'\over f} = -{1\over \rho}"/></p>
-</div><p>and we get the radial Dirac equation for <img class="math" src="../_images/math/0a9830644a6a4abf9407ebcbc8ce2c260b0a59b9.svg" alt="g"/> and <img class="math" src="../_images/math/783482e94ff99d9033533c953c4d9f86f741ed74.svg" alt="f"/>:</p>
+<p><img src="../_images/math/99234a181b083548ebd09f6c21db4f2252f5b201.svg" alt="{f'\over f} = -{1\over \rho}"/></p>
+</div><p>and we get the radial Dirac equation for <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> and <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/>:</p>
 <div class="math">
-<p><img src="../_images/math/6dde97e115af78ea9d971e0253192ba23c0aded4.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/8e4f7bdafc20b1622710ef2510f2a6354746dbf1.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa-1\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa+1\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div></div>
-<div class="section" id="example-ii">
+</div></section>
+<section id="example-ii">
 <h3>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h3>
-<p>For <img class="math" src="../_images/math/32191dfa76856a4279d4d9424b957b7945b11d9d.svg" alt="f(r) = \rho"/> we get</p>
+<p>For <img class="math" src="../_images/math/cd859e378881875fd86607ea4a9cf0b1dcf9ca3d.svg" alt="f(r) = \rho"/> we get</p>
 <div class="math">
-<p><img src="../_images/math/ca854f1740e0b674b811496f9efa4044eb30883b.svg" alt="{f'\over f} = {1\over \rho}"/></p>
+<p><img src="../_images/math/2909923043beba55a840442c9925b067689521c3.svg" alt="{f'\over f} = {1\over \rho}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/5e917a259c5f01aad65ce04d6bd498b3e7cb815d.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/3efd130eaedcdde43fd14851b11b8a6d108188bb.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa+1\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa-1\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div></div>
-<div class="section" id="example-iii">
+</div></section>
+<section id="example-iii">
 <h3>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h3>
-<p>For <img class="math" src="../_images/math/de0cb398232bdbcf6b84cdda374a5a8436638aed.svg" alt="f(r) = \rho^n"/> we get</p>
+<p>For <img class="math" src="../_images/math/44fd10b70c544e2021743368d8bd660c318882c9.svg" alt="f(r) = \rho^n"/> we get</p>
 <div class="math">
-<p><img src="../_images/math/e9b4dbba2cbd628ee86e23b1dae24422acbb4964.svg" alt="{f'\over f} = {n\over \rho}"/></p>
+<p><img src="../_images/math/21e28496ee8e73b2e65eaa1d6584ae5da48f5448.svg" alt="{f'\over f} = {n\over \rho}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/c0cfc002b6eece89e2923a654dd4259d125c02bc.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/a84e096127c55ebb3423b942adbe95aeb8b50691.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa+n\over\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa-n\over\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div><p>Example I is just a special case for <img class="math" src="../_images/math/18b7046c26cb10d757ab98dff68ea214b2eb75eb.svg" alt="n=-1"/>, Example II for <img class="math" src="../_images/math/0eaa03a9bdcbfbe237874eccec707eb5dff7eed4.svg" alt="n=1"/>.</p>
-</div>
-<div class="section" id="example-iv">
+</div><p>Example I is just a special case for <img class="math" src="../_images/math/a749ac803b71491ce47c3a6c3dacc3f4b0fc0541.svg" alt="n=-1"/>, Example II for <img class="math" src="../_images/math/40f11cd2e85d5ecd24a44df2377db912d377d2df.svg" alt="n=1"/>.</p>
+</section>
+<section id="example-iv">
 <h3>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h3>
-<p>For <img class="math" src="../_images/math/8ffed5299cb236e7863ebbc91f0d317e359da24a.svg" alt="f(r) = \tanh \rho"/> we get</p>
+<p>For <img class="math" src="../_images/math/e59cbccde7b3bfc0b694002b91edeec9e1e1ed0c.svg" alt="f(r) = \tanh \rho"/> we get</p>
 <div class="math">
-<p><img src="../_images/math/00eb7a48aa53c9de47180754009a35adc213f3f6.svg" alt="{f'\over f} = {1\over \sinh\rho\cosh\rho}"/></p>
+<p><img src="../_images/math/86fa8246f3799cdc511f1869fba27eeb70d801af.svg" alt="{f'\over f} = {1\over \sinh\rho\cosh\rho}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/5b7da4fe3cfb3781a7b30189a009a87d12395320.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/9478f9810a1dbf3bb349b56682e5fd64df70a383.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}+{1\over \sinh\rho\cosh\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}-{1\over \sinh\rho\cosh\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div></div>
-<div class="section" id="example-v">
+</div></section>
+<section id="example-v">
 <h3>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h3>
-<p>For <img class="math" src="../_images/math/2cd74a90d4a354b966d311d0f6a3e63094a9dec5.svg" alt="f(r) = \tanh^n k\rho"/> we get</p>
+<p>For <img class="math" src="../_images/math/de38df56c01dbf2d82a9e0aaf1433ee18fe0feb4.svg" alt="f(r) = \tanh^n k\rho"/> we get</p>
 <div class="math">
-<p><img src="../_images/math/461a82220e79070937cf22194ab408d680e551ce.svg" alt="{f'\over f} = {nk\over \sinh k\rho\cosh k\rho}"/></p>
+<p><img src="../_images/math/274eda557fba60a4ef5e08c675b39ea4fef56804.svg" alt="{f'\over f} = {nk\over \sinh k\rho\cosh k\rho}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/4d4eedbc0d9220afab4195656f846e9943738741.svg" alt="f\hat H {1\over f}
+<p><img src="../_images/math/ed5eff655921535c806c9df6932ddbfd06401526.svg" alt="f\hat H {1\over f}
 = \left(\begin{array}{cc}
     V(\rho) &amp; \hbar c \left(-{\d\over\d\rho}+{\kappa\over\rho}+{nk\over
     \sinh k\rho\cosh k\rho}\right) \\
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}-{nk\over \sinh
     k\rho\cosh k\rho}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
-</div><p>Example IV is just a special case for <img class="math" src="../_images/math/0eaa03a9bdcbfbe237874eccec707eb5dff7eed4.svg" alt="n=1"/>, <img class="math" src="../_images/math/ca40308a8527b69893f78a385a32488bc34c7e7e.svg" alt="k=1"/>.</p>
-</div>
-</div>
-<div class="section" id="asymptotic">
-<h2>8.8.6. Asymptotic<a class="headerlink" href="#asymptotic" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="schrodinger">
+</div><p>Example IV is just a special case for <img class="math" src="../_images/math/40f11cd2e85d5ecd24a44df2377db912d377d2df.svg" alt="n=1"/>, <img class="math" src="../_images/math/d5968e1886b4ea7cc06e537100fe2cacbf294a8d.svg" alt="k=1"/>.</p>
+</section>
+</section>
+<section id="asymptotic">
+<h2><span class="section-number">8.8.6. </span>Asymptotic<a class="headerlink" href="#asymptotic" title="Permalink to this headline">¶</a></h2>
+<section id="schrodinger">
 <h3>Schrödinger<a class="headerlink" href="#schrodinger" title="Permalink to this headline">¶</a></h3>
 <p>The radial Schrödinger equation is:</p>
 <div class="math">
-<p><img src="../_images/math/8fd05a97ddd58dd63a1f2ccf5fc223e8e442813e.svg" alt="P''(r) + 2\left(E-V(r)-{l(l+1)\over 2r^2}\right) P(r) = 0
+<p><img src="../_images/math/e67df0eebdb303117e669e038bd12e88d9707fb8.svg" alt="P''(r) + 2\left(E-V(r)-{l(l+1)\over 2r^2}\right) P(r) = 0
 
 Q(r) = P'(r)"/></p>
-</div><p>For <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/>, assuming <img class="math" src="../_images/math/1fa1d896a9cede13633c1449d28ecb71d880fb8a.svg" alt="V(r)\to0"/> we get:</p>
+</div><p>For <img class="math" src="../_images/math/2f6f98a12ab61f7f20f096db90d0fddadd0a3b7c.svg" alt="r\to\infty"/>, assuming <img class="math" src="../_images/math/44ea4190d541331d06e701933ebe218855f7e7d3.svg" alt="V(r)\to0"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/8e6123925b23b25904015bf0b1937501ce1a8b3f.svg" alt="P''(r) + 2E P(r) = 0"/></p>
+<p><img src="../_images/math/51228048e1236b7a278f8dc2696cb825dcba1969.svg" alt="P''(r) + 2E P(r) = 0"/></p>
 </div><p>And the asymptotic is:</p>
 <div class="math">
-<p><img src="../_images/math/b01ac2b2486430141d549d2e306764e8a30d9beb.svg" alt="P(r) = e^{-\sqrt{-2E} r}
+<p><img src="../_images/math/3db46246c70e55b874941a3ed936c0ac2ae238fb.svg" alt="P(r) = e^{-\sqrt{-2E} r}
 
 Q(r) = P'(r) = -\sqrt{-2E} e^{-\sqrt{-2E} r}"/></p>
-</div><p>For <img class="math" src="../_images/math/71a1de5e6a4341a3a62d3d07d7e73fd452a58c8a.svg" alt="r\to0"/> and assuming that <img class="math" src="../_images/math/9596bff6b74e06753f013f7d6f142dd598f78bd7.svg" alt="V(r)"/> can be neglected compared to the
-<img class="math" src="../_images/math/764c5b5ac892a4331bb2dfe86bccb9c55e69c685.svg" alt="{l(l+1)\over 2r^2}"/> term (for example <img class="math" src="../_images/math/5165a225e73ec8f951bd15e97fd41bc04b94d20a.svg" alt="V(r) = -Z/r + O(1)"/> is ok) we get:</p>
+</div><p>For <img class="math" src="../_images/math/947facf69f94c6b86731eb96855a8734cd6ffa93.svg" alt="r\to0"/> and assuming that <img class="math" src="../_images/math/5b66743f1870ac134a4a9e3dc7af89cfa023068f.svg" alt="V(r)"/> can be neglected compared to the
+<img class="math" src="../_images/math/522fd25536f9f00ad18843d78a7a93fa4a9b1dac.svg" alt="{l(l+1)\over 2r^2}"/> term (for example <img class="math" src="../_images/math/d063a29bb3d94da434613eaf4f27f762e848b0b7.svg" alt="V(r) = -Z/r + O(1)"/> is ok) we get:</p>
 <div class="math">
-<p><img src="../_images/math/807dff42583ac262a132863f072d862264faee3b.svg" alt="P''(r) -{l(l+1)\over r^2} P(r) = 0"/></p>
+<p><img src="../_images/math/040602236e0c1789483e532557839e605300bfb3.svg" alt="P''(r) -{l(l+1)\over r^2} P(r) = 0"/></p>
 </div><p>And the asymptotic is:</p>
 <div class="math">
-<p><img src="../_images/math/e7d1ff2fa1b2fb3672e93e23783c4d9289663372.svg" alt="P(r) = r^{l+1}
+<p><img src="../_images/math/61406a66176336f9ef6dfd73e08b58d54b8422ed.svg" alt="P(r) = r^{l+1}
 
 Q(r) = (l+1) r^l"/></p>
-</div><p>From the derivation this is valid for <img class="math" src="../_images/math/b004cc9a81d1f15bca51bd62d9a6160fc6a2f69a.svg" alt="l&gt;0"/>, but it turns out to be valid also
-for <img class="math" src="../_images/math/499b7757d1b4d1a9b8ef29300e1262cf7c74ee1c.svg" alt="l=0"/>, because for <img class="math" src="../_images/math/5165a225e73ec8f951bd15e97fd41bc04b94d20a.svg" alt="V(r) = -Z/r + O(1)"/> the equations become:</p>
+</div><p>From the derivation this is valid for <img class="math" src="../_images/math/80d1e0b1b569638cc137454ca4e7a9635f9081d4.svg" alt="l&gt;0"/>, but it turns out to be valid also
+for <img class="math" src="../_images/math/92aca8897586f5ad72da2a00a97d2475519f39c1.svg" alt="l=0"/>, because for <img class="math" src="../_images/math/d063a29bb3d94da434613eaf4f27f762e848b0b7.svg" alt="V(r) = -Z/r + O(1)"/> the equations become:</p>
 <div class="math">
-<p><img src="../_images/math/6fd5d9ce37a2ff5a3eec6d85c7f155db042d643e.svg" alt="P''(r) +{2Z\over r} P(r) = 0"/></p>
+<p><img src="../_images/math/c51832810cb63bff785b0e2ac2f1a41089da7cb4.svg" alt="P''(r) +{2Z\over r} P(r) = 0"/></p>
 </div><p>the asymptotic of which is:</p>
 <div class="math">
-<p><img src="../_images/math/564c65c1e87360d723d437bede6095b1e8e71541.svg" alt="P(r) = r(1-Zr)
+<p><img src="../_images/math/e0f1209b469a2dab01b88f326b4ed05101924e7b.svg" alt="P(r) = r(1-Zr)
 
 P'(r) = 1-2Zr
 
 P''(r) = -2Z"/></p>
-</div><p>Which in the first order is just the above asymptotic for <img class="math" src="../_images/math/499b7757d1b4d1a9b8ef29300e1262cf7c74ee1c.svg" alt="l=0"/>:</p>
+</div><p>Which in the first order is just the above asymptotic for <img class="math" src="../_images/math/92aca8897586f5ad72da2a00a97d2475519f39c1.svg" alt="l=0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/fcc952d635a03a3d76cf04d0ad265fc77c0597ff.svg" alt="P(r) = r
+<p><img src="../_images/math/bc593807540ba7b6c347a11fa282c61673452d34.svg" alt="P(r) = r
 
 Q(r) = 1"/></p>
-</div><p>Note that <img class="math" src="../_images/math/11fbe21c5214ca73736644386377c0a20b7dcc6e.svg" alt="Z"/> can be both positive and negative.</p>
-</div>
-<div class="section" id="dirac">
+</div><p>Note that <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/> can be both positive and negative.</p>
+</section>
+<section id="dirac">
 <h3>Dirac<a class="headerlink" href="#dirac" title="Permalink to this headline">¶</a></h3>
 <p>The Dirac equation is:</p>
 <div class="math">
-<p><img src="../_images/math/357457b092587a1d7e1f58e7acc253d37049bb6e.svg" alt="H = \left(\begin{array}{cc}
+<p><img src="../_images/math/c7c0ea4e9f8c49df2d9539e00de1a441700a37a0.svg" alt="H = \left(\begin{array}{cc}
     V(r) + c^2 &amp; c\left(-{\d\over\d r}+{\kappa\over r}\right) \\
     c \left({\d\over\d r}+{\kappa\over r}\right) &amp; V(r) - c^2 \\
     \end{array}\right)
@@ -855,10 +858,10 @@ W\left(\begin{array}{c}
     P(r) \\
     Q(r) \\
     \end{array}\right)"/></p>
-</div><p>Where the relativistic energy <img class="math" src="../_images/math/dcc836d3d9cd30f4cdf079df8dc1bbc6c6792e8b.svg" alt="W = E + c^2"/>. In terms of the nonrelativistic
+</div><p>Where the relativistic energy <img class="math" src="../_images/math/3e2ab51ebd3670cebf52b0041b8643e699a51a9b.svg" alt="W = E + c^2"/>. In terms of the nonrelativistic
 energy it becomes:</p>
 <div class="math">
-<p><img src="../_images/math/226ecbfcc94ff05fd5e43dcbf687c97428a2a231.svg" alt="H_{nonrel} = \left(\begin{array}{cc}
+<p><img src="../_images/math/fc71175a65d05691d5548467a92a5e9a9bd7a1f3.svg" alt="H_{nonrel} = \left(\begin{array}{cc}
     V(r) &amp; c\left(-{\d\over\d r}+{\kappa\over r}\right) \\
     c \left({\d\over\d r}+{\kappa\over r}\right) &amp; V(r) - 2c^2 \\
     \end{array}\right)
@@ -871,93 +874,95 @@ E\left(\begin{array}{c}
     P(r) \\
     Q(r) \\
     \end{array}\right)"/></p>
-</div><p>For <img class="math" src="../_images/math/1326a1ccadc4ac3cbda8aeab354139d54531a5c1.svg" alt="r\to\infty"/>, assuming <img class="math" src="../_images/math/62d1f0e30e2d0371f1e5f26f3e4656dd220dab94.svg" alt="V(r)\to 0"/> we get:</p>
+</div><p>For <img class="math" src="../_images/math/2f6f98a12ab61f7f20f096db90d0fddadd0a3b7c.svg" alt="r\to\infty"/>, assuming <img class="math" src="../_images/math/a762f1a618ca40eb285874469227c5560e599753.svg" alt="V(r)\to 0"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/c4f569d31fb7654328fd65c82d440bc813acdca8.svg" alt="H = \left(\begin{array}{cc}
+<p><img src="../_images/math/a59dcfa15bfcf41bbd2547eaa8568062410d316c.svg" alt="H = \left(\begin{array}{cc}
     c^2 &amp; -c{\d\over\d r} \\
     c {\d\over\d r} &amp; - c^2 \\
     \end{array}\right)"/></p>
-</div><p>and in terms of <img class="math" src="../_images/math/0f4107d7fbbda07d408bbed2d04c4fcd0c139fbe.svg" alt="P(r)"/> and <img class="math" src="../_images/math/2e11a5793f87c3e0c9eca6f463e5c9795c584b88.svg" alt="Q(r)"/>:</p>
+</div><p>and in terms of <img class="math" src="../_images/math/d856fd22ef2f988fe74c5dd736d64d0ab5e1123e.svg" alt="P(r)"/> and <img class="math" src="../_images/math/85ac709fbcfcca2eb1b6461b2befc619aca99d23.svg" alt="Q(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/73749efc1a9460089d8a873ebfa0017b3f1cce00.svg" alt="c^2 P - c Q' = W P
+<p><img src="../_images/math/13003c8d27c6ddb585e158bc4cf524fc16a506de.svg" alt="c^2 P - c Q' = W P
 
 c P' - c^2 Q = W Q"/></p>
 </div><p>let’s put the derivatives on the left hand side:</p>
 <div class="math">
-<p><img src="../_images/math/096c09975123a9c7b5b5c34b0d53460ebeead075.svg" alt="c P' =  (W + c^2) Q
+<p><img src="../_images/math/7eaf05777aff98cfa1d8cfa996afac530e7926c7.svg" alt="c P' =  (W + c^2) Q
 
 c Q' = -(W - c^2) P"/></p>
 </div><p>write a second order equation:</p>
 <div class="math">
-<p><img src="../_images/math/c043cdbf12da6f26e77509ad110d498481ddb24d.svg" alt="c^2 P'' =  (W + c^2) c Q' = - (W + c^2)(W - c^2) P
+<p><img src="../_images/math/002c7e380ccfc87c4a8f3d79cf966c734b320adc.svg" alt="c^2 P'' =  (W + c^2) c Q' = - (W + c^2)(W - c^2) P
     = - (W^2 - c^4) P"/></p>
 </div><p>and finally we get:</p>
 <div class="math">
-<p><img src="../_images/math/0672ddf5487b650f17b423003a3221ad64af4662.svg" alt="P'' + {W^2 - c^4 \over c^2} P = 0
+<p><img src="../_images/math/bc4d79ac0b654dc0a987cff348038a50f9ce5b16.svg" alt="P'' + {W^2 - c^4 \over c^2} P = 0
 
 Q = {c\over W + c^2} P'"/></p>
 </div><p>The asymptotic is:</p>
 <div class="math">
-<p><img src="../_images/math/ceaa4777bdef390db2cf5b1c2c137fe4bc7dd4fc.svg" alt="P(r) = e^{-\sqrt{c^4-W^2\over c^2} r}
+<p><img src="../_images/math/8f72b60979083219cc54ba7cf532356bf56f652a.svg" alt="P(r) = e^{-\sqrt{c^4-W^2\over c^2} r}
 
 Q(r) = {c\over W + c^2} \left(-\sqrt{c^4-W^2\over c^2}\right)
     e^{-\sqrt{c^4-W^2\over c^2} r}
   = -\sqrt{c^2-W\over c^2+W} e^{-\sqrt{c^4-W^2\over c^2} r}"/></p>
-</div><p>We can also write it in terms of <img class="math" src="../_images/math/1404d72782eae6573cca407c86db7cd0890e0909.svg" alt="E"/>:</p>
+</div><p>We can also write it in terms of <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/>:</p>
 <div class="math">
-<p><img src="../_images/math/6dc370d3c442dddf8c7d2641408db0cbee7b0e38.svg" alt="P(r) = e^{-\sqrt{-2E-\left(E\over c\right)^2} r}
+<p><img src="../_images/math/06c6db99ba744fdabf09c3fbaafb054f446f99e2.svg" alt="P(r) = e^{-\sqrt{-2E-\left(E\over c\right)^2} r}
 
 Q(r) = -\sqrt{-{E\over E + 2c^2}} P(r)"/></p>
-</div><p>For <img class="math" src="../_images/math/9fdf4beb8a76ff1d1d6c45453fc6e80ec0e5b987.svg" alt="r\to 0"/> we write the full equations:</p>
+</div><p>For <img class="math" src="../_images/math/1c67c090eed46ae3b99d5d904f2a3ad8d7311e7a.svg" alt="r\to 0"/> we write the full equations:</p>
 <div class="math">
-<p><img src="../_images/math/4353a979d478e8a6fc7844389fcc245f86d00dd2.svg" alt="(V+c^2) P - c Q' + c{\kappa\over r} Q = W P
+<p><img src="../_images/math/f38fcf4795411e30ac59de67a96b1a04a8073fa0.svg" alt="(V+c^2) P - c Q' + c{\kappa\over r} Q = W P
 
 c P' + c{\kappa\over r} P + (V-c^2) Q = W Q"/></p>
-</div><p>Then we assume <img class="math" src="../_images/math/5fc484d467710de0c82ef57ef32ee9b68a0af107.svg" alt="P(r) = r^\beta"/> and use the second equation to express <img class="math" src="../_images/math/2e11a5793f87c3e0c9eca6f463e5c9795c584b88.svg" alt="Q(r)"/>:</p>
+</div><p>Then we assume <img class="math" src="../_images/math/42d74bb773beab2f456c615744bb7e4cdad7ec2d.svg" alt="P(r) = r^\beta"/> and use the second equation to express <img class="math" src="../_images/math/85ac709fbcfcca2eb1b6461b2befc619aca99d23.svg" alt="Q(r)"/>:</p>
 <div class="math">
-<p><img src="../_images/math/281f7dedff9960d210cff802ce78d894d70cce92.svg" alt="Q(r) = {c P' + c{\kappa\over r} P \over W - V + c^2}
+<p><img src="../_images/math/1fc5e02b201d268a8695bcfb81829cb548c03140.svg" alt="Q(r) = {c P' + c{\kappa\over r} P \over W - V + c^2}
     ={c \beta r^{\beta-1} + c{\kappa\over r} r^\beta \over W - V + c^2}
     =r^{\beta-1} {c(\beta + \kappa)\over W - V + c^2}"/></p>
-</div><p>We can always write any potential as <img class="math" src="../_images/math/a48884ddb9fe2392a2fadcc465844646e22c84c4.svg" alt="V(r) = -{Z(r)\over r}"/> and we get:</p>
+</div><p>We can always write any potential as <img class="math" src="../_images/math/9744cceb2e2d5d56a2e2e34cacd3a7c95a03db86.svg" alt="V(r) = -{Z(r)\over r}"/> and we get:</p>
 <div class="math">
-<p><img src="../_images/math/e6608c66bc8e14f655afb207b6e411e79964f378.svg" alt="Q(r)
+<p><img src="../_images/math/36b84819920b0cee3f101c8639e8911858049225.svg" alt="Q(r)
     =r^{\beta-1} {c(\beta + \kappa)\over W + {Z(r)\over r} + c^2}
     =r^\beta {c(\beta + \kappa)\over Z(r) + (W + c^2)r}"/></p>
-</div><p>If <img class="math" src="../_images/math/0701ae547cf357b4dedac073dd55a5624c767d98.svg" alt="Z(r)\to Z"/> as <img class="math" src="../_images/math/9fdf4beb8a76ff1d1d6c45453fc6e80ec0e5b987.svg" alt="r\to 0"/> then the term <img class="math" src="../_images/math/6f2bba280013e51c1adf032acde4285f8a6a2094.svg" alt="(W + c^2)r"/> goes to zero and we get:</p>
+</div><p>If <img class="math" src="../_images/math/50007ec2e819970c01e0e624cdf978f29ef833e7.svg" alt="Z(r)\to Z"/> as <img class="math" src="../_images/math/1c67c090eed46ae3b99d5d904f2a3ad8d7311e7a.svg" alt="r\to 0"/> then the term <img class="math" src="../_images/math/2205548a076d54e34eaf01eba81a5b64ac802378.svg" alt="(W + c^2)r"/> goes to zero and we get:</p>
 <div class="math">
-<p><img src="../_images/math/8177fc67f18f78fbff8ce229c09000774d9da75c.svg" alt="Q(r) =r^\beta {c(\beta + \kappa)\over Z}"/></p>
-</div><p>If <img class="math" src="../_images/math/b65335b49c2bae05e9c0a355f088dd96cdaef7ab.svg" alt="Z(r) \to Z_1 r"/>, then we get:</p>
+<p><img src="../_images/math/b7f5c6697c296b523e1d47dc81367ef65815cbf9.svg" alt="Q(r) =r^\beta {c(\beta + \kappa)\over Z}"/></p>
+</div><p>If <img class="math" src="../_images/math/76c419638c47c8afb56415c9c73304af2e746d2e.svg" alt="Z(r) \to Z_1 r"/>, then we get:</p>
 <div class="math">
-<p><img src="../_images/math/ceed19408721d36cd2b948bb58483aed470133d3.svg" alt="Q(r)
+<p><img src="../_images/math/4898888b29db753ee8dc05e37bbfaa9997048ef6.svg" alt="Q(r)
     =r^\beta {c(\beta + \kappa)\over Z_1 r + (W + c^2)r}
     =r^{\beta-1} {c(\beta + \kappa)\over Z_1 + W + c^2}"/></p>
-</div><p>If <img class="math" src="../_images/math/3e3d034f3e428f5eb3f258eeb9ebc9a53f7477d5.svg" alt="Z(r) \sim r^3"/> (harmonic oscillator) or <img class="math" src="../_images/math/113498b62807185709540e2e04a67dc1bfdb40d9.svg" alt="Z(r) \sim r^2"/>, then the <img class="math" src="../_images/math/4b5c1ea7b021f8334f643216739a71f105d40c93.svg" alt="Z(r)"/>
+</div><p>If <img class="math" src="../_images/math/ba9c063f0c46bdeef1bb4af3becda57121e1d641.svg" alt="Z(r) \sim r^3"/> (harmonic oscillator) or <img class="math" src="../_images/math/233ddfdaac9b15dab5dcae9206adcaac0aab81db.svg" alt="Z(r) \sim r^2"/>, then the <img class="math" src="../_images/math/1d7e95af35bb5712d99c203b2a9202ae716b0f33.svg" alt="Z(r)"/>
 term goes to zero and we get:</p>
 <div class="math">
-<p><img src="../_images/math/c0f69cabb7d1961b1b82072e4539a664fd93bf73.svg" alt="Q(r) =r^{\beta-1} {c(\beta + \kappa)\over W + c^2}"/></p>
-</div><p>In order to determine the constant <img class="math" src="../_images/math/78462d9549fd018a7ab12f80e113803fcd46a616.svg" alt="\beta"/> for <img class="math" src="../_images/math/c848fe5901c0c9af02d46b127c89c0c0bb9bef71.svg" alt="Z\ne0"/>, we write the fraction
-<img class="math" src="../_images/math/6ec488180364b736344e69160788e1b060c689ae.svg" alt="Q(r)\over P(r)"/> in two ways:</p>
+<p><img src="../_images/math/16226b301971826c2b966fa91a5f41a30857cc45.svg" alt="Q(r) =r^{\beta-1} {c(\beta + \kappa)\over W + c^2}"/></p>
+</div><p>In order to determine the constant <img class="math" src="../_images/math/4e178786bb713b00e2cb8d024dfe70345159d1f1.svg" alt="\beta"/> for <img class="math" src="../_images/math/a0d5fd49ed3b6707c543e7aacd753e5353490a0a.svg" alt="Z\ne0"/>, we write the fraction
+<img class="math" src="../_images/math/5499e783d109b18015265cebd5fb65af27f54d72.svg" alt="Q(r)\over P(r)"/> in two ways:</p>
 <div class="math">
-<p><img src="../_images/math/f5a1078b8c2762d9f80bfeb133533e7db8f75002.svg" alt="{Q(r)\over P(r)} = {c(\beta+\kappa) \over Z} = {Z\over c(\kappa-\beta)}"/></p>
-</div><p>The second equation follows from first assuming <img class="math" src="../_images/math/f042102978528edb434763ad87d36120d6a42945.svg" alt="Q(r)=r^\beta"/> and using the
-first Dirac equation to express <img class="math" src="../_images/math/fd76c5faa5995b7b373f9e75011d0e3c9c45d434.svg" alt="P(r)=r^\beta {c(\kappa-\beta) \over Z}"/>.  Now
-we can express <img class="math" src="../_images/math/78462d9549fd018a7ab12f80e113803fcd46a616.svg" alt="\beta"/> (we can assume <img class="math" src="../_images/math/352553afea16b5ec327f8c72e4a71e580845f121.svg" alt="\beta &gt; 0"/>):</p>
+<p><img src="../_images/math/68e97d830254a7dddc24a33efa17a99c41095dec.svg" alt="{Q(r)\over P(r)} = {c(\beta+\kappa) \over Z} = {Z\over c(\kappa-\beta)}"/></p>
+</div><p>The second equation follows from first assuming <img class="math" src="../_images/math/73d40cec529fd532b75d54bf93ec43523e7f7636.svg" alt="Q(r)=r^\beta"/> and using the
+first Dirac equation to express <img class="math" src="../_images/math/28a021caabd2b0e5f213d7e463a6c50b404d4de4.svg" alt="P(r)=r^\beta {c(\kappa-\beta) \over Z}"/>.  Now
+we can express <img class="math" src="../_images/math/4e178786bb713b00e2cb8d024dfe70345159d1f1.svg" alt="\beta"/> (we can assume <img class="math" src="../_images/math/7cfd59e8b0f24d87c60bd3a5d7cf434f0a21bd92.svg" alt="\beta &gt; 0"/>):</p>
 <div class="math">
-<p><img src="../_images/math/81ede4739d1598bedd372a7925e3f5d2133cfbae.svg" alt="{Z^2\over c^2} = \kappa^2 - \beta^2
+<p><img src="../_images/math/1e49367577f87e6a3ad7e6f9fb86a8cfa29fdc18.svg" alt="{Z^2\over c^2} = \kappa^2 - \beta^2
 
 \beta = \sqrt{\kappa^2 - \left(Z\over c\right)^2}"/></p>
-</div></div>
-</div>
-</div>
+</div></section>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">8.8. Radial Schrödinger and Dirac Equations</a><ul>
 <li><a class="reference internal" href="#variational-formulation-of-the-schrodinger-equation">8.8.1. Variational Formulation of the Schrödinger equation</a><ul>
 <li><a class="reference internal" href="#weak-formulation">Weak Formulation</a></li>
@@ -999,12 +1004,17 @@ we can express <img class="math" src="../_images/math/78462d9549fd018a7ab12f80e1
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="examples.html"
-                        title="previous chapter">8.7. Examples</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="dft.html"
-                        title="next chapter">8.9. Density Functional Theory (DFT)</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="examples.html"
+                          title="previous chapter"><span class="section-number">8.7. </span>Examples</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="dft.html"
+                          title="next chapter"><span class="section-number">8.9. </span>Density Functional Theory (DFT)</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1013,17 +1023,15 @@ we can express <img class="math" src="../_images/math/78462d9549fd018a7ab12f80e1
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1041,12 +1049,13 @@ we can express <img class="math" src="../_images/math/78462d9549fd018a7ab12f80e1
           <a href="examples.html" title="8.7. Examples"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >8. Quantum Field Theory and Quantum Mechanics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">8. </span>Quantum Field Theory and Quantum Mechanics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8.8. </span>Radial Schrödinger and Dirac Equations</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

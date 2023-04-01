@@ -1,18 +1,20 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.29. Legendre Polynomials &#8212; Theoretical Physics Reference 0.5 documentation</title>
-    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.34. Hypergeometric Functions" href="hyper.html" />
@@ -62,7 +64,8 @@
           <a href="other.html" title="3.15. Delta Function"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U">3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" accesskey="U"><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.29. </span>Legendre Polynomials</a></li> 
       </ul>
     </div>  
 
@@ -71,35 +74,35 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="legendre-polynomials">
-<span id="index-0"></span><span id="id1"></span><h1>3.29. Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h1>
-<p>Legendre polynomials <img class="math" src="../_images/math/345446e900af058bca2858e487334d2f963e51b9.svg" alt="P_l(x)"/> defined by the Rodrigues’ formula</p>
+  <section id="legendre-polynomials">
+<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">3.29. </span>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h1>
+<p>Legendre polynomials <img class="math" src="../_images/math/b6460d0e85ab02e3746faab7ee8495d307fa4e96.svg" alt="P_l(x)"/> defined by the Rodrigues’ formula</p>
 <div class="math">
-<p><img src="../_images/math/491d56d5a5e81aaf38377360850f6ef117dde6b1.svg" alt="P_l(x)={1\over2^l l!}{\d^l\over\d x^l}[(x^2-1)^l]"/></p>
+<p><img src="../_images/math/5b2ee0aa092d63020297866cb04294bb7077b3fb.svg" alt="P_l(x)={1\over2^l l!}{\d^l\over\d x^l}[(x^2-1)^l]"/></p>
 </div><p>they also obey the completeness relation</p>
 <div class="math" id="equation-lorto">
-<p><span class="eqno">(3.29.1)<a class="headerlink" href="#equation-lorto" title="Permalink to this equation">¶</a></span><img src="../_images/math/69eee61434ee02df2313fe840f6a82561d2cae20.svg" alt="\sum_{l=0}^\infty {2l+1\over2}P_l(x')P_l(x)=\delta(x-x')"/></p>
+<p><span class="eqno">(3.29.1)<a class="headerlink" href="#equation-lorto" title="Permalink to this equation">¶</a></span><img src="../_images/math/743eb02654dc79144a17c9774f36e752e7cbed55.svg" alt="\sum_{l=0}^\infty {2l+1\over2}P_l(x')P_l(x)=\delta(x-x')"/></p>
 </div><p>and orthogonality relation:</p>
 <div class="math">
-<p><img src="../_images/math/19a74f2bbc6e041ac51c463cc2872293866a6d76.svg" alt="\int_{-1}^1 P_k(x) P_l(x) \d x = {2\delta_{kl} \over 2k+1}"/></p>
+<p><img src="../_images/math/487f519e434e51f2224d3cf8ffcd81d9db1943d0.svg" alt="\int_{-1}^1 P_k(x) P_l(x) \d x = {2\delta_{kl} \over 2k+1}"/></p>
 </div><p>Two Legendre polynomials can be expanded in a series:</p>
 <div class="math">
-<p><img src="../_images/math/d7c7347fb82b596bf02b97bf8f2ebcd5f7fe246f.svg" alt="P_k(x) P_l(x)
+<p><img src="../_images/math/1f0b69ca6a5ca6ab3865518403eb927995473937.svg" alt="P_k(x) P_l(x)
     = \sum_{m=|k-l|}^{k+l}
     \begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
     (2m+1) P_m(x)"/></p>
-</div><p>This was first proven by <a class="reference internal" href="#adams" id="id2">[Adams]</a>, where he shows:</p>
+</div><p>This was first proven by <a class="reference internal" href="#adams" id="id2"><span>[Adams]</span></a>, where he shows:</p>
 <div class="math">
-<p><img src="../_images/math/1f1c72a899338f552ab994a4b065aab8655ad346.svg" alt="P_k(x) P_l(x) = \sum_{m=|k-l|}^{k+l} {A(s-k) A(s-l) A(s-m)\over A(s)}
+<p><img src="../_images/math/a43486f0d8739680bba2971171c19c8b2487a131.svg" alt="P_k(x) P_l(x) = \sum_{m=|k-l|}^{k+l} {A(s-k) A(s-l) A(s-m)\over A(s)}
     {2m+1\over 2s+1} P_m(x)"/></p>
-</div><p>where <img class="math" src="../_images/math/0d8076f29005388b00fde6abc6bfad8ad7ce75be.svg" alt="s={k+l+m\over 2}"/> and</p>
+</div><p>where <img class="math" src="../_images/math/52d54996b019c39c098d6a8ad7ab5a5e609d3b46.svg" alt="s={k+l+m\over 2}"/> and</p>
 <div class="math">
-<p><img src="../_images/math/8c70cd1bbd23161414194e35e6007380ae57f44c.svg" alt="A(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
+<p><img src="../_images/math/2b97bdb07003e814b835c274587fea6592269cd9.svg" alt="A(n) = {1\cdot3\cdot5 \cdot \dots \cdot (2n-1) \over
     1\cdot 2\cdot 3\cdot \dots \cdot n} =
         {(2n)!\over 2^n (n!)^2} = {1\over 2^n}\binom{2n}{n}"/></p>
-</div><p>The coefficient in the expansion can then be written using a <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbol as:</p>
+</div><p>The coefficient in the expansion can then be written using a <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbol as:</p>
 <div class="math">
-<p><img src="../_images/math/400b9a04014bcaf0c5881bb094a206bcc50ab0ad.svg" alt="{A(s-k) A(s-l) A(s-m)\over A(s)} {1\over 2s+1} =
+<p><img src="../_images/math/2360cb53418ecb0f6f7ec1691ec65fe2f01714c2.svg" alt="{A(s-k) A(s-l) A(s-m)\over A(s)} {1\over 2s+1} =
 
 = {
         {1\over2^{s-k}}\binom{2s-2k}{s-k}
@@ -137,10 +140,10 @@
    =
 
 = \begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2"/></p>
-</div><p>So we will be just using the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbol form from now on.
+</div><p>So we will be just using the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbol form from now on.
 We can now calculate the integral of three Legendre polynomials:</p>
 <div class="math" id="equation-int-three-legendre-polys">
-<p><span class="eqno">(3.29.2)<a class="headerlink" href="#equation-int-three-legendre-polys" title="Permalink to this equation">¶</a></span><img src="../_images/math/5540f1b7c296ed05b5d91b52f450c8985f45d470.svg" alt="\int_{-1}^1 P_k(x) P_l(x) P_m(x) \d x =
+<p><span class="eqno">(3.29.2)<a class="headerlink" href="#equation-int-three-legendre-polys" title="Permalink to this equation">¶</a></span><img src="../_images/math/a90cdcf598f84d56adbc94fff265458537727079.svg" alt="\int_{-1}^1 P_k(x) P_l(x) P_m(x) \d x =
 
 = \int_{-1}^1
     \sum_{n=|k-l|}^{k+l}
@@ -157,21 +160,21 @@ P_m(x) \d x =
 = 2 \begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2"/></p>
 </div><p>This is consistent with the series expansion:</p>
 <div class="math">
-<p><img src="../_images/math/94607ee730b1eec6831abcc60b42b989c8532164.svg" alt="P_k(x) P_l(x) = \sum_{m=|k-l|}^{k+l}
+<p><img src="../_images/math/1fa96cd50b3412fb7cbeeb0717867c4d9791eba5.svg" alt="P_k(x) P_l(x) = \sum_{m=|k-l|}^{k+l}
     {2m+1\over 2}\int_{-1}^1 P_k(x) P_l(x) P_m(x) \d x\,\,
     P_m(x) =
 
 = \sum_{m=|k-l|}^{k+l}
     \begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
     (2m+1) P_m(x)"/></p>
-</div><p>Any function <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> (where <img class="math" src="../_images/math/68180ceaf443dc384c327db13e1c2491af9aab29.svg" alt="-1\le x \le 1"/>) can be expanded as:</p>
+</div><p>Any function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> (where <img class="math" src="../_images/math/11f445cfef933c1cdb8b3f21b8f3d9a57a4bc9e9.svg" alt="-1\le x \le 1"/>) can be expanded as:</p>
 <div class="math">
-<p><img src="../_images/math/0756076bb18fe6019bff5ee83bf8063c92134b87.svg" alt="f(x) = \sum_{l=0}^\infty f_l P_l(x)
+<p><img src="../_images/math/ed27638a785a45784784242204ad1dbd3de2fd4f.svg" alt="f(x) = \sum_{l=0}^\infty f_l P_l(x)
 
 f_l = {(2l+1)\over 2} \int_{-1}^1 f(x) P_l(x) \d x"/></p>
-</div><p>For the following choice of <img class="math" src="../_images/math/69143349d26656de22658c8fc17881fa19df247c.svg" alt="f(x)"/> we get (for <img class="math" src="../_images/math/b04a3d81f585fcf6b0dbe31008c6d551c1a2c557.svg" alt="|t| \le 1"/>):</p>
+</div><p>For the following choice of <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> we get (for <img class="math" src="../_images/math/9e618bb167a0ac72f09ee71094db1e466bbf2a19.svg" alt="|t| \le 1"/>):</p>
 <div class="math">
-<p><img src="../_images/math/68fdec8f78eae3e2f2a1d033c42c6628351a3d9a.svg" alt="f(x) = {1\over\sqrt{1-2xt+t^2}}
+<p><img src="../_images/math/3abefd31b14839ad6ca8ce6fa72b54183d0aa2f5.svg" alt="f(x) = {1\over\sqrt{1-2xt+t^2}}
 
 f_l = {(2l+1)\over 2} \int_{-1}^1 {P_l(x)\over\sqrt{1-2xt+t^2}} \d x
     = {(2l+1)\over 2} \int_{|1+t|}^{|1-t|}
@@ -187,7 +190,7 @@ f_l = {(2l+1)\over 2} \int_{-1}^1 {P_l(x)\over\sqrt{1-2xt+t^2}} \d x
 
     = t^l"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">legendre</span><span class="p">,</span> <span class="n">integrate</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">legendre</span><span class="p">,</span> <span class="n">integrate</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;l R t&quot;</span><span class="p">)</span>
 <span class="go">(l, R, t)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">integrate</span><span class="p">(</span><span class="n">legendre</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">R</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">)),</span>
@@ -217,26 +220,25 @@ f_l = {(2l+1)\over 2} \int_{-1}^1 {P_l(x)\over\sqrt{1-2xt+t^2}} \d x
 </pre></div>
 </div>
 <p>So the Legendre polynomials are the coefficients of the following expansion
-for <img class="math" src="../_images/math/b04a3d81f585fcf6b0dbe31008c6d551c1a2c557.svg" alt="|t| \le 1"/>:</p>
+for <img class="math" src="../_images/math/9e618bb167a0ac72f09ee71094db1e466bbf2a19.svg" alt="|t| \le 1"/>:</p>
 <div class="math">
-<p><img src="../_images/math/e5ef1bbe59cc8fab72dcd88f96c0e2308d7f8908.svg" alt="{1\over\sqrt{1-2xt+t^2}} = \sum_{l=0}^\infty P_l(x) t^l"/></p>
-</div><p>Note that for <img class="math" src="../_images/math/888d48c626c5acb2b699e0d1dfdac391a09b4cba.svg" alt="|t| &gt; 1"/> we get:</p>
+<p><img src="../_images/math/363be15195c9ecd930458df8cbbc58ba10e679e5.svg" alt="{1\over\sqrt{1-2xt+t^2}} = \sum_{l=0}^\infty P_l(x) t^l"/></p>
+</div><p>Note that for <img class="math" src="../_images/math/e4b6dcdbd10795b7adfef9cc52cd237c92a231de.svg" alt="|t| &gt; 1"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/1e6e633946acf2d7fe59b83478d0ffe455555375.svg" alt="{1\over\sqrt{1-2xt+t^2}}
+<p><img src="../_images/math/0b9ce14d77cd3ee49b7aacd6d21a346c9bb686d8.svg" alt="{1\over\sqrt{1-2xt+t^2}}
 = {1\over |t|}{1\over\sqrt{1-2x{1\over t}+\left({1\over t}\right)^2}}
 = {1\over |t|}\sum_{l=0}^\infty P_l(x) \left({1\over t}\right)^l
 = \sign t \sum_{l=0}^\infty P_l(x) t^{-l-1}"/></p>
-</div><table class="docutils citation" frame="void" id="adams" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[Adams]</a></td><td>Adams, J. C. (1878). On the Expression of the Product of Any Two Legendre’s Coefficients by Means of a Series of Legendre’s Coefficients.  Proceedings of the Royal Society of London, 27, 63-71.</td></tr>
-</tbody>
-</table>
-<div class="section" id="example-i">
-<h2>3.29.1. Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+</div><dl class="citation">
+<dt class="label" id="adams"><span class="brackets"><a class="fn-backref" href="#id2">Adams</a></span></dt>
+<dd><p>Adams, J. C. (1878). On the Expression of the Product of Any Two Legendre’s Coefficients by Means of a Series of Legendre’s Coefficients.  Proceedings of the Royal Society of London, 27, 63-71.</p>
+</dd>
+</dl>
+<section id="example-i">
+<h2><span class="section-number">3.29.1. </span>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
 <p>Very important is the following multipole expansion:</p>
 <div class="math" id="equation-legendre-expansion">
-<p><span class="eqno">(3.29.1.1)<a class="headerlink" href="#equation-legendre-expansion" title="Permalink to this equation">¶</a></span><img src="../_images/math/5bfd9487b303fc4d14ccb9133f5a8a165b572b54.svg" alt="{1\over |{\bf r}-{\bf r'}|}
+<p><span class="eqno">(3.29.1.1)<a class="headerlink" href="#equation-legendre-expansion" title="Permalink to this equation">¶</a></span><img src="../_images/math/1d62802b28780d45a3c0592b18cd1bc7fdc779b1.svg" alt="{1\over |{\bf r}-{\bf r'}|}
     ={1\over \sqrt{({\bf r}-{\bf r'})^2}}
     ={1\over \sqrt{r^2-2{\bf r}\cdot {\bf r'} + r'^2}}
     ={1\over r_&gt;\sqrt{1-2\left(r_&lt;\over r_&gt;\right){\bf\hat r}\cdot {\bf\hat
@@ -244,25 +246,25 @@ for <img class="math" src="../_images/math/b04a3d81f585fcf6b0dbe31008c6d551c1a2c
 
 ={1\over r_&gt;}\sum_{l=0}^\infty\left(r_&lt;\over r_&gt;\right)^l P_l({\bf\hat r}\cdot {\bf\hat r'})
 =\sum_{l=0}^\infty {r_&lt;^l\over r_&gt;^{l+1}} P_l({\bf\hat r}\cdot {\bf\hat r'})"/></p>
-</div><p>Where <img class="math" src="../_images/math/ef0eec945cd1810697e5cf0c065c608675dddc01.svg" alt="r_{&gt;} = \max(r, r')"/> and
-<img class="math" src="../_images/math/88ede1133eb37442b5412c41d73429d828b11e10.svg" alt="r_{&lt;} = \min(r, r')"/>.
-Assuming <img class="math" src="../_images/math/b34822438d682a7b80d30c3838a7afdc3456506f.svg" alt="r &gt; r'"/>, we get for the first few terms:</p>
+</div><p>Where <img class="math" src="../_images/math/fee7c85da55df659bcbbdbe63a09ad99ca26dcf9.svg" alt="r_{&gt;} = \max(r, r')"/> and
+<img class="math" src="../_images/math/c35050d94da377a53a5c20665f7d955ba5fa5f5a.svg" alt="r_{&lt;} = \min(r, r')"/>.
+Assuming <img class="math" src="../_images/math/7f8ce56d568c36e2cdf87d70bb9ed21a2737a145.svg" alt="r &gt; r'"/>, we get for the first few terms:</p>
 <div class="math">
-<p><img src="../_images/math/8521590c0c602d0c080267cda7a8b48eed46d920.svg" alt="{1\over |{\bf r}-{\bf r'}|}
+<p><img src="../_images/math/9db3e000d423994dbf5754f0a2572b262550b778.svg" alt="{1\over |{\bf r}-{\bf r'}|}
 ={1\over r}\left( P_0({\bf\hat r}\cdot {\bf\hat r'}) + P_1({\bf\hat r}\cdot {\bf\hat r'}){r'\over r} + P_2({\bf\hat r}\cdot {\bf\hat r'})\left(r'\over r\right)^2 + O\left(r'^3\over r^3\right) \right) =
 
 ={1\over r}\left( 1 + {\bf\hat r}\cdot {\bf\hat r'} {r'\over r} + \half\left(3({\bf\hat r}\cdot {\bf\hat r'})^2-1\right)\left(r'\over r\right)^2 + O\left(r'^3\over r^3\right) \right) =
 
 ={1\over r} +{{\bf r}\cdot {\bf r'}\over r^3} +{3({\bf r}\cdot {\bf r'})^2-r^2r'^2\over 2r^5} + O\left(r'^3\over r^4\right)"/></p>
-</div></div>
-<div class="section" id="example-ii">
-<h2>3.29.2. Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="example-ii">
+<h2><span class="section-number">3.29.2. </span>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
 <p>Let’s find the expansion of</p>
 <div class="math">
-<p><img src="../_images/math/f41bb3bfc0fd4b5a8714a819fdb55ca7c7c27798.svg" alt="f(x) = {e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}}"/></p>
-</div><p>for <img class="math" src="../_images/math/b04a3d81f585fcf6b0dbe31008c6d551c1a2c557.svg" alt="|t| \le 1"/>. We get:</p>
+<p><img src="../_images/math/425c67d99d116db3d0b87a21c74aa5edad317ff5.svg" alt="f(x) = {e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}}"/></p>
+</div><p>for <img class="math" src="../_images/math/9e618bb167a0ac72f09ee71094db1e466bbf2a19.svg" alt="|t| \le 1"/>. We get:</p>
 <div class="math">
-<p><img src="../_images/math/acbcd5ab363d54747ca9206ab184edf0036c5d02.svg" alt="f_l = {(2l+1)\over 2} \int_{-1}^1
+<p><img src="../_images/math/93f45a7753b5da3bf3613e1520707fe40150546f.svg" alt="f_l = {(2l+1)\over 2} \int_{-1}^1
     {P_l(x)e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}} \d x
     = {(2l+1)\over 2} \int_{|1+t|}^{|1-t|}
              {P_l\left(1-R^2+t^2\over 2 t\right)e^{-\alpha R}\over R}
@@ -273,24 +275,24 @@ Assuming <img class="math" src="../_images/math/b34822438d682a7b80d30c3838a7afdc
              P_l\left(1-R^2+t^2\over 2 t\right) e^{-\alpha R} \d R
     = {(2l+1)\over 2 t} \int_{1-t}^{1+t}
              P_l\left(1-R^2+t^2\over 2 t\right) e^{-\alpha R} \d R"/></p>
-</div><p>Here is the result for the first few <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>:</p>
+</div><p>Here is the result for the first few <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>:</p>
 <div class="math">
-<p><img src="../_images/math/41f9a4132afad7b99658d4dfb4b7ea19e1a25f05.svg" alt="f_0 &amp; = \frac{\left(e^{2 \alpha t} -1\right) e^{- \alpha t - \alpha}}{2 \alpha t} \\
+<p><img src="../_images/math/24c11768b30c9a60816ac4a95ddb7bc07fe87bb2.svg" alt="f_0 &amp; = \frac{\left(e^{2 \alpha t} -1\right) e^{- \alpha t - \alpha}}{2 \alpha t} \\
 f_1 &amp; = \frac{3}{2} \frac{\left(\alpha^{2} t e^{2 \alpha t} + \alpha^{2} t + \alpha t e^{2 \alpha t} + \alpha t - \alpha e^{2 \alpha t} + \alpha - e^{2 \alpha t} + 1\right) e^{- \alpha t - \alpha}}{\alpha^{3} t^{2}} \\
 f_2 &amp; = \frac{5}{2} \frac{\left(\alpha^{4} t^{2} e^{2 \alpha t} - \alpha^{4} t^{2} + 3 \alpha^{3} t^{2} e^{2 \alpha t} - 3 \alpha^{3} t^{2} - 3 \alpha^{3} t e^{2 \alpha t} - 3 \alpha^{3} t + 3 \alpha^{2} t^{2} e^{2 \alpha t} - 3 \alpha^{2} t^{2} - 9 \alpha^{2} t e^{2 \alpha t} - 9 \alpha^{2} t + X\right) e^{- \alpha t - \alpha}}{\alpha^{5} t^{3}}
 
 X = 3 \alpha^{2} e^{2 \alpha t} - 3 \alpha^{2} - 9 \alpha t e^{2 \alpha t} - 9 \alpha t + 9 \alpha e^{2 \alpha t} - 9 \alpha + 9 e^{2 \alpha t} -9"/></p>
-</div><p>Expanding in <img class="math" src="../_images/math/7ad51d6d459e9bbdf9868b0129b30fbf89d35c09.svg" alt="t"/> up to
-<img class="math" src="../_images/math/dc8929f5918573d23f8cc3d23bdb1be64505ab72.svg" alt="\operatorname{\mathcal{O}}\left(t^{7}\right)"/> we get:</p>
+</div><p>Expanding in <img class="math" src="../_images/math/39ed26361fef3c5df60ed6f59b8a2ee4cda0de4e.svg" alt="t"/> up to
+<img class="math" src="../_images/math/5b142ddeff8e93abadbb2c2f2853fdb3d75c2836.svg" alt="\operatorname{\mathcal{O}}\left(t^{7}\right)"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/2df73f7b98caf2657d74ddc7f2d9d5acb86c1c41.svg" alt="f_l &amp; = e^{-\alpha} g_l \\
+<p><img src="../_images/math/1e6031551ec4b3ed06cd457f5d6e05040c983f53.svg" alt="f_l &amp; = e^{-\alpha} g_l \\
 g_0 &amp; = 1 + \frac{1}{6} \alpha^{2} t^{2} + \frac{1}{120} \alpha^{4} t^{4} + \frac{1}{5040} \alpha^{6} t^{6} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\
 g_1 &amp; = t + \alpha t + \frac{1}{10} \alpha^{2} t^{3} + \frac{1}{10} \alpha^{3} t^{3} + \frac{1}{280} \alpha^{4} t^{5} + \frac{1}{280} \alpha^{5} t^{5} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\
 g_2 &amp; = t^{2} + \alpha t^{2} + \frac{1}{3} \alpha^{2} t^{2} + \frac{1}{14} \alpha^{2} t^{4} + \frac{1}{14} \alpha^{3} t^{4} + \frac{1}{42} \alpha^{4} t^{4} + \frac{1}{504} \alpha^{4} t^{6} + \frac{1}{504} \alpha^{5} t^{6} + \frac{1}{1512} \alpha^{6} t^{6} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\
 g_3 &amp; = t^{3} + \alpha t^{3} + \frac{2}{5} \alpha^{2} t^{3} + \frac{1}{18} \alpha^{2} t^{5} + \frac{1}{15} \alpha^{3} t^{3} + \frac{1}{18} \alpha^{3} t^{5} + \frac{1}{45} \alpha^{4} t^{5} + \frac{1}{270} \alpha^{5} t^{5} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\
 g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \alpha^{2} t^{6} + \frac{2}{21} \alpha^{3} t^{4} + \frac{1}{22} \alpha^{3} t^{6} + \frac{1}{105} \alpha^{4} t^{4} + \frac{3}{154} \alpha^{4} t^{6} + \frac{1}{231} \alpha^{5} t^{6} + \frac{1}{2310} \alpha^{6} t^{6} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\"/></p>
 </div><p>Code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">legendre</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">latex</span><span class="p">,</span> <span class="n">cse</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">legendre</span><span class="p">,</span> <span class="n">integrate</span><span class="p">,</span> <span class="n">exp</span><span class="p">,</span> <span class="n">latex</span><span class="p">,</span> <span class="n">cse</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;l R t alpha&quot;</span><span class="p">)</span>
 <span class="go">(l, R, t, alpha)</span>
 <span class="go">&gt;&gt;&gt;</span>
@@ -315,11 +317,11 @@ g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \
 <span class="go">g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \alpha^{2} t^{6} + \frac{2}{21} \alpha^{3} t^{4} + \frac{1}{22} \alpha^{3} t^{6} + \frac{1}{105} \alpha^{4} t^{4} + \frac{3}{154} \alpha^{4} t^{6} + \frac{1}{231} \alpha^{5} t^{6} + \frac{1}{2310} \alpha^{6} t^{6} + \operatorname{\mathcal{O}}\left(t^{7}\right) \\</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="example-iii">
-<h2>3.29.3. Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="example-iii">
+<h2><span class="section-number">3.29.3. </span>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/38214583c8150de2e563dd44879caa24db8dc1c3.svg" alt="{e^{-{|{\bf r}-{\bf r'}|\over D}}\over |{\bf r}-{\bf r'}|}
+<p><img src="../_images/math/050e4f7587a8ab1c7850a8743728790e2911970b.svg" alt="{e^{-{|{\bf r}-{\bf r'}|\over D}}\over |{\bf r}-{\bf r'}|}
     = {e^{-r_&gt;\sqrt{1-2\left(r_&lt;\over r_&gt;\right)
             {\bf\hat r}\cdot {\bf\hat r'}
         +\left(r_&lt;\over r_&gt;\right)^2}\over D}\over
@@ -330,29 +332,29 @@ g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \
         {e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}}"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/7b5d5e239110a609eeddc1a94e4d2a840019bef2.svg" alt="\alpha &amp; = {r_&gt;\over D} \\
+<p><img src="../_images/math/238da5425189c227d737f990237295fc93e8dde4.svg" alt="\alpha &amp; = {r_&gt;\over D} \\
 x &amp; = {\bf\hat r}\cdot {\bf\hat r'} \\
 t &amp; = {r_&lt;\over r_&gt;}"/></p>
-</div></div>
-<div class="section" id="example-iv">
-<h2>3.29.4. Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="example-iv">
+<h2><span class="section-number">3.29.4. </span>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/4d7df22f985c7f9080ea91d779b0c17367770d1d.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
+<p><img src="../_images/math/a4f645f3ee0e06b9c7d48db2bb6b8c3070eb70b7.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
     = {e^{-{|{\bf r}_1-{\bf r}_2|\over D}}\over |{\bf r}_1-{\bf r}_2|}"/></p>
-</div><p>The potential <img class="math" src="../_images/math/d2eeb453d8cdb59f1e536084a98b1b40d1bc123f.svg" alt="V"/> is a function of <img class="math" src="../_images/math/8899edd223ffd2a0161ac3b0713e3faee7553dd1.svg" alt="r_1"/>, <img class="math" src="../_images/math/a060662f1744e417014f4f56b29aa07de0c3bbf9.svg" alt="r_2"/> and <img class="math" src="../_images/math/c6d55086488fea9547b307d4daed5401ea347fb3.svg" alt="\cos\theta"/> only:</p>
+</div><p>The potential <img class="math" src="../_images/math/f0fda77a3d47de294c8afeda566ae7bee314a6c3.svg" alt="V"/> is a function of <img class="math" src="../_images/math/ae2cb70397f7ba87bae21b1395d0007411e30ec1.svg" alt="r_1"/>, <img class="math" src="../_images/math/69fc394862cf31a15b037e643c6f3b8909c9536b.svg" alt="r_2"/> and <img class="math" src="../_images/math/1c7dbd7994c94ff99c03413878f78dfc648c9ca5.svg" alt="\cos\theta"/> only:</p>
 <div class="math">
-<p><img src="../_images/math/6b4f3356fd6480f13fc367b10f4ceedc3d2f1baf.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
+<p><img src="../_images/math/36c68b503028a625b9debda7ddb757d045d7547b.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
     = V\left(\sqrt{r_1^2 - 2 {\bf r_1} \cdot {\bf r_2} + r_2^2}\right)
     = V\left(\sqrt{r_1^2 - 2 r_1 r_2\cos\theta + r_2^2}\right)
     = V(r_1, r_2, \cos\theta)"/></p>
-</div><p>So we expand in the <img class="math" src="../_images/math/c6d55086488fea9547b307d4daed5401ea347fb3.svg" alt="\cos\theta"/> variable using the Legendre expansion:</p>
+</div><p>So we expand in the <img class="math" src="../_images/math/1c7dbd7994c94ff99c03413878f78dfc648c9ca5.svg" alt="\cos\theta"/> variable using the Legendre expansion:</p>
 <div class="math">
-<p><img src="../_images/math/7ef310fec0006eb6a6d0ac49cb4dc0a074d8bb53.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
+<p><img src="../_images/math/e3bd4f94dc21c412c8a0f389e0404d3476cde2c2.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
     = V(r_1, r_2, \cos\theta)
     = \sum_{l=0}^\infty V_l(r_1, r_2) P_l(\cos\theta)"/></p>
-</div><p>where <img class="math" src="../_images/math/61149e9b7e4cba460271436e79a4eaecbf0d2995.svg" alt="V_l(r_1, r_2)"/> only depends on <img class="math" src="../_images/math/8899edd223ffd2a0161ac3b0713e3faee7553dd1.svg" alt="r_1"/> and <img class="math" src="../_images/math/a060662f1744e417014f4f56b29aa07de0c3bbf9.svg" alt="r_2"/>:</p>
+</div><p>where <img class="math" src="../_images/math/9979617403662215349baa18d504e191a6f05141.svg" alt="V_l(r_1, r_2)"/> only depends on <img class="math" src="../_images/math/ae2cb70397f7ba87bae21b1395d0007411e30ec1.svg" alt="r_1"/> and <img class="math" src="../_images/math/69fc394862cf31a15b037e643c6f3b8909c9536b.svg" alt="r_2"/>:</p>
 <div class="math">
-<p><img src="../_images/math/9794f89c2c736eb3f6e09bc08e3b65d8aaf2ea77.svg" alt="V_l(r_1, r_2) = {2l+1\over 2}\int_{-1}^1 V(|{\bf r}_1-{\bf r}_2|)
+<p><img src="../_images/math/62dc0fb70b28de2a9132ea8ab6ad0314499e3d44.svg" alt="V_l(r_1, r_2) = {2l+1\over 2}\int_{-1}^1 V(|{\bf r}_1-{\bf r}_2|)
     P_l(\cos\theta) \d(\cos\theta) =
 
     = {2l+1\over 2}\int_{-1}^1
@@ -362,13 +364,13 @@ t &amp; = {r_&lt;\over r_&gt;}"/></p>
     = {2l+1\over 2 r_1 r_2}\int_{|r_1 - r_2|}^{r_1+r_2}
         e^{-{r\over D}}
         P_l\left(r_1^2 - r^2 + r_2^2 \over 2 r_1 r_2 \right) \d r"/></p>
-</div><p>In the limit <img class="math" src="../_images/math/9af2294bd985e12dc88331c4ca9d213dd21ea225.svg" alt="D\to\infty"/> we get:</p>
+</div><p>In the limit <img class="math" src="../_images/math/55486079d0a5fb640967c2bc972990177deade00.svg" alt="D\to\infty"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/4c7b596f147981110a2384ba4b2161587c6ae7b4.svg" alt="V_l(r_1, r_2) \to {r_&lt;^l\over r_&gt;^{l+1}}"/></p>
-</div><p>In general, the <img class="math" src="../_images/math/61149e9b7e4cba460271436e79a4eaecbf0d2995.svg" alt="V_l(r_1, r_2)"/> expressions are complicated. For the first few
-<img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/> we get:</p>
+<p><img src="../_images/math/c747249f27e3718e2ff97e1d0308110fba7a7b80.svg" alt="V_l(r_1, r_2) \to {r_&lt;^l\over r_&gt;^{l+1}}"/></p>
+</div><p>In general, the <img class="math" src="../_images/math/9979617403662215349baa18d504e191a6f05141.svg" alt="V_l(r_1, r_2)"/> expressions are complicated. For the first few
+<img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/> we get:</p>
 <div class="math">
-<p><img src="../_images/math/a7e19db3a6c74a929bb1425e3b5ed9c8dd467c86.svg" alt="V_0(r_1, r_2) = {D\over 2 r_1 r_2}\left(e^{-{|r_1 - r_2|\over D}} -
+<p><img src="../_images/math/e90b219002df0f263ce2e9849182b83bbaa1e0cc.svg" alt="V_0(r_1, r_2) = {D\over 2 r_1 r_2}\left(e^{-{|r_1 - r_2|\over D}} -
     e^{-{r_1 + r_2\over D}}\right)
 
 V_1(r_1, r_2) =
@@ -376,82 +378,82 @@ V_1(r_1, r_2) =
     r_{1} e^{2 \frac{r_{2}}{D}} + D r_{1} + D r_{2} e^{2 \frac{r_{2}}{D}} +
     D r_{2} + r_{1} r_{2} e^{2 \frac{r_{2}}{D}} + r_{1} r_{2}\right) e^{-
     \frac{r_{1}}{D} - \frac{r_{2}}{D}}}{r_{1}^{2} r_{2}^{2}}"/></p>
-</div><p>In <img class="math" src="../_images/math/e0083feb1c6e703be57daa4f872fda0369d48c30.svg" alt="V_1(r_1, r_2)"/> we assume <img class="math" src="../_images/math/6605d6f8161efa839cc6233715192c0ca25c1a88.svg" alt="r_1 \ge r_2"/>.</p>
-</div>
-</div>
-<div class="section" id="spherical-harmonics">
-<span id="index-1"></span><h1>3.30. Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this headline">¶</a></h1>
-<p>Are defined for <img class="math" src="../_images/math/e9b10163d876fa5c8f1b58f40b97ecb329703b10.svg" alt="m \ge 0"/> by</p>
+</div><p>In <img class="math" src="../_images/math/1fecc83349f295682a9e611d98319984b2504248.svg" alt="V_1(r_1, r_2)"/> we assume <img class="math" src="../_images/math/1936de482d9d1fa964018137d4947f14944aaa29.svg" alt="r_1 \ge r_2"/>.</p>
+</section>
+</section>
+<section id="spherical-harmonics">
+<span id="index-1"></span><h1><span class="section-number">3.30. </span>Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this headline">¶</a></h1>
+<p>Are defined for <img class="math" src="../_images/math/b10ce14f3bf0157b33995ec393b36cad995a5c55.svg" alt="m \ge 0"/> by</p>
 <div class="math">
-<p><img src="../_images/math/a491858872b9740b92ce6ee8cf6b02f5cca0ce85.svg" alt="Y_{lm}(\theta,\phi)=\sqrt{{2l+1\over4\pi}{(l-m)!\over(l+m)!}}\,P_l^m(\cos\theta)\,e^{im\phi}"/></p>
-</div><p>where <img class="math" src="../_images/math/abf310e4a24534c0a6820ab7d5210a6d672791cb.svg" alt="P_l^m"/> are associated Legendre polynomials defined by</p>
+<p><img src="../_images/math/4f5472f3bdda9c347b5c99d9f027dca1e9e7d758.svg" alt="Y_{lm}(\theta,\phi)=\sqrt{{2l+1\over4\pi}{(l-m)!\over(l+m)!}}\,P_l^m(\cos\theta)\,e^{im\phi}"/></p>
+</div><p>where <img class="math" src="../_images/math/da3fdb19fbfc93c3fb25d7811c301905f35ac87e.svg" alt="P_l^m"/> are associated Legendre polynomials defined by</p>
 <div class="math">
-<p><img src="../_images/math/710e19e740c7fd810e98b73619996fabb3dd3069.svg" alt="P_l^m(x)=(-1)^m (1-x^2)^{m/2}{\d^m\over\d x^m} P_l(x)"/></p>
-</div><p>and <img class="math" src="../_images/math/954b05d054cec24ff9569e26bdbf6952715e0edc.svg" alt="P_l"/> are Legendre polynomials. For <img class="math" src="../_images/math/f18e4533fce26f0e0fb1c7c1c7169d9fe440324d.svg" alt="m &lt; 0"/> they are defined by:</p>
+<p><img src="../_images/math/d298d10f95f65bde39624b33a5610fceb9b84509.svg" alt="P_l^m(x)=(-1)^m (1-x^2)^{m/2}{\d^m\over\d x^m} P_l(x)"/></p>
+</div><p>and <img class="math" src="../_images/math/2fdd1f6408200180160577f2dd9c09309cc64c93.svg" alt="P_l"/> are Legendre polynomials. For <img class="math" src="../_images/math/1693ef2155d5f51691f0946f66e81d614e0be9bf.svg" alt="m &lt; 0"/> they are defined by:</p>
 <div class="math">
-<p><img src="../_images/math/101c6cfaf8b2e855a0d0fb74c426d840409b02b0.svg" alt="Y_{lm}(\Omega) = (-1)^m Y_{l,-m}^*(\Omega)"/></p>
+<p><img src="../_images/math/d2bf90b061aaa79dc5754b51564cd07901cdbf22.svg" alt="Y_{lm}(\Omega) = (-1)^m Y_{l,-m}^*(\Omega)"/></p>
 </div><p>Sometimes the spherical harmonics are
 written as:</p>
 <div class="math">
-<p><img src="../_images/math/c71ebde14cf2a4d3e8b88d794fe737357acd3c30.svg" alt="Y_{lm}(\theta,\phi) = \Theta_{lm}(\theta) \Phi_m(\phi)"/></p>
+<p><img src="../_images/math/ed2b0855edc1a20b57312cbf25c2137aa02cb566.svg" alt="Y_{lm}(\theta,\phi) = \Theta_{lm}(\theta) \Phi_m(\phi)"/></p>
 </div><p>where:</p>
 <div class="math">
-<p><img src="../_images/math/2bb682783b924e417d91c1696e0c9bee80376ba3.svg" alt="\Phi_m(\phi) &amp;= {1\over\sqrt{2\pi}} e^{im\phi} \\
+<p><img src="../_images/math/91d0235f9ed7586248d706854d27333a0dd21542.svg" alt="\Phi_m(\phi) &amp;= {1\over\sqrt{2\pi}} e^{im\phi} \\
 \Theta_{lm}(\theta) &amp;= \begin{cases}
     \sqrt{{2l+1\over2}{(l-m)!\over(l+m)!}}\,P_l^m(\cos\theta) &amp;
         \mbox{for } m \ge 0 \\
     (-1)^m \Theta_{l,-m}(\theta) &amp; \mbox{for } m &lt; 0 \\
     \end{cases}"/></p>
-</div><p>The spherical harmonics are ortonormal:</p>
+</div><p>The spherical harmonics are orthonormal:</p>
 <div class="math" id="equation-yorto">
-<p><span class="eqno">(3.30.1)<a class="headerlink" href="#equation-yorto" title="Permalink to this equation">¶</a></span><img src="../_images/math/fe2d0621e7a9a0c7c975fa2c949ae8d5dcd2bcd7.svg" alt="\int Y_{lm}\,Y^*_{l'm'}\,\d\Omega = \int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \delta_{mm'}\delta_{ll'}"/></p>
-</div><p>and complete (both in the <img class="math" src="../_images/math/b9749df1cac887650fbc037bda5be4fb07599479.svg" alt="l"/>-subspace and the whole space):</p>
+<p><span class="eqno">(3.30.1)<a class="headerlink" href="#equation-yorto" title="Permalink to this equation">¶</a></span><img src="../_images/math/deab7f13bbd02cdb78702275d9ce6bf02a7a694b.svg" alt="\int Y_{lm}\,Y^*_{l'm'}\,\d\Omega = \int_0^{2\pi}\int_0^{\pi} Y_{lm}(\theta,\phi)\,Y^*_{l'm'}(\theta,\phi)\sin\theta\,\d\theta\,\d\phi = \delta_{mm'}\delta_{ll'}"/></p>
+</div><p>and complete (both in the <img class="math" src="../_images/math/ebb04d1a74b439b8c35e07b083c6f6c7d0a6e1a6.svg" alt="l"/>-subspace and the whole space):</p>
 <div class="math" id="equation-lcomplete">
-<p><span class="eqno">(3.30.2)<a class="headerlink" href="#equation-lcomplete" title="Permalink to this equation">¶</a></span><img src="../_images/math/4ce34cc975e7d0fd3c179e6eafa7c90bac3d6a6f.svg" alt="\sum_{m=-l}^l|Y_{lm}(\theta,\phi)|^2={2l+1\over4\pi}"/></p>
+<p><span class="eqno">(3.30.2)<a class="headerlink" href="#equation-lcomplete" title="Permalink to this equation">¶</a></span><img src="../_images/math/467f77cfc82f6ce6b820f55310f76ab2f60ca0fe.svg" alt="\sum_{m=-l}^l|Y_{lm}(\theta,\phi)|^2={2l+1\over4\pi}"/></p>
 </div><div class="math" id="equation-ycomplete">
-<p><span class="eqno">(3.30.3)<a class="headerlink" href="#equation-ycomplete" title="Permalink to this equation">¶</a></span><img src="../_images/math/2b9ec8c6aecdeeb2c6a6741b87bb7edc5d1a09f6.svg" alt="\sum_{l=0}^\infty\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi') ={1\over\sin\theta}\delta(\theta-\theta')\delta(\phi-\phi')= \delta({\bf\hat r}-{\bf\hat r'})"/></p>
+<p><span class="eqno">(3.30.3)<a class="headerlink" href="#equation-ycomplete" title="Permalink to this equation">¶</a></span><img src="../_images/math/98dfcf8dcaf85991dcf0aba00676eee2f91f07de.svg" alt="\sum_{l=0}^\infty\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi') ={1\over\sin\theta}\delta(\theta-\theta')\delta(\phi-\phi')= \delta({\bf\hat r}-{\bf\hat r'})"/></p>
 </div><p>The relation <a class="reference internal" href="#equation-lcomplete">(3.30.2)</a> is a special case of an addition theorem for spherical harmonics</p>
 <div class="math" id="equation-lsum">
-<p><span class="eqno">(3.30.4)<a class="headerlink" href="#equation-lsum" title="Permalink to this equation">¶</a></span><img src="../_images/math/c0392aed6960f44f9b1b1882fddce601c24cfe33.svg" alt="\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= {2l+1\over 4\pi}P_l(\cos\gamma)"/></p>
-</div><p>where <img class="math" src="../_images/math/d4bb39b643f2b1300f9e87afaa691c4d41d46f9f.svg" alt="\gamma"/> is the angle between the unit vectors given by <img class="math" src="../_images/math/2df546b5c081076c748d2f47e6ead1a69b84e8da.svg" alt="{\bf\hat r}=(\theta,\phi)"/> and <img class="math" src="../_images/math/68c13a40e52465218c2a74bca60f0541644ed8be.svg" alt="{\bf\hat r'}=(\theta',\phi')"/>:</p>
+<p><span class="eqno">(3.30.4)<a class="headerlink" href="#equation-lsum" title="Permalink to this equation">¶</a></span><img src="../_images/math/92b12a057124821bb4fae4c0ef9b27cecec5b9cf.svg" alt="\sum_{m=-l}^lY_{lm}(\theta,\phi)Y_{lm}^*(\theta',\phi')= {2l+1\over 4\pi}P_l(\cos\gamma)"/></p>
+</div><p>where <img class="math" src="../_images/math/5cc660a0b09d78cbb844d701971410d22189d28a.svg" alt="\gamma"/> is the angle between the unit vectors given by <img class="math" src="../_images/math/b7372a44ca2c0220276425aaf4bb5c449a50381c.svg" alt="{\bf\hat r}=(\theta,\phi)"/> and <img class="math" src="../_images/math/394cb062abcf0897e45a83fc1dc0a7da2a0401dd.svg" alt="{\bf\hat r'}=(\theta',\phi')"/>:</p>
 <div class="math">
-<p><img src="../_images/math/4ac5b00750379788bd79cfb41d869c4933beef00.svg" alt="\cos\gamma=\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi') ={\bf\hat r}\cdot{\bf\hat r'}"/></p>
+<p><img src="../_images/math/914c9ae712f7297429b7e936a043c0e86d5ee9e5.svg" alt="\cos\gamma=\cos\theta\cos\theta'+\sin\theta\sin\theta'\cos(\phi-\phi') ={\bf\hat r}\cdot{\bf\hat r'}"/></p>
 </div><p>Relations between complex conjugates is:</p>
 <div class="math">
-<p><img src="../_images/math/29c71eec1919a6269a5d02a7b9e741bcb7bab86a.svg" alt="Y_{l m}^*(\Omega) = (-1)^m Y_{l,-m}(\Omega)
+<p><img src="../_images/math/88f7f3af9838a876d14d118d66daad891e4a8f59.svg" alt="Y_{l m}^*(\Omega) = (-1)^m Y_{l,-m}(\Omega)
 
 (-1)^m Y_{l,-m}^*(\Omega) = Y_{lm}(\Omega)"/></p>
-</div><div class="section" id="examples">
-<h2>3.30.1. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div><section id="examples">
+<h2><span class="section-number">3.30.1. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/3e06ecd505563a4b0a3f6f37522a1d546dfcfe50.svg" alt="\int_{-1}^1 P_k(x) \d x
+<p><img src="../_images/math/242b0a5b0f00be12a1bee2be9cb75d7c40bded26.svg" alt="\int_{-1}^1 P_k(x) \d x
     = \int_{-1}^1 P_k(x) P_0(x) \d x
     = 2\delta_{k0}
 
 \int Y_{k0}(\Omega) \d \Omega
     = \int Y_{k0}(\Omega) \sqrt{4\pi} Y_{00}(\Omega) \d \Omega
     = \sqrt{4\pi} \delta_{k0}"/></p>
-</div></div>
-</div>
-<div class="section" id="gaunt-coefficients">
-<h1>3.31. Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this headline">¶</a></h1>
+</div></section>
+</section>
+<section id="gaunt-coefficients">
+<h1><span class="section-number">3.31. </span>Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this headline">¶</a></h1>
 <p>We use the Wigner-Eckart theorem:</p>
 <div class="math">
-<p><img src="../_images/math/6569dca1d8f925bd47e0a8645cd067aec70330ec.svg" alt="\braket{j m | T^k_q | j' m'} = (-1)^{j-m}
+<p><img src="../_images/math/af1f5b2c51c1401240d327ea698c0ac1addd9f69.svg" alt="\braket{j m | T^k_q | j' m'} = (-1)^{j-m}
     \begin{pmatrix} j &amp; k &amp; j' \\ -m &amp; q &amp; m' \end{pmatrix}
     (j || T^k || j')"/></p>
 </div><p>Where:</p>
 <div class="math">
-<p><img src="../_images/math/f6dba2b24444b76806174f436c94a106cf0b8309.svg" alt="T^k_q = Y_{k q}"/></p>
-</div><p>In order to calculate the reduced matrix element <img class="math" src="../_images/math/2da21b2e97c43f415afa97411c977035c6343498.svg" alt="(j || T^k || j')"/>, we
-evaluate the W-E theorem for <img class="math" src="../_images/math/5c2afd73fc1f73a390e3cb9dbdd77237d60aba64.svg" alt="m=q=m'=0"/>:</p>
+<p><img src="../_images/math/8227a55ae830efa7fc7d3ab5a80cb39fdcddaf83.svg" alt="T^k_q = Y_{k q}"/></p>
+</div><p>In order to calculate the reduced matrix element <img class="math" src="../_images/math/dc9b4779122e85ad64c44df30dc5f701f2573ba5.svg" alt="(j || T^k || j')"/>, we
+evaluate the W-E theorem for <img class="math" src="../_images/math/62c6b42c49083fce6261689c05669fb081eb7392.svg" alt="m=q=m'=0"/>:</p>
 <div class="math">
-<p><img src="../_images/math/2dbef08c4b1515261bd06be940a3771e045928d5.svg" alt="\braket{j 0 | T^k_0 | j' 0} = (-1)^{j}
+<p><img src="../_images/math/342855ea61c89b25450cc637e154f68860163c28.svg" alt="\braket{j 0 | T^k_0 | j' 0} = (-1)^{j}
     \begin{pmatrix} j &amp; k &amp; j' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
     (j || T^k || j')"/></p>
 </div><p>and also evaluate the left hand side explicitly:</p>
 <div class="math">
-<p><img src="../_images/math/43db6b9384a0cb023352bf422dcc92d7f7d4c886.svg" alt="\braket{j 0 | T^k_0 | j' 0}
+<p><img src="../_images/math/a70d0af6bafed1cdd3da4d022ea203f2ec1b3078.svg" alt="\braket{j 0 | T^k_0 | j' 0}
     = \braket{j 0 | Y_{k 0} | j' 0}
     = \int Y_{j0}^*(\Omega) Y_{k0}(\Omega) Y_{j'0}(\Omega) \d \Omega =
 
@@ -467,12 +469,12 @@ evaluate the W-E theorem for <img class="math" src="../_images/math/5c2afd73fc1f
 </div><p>where we used <a class="reference internal" href="#equation-int-three-legendre-polys">(3.29.2)</a>.
 Comparing these two results, we get:</p>
 <div class="math">
-<p><img src="../_images/math/b2fc7a26c0318601dc9939a8d733965b3416d527.svg" alt="(j || T^k || j') = (-1)^{-j}
+<p><img src="../_images/math/a9e6a3de20e4641ea1ffbaddb2bdace23dded92b.svg" alt="(j || T^k || j') = (-1)^{-j}
     \sqrt{(2j+1)(2k+1)(2j'+1)\over 4\pi}
     \begin{pmatrix} j &amp; k &amp; j' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}"/></p>
 </div><p>and finally:</p>
 <div class="math">
-<p><img src="../_images/math/54d93bc7d9a91028b4c999e569329fb5f064630f.svg" alt="\int Y_{jm}^*(\Omega) Y_{kq}(\Omega) Y_{j'm'}(\Omega) \d \Omega =
+<p><img src="../_images/math/206d7261ec6e09623a648a7a6a9c4a2d3c84a79b.svg" alt="\int Y_{jm}^*(\Omega) Y_{kq}(\Omega) Y_{j'm'}(\Omega) \d \Omega =
 
 =\braket{j m | T^k_q | j' m'} = (-1)^{j-m}
     \begin{pmatrix} j &amp; k &amp; j' \\ -m &amp; q &amp; m' \end{pmatrix}
@@ -491,7 +493,7 @@ Comparing these two results, we get:</p>
 </div><p>In order to evaluate other integrals of spherical harmonics, we just use the
 above result, for example:</p>
 <div class="math">
-<p><img src="../_images/math/550d291184a4d45470baf557dfcd1e09477b8b96.svg" alt="\int Y_{l_1 m_1}(\Omega) Y_{l_2 m_2}(\Omega) Y_{l_3 m_3}(\Omega) \d\Omega =
+<p><img src="../_images/math/be2795ff9f0f67725cdbaf9a0b425d64bdf9f1a1.svg" alt="\int Y_{l_1 m_1}(\Omega) Y_{l_2 m_2}(\Omega) Y_{l_3 m_3}(\Omega) \d\Omega =
 
 =(-1)^{m_1}\int Y_{l_1 -m_1}^*(\Omega) Y_{l_2 m_2}(\Omega)
     Y_{l_3 m_3}(\Omega) \d\Omega=
@@ -505,14 +507,14 @@ above result, for example:</p>
 = \sqrt{(2l_1+1)(2l_2+1)(2l_3+1)\over 4\pi}
     \begin{pmatrix} l_1 &amp; l_2 &amp; l_3 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
     \begin{pmatrix} l_1 &amp; l_2 &amp; l_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}"/></p>
-</div><p>This is the most symmetric relation. It was first obtained by <a class="reference internal" href="#gaunt" id="id3">[Gaunt]</a>
-(equation (9), p. 194, where he expanded the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols, so his formula is
+</div><p>This is the most symmetric relation. It was first obtained by <a class="reference internal" href="#gaunt" id="id3"><span>[Gaunt]</span></a>
+(equation (9), p. 194, where he expanded the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols, so his formula is
 more complex but equivalent to the above).</p>
 <p>It is useful to incorporate
-the selection rule <img class="math" src="../_images/math/d03edaf798909364741ba2a92efbef1912b10690.svg" alt="m_1 + m_2 + m_3 = 0"/> of the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols into the formula
+the selection rule <img class="math" src="../_images/math/3754f373981e20267fa53b6d36ecbec4c730c228.svg" alt="m_1 + m_2 + m_3 = 0"/> of the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols into the formula
 and we get:</p>
 <div class="math">
-<p><img src="../_images/math/6950759bee89d064c57196fe4103d2ac31399c1f.svg" alt="c^k(l, m, l', m') =
+<p><img src="../_images/math/4843e8ffed916a89d693c99b814efedd62f6d24b.svg" alt="c^k(l, m, l', m') =
     \sqrt{4\pi \over 2k+1}
 \int Y_{lm}^*(\Omega) Y_{k, m-m'}(\Omega) Y_{l'm'}(\Omega) \d\Omega =
 
@@ -526,30 +528,29 @@ and we get:</p>
     \sqrt{(2l+1)(2l'+1)}
     \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
     \begin{pmatrix} l &amp; k &amp; l' \\ -m &amp; m-m' &amp; m' \end{pmatrix}"/></p>
-</div><p>From the other selection rules of the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols it follows, that
-the <img class="math" src="../_images/math/c1cf3dcdc0f51897d4aefa77f2acb7f2a8dbe92c.svg" alt="c^k(l, m, l', m')"/> coefficients are nonzero only when:</p>
+</div><p>From the other selection rules of the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols it follows, that
+the <img class="math" src="../_images/math/f64fe1af5cb23427569c7cb2f7366d4675c7603f.svg" alt="c^k(l, m, l', m')"/> coefficients are nonzero only when:</p>
 <div class="math">
-<p><img src="../_images/math/804608b6ad0bae47e72ce4427ca148b8fb851b2d.svg" alt="|l-l'| \le k \le l + l'
+<p><img src="../_images/math/6fa7d886922b83e1a76f073ed2b9c361ef25f284.svg" alt="|l-l'| \le k \le l + l'
 
 l+l'+k = \mbox{even integer}"/></p>
-</div><table class="docutils citation" frame="void" id="gaunt" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[Gaunt]</a></td><td>Gaunt, J. A. (1929). The Triplets of Helium. Philosophical Transactions of the Royal Society of London, 228, 151-196.</td></tr>
-</tbody>
-</table>
-<div class="section" id="id4">
-<h2>3.31.1. Example I<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</div><dl class="citation">
+<dt class="label" id="gaunt"><span class="brackets"><a class="fn-backref" href="#id3">Gaunt</a></span></dt>
+<dd><p>Gaunt, J. A. (1929). The Triplets of Helium. Philosophical Transactions of the Royal Society of London, 228, 151-196.</p>
+</dd>
+</dl>
+<section id="id4">
+<h2><span class="section-number">3.31.1. </span>Example I<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/218685b9441b60ff308aa6246fc53e48d10d6a50.svg" alt="c^0(l, m, l', m')
+<p><img src="../_images/math/43c335a3bbadb414f16d055bbc3a718868663d2f.svg" alt="c^0(l, m, l', m')
     =\sqrt{4\pi}
 \int Y_{lm}^*(\Omega) Y_{00}(\Omega) Y_{l'm'}(\Omega) \d\Omega
     =\delta_{l l'}\delta_{m m'}"/></p>
-</div></div>
-<div class="section" id="id5">
-<h2>3.31.2. Example II<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="id5">
+<h2><span class="section-number">3.31.2. </span>Example II<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/09e67c8e3140844961582e6c1019f1974269b676.svg" alt="\sum_{m=-l}^l c^k(l, m, l, m)
+<p><img src="../_images/math/0c0bf958343adbf2ba9570b8653b0088522cfa19.svg" alt="\sum_{m=-l}^l c^k(l, m, l, m)
     = \sum_m
     \sqrt{4\pi \over 2k+1}
     \int Y_{lm}^*(\Omega) Y_{k0}(\Omega) Y_{lm}(\Omega) \d\Omega =
@@ -569,11 +570,11 @@ l+l'+k = \mbox{even integer}"/></p>
 
     =
     (2l+1) \delta_{k0}"/></p>
-</div></div>
-<div class="section" id="id6">
-<h2>3.31.3. Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="id6">
+<h2><span class="section-number">3.31.3. </span>Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/3f79deb4cb4260028bf3ff94c21efd39d46a3c61.svg" alt="c^k(l, m, l', m') =
+<p><img src="../_images/math/281183f65b42533c0bfef370b380c665a8125f31.svg" alt="c^k(l, m, l', m') =
     \sqrt{4\pi \over 2k+1}
 \int Y_{lm}^*(\Omega) Y_{k, m-m'}(\Omega) Y_{l'm'}(\Omega) \d\Omega =
 
@@ -597,11 +598,11 @@ l+l'+k = \mbox{even integer}"/></p>
 
 = \sqrt{2\over 2k+1}
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta"/></p>
-</div></div>
-<div class="section" id="id7">
-<h2>3.31.4. Example IV<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="id7">
+<h2><span class="section-number">3.31.4. </span>Example IV<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/565ca6f5501fdcaec51212a59b71e1b87026073f.svg" alt="c^k(l, -m, l', -m') =
+<p><img src="../_images/math/17328e737000c66cc44534617c5e35ef6bc5306e.svg" alt="c^k(l, -m, l', -m') =
 
 = (-1)^{m}
     \sqrt{(2l+1)(2l'+1)}
@@ -619,10 +620,10 @@ l+l'+k = \mbox{even integer}"/></p>
     \begin{pmatrix} l &amp; k &amp; l' \\ -m &amp; m-m' &amp; m' \end{pmatrix} =
 
 c^k(l, m, l', m')"/></p>
-</div><p>Where we used the fact, that <img class="math" src="../_images/math/d2b05f2d003759b0711c4d32c2ad0f2ebaee7708.svg" alt="l+k+l'"/> is an even integer and
-<img class="math" src="../_images/math/debec9e4de708c3a3bde5418a0814e6e2a0ce715.svg" alt="(-1)^m=(-1)^{-m}"/>. <img class="math" src="../_images/math/e6522f6ddaa813ffb67d9fe7468890992174c8bd.svg" alt="c^k"/> is not symmetric in <img class="math" src="../_images/math/8fe36035a7beec3c7831880a7d6cb1143006a21e.svg" alt="l m"/> and <img class="math" src="../_images/math/6fb07c9511c771232508217f1c681a38bd2166d2.svg" alt="l' m'"/>:</p>
+</div><p>Where we used the fact, that <img class="math" src="../_images/math/f360be9d6a39ebf0901756cfb20c5d1c03fc95eb.svg" alt="l+k+l'"/> is an even integer and
+<img class="math" src="../_images/math/24dfd2387f95d4490752f2d3c650c00362cd39a1.svg" alt="(-1)^m=(-1)^{-m}"/>. <img class="math" src="../_images/math/ffe0d5354f3f386ad70d4ab01309fb208a12ed29.svg" alt="c^k"/> is not symmetric in <img class="math" src="../_images/math/97723220786998482a7042ac8c6440fb495f294a.svg" alt="l m"/> and <img class="math" src="../_images/math/e6181576117ccf2ebd9bd75c242030b8260b5fd4.svg" alt="l' m'"/>:</p>
 <div class="math">
-<p><img src="../_images/math/459181fac7da19fed63f152356e4283ebdc5b9f2.svg" alt="c^k(l', m', l, m)
+<p><img src="../_images/math/e5473639a421f86e51e4e5a246c12612a146511b.svg" alt="c^k(l', m', l, m)
 
 = (-1)^{-m'}
     \sqrt{(2l'+1)(2l+1)}
@@ -647,7 +648,7 @@ c^k(l, m, l', m')"/></p>
 = (-1)^{m-m'} c^k(l, m, l', m')"/></p>
 </div><p>Few other identities:</p>
 <div class="math">
-<p><img src="../_images/math/cf13a9194e27b4ad866e551366c9fcb6b3b4fdda.svg" alt="c^k(l, 0, l', 0)
+<p><img src="../_images/math/96846b30f5e73734b9c2b0ceb986d53eb2c22c12.svg" alt="c^k(l, 0, l', 0)
     = \sqrt{(2l+1)(2l'+1)}
         \begin{pmatrix} l &amp; k &amp; l' \\ 0 &amp; 0 &amp; 0 \end{pmatrix}^2
 
@@ -657,11 +658,11 @@ c^k(l, m, l', m')"/></p>
     = {c^{l}(l', 0, k, 0) \over \sqrt{(2l'+1)(2k+1)}}
 
 c^k(l, 0, l', 0) = c^k(l', 0, l, 0)"/></p>
-</div></div>
-<div class="section" id="example-v">
-<h2>3.31.5. Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="example-v">
+<h2><span class="section-number">3.31.5. </span>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/157ede1c27281aab8716971809735536d01a38e8.svg" alt="\sum_{m'} \left(c^k(l, m, l', m')\right)^2 =
+<p><img src="../_images/math/4536793ebb191e237b3f0bb417f073cbe25706bc.svg" alt="\sum_{m'} \left(c^k(l, m, l', m')\right)^2 =
 
     = \sum_{m'}
     (2l+1)(2l'+1)
@@ -685,11 +686,11 @@ c^k(l, 0, l', 0) = c^k(l', 0, l, 0)"/></p>
     =
 
     =\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)"/></p>
-</div></div>
-<div class="section" id="example-vi">
-<span id="five-spherical-harmonics"></span><h2>3.31.6. Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h2>
+</div></section>
+<section id="example-vi">
+<span id="five-spherical-harmonics"></span><h2><span class="section-number">3.31.6. </span>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h2>
 <div class="math" id="equation-five-spherical-harmonics">
-<p><span class="eqno">(3.31.6.1)<a class="headerlink" href="#equation-five-spherical-harmonics" title="Permalink to this equation">¶</a></span><img src="../_images/math/fec952e90aefad384f8975d822d5c1408faab3e6.svg" alt="\sum_{m'}\sum_{q}\int
+<p><span class="eqno">(3.31.6.1)<a class="headerlink" href="#equation-five-spherical-harmonics" title="Permalink to this equation">¶</a></span><img src="../_images/math/6847af5dbe9bb27ca3195e8d37f97c8a9dfd3086.svg" alt="\sum_{m'}\sum_{q}\int
         Y_{l'm'}(\Omega)
         Y_{l'm'}^*(\Omega')
         Y_{kq}(\Omega)
@@ -733,7 +734,7 @@ c^k(l, 0, l', 0) = c^k(l', 0, l, 0)"/></p>
             Y_{lm}(\Omega)"/></p>
 </div><p>Where we used the following identities:</p>
 <div class="math">
-<p><img src="../_images/math/ef333502442ba927c0da4ae660489d4891e3799c.svg" alt="\sum_{m'}
+<p><img src="../_images/math/123e5a66f1d08d017682436cb60acd763737e5e7.svg" alt="\sum_{m'}
     Y_{l'm'}(\Omega)
     Y_{l'm'}^*(\Omega')
 = {2l'+1\over 4\pi} P_{l'}({\bf \hat x}\cdot{\bf \hat x}')
@@ -761,7 +762,7 @@ P_k({\bf \hat x}\cdot{\bf \hat x}')P_{l'}({\bf \hat x}\cdot{\bf \hat x}')
 </div><p>Note: using the integral of 3 spherical harmonics directly in
 <a class="reference internal" href="#equation-five-spherical-harmonics">(3.31.6.1)</a>:</p>
 <div class="math">
-<p><img src="../_images/math/2def23876ca31df574ff6aa2f26d8100b8b322a4.svg" alt="\sum_{m'}\sum_{q}\int
+<p><img src="../_images/math/7646ebec1562c22608c768313974792261dca9e9.svg" alt="\sum_{m'}\sum_{q}\int
         Y_{l'm'}(\Omega)
         Y_{l'm'}^*(\Omega')
         Y_{kq}(\Omega)
@@ -776,13 +777,13 @@ P_k({\bf \hat x}\cdot{\bf \hat x}')P_{l'}({\bf \hat x}\cdot{\bf \hat x}')
         c^k(l, m, l', m')"/></p>
 </div><p>doesn’t straightforwardly lead to the final result, as it is not obvious how to
 simplify things further.</p>
-</div>
-</div>
-<div class="section" id="wigner-3j-symbols">
-<h1>3.32. Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this headline">¶</a></h1>
-<p>Relation between the Wigner <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbols and Clebsch-Gordan coefficients:</p>
+</section>
+</section>
+<section id="wigner-3j-symbols">
+<h1><span class="section-number">3.32. </span>Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this headline">¶</a></h1>
+<p>Relation between the Wigner <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols and Clebsch-Gordan coefficients:</p>
 <div class="math">
-<p><img src="../_images/math/2ff32c0e05977eac23b3329fed6dc1545e1ed113.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
+<p><img src="../_images/math/da8fdcba80d5125eb886d7ff56359b9dd0412ea1.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
     = {(-1)^{j_1-j_2-m_3}\over \sqrt{2j_3+1}}
         (j_1 m_1 j_2 m_2 | j_3 -m_3)
 
@@ -791,25 +792,25 @@ simplify things further.</p>
     \begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; -m_3 \end{pmatrix}"/></p>
 </div><p>They are nonzero only when:</p>
 <div class="math">
-<p><img src="../_images/math/df1d5d5bc925f679159feaa0b258f051fe5efada.svg" alt="m_1 + m_2 + m_3 = 0
+<p><img src="../_images/math/00d22ac9e43a1f2b0ba85e6bd3196f54ee635894.svg" alt="m_1 + m_2 + m_3 = 0
 
 j_1+j_2+j_3 = \mbox{integer (or even integer if $m_1=m_2=m_3=0$)}
 
 |m_i| \le j_i
 
 |j_1-j_2| \le j_3 \le j_1+j_2"/></p>
-</div><p>They have lots of symmetries. The <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> symbol is invariant for an even
+</div><p>They have lots of symmetries. The <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbol is invariant for an even
 permutation of columns:</p>
 <div class="math">
-<p><img src="../_images/math/d54566dfa7b68c2afd659baa514c481ba2d85163.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
+<p><img src="../_images/math/d9cd0075799332f0569eeafd35e7b2022ccdc536.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
 
     = \begin{pmatrix} j_2 &amp; j_3 &amp; j_1 \\ m_2 &amp; m_3 &amp; m_1 \end{pmatrix} =
 
     = \begin{pmatrix} j_3 &amp; j_1 &amp; j_2 \\ m_3 &amp; m_1 &amp; m_2 \end{pmatrix}"/></p>
-</div><p>For an odd permutation of columns it changes sign if <img class="math" src="../_images/math/8b5566439728bbcb9226210b961873d51c770430.svg" alt="j_1+j_2+j_3"/> is an odd
+</div><p>For an odd permutation of columns it changes sign if <img class="math" src="../_images/math/780cee595b4580787d81f8ab225187cf516f294d.svg" alt="j_1+j_2+j_3"/> is an odd
 integer:</p>
 <div class="math">
-<p><img src="../_images/math/d979f8572454857adbaa875b4271a668a590de5f.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
+<p><img src="../_images/math/e3d086aca13d2c765b46fee3747953cd0431c462.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
 
     = (-1)^{j_1+j_2+j_3}
     \begin{pmatrix} j_2 &amp; j_1 &amp; j_3 \\ m_2 &amp; m_1 &amp; m_3 \end{pmatrix} =
@@ -821,13 +822,13 @@ integer:</p>
     \begin{pmatrix} j_3 &amp; j_2 &amp; j_1 \\ m_3 &amp; m_2 &amp; m_1 \end{pmatrix}"/></p>
 </div><p>and the same if you change the sign of the second row:</p>
 <div class="math">
-<p><img src="../_images/math/62f448aca344fd876ef41e06af3ef346a861e327.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
+<p><img src="../_images/math/79c03b5ca34fb0c697f43e15b72f765c0c2efe2b.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix} =
 
     = (-1)^{j_1+j_2+j_3}
     \begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ -m_1 &amp; -m_2 &amp; -m_3 \end{pmatrix}"/></p>
 </div><p>Orthogonality relations:</p>
 <div class="math">
-<p><img src="../_images/math/4226aa367501d93e70d4ac436ec3dce75884001e.svg" alt="\sum_{m_1 m_2}
+<p><img src="../_images/math/84d7509b185d6e515ea922236d42d7d3dd438153.svg" alt="\sum_{m_1 m_2}
 \begin{pmatrix} j_1 &amp; j_2 &amp; j \\ m_1 &amp; m_2 &amp; m \end{pmatrix}
 \begin{pmatrix} j_1 &amp; j_2 &amp; j' \\ m_1 &amp; m_2 &amp; m' \end{pmatrix} =
     {\delta_{jj'}\delta_{mm'}
@@ -835,13 +836,13 @@ integer:</p>
     2j+1}"/></p>
 </div><p>As a special case, we get:</p>
 <div class="math" id="equation-3j-square-sum">
-<p><span class="eqno">(3.32.1)<a class="headerlink" href="#equation-3j-square-sum" title="Permalink to this equation">¶</a></span><img src="../_images/math/e4aaf7e73790bcf470db8d7186f276fca1e099c7.svg" alt="\sum_{m'}
+<p><span class="eqno">(3.32.1)<a class="headerlink" href="#equation-3j-square-sum" title="Permalink to this equation">¶</a></span><img src="../_images/math/de35bf6930929b729e3896bf256c50cb18dde5f6.svg" alt="\sum_{m'}
 \begin{pmatrix} l &amp; k &amp; l' \\ -m &amp; m-m' &amp; m' \end{pmatrix}^2
 =
     {1 \over 2l+1}"/></p>
 </div><p>Here is a script to check that the equation <a class="reference internal" href="#equation-3j-square-sum">(3.32.1)</a> works:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">S</span>
-<span class="kn">from</span> <span class="nn">sympy.physics.wigner</span> <span class="k">import</span> <span class="n">wigner_3j</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">S</span>
+<span class="kn">from</span> <span class="nn">sympy.physics.wigner</span> <span class="kn">import</span> <span class="n">wigner_3j</span>
 
 <span class="k">def</span> <span class="nf">doit</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">lp</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
@@ -896,10 +897,10 @@ integer:</p>
 <span class="mi">5</span>  <span class="mi">4</span>  <span class="mi">3</span>  <span class="mi">5</span>   <span class="mi">1</span><span class="o">/</span><span class="mi">11</span>   <span class="mi">1</span><span class="o">/</span><span class="mi">11</span>
 </pre></div>
 </div>
-<p>Values of the <img class="math" src="../_images/math/f7ad65d8846ece2ff5ccc3cd14e436a865635b2c.svg" alt="3j"/> coefficients for a few special cases (use the symmetries
+<p>Values of the <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> coefficients for a few special cases (use the symmetries
 above to obtain values for permuted symbols):</p>
 <div class="math">
-<p><img src="../_images/math/95b8ed653c0cbf5b72f7a122f3a49e13d006e8dc.svg" alt="\begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
+<p><img src="../_images/math/82c62df51cd547cd0c066a07dd042df8f9e7e112.svg" alt="\begin{pmatrix} k &amp; l &amp; m \\ 0 &amp; 0 &amp; 0 \end{pmatrix}
     &amp;= (-1)^s \sqrt{(2s-2k)! (2s-2l)! (2s-2m)! \over (2s+1)!}
         {s! \over (s-k)! (s-l)! (s-m)!}
         \quad\quad\mbox{for $2s=k+l+m$ even} \\
@@ -915,10 +916,10 @@ above to obtain values for permuted symbols):</p>
 \begin{pmatrix} j+1 &amp; j &amp; 1 \\ m &amp; -m &amp; 0 \end{pmatrix}
     &amp;= (-1)^{j-m-1} \sqrt{2(j+m+1)(j-m+1)
         \over (2j+1)(2j+2)(2j+3)}"/></p>
-</div><div class="section" id="id8">
-<h2>3.32.1. Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+</div><section id="id8">
+<h2><span class="section-number">3.32.1. </span>Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <div class="math">
-<p><img src="../_images/math/e8a21968a4eb346a8c3027f92a519bfead92a606.svg" alt="\begin{pmatrix} j_3-\half &amp; \half &amp; j_3 \\
+<p><img src="../_images/math/1804d7bb2f8b701f82b259eac7040eac4dc80e7b.svg" alt="\begin{pmatrix} j_3-\half &amp; \half &amp; j_3 \\
     m_3-\half &amp; \half &amp; -m_3 \end{pmatrix} =
 \begin{pmatrix} j_3 &amp; j_3-\half &amp; \half \\
     -m_3 &amp; m_3-\half &amp; \half \end{pmatrix} =
@@ -981,30 +982,32 @@ above to obtain values for permuted symbols):</p>
 =(-1)^{j_3+m_3+\half-\half}\sqrt{j_3+m_3+\half+\half \over
     (2j_3+1)(2j_3+2)}
 =(-1)^{j_3+m_3}\sqrt{j_3+m_3+1 \over (2j_3+1)(2j_3+2)}"/></p>
-</div></div>
-</div>
-<div class="section" id="multipole-expansion">
-<span id="index-2"></span><h1>3.33. Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h1>
+</div></section>
+</section>
+<section id="multipole-expansion">
+<span id="index-2"></span><h1><span class="section-number">3.33. </span>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h1>
 <p>Using <a class="reference internal" href="#equation-legendre-expansion">(3.29.1.1)</a> we get:</p>
 <div class="math">
-<p><img src="../_images/math/26d3b4cf7a7ff9a7585aa8740684eeb481598170.svg" alt="{1\over |{\bf r}-{\bf r'}|}
+<p><img src="../_images/math/35636cea7ee8534c0d06f94eed8b02e662d28cd1.svg" alt="{1\over |{\bf r}-{\bf r'}|}
     =\sum_{l=0}^\infty{r_{&lt;}^l\over r_{&gt;}^{l+1}} P_l({\bf\hat r}\cdot {\bf\hat r'})
     = \sum_{l,m}{r_{&lt;}^l\over r_{&gt;}^{l+1}}
         {4\pi\over 2l+1}Y_{lm}({\bf\hat r})Y_{lm}^*({\bf\hat r}')"/></p>
 </div><p>where we used the formula:</p>
 <div class="math">
-<p><img src="../_images/math/b31aa344e1bae89d10f878267aa64e298106ae8a.svg" alt="\sum_m \braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r}'}
+<p><img src="../_images/math/1c2fe9a3fbd2431b782da6e2413893b27bc2bacc.svg" alt="\sum_m \braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r}'}
     ={2l+1 \over 4\pi} \braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}"/></p>
-</div></div>
+</div></section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">3.29. Legendre Polynomials</a><ul>
 <li><a class="reference internal" href="#example-i">3.29.1. Example I</a></li>
 <li><a class="reference internal" href="#example-ii">3.29.2. Example II</a></li>
@@ -1032,12 +1035,17 @@ above to obtain values for permuted symbols):</p>
 <li><a class="reference internal" href="#multipole-expansion">3.33. Multipole Expansion</a></li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="other.html"
-                        title="previous chapter">3.15. Delta Function</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="hyper.html"
-                        title="next chapter">3.34. Hypergeometric Functions</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="other.html"
+                          title="previous chapter"><span class="section-number">3.15. </span>Delta Function</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="hyper.html"
+                          title="next chapter"><span class="section-number">3.34. </span>Hypergeometric Functions</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1046,17 +1054,15 @@ above to obtain values for permuted symbols):</p>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1074,12 +1080,13 @@ above to obtain values for permuted symbols):</p>
           <a href="other.html" title="3.15. Delta Function"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Theoretical Physics Reference 0.5 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="main.html" >3. Mathematics</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="main.html" ><span class="section-number">3. </span>Mathematics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3.29. </span>Legendre Polynomials</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
     </div>
   </body>
 </html>

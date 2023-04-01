@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.40. Differential Geometry &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,11 +74,11 @@
           <div class="body" role="main">
             
   <section id="differential-geometry">
-<h1><span class="section-number">3.40. </span>Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.40. </span>Differential Geometry<a class="headerlink" href="#differential-geometry" title="Permalink to this heading">¶</a></h1>
 <section id="manifolds">
-<span id="index-0"></span><h2><span class="section-number">3.40.1. </span>Manifolds<a class="headerlink" href="#manifolds" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2><span class="section-number">3.40.1. </span>Manifolds<a class="headerlink" href="#manifolds" title="Permalink to this heading">¶</a></h2>
 <section id="scalars-vectors-tensors">
-<span id="index-1"></span><h3>Scalars, Vectors, Tensors<a class="headerlink" href="#scalars-vectors-tensors" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><h3>Scalars, Vectors, Tensors<a class="headerlink" href="#scalars-vectors-tensors" title="Permalink to this heading">¶</a></h3>
 <p>Differentiable manifold <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/> is a space covered by an atlas of maps, each map
 covers part of the manifold and is a one to one mapping to an euclidean space
 <img class="math" src="../_images/math/1f5d4b84bf2ed73e0aeaa0b936348fc0d5def062.svg" alt="\R^n"/>:</p>
@@ -126,7 +125,7 @@ is not singular. For example for vectors, each point in <img class="math" src=".
 <p><img src="../_images/math/79fcb214198416f2c59a915d7859a3c5a215e542.svg" alt="\vec V = V^\alpha\vec e_\alpha"/></p>
 </div></section>
 <section id="covariant-differentiation">
-<span id="index-2"></span><h3>Covariant differentiation<a class="headerlink" href="#covariant-differentiation" title="Permalink to this headline">¶</a></h3>
+<span id="index-2"></span><h3>Covariant differentiation<a class="headerlink" href="#covariant-differentiation" title="Permalink to this heading">¶</a></h3>
 <p>The derivative of the basis vector <img class="math" src="../_images/math/9b9ecf9be428aa3b5faa67679b6f8b35739b1f37.svg" alt="{\partial \vec
 e_\alpha\over\partial x^\beta}"/> is a vector, thus it can be written as a linear
 combination of the basis vectors:</p>
@@ -190,7 +189,7 @@ components and back:</p>
 <p><img src="../_images/math/45f0f5ebf97eea516950efb21856a4546769e8fe.svg" alt="\Gamma'^\alpha{}_{\beta\gamma}= {\partial x^\mu\over\partial x'^\beta} {\partial x^\nu\over\partial x'^\gamma} \Gamma^\sigma{}_{\mu\nu} {\partial x'^\alpha\over\partial x^\sigma} + {\partial x'^\alpha\over\partial x^\sigma} {\partial^2 x^\sigma\over\partial x'^\beta\partial x'^\gamma}"/></p>
 </div></section>
 <section id="parallel-transport">
-<span id="index-3"></span><h3>Parallel transport<a class="headerlink" href="#parallel-transport" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>Parallel transport<a class="headerlink" href="#parallel-transport" title="Permalink to this heading">¶</a></h3>
 <p>If the vectors <img class="math" src="../_images/math/9e6981e2fff93f0e48355d41142c4edcb845c70e.svg" alt="\vec V"/> at infinitesimally close points of the curve
 <img class="math" src="../_images/math/4df2920d96e8178fcdc86890982b8b1b211c9896.svg" alt="x^\mu(\lambda)"/> are parallel and of equal length, then <img class="math" src="../_images/math/9e6981e2fff93f0e48355d41142c4edcb845c70e.svg" alt="\vec V"/> is said to be
 parallel transported along the curve, i.e.:</p>
@@ -204,7 +203,7 @@ parallel transported along the curve, i.e.:</p>
 <p><img src="../_images/math/9554f5c20b828aa48ae72a617e319d8f507fd422.svg" alt="{\d V^\alpha\over\d\lambda} = U^\beta\nabla_\beta V^\alpha = 0"/></p>
 </div></section>
 <section id="fermi-walker-transport">
-<span id="index-4"></span><h3>Fermi-Walker transport<a class="headerlink" href="#fermi-walker-transport" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>Fermi-Walker transport<a class="headerlink" href="#fermi-walker-transport" title="Permalink to this heading">¶</a></h3>
 <p>In local inertial frame:</p>
 <div class="math">
 <p><img src="../_images/math/ea3da67dd4c2c5fbec2e5765a43e1ee05b58864e.svg" alt="U^\lambda_0 = (1, 0, 0, 0)"/></p>
@@ -228,7 +227,7 @@ for gyroscopes, so the natural, nonrotating tetrade is the one with <img class="
 geodesics).</p>
 </section>
 <section id="geodesics">
-<span id="index-5"></span><h3>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this headline">¶</a></h3>
+<span id="index-5"></span><h3>Geodesics<a class="headerlink" href="#geodesics" title="Permalink to this heading">¶</a></h3>
 <p>Geodesics is a curve <img class="math" src="../_images/math/29faf32f165a04672287cb3690da8a21e0feec74.svg" alt="x^\alpha(\lambda)"/> that locally looks like a line,
 i.e. it parallel
 transports its own tangent vector:</p>
@@ -411,7 +410,7 @@ but <a class="reference internal" href="#equation-geodesic-equation">(3.40.1.1)<
 <a class="reference internal" href="#equation-geodesic-equation">(3.40.1.1)</a> invariant).</p>
 </section>
 <section id="riemann-curvature-tensor">
-<span id="index-6"></span><h3>Riemann Curvature Tensor<a class="headerlink" href="#riemann-curvature-tensor" title="Permalink to this headline">¶</a></h3>
+<span id="index-6"></span><h3>Riemann Curvature Tensor<a class="headerlink" href="#riemann-curvature-tensor" title="Permalink to this heading">¶</a></h3>
 <p>Curvature means that we take a vector <img class="math" src="../_images/math/0ea075814147ddaed78d9a06b679bc8c0d2492f3.svg" alt="V^\mu"/>, parallel transport it around a
 closed loop (which is just applying a commutator of the covariant derivatives
 <img class="math" src="../_images/math/cb835f39f1bde5958f277e2711707b3898a52623.svg" alt="[\nabla_\alpha, \nabla_\beta]V^\mu"/>) and see how it changes. We express the
@@ -607,7 +606,7 @@ tensor has zero divergence:</p>
 = 2\nabla^\alpha G_{\mu\alpha} = 0"/></p>
 </div></section>
 <section id="lie-derivative">
-<span id="index-7"></span><h3>Lie derivative<a class="headerlink" href="#lie-derivative" title="Permalink to this headline">¶</a></h3>
+<span id="index-7"></span><h3>Lie derivative<a class="headerlink" href="#lie-derivative" title="Permalink to this heading">¶</a></h3>
 <p>Definition of the Lie derivative of any tensor <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/> is:</p>
 <div class="math">
 <p><img src="../_images/math/873e2401ef2e1909d1a2e946d9d0fe192a48a02a.svg" alt="\L_{\vec U} T=\lim_{t\to0}{\phi_{t*}T(\phi_t(p))-T(p)\over t}"/></p>
@@ -631,7 +630,7 @@ is a scalar:</p>
 <p><img src="../_images/math/439fb651c28b3728645c74cafc5fa36349fa7517.svg" alt="\L_{\vec V} g_{\mu\nu} = V^\alpha\nabla_\alpha g_{\mu\nu} +g_{\alpha\nu}\nabla_\mu V^\alpha +g_{\mu\alpha}\nabla_\nu V^\alpha = V^\alpha\partial_\alpha g_{\mu\nu} +g_{\alpha\nu}\partial_\mu V^\alpha +g_{\mu\alpha}\partial_\nu V^\alpha"/></p>
 </div></section>
 <section id="metric">
-<span id="index-8"></span><h3>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">¶</a></h3>
+<span id="index-8"></span><h3>Metric<a class="headerlink" href="#metric" title="Permalink to this heading">¶</a></h3>
 <p>In general, the Christoffel symbols are not symmetric and there is no metric
 that generates them. However, if the manifold is equipped with metrics, then
 the fundamental theorem of Riemannian geometry states that there is a unique
@@ -669,7 +668,7 @@ the identity <img class="math" src="../_images/math/50434dfdd70f40703743d21c4985
 identity <img class="math" src="../_images/math/326aa804105206e0c49bc37240361fffc70983b0.svg" alt="\det\exp A = \exp\Tr A"/> by substituting <img class="math" src="../_images/math/e48bb668da58f5954239ff57b648b6d52c6344b3.svg" alt="A=\log g"/> and taking the
 logarithm of both sides.</p>
 <section id="diagonal-metric">
-<h4>Diagonal Metric<a class="headerlink" href="#diagonal-metric" title="Permalink to this headline">¶</a></h4>
+<h4>Diagonal Metric<a class="headerlink" href="#diagonal-metric" title="Permalink to this heading">¶</a></h4>
 <p>Many times the metric is diagonal, e.g. in 3D:</p>
 <div class="math">
 <p><img src="../_images/math/d6be8093892ca9e5036306ccaa53e9ebc9a8b02a.svg" alt="g_{ij} =
@@ -772,7 +771,7 @@ only nonzero for <img class="math" src="../_images/math/97f93014bede251924cd627a
 </section>
 </section>
 <section id="symmetries-killing-vectors">
-<span id="index-9"></span><h3>Symmetries, Killing vectors<a class="headerlink" href="#symmetries-killing-vectors" title="Permalink to this headline">¶</a></h3>
+<span id="index-9"></span><h3>Symmetries, Killing vectors<a class="headerlink" href="#symmetries-killing-vectors" title="Permalink to this heading">¶</a></h3>
 <p>We say that a diffeomorphism <img class="math" src="../_images/math/9245f1100f089a4aed7c6f6bee3ce84343b2194f.svg" alt="\phi"/> is a symmetry of some tensor T if the
 tensor is invariant after being pulled back under <img class="math" src="../_images/math/9245f1100f089a4aed7c6f6bee3ce84343b2194f.svg" alt="\phi"/>:</p>
 <div class="math">
@@ -794,7 +793,7 @@ tangent vector <img class="math" src="../_images/math/683e03e76f0a334215c777a61c
 zero, and the second term is the geodesics equation, thus also zero.</p>
 </section>
 <section id="symmetry-and-antisymmetry">
-<h3>Symmetry and Antisymmetry<a class="headerlink" href="#symmetry-and-antisymmetry" title="Permalink to this headline">¶</a></h3>
+<h3>Symmetry and Antisymmetry<a class="headerlink" href="#symmetry-and-antisymmetry" title="Permalink to this heading">¶</a></h3>
 <p>Every tensor can be decomposed into symmetric and antisymmetric parts:</p>
 <div class="math">
 <p><img src="../_images/math/c2b1605e73eae7dc1a3124ec20307c25de175ce6.svg" alt="T_{\alpha\beta} = \half(T_{\alpha\beta} + T_{\beta\alpha})
@@ -840,7 +839,7 @@ only the antisymmetric part of <img class="math" src="../_images/math/932c246c41
 
     = \half(T_{\alpha\beta} - T_{\beta\alpha})A^{\alpha\beta}"/></p>
 </div><section id="example-i">
-<h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h4>
+<h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this heading">¶</a></h4>
 <p>We want to rewrite:</p>
 <div class="math">
 <p><img src="../_images/math/1a64b18b9ba4cbd3f70e0259124314e5c4de3194.svg" alt="2\partial_\nu g_{\mu\lambda} {\d x^\mu\over\d s} {\d x^\nu\over\d s}"/></p>
@@ -857,7 +856,7 @@ antisymmetric and <img class="math" src="../_images/math/6c380e149f8a762ae719a9d
 {\d x^\mu\over\d s} {\d x^\nu\over\d s}"/></p>
 </div></section>
 <section id="example-ii">
-<h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h4>
+<h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this heading">¶</a></h4>
 <p>Let <img class="math" src="../_images/math/9d405015be4fa7c6110a55698c3a6503c9b8931e.svg" alt="F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu"/>. Then we
 can simplify:</p>
 <div class="math">
@@ -871,7 +870,7 @@ part (the only one that contributes, because <img class="math" src="../_images/m
 <img class="math" src="../_images/math/dc6731ac1df5caa000e1295e071f7a80a34a75f7.svg" alt="\partial_\mu A_\nu"/>.</p>
 </section>
 <section id="example-iii">
-<h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h4>
+<h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this heading">¶</a></h4>
 <p>Let <img class="math" src="../_images/math/9d405015be4fa7c6110a55698c3a6503c9b8931e.svg" alt="F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu"/>. Then we
 get</p>
 <div class="math">
@@ -881,7 +880,7 @@ symmetric tensor.</p>
 </section>
 </section>
 <section id="divergence-operator">
-<span id="index-10"></span><h3>Divergence Operator<a class="headerlink" href="#divergence-operator" title="Permalink to this headline">¶</a></h3>
+<span id="index-10"></span><h3>Divergence Operator<a class="headerlink" href="#divergence-operator" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/11abdaabacca901b4dd7bf064740f0efe38735fc.svg" alt="\nabla_\mu A^\mu
 =\partial_\mu A^\mu+\Gamma^\mu_{\mu\sigma}A^\sigma
@@ -915,7 +914,7 @@ g^{ij} =
 \left(h_1 h_2 h_3 A^i \right)"/></p>
 </div></section>
 <section id="laplace-operator">
-<span id="index-11"></span><h3>Laplace Operator<a class="headerlink" href="#laplace-operator" title="Permalink to this headline">¶</a></h3>
+<span id="index-11"></span><h3>Laplace Operator<a class="headerlink" href="#laplace-operator" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/efc9ff1f229ca89b5d246fc8936e276aa766f793.svg" alt="\nabla^2\varphi
 =\nabla_\mu\nabla^\mu\varphi
@@ -952,7 +951,7 @@ g^{ij} =
 \left({h_1 h_2 h_3\over h_i^2}\partial_i\varphi \right)"/></p>
 </div></section>
 <section id="covariant-integration">
-<span id="index-12"></span><h3>Covariant integration<a class="headerlink" href="#covariant-integration" title="Permalink to this headline">¶</a></h3>
+<span id="index-12"></span><h3>Covariant integration<a class="headerlink" href="#covariant-integration" title="Permalink to this heading">¶</a></h3>
 <p>If <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> is a scalar, then the integral <img class="math" src="../_images/math/cbeea391ad10a305707106067bea6c14ebc6df56.svg" alt="\int f(x) \d^4 x"/> depends on
 coordinates. The correct way to integrate <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> in any coordinates is:</p>
 <div class="math">
@@ -972,9 +971,9 @@ normal vector to this surface.</p>
 </section>
 </section>
 <section id="examples">
-<h2><span class="section-number">3.40.2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.40.2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <section id="weak-formulation-of-laplace-equation">
-<h3>Weak Formulation of Laplace Equation<a class="headerlink" href="#weak-formulation-of-laplace-equation" title="Permalink to this headline">¶</a></h3>
+<h3>Weak Formulation of Laplace Equation<a class="headerlink" href="#weak-formulation-of-laplace-equation" title="Permalink to this heading">¶</a></h3>
 <p>As an example, we write the weak formulation of the Laplace equation in
 arbitrary coordintes:</p>
 <div class="math">
@@ -1005,7 +1004,7 @@ v - f v\sqrt{|g|}\right)  d^3 x = 0"/></p>
 - f v\right) h_1 h_2 h_3 d^3 x = 0"/></p>
 </div></section>
 <section id="cylindrical-coordinates">
-<span id="index-13"></span><h3>Cylindrical Coordinates<a class="headerlink" href="#cylindrical-coordinates" title="Permalink to this headline">¶</a></h3>
+<span id="index-13"></span><h3>Cylindrical Coordinates<a class="headerlink" href="#cylindrical-coordinates" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/d58d7e44ffcad2cdc883eea957d21aa75cd3eb54.svg" alt="x = \rho\cos\phi"/></p>
 </div><div class="math">
@@ -1105,7 +1104,7 @@ diagonal metric:</p>
 \right)\sigma\rho\,\d\rho\d z=0"/></p>
 </div></section>
 <section id="spherical-coordinates">
-<span id="diff-geom-spherical-coordinates"></span><h3>Spherical Coordinates<a class="headerlink" href="#spherical-coordinates" title="Permalink to this headline">¶</a></h3>
+<span id="diff-geom-spherical-coordinates"></span><h3>Spherical Coordinates<a class="headerlink" href="#spherical-coordinates" title="Permalink to this heading">¶</a></h3>
 <p>The relation between cartesian coordinates <img class="math" src="../_images/math/6a2468a48c55ebd000d4a3739e88fb1a8115bdaa.svg" alt="\hat x^a=(x, y, z)"/>
 and spherical coordinates <img class="math" src="../_images/math/34029ea2d473aaaf9fe04bd2f5004217f4f77329.svg" alt="x^i=(\rho, \theta, \phi)"/> is:</p>
 <div class="math" id="equation-spherical-coord">
@@ -1234,7 +1233,7 @@ only contain the spherical coordinates and the metric tensor.</p>
 +{2\over\rho}\partial_\rho\varphi +{\cos\theta\over\rho^2\sin\theta}\partial_\theta\varphi"/></p>
 </div></section>
 <section id="rotating-disk">
-<span id="index-14"></span><h3>Rotating Disk<a class="headerlink" href="#rotating-disk" title="Permalink to this headline">¶</a></h3>
+<span id="index-14"></span><h3>Rotating Disk<a class="headerlink" href="#rotating-disk" title="Permalink to this heading">¶</a></h3>
 <p>Let’s have a laboratory Euclidean system <img class="math" src="../_images/math/9087d2c63a00e6326cde5cd5eb0719006d624472.svg" alt="x^\mu = (t, x, y, z)"/> and
 a rotating disk system <img class="math" src="../_images/math/a9cbfd2ec00997e2d276a4a635e84f38d1b65d32.svg" alt="x'^\mu = (t', x', y', z')"/>. The relation between the frames is</p>
 <div class="math">
@@ -1433,12 +1432,12 @@ we get the same equation as earlier:</p>
 <p><img src="../_images/math/9ec02e913381989e9cde06cc590ca3638ce0a943.svg" alt="\left({d{\bf G}\over dt}\right)_{\rm space} = \left({d{\bf G}\over dt}\right)_{\rm body} + \boldsymbol\omega \times {\bf G}"/></p>
 </div></section>
 <section id="linear-elasticity-equations-in-cylindrical-coordinates">
-<h3>Linear Elasticity Equations in Cylindrical Coordinates<a class="headerlink" href="#linear-elasticity-equations-in-cylindrical-coordinates" title="Permalink to this headline">¶</a></h3>
+<h3>Linear Elasticity Equations in Cylindrical Coordinates<a class="headerlink" href="#linear-elasticity-equations-in-cylindrical-coordinates" title="Permalink to this heading">¶</a></h3>
 <p>Authors: Pavel Solin &amp; Lenka Dubcova</p>
 <p>In this paper we derive the weak formulation of linear elasticity equations suitable
 for the finite element discretization of axisymmetric 3D problems.</p>
 <section id="original-equations-in-cartesian-coordinates">
-<h4>Original equations in Cartesian coordinates<a class="headerlink" href="#original-equations-in-cartesian-coordinates" title="Permalink to this headline">¶</a></h4>
+<h4>Original equations in Cartesian coordinates<a class="headerlink" href="#original-equations-in-cartesian-coordinates" title="Permalink to this heading">¶</a></h4>
 <p>Let’s start with some notations: By <img class="math" src="../_images/math/3a9a36d4f23d152a9ae503f33785cd415206d759.svg" alt="\bfu = (u_1, u_2, u_3)^T"/> we denote the displacement vector in
 3D Cartesian coordinates, and by <img class="math" src="../_images/math/e3bdfae3da1309e77d714d255f6a26b4724b0e8b.svg" alt="\epsilon"/> the tensor of small deformations,</p>
 <div class="math">
@@ -1461,7 +1460,7 @@ The equilibrium equations have the form</p>
 </div><p>where <img class="math" src="../_images/math/3b08cb1ede65b17f07bcee41960c594852d134fa.svg" alt="g_i"/> are surface forces.</p>
 </section>
 <section id="weak-formulation">
-<h4>Weak formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h4>
+<h4>Weak formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this heading">¶</a></h4>
 <p>Multiplying by test functions and integrating over the domain <img class="math" src="../_images/math/c7080a6364482c5654d3e33992a59f803f887a7a.svg" alt="\Omega"/> we obtain</p>
 <div class="math" id="equation-1a">
 <p><span class="eqno">(3.40.2.7)<a class="headerlink" href="#equation-1a" title="Permalink to this equation">¶</a></span><img src="../_images/math/b1289e69ebe68a102b36cd319c2c9a167bd131ee.svg" alt="- \int_{\Omega}\sum_{j=1}^3 \frac{\partial \sigma_{ij}}{\partial x_j}v_i = \int_{\Omega}f_i\ v_i,\ \ \ \ 1 \le i \le 3."/></p>
@@ -1483,7 +1482,7 @@ The equilibrium equations have the form</p>
 \end{eqnarray*}"/></p>
 </div></section>
 <section id="elementary-transformation-relations">
-<h4>Elementary transformation relations<a class="headerlink" href="#elementary-transformation-relations" title="Permalink to this headline">¶</a></h4>
+<h4>Elementary transformation relations<a class="headerlink" href="#elementary-transformation-relations" title="Permalink to this heading">¶</a></h4>
 <p>First let us show how the partial derivatives of a scalar function <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> are transformed
 from Cartesian coordinates <img class="math" src="../_images/math/de7b37554c4b021be4597dceb7ad1e9bbda3e2ed.svg" alt="x_1, x_2, x_3"/> to cylindrical coordinates <img class="math" src="../_images/math/964990479bddf9d6429f17d7fabfa5ba7bd42ac8.svg" alt="r, \phi, z"/>.
 Note that</p>
@@ -1549,7 +1548,7 @@ coordinates</p>
 <p><img src="../_images/math/d35935ee29c3bfd4ab45b0caeecd2e5445656ba1.svg" alt="\begin{eqnarray*} \mbox{div}u &amp;=&amp; \frac{\partial u_1}{\partial x_1} + \frac{\partial u_2}{\partial x_2} + \frac{\partial u_3}{\partial x_3} = \\ &amp;=&amp; \frac{\partial u_r}{\partial r}\cos^2\phi + \frac{1}{r} u_r\sin^2\phi + \frac{\partial u_r}{\partial r}\sin^2\phi + \frac{1}{r} u_r\cos^2\phi + \frac{\partial u_z}{\partial z} = \\ &amp;=&amp; \frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z}  \end{eqnarray*}"/></p>
 </div></section>
 <section id="axisymmetric-formulation">
-<h4>Axisymmetric formulation<a class="headerlink" href="#axisymmetric-formulation" title="Permalink to this headline">¶</a></h4>
+<h4>Axisymmetric formulation<a class="headerlink" href="#axisymmetric-formulation" title="Permalink to this heading">¶</a></h4>
 <p>Assuming that the domain <img class="math" src="../_images/math/c7080a6364482c5654d3e33992a59f803f887a7a.svg" alt="\Omega"/> is axisymmetric,
 we can begin to transform the integrals in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> to cylindrical coordinates.
 Recall that the Jacobian of the transformation is <img class="math" src="../_images/math/427c003511b0d4304a74128749e1ad0ed7adbc95.svg" alt="J(r, \phi, z) = r"/>. The first equation in <a class="reference internal" href="#equation-weak">(3.40.2.9)</a> has the form:</p>
@@ -1581,7 +1580,7 @@ Recall that the Jacobian of the transformation is <img class="math" src="../_ima
 <p><img src="../_images/math/6ce2110fbb5c116a150ac0ac4e85a9980d08cd70.svg" alt="\int_{\Omega_0} r \mu \left(\frac{\partial u_r}{\partial z}\frac{\partial v_z}{\partial r} + \frac{\partial u_z}{\partial r}\frac{\partial v_z}{\partial r} + 2 \frac{\partial u_z}{\partial z} \frac{\partial v_z}{\partial z}\right) +  r \lambda \left(\frac{\partial u_r}{\partial r} + \frac{1}{r} u_r + \frac{\partial u_z}{\partial z} \right)\frac{\partial v_z}{\partial z} - \int_{\Gamma_2} g_z v_z  r = \int_{\Omega_0}f_z\ v_z r."/></p>
 </div></section>
 <section id="coordinate-independent-way">
-<h4>Coordinate Independent Way<a class="headerlink" href="#coordinate-independent-way" title="Permalink to this headline">¶</a></h4>
+<h4>Coordinate Independent Way<a class="headerlink" href="#coordinate-independent-way" title="Permalink to this heading">¶</a></h4>
 <p>Let’s write the elasticity equations in the cartesian coordinates again:</p>
 <div class="math">
 <p><img src="../_images/math/97add935b3a4ba65e16c71c705964045701282f7.svg" alt="\sigma_{ij} = \lambda \delta_{ij}\partial_k u^k + \mu
@@ -1767,7 +1766,7 @@ g^{zj}\nabla_j v^z = g^{zz}\nabla_z v^z =
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1791,7 +1790,7 @@ g^{zj}\nabla_j v^z = g^{zz}\nabla_z v^z =
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

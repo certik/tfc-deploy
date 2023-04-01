@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.1. Integration &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,12 +74,12 @@
           <div class="body" role="main">
             
   <section id="integration">
-<span id="index-0"></span><h1><span class="section-number">3.1. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1><span class="section-number">3.1. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this heading">¶</a></h1>
 <p>This chapter doesn’t assume any knowledge about differential geometry. The most
 versatile way to do integration over manifolds is explained in the differential
 geometry section.</p>
 <section id="general-case">
-<h2><span class="section-number">3.1.1. </span>General Case<a class="headerlink" href="#general-case" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.1. </span>General Case<a class="headerlink" href="#general-case" title="Permalink to this heading">¶</a></h2>
 <p>We want to integrate a function <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/> over a <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/>-manifold in <img class="math" src="../_images/math/1f5d4b84bf2ed73e0aeaa0b936348fc0d5def062.svg" alt="\R^n"/>, parametrized
 as:</p>
 <div class="math">
@@ -118,7 +117,7 @@ parallelepiped spanned by the vectors</p>
 </div><p>where <img class="math" src="../_images/math/a63a120ebdb0df6991ec09c974dba857575c15f8.svg" alt="{\bf J}"/> is an <img class="math" src="../_images/math/2013f9790c415bc00c56f50ee6aca47a54c66db9.svg" alt="n\times k"/> matrix having those vectors as its column
 vectors.</p>
 <section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
 <p>Let’s integrate a function <img class="math" src="../_images/math/a80a5399a4fae61e1b69dbfd25955444d74ef46e.svg" alt="f(x, y, z)"/> over the surface of a sphere in 3D
 (e.g. <img class="math" src="../_images/math/7d9ad4b16d65aeab4e89519a02941bb7d9c3602a.svg" alt="k=2"/> and <img class="math" src="../_images/math/d3aa733fbddb900cc1fc415faf3c284ef3351d1c.svg" alt="n=3"/>):</p>
 <div class="math">
@@ -169,16 +168,16 @@ z) = 1"/> and get:</p>
 </div></section>
 </section>
 <section id="special-cases">
-<h2><span class="section-number">3.1.2. </span>Special Cases<a class="headerlink" href="#special-cases" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.2. </span>Special Cases<a class="headerlink" href="#special-cases" title="Permalink to this heading">¶</a></h2>
 <section id="k-n">
-<span id="index-1"></span><h3>k = n<a class="headerlink" href="#k-n" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><h3>k = n<a class="headerlink" href="#k-n" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/234853fc630b1744aa6189e5d0826f595d96c350.svg" alt="\det{\bf G} = \det {\bf J}^R{\bf J} = (\det {\bf J})^2
 
 \d S = |\det {\bf J}|\,\d t_1\,\d t_2\cdots\d t_k"/></p>
 </div></section>
 <section id="k-1">
-<span id="index-2"></span><h3>k = 1<a class="headerlink" href="#k-1" title="Permalink to this headline">¶</a></h3>
+<span id="index-2"></span><h3>k = 1<a class="headerlink" href="#k-1" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/93e739c53b2ad8d18c83aa7354a6c14ea93ffbdd.svg" alt="\det{\bf G} = \det \left(
     \left({\d\varphi_1\over\d t}\right)^2+
@@ -190,7 +189,7 @@ z) = 1"/> and get:</p>
 \d S = \left|{\d\mathbf{\varphi}\over\d t}\right|\,\d t"/></p>
 </div></section>
 <section id="k-n-1">
-<span id="index-3"></span><h3>k = n - 1<a class="headerlink" href="#k-n-1" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>k = n - 1<a class="headerlink" href="#k-n-1" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/ee2c3d9d3fac9af761c236cab071b650e5a1aaef.svg" alt="\det{\bf G} = \det {\bf J}^R{\bf J} =
 
@@ -214,7 +213,7 @@ z) = 1"/> and get:</p>
 removed, etc.).</p>
 </section>
 <section id="k-2-n-3">
-<span id="index-4"></span><h3>k = 2, n = 3<a class="headerlink" href="#k-2-n-3" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>k = 2, n = 3<a class="headerlink" href="#k-2-n-3" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/a380d9e4c677625fe73a22f6a2a960f42ec8899c.svg" alt="\det{\bf G} = \left|{\partial\mathbf{\varphi}\over\partial t_1}\times
 {\partial\mathbf{\varphi}\over\partial t_2}\right|^2
@@ -223,7 +222,7 @@ removed, etc.).</p>
 {\partial\mathbf{\varphi}\over\partial t_2}\right|\,\d t_1\,\d t_2"/></p>
 </div></section>
 <section id="y-f-x-z">
-<h3>y = f(x, z)<a class="headerlink" href="#y-f-x-z" title="Permalink to this headline">¶</a></h3>
+<h3>y = f(x, z)<a class="headerlink" href="#y-f-x-z" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/44373b88792982900473121a40df47b835636afe.svg" alt="\det{\bf G} = 1
 +\left({\partial f\over\partial x}\right)^2
@@ -248,7 +247,7 @@ removed, etc.).</p>
 </div><p>The “<img class="math" src="../_images/math/8e6cef65dc233bc3afa28d31c632e678e69fe8bd.svg" alt="x_j"/>” term is missing in the sums above.</p>
 </section>
 <section id="implicit-surface">
-<span id="index-5"></span><h3>Implicit Surface<a class="headerlink" href="#implicit-surface" title="Permalink to this headline">¶</a></h3>
+<span id="index-5"></span><h3>Implicit Surface<a class="headerlink" href="#implicit-surface" title="Permalink to this heading">¶</a></h3>
 <p>For a surface given implicitly by</p>
 <div class="math">
 <p><img src="../_images/math/9b6b6d3e82a4152ce158ceb57969611620ba661e.svg" alt="F(x_1, x_2, ..., x_n) = 0"/></p>
@@ -258,7 +257,7 @@ removed, etc.).</p>
 x_1\cdots\d x_{n-1}"/></p>
 </div></section>
 <section id="orthogonal-coordinates">
-<span id="index-6"></span><h3>Orthogonal Coordinates<a class="headerlink" href="#orthogonal-coordinates" title="Permalink to this headline">¶</a></h3>
+<span id="index-6"></span><h3>Orthogonal Coordinates<a class="headerlink" href="#orthogonal-coordinates" title="Permalink to this heading">¶</a></h3>
 <p>If the coordinate vectors are orthogonal to each other:</p>
 <div class="math">
 <p><img src="../_images/math/b725cf4d5a355c9243c24813f03daa226457a3c2.svg" alt="{\partial\mathbf{\varphi}\over\partial t_i} \cdot
@@ -275,7 +274,7 @@ x_1\cdots\d x_{n-1}"/></p>
 </div></section>
 </section>
 <section id="motivation">
-<h2><span class="section-number">3.1.3. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.3. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">¶</a></h2>
 <p>Let the <img class="math" src="../_images/math/0dabd76e82ded83eabfba509508649f4b47ca55e.svg" alt="k"/>-dimensional parallelepiped P be spanned by the vectors</p>
 <div class="math">
 <p><img src="../_images/math/8abe19589aea77d6c486f30990bd8dd830aa999e.svg" alt="{\partial\mathbf{\varphi}\over t_1}, \dots,
@@ -288,7 +287,7 @@ vectors. Then the area of P is</p>
 surface by infinitesimal parallelepipeds and integrating over them.</p>
 </section>
 <section id="id1">
-<h2><span class="section-number">3.1.4. </span>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1.4. </span>Example<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
 <p>Let’s calculate the total distance traveled by a body in 1D, whose position is
 given by <img class="math" src="../_images/math/8ce86d3fab3bf68586c03b25c03b4a2533e55ee8.svg" alt="s(t)"/>:</p>
 <div class="math">
@@ -364,7 +363,7 @@ negative integrand.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -388,7 +387,7 @@ negative integrand.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

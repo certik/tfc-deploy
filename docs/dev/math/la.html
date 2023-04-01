@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.39. Linear Algebra &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <section id="linear-algebra">
-<h1><span class="section-number">3.39. </span>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.39. </span>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this heading">¶</a></h1>
 <section id="scalar-product">
-<h2><span class="section-number">3.39.1. </span>Scalar Product<a class="headerlink" href="#scalar-product" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.39.1. </span>Scalar Product<a class="headerlink" href="#scalar-product" title="Permalink to this heading">¶</a></h2>
 <p>Virtually all spaces used in physics are Hilbert spaces (treated in the weak
 sense, i.e. equipped with distributions), which means that they have a scalar
 product and a norm.</p>
@@ -113,7 +112,7 @@ other hand, it is very important to understand how to work with Hilbert spaces
 (in the weak sense). Dirac notation makes it very easy to understand and
 remember how to work with such spaces.</p>
 <section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h3>
 <p>Some examples of frequently used spaces and scalar products follows.</p>
 <p>Finite dimensional spaces:</p>
 <div class="math">
@@ -190,7 +189,7 @@ and <img class="math" src="../_images/math/ced25c1c35c28239eb02d4165b9c9a74d6c2f
 </section>
 </section>
 <section id="projections">
-<h2><span class="section-number">3.39.2. </span>Projections<a class="headerlink" href="#projections" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.39.2. </span>Projections<a class="headerlink" href="#projections" title="Permalink to this heading">¶</a></h2>
 <p>Projection is a linear idempotent operator <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/>:</p>
 <div class="math">
 <p><img src="../_images/math/e16b855df2d0169da78e6928655f3c394993a90a.svg" alt="P^2 = P"/></p>
@@ -267,7 +266,7 @@ the norm:</p>
 In other words, orthogonal projection finds the closest vector from a subspace
 onto which it projects.</p>
 <section id="projection-coefficients">
-<h3>Projection Coefficients<a class="headerlink" href="#projection-coefficients" title="Permalink to this headline">¶</a></h3>
+<h3>Projection Coefficients<a class="headerlink" href="#projection-coefficients" title="Permalink to this heading">¶</a></h3>
 <p>Given the basis <img class="math" src="../_images/math/3ee9871dd54cf6ea349466c6474e0a663177b32e.svg" alt="\ket{v_k}"/> (orthogonal or non-orthogonal), we would like to
 find a formula for the projection coefficients <img class="math" src="../_images/math/5f0b5c1196324ffb6df8455536d489b1cb9298d7.svg" alt="\phi_k"/> defined by:</p>
 <div class="math" id="equation-proj-coeff">
@@ -275,7 +274,7 @@ find a formula for the projection coefficients <img class="math" src="../_images
 </div><p>This holds, because <img class="math" src="../_images/math/f400eb26b57d12baeeb441f522cf5229831f3765.svg" alt="P\ket{u}"/> belongs to the space <img class="math" src="../_images/math/d222fdb5f72692276e1d9ddf7a7715269d07338a.svg" alt="W"/> and every vector from
 it can be expressed as a linear combination of <img class="math" src="../_images/math/3ee9871dd54cf6ea349466c6474e0a663177b32e.svg" alt="\ket{v_k}"/>.</p>
 <section id="projecting-to-orthogonal-basis">
-<h4>Projecting to Orthogonal Basis<a class="headerlink" href="#projecting-to-orthogonal-basis" title="Permalink to this headline">¶</a></h4>
+<h4>Projecting to Orthogonal Basis<a class="headerlink" href="#projecting-to-orthogonal-basis" title="Permalink to this heading">¶</a></h4>
 <p>For orthogonal projections we simply substitute the equation <a class="reference internal" href="#equation-proj-ortho">(3.39.2.1)</a>
 into <a class="reference internal" href="#equation-proj-coeff">(3.39.2.2)</a> and get:</p>
 <div class="math">
@@ -286,7 +285,7 @@ into <a class="reference internal" href="#equation-proj-coeff">(3.39.2.2)</a> an
 <p><span class="eqno">(3.39.2.3)<a class="headerlink" href="#equation-phi-ortho" title="Permalink to this equation">¶</a></span><img src="../_images/math/c9025b4eaa14f1fa9ca4179fc9ad155953c9d8fa.svg" alt="\phi_k = \braket{w_k | u} \,."/></p>
 </div></section>
 <section id="projecting-to-nonorthogonal-basis">
-<h4>Projecting to Nonorthogonal Basis<a class="headerlink" href="#projecting-to-nonorthogonal-basis" title="Permalink to this headline">¶</a></h4>
+<h4>Projecting to Nonorthogonal Basis<a class="headerlink" href="#projecting-to-nonorthogonal-basis" title="Permalink to this heading">¶</a></h4>
 <p>In order to project onto a nonorthogonal basis <img class="math" src="../_images/math/3ee9871dd54cf6ea349466c6474e0a663177b32e.svg" alt="\ket{v_k}"/> (for example a
 finite element basis),
 we multiply <a class="reference internal" href="#equation-proj-coeff">(3.39.2.2)</a> by <img class="math" src="../_images/math/5164fef45c9f9aed6dd87f602cc754a483c4f0b7.svg" alt="\bra{v_l}"/> from the left and simplify:</p>
@@ -313,7 +312,7 @@ In the special case of a (normalized) orthogonal basis, we get
 </section>
 </section>
 <section id="id1">
-<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <p><img class="math" src="../_images/math/367177fd019e4023bf5f6eb0f9a4ed44ecbb3952.svg" alt="R^3"/> orthogonal projection. Orthogonal basis:</p>
 <div class="math">
 <p><img src="../_images/math/02589147d6f460ef87da73778e268942e905ff86.svg" alt="\ket{w_0} =
@@ -677,7 +676,7 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -701,7 +700,7 @@ P\ket{u} = \ket{w_0}\phi_0 + \ket{w_1}\phi_1 =
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

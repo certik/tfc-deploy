@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.29. Legendre Polynomials &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +74,7 @@
           <div class="body" role="main">
             
   <section id="legendre-polynomials">
-<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">3.29. </span>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">3.29. </span>Legendre Polynomials<a class="headerlink" href="#legendre-polynomials" title="Permalink to this heading">¶</a></h1>
 <p>Legendre polynomials <img class="math" src="../_images/math/b6460d0e85ab02e3746faab7ee8495d307fa4e96.svg" alt="P_l(x)"/> defined by the Rodrigues’ formula</p>
 <div class="math">
 <p><img src="../_images/math/5b2ee0aa092d63020297866cb04294bb7077b3fb.svg" alt="P_l(x)={1\over2^l l!}{\d^l\over\d x^l}[(x^2-1)^l]"/></p>
@@ -229,13 +228,14 @@ for <img class="math" src="../_images/math/9e618bb167a0ac72f09ee71094db1e466bbf2
 = {1\over |t|}{1\over\sqrt{1-2x{1\over t}+\left({1\over t}\right)^2}}
 = {1\over |t|}\sum_{l=0}^\infty P_l(x) \left({1\over t}\right)^l
 = \sign t \sum_{l=0}^\infty P_l(x) t^{-l-1}"/></p>
-</div><dl class="citation">
-<dt class="label" id="adams"><span class="brackets"><a class="fn-backref" href="#id2">Adams</a></span></dt>
-<dd><p>Adams, J. C. (1878). On the Expression of the Product of Any Two Legendre’s Coefficients by Means of a Series of Legendre’s Coefficients.  Proceedings of the Royal Society of London, 27, 63-71.</p>
-</dd>
-</dl>
+</div><div role="list" class="citation-list">
+<div class="citation" id="adams" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Adams</a><span class="fn-bracket">]</span></span>
+<p>Adams, J. C. (1878). On the Expression of the Product of Any Two Legendre’s Coefficients by Means of a Series of Legendre’s Coefficients.  Proceedings of the Royal Society of London, 27, 63-71.</p>
+</div>
+</div>
 <section id="example-i">
-<h2><span class="section-number">3.29.1. </span>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.29.1. </span>Example I<a class="headerlink" href="#example-i" title="Permalink to this heading">¶</a></h2>
 <p>Very important is the following multipole expansion:</p>
 <div class="math" id="equation-legendre-expansion">
 <p><span class="eqno">(3.29.1.1)<a class="headerlink" href="#equation-legendre-expansion" title="Permalink to this equation">¶</a></span><img src="../_images/math/1d62802b28780d45a3c0592b18cd1bc7fdc779b1.svg" alt="{1\over |{\bf r}-{\bf r'}|}
@@ -258,7 +258,7 @@ Assuming <img class="math" src="../_images/math/7f8ce56d568c36e2cdf87d70bb9ed21a
 ={1\over r} +{{\bf r}\cdot {\bf r'}\over r^3} +{3({\bf r}\cdot {\bf r'})^2-r^2r'^2\over 2r^5} + O\left(r'^3\over r^4\right)"/></p>
 </div></section>
 <section id="example-ii">
-<h2><span class="section-number">3.29.2. </span>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.29.2. </span>Example II<a class="headerlink" href="#example-ii" title="Permalink to this heading">¶</a></h2>
 <p>Let’s find the expansion of</p>
 <div class="math">
 <p><img src="../_images/math/425c67d99d116db3d0b87a21c74aa5edad317ff5.svg" alt="f(x) = {e^{-\alpha \sqrt{1-2xt+t^2}}\over\sqrt{1-2xt+t^2}}"/></p>
@@ -319,7 +319,7 @@ g_4 &amp; = t^{4} + \alpha t^{4} + \frac{3}{7} \alpha^{2} t^{4} + \frac{1}{22} \
 </div>
 </section>
 <section id="example-iii">
-<h2><span class="section-number">3.29.3. </span>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.29.3. </span>Example III<a class="headerlink" href="#example-iii" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/050e4f7587a8ab1c7850a8743728790e2911970b.svg" alt="{e^{-{|{\bf r}-{\bf r'}|\over D}}\over |{\bf r}-{\bf r'}|}
     = {e^{-r_&gt;\sqrt{1-2\left(r_&lt;\over r_&gt;\right)
@@ -337,7 +337,7 @@ x &amp; = {\bf\hat r}\cdot {\bf\hat r'} \\
 t &amp; = {r_&lt;\over r_&gt;}"/></p>
 </div></section>
 <section id="example-iv">
-<h2><span class="section-number">3.29.4. </span>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.29.4. </span>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/a4f645f3ee0e06b9c7d48db2bb6b8c3070eb70b7.svg" alt="V(|{\bf r}_1-{\bf r}_2|)
     = {e^{-{|{\bf r}_1-{\bf r}_2|\over D}}\over |{\bf r}_1-{\bf r}_2|}"/></p>
@@ -382,7 +382,7 @@ V_1(r_1, r_2) =
 </section>
 </section>
 <section id="spherical-harmonics">
-<span id="index-1"></span><h1><span class="section-number">3.30. </span>Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this headline">¶</a></h1>
+<span id="index-1"></span><h1><span class="section-number">3.30. </span>Spherical Harmonics<a class="headerlink" href="#spherical-harmonics" title="Permalink to this heading">¶</a></h1>
 <p>Are defined for <img class="math" src="../_images/math/b10ce14f3bf0157b33995ec393b36cad995a5c55.svg" alt="m \ge 0"/> by</p>
 <div class="math">
 <p><img src="../_images/math/4f5472f3bdda9c347b5c99d9f027dca1e9e7d758.svg" alt="Y_{lm}(\theta,\phi)=\sqrt{{2l+1\over4\pi}{(l-m)!\over(l+m)!}}\,P_l^m(\cos\theta)\,e^{im\phi}"/></p>
@@ -424,7 +424,7 @@ written as:</p>
 
 (-1)^m Y_{l,-m}^*(\Omega) = Y_{lm}(\Omega)"/></p>
 </div><section id="examples">
-<h2><span class="section-number">3.30.1. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.30.1. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/242b0a5b0f00be12a1bee2be9cb75d7c40bded26.svg" alt="\int_{-1}^1 P_k(x) \d x
     = \int_{-1}^1 P_k(x) P_0(x) \d x
@@ -436,7 +436,7 @@ written as:</p>
 </div></section>
 </section>
 <section id="gaunt-coefficients">
-<h1><span class="section-number">3.31. </span>Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.31. </span>Gaunt Coefficients<a class="headerlink" href="#gaunt-coefficients" title="Permalink to this heading">¶</a></h1>
 <p>We use the Wigner-Eckart theorem:</p>
 <div class="math">
 <p><img src="../_images/math/af1f5b2c51c1401240d327ea698c0ac1addd9f69.svg" alt="\braket{j m | T^k_q | j' m'} = (-1)^{j-m}
@@ -534,13 +534,14 @@ the <img class="math" src="../_images/math/f64fe1af5cb23427569c7cb2f7366d4675c76
 <p><img src="../_images/math/6fa7d886922b83e1a76f073ed2b9c361ef25f284.svg" alt="|l-l'| \le k \le l + l'
 
 l+l'+k = \mbox{even integer}"/></p>
-</div><dl class="citation">
-<dt class="label" id="gaunt"><span class="brackets"><a class="fn-backref" href="#id3">Gaunt</a></span></dt>
-<dd><p>Gaunt, J. A. (1929). The Triplets of Helium. Philosophical Transactions of the Royal Society of London, 228, 151-196.</p>
-</dd>
-</dl>
+</div><div role="list" class="citation-list">
+<div class="citation" id="gaunt" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Gaunt</a><span class="fn-bracket">]</span></span>
+<p>Gaunt, J. A. (1929). The Triplets of Helium. Philosophical Transactions of the Royal Society of London, 228, 151-196.</p>
+</div>
+</div>
 <section id="id4">
-<h2><span class="section-number">3.31.1. </span>Example I<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.31.1. </span>Example I<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/43c335a3bbadb414f16d055bbc3a718868663d2f.svg" alt="c^0(l, m, l', m')
     =\sqrt{4\pi}
@@ -548,7 +549,7 @@ l+l'+k = \mbox{even integer}"/></p>
     =\delta_{l l'}\delta_{m m'}"/></p>
 </div></section>
 <section id="id5">
-<h2><span class="section-number">3.31.2. </span>Example II<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.31.2. </span>Example II<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/0c0bf958343adbf2ba9570b8653b0088522cfa19.svg" alt="\sum_{m=-l}^l c^k(l, m, l, m)
     = \sum_m
@@ -572,7 +573,7 @@ l+l'+k = \mbox{even integer}"/></p>
     (2l+1) \delta_{k0}"/></p>
 </div></section>
 <section id="id6">
-<h2><span class="section-number">3.31.3. </span>Example III<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.31.3. </span>Example III<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/281183f65b42533c0bfef370b380c665a8125f31.svg" alt="c^k(l, m, l', m') =
     \sqrt{4\pi \over 2k+1}
@@ -600,7 +601,7 @@ l+l'+k = \mbox{even integer}"/></p>
 \int_0^\pi \Theta_{lm} \Theta_{k, m-m'} \Theta_{l'm'} \sin\theta \d\theta"/></p>
 </div></section>
 <section id="id7">
-<h2><span class="section-number">3.31.4. </span>Example IV<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.31.4. </span>Example IV<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/17328e737000c66cc44534617c5e35ef6bc5306e.svg" alt="c^k(l, -m, l', -m') =
 
@@ -660,7 +661,7 @@ c^k(l, m, l', m')"/></p>
 c^k(l, 0, l', 0) = c^k(l', 0, l, 0)"/></p>
 </div></section>
 <section id="example-v">
-<h2><span class="section-number">3.31.5. </span>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.31.5. </span>Example V<a class="headerlink" href="#example-v" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/4536793ebb191e237b3f0bb417f073cbe25706bc.svg" alt="\sum_{m'} \left(c^k(l, m, l', m')\right)^2 =
 
@@ -688,7 +689,7 @@ c^k(l, 0, l', 0) = c^k(l', 0, l, 0)"/></p>
     =\sqrt{2l'+1\over 2l+1} c^k(l', 0, l, 0)"/></p>
 </div></section>
 <section id="example-vi">
-<span id="five-spherical-harmonics"></span><h2><span class="section-number">3.31.6. </span>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h2>
+<span id="five-spherical-harmonics"></span><h2><span class="section-number">3.31.6. </span>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this heading">¶</a></h2>
 <div class="math" id="equation-five-spherical-harmonics">
 <p><span class="eqno">(3.31.6.1)<a class="headerlink" href="#equation-five-spherical-harmonics" title="Permalink to this equation">¶</a></span><img src="../_images/math/6847af5dbe9bb27ca3195e8d37f97c8a9dfd3086.svg" alt="\sum_{m'}\sum_{q}\int
         Y_{l'm'}(\Omega)
@@ -780,7 +781,7 @@ simplify things further.</p>
 </section>
 </section>
 <section id="wigner-3j-symbols">
-<h1><span class="section-number">3.32. </span>Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.32. </span>Wigner 3j Symbols<a class="headerlink" href="#wigner-3j-symbols" title="Permalink to this heading">¶</a></h1>
 <p>Relation between the Wigner <img class="math" src="../_images/math/ff554f60b0bac10f9ec871a6f16fd14146ff75fd.svg" alt="3j"/> symbols and Clebsch-Gordan coefficients:</p>
 <div class="math">
 <p><img src="../_images/math/da8fdcba80d5125eb886d7ff56359b9dd0412ea1.svg" alt="\begin{pmatrix} j_1 &amp; j_2 &amp; j_3 \\ m_1 &amp; m_2 &amp; m_3 \end{pmatrix}
@@ -917,7 +918,7 @@ above to obtain values for permuted symbols):</p>
     &amp;= (-1)^{j-m-1} \sqrt{2(j+m+1)(j-m+1)
         \over (2j+1)(2j+2)(2j+3)}"/></p>
 </div><section id="id8">
-<h2><span class="section-number">3.32.1. </span>Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.32.1. </span>Examples<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/1804d7bb2f8b701f82b259eac7040eac4dc80e7b.svg" alt="\begin{pmatrix} j_3-\half &amp; \half &amp; j_3 \\
     m_3-\half &amp; \half &amp; -m_3 \end{pmatrix} =
@@ -985,7 +986,7 @@ above to obtain values for permuted symbols):</p>
 </div></section>
 </section>
 <section id="multipole-expansion">
-<span id="index-2"></span><h1><span class="section-number">3.33. </span>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this headline">¶</a></h1>
+<span id="index-2"></span><h1><span class="section-number">3.33. </span>Multipole Expansion<a class="headerlink" href="#multipole-expansion" title="Permalink to this heading">¶</a></h1>
 <p>Using <a class="reference internal" href="#equation-legendre-expansion">(3.29.1.1)</a> we get:</p>
 <div class="math">
 <p><img src="../_images/math/35636cea7ee8534c0d06f94eed8b02e662d28cd1.svg" alt="{1\over |{\bf r}-{\bf r'}|}
@@ -1062,7 +1063,7 @@ above to obtain values for permuted symbols):</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1086,7 +1087,7 @@ above to obtain values for permuted symbols):</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

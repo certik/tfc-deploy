@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>8.9. Density Functional Theory (DFT) &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <section id="density-functional-theory-dft">
-<h1><span class="section-number">8.9. </span>Density Functional Theory (DFT)<a class="headerlink" href="#density-functional-theory-dft" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">8.9. </span>Density Functional Theory (DFT)<a class="headerlink" href="#density-functional-theory-dft" title="Permalink to this heading">¶</a></h1>
 <section id="many-body-schrodinger-equation">
-<h2><span class="section-number">8.9.1. </span>Many Body Schrödinger Equation<a class="headerlink" href="#many-body-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.1. </span>Many Body Schrödinger Equation<a class="headerlink" href="#many-body-schrodinger-equation" title="Permalink to this heading">¶</a></h2>
 <p>We use (Hartree) atomic units in this whole section about DFT.
 We use the Born-Oppenheimer approximation, which says that the nuclei of the
 treated atoms are seen as fixed. A stationary electronic state (for <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/>
@@ -170,7 +169,7 @@ alone, only the <img class="math" src="../_images/math/35d45c1ed5809de14e400e4f1
 of <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>.</p>
 </section>
 <section id="the-hohenberg-kohn-theorem">
-<h2><span class="section-number">8.9.2. </span>The Hohenberg-Kohn Theorem<a class="headerlink" href="#the-hohenberg-kohn-theorem" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.2. </span>The Hohenberg-Kohn Theorem<a class="headerlink" href="#the-hohenberg-kohn-theorem" title="Permalink to this heading">¶</a></h2>
 <p>The Schrödinger equation gives the map</p>
 <div class="math">
 <p><img src="../_images/math/baba783330e167959d3968728add217901ec1442.svg" alt="C: V \to \Psi"/></p>
@@ -265,7 +264,7 @@ so in order to get <img class="math" src="../_images/math/5c45fb6adda786f45a82cb
 <p><img src="../_images/math/9a0917db4a9d77ed210dfb8290b9b670fd53b813.svg" alt="\mu(N)={E_{N+\epsilon}-E_N\over\epsilon} \ \longrightarrow \ {\partial E_N\over\partial N}"/></p>
 </div></section>
 <section id="the-kohn-sham-equations">
-<h2><span class="section-number">8.9.3. </span>The Kohn-Sham Equations<a class="headerlink" href="#the-kohn-sham-equations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.3. </span>The Kohn-Sham Equations<a class="headerlink" href="#the-kohn-sham-equations" title="Permalink to this heading">¶</a></h2>
 <p>Consider an auxiliary system of <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/> noninteracting electrons (noninteracting
 gas):</p>
 <div class="math">
@@ -391,7 +390,7 @@ which shows that the interacting system can be treated as a noninteracting one
 with a special potential.</p>
 </section>
 <section id="the-xc-term">
-<h2><span class="section-number">8.9.4. </span>The XC Term<a class="headerlink" href="#the-xc-term" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.4. </span>The XC Term<a class="headerlink" href="#the-xc-term" title="Permalink to this heading">¶</a></h2>
 <p>The exchange and correlation functional</p>
 <div class="math">
 <p><img src="../_images/math/a2c36efd04bd4513b20771c47a3410631e78dabf.svg" alt="E_{xc}[n]=(T+U)[n]-E_H[n]-T_S[n]"/></p>
@@ -406,7 +405,7 @@ The XC potential is defined as:</p>
         {\delta \epsilon_{xc}({\bf r}';n)\over\delta n({\bf r})}\d^3r'"/></p>
 </div></section>
 <section id="total-energy">
-<h2><span class="section-number">8.9.5. </span>Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.5. </span>Total Energy<a class="headerlink" href="#total-energy" title="Permalink to this heading">¶</a></h2>
 <p>We already derived all the necessary things above, so we just summarize it here.
 The total energy is given by:</p>
 <div class="math">
@@ -458,12 +457,12 @@ achieved (i.e. <img class="math" src="../_images/math/cdb298e1fd67de3bde3221afaa
 equivalent.</p>
 </section>
 <section id="xc-approximations">
-<h2><span class="section-number">8.9.6. </span>XC Approximations<a class="headerlink" href="#xc-approximations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.6. </span>XC Approximations<a class="headerlink" href="#xc-approximations" title="Permalink to this heading">¶</a></h2>
 <p>All the expressions above are exact (no approximation has been made so far).
 Unfortunately, no one knows <img class="math" src="../_images/math/16e03bd005577d4b0798300d1f79094502af4461.svg" alt="\epsilon_{xc}({\bf r}';n)"/> exactly (yet). As such,
 various approximations for it exist.</p>
 <section id="lda">
-<h3>LDA<a class="headerlink" href="#lda" title="Permalink to this headline">¶</a></h3>
+<h3>LDA<a class="headerlink" href="#lda" title="Permalink to this heading">¶</a></h3>
 <p>The most
 simple approximation is the <em>local density approximation</em> (LDA), for which the
 xc energy density <img class="math" src="../_images/math/7eef5235dfd75d6592856ca9b9066dcaac5280b2.svg" alt="\epsilon_{xc}"/> at <img class="math" src="../_images/math/7eee83f9346c3cb54c6309166a5f4fc0af20db5a.svg" alt="\bf r"/> is taken as that of a homogeneous
@@ -524,7 +523,7 @@ with, and only when we are not satisfied, we will have to try some more
 accurate and modern approximation.</p>
 </section>
 <section id="rlda">
-<h3>RLDA<a class="headerlink" href="#rlda" title="Permalink to this headline">¶</a></h3>
+<h3>RLDA<a class="headerlink" href="#rlda" title="Permalink to this heading">¶</a></h3>
 <p>Relativistic corrections to the energy-density functional (RLDA) were proposed
 by MacDonald and Vosko:</p>
 <div class="math">
@@ -639,9 +638,9 @@ V_x^{LD}\left(1-{3\over2} \left(
 </section>
 </section>
 <section id="radial-dft-problem">
-<h2><span class="section-number">8.9.7. </span>Radial DFT Problem<a class="headerlink" href="#radial-dft-problem" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.7. </span>Radial DFT Problem<a class="headerlink" href="#radial-dft-problem" title="Permalink to this heading">¶</a></h2>
 <section id="kohn-sham-equations">
-<h3>Kohn-Sham Equations<a class="headerlink" href="#kohn-sham-equations" title="Permalink to this headline">¶</a></h3>
+<h3>Kohn-Sham Equations<a class="headerlink" href="#kohn-sham-equations" title="Permalink to this heading">¶</a></h3>
 <p>For spherically symmetric potentials, we write all eigenfunctions as:</p>
 <div class="math">
 <p><img src="../_images/math/f401ec97a9d87d1641e4e3e4128f47195df66ef8.svg" alt="\psi_{nlm} = R_{nl} Y_{lm}"/></p>
@@ -725,13 +724,13 @@ this approach is often used. One can also prescribe fractional occupation
 numbers (in the Dirac case).</p>
 </section>
 <section id="poisson-equation">
-<h3>Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h3>
+<h3>Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this heading">¶</a></h3>
 <p>Poisson equation becomes:</p>
 <div class="math">
 <p><img src="../_images/math/7a9d09ce1337a97f46e8b0f86af8877e356d7700.svg" alt="V_H''(r) + {2\over r} V_H'(r) = -4\pi n(r)"/></p>
 </div></section>
 <section id="id6">
-<h3>Total Energy<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3>Total Energy<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <p>The total energy is given by:</p>
 <div class="math">
 <p><img src="../_images/math/425c7889cf14304726e1fc6767c9f85156c4e39f.svg" alt="E[n]= T_s[n]+E_H[n]+E_{xc}[n]+V[n]"/></p>
@@ -776,7 +775,7 @@ V[n]=4\pi \int {Z\over r} \rho(r)r^2\, \d r
 </div></section>
 </section>
 <section id="dft-as-a-nonlinear-problem">
-<h2><span class="section-number">8.9.8. </span>DFT As a Nonlinear Problem<a class="headerlink" href="#dft-as-a-nonlinear-problem" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.8. </span>DFT As a Nonlinear Problem<a class="headerlink" href="#dft-as-a-nonlinear-problem" title="Permalink to this heading">¶</a></h2>
 <p>The task is to find such a charge density <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>, so that all the equations below
 hold (e.g. are self-consistent):</p>
 <div class="math">
@@ -792,7 +791,7 @@ V_{xc} = f(n)
 </div><p>This is a standard nonlinear problem, except that the Jacobian is dense, as
 shown below.</p>
 <section id="reformulation">
-<h3>Reformulation<a class="headerlink" href="#reformulation" title="Permalink to this headline">¶</a></h3>
+<h3>Reformulation<a class="headerlink" href="#reformulation" title="Permalink to this heading">¶</a></h3>
 <p>Let’s write everything in terms of <img class="math" src="../_images/math/5911a94afcb1d3a163a13df5aea54642234bd527.svg" alt="\phi_m(x)"/> explicitly:</p>
 <div class="math">
 <p><img src="../_images/math/af3278f7fd570849751b086ff38c912d2b2e8ecb.svg" alt="n(x) = \sum_{m=1}^4 \phi_m^2(x)
@@ -823,7 +822,7 @@ equation:</p>
 \right)\phi_n = \epsilon_n\phi_n,\quad\quad n = 1, 2, \dots, 4"/></p>
 </div></section>
 <section id="fe-discretization">
-<h3>FE Discretization<a class="headerlink" href="#fe-discretization" title="Permalink to this headline">¶</a></h3>
+<h3>FE Discretization<a class="headerlink" href="#fe-discretization" title="Permalink to this heading">¶</a></h3>
 <p>The correspondig discrete problem has the form</p>
 <div class="math">
 <p><img src="../_images/math/23916b871bbf62e5a9da5988943a52bbca692b2f.svg" alt="\int_\Omega \nabla\phi_n(x)\cdot\nabla v_i(x)+\left[
@@ -862,7 +861,7 @@ can then be written in the compact form</p>
 \epsilon_n\phi_n(x) v_i(x) \d x"/></p>
 </div></section>
 <section id="jacobian">
-<h3>Jacobian<a class="headerlink" href="#jacobian" title="Permalink to this headline">¶</a></h3>
+<h3>Jacobian<a class="headerlink" href="#jacobian" title="Permalink to this heading">¶</a></h3>
 <p>The Jacobi matrix has the elements:</p>
 <div class="math">
 <p><img src="../_images/math/2715b542de55862dcddb3cd7c53bd196cfa7e60b.svg" alt="J_{ik} = {\partial F_i\over\partial y_k^{(s)}}"/></p>
@@ -898,13 +897,13 @@ making the Jacobian <img class="math" src="../_images/math/8eec2b4bb7908a313d35a
 </section>
 </section>
 <section id="thomas-fermi-dirac-theory">
-<h2><span class="section-number">8.9.9. </span>Thomas-Fermi-Dirac Theory<a class="headerlink" href="#thomas-fermi-dirac-theory" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.9. </span>Thomas-Fermi-Dirac Theory<a class="headerlink" href="#thomas-fermi-dirac-theory" title="Permalink to this heading">¶</a></h2>
 <p>There are two ways to derive equations for Thomas-Fermi-Dirac theory. One way
 is to start from grand potential and derive all equations from it. The other
 way is to start with low level equations and build our way up. Will start with
 the former.</p>
 <section id="top-down-approach">
-<h3>Top Down Approach<a class="headerlink" href="#top-down-approach" title="Permalink to this headline">¶</a></h3>
+<h3>Top Down Approach<a class="headerlink" href="#top-down-approach" title="Permalink to this heading">¶</a></h3>
 <p>We start with a grand potential for fermions:</p>
 <div class="math">
 <p><img src="../_images/math/8470aa896884355832a511b48923c81e4509cb10.svg" alt="\Omega[\beta, \mu]
@@ -1237,7 +1236,7 @@ N = \int n_e({\bf x})\, \d^3 x
         + E_{en} + E_{ee} + E_{xc} \,."/></p>
 </div></section>
 <section id="bottom-up-approach">
-<h3>Bottom Up Approach<a class="headerlink" href="#bottom-up-approach" title="Permalink to this headline">¶</a></h3>
+<h3>Bottom Up Approach<a class="headerlink" href="#bottom-up-approach" title="Permalink to this heading">¶</a></h3>
 <p>The other way to derive these equations is to use the following considerations.
 The number of states in a box of side <img class="math" src="../_images/math/961a0c55563970ae0b0074c740f76046460c654a.svg" alt="L"/> is given by:</p>
 <div class="math">
@@ -1422,7 +1421,7 @@ of the density:</p>
 </div></section>
 </section>
 <section id="orbital-free-density-functional-theory">
-<h2><span class="section-number">8.9.10. </span>Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.9.10. </span>Orbital Free Density Functional Theory<a class="headerlink" href="#orbital-free-density-functional-theory" title="Permalink to this heading">¶</a></h2>
 <p>The orbital-free electronic free energy is given by:</p>
 <div class="math">
 <p><img src="../_images/math/96f8e741e9a1a721af2f3541a36548e102ca72a2.svg" alt="F_e[n_e] = T_0[n_e] + U_{en}[n_e] + U_{ee}[n_e] + F_{xc}[n_e]\,,"/></p>
@@ -1565,7 +1564,7 @@ Using the relation</p>
 <img class="math" src="../_images/math/08fe0b6ee5124dec338cae143f4fd7e6e573ea86.svg" alt="\tilde H[\psi]"/> expressed using <img class="math" src="../_images/math/324a74caf91c8857598cd0ad4b7cae90eccaffb1.svg" alt="\psi"/> are related by
 <img class="math" src="../_images/math/18a6e3763d524e93610cb89aa981d278908d91ec.svg" alt="\tilde H[\psi] = 2 H[n] \psi"/>.</p>
 <section id="free-energy-minimization">
-<h3>Free Energy Minimization<a class="headerlink" href="#free-energy-minimization" title="Permalink to this headline">¶</a></h3>
+<h3>Free Energy Minimization<a class="headerlink" href="#free-energy-minimization" title="Permalink to this heading">¶</a></h3>
 <p>For clarity, we will be using <img class="math" src="../_images/math/feea33f063ba04b9fa2388c4b347d3dac2af9c7d.svg" alt="H[n]"/> from equation <a class="reference internal" href="#equation-of-dft">(8.9.10.2)</a> as our main
 quantity, but we will also write the final relations using <img class="math" src="../_images/math/08fe0b6ee5124dec338cae143f4fd7e6e573ea86.svg" alt="\tilde H[\psi]"/> for
 completeness.</p>
@@ -1625,25 +1624,29 @@ a function of <img class="math" src="../_images/math/6fb7931886034ccad92f9645797
 </section>
 </section>
 <section id="references">
-<h2><span class="section-number">8.9.11. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<dl class="citation">
-<dt class="label" id="dft"><span class="brackets">DFT</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
-<dd><ol class="upperalpha simple" start="18">
+<h2><span class="section-number">8.9.11. </span>References<a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="dft" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>DFT<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id3">3</a>)</span>
+<ol class="upperalpha simple" start="18">
 <li><ol class="upperalpha simple" start="13">
 <li><p>Dreizler, E. K. U. Gross: Density functional theory: an approach to the quantum many-body problem</p></li>
 </ol>
 </li>
 </ol>
-</dd>
-<dt class="label" id="pickett"><span class="brackets">pickett</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id5">2</a>)</span></dt>
-<dd><ol class="upperalpha simple" start="23">
+</div>
+<div class="citation" id="pickett" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>pickett<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id5">2</a>)</span>
+<ol class="upperalpha simple" start="23">
 <li><ol class="upperalpha simple" start="5">
 <li><p>Pickett, Pseudopotential methods in condensed matter applications, Computer Physics reports, Volume 9, Issue 3, April 1989, Pages 115-197, ISSN 0167-7977, DOI: 10.1016/0167-7977(89)90002-6. (<a class="reference external" href="http://www.sciencedirect.com/science/article/B6X3V-46R02CR-1J/2/804d9ecaa49469aa5e1050dc007f4a61">http://www.sciencedirect.com/science/article/B6X3V-46R02CR-1J/2/804d9ecaa49469aa5e1050dc007f4a61</a>)</p></li>
 </ol>
 </li>
 </ol>
-</dd>
-</dl>
+</div>
+</div>
 </section>
 </section>
 
@@ -1721,7 +1724,7 @@ a function of <img class="math" src="../_images/math/6fb7931886034ccad92f9645797
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1745,7 +1748,7 @@ a function of <img class="math" src="../_images/math/6fb7931886034ccad92f9645797
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

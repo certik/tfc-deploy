@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.38. Ordinary Differential Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <section id="ordinary-differential-equations">
-<h1><span class="section-number">3.38. </span>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.38. </span>Ordinary Differential Equations<a class="headerlink" href="#ordinary-differential-equations" title="Permalink to this heading">¶</a></h1>
 <section id="finite-difference-formulas">
-<h2><span class="section-number">3.38.1. </span>Finite Difference Formulas<a class="headerlink" href="#finite-difference-formulas" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.38.1. </span>Finite Difference Formulas<a class="headerlink" href="#finite-difference-formulas" title="Permalink to this heading">¶</a></h2>
 <p>We define the backward difference operator <img class="math" src="../_images/math/a6f6af81f493da0061b26117e1f60a9df5cd4e39.svg" alt="\nabla_h"/> by:</p>
 <div class="math">
 <p><img src="../_images/math/5a04562425c1ff0f42c2c594fbac12ba29b05d4a.svg" alt="\nabla_h f(a) = f(a) - f(a-h)"/></p>
@@ -186,7 +185,7 @@ either left (<img class="math" src="../_images/math/838fc16b2dd53925bcc19a4a2923
 </div>
 </section>
 <section id="integrating-ode">
-<h2><span class="section-number">3.38.2. </span>Integrating ODE<a class="headerlink" href="#integrating-ode" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.38.2. </span>Integrating ODE<a class="headerlink" href="#integrating-ode" title="Permalink to this heading">¶</a></h2>
 <p>Set of linear ODEs can be written in the form:</p>
 <div class="math" id="equation-ode-eq">
 <p><span class="eqno">(3.38.2.1)<a class="headerlink" href="#equation-ode-eq" title="Permalink to this equation">¶</a></span><img src="../_images/math/337b38de8b52eb215fd6d4378fc36db8b977c1c4.svg" alt="{\d y\over\d r} = G y"/></p>
@@ -222,7 +221,7 @@ above we get:</p>
 integral, see the previous section.</p>
 </section>
 <section id="radial-poisson-equation">
-<h2><span class="section-number">3.38.3. </span>Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.38.3. </span>Radial Poisson Equation<a class="headerlink" href="#radial-poisson-equation" title="Permalink to this heading">¶</a></h2>
 <p>Radial Poisson equation is:</p>
 <div class="math" id="equation-poisson-v">
 <p><span class="eqno">(3.38.3.1)<a class="headerlink" href="#equation-poisson-v" title="Permalink to this equation">¶</a></span><img src="../_images/math/430b0bb0bd11952c00e2e649982c705a3867ca6a.svg" alt="V''(r) + {2\over r} V'(r) = -4\pi n(r)"/></p>
@@ -356,11 +355,11 @@ V_5 = - {4\pi n_3\over 30} = -{2\pi\over 15} n_3
 V' = -{4\pi\over 3} n_0 r -\pi n_1 r^2-{4\pi\over 5} n_2 r^3
     -{2\pi\over 3} n_3 r^4 - \cdots"/></p>
 </div><section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h3>
 <p>It is useful to have analytic solutions to test the numerical solvers. Here we
 present a few.</p>
 <section id="gaussian-charge">
-<h4>Gaussian Charge<a class="headerlink" href="#gaussian-charge" title="Permalink to this headline">¶</a></h4>
+<h4>Gaussian Charge<a class="headerlink" href="#gaussian-charge" title="Permalink to this heading">¶</a></h4>
 <p>The Gaussian charge is simply a Gaussian, normalized in such a way that the
 total charge is <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/>:</p>
 <div class="math" id="equation-gauss-charge">
@@ -431,7 +430,7 @@ charge <img class="math" src="../_images/math/5b66743f1870ac134a4a9e3dc7af89cfa0
 </div>
 </section>
 <section id="exponential-charge">
-<h4>Exponential Charge<a class="headerlink" href="#exponential-charge" title="Permalink to this headline">¶</a></h4>
+<h4>Exponential Charge<a class="headerlink" href="#exponential-charge" title="Permalink to this heading">¶</a></h4>
 <p>The exponential charge is simply an exponential, normalized in such a way that
 the total charge is <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/>:</p>
 <div class="math" id="equation-exp-charge">
@@ -516,7 +515,7 @@ r^2 \d r =
 </div>
 </section>
 <section id="piecewise-polynomial-charge">
-<h4>Piecewise Polynomial Charge<a class="headerlink" href="#piecewise-polynomial-charge" title="Permalink to this headline">¶</a></h4>
+<h4>Piecewise Polynomial Charge<a class="headerlink" href="#piecewise-polynomial-charge" title="Permalink to this heading">¶</a></h4>
 <p>We will use a second-derivative continuous piecewise polynomial for <img class="math" src="../_images/math/81c0fc2b8253bda6b26f2d2a8dc06a982d2966fa.svg" alt="n(r)"/>,
 normalized in such a way that the total charge is <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/>:</p>
 <div class="math" id="equation-poly-charge">
@@ -668,11 +667,13 @@ sphere of radius <img class="math" src="../_images/math/ddb32dbcb3d2f906ff6e454e
 <span class="go">10976*Z**2/(17875*r_c)</span>
 </pre></div>
 </div>
-<dl class="citation">
-<dt class="label" id="pask2012"><span class="brackets">Pask2012</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>Pask, J. E., Sukumar, N., Mousavi, S. E. (2012). Linear scaling solution of the all-electron Coulomb problem in solids. International Journal for Multiscale Computational Engineering, 10(1), 83–99.  doi:10.1615/IntJMultCompEng.2011002201</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="pask2012" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Pask2012<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>)</span>
+<p>Pask, J. E., Sukumar, N., Mousavi, S. E. (2012). Linear scaling solution of the all-electron Coulomb problem in solids. International Journal for Multiscale Computational Engineering, 10(1), 83–99.  doi:10.1615/IntJMultCompEng.2011002201</p>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -731,7 +732,7 @@ sphere of radius <img class="math" src="../_images/math/ddb32dbcb3d2f906ff6e454e
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -755,7 +756,7 @@ sphere of radius <img class="math" src="../_images/math/ddb32dbcb3d2f906ff6e454e
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

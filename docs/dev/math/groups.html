@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.36. Groups &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,13 +74,13 @@
           <div class="body" role="main">
             
   <section id="groups">
-<h1><span class="section-number">3.36. </span>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.36. </span>Groups<a class="headerlink" href="#groups" title="Permalink to this heading">¶</a></h1>
 <p>These are notes of Karel Výborný and Ondřej Čertík on the group theory as a
 result of the first VDNK (Výprava do neznámých krajů) held between October 30
 and November 2, 2006 in Prague.  So that the next time we look at it we should
 be able to quickly recover our forgotten ideas.</p>
 <section id="theory">
-<h2><span class="section-number">3.36.1. </span>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.36.1. </span>Theory<a class="headerlink" href="#theory" title="Permalink to this heading">¶</a></h2>
 <p>Definition of a group:</p>
 <blockquote>
 <div><ul class="simple">
@@ -93,7 +92,7 @@ be able to quickly recover our forgotten ideas.</p>
 </div></blockquote>
 <p>Every finite group is isomorphic to a subgroup of <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/> (permutations).</p>
 <section id="representation">
-<h3>Representation<a class="headerlink" href="#representation" title="Permalink to this headline">¶</a></h3>
+<h3>Representation<a class="headerlink" href="#representation" title="Permalink to this heading">¶</a></h3>
 <p>Set of linear operators <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/> (for each <img class="math" src="../_images/math/82f462ffe45316d31057f829a6b76a0f299194d3.svg" alt="x\in G"/> there is one <img class="math" src="../_images/math/6346ee53ef56aed7b0d73988c1d237d6a0d5bb0f.svg" alt="T(x)"/>)</p>
 <div class="math">
 <p><img src="../_images/math/b9fb28fbc1bf8beaf6deb88abe5ef1303dbbc5d0.svg" alt="T(x)T(y)=T(xy),\quad T(e)={\hbox{\dsrom 1}}\,."/></p>
@@ -163,7 +162,7 @@ the reduction.</p>
 </div><p>where <img class="math" src="../_images/math/2d27c42f3ebeb8b80430a2597164f63c58738be5.svg" alt="c_p"/> is the number of elements in the class <img class="math" src="../_images/math/5c1c36d27e644f8fe00b58ddfc901826b621f5ef.svg" alt="p"/>, <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> is the number of
 elements in <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/> (the order of the group).</p>
 <section id="example">
-<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h4>
 <p>Consider the <img class="math" src="../_images/math/c2df94f7698ff23f40599a1225c941567ce77027.svg" alt="S_3"/> permutation group. The character table is:</p>
 <div class="math">
 <p><img src="../_images/math/6ba40aa983b182034beb6852f1f7fb60be85d8c3.svg" alt="\begin{array}{c|ccc}
@@ -237,7 +236,7 @@ a = b = c = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}."/></p>
 </section>
 </section>
 <section id="other-facts">
-<h3>Other facts<a class="headerlink" href="#other-facts" title="Permalink to this headline">¶</a></h3>
+<h3>Other facts<a class="headerlink" href="#other-facts" title="Permalink to this heading">¶</a></h3>
 <p>Number of irreducible representations <img class="math" src="../_images/math/a7ac89f5a659587416f09734559d4aaafde09535.svg" alt="="/> the number of classes.</p>
 <dl>
 <dt>Regular representation of <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/>:</dt><dd><p>Take <img class="math" src="../_images/math/9e8686cdc8c5c68d79cf4ad0655057fd9b022fa8.svg" alt="R^n"/> with <img class="math" src="../_images/math/a57d1a9f7d4a266765258d9b7a714647540b9ebe.svg" alt="n=\# G"/> and assign a canonical basis to the elements <img class="math" src="../_images/math/3b08cb1ede65b17f07bcee41960c594852d134fa.svg" alt="g_i"/>
@@ -288,7 +287,7 @@ of the two vector spaces. Product of IRs need not be an IR. Most prominent
 example: adding of angular momenta.</p>
 </section>
 <section id="interesting-examples">
-<h3>Interesting examples<a class="headerlink" href="#interesting-examples" title="Permalink to this headline">¶</a></h3>
+<h3>Interesting examples<a class="headerlink" href="#interesting-examples" title="Permalink to this heading">¶</a></h3>
 <p><img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/16b9e52a05333277d0048b663b43ca61cc0ef463.svg" alt="T_d"/> (see <a class="reference internal" href="#point-groups"><span class="std std-ref">Crystallographic Point Groups</span></a>) are isomorphic to <img class="math" src="../_images/math/f2c06db5b193410fc72e9e6d5b6ac8cd45eb9e46.svg" alt="S_4"/> (p. 35
 in <a class="reference internal" href="#sternberg" id="id5"><span>[Sternberg]</span></a>). Written as matrices in 3D,
 they are 3D representations. Since <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> has only <img class="math" src="../_images/math/5c804ca028f9a8ae8b7f2138514c8796f8ed88f6.svg" alt="\det A=1"/> matrices unlike
@@ -321,7 +320,7 @@ not possible.</p>
 </section>
 </section>
 <section id="crystallographic-point-groups">
-<span id="point-groups"></span><h2><span class="section-number">3.36.2. </span>Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this headline">¶</a></h2>
+<span id="point-groups"></span><h2><span class="section-number">3.36.2. </span>Crystallographic Point Groups<a class="headerlink" href="#crystallographic-point-groups" title="Permalink to this heading">¶</a></h2>
 <p>Point group is a subgroup of O(3).</p>
 <p>Crystallographic point groups are all subgroups of <img class="math" src="../_images/math/2513987bf28e923f7aa61590402e8dc742e1ef1b.svg" alt="O(3)"/>, which leave a
 monoatomic crystal lattice invariant. Those can be symmetries of an infinite
@@ -382,7 +381,7 @@ of <img class="math" src="../_images/math/2513987bf28e923f7aa61590402e8dc742e1ef
 (all symm. of a cube) is 2) made of <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/16b9e52a05333277d0048b663b43ca61cc0ef463.svg" alt="T_d"/> (all symm. of a tetrahedron)
 is 3) made of 1).</p>
 <section id="zoology">
-<h3>Zoology<a class="headerlink" href="#zoology" title="Permalink to this headline">¶</a></h3>
+<h3>Zoology<a class="headerlink" href="#zoology" title="Permalink to this heading">¶</a></h3>
 <p>Schönflies notation: <img class="math" src="../_images/math/c6919afb2bbfe8ad96f8f76284b65ce8febbb69b.svg" alt="C_n"/> is an <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>–fold rotation (<img class="math" src="../_images/math/63819f51c8d667629011ee03d2432641d83e8621.svg" alt="2_z"/>, <img class="math" src="../_images/math/35d51271b0a0969434e3e2aab87cba4caa9da22c.svg" alt="3_z"/> …)
 group (planar polygon), <img class="math" src="../_images/math/01c7cac6725fc611d2a1e2b71e0ee63ae669ea30.svg" alt="D_n"/> is a diedric group, i.e. <img class="math" src="../_images/math/c6919afb2bbfe8ad96f8f76284b65ce8febbb69b.svg" alt="C_n"/> plus
 turn-the-page two-fold rotations (e.g. <img class="math" src="../_images/math/95872e87d203e3957c75b27208d64e39faaeb58b.svg" alt="2_x"/>, <img class="math" src="../_images/math/b66c89b1b19dee1306777be52af340f353987c55.svg" alt="2_\perp"/>), <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>, <img class="math" src="../_images/math/9751f575c2b99366396bc56df6f72e177dac0f45.svg" alt="O"/> and <img class="math" src="../_images/math/0913e8ceeb1d494510842d10c091d5783ff4c4a2.svg" alt="I"/>
@@ -400,7 +399,7 @@ two-fold rotation around <img class="math" src="../_images/math/74d80b1f87543742
 by <img class="math" src="../_images/math/4b02947ee7970037727a3a7623e7d9ac6bda638b.svg" alt="-I"/>. <img class="math" src="../_images/math/fee27919b09e6f71b07ba5fa7f12f1b20f7c03fb.svg" alt="3(2_\perp)"/> means three different two-fold axes <img class="math" src="../_images/math/b66c89b1b19dee1306777be52af340f353987c55.svg" alt="2_\perp"/>.</p>
 </section>
 <section id="construction-and-usage-of-the-character-table">
-<h3>Construction and usage of the character table<a class="headerlink" href="#construction-and-usage-of-the-character-table" title="Permalink to this headline">¶</a></h3>
+<h3>Construction and usage of the character table<a class="headerlink" href="#construction-and-usage-of-the-character-table" title="Permalink to this heading">¶</a></h3>
 <p>For simpler groups the character tables can be fully constructed by the
 following rules:</p>
 <ol class="arabic">
@@ -470,7 +469,7 @@ is no symmetry axis, all one-dimensional representations are labeled <img class=
 <p>For general information, see <a class="reference internal" href="#elliott" id="id16"><span>[Elliott]</span></a> (sec. 4.15, page 67) and <a class="reference internal" href="#bishop" id="id17"><span>[Bishop]</span></a>, page
 128.</p>
 <section id="example-i">
-<h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h4>
+<h4>Example I<a class="headerlink" href="#example-i" title="Permalink to this heading">¶</a></h4>
 <p>Let’s take the group <img class="math" src="../_images/math/069511d251782d0241bcd17946df502283937fd7.svg" alt="C_{3v}"/>, which has three classes <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> (1 element),
 <img class="math" src="../_images/math/19e2a1c61d60314d60d0781dc99296ddee20b4d6.svg" alt="C_3"/> (2 elements) and <img class="math" src="../_images/math/8ca3ed4d58b7afdc6ed0be2633546d767313d05a.svg" alt="\sigma_v"/> (3 elements).</p>
 <p>So <img class="math" src="../_images/math/f9e92a5b20c4a253346ad1daa2a9ae715a61273a.svg" alt="g_1=1"/>, <img class="math" src="../_images/math/7f7841c50efde935fab6901129f7d76d7e5abc00.svg" alt="g_2=2"/> and <img class="math" src="../_images/math/7e43a76bb80e0a1d6d382e06b53cc17154372671.svg" alt="g_3=3"/> and the order is
@@ -655,7 +654,7 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 </div>
 </section>
 <section id="example-ii">
-<h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h4>
+<h4>Example II<a class="headerlink" href="#example-ii" title="Permalink to this heading">¶</a></h4>
 <p>We derive the character table for <img class="math" src="../_images/math/069511d251782d0241bcd17946df502283937fd7.svg" alt="C_{3v}"/> again, using another approach.
 First we determine the element orders, that must divide the size of the group
 (possible values are 1, 2, 3, 6). Element order of the class <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> is 1, because
@@ -706,7 +705,7 @@ C_{3v} &amp; E &amp; 2 C_3 &amp; 3 \sigma_v \\
 \end{array}"/></p>
 </div></section>
 <section id="example-iii">
-<h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h4>
+<h4>Example III<a class="headerlink" href="#example-iii" title="Permalink to this heading">¶</a></h4>
 <p>We derive the character table for <img class="math" src="../_images/math/73050221e3ea4ea958e9e81a76a1750bdaf30b38.svg" alt="C_2"/>.</p>
 <div class="math">
 <p><img src="../_images/math/3a201a2ecb44df85075b058fdd9b383f22943cfd.svg" alt="\begin{array}{c|ccc}
@@ -731,7 +730,7 @@ C_2 &amp; E &amp; C_2 \\
 \end{array}"/></p>
 </div></section>
 <section id="example-iv">
-<h4>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h4>
+<h4>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this heading">¶</a></h4>
 <p>We derive the character table for <img class="math" src="../_images/math/19e2a1c61d60314d60d0781dc99296ddee20b4d6.svg" alt="C_3"/>.</p>
 <div class="math">
 <p><img src="../_images/math/ebe1174d24932aef5978bf4d3c81c3bbebea723c.svg" alt="\begin{array}{c|ccc}
@@ -780,7 +779,7 @@ C_3 &amp; E &amp; C_3 &amp; C_3^2 \\
 \omega = e^{2\pi i \over 3} = {-1+i\sqrt 3 \over 2}"/></p>
 </div></section>
 <section id="example-v">
-<h4>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h4>
+<h4>Example V<a class="headerlink" href="#example-v" title="Permalink to this heading">¶</a></h4>
 <p>Group <img class="math" src="../_images/math/b133471c27e14f95849c46020934513df26a4b4c.svg" alt="C_4"/>:</p>
 <div class="math">
 <p><img src="../_images/math/bcd55c61d4fc2750813bbb774af8a50349402422.svg" alt="\begin{array}{c|cccc}
@@ -842,7 +841,7 @@ C_4 &amp; E &amp; C_4 &amp; C_4^2 &amp; C_4^3 \\
 \end{array}"/></p>
 </div></section>
 <section id="example-vi">
-<h4>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this headline">¶</a></h4>
+<h4>Example VI<a class="headerlink" href="#example-vi" title="Permalink to this heading">¶</a></h4>
 <p>Group <img class="math" src="../_images/math/932c246c410f1e03fc9d418f01d825c13c4d0442.svg" alt="T"/>:</p>
 <div class="math">
 <p><img src="../_images/math/a6e0bec3c8aa83b76bfcf515359deeb347ee2a6f.svg" alt="\begin{array}{c|cccc}
@@ -889,9 +888,9 @@ T &amp; E &amp; 4 C_3 &amp; 4 C_3^2 &amp; 3 C_2 \\
 </section>
 </section>
 <section id="applications-of-finite-groups">
-<h2><span class="section-number">3.36.3. </span>Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.36.3. </span>Applications of finite groups<a class="headerlink" href="#applications-of-finite-groups" title="Permalink to this heading">¶</a></h2>
 <section id="distinct-energy-levels-vibrations">
-<h3>Distinct energy levels (‘vibrations’)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this headline">¶</a></h3>
+<h3>Distinct energy levels (‘vibrations’)<a class="headerlink" href="#distinct-energy-levels-vibrations" title="Permalink to this heading">¶</a></h3>
 <p>Assume that we know number of atoms in a molecule and measure the number of
 its distinct vibrational modes (frequencies) in a multiplet. We want to know
 its symmetry.</p>
@@ -904,7 +903,7 @@ because of something and (b) two multiplets (<img class="math" src="../_images/m
 accidentally happen to have the same frequencies (‘accidental degeneracy’).</p>
 </section>
 <section id="selection-rules-transitions">
-<h3>Selection rules (‘transitions’)<a class="headerlink" href="#selection-rules-transitions" title="Permalink to this headline">¶</a></h3>
+<h3>Selection rules (‘transitions’)<a class="headerlink" href="#selection-rules-transitions" title="Permalink to this heading">¶</a></h3>
 <p>According to <a class="reference internal" href="#pilar" id="id18"><span>[Pilar]</span></a>, p. 572.</p>
 <p>Probability of an optical transition is proportional to</p>
 <div class="math" id="equation-eq-1-2">
@@ -929,7 +928,7 @@ depending probably on the polarization of light), the Raman scattering has
 <img class="math" src="../_images/math/aa2c9eed7574e6ef825b21ef3fdf07f8f6863062.svg" alt="H_1\propto x^2"/> (it comes from the second order perturbation theory?).</p>
 </section>
 <section id="id19">
-<h3>Zoology<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<h3>Zoology<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
 <p>Todo:</p>
 <ul class="simple">
 <li><p>Describe the representations <img class="math" src="../_images/math/5307aad0fa2009ed05ecb28f3537f9d7e4b93187.svg" alt="A_1"/>, <img class="math" src="../_images/math/16bbb8628f71d55b824bf47d07daf60fce3f8a46.svg" alt="A_2"/>, <img class="math" src="../_images/math/aa68fc3b7227a5e61ef388fedcc281e9c3572b1b.svg" alt="B_1"/>, <img class="math" src="../_images/math/b612343772caac6cfb5771ef755ef11f37d794f2.svg" alt="E"/> etc.</p></li>
@@ -943,9 +942,9 @@ commonly used (<img class="math" src="../_images/math/74d80b1f8754374202dc72f351
 </section>
 </section>
 <section id="continuous-groups">
-<h2><span class="section-number">3.36.4. </span>Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.36.4. </span>Continuous Groups<a class="headerlink" href="#continuous-groups" title="Permalink to this heading">¶</a></h2>
 <section id="lie-groups-algebras">
-<h3>Lie groups+algebras<a class="headerlink" href="#lie-groups-algebras" title="Permalink to this headline">¶</a></h3>
+<h3>Lie groups+algebras<a class="headerlink" href="#lie-groups-algebras" title="Permalink to this heading">¶</a></h3>
 <p>A continuous group with metrics is a Lie group (more exactly a differentiable
 manifold and <img class="math" src="../_images/math/cd9f7f7483f686a1d9a410f31ed2c2b3ee9ec66a.svg" alt="a\mapsto ag"/> and <img class="math" src="../_images/math/5803af35a75cd91fb0472336737d27a8a5a0137d.svg" alt="a\mapsto a^{-1}"/> are differentiable <img class="math" src="../_images/math/c8c7ea798a669cb140d500a253aa17eb12841c80.svg" alt="\forall
 g"/>, p. 172 in <a class="reference internal" href="#sternberg" id="id20"><span>[Sternberg]</span></a>) usually a subgroup of <img class="math" src="../_images/math/20dccefb8976ecfb3130140fe249211fc90b0ff9.svg" alt="GL(n)"/> is meant, a
@@ -971,7 +970,7 @@ objects instead of infinitely many in the example above.</p>
 <p>Todo: weights, roots and Dynkin diagrams. Octets and decuplets. Classification
 of IRs of <img class="math" src="../_images/math/19a4243fab3537a07c8b8864dd9f4a2b11e9382a.svg" alt="SU(n)"/>. From <a class="reference internal" href="#georgi" id="id23"><span>[Georgi]</span></a>.</p>
 <section id="irs-of-su-2">
-<h4>IRs of SU(2)<a class="headerlink" href="#irs-of-su-2" title="Permalink to this headline">¶</a></h4>
+<h4>IRs of SU(2)<a class="headerlink" href="#irs-of-su-2" title="Permalink to this heading">¶</a></h4>
 <ol class="loweralpha simple" start="16">
 <li><p>181 in <a class="reference internal" href="#sternberg" id="id24"><span>[Sternberg]</span></a>; alternative somewhere in <a class="reference internal" href="#georgi" id="id25"><span>[Georgi]</span></a>.</p></li>
 </ol>
@@ -992,7 +991,7 @@ only be</p>
 </section>
 </section>
 <section id="young-diagrams">
-<h3>Young diagrams<a class="headerlink" href="#young-diagrams" title="Permalink to this headline">¶</a></h3>
+<h3>Young diagrams<a class="headerlink" href="#young-diagrams" title="Permalink to this heading">¶</a></h3>
 <p>YD is a systematic method to find all IRs of any symmetric group <img class="math" src="../_images/math/6bf1d2a8242466e2a0c6b1a31a4ef0a05cda9253.svg" alt="S_n"/>
 (permutations of an <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/>-element set). The idea:</p>
 <ul class="simple">
@@ -1020,43 +1019,57 @@ Basis of <img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae
 </section>
 </section>
 <section id="literature">
-<h2><span class="section-number">3.36.5. </span>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.36.5. </span>Literature<a class="headerlink" href="#literature" title="Permalink to this heading">¶</a></h2>
 <p>Books:</p>
-<dl class="citation">
-<dt class="label" id="birss"><span class="brackets">Birss</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id11">2</a>)</span></dt>
-<dd><p>Birss, R.R. (1961). Symmetry and Magnetism. Volume III.  North-Holland Publishing Company.</p>
-</dd>
-<dt class="label" id="bishop"><span class="brackets"><a class="fn-backref" href="#id17">Bishop</a></span></dt>
-<dd><p>Bishop D.M. (1993). Group theory and chemistry. Courier Dover Publications.</p>
-</dd>
-<dt class="label" id="elliott"><span class="brackets">Elliott</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id16">2</a>)</span></dt>
-<dd><p>Elliott, J.P. and Dawber, P.G. (1979). Symmetry in Physics. The Macmillan Press Ltd.</p>
-</dd>
-<dt class="label" id="georgi"><span class="brackets">Georgi</span><span class="fn-backref">(<a href="#id23">1</a>,<a href="#id25">2</a>)</span></dt>
-<dd><p>Georgi, H. (1990). Lie Algebras in Particle Physics. Addison-Wesley.</p>
-</dd>
-<dt class="label" id="pilar"><span class="brackets"><a class="fn-backref" href="#id18">Pilar</a></span></dt>
-<dd><p>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw–Hill.</p>
-</dd>
-<dt class="label" id="sternberg"><span class="brackets">Sternberg</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id3">2</a>,<a href="#id4">3</a>,<a href="#id5">4</a>,<a href="#id6">5</a>,<a href="#id7">6</a>,<a href="#id9">7</a>,<a href="#id10">8</a>,<a href="#id20">9</a>,<a href="#id21">10</a>,<a href="#id22">11</a>,<a href="#id24">12</a>,<a href="#id26">13</a>,<a href="#id27">14</a>,<a href="#id28">15</a>)</span></dt>
-<dd><p>Sternberg, S. (1994). Group theory and physics. Cambridge University Press</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="birss" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Birss<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id8">1</a>,<a role="doc-backlink" href="#id11">2</a>)</span>
+<p>Birss, R.R. (1961). Symmetry and Magnetism. Volume III.  North-Holland Publishing Company.</p>
+</div>
+<div class="citation" id="bishop" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">Bishop</a><span class="fn-bracket">]</span></span>
+<p>Bishop D.M. (1993). Group theory and chemistry. Courier Dover Publications.</p>
+</div>
+<div class="citation" id="elliott" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Elliott<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id16">2</a>)</span>
+<p>Elliott, J.P. and Dawber, P.G. (1979). Symmetry in Physics. The Macmillan Press Ltd.</p>
+</div>
+<div class="citation" id="georgi" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Georgi<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id23">1</a>,<a role="doc-backlink" href="#id25">2</a>)</span>
+<p>Georgi, H. (1990). Lie Algebras in Particle Physics. Addison-Wesley.</p>
+</div>
+<div class="citation" id="pilar" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id18">Pilar</a><span class="fn-bracket">]</span></span>
+<p>Pilar, F.L. (1990). Elementary Quantum Chemistry, McGraw–Hill.</p>
+</div>
+<div class="citation" id="sternberg" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Sternberg<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id4">3</a>,<a role="doc-backlink" href="#id5">4</a>,<a role="doc-backlink" href="#id6">5</a>,<a role="doc-backlink" href="#id7">6</a>,<a role="doc-backlink" href="#id9">7</a>,<a role="doc-backlink" href="#id10">8</a>,<a role="doc-backlink" href="#id20">9</a>,<a role="doc-backlink" href="#id21">10</a>,<a role="doc-backlink" href="#id22">11</a>,<a role="doc-backlink" href="#id24">12</a>,<a role="doc-backlink" href="#id26">13</a>,<a role="doc-backlink" href="#id27">14</a>,<a role="doc-backlink" href="#id28">15</a>)</span>
+<p>Sternberg, S. (1994). Group theory and physics. Cambridge University Press</p>
+</div>
+</div>
 <p>Articles:</p>
-<dl class="citation">
-<dt class="label" id="blokker72"><span class="brackets"><a class="fn-backref" href="#id13">Blokker72</a></span></dt>
-<dd><p>Blokker, E. International journal of quantum chemistry VI, 925, (1972)</p>
-</dd>
-<dt class="label" id="cannon69"><span class="brackets"><a class="fn-backref" href="#id14">Cannon69</a></span></dt>
-<dd><p>Cannon, J.J. Communications of the association for computing machinery, <strong>12</strong>, 3 (1969)</p>
-</dd>
-<dt class="label" id="chillag86"><span class="brackets"><a class="fn-backref" href="#id15">Chillag86</a></span></dt>
-<dd><p>Chillag, D. (1986). Character Values of Finite Groups as Eigenvalues Of Nonnegative Integer Matrices. Proceedings of the American Mathematical Society, 97(3), 565-567.</p>
-</dd>
-<dt class="label" id="dixon67"><span class="brackets"><a class="fn-backref" href="#id12">Dixon67</a></span></dt>
-<dd><p>Dixon, J.D. Numerische Mathematik <strong>10</strong>, 446 (1967)</p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="blokker72" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">Blokker72</a><span class="fn-bracket">]</span></span>
+<p>Blokker, E. International journal of quantum chemistry VI, 925, (1972)</p>
+</div>
+<div class="citation" id="cannon69" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id14">Cannon69</a><span class="fn-bracket">]</span></span>
+<p>Cannon, J.J. Communications of the association for computing machinery, <strong>12</strong>, 3 (1969)</p>
+</div>
+<div class="citation" id="chillag86" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">Chillag86</a><span class="fn-bracket">]</span></span>
+<p>Chillag, D. (1986). Character Values of Finite Groups as Eigenvalues Of Nonnegative Integer Matrices. Proceedings of the American Mathematical Society, 97(3), 565-567.</p>
+</div>
+<div class="citation" id="dixon67" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">Dixon67</a><span class="fn-bracket">]</span></span>
+<p>Dixon, J.D. Numerische Mathematik <strong>10</strong>, 446 (1967)</p>
+</div>
+</div>
 </section>
 </section>
 
@@ -1139,7 +1152,7 @@ Basis of <img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1163,7 +1176,7 @@ Basis of <img class="math" src="../_images/math/e5906fbf37a9bce75a7aecf9be2332ae
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

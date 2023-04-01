@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>8.8. Radial Schrödinger and Dirac Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <section id="radial-schrodinger-and-dirac-equations">
-<h1><span class="section-number">8.8. </span>Radial Schrödinger and Dirac Equations<a class="headerlink" href="#radial-schrodinger-and-dirac-equations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">8.8. </span>Radial Schrödinger and Dirac Equations<a class="headerlink" href="#radial-schrodinger-and-dirac-equations" title="Permalink to this heading">¶</a></h1>
 <section id="variational-formulation-of-the-schrodinger-equation">
-<h2><span class="section-number">8.8.1. </span>Variational Formulation of the Schrödinger equation<a class="headerlink" href="#variational-formulation-of-the-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.1. </span>Variational Formulation of the Schrödinger equation<a class="headerlink" href="#variational-formulation-of-the-schrodinger-equation" title="Permalink to this heading">¶</a></h2>
 <p>Lagrangian is:</p>
 <div class="math">
 <p><img src="../_images/math/ec15bfd324355d0ff6331c80ebce4b442a46e759.svg" alt="\L(\psi) = \half (\nabla \psi)^2 + V(x) \psi^2(x)"/></p>
@@ -105,7 +104,7 @@
 <p><img src="../_images/math/40246b8b8fa55ecb37aa9f220724fc5aee0903d9.svg" alt="\delta F[\psi] \equiv \left.{\d\over\d\epsilon}F[\psi + \epsilon \delta\psi]
     \right|_{\epsilon=0}"/></p>
 </div><section id="weak-formulation">
-<h3>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h3>
+<h3>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this heading">¶</a></h3>
 <p>The weak formulation is obtained from the above by substituting <img class="math" src="../_images/math/baae99d654886c4adc0f41d11816766d48e977f8.svg" alt="\delta\psi
 \to v"/> (the test function) so we get:</p>
 <div class="math">
@@ -113,11 +112,11 @@
 </div></section>
 </section>
 <section id="radial-schrodinger-equation">
-<h2><span class="section-number">8.8.2. </span>Radial Schrödinger equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.2. </span>Radial Schrödinger equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this heading">¶</a></h2>
 <p>There are two ways to obtain the radial Schrödinger equation. Either from the
 Lagrangian, or from the equation itself.</p>
 <section id="from-the-equation">
-<h3>From the Equation<a class="headerlink" href="#from-the-equation" title="Permalink to this headline">¶</a></h3>
+<h3>From the Equation<a class="headerlink" href="#from-the-equation" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/7c1c949d7d236613a4735d073e0c6e744ef23204.svg" alt="-{1\over2}\nabla^2\psi({\bf x})+V(r)\psi({\bf x})=E\psi({\bf x})"/></p>
 </div><p>The way to solve it is to separate the equation into radial and angular parts
@@ -145,7 +144,7 @@ Schrödinger equation:</p>
   = \int R^2 \rho^2 \d \rho"/></p>
 </div></section>
 <section id="from-the-lagrangian">
-<h3>From the Lagrangian<a class="headerlink" href="#from-the-lagrangian" title="Permalink to this headline">¶</a></h3>
+<h3>From the Lagrangian<a class="headerlink" href="#from-the-lagrangian" title="Permalink to this heading">¶</a></h3>
 <p>We need to convert the Lagrangian to spherical coordinates. In order to easily
 make sure we do things covariantly, we start from the action (which is a
 scalar):</p>
@@ -184,7 +183,7 @@ R\right)\delta R \,\d \rho + [\rho^2 R' \delta R]^a_b"/></p>
 </div><p>In agreement with the previous result.</p>
 </section>
 <section id="solving-for-u-rr">
-<h3>Solving for u=rR<a class="headerlink" href="#solving-for-u-rr" title="Permalink to this headline">¶</a></h3>
+<h3>Solving for u=rR<a class="headerlink" href="#solving-for-u-rr" title="Permalink to this heading">¶</a></h3>
 <p>We can also make the substitution <img class="math" src="../_images/math/aaf7acf0a67c4bd7d165e6c5676c249256e999db.svg" alt="u = rR"/> and solve for <img class="math" src="../_images/math/c61aec4d9c8bdc7207e0fad2a5af55160ff21add.svg" alt="u"/>:</p>
 <div class="math">
 <p><img src="../_images/math/754a9884ea08f12eac1d33252eb3ceb423d74326.svg" alt="R = {u\over r}
@@ -200,7 +199,7 @@ R' = {u'\over r} - {u\over r^2}"/></p>
 -\half u''+ \left(V + {l(l+1)\over 2 r^2}\right) u = \epsilon u"/></p>
 </div></section>
 <section id="perturbative-correction-to-energy">
-<h3>Perturbative Correction to Energy<a class="headerlink" href="#perturbative-correction-to-energy" title="Permalink to this headline">¶</a></h3>
+<h3>Perturbative Correction to Energy<a class="headerlink" href="#perturbative-correction-to-energy" title="Permalink to this heading">¶</a></h3>
 <p>We introduce <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> by <img class="math" src="../_images/math/fe39b8d75bbf745479865cf0f51966bd0a5063e2.svg" alt="P(r) = u(r)"/> and <img class="math" src="../_images/math/4752daba7f386715de81d3f16eaa4245233c2785.svg" alt="Q(r) = P'(r) = u'(r)"/>. The
 radial Schrödinger equation is then:</p>
 <div class="math">
@@ -279,7 +278,7 @@ correction to the energy is small enough).</p>
 calculated using both <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> (as usual for the Dirac equation).</p>
 </section>
 <section id="id1">
-<h3>Weak Formulation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>Weak Formulation<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <p>The weak formulation is obtained from the action above by substituting <img class="math" src="../_images/math/efa4391c8e1a33edc9c42ac4ddaa8edb7a34dc10.svg" alt="\delta R
 \to v"/> (the test function) so we get:</p>
 <div class="math">
@@ -313,7 +312,7 @@ This is equivalent to either letting <img class="math" src="../_images/math/0187
 derivative of the radial wave function at <img class="math" src="../_images/math/176491867d42bcba67e7d0fe56094e8fdd8807fe.svg" alt="a"/>) or we set <img class="math" src="../_images/math/91a33871b84a0bfa8022d294f5f00a8ce5151d6e.svg" alt="v(a)=0"/> (which
 corresponds to zero Dirichlet condition for <img class="math" src="../_images/math/4fe1885a18460fa5f70897676c7e3a671509daa6.svg" alt="R"/>, i.e. setting <img class="math" src="../_images/math/85c8cc4bb0cbc0d5cc93dad1b59db67684ab727b.svg" alt="R(a)=0"/>).</p>
 <section id="weak-formulation-for-u">
-<h4>Weak Formulation for u<a class="headerlink" href="#weak-formulation-for-u" title="Permalink to this headline">¶</a></h4>
+<h4>Weak Formulation for u<a class="headerlink" href="#weak-formulation-for-u" title="Permalink to this heading">¶</a></h4>
 <div class="math">
 <p><img src="../_images/math/6a4c80c2de120452a61d888974baef0ae4d80815.svg" alt="\int \half u'v' + \left(V + {l(l+1)\over 2\rho^2}\right) uv \,\d\rho
     -\half\left[u'v\right]_0^R
@@ -326,7 +325,7 @@ corresponds to zero Dirichlet condition for <img class="math" src="../_images/ma
     \epsilon \int uv \,\d\rho"/></p>
 </div></section>
 <section id="dirac-notation">
-<h4>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">¶</a></h4>
+<h4>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this heading">¶</a></h4>
 <p>We can also write all the formulas using the Dirac notation:</p>
 <div class="math">
 <p><img src="../_images/math/b8dcbc478a1737f66d7eebac562ff53895f05e66.svg" alt="\one = \int \d\rho \rho^2 \ket{\rho}\bra{\rho}
@@ -395,7 +394,7 @@ R_i = \braket{i|R}"/></p>
 </section>
 </section>
 <section id="variational-formulation-of-the-dirac-equation">
-<h2><span class="section-number">8.8.3. </span>Variational Formulation of the Dirac equation<a class="headerlink" href="#variational-formulation-of-the-dirac-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.3. </span>Variational Formulation of the Dirac equation<a class="headerlink" href="#variational-formulation-of-the-dirac-equation" title="Permalink to this heading">¶</a></h2>
 <p>The QED Lagrangian density is</p>
 <div class="math">
 <p><img src="../_images/math/bb6ff8e19a73879d4fe808598a639fecb980f959.svg" alt="\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}"/></p>
@@ -440,11 +439,11 @@ expression:</p>
 <p><img src="../_images/math/67a1dfdee5bebc238ea2a06d7699ae582cef4f9b.svg" alt="(c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V)\psi = W\psi"/></p>
 </div></section>
 <section id="radial-dirac-equation">
-<h2><span class="section-number">8.8.4. </span>Radial Dirac equation<a class="headerlink" href="#radial-dirac-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.4. </span>Radial Dirac equation<a class="headerlink" href="#radial-dirac-equation" title="Permalink to this heading">¶</a></h2>
 <p>As for the Schrödinger equation, there are two ways to obtain the radial Dirac
 equation. Either from the Lagrangian, or from the equation itself.</p>
 <section id="id2">
-<h3>From the Equation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>From the Equation<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <p>The manipulations are well known, one starts by writing the Dirac spinors using
 the spin angular functions and radial components <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/>:</p>
 <div class="math">
@@ -473,7 +472,7 @@ the spin angular functions and radial components <img class="math" src="../_imag
 \hbar c \left({\d\over\d\rho} + {\kappa\over\rho}\right)P + (V-mc^2-W)Q=0"/></p>
 </div></section>
 <section id="id3">
-<h3>From the Lagrangian<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>From the Lagrangian<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <p>We can reuse the calculations from the previous sections, because the Lagrangian
 happens to be zero for the solution of the Dirac equation:</p>
 <div class="math">
@@ -560,7 +559,7 @@ We can now variate the (constrained) action:</p>
  \hbar c P' + \hbar c{\kappa\over\rho}P + QV - 2mc^2Q = \epsilon Q"/></p>
 </div></section>
 <section id="id4">
-<h3>Weak Formulation<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>Weak Formulation<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>The weak formulation can be obtained by substituting <img class="math" src="../_images/math/29e8b7f1ec5a2b7cb37fe9e750b48736fef69af4.svg" alt="\delta P \to v_1"/> and
 <img class="math" src="../_images/math/4ed8f60dcec95df059853aac0f988af991725ed1.svg" alt="\delta Q\to v_2"/> into the action above (and separating the integrals) and
 omitting the the boundary term:</p>
@@ -682,7 +681,7 @@ then:</p>
 </div></section>
 </section>
 <section id="other-forms-of-dirac-equations">
-<h2><span class="section-number">8.8.5. </span>Other Forms of Dirac Equations<a class="headerlink" href="#other-forms-of-dirac-equations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.5. </span>Other Forms of Dirac Equations<a class="headerlink" href="#other-forms-of-dirac-equations" title="Permalink to this heading">¶</a></h2>
 <p>The radial Dirac equations are:</p>
 <div class="math">
 <p><img src="../_images/math/91cd8f07ee5751b55a3c997c92fd549fd0a1b666.svg" alt="\hat H \ket{P, Q} = \epsilon \ket{P, Q}
@@ -723,7 +722,7 @@ f\hat H {1\over f} \ket{S, T} = \epsilon \ket{S, T}"/></p>
     \hbar c \left({\d\over\d\rho}+{\kappa\over\rho}-{f'\over f}\right) &amp; V(\rho) - 2mc^2 \\
     \end{array}\right)"/></p>
 </div><section id="example-i">
-<h3>Example I<a class="headerlink" href="#example-i" title="Permalink to this headline">¶</a></h3>
+<h3>Example I<a class="headerlink" href="#example-i" title="Permalink to this heading">¶</a></h3>
 <p>In order to obtain equations for <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/> and <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/>, related to <img class="math" src="../_images/math/6c1861eb89364beb8f1aa8efd4db129869ed2223.svg" alt="P"/> and <img class="math" src="../_images/math/da18444e096cf296cbe81d094c83fd25c91d32e3.svg" alt="Q"/> by:</p>
 <div class="math">
 <p><img src="../_images/math/e31ae4890b5b50ab2284f90e9e868f848f5a5f11.svg" alt="P = \rho g
@@ -741,7 +740,7 @@ Q = \rho f"/></p>
     \end{array}\right)"/></p>
 </div></section>
 <section id="example-ii">
-<h3>Example II<a class="headerlink" href="#example-ii" title="Permalink to this headline">¶</a></h3>
+<h3>Example II<a class="headerlink" href="#example-ii" title="Permalink to this heading">¶</a></h3>
 <p>For <img class="math" src="../_images/math/cd859e378881875fd86607ea4a9cf0b1dcf9ca3d.svg" alt="f(r) = \rho"/> we get</p>
 <div class="math">
 <p><img src="../_images/math/2909923043beba55a840442c9925b067689521c3.svg" alt="{f'\over f} = {1\over \rho}"/></p>
@@ -754,7 +753,7 @@ Q = \rho f"/></p>
     \end{array}\right)"/></p>
 </div></section>
 <section id="example-iii">
-<h3>Example III<a class="headerlink" href="#example-iii" title="Permalink to this headline">¶</a></h3>
+<h3>Example III<a class="headerlink" href="#example-iii" title="Permalink to this heading">¶</a></h3>
 <p>For <img class="math" src="../_images/math/44fd10b70c544e2021743368d8bd660c318882c9.svg" alt="f(r) = \rho^n"/> we get</p>
 <div class="math">
 <p><img src="../_images/math/21e28496ee8e73b2e65eaa1d6584ae5da48f5448.svg" alt="{f'\over f} = {n\over \rho}"/></p>
@@ -768,7 +767,7 @@ Q = \rho f"/></p>
 </div><p>Example I is just a special case for <img class="math" src="../_images/math/a749ac803b71491ce47c3a6c3dacc3f4b0fc0541.svg" alt="n=-1"/>, Example II for <img class="math" src="../_images/math/40f11cd2e85d5ecd24a44df2377db912d377d2df.svg" alt="n=1"/>.</p>
 </section>
 <section id="example-iv">
-<h3>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this headline">¶</a></h3>
+<h3>Example IV<a class="headerlink" href="#example-iv" title="Permalink to this heading">¶</a></h3>
 <p>For <img class="math" src="../_images/math/e59cbccde7b3bfc0b694002b91edeec9e1e1ed0c.svg" alt="f(r) = \tanh \rho"/> we get</p>
 <div class="math">
 <p><img src="../_images/math/86fa8246f3799cdc511f1869fba27eeb70d801af.svg" alt="{f'\over f} = {1\over \sinh\rho\cosh\rho}"/></p>
@@ -781,7 +780,7 @@ Q = \rho f"/></p>
     \end{array}\right)"/></p>
 </div></section>
 <section id="example-v">
-<h3>Example V<a class="headerlink" href="#example-v" title="Permalink to this headline">¶</a></h3>
+<h3>Example V<a class="headerlink" href="#example-v" title="Permalink to this heading">¶</a></h3>
 <p>For <img class="math" src="../_images/math/de38df56c01dbf2d82a9e0aaf1433ee18fe0feb4.svg" alt="f(r) = \tanh^n k\rho"/> we get</p>
 <div class="math">
 <p><img src="../_images/math/274eda557fba60a4ef5e08c675b39ea4fef56804.svg" alt="{f'\over f} = {nk\over \sinh k\rho\cosh k\rho}"/></p>
@@ -798,9 +797,9 @@ Q = \rho f"/></p>
 </section>
 </section>
 <section id="asymptotic">
-<h2><span class="section-number">8.8.6. </span>Asymptotic<a class="headerlink" href="#asymptotic" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.8.6. </span>Asymptotic<a class="headerlink" href="#asymptotic" title="Permalink to this heading">¶</a></h2>
 <section id="schrodinger">
-<h3>Schrödinger<a class="headerlink" href="#schrodinger" title="Permalink to this headline">¶</a></h3>
+<h3>Schrödinger<a class="headerlink" href="#schrodinger" title="Permalink to this heading">¶</a></h3>
 <p>The radial Schrödinger equation is:</p>
 <div class="math">
 <p><img src="../_images/math/e67df0eebdb303117e669e038bd12e88d9707fb8.svg" alt="P''(r) + 2\left(E-V(r)-{l(l+1)\over 2r^2}\right) P(r) = 0
@@ -842,7 +841,7 @@ Q(r) = 1"/></p>
 </div><p>Note that <img class="math" src="../_images/math/4d4777c1527da833f8c49f243f0aedbd3544134a.svg" alt="Z"/> can be both positive and negative.</p>
 </section>
 <section id="dirac">
-<h3>Dirac<a class="headerlink" href="#dirac" title="Permalink to this headline">¶</a></h3>
+<h3>Dirac<a class="headerlink" href="#dirac" title="Permalink to this heading">¶</a></h3>
 <p>The Dirac equation is:</p>
 <div class="math">
 <p><img src="../_images/math/c7c0ea4e9f8c49df2d9539e00de1a441700a37a0.svg" alt="H = \left(\begin{array}{cc}
@@ -1031,7 +1030,7 @@ we can express <img class="math" src="../_images/math/4e178786bb713b00e2cb8d024d
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1055,7 +1054,7 @@ we can express <img class="math" src="../_images/math/4e178786bb713b00e2cb8d024d
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

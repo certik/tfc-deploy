@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>8.1. Introduction &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,16 +74,16 @@
           <div class="body" role="main">
             
   <section id="introduction">
-<h1><span class="section-number">8.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">8.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h1>
 <p>The aim of these (work in progress) notes is to use the Standard Model of particle physics to derive all equations in quantum mechanics (and quantum field theory) that we need for our research.</p>
 <p>We start by deriving the electroweak Standard Model from the <img class="math" src="../_images/math/4c6e802b396c62970c25bb447a10fa2e748341b2.svg" alt="SU(2)\times U(1)"/> symmetry and couple other (standard) assumptions in the quantum field theory. After that, we only want to derive things and make nonrelativistic limits or other approximations in order to derive everything else in quantum mechanics. In particular we show how to derive the Dirac and Schrödinger equations (as a low energy limit). We then show some particular ways to solve those equations, like perturbation theory, scattering theory, …</p>
 <p>The goal is to have a complete theory on about 30 or 40 pages and then lots of examples (arbitrarily long), that use the theory (but do not develop new ideas), so that one can learn how the theory works from the examples. For instance, one can ask “why is there the term <img class="math" src="../_images/math/bdcffc9943680b730f4404dc04e54ef0a6dc2e5a.svg" alt="({\bf p}-e{\bf A})^2"/> in the Schrödinger equation for electromagnetic field, why this and not something else?” or “why is there the <img class="math" src="../_images/math/c6bd04cba5b4992669a980b7cf6c1c2424649f6d.svg" alt="\boldsymbol\sigma\cdot{\bf B}"/> term in the Pauli equation?”, to find the answer, one just finds the Pauli equation in the theory and then looks at the derivation, so in this case one quickly finds that it follows from the minimal coupling in QED, e.g. it’s the easiest way how electron-foton interaction can be coupled, e.g. the <img class="math" src="../_images/math/9714fb49ec8c80c4c64c5ae4e826ce58cff4635f.svg" alt="U(1)"/> symmetry. Nice thing about QFT is that one can find really nice geometrical reasons why things are that way and not some other way (just open any advance book on QFT), but the problem is that basically nowhere is some easy (but correct) translation of those results to regular QM, so that everything fits into just couple dozens pages, so that it can serve as a reference.</p>
 <p>The advantage of this top-down approach is that it is easy to see where things come from and also to understand exactly what approximations one is using when dealing with any equation in QM. However, as is well-known in physics, to be a good physicist one has to understand all the approaches, e.g. both top-down and bottom-up and all other approaches to QM and QFT, because there are no two approaches that would be 100% equivalent, so one has to use the right approach for the particular problem. So these notes do not aspire to be the right way to teach QM, but rather to serve as a reference to get quickly oriented and to find the equations to start from.</p>
 </section>
 <section id="standard-model">
-<span id="index-0"></span><h1><span class="section-number">8.2. </span>Standard Model<a class="headerlink" href="#standard-model" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1><span class="section-number">8.2. </span>Standard Model<a class="headerlink" href="#standard-model" title="Permalink to this heading">¶</a></h1>
 <section id="electroweak-standard-model">
-<span id="index-1"></span><h2><span class="section-number">8.2.1. </span>Electroweak Standard Model<a class="headerlink" href="#electroweak-standard-model" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2><span class="section-number">8.2.1. </span>Electroweak Standard Model<a class="headerlink" href="#electroweak-standard-model" title="Permalink to this heading">¶</a></h2>
 <p>Lagrangian with a global <img class="math" src="../_images/math/4c6e802b396c62970c25bb447a10fa2e748341b2.svg" alt="SU(2)\times U(1)"/> symmetry:</p>
 <div class="math">
 <p><img src="../_images/math/d622326d43f05e8d28500ad5f5444318d14b6f4d.svg" alt="\L=i\bar L^{(l)}\gamma_\mu\partial^\mu L^{(l)}+i\bar l_R \gamma_\mu\partial^\mu l_R +\half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4} \lambda(\Phi^*\Phi)^2 -h_e\bar L^{(l)} \Phi e_R - \hbox{h.c.}"/></p>
@@ -107,7 +106,7 @@ This consists of two things. First changing the partial derivatives to covariant
 <p><img src="../_images/math/def5a664f2e35ece1410969af694fd39ff97309c.svg" alt="\Phi = e^{{i\over v}\pi^a(x)\tau^a} \left( \begin{array}{c} 0 \\ {1\over\sqrt{2}}(v+H(x)) \end{array} \right)"/></p>
 </div><p>This breaks the gauge invariance. The <img class="math" src="../_images/math/39daa07dbe982d203cf0dc61a56c4925e498a1aa.svg" alt="\partial^\mu\pi^a"/> are going to be added to <img class="math" src="../_images/math/bfcd07513ee5e7a2d5b39dfd5bbb57748c9addf4.svg" alt="A^a_\mu"/> so we can set <img class="math" src="../_images/math/a507f6d1b270b026894dee3ffd506f9e5f96bdf9.svg" alt="\pi_a = 0"/> now.</p>
 <section id="higgs-terms">
-<span id="index-2"></span><h3>Higgs Terms<a class="headerlink" href="#higgs-terms" title="Permalink to this headline">¶</a></h3>
+<span id="index-2"></span><h3>Higgs Terms<a class="headerlink" href="#higgs-terms" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/a825f310902eb3b50cfce4c26f16f16aeae71b3c.svg" alt="\L_{Higgs}= \half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4} \lambda(\Phi^*\Phi)^2"/></p>
 </div><p>Plugging in the covariant derivatives and <img class="math" src="../_images/math/090317ae1e04902d1eb0c49447e242a936092b70.svg" alt="\Phi"/> in U-gauge (symmetry breaking):</p>
@@ -142,7 +141,7 @@ This consists of two things. First changing the partial derivatives to covariant
 <p><img src="../_images/math/e4b81a5bd385e62ddfd8d76d2c0e77f007601e35.svg" alt="g^2+4Y^2g'^2 = {g^2\over\cos^2\theta_W}"/></p>
 </div></section>
 <section id="yukawa-terms">
-<span id="index-3"></span><h3>Yukawa terms<a class="headerlink" href="#yukawa-terms" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>Yukawa terms<a class="headerlink" href="#yukawa-terms" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/bf402d6b69ff794099ebd275a941b35898093869.svg" alt="\L_{Yukawa} = -h_e \bar L \Phi e_R - \hbox{h.c.}= -h_e \bar L \Phi_U e_R - \hbox{h.c.}="/></p>
 </div><div class="math">
@@ -154,7 +153,7 @@ This consists of two things. First changing the partial derivatives to covariant
 <p><img src="../_images/math/462aa67e73ccf1db8ee25e51fb19725971349316.svg" alt="-Y_L+Y+Y_R=0"/></p>
 </div></section>
 <section id="leptonic-terms">
-<span id="index-4"></span><h3>Leptonic Terms<a class="headerlink" href="#leptonic-terms" title="Permalink to this headline">¶</a></h3>
+<span id="index-4"></span><h3>Leptonic Terms<a class="headerlink" href="#leptonic-terms" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/a50a70002c4dbc57b55ca658a6f66d12021f2692.svg" alt="\L=i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R \to"/></p>
 </div><div class="math">
@@ -207,7 +206,7 @@ This consists of two things. First changing the partial derivatives to covariant
 </div><p>Where we used the relations <img class="math" src="../_images/math/62098953d1eca2858da9fb85d4b50bdbabf41184.svg" alt="\bar\nu_L\gamma^\mu e_L=\half\bar\nu\gamma^\mu (1-\gamma_5)e"/> and <img class="math" src="../_images/math/7851cedeccbf46a7309d0facbfd174db570d93c0.svg" alt="\bar\nu_R\gamma^\mu e_R=\half\bar\nu\gamma^\mu (1+\gamma_5)e"/> .</p>
 </section>
 <section id="gauge-terms">
-<span id="index-5"></span><h3>Gauge terms<a class="headerlink" href="#gauge-terms" title="Permalink to this headline">¶</a></h3>
+<span id="index-5"></span><h3>Gauge terms<a class="headerlink" href="#gauge-terms" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/e509c4e50bbdd1b62a8dee33cec14d93cd66d401.svg" alt="\L_{Gauge} = -{1\over4}F^a_{\mu\nu}F^{a\mu\nu} -{1\over4}B_{\mu\nu}B^{\mu\nu}="/></p>
 </div><div class="math">
@@ -243,7 +242,7 @@ This consists of two things. First changing the partial derivatives to covariant
 <p><img src="../_images/math/9dbfeb705a6c44200f0510d600144e8950b1bbe1.svg" alt="\L_{WWZ\gamma}=g^2\sin\theta_W\cos\theta_W(-2W^-_\mu W^{+\mu}A_\nu Z^\nu+W^-_\mu Z^\mu W^+_\nu A^\nu+W^-_\mu A^\mu W^+_\nu Z^\nu)"/></p>
 </div></section>
 <section id="gws-lagrangian">
-<span id="index-6"></span><h3>GWS Lagrangian<a class="headerlink" href="#gws-lagrangian" title="Permalink to this headline">¶</a></h3>
+<span id="index-6"></span><h3>GWS Lagrangian<a class="headerlink" href="#gws-lagrangian" title="Permalink to this heading">¶</a></h3>
 <p>Plugging everything together we get the GWS Lagrangian:</p>
 <div class="math">
 <p><img src="../_images/math/9b68ba19edef75bcda6306a3d8fd6f14e2340ab2.svg" alt="\L = {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2 +{1\over4}g^2v^2W^-_\mu W^{+\mu}+{g^2v^2\over8\cos^2\theta_W}Z_\mu Z^\mu - \lambda v H^3 - {1\over 4}\lambda H^4 +"/></p>
@@ -263,7 +262,7 @@ This consists of two things. First changing the partial derivatives to covariant
 <img class="math" src="../_images/math/3c39c20fbe69f14445494a968503dc0fdef3669a.svg" alt="h_\tau"/>.</p>
 </section>
 <section id="particle-masses">
-<span id="index-7"></span><h3>Particle Masses<a class="headerlink" href="#particle-masses" title="Permalink to this headline">¶</a></h3>
+<span id="index-7"></span><h3>Particle Masses<a class="headerlink" href="#particle-masses" title="Permalink to this heading">¶</a></h3>
 <p>The particle masses are deduced from the terms</p>
 <div class="math">
 <p><img src="../_images/math/ec1e0436b33dcf489a471c32dd31bb05834d4450.svg" alt="\L = -{1\over2}m_H^2 H^2 +m_W^2 W^-_\mu W^{+\mu} +{1\over2}m_Z^2 Z_\mu Z^\mu -m_e\bar ee +\cdots"/></p>
@@ -288,7 +287,7 @@ masses of the particles, one has to renormalize them by calculating the higher
 order corrections given by the loop diagrams).</p>
 </section>
 <section id="parameters-of-the-standard-model">
-<span id="index-8"></span><h3>Parameters of the Standard Model<a class="headerlink" href="#parameters-of-the-standard-model" title="Permalink to this headline">¶</a></h3>
+<span id="index-8"></span><h3>Parameters of the Standard Model<a class="headerlink" href="#parameters-of-the-standard-model" title="Permalink to this heading">¶</a></h3>
 <p>The free parameters are <img class="math" src="../_images/math/b84b9f94c2f0135455ea2ce1cb5c69081a61f72f.svg" alt="g"/>, <img class="math" src="../_images/math/cf0dcedc6827155470fd3512d496e44380200b37.svg" alt="\theta_W"/>, <img class="math" src="../_images/math/a245c7010258a6f58e42c5b5b4384005b89538fb.svg" alt="v"/>, <img class="math" src="../_images/math/165b0c434b8455be67011f1327cba822ddf25e63.svg" alt="\lambda"/>, then three masses of
 the charged leptons <img class="math" src="../_images/math/714231a6834939c0c32afff04366b95c821c3ec0.svg" alt="h_e"/>, <img class="math" src="../_images/math/8526e0e708d466c774cc2a3f4e48909a4881046d.svg" alt="h_\mu"/>, <img class="math" src="../_images/math/3c39c20fbe69f14445494a968503dc0fdef3669a.svg" alt="h_\tau"/>, six quark masses and four
 parameters of the CKM mixing matrix, which gives 4 + 3 + 6 + 4 = 17 free
@@ -364,7 +363,7 @@ e = g \sin\theta_W = 0.3
 </div>
 </section>
 <section id="quarks">
-<h3>Quarks<a class="headerlink" href="#quarks" title="Permalink to this headline">¶</a></h3>
+<h3>Quarks<a class="headerlink" href="#quarks" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/e955dd0c59aa211330e4f04e70f3e85c27597a9b.svg" alt="\L_{fermion}+\!\!= \sum_{q=d,s,b}i\bar L_0^{(q)}\gamma^\mu\partial_\mu L_0^{(q)} +\sum_{q=d,u,s,c,b,t}i\bar q_{0R}\gamma^\mu\partial_\mu q_{0R}"/></p>
 </div><div class="math">
@@ -372,9 +371,9 @@ e = g \sin\theta_W = 0.3
 </div></section>
 </section>
 <section id="qft">
-<h2><span class="section-number">8.2.2. </span>QFT<a class="headerlink" href="#qft" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.2.2. </span>QFT<a class="headerlink" href="#qft" title="Permalink to this heading">¶</a></h2>
 <section id="field-operators">
-<h3>Field Operators<a class="headerlink" href="#field-operators" title="Permalink to this headline">¶</a></h3>
+<h3>Field Operators<a class="headerlink" href="#field-operators" title="Permalink to this heading">¶</a></h3>
 <p>The free (non-interacting) fields in the interaction picture are expressed
 using the creation and anihilation operators below, also the corresponding
 non-interacting Hamiltonian is shown.</p>
@@ -479,7 +478,7 @@ charge. In QED, we identify the <img class="math" src="../_images/math/de059b8e0
     \delta^{(3)}({\bf x} - {\bf y}) \delta_{\mu\nu}"/></p>
 </div></section>
 <section id="calculating-scattering-amplitudes-using-green-functions">
-<h3>Calculating Scattering Amplitudes using Green Functions<a class="headerlink" href="#calculating-scattering-amplitudes-using-green-functions" title="Permalink to this headline">¶</a></h3>
+<h3>Calculating Scattering Amplitudes using Green Functions<a class="headerlink" href="#calculating-scattering-amplitudes-using-green-functions" title="Permalink to this heading">¶</a></h3>
 <p>We are interested in calculating the following scattering amplitudes:</p>
 <div class="math">
 <p><img src="../_images/math/844c844fe8386c4b12ea470935866735bfdc0784.svg" alt="\braket{f|i}"/></p>
@@ -676,7 +675,7 @@ creation operators between the initial and final states). All that remains is
 to calculate the interacting Green functions (for which we need to know the
 interaction Lagrangian). But first couple more examples:</p>
 <section id="example-1">
-<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h4>
+<h4>Example 1<a class="headerlink" href="#example-1" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/f257b268617571db651a4f8893e44dac80ed08d5.svg" alt="\nu_e"/> - <img class="math" src="../_images/math/a951f919bde2f1ca341e453850f6769201b700b9.svg" alt="e"/> elastic scattering:</p>
 <div class="math">
 <p><img src="../_images/math/609a9fe4b6d6101125b0816cf5a4e61ed76af99e.svg" alt="\nu_e(k) + e(p) \to \nu_e(k') + e(p')"/></p>
@@ -725,7 +724,7 @@ interaction Lagrangian). But first couple more examples:</p>
 <img class="math" src="../_images/math/0f56623949e60d3c4574e89fc8348ad905ee5781.svg" alt="u({\bf k})"/> should in fact be <img class="math" src="../_images/math/7cec63022b366b120c913ba54ceb10a34a1ceccd.svg" alt="u^{s_k}({\bf k})"/> and so on.</p>
 </section>
 <section id="example-2">
-<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h4>
+<h4>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">¶</a></h4>
 <p>Muon decay:</p>
 <div class="math">
 <p><img src="../_images/math/2c4135a416ec92d9c1b5dcbdbd7f7d71c3d6d6cf.svg" alt="\mu(P) \to e(p) + \bar\nu_e(k') + \nu_\mu(k)"/></p>
@@ -758,7 +757,7 @@ interaction Lagrangian). But first couple more examples:</p>
 \left[{1\over\tilde S(-{\bf P})} u({\bf P}) \right]"/></p>
 </div></section>
 <section id="example-3">
-<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h4>
+<h4>Example 3<a class="headerlink" href="#example-3" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/a22279c991dc429175bc1999a2afa48619c8e48b.svg" alt="e^+ + e^-"/> scattering:</p>
 <div class="math">
 <p><img src="../_images/math/799b5f88fd1597821204f78abd73461d874b806f.svg" alt="e^-(p_1)+e^+(p_2) \to e^-(k_1)+e^+(k_2)"/></p>
@@ -806,7 +805,7 @@ interaction Lagrangian). But first couple more examples:</p>
 \left[{1\over\tilde S(-p_1)}u^t({\bf p}_1)\right]"/></p>
 </div></section>
 <section id="example-4">
-<h4>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h4>
+<h4>Example 4<a class="headerlink" href="#example-4" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/cabceed5b3d881e1ae12a5b380d444e5a5fe582b.svg" alt="H(p)\to Z(k)+Z(l)"/> decay. Initial and final states:</p>
 <div class="math">
 <p><img src="../_images/math/e27fd8d9309824a05a4379223c33acccee438f36.svg" alt="\ket{i} = a^\dag_{\bf p}\ket{\Omega}
@@ -830,7 +829,7 @@ interaction Lagrangian). But first couple more examples:</p>
 \braket{\Omega|T \tilde A^\mu(k)\tilde A^\nu(l)\tilde \phi(-p)|\Omega}"/></p>
 </div></section>
 <section id="example-5">
-<h4>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h4>
+<h4>Example 5<a class="headerlink" href="#example-5" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/8da755ee2ca08df3843c5cf8c9519830a026bd18.svg" alt="e^+ e^- \to W^+ W^-"/> scattering:</p>
 <div class="math">
 <p><img src="../_images/math/2a4e29be65e07db268c99b4e521f9989046f6613.svg" alt="e^-(k) + e^+(-l) \to W^-(p) + W^+(r)"/></p>
@@ -862,7 +861,7 @@ interaction Lagrangian). But first couple more examples:</p>
 \left[{1\over\tilde S(-{\bf k})} u({\bf k}) \right]"/></p>
 </div></section>
 <section id="example-6">
-<h4>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h4>
+<h4>Example 6<a class="headerlink" href="#example-6" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/62402c3404105bd9cc4b22cfa8370ddb63992fab.svg" alt="W^+ W^- \to W^+ W^-"/> scattering:</p>
 <div class="math">
 <p><img src="../_images/math/c2257a01f3104e6ab246d9ced3fce758f4e18cad.svg" alt="W^-(k) + W^+(p) \to W^-(r) + W^+(l)"/></p>
@@ -893,7 +892,7 @@ interaction Lagrangian). But first couple more examples:</p>
 </div></section>
 </section>
 <section id="evaluation-of-the-interacting-green-functions">
-<h3>Evaluation of the Interacting Green Functions<a class="headerlink" href="#evaluation-of-the-interacting-green-functions" title="Permalink to this headline">¶</a></h3>
+<h3>Evaluation of the Interacting Green Functions<a class="headerlink" href="#evaluation-of-the-interacting-green-functions" title="Permalink to this heading">¶</a></h3>
 <p>The interacting Green functions can be evaluated using the formula:</p>
 <div class="math">
 <p><img src="../_images/math/b7b710d4760617a25a2bc16ab425f5141cced5fb.svg" alt="G^{(n)}(x_1, \dots, x_n) =
@@ -957,7 +956,7 @@ U_I(0, -\infty)\left[\ket{\Omega}\bra{\Omega}+\sum_{n\neq0}\ket{n}\bra{n}
 \braket{\Omega|\Omega}=1"/></p>
 </div></section>
 <section id="evolution-operator-s-matrix-elements">
-<span id="index-9"></span><h3>Evolution Operator, S-Matrix Elements<a class="headerlink" href="#evolution-operator-s-matrix-elements" title="Permalink to this headline">¶</a></h3>
+<span id="index-9"></span><h3>Evolution Operator, S-Matrix Elements<a class="headerlink" href="#evolution-operator-s-matrix-elements" title="Permalink to this heading">¶</a></h3>
 <p>The evolution operator <img class="math" src="../_images/math/5398360f28c0328534b7fd075c6c91c98c4c24e4.svg" alt="U"/> is defined by the equations:</p>
 <div class="math">
 <p><img src="../_images/math/835c6b93c90cf624124e0433f5cbac9887fe2316.svg" alt="\ket{\phi(t_2)}=U(t_2, t_1)\ket{\phi(t_1)}"/></p>
@@ -1040,7 +1039,7 @@ evolution operator:</p>
 <p><img src="../_images/math/ec4be1c8a1566b907768240e122da52306f7717d.svg" alt="S_{fi} = (2\pi)^4\delta^{(4)}(p_1+p_2+\cdots - k_1 - k_2 - \cdots) i \M_{fi}"/></p>
 </div></section>
 <section id="propagators-for-scalar-bosons-fermions-and-vector-bosons">
-<span id="index-10"></span><h3>Propagators for Scalar Bosons, Fermions and Vector Bosons<a class="headerlink" href="#propagators-for-scalar-bosons-fermions-and-vector-bosons" title="Permalink to this headline">¶</a></h3>
+<span id="index-10"></span><h3>Propagators for Scalar Bosons, Fermions and Vector Bosons<a class="headerlink" href="#propagators-for-scalar-bosons-fermions-and-vector-bosons" title="Permalink to this heading">¶</a></h3>
 <p>The only nonzero contractions that can occur are the propagators below. All
 other contractions are zero.</p>
 <p>Propagator for a scalar boson is:</p>
@@ -1066,7 +1065,7 @@ other contractions are zero.</p>
 <p><img src="../_images/math/f5f71d5689ad3c489356ece389e6ac22a474c426.svg" alt="\tilde D_{\mu\nu}(p) = i{-g_{\mu\nu}\over p^2+i\epsilon}"/></p>
 </div></section>
 <section id="wick-theorem">
-<span id="index-11"></span><h3>Wick Theorem<a class="headerlink" href="#wick-theorem" title="Permalink to this headline">¶</a></h3>
+<span id="index-11"></span><h3>Wick Theorem<a class="headerlink" href="#wick-theorem" title="Permalink to this heading">¶</a></h3>
 <p>As seen above, we need to be able to calculate</p>
 <div class="math">
 <p><img src="../_images/math/6e318625f77a968c3cf81a6ccfd76e00c3bff5d8.svg" alt="\braket{0|T\{\phi_I(x_1)\cdots\phi_I(x_n)\}|0}"/></p>
@@ -1104,7 +1103,7 @@ other contractions are zero.</p>
 </div><p>For the last two equations, not all possibilities of the connected graphs are listed (and also the combinatorial factor is omitted).</p>
 </section>
 <section id="nonrelativistic-field-operators">
-<h3>Nonrelativistic Field Operators<a class="headerlink" href="#nonrelativistic-field-operators" title="Permalink to this headline">¶</a></h3>
+<h3>Nonrelativistic Field Operators<a class="headerlink" href="#nonrelativistic-field-operators" title="Permalink to this heading">¶</a></h3>
 <p>One difference in nonrelativistic quantum mechanics is that the noninteracting
 solutions to the equation of motion (Schrödinger equation in this case) can be
 numbered using a discrete index, so for example the momentum <img class="math" src="../_images/math/27a5523f96d4d931448902b94c7f25aa07d243e2.svg" alt="\bf q"/> is not
@@ -1157,7 +1156,7 @@ elements of the potential <img class="math" src="../_images/math/718b723e58ad5cc
 fermions it changes a sign).</p>
 </section>
 <section id="nonrelativistic-propagator">
-<h3>Nonrelativistic Propagator<a class="headerlink" href="#nonrelativistic-propagator" title="Permalink to this headline">¶</a></h3>
+<h3>Nonrelativistic Propagator<a class="headerlink" href="#nonrelativistic-propagator" title="Permalink to this heading">¶</a></h3>
 <p>Nonrelativistic limits of the propagators are obtained by assuming
 <img class="math" src="../_images/math/9a40eae280959ccc146955b6bd42283e7198bec4.svg" alt="|{\bf p}|/mc \ll 1"/>, and then expressing the propagator using the
 nonrelativistic energy <img class="math" src="../_images/math/d7c1b0d194c088484db7f93d988258c536727873.svg" alt="\omega"/> (total
@@ -1350,11 +1349,11 @@ G_0^+(k, \omega) = \int_{-\infty}^\infty \d t\, e^{i\omega t}G_0^+(k, t)"/></p>
 in the meantime evolved into <img class="math" src="../_images/math/a31df59cf3fe7c24ba590cd2436e4f0eb9f1bde9.svg" alt="e^{-i H_0 t_2}\ket{\Psi_0}"/>).</p>
 </section>
 <section id="evaluating-the-interacting-green-functions">
-<span id="index-12"></span><h3>Evaluating the Interacting Green Functions<a class="headerlink" href="#evaluating-the-interacting-green-functions" title="Permalink to this headline">¶</a></h3>
+<span id="index-12"></span><h3>Evaluating the Interacting Green Functions<a class="headerlink" href="#evaluating-the-interacting-green-functions" title="Permalink to this heading">¶</a></h3>
 <p>The Green functions below can either be evaluated using the Wick theorem, or
 using Feynman diagrams and the corresponding Feynman rules.</p>
 <section id="id1">
-<h4>Example 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4>Example 1<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/8dc5a5918ef543e3ab75dc93dc44c1fd5eafe234.svg" alt="\L_{ZZH} = \lambda Z_\mu Z^\mu H"/>, in the first order:</p>
 <div class="math">
 <p><img src="../_images/math/34f7d7efb25446a54fd101196e39355942eccc78.svg" alt="\braket{\Omega|T \tilde A^\mu(k)\tilde A^\nu(l)\tilde \phi(-p)|\Omega}
@@ -1362,7 +1361,7 @@ using Feynman diagrams and the corresponding Feynman rules.</p>
     \tilde D^{\nu\alpha}(l)\tilde D(p)"/></p>
 </div></section>
 <section id="id2">
-<h4>Example 2<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<h4>Example 2<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/d86ce0459f31b75be4795d107e625f9091534a67.svg" alt="\L_{ee\gamma}=-\lambda \bar e\gamma^\mu e A_\mu"/>, in the second order:</p>
 <div class="math">
 <p><img src="../_images/math/e2a0d0c802fd94eddda693e3f15b5d71ca8b1a5e.svg" alt="\braket{\Omega|T\tilde\psi(k_1)\tilde{\bar\psi}(k_2)\tilde{\bar\psi}(-p_1)
@@ -1381,7 +1380,7 @@ using Feynman diagrams and the corresponding Feynman rules.</p>
     \tilde S(p_2)\gamma^\nu\tilde S(-k_2)\right]"/></p>
 </div></section>
 <section id="id3">
-<h4>Example 3<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<h4>Example 3<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
 <p><img class="math" src="../_images/math/ea46ae815d4e8f982fed0ebbd4bffe87bf3247ac.svg" alt="\L_{\rm int}={g\over 2 \sqrt 2} \bar\nu_e \gamma^\mu (1-\gamma_5) e
 W_\mu^+ + \hbox{h.c.}"/>, in the second order:</p>
 <div class="math">
@@ -1467,7 +1466,7 @@ e^{i(yr + yp - yk - yl)}
 </div></section>
 </section>
 <section id="zzh-interaction">
-<h3>ZZH interaction<a class="headerlink" href="#zzh-interaction" title="Permalink to this headline">¶</a></h3>
+<h3>ZZH interaction<a class="headerlink" href="#zzh-interaction" title="Permalink to this heading">¶</a></h3>
 <p>Let’s calculate the <img class="math" src="../_images/math/2a6a4c45b02e00b3e89d1c3d3e490299eeea8f12.svg" alt="\L_{ZZH}=\lambda Z_\mu Z^\mu H"/> interaction in the SM,
 where <img class="math" src="../_images/math/6a67164050837d2434ce442083aee16b8ab3ecfd.svg" alt="\lambda={g^2\over4\cos\theta_W}"/>. Consider <img class="math" src="../_images/math/cabceed5b3d881e1ae12a5b380d444e5a5fe582b.svg" alt="H(p)\to Z(k)+Z(l)"/>:</p>
 <div class="math">
@@ -1516,7 +1515,7 @@ Z^\mu H"/> interaction to the interacting Green function is:</p>
     \tilde D^{\nu\alpha}(l)\tilde D(p)"/></p>
 </div></section>
 <section id="eeh-interaction">
-<h3>eeH interaction<a class="headerlink" href="#eeh-interaction" title="Permalink to this headline">¶</a></h3>
+<h3>eeH interaction<a class="headerlink" href="#eeh-interaction" title="Permalink to this heading">¶</a></h3>
 <p>This is only approximate, it will be fixed soon.</p>
 <p>Let’s calculate the <img class="math" src="../_images/math/19d3aeacb8a49ae3f6ca1ac72abc3020612cdc18.svg" alt="\L_{eeH}=-\lambda \bar ee H"/> interaction in the SM, where <img class="math" src="../_images/math/01fc038c93293b7248aa0e6280f99cd19b1e9167.svg" alt="\lambda={h_e\over\sqrt2}"/>. Consider <img class="math" src="../_images/math/9b2e3af33b0219b33dbc21a42cf4be8816478dcb.svg" alt="H(p)\to e^-(k)+e^+(l)"/>:</p>
 <div class="math">
@@ -1534,7 +1533,7 @@ Z^\mu H"/> interaction to the interacting Green function is:</p>
 <p><img src="../_images/math/d89204f170ecf952395c6c8b3ddb7451c8d35196.svg" alt="\int\d^4 x \braket{0|T\{\bar e(y_1) e(y_2) H(x_1)\bar e(x)e(x) H(x)\}|0}"/></p>
 </div></section>
 <section id="ee-gamma-interaction">
-<h3>ee gamma interaction<a class="headerlink" href="#ee-gamma-interaction" title="Permalink to this headline">¶</a></h3>
+<h3>ee gamma interaction<a class="headerlink" href="#ee-gamma-interaction" title="Permalink to this heading">¶</a></h3>
 <p>This is only approximate, it will be fixed soon.</p>
 <p>Let’s calculate the <img class="math" src="../_images/math/d86ce0459f31b75be4795d107e625f9091534a67.svg" alt="\L_{ee\gamma}=-\lambda \bar e\gamma^\mu e A_\mu"/> interaction in the SM, where <img class="math" src="../_images/math/a2c9e325a378028657810bfb1b4c3d8f387cc0ce.svg" alt="\lambda=g\sin\theta_W"/>. Consider <img class="math" src="../_images/math/6f1942e9ee77a0ead2bb8aae1603ec3c7871619d.svg" alt="\gamma(p)\to e^-(k)+e^+(l)"/>:</p>
 <div class="math">
@@ -1554,7 +1553,7 @@ Z^\mu H"/> interaction to the interacting Green function is:</p>
 <p><img src="../_images/math/641d44ef42a4d2022fb5fc10db8215f1a74821ee.svg" alt="=\pm S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x)"/></p>
 </div></section>
 <section id="eeee-interaction">
-<h3>eeee interaction<a class="headerlink" href="#eeee-interaction" title="Permalink to this headline">¶</a></h3>
+<h3>eeee interaction<a class="headerlink" href="#eeee-interaction" title="Permalink to this heading">¶</a></h3>
 <p>Let’s calculate the <img class="math" src="../_images/math/d86ce0459f31b75be4795d107e625f9091534a67.svg" alt="\L_{ee\gamma}=-\lambda \bar e\gamma^\mu e A_\mu"/>
 interaction in the SM, where <img class="math" src="../_images/math/a2c9e325a378028657810bfb1b4c3d8f387cc0ce.svg" alt="\lambda=g\sin\theta_W"/>. Consider
 <img class="math" src="../_images/math/de9ad7b292d0338fbf88c5b78702afe241f18517.svg" alt="e^-(p_1)+e^+(p_2)\to\gamma(q)\to e^-(k_1)+e^+(k_2)"/>:</p>
@@ -1647,9 +1646,9 @@ nonzero order equal to:</p>
 </div></section>
 </section>
 <section id="low-energy-theories">
-<span id="index-13"></span><h2><span class="section-number">8.2.3. </span>Low energy theories<a class="headerlink" href="#low-energy-theories" title="Permalink to this headline">¶</a></h2>
+<span id="index-13"></span><h2><span class="section-number">8.2.3. </span>Low energy theories<a class="headerlink" href="#low-energy-theories" title="Permalink to this heading">¶</a></h2>
 <section id="fermi-type-theory">
-<h3>Fermi-type theory<a class="headerlink" href="#fermi-type-theory" title="Permalink to this headline">¶</a></h3>
+<h3>Fermi-type theory<a class="headerlink" href="#fermi-type-theory" title="Permalink to this heading">¶</a></h3>
 <p>This is a low energy (<img class="math" src="../_images/math/6fb5babcd2e4f49d7be06c7b5f6b9f50e084b016.svg" alt="m_W^2 \gg m_\mu m_e"/>) model for the EW interactions, that can be derived for example from the muon decay:</p>
 <div class="math">
 <p><img src="../_images/math/03e433f12fad742a38fa25a951fca646923010c2.svg" alt="\mu^- \to e^- +\nu_\mu + \bar \nu_e"/></p>
@@ -1766,7 +1765,7 @@ angle and <img class="math" src="../_images/math/fb63438f6cda7ac17b3e3a3e8f3b3c6
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1790,7 +1789,7 @@ angle and <img class="math" src="../_images/math/fb63438f6cda7ac17b3e3a3e8f3b3c6
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

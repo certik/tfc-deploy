@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>7.3. Compressible Euler Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <span class="target" id="index-0"></span><section id="compressible-euler-equations">
-<h1><span class="section-number">7.3. </span>Compressible Euler Equations<a class="headerlink" href="#compressible-euler-equations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">7.3. </span>Compressible Euler Equations<a class="headerlink" href="#compressible-euler-equations" title="Permalink to this heading">¶</a></h1>
 <section id="introduction">
-<h2><span class="section-number">7.3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>The compressible Euler equations are equations for perfect fluid.
 Perfect fluids have no heat conduction (<img class="math" src="../_images/math/d3f5a07a3981335fb15313e2c83287e23e6b9e57.svg" alt="T^{i0} = T^{0i} = 0"/>) and no
 viscosity (<img class="math" src="../_images/math/da0d7a7513a525ad38bbaca58f2977a0db0c169e.svg" alt="T^{ij} = p\one"/>), so in the comoving frame the stress energy tensor
@@ -171,7 +170,7 @@ functions of <img class="math" src="../_images/math/8bfc2a9cd24347a5babad0f229a8
 <p><img src="../_images/math/1f6d9d4f11ce0bf878db3a863ca7b1070afd0fb4.svg" alt="c = \sqrt{\kappa {p \over \rho}}"/></p>
 </div></section>
 <section id="dimensionless-euler-equations">
-<h2><span class="section-number">7.3.2. </span>Dimensionless Euler Equations<a class="headerlink" href="#dimensionless-euler-equations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.2. </span>Dimensionless Euler Equations<a class="headerlink" href="#dimensionless-euler-equations" title="Permalink to this heading">¶</a></h2>
 <p>We choose 3 constants <img class="math" src="../_images/math/ada8ad20d188ef50c0c5a2f414e64ccaa7ff72b2.svg" alt="l_r"/>, <img class="math" src="../_images/math/4149cec26c420b0aaa20fd68523017da6e119181.svg" alt="u_r"/> and <img class="math" src="../_images/math/284d56b7eed06bb279df0a18fe34a871047274a7.svg" alt="\rho_r"/> - characteristic length of the
 domain, velocity and density. Now we multiply the Euler equations with proper
 combinations of these constants as follows:</p>
@@ -225,7 +224,7 @@ combinations of these constants as follows:</p>
 ones, we just need to rescale all the quantities using the relations above.</p>
 </section>
 <section id="conservative-form-of-the-euler-equations">
-<h2><span class="section-number">7.3.3. </span>Conservative Form of the Euler Equations<a class="headerlink" href="#conservative-form-of-the-euler-equations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.3. </span>Conservative Form of the Euler Equations<a class="headerlink" href="#conservative-form-of-the-euler-equations" title="Permalink to this heading">¶</a></h2>
 <p>We can write the Euler equations as:</p>
 <div class="math">
 <p><img src="../_images/math/6e987ee9581801b218fd7ec0b8c048166fefae9f.svg" alt="{\partial{\bf w}\over \partial t} +
@@ -361,7 +360,7 @@ so it will not be present in the final equations (that involve terms like
 physics.</p>
 </section>
 <section id="weak-formulation">
-<h2><span class="section-number">7.3.4. </span>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.4. </span>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this heading">¶</a></h2>
 <p>The Euler equations:</p>
 <div class="math">
 <p><img src="../_images/math/6e987ee9581801b218fd7ec0b8c048166fefae9f.svg" alt="{\partial{\bf w}\over \partial t} +
@@ -486,7 +485,7 @@ element space.  This turns the above weak formulation into a finite number of
 nonlinear algebraic equations of the form <img class="math" src="../_images/math/8cb94017c4992fa35bd0a2418706dd3d7785678f.svg" alt="F(Y) = 0"/> that will be solved using
 the Newton’s method.</p>
 <section id="explicit-method">
-<h3>Explicit Method<a class="headerlink" href="#explicit-method" title="Permalink to this headline">¶</a></h3>
+<h3>Explicit Method<a class="headerlink" href="#explicit-method" title="Permalink to this heading">¶</a></h3>
 <p>We also derive the weak formulation for the explicit method.
 Euler equations:</p>
 <div class="math">
@@ -602,7 +601,7 @@ numbering the 5 equations, so we are <em>not</em> summing over it):</p>
 </div></section>
 </section>
 <section id="flux-jacobians">
-<h2><span class="section-number">7.3.5. </span>Flux Jacobians<a class="headerlink" href="#flux-jacobians" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.5. </span>Flux Jacobians<a class="headerlink" href="#flux-jacobians" title="Permalink to this heading">¶</a></h2>
 <p>Now we write the spatial derivatives using the so called flux Jacobians
 <img class="math" src="../_images/math/234740b235c9489076883896834856e2c5814c79.svg" alt="{\bf A}_x"/>,
 <img class="math" src="../_images/math/d4c0617d7809eddb567cdbd1bb20b1c6a9a0c7fb.svg" alt="{\bf A}_y"/>
@@ -724,7 +723,7 @@ To calculate the Jacobians, we’ll need:</p>
    \end{array} \right)"/></p>
 </div></section>
 <section id="d-version-of-the-equations">
-<h2><span class="section-number">7.3.6. </span>2D Version of the Equations<a class="headerlink" href="#d-version-of-the-equations" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.6. </span>2D Version of the Equations<a class="headerlink" href="#d-version-of-the-equations" title="Permalink to this heading">¶</a></h2>
 <div class="math">
 <p><img src="../_images/math/eac9a457f45d334d43c83ab20cc14a5b82d92755.svg" alt="{\partial{\bf w}\over \partial t} +
 {\partial{\bf f}_x\over \partial x} +
@@ -904,7 +903,7 @@ over the domain <img class="math" src="../_images/math/c7080a6364482c5654d3e3399
    \end{array} \right)"/></p>
 </div></section>
 <section id="sea-breeze-modeling">
-<h2><span class="section-number">7.3.7. </span>Sea Breeze Modeling<a class="headerlink" href="#sea-breeze-modeling" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.7. </span>Sea Breeze Modeling<a class="headerlink" href="#sea-breeze-modeling" title="Permalink to this heading">¶</a></h2>
 <p>In our 2D model we make the following assumptions:</p>
 <div class="math">
 <p><img src="../_images/math/b900de364eeb90f68e7075e99c34850c5030f4f2.svg" alt="f_x = 0
@@ -1030,7 +1029,7 @@ B_{11}(w_1, \varphi^1) = \int_{\Omega} {w_1\over\tau}\varphi^1
 \cdots"/></p>
 </div></section>
 <section id="boundary-conditions">
-<h2><span class="section-number">7.3.8. </span>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.8. </span>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this heading">¶</a></h2>
 <p>We rewrite the boundary integral by rotating coordinates, so that
 the flow is only in the <img class="math" src="../_images/math/74d80b1f8754374202dc72f351096af63dd5da6c.svg" alt="x"/> direction (thus we only have <img class="math" src="../_images/math/a10badf259d9b5529338953a39192b2c2d677a14.svg" alt="{\bf f}_x"/>):</p>
 <div class="math">
@@ -1215,7 +1214,7 @@ prescribed, for example at the bottom it could be:</p>
 
 {\bf A}_x^- = \left(\begin{smallmatrix}\frac{- 4 u c^{2} - 2 u v^{2} - 2 u w^{2} + 2 c v^{2} + 2 c w^{2} + 6 c u^{2} - 2 c \kappa u^{2} - 2 c \kappa v^{2} - 2 c \kappa w^{2} + 2 \kappa u v^{2} + 2 \kappa u w^{2} - 2 u^{3} + 2 \kappa u^{3}}{8 c^{2}} &amp; \frac{- 2 c u + c \kappa u + c^{2} + u^{2} - \kappa u^{2}}{2 c^{2}} &amp; \frac{u v - c v + c \kappa v - \kappa u v}{2 c^{2}} &amp; \frac{u w - c w + c \kappa w - \kappa u w}{2 c^{2}} &amp; \frac{c - u + \kappa u - c \kappa}{2 c^{2}}\\\frac{- 10 c^{2} u^{2} - 2 c^{2} v^{2} - 2 c^{2} w^{2} - 2 u^{2} v^{2} - 2 u^{2} w^{2} + 2 \kappa c^{2} u^{2} + 2 \kappa c^{2} v^{2} + 2 \kappa c^{2} w^{2} + 2 \kappa u^{2} v^{2} + 2 \kappa u^{2} w^{2} + 4 c u v^{2} + 4 c u w^{2} - 4 c \kappa u v^{2} - 4 c \kappa u w^{2} + 4 u c^{3} + 8 c u^{3} - 4 c \kappa u^{3} - 2 u^{4} + 2 \kappa u^{4}}{8 c^{2}} &amp; \frac{- 3 c u^{2} + 3 u c^{2} - \kappa u c^{2} + 2 c \kappa u^{2} + u^{3} - c^{3} - \kappa u^{3}}{2 c^{2}} &amp; \frac{- 2 c u v + 2 c \kappa u v + v c^{2} + v u^{2} - \kappa v c^{2} - \kappa v u^{2}}{2 c^{2}} &amp; \frac{- 2 c u w + 2 c \kappa u w + w c^{2} + w u^{2} - \kappa w c^{2} - \kappa w u^{2}}{2 c^{2}} &amp; \frac{2 c u - 2 c \kappa u - c^{2} - u^{2} + \kappa c^{2} + \kappa u^{2}}{2 c^{2}}\\\frac{- 4 u v c^{2} - 2 u v w^{2} + 2 c v w^{2} + 6 c v u^{2} - 2 c \kappa v u^{2} - 2 c \kappa v w^{2} + 2 \kappa u v w^{2} - 2 u v^{3} - 2 v u^{3} + 2 c v^{3} - 2 c \kappa v^{3} + 2 \kappa u v^{3} + 2 \kappa v u^{3}}{8 c^{2}} &amp; \frac{- 2 c u v + c \kappa u v + v c^{2} + v u^{2} - \kappa v u^{2}}{2 c^{2}} &amp; \frac{u v^{2} - c v^{2} + c \kappa v^{2} - \kappa u v^{2}}{2 c^{2}} &amp; \frac{u v w - c v w + c \kappa v w - \kappa u v w}{2 c^{2}} &amp; \frac{c v - u v + \kappa u v - c \kappa v}{2 c^{2}}\\\frac{- 4 u w c^{2} - 2 u w v^{2} + 2 c w v^{2} + 6 c w u^{2} - 2 c \kappa w u^{2} - 2 c \kappa w v^{2} + 2 \kappa u w v^{2} - 2 u w^{3} - 2 w u^{3} + 2 c w^{3} - 2 c \kappa w^{3} + 2 \kappa u w^{3} + 2 \kappa w u^{3}}{8 c^{2}} &amp; \frac{- 2 c u w + c \kappa u w + w c^{2} + w u^{2} - \kappa w u^{2}}{2 c^{2}} &amp; \frac{u v w - c v w + c \kappa v w - \kappa u v w}{2 c^{2}} &amp; \frac{u w^{2} - c w^{2} + c \kappa w^{2} - \kappa u w^{2}}{2 c^{2}} &amp; \frac{c w - u w + \kappa u w - c \kappa w}{2 c^{2}}\\\frac{- 2 c^{3} u^{2} - 2 c^{3} v^{2} - 2 c^{3} w^{2} - 2 u^{3} v^{2} - 2 u^{3} w^{2} - 2 \kappa c^{3} u^{2} - 2 u c^{2} v^{2} - 2 u c^{2} w^{2} - 2 u v^{2} w^{2} - 2 \kappa^{2} u^{3} v^{2} - 2 \kappa^{2} u^{3} w^{2} + 2 c v^{2} w^{2} + 2 \kappa c^{3} v^{2} + 2 \kappa c^{3} w^{2} + 4 \kappa u^{3} v^{2} + 4 \kappa u^{3} w^{2} + 6 c u^{2} v^{2} + 6 c u^{2} w^{2} - 10 c \kappa u^{2} v^{2} - 10 c \kappa u^{2} w^{2} - 4 c \kappa v^{2} w^{2} - 2 u c^{2} \kappa^{2} v^{2} - 2 u c^{2} \kappa^{2} w^{2} - 2 u \kappa^{2} v^{2} w^{2} + 2 c \kappa^{2} v^{2} w^{2} + 4 c \kappa^{2} u^{2} v^{2} + 4 c \kappa^{2} u^{2} w^{2} + 4 \kappa u c^{2} v^{2} + 4 \kappa u c^{2} w^{2} + 4 \kappa u v^{2} w^{2} - 6 c^{2} u^{3} - 2 c^{2} \kappa^{2} u^{3} + 8 \kappa c^{2} u^{3} + c v^{4} + c w^{4} - u v^{4} - u w^{4} + 4 u c^{4} + 5 c u^{4} + c \kappa^{2} v^{4} + c \kappa^{2} w^{4} - u \kappa^{2} v^{4} - u \kappa^{2} w^{4} - 8 c \kappa u^{4} - 2 c \kappa v^{4} - 2 c \kappa w^{4} + 2 \kappa u v^{4} + 2 \kappa u w^{4} + 3 c \kappa^{2} u^{4} - u^{5} - \kappa^{2} u^{5} + 2 \kappa u^{5}}{8 c^{2} - 8 \kappa c^{2}} &amp; \frac{c^{2} v^{2} + c^{2} w^{2} + u^{2} v^{2} + u^{2} w^{2} + 3 c^{2} u^{2} + \kappa^{2} u^{2} v^{2} + \kappa^{2} u^{2} w^{2} - \kappa c^{2} v^{2} - \kappa c^{2} w^{2} - 5 \kappa c^{2} u^{2} - 2 c u v^{2} - 2 c u w^{2} - 2 \kappa u^{2} v^{2} - 2 \kappa u^{2} w^{2} + 2 c^{2} \kappa^{2} u^{2} - c u \kappa^{2} v^{2} - c u \kappa^{2} w^{2} + 3 c \kappa u v^{2} + 3 c \kappa u w^{2} - 4 c u^{3} + 2 u c^{3} - 3 c \kappa^{2} u^{3} + 7 c \kappa u^{3} + u^{4} - 2 c^{4} + \kappa^{2} u^{4} - 2 \kappa u^{4}}{4 c^{2} - 4 \kappa c^{2}} &amp; \frac{- 6 c v u^{2} - 2 c v w^{2} + 2 u v w^{2} - 4 \kappa u v c^{2} - 2 \kappa u v w^{2} + 2 c \kappa v w^{2} + 6 c \kappa v u^{2} - 2 c v^{3} + 2 u v^{3} + 2 v u^{3} + 4 v c^{3} - 2 \kappa u v^{3} - 2 \kappa v u^{3} + 2 c \kappa v^{3}}{8 c^{2}} &amp; \frac{- 6 c w u^{2} - 2 c w v^{2} + 2 u w v^{2} - 4 \kappa u w c^{2} - 2 \kappa u w v^{2} + 2 c \kappa w v^{2} + 6 c \kappa w u^{2} - 2 c w^{3} + 2 u w^{3} + 2 w u^{3} + 4 w c^{3} - 2 \kappa u w^{3} - 2 \kappa w u^{3} + 2 c \kappa w^{3}}{8 c^{2}} &amp; \frac{- 2 u v^{2} - 2 u w^{2} + 2 c v^{2} + 2 c w^{2} + 6 c u^{2} - 6 c \kappa u^{2} - 2 c \kappa v^{2} - 2 c \kappa w^{2} + 2 \kappa u v^{2} + 2 \kappa u w^{2} + 4 \kappa u c^{2} - 4 c^{3} - 2 u^{3} + 2 \kappa u^{3}}{8 c^{2}}\end{smallmatrix}\right)"/></p>
 </div><section id="boundary-conditions-for-the-sea-breeze-model">
-<h3>Boundary Conditions for the Sea Breeze Model<a class="headerlink" href="#boundary-conditions-for-the-sea-breeze-model" title="Permalink to this headline">¶</a></h3>
+<h3>Boundary Conditions for the Sea Breeze Model<a class="headerlink" href="#boundary-conditions-for-the-sea-breeze-model" title="Permalink to this heading">¶</a></h3>
 <p>In the boundary (line) integral we prescribe <img class="math" src="../_images/math/131b90a0edcd0b52d74fec7129e115e8fdb8ed16.svg" alt="w_3^{n+1}"/> using a Dirichlet
 condition and calculate it at each iteration using:</p>
 <div class="math">
@@ -1317,7 +1316,7 @@ BC <img class="math" src="../_images/math/5ed0d2f127df33631705081099d0670a947dcf
 </section>
 </section>
 <section id="newton-method">
-<h2><span class="section-number">7.3.9. </span>Newton Method<a class="headerlink" href="#newton-method" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.9. </span>Newton Method<a class="headerlink" href="#newton-method" title="Permalink to this heading">¶</a></h2>
 <p>The residual is:</p>
 <div class="math">
 <p><img src="../_images/math/acff2dcbb50f8a5099d567458be4f8121cb47c56.svg" alt="F_{i,m}(Y^{n+1}) = \int_\Omega {w_{i,m}(y_m^{n+1}) - w_{i,m}(y^n)\over\tau}
@@ -1356,10 +1355,10 @@ The Jacobian is:</p>
 <p><img src="../_images/math/1a291ea8d705ed2f67aaf89169613fd20f69608e.svg" alt="J(Y^n) \delta Y^{n+1} = -F(Y^n)"/></p>
 </div></section>
 <section id="older-notes">
-<h2><span class="section-number">7.3.10. </span>Older notes<a class="headerlink" href="#older-notes" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3.10. </span>Older notes<a class="headerlink" href="#older-notes" title="Permalink to this heading">¶</a></h2>
 <p>Author: Pavel Solin</p>
 <section id="governing-equations-and-boundary-conditions">
-<h3>Governing Equations and Boundary Conditions<a class="headerlink" href="#governing-equations-and-boundary-conditions" title="Permalink to this headline">¶</a></h3>
+<h3>Governing Equations and Boundary Conditions<a class="headerlink" href="#governing-equations-and-boundary-conditions" title="Permalink to this heading">¶</a></h3>
 <div class="math" id="equation-one">
 <p><span class="eqno">(7.3.10.1)<a class="headerlink" href="#equation-one" title="Permalink to this equation">¶</a></span><img src="../_images/math/7d8a82f1f2bdba61da05b131b46b83e83bcebc47.svg" alt="\frac{\partial}{\partial t} \left( \begin{array}{c} \varrho\\ U\\ W\\
    \theta \end{array} \right) + \frac{\partial}{\partial x} \left(
@@ -1385,7 +1384,7 @@ equation <img class="math" src="../_images/math/f5ee2eb498e7d740bedc57b094444be7
 <p><img src="../_images/math/5bd4e97ebe3cc56e3d4d9842a8d5ec7ed5fa6dad.svg" alt="\begin{eqnarray*} p(z) &amp;=&amp; p_0 - 11476\frac{z}{1000}  + 529.54 \left(\frac{z}{1000} \right)^2 - 9.38 \left(\frac{z}{1000} \right)^3,\\ T(z) &amp;=&amp; T_0 - 8.3194 \frac{z}{1000} + 0.2932 \left(\frac{z}{1000} \right)^2 - 0.0109 \left(\frac{z}{1000} \right)^3,\\ \varrho(z) &amp;=&amp; \frac{p(z)}{R T(z)},\\ \theta(z) &amp;=&amp; \varrho(z)T(z),\\ U(z) &amp;=&amp; 0, \\  W(z) &amp;=&amp; 0. \end{eqnarray*}"/></p>
 </div></section>
 <section id="discretization-and-the-newton-s-method">
-<h3>Discretization and the Newton’s Method<a class="headerlink" href="#discretization-and-the-newton-s-method" title="Permalink to this headline">¶</a></h3>
+<h3>Discretization and the Newton’s Method<a class="headerlink" href="#discretization-and-the-newton-s-method" title="Permalink to this heading">¶</a></h3>
 <p>We will use the implicit Euler method in time, i.e.,</p>
 <div class="math">
 <p><img src="../_images/math/622b95d7fd257d57e92e7eca3d63572ffe16545f.svg" alt="\frac{\partial \varrho}{\partial t} \approx \frac{\varrho^{n+1} - \varrho^n}{\tau}"/></p>
@@ -1557,7 +1556,7 @@ W^{n+1} = \sum_{k=1}^{N^{W}} y^{W}_k \varphi^{W}_k, \ \ \
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1581,7 +1580,7 @@ W^{n+1} = \sum_{k=1}^{N^{W}} y^{W}_k \varphi^{W}_k, \ \ \
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

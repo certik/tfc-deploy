@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.2. Complex Numbers &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +74,7 @@
           <div class="body" role="main">
             
   <section id="complex-numbers">
-<span id="index-0"></span><h1><span class="section-number">3.2. </span>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1><span class="section-number">3.2. </span>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this heading">¶</a></h1>
 <p>We start by defining <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> by its principal value, then everything else
 follows from this definition.  We could have also used any other branch, but
 then most results in this chapter would need to be updated with the new
@@ -88,7 +87,7 @@ only formulas introduced before (above) are used.</p>
 <p>Every formula in this chapter holds for all complex numbers, unless explicitly
 specified otherwise.</p>
 <section id="real-and-imaginary-part">
-<h2><span class="section-number">3.2.1. </span>Real and Imaginary Part<a class="headerlink" href="#real-and-imaginary-part" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.1. </span>Real and Imaginary Part<a class="headerlink" href="#real-and-imaginary-part" title="Permalink to this heading">¶</a></h2>
 <p>A complex number <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/> can be written using its real and imaginary parts:</p>
 <div class="math">
 <p><img src="../_images/math/c77ee4e35865eb3d8371e0c6ec01105cd8464fc0.svg" alt="z = \Re z + i \Im z"/></p>
@@ -97,7 +96,7 @@ specified otherwise.</p>
 <p><img src="../_images/math/e987c178b9f6b25a7d75e1a0b3cadf666c78256d.svg" alt="|z| = \sqrt{\Re^2 z + \Im^2 z}"/></p>
 </div></section>
 <section id="argument-function">
-<h2><span class="section-number">3.2.2. </span>Argument Function<a class="headerlink" href="#argument-function" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.2. </span>Argument Function<a class="headerlink" href="#argument-function" title="Permalink to this heading">¶</a></h2>
 <p>Principal value of <img class="math" src="../_images/math/5335f9281ff0d799c169762cc1f29808255cb24f.svg" alt="\arg(z)"/> is defined as</p>
 <div class="math">
 <p><img src="../_images/math/38132596c4783bb53561d210d15dc1c5ba642bd7.svg" alt="\arg z = \atan2(\Im z, \Re z)"/></p>
@@ -105,7 +104,7 @@ specified otherwise.</p>
 derived using the properties of the real <img class="math" src="../_images/math/0189af1c8ab6779a18d6cfa1628ffe878175817a.svg" alt="\atan2"/> function.</p>
 </section>
 <section id="exponential">
-<h2><span class="section-number">3.2.3. </span>Exponential<a class="headerlink" href="#exponential" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.3. </span>Exponential<a class="headerlink" href="#exponential" title="Permalink to this heading">¶</a></h2>
 <p>Exponential is defined using:</p>
 <div class="math">
 <p><img src="../_images/math/c06e3e7bf9b5089b287c6d0519c6a178a6624f3e.svg" alt="e^z = e^{\Re z + i\Im z} = e^{\Re z} (\cos\Im z + i \sin \Im z)"/></p>
@@ -182,7 +181,7 @@ derived using the properties of the real <img class="math" src="../_images/math/
         \left\lfloor \pi-\arg a+\arg b\over 2\pi \right\rfloor"/></p>
 </div></section>
 <section id="logarithm">
-<h2><span class="section-number">3.2.4. </span>Logarithm<a class="headerlink" href="#logarithm" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.4. </span>Logarithm<a class="headerlink" href="#logarithm" title="Permalink to this heading">¶</a></h2>
 <p>The logarithm is defined as:</p>
 <div class="math" id="equation-def-log">
 <p><span class="eqno">(3.2.4.1)<a class="headerlink" href="#equation-def-log" title="Permalink to this equation">¶</a></span><img src="../_images/math/cf667d9db096e09afe1d62b403e33ef0476dd504.svg" alt="\log z = \log|z| + i \arg z"/></p>
@@ -224,7 +223,7 @@ define logarithm using the equation <a class="reference internal" href="#equatio
         \left\lfloor \pi-\arg a+\arg b \over 2\pi \right\rfloor"/></p>
 </div></section>
 <section id="power">
-<h2><span class="section-number">3.2.5. </span>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.5. </span>Power<a class="headerlink" href="#power" title="Permalink to this heading">¶</a></h2>
 <p>A power of two complex numbers is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/53859332e5a24a95a491b3bdd93a27d5ca543fac.svg" alt="z^a = e^{a\log z}"/></p>
@@ -269,7 +268,7 @@ z}"/>.</p>
         }"/></p>
 </div></section>
 <section id="examples">
-<h2><span class="section-number">3.2.6. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.6. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <p>For integer <img class="math" src="../_images/math/5c45fb6adda786f45a82cb89041788334858d777.svg" alt="n"/> we get from <a class="reference internal" href="#equation-x-a-b">(3.2.5.2)</a>:</p>
 <div class="math">
 <p><img src="../_images/math/47f30c9937b4b264b672181de8b35c3abe730995.svg" alt="(x^a)^n
@@ -371,7 +370,7 @@ z}"/>.</p>
     = {1\over i} \log {z\over|z|}"/></p>
 </div></section>
 <section id="complex-conjugate">
-<h2><span class="section-number">3.2.7. </span>Complex Conjugate<a class="headerlink" href="#complex-conjugate" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.7. </span>Complex Conjugate<a class="headerlink" href="#complex-conjugate" title="Permalink to this heading">¶</a></h2>
 <p>The complex conjugate is defined by:</p>
 <div class="math">
 <p><img src="../_images/math/5d72f8ddd7cab2a7f4556b7ff918ed1b54cf274a.svg" alt="z = \Re z + i \Im z
@@ -385,7 +384,7 @@ z}"/>.</p>
 </div><p>Any complex function <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/> can be written using <img class="math" src="../_images/math/991683d29d250b6db8f6bcfcef0bf37e2faf588b.svg" alt="\Re z"/> and <img class="math" src="../_images/math/69d1bdce65257dc8299fefdd680bf3b41d782249.svg" alt="\Im z"/>, i.e. <img class="math" src="../_images/math/a8ee72d4a779d15b1e4d3530d9f306c13b209203.svg" alt="f =
 f(\Re z, \Im z)"/> or using <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/> and <img class="math" src="../_images/math/84738211627d87efa46b501ad78b57f48a8fece7.svg" alt="\bar z"/>, i.e. <img class="math" src="../_images/math/095ebab15dfdf69a5756b4529bf55f9a5ba8c5d0.svg" alt="f=f(z, \bar z)"/>.</p>
 <section id="id1">
-<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/8c5c057e68de13421716c93482d3a98564c3f377.svg" alt="|z| = \sqrt{\Re^2 z + \Im^2 z} = \sqrt{
     \left({1\over 2}(z + \bar z)\right)^2 +
@@ -425,7 +424,7 @@ f(\Re z, \Im z)"/> or using <img class="math" src="../_images/math/5065384d41a77
 </div></section>
 </section>
 <section id="complex-derivatives">
-<h2><span class="section-number">3.2.8. </span>Complex Derivatives<a class="headerlink" href="#complex-derivatives" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.8. </span>Complex Derivatives<a class="headerlink" href="#complex-derivatives" title="Permalink to this heading">¶</a></h2>
 <p>The complex derivative is defined by</p>
 <div class="math" id="equation-complex-deriv-lim">
 <p><span class="eqno">(3.2.8.1)<a class="headerlink" href="#equation-complex-deriv-lim" title="Permalink to this equation">¶</a></span><img src="../_images/math/44100e52538a24295ec6ca936a08b25e3dd2bb19.svg" alt="{\d f \over \d z}
@@ -575,7 +574,7 @@ the rest is just conjugation and multiplication. If <img class="math" src="../_i
 <img class="math" src="../_images/math/a392ceb60317dbe2d4bf946f3b04928c3d200b9a.svg" alt="{\partial f \over \partial \bar g}=0"/>, the second term vanishes and the chain
 rule is analogous to real functions.</p>
 <section id="id2">
-<h3>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>Examples<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <div class="math">
 <p><img src="../_images/math/7e7fd311576c64283650d2d24703587df11f345e.svg" alt="{\d z \over \d z}
      = {\partial z \over \partial z}
@@ -690,18 +689,18 @@ we want. For example the derivative of <img class="math" src="../_images/math/0f
 </div></section>
 </section>
 <section id="testing-identities-using-computer-code">
-<h2><span class="section-number">3.2.9. </span>Testing Identities Using Computer Code<a class="headerlink" href="#testing-identities-using-computer-code" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2.9. </span>Testing Identities Using Computer Code<a class="headerlink" href="#testing-identities-using-computer-code" title="Permalink to this heading">¶</a></h2>
 <p>All the complex identities in this chapter can be tested using the following
 codes. <a class="reference download internal" download="" href="../_downloads/8f5dd11535039ff36f71408d0dec2e7c/test_complex.py"><code class="xref download docutils literal notranslate"><span class="pre">test_complex.py</span></code></a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    The argument function.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">log</span>
     <span class="k">return</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
 
 <span class="k">def</span> <span class="nf">generate_values</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Create values to test the function at.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
@@ -737,7 +736,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
 <span class="n">values</span> <span class="o">=</span> <span class="n">generate_values</span><span class="p">()</span>
 
 <span class="k">def</span> <span class="nf">feq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">max_relative_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">,</span> <span class="n">max_absolute_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns True if a==b to the given relative and absolute errors, otherwise</span>
 <span class="sd">    False.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -753,7 +752,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
     <span class="k">return</span> <span class="n">relative_error</span> <span class="o">&lt;=</span> <span class="n">max_relative_error</span>
 
 <span class="k">def</span> <span class="nf">test_zero1</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x) of one complex variable is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -764,7 +763,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
             <span class="k">assert</span> <span class="kc">False</span>
 
 <span class="k">def</span> <span class="nf">test_zero2</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x, y) of two complex variables is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -776,7 +775,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
                 <span class="k">assert</span> <span class="kc">False</span>
 
 <span class="k">def</span> <span class="nf">test_zero3</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x, y, z) of three complex variables is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -814,14 +813,14 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
 </div>
 <p><a class="reference download internal" download="" href="../_downloads/746dbfa25bdce12d99973d2388c55435/test_complex_diff.py"><code class="xref download docutils literal notranslate"><span class="pre">test_complex_diff.py</span></code></a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    The argument function.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">log</span>
     <span class="k">return</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
 
 <span class="k">def</span> <span class="nf">generate_values</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Create values to test the function at.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">pi</span>
@@ -857,7 +856,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
 <span class="n">values</span> <span class="o">=</span> <span class="n">generate_values</span><span class="p">()</span>
 
 <span class="k">def</span> <span class="nf">feq</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">max_relative_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">,</span> <span class="n">max_absolute_error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Returns True if a==b to the given relative and absolute errors, otherwise</span>
 <span class="sd">    False.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -873,7 +872,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
     <span class="k">return</span> <span class="n">relative_error</span> <span class="o">&lt;=</span> <span class="n">max_relative_error</span>
 
 <span class="k">def</span> <span class="nf">test_zero1</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x) of one complex variable is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -884,7 +883,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
             <span class="k">assert</span> <span class="kc">False</span>
 
 <span class="k">def</span> <span class="nf">test_zero2</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x, y) of two complex variables is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -896,7 +895,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
                 <span class="k">assert</span> <span class="kc">False</span>
 
 <span class="k">def</span> <span class="nf">test_zero3</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Tests that a complex function f(x, y, z) of three complex variables is zero.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
@@ -996,7 +995,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1020,7 +1019,7 @@ codes. <a class="reference download internal" download="" href="../_downloads/8f
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

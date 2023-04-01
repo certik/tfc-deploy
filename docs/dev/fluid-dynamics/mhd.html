@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>7.2. MHD Equations &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,9 +74,9 @@
           <div class="body" role="main">
             
   <section id="mhd-equations">
-<span id="index-0"></span><h1><span class="section-number">7.2. </span>MHD Equations<a class="headerlink" href="#mhd-equations" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1><span class="section-number">7.2. </span>MHD Equations<a class="headerlink" href="#mhd-equations" title="Permalink to this heading">¶</a></h1>
 <section id="introduction">
-<h2><span class="section-number">7.2.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.2.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>The magnetohydrodynamics (MHD) equations are:</p>
 <div class="math" id="equation-mhd1">
 <p><span class="eqno">(7.2.1.1)<a class="headerlink" href="#equation-mhd1" title="Permalink to this equation">¶</a></span><img src="../_images/math/09b0fca5e0ccaf8bb036df7cecd068252165d2c2.svg" alt="\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0"/></p>
@@ -134,7 +133,7 @@ B}=0"/>):</p>
 </div><p>One can also introduce a new variable <img class="math" src="../_images/math/f4337e0dc57acdfe3a50c138c1a4cd252261b1ad.svg" alt="p^* = p + {1\over2}\nabla|{\bf B}|^2"/>, that simplifies <a class="reference internal" href="#equation-mhd2b">(7.2.1.6)</a> a bit.</p>
 </section>
 <section id="derivation">
-<span id="index-1"></span><h2><span class="section-number">7.2.2. </span>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2><span class="section-number">7.2.2. </span>Derivation<a class="headerlink" href="#derivation" title="Permalink to this heading">¶</a></h2>
 <p>The above equations can easily be derived. We have the continuity equation:</p>
 <div class="math">
 <p><img src="../_images/math/09b0fca5e0ccaf8bb036df7cecd068252165d2c2.svg" alt="\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho {\bf v}) = 0"/></p>
@@ -174,7 +173,7 @@ get:</p>
 <p><img src="../_images/math/d574cee7fc836f35ee956d6b9eddb3e7613d7fa2.svg" alt="\nabla\cdot{\bf B} = 0"/></p>
 </div></section>
 <section id="finite-element-formulation">
-<span id="index-2"></span><h2><span class="section-number">7.2.3. </span>Finite Element Formulation<a class="headerlink" href="#finite-element-formulation" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2><span class="section-number">7.2.3. </span>Finite Element Formulation<a class="headerlink" href="#finite-element-formulation" title="Permalink to this heading">¶</a></h2>
 <p>We solve the following ideal MHD equations (we use
 <img class="math" src="../_images/math/f4337e0dc57acdfe3a50c138c1a4cd252261b1ad.svg" alt="p^* = p + {1\over2}\nabla|{\bf B}|^2"/>, but we drop the star):</p>
 <div class="math" id="equation-fem1a">
@@ -256,13 +255,6 @@ l_5(v) &amp;= \int_\Omega {B_2^{n-1} v\over\tau} \,{\rm d}{\bf x}"/></p>
 </div><p>E.g. there are only 4 distinct bilinear forms. Schematically we can visualize
 the structure by:</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>A</p></td>
 <td></td>
@@ -387,7 +379,7 @@ a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)"/></p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -411,7 +403,7 @@ a_{52}(u_2, C_2) &amp;= -B(u_2, C_2)"/></p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

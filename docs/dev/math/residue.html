@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.3. Residue Theorem &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +74,7 @@
           <div class="body" role="main">
             
   <section id="residue-theorem">
-<span id="index-0"></span><h1><span class="section-number">3.3. </span>Residue Theorem<a class="headerlink" href="#residue-theorem" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><h1><span class="section-number">3.3. </span>Residue Theorem<a class="headerlink" href="#residue-theorem" title="Permalink to this heading">¶</a></h1>
 <p>The Residue Theorem says that a contour integral of an analytic function <img class="math" src="../_images/math/1f452f41a59b567841d283cefbd554ac64e88795.svg" alt="f"/>
 over a closed curve <img class="math" src="../_images/math/5cc660a0b09d78cbb844d701971410d22189d28a.svg" alt="\gamma"/> (loop) is equal to the sum of residues
 <img class="math" src="../_images/math/8dfe6cb55f045235a1d6ab9a74ab189d135adbfb.svg" alt="\res_{z_k}f(z)"/> of the function at all singularities <img class="math" src="../_images/math/7e7dd4248da6a2315463e63c5dacda43a950825e.svg" alt="z_k"/> inside the loop:</p>
@@ -116,7 +115,7 @@ i\epsilon e^{i\varphi}\d\varphi
 \end{cases}
 =\delta_{n, -1}"/></p>
 </div><section id="computation-of-residues">
-<span id="index-1"></span><h2><span class="section-number">3.3.1. </span>Computation of Residues<a class="headerlink" href="#computation-of-residues" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2><span class="section-number">3.3.1. </span>Computation of Residues<a class="headerlink" href="#computation-of-residues" title="Permalink to this heading">¶</a></h2>
 <p>One has to calculate the <img class="math" src="../_images/math/437c85c4f834a168cc0f4b9fd85af39478228903.svg" alt="c_{-1}"/> coefficient in the Laurent series. One way to
 do that is to write <img class="math" src="../_images/math/16a24f34e2e75b5ef8fb3649f1fce9a03a832735.svg" alt="f(z)"/> as:</p>
 <div class="math">
@@ -143,9 +142,9 @@ order <img class="math" src="../_images/math/48a9c60c07ae3ec80c744cabf47cee915e5
 = {g(z_0)\over f'(z_0)}"/></p>
 </div></section>
 <section id="useful-formulas">
-<h2><span class="section-number">3.3.2. </span>Useful Formulas<a class="headerlink" href="#useful-formulas" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.3.2. </span>Useful Formulas<a class="headerlink" href="#useful-formulas" title="Permalink to this heading">¶</a></h2>
 <section id="jordan-s-lemma">
-<span id="index-2"></span><h3>Jordan’s Lemma<a class="headerlink" href="#jordan-s-lemma" title="Permalink to this headline">¶</a></h3>
+<span id="index-2"></span><h3>Jordan’s Lemma<a class="headerlink" href="#jordan-s-lemma" title="Permalink to this heading">¶</a></h3>
 <p>For estimating integrals over semicircles <img class="math" src="../_images/math/c7080a6364482c5654d3e33992a59f803f887a7a.svg" alt="\Omega"/> (<img class="math" src="../_images/math/102ff7ea1ce2a9c849ae52d971e3cf20fde0a9c6.svg" alt="z = Re^{i\varphi}"/>,
 <img class="math" src="../_images/math/75bea923120e6b5a9c6341cc09f45faf05f37363.svg" alt="0\le\varphi\le\pi"/>), we can use the following estimates:</p>
 <div class="math">
@@ -193,7 +192,7 @@ Re^{i\varphi}}g(Re^{i\varphi})iRe^{i\varphi}\d\varphi\right|
 = {\pi\over\alpha R} (1-e^{-\alpha R}) &lt; {\pi\over\alpha R}"/></p>
 </div></section>
 <section id="other">
-<h3>Other<a class="headerlink" href="#other" title="Permalink to this headline">¶</a></h3>
+<h3>Other<a class="headerlink" href="#other" title="Permalink to this heading">¶</a></h3>
 <p>Sometimes it is useful to integrate over the arc <img class="math" src="../_images/math/ac40464f28f088ea26b8e6166e9b87a734b174cd.svg" alt="z = z_0 + \epsilon
 e^{i\varphi}"/>, <img class="math" src="../_images/math/f6962a192e5898812257fc5be03186cc60c7c161.svg" alt="\varphi_0 \le \varphi \le \varphi_0 + \alpha"/>, and let
 <img class="math" src="../_images/math/11f1f4422624164008923e6cd84f2c77cf87c336.svg" alt="\epsilon\to0"/> at the end. If the function is analytic, the result is <img class="math" src="../_images/math/6279a4189a38bf425eed7c528d4cc74753df8961.svg" alt="0"/>. If the
@@ -216,7 +215,7 @@ e^{i\varphi} \d \varphi
 </div></section>
 </section>
 <section id="complex-substitution">
-<h2><span class="section-number">3.3.3. </span>Complex Substitution<a class="headerlink" href="#complex-substitution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.3.3. </span>Complex Substitution<a class="headerlink" href="#complex-substitution" title="Permalink to this heading">¶</a></h2>
 <p>When substituting in integrals, as long as we just substitute for real
 functions, we use the regular substitution theorem, e.g. <img class="math" src="../_images/math/532c57677af234bfee1278d78352670ac89e0b45.svg" alt="x = y+1"/> (<img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> can
 be a complex function):</p>
@@ -285,7 +284,7 @@ which integration path to choose for the Residue Theorem.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -309,7 +308,7 @@ which integration path to choose for the Residue Theorem.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

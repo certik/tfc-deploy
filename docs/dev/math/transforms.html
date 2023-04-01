@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.4. Fourier Transform &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,7 +74,7 @@
           <div class="body" role="main">
             
   <section id="fourier-transform">
-<h1><span class="section-number">3.4. </span>Fourier Transform<a class="headerlink" href="#fourier-transform" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.4. </span>Fourier Transform<a class="headerlink" href="#fourier-transform" title="Permalink to this heading">¶</a></h1>
 <p>The 1D Fourier transform is:</p>
 <div class="math">
 <p><img src="../_images/math/65e3c495e76bb05b6a95bdf2bf187d731605bade.svg" alt="F[f(x)] \equiv \tilde f(\omega)
@@ -158,7 +157,7 @@ For a signature <img class="math" src="../_images/math/b9b07b6d81b37d87e4dd9c458
 convention in Fourier transform is not a problem, one just has to remember to
 flip the sign for the inverse transform.</p>
 <section id="shift-theorem">
-<h2><span class="section-number">3.4.1. </span>Shift Theorem<a class="headerlink" href="#shift-theorem" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.1. </span>Shift Theorem<a class="headerlink" href="#shift-theorem" title="Permalink to this heading">¶</a></h2>
 <p>The Fourier transform of a shifted function, in 3D:</p>
 <div class="math">
 <p><img src="../_images/math/49a4ea2c2e53e595afb10c621a77adb096e29397.svg" alt="F[f(\mathbf{x}+\mathbf{b})]
@@ -174,7 +173,7 @@ flip the sign for the inverse transform.</p>
     = e^{i\bomega\cdot \mathbf{b}} F[f(\mathbf{x})]"/></p>
 </div></section>
 <section id="scaling">
-<h2><span class="section-number">3.4.2. </span>Scaling<a class="headerlink" href="#scaling" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.2. </span>Scaling<a class="headerlink" href="#scaling" title="Permalink to this heading">¶</a></h2>
 <p>For <img class="math" src="../_images/math/8632c7f427f7ba90d1dd30bc941ec37e5e23f998.svg" alt="a&gt;0"/>:</p>
 <div class="math">
 <p><img src="../_images/math/51abe72dbde2fbd4c868f1c21835d4752a214bc3.svg" alt="F[f(ax)](\omega)
@@ -185,7 +184,7 @@ flip the sign for the inverse transform.</p>
     = {1\over a}F[f(x)]\left({\omega\over a}\right)"/></p>
 </div></section>
 <section id="derivative">
-<h2><span class="section-number">3.4.3. </span>Derivative<a class="headerlink" href="#derivative" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.3. </span>Derivative<a class="headerlink" href="#derivative" title="Permalink to this heading">¶</a></h2>
 <p>The Fourier transform of a derivative, in 3D:</p>
 <div class="math">
 <p><img src="../_images/math/327078dfc670542b435c4932fbe53a08aae5713a.svg" alt="F[\partial_i f(\mathbf{x})]
@@ -226,7 +225,7 @@ flip the sign for the inverse transform.</p>
     = i\omega_i F[f(\mathbf{x})]\,."/></p>
 </div></section>
 <section id="convolution">
-<h2><span class="section-number">3.4.4. </span>Convolution<a class="headerlink" href="#convolution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.4. </span>Convolution<a class="headerlink" href="#convolution" title="Permalink to this heading">¶</a></h2>
 <p>The convolution of two functions <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> and <img class="math" src="../_images/math/c4727d22504c6ee317ab17b2f8abb9bf8cb10a35.svg" alt="g(x)"/> is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/16fcc3d353af7632a523a397355732879d4d81ba.svg" alt="f(x) * g(x) = \int_{-\infty}^\infty f(y) g(x-y) \,\d y"/></p>
@@ -277,7 +276,7 @@ flip the sign for the inverse transform.</p>
     = F^{-1}[f] * F^{-1}[g]"/></p>
 </div></section>
 <section id="radial-fourier-transform">
-<h2><span class="section-number">3.4.5. </span>Radial Fourier Transform<a class="headerlink" href="#radial-fourier-transform" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.5. </span>Radial Fourier Transform<a class="headerlink" href="#radial-fourier-transform" title="Permalink to this heading">¶</a></h2>
 <p>As a special case when the function <img class="math" src="../_images/math/472b6c44903f57f8ce288994937af555c7a0fa1d.svg" alt="f(\mathbf{x})=f(r)"/> is spherically symmetric,
 we introduce spherical coordinates such that the <img class="math" src="../_images/math/5065384d41a77623db25ebfb013c7ba13217170d.svg" alt="z"/>-axis is along the
 <img class="math" src="../_images/math/fdca718197ac46c8d9bff594ce8913d265c783a9.svg" alt="\bomega"/> vector and calculate (we use <img class="math" src="../_images/math/b0a6e6d79088e41b04078c9517fcd9b08cb85a5f.svg" alt="r=|\mathbf{x}|"/> and <img class="math" src="../_images/math/3a72c6c2c762300b99c199297a4ceda734677cc9.svg" alt="\omega=|\bomega|"/>):</p>
@@ -327,9 +326,9 @@ depends on <img class="math" src="../_images/math/d7c1b0d194c088484db7f93d988258
     \int_0^\infty \omega\sin(\omega r) f(\omega) \,\d \omega"/></p>
 </div></section>
 <section id="examples">
-<h2><span class="section-number">3.4.6. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.4.6. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h2>
 <section id="rectangular-function">
-<h3>Rectangular Function<a class="headerlink" href="#rectangular-function" title="Permalink to this headline">¶</a></h3>
+<h3>Rectangular Function<a class="headerlink" href="#rectangular-function" title="Permalink to this heading">¶</a></h3>
 <p>The rectangular function is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/9cb5630f865c8f6066abf0ffdac5fdd4bbc4a570.svg" alt="\Pi(x) = H(x+\half) - H(x-\half)"/></p>
@@ -346,7 +345,7 @@ depends on <img class="math" src="../_images/math/d7c1b0d194c088484db7f93d988258
     = 2\sinc\left({\omega\over 2}\right)\,."/></p>
 </div></section>
 <section id="dirichlet-kernel">
-<h3>Dirichlet Kernel<a class="headerlink" href="#dirichlet-kernel" title="Permalink to this headline">¶</a></h3>
+<h3>Dirichlet Kernel<a class="headerlink" href="#dirichlet-kernel" title="Permalink to this heading">¶</a></h3>
 <p>The Dirichlet kernel <img class="math" src="../_images/math/b1c798f341316fb7ef8893469f473c87993f1cc5.svg" alt="D_N(x)"/> is a partial sum of complex exponentials:</p>
 <div class="math">
 <p><img src="../_images/math/415eeb0b19d5757029a0168691022fa216fa0356.svg" alt="D_N(x) = {1\over 2\pi}\sum_{n=-N}^N e^{inx} =
@@ -424,7 +423,7 @@ depends on <img class="math" src="../_images/math/d7c1b0d194c088484db7f93d988258
 = 0"/></p>
 </div></section>
 <section id="dirac-comb-shah-function">
-<h3>Dirac Comb (Shah) Function<a class="headerlink" href="#dirac-comb-shah-function" title="Permalink to this headline">¶</a></h3>
+<h3>Dirac Comb (Shah) Function<a class="headerlink" href="#dirac-comb-shah-function" title="Permalink to this heading">¶</a></h3>
 <p>The Dirac comb function, also called the Shah function, is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/d81796acc78504ceff58deedc7b59afa9f3418bb.svg" alt="\Sh(x) = \sum_{n=-\infty}^\infty \delta(x-n)"/></p>
@@ -485,7 +484,7 @@ also equal to a Dirac comb:</p>
         \delta\left(x-{2\pi n\over L}\right)"/></p>
 </div></section>
 <section id="periodic-summation">
-<h3>Periodic Summation<a class="headerlink" href="#periodic-summation" title="Permalink to this headline">¶</a></h3>
+<h3>Periodic Summation<a class="headerlink" href="#periodic-summation" title="Permalink to this heading">¶</a></h3>
 <p>The convolution <img class="math" src="../_images/math/13e14b0fee079731e4ede9ce5dcc2d3f5c340dc4.svg" alt="f(x) * g(x) = \int_{-\infty}^\infty f(y) g(x-y) \,\d y"/> of a
 Dirac comb <img class="math" src="../_images/math/329771b371901e11772b63522b57b7d4d58a63da.svg" alt="\Sh(x)"/> and an arbitrary function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> is called a periodic
 summation:</p>
@@ -505,7 +504,7 @@ summation:</p>
     = (f * \Sh)(x)"/></p>
 </div></section>
 <section id="poisson-summation-formula">
-<h3>Poisson Summation Formula<a class="headerlink" href="#poisson-summation-formula" title="Permalink to this headline">¶</a></h3>
+<h3>Poisson Summation Formula<a class="headerlink" href="#poisson-summation-formula" title="Permalink to this heading">¶</a></h3>
 <p>The Poisson summation formula:</p>
 <div class="math" id="equation-poisson-summation-formula">
 <p><span class="eqno">(3.4.6.3)<a class="headerlink" href="#equation-poisson-summation-formula" title="Permalink to this equation">¶</a></span><img src="../_images/math/7a5e013eca9d83c8e32ba4135026b4dea0dc837f.svg" alt="\sum_{n=-\infty}^\infty f(2\pi n)
@@ -575,7 +574,7 @@ follows:</p>
         F[f(x)](n) \,  e^{inx}"/></p>
 </div></section>
 <section id="fourier-series">
-<h3>Fourier Series<a class="headerlink" href="#fourier-series" title="Permalink to this headline">¶</a></h3>
+<h3>Fourier Series<a class="headerlink" href="#fourier-series" title="Permalink to this heading">¶</a></h3>
 <p>Consider a periodic function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> with a period <img class="math" src="../_images/math/961a0c55563970ae0b0074c740f76046460c654a.svg" alt="L"/> and let us calculate the
 Fourier transform of it. We define a new function <img class="math" src="../_images/math/d44fd0d3b03b75cc953d7dc7bd3b6e0d7d678ccb.svg" alt="f_0(x)=f(x)"/> in the
 <img class="math" src="../_images/math/e0a8b745e98e5d6417df9866d8e4f52bb33c5795.svg" alt="[0, L]"/> interval and zero otherwise. Then:</p>
@@ -679,7 +678,7 @@ for <img class="math" src="../_images/math/3855dd536fa9155cca04f05faf14ca6831d79
 <p><span class="eqno">(3.4.6.7)<a class="headerlink" href="#equation-fs2" title="Permalink to this equation">¶</a></span><img src="../_images/math/44959d18eb38d95ae643ec5c65c87f6c4b1b5e20.svg" alt="f_n = {1\over2\pi} \int_{-\pi}^\pi f(x) e^{-inx} \d x"/></p>
 </div></section>
 <section id="convergence-of-fourier-series">
-<h3>Convergence of Fourier Series<a class="headerlink" href="#convergence-of-fourier-series" title="Permalink to this headline">¶</a></h3>
+<h3>Convergence of Fourier Series<a class="headerlink" href="#convergence-of-fourier-series" title="Permalink to this heading">¶</a></h3>
 <p>To see what conditions the function <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> must satisfy in order for the
 Fourier series to converge towards it, we can do the following analysis.
 Substituting <a class="reference internal" href="#equation-fs2">(3.4.6.7)</a> into <a class="reference internal" href="#equation-fs1">(3.4.6.6)</a> yields:</p>
@@ -733,7 +732,7 @@ loosened in various ways.</p>
 </section>
 </section>
 <section id="fourier-transform-of-a-periodic-function-e-g-in-a-crystal">
-<h1><span class="section-number">3.5. </span>Fourier Transform of a Periodic Function (e.g. in a Crystal)<a class="headerlink" href="#fourier-transform-of-a-periodic-function-e-g-in-a-crystal" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.5. </span>Fourier Transform of a Periodic Function (e.g. in a Crystal)<a class="headerlink" href="#fourier-transform-of-a-periodic-function-e-g-in-a-crystal" title="Permalink to this heading">¶</a></h1>
 <p>The Fourier transform in <a class="reference internal" href="#equation-fourier1">(3.4.1)</a> requires the function <img class="math" src="../_images/math/5063b011ce99a7ae275475ec8ffe97bbd9ae3f74.svg" alt="f(\mathbf{x})"/>
 to be decaying fast enough in order to converge. In an infinite crystal, on the
 other hand, the function <img class="math" src="../_images/math/5063b011ce99a7ae275475ec8ffe97bbd9ae3f74.svg" alt="f(\mathbf{x})"/> is typically periodic (and thus not
@@ -872,7 +871,7 @@ transformation works, one can directly substitute the direct formula
 <p><img src="../_images/math/5f33fc25e3e793cd4041d36c67ed8323a3e0defb.svg" alt="\sum_{n=-\infty}^\infty e^{inx} = 2\pi\delta(x)\,."/></p>
 </div><p>Thus we have shown that <img class="math" src="../_images/math/f4fff9361e47256b59e694828e53b9f8f1953620.svg" alt="F^{-1}[\tilde f(\mathbf{G})] = f(\mathbf{x})"/>.</p>
 <section id="one-dimension-fourier-series">
-<h2><span class="section-number">3.5.1. </span>One Dimension (Fourier Series)<a class="headerlink" href="#one-dimension-fourier-series" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.5.1. </span>One Dimension (Fourier Series)<a class="headerlink" href="#one-dimension-fourier-series" title="Permalink to this heading">¶</a></h2>
 <p>In one dimension with a periodic function <img class="math" src="../_images/math/227450f6de0c70a381e7fa0bbde35c9ff8693b5f.svg" alt="f(x+L)=f(x)"/>,
 the volume of a unit cell is <img class="math" src="../_images/math/215537343e0b1b036f99e54b43f09bd6807657eb.svg" alt="\Omega_\mathrm{cell}=L"/>
 and the reciprocal space vectors <img class="math" src="../_images/math/62562f12cb5f5a3c1c2e79abc38bfe2743b88f60.svg" alt="G"/> are defined using
@@ -892,7 +891,7 @@ coefficients). The inverse transform follows from <a class="reference internal" 
 </div></section>
 </section>
 <section id="discrete-fourier-transform">
-<h1><span class="section-number">3.6. </span>Discrete Fourier Transform<a class="headerlink" href="#discrete-fourier-transform" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.6. </span>Discrete Fourier Transform<a class="headerlink" href="#discrete-fourier-transform" title="Permalink to this heading">¶</a></h1>
 <p>In the discrete case, we only have a finite
 number <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/> of reciprocal points:</p>
 <div class="math">
@@ -996,7 +995,7 @@ transform, but then the correspondence with Fourier series is broken (one has
 to divide and multiply by <img class="math" src="../_images/math/d4fb8efa128c4d0f6faa0fa4afce07a0463795e2.svg" alt="N"/> appropriately to recover it).</p>
 </section>
 <section id="fast-fourier-transform-fft">
-<h1><span class="section-number">3.7. </span>Fast Fourier Transform (FFT)<a class="headerlink" href="#fast-fourier-transform-fft" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.7. </span>Fast Fourier Transform (FFT)<a class="headerlink" href="#fast-fourier-transform-fft" title="Permalink to this heading">¶</a></h1>
 <p>We write the discrete Fourier transform <a class="reference internal" href="#equation-dft">(3.6.1)</a> using a notation more commonly
 used for FFTs:</p>
 <div class="math">
@@ -1008,7 +1007,7 @@ used for FFTs:</p>
 <div class="math">
 <p><img src="../_images/math/f49062cf42cab3826336fc842cb24db55ef3b833.svg" alt="x(n) = {1\over N} \sum_{k=0}^{N-1} X(k) W_N^{-kn}"/></p>
 </div><section id="decimation-in-frequency-dif">
-<h2><span class="section-number">3.7.1. </span>Decimation In Frequency (DIF)<a class="headerlink" href="#decimation-in-frequency-dif" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.7.1. </span>Decimation In Frequency (DIF)<a class="headerlink" href="#decimation-in-frequency-dif" title="Permalink to this heading">¶</a></h2>
 <p>We start with radix-4:</p>
 <div class="math">
 <p><img src="../_images/math/947c730dde7957243497b1da6dce8a6d5fd0ca9e.svg" alt="X(k) = \sum_{n=0}^{N-1} x(n) W_N^{kn} =
@@ -1157,7 +1156,7 @@ used in various other libraries.</p>
 </section>
 </section>
 <section id="laplace-transform">
-<h1><span class="section-number">3.8. </span>Laplace Transform<a class="headerlink" href="#laplace-transform" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.8. </span>Laplace Transform<a class="headerlink" href="#laplace-transform" title="Permalink to this heading">¶</a></h1>
 <p>Laplace transform of <img class="math" src="../_images/math/42400ab3531de67b04c236cdcd05a6ce003d6369.svg" alt="f(x)"/> is:</p>
 <div class="math">
 <p><img src="../_images/math/5a21c6a8ea92cd437a908e00d38bb793dfc2f8ea.svg" alt="L[f(x)] = \int_0^{\infty} f(x) e^{-s x}\,\d x
@@ -1258,7 +1257,7 @@ L^{-1}[\bar f(s)] \equiv f(x) = U(x) e^{\sigma x}
 means the Fourier transform.</p>
 </section>
 <section id="hilbert-transform">
-<h1><span class="section-number">3.9. </span>Hilbert Transform<a class="headerlink" href="#hilbert-transform" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.9. </span>Hilbert Transform<a class="headerlink" href="#hilbert-transform" title="Permalink to this heading">¶</a></h1>
 <p>The Hilbert transform is:</p>
 <div class="math">
 <p><img src="../_images/math/b0724ef3ef3efc3a16a4f8ed510a0c9f60fc8328.svg" alt="H[f(x)](t) \equiv \bar f(t)
@@ -1373,7 +1372,7 @@ negative of a function.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1397,7 +1396,7 @@ negative of a function.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>

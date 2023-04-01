@@ -1,19 +1,18 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>3.42. Variational Formulation of PDEs &#8212; Theoretical Physics Reference 0.5 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
     
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,12 +74,12 @@
           <div class="body" role="main">
             
   <section id="variational-formulation-of-pdes">
-<h1><span class="section-number">3.42. </span>Variational Formulation of PDEs<a class="headerlink" href="#variational-formulation-of-pdes" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3.42. </span>Variational Formulation of PDEs<a class="headerlink" href="#variational-formulation-of-pdes" title="Permalink to this heading">¶</a></h1>
 <p>Not every equation allows a variational formulation (e.g., Navier-Stokes or
 Euler equations do not have such a formulation), but many equations have one,
 and we explain how it works on several examples.</p>
 <section id="poisson-equation">
-<h2><span class="section-number">3.42.1. </span>Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.42.1. </span>Poisson Equation<a class="headerlink" href="#poisson-equation" title="Permalink to this heading">¶</a></h2>
 <p>The Lagrangian for Poisson equation is:</p>
 <div class="math" id="equation-poisson0">
 <p><span class="eqno">(3.42.1.1)<a class="headerlink" href="#equation-poisson0" title="Permalink to this equation">¶</a></span><img src="../_images/math/89ce728b977ba3b0fe7a2d56e7bdd1ab3cb46e15.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x
@@ -141,7 +140,7 @@ variation <img class="math" src="../_images/math/5b3d606612f30fc85a8128a68373c1d
 <a class="reference internal" href="#equation-poisson3-boundary2">(3.42.1.6)</a> does not hold at the Dirichlet part of the boundary
 and we have to set the value <img class="math" src="../_images/math/d78ecf4cc8a1d1e9466abf94f1ae4a8a12692206.svg" alt="u(x)"/> there directly.</p>
 <section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
 <p>As a particular example, let <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da620670c0e17d8b9.svg" alt="u(a) = u_0"/> and <img class="math" src="../_images/math/c957e661ea1b68f9c928aa5f32aeafd8acb560e2.svg" alt="u'(b) = g"/>. Then the Lagrangian
 <a class="reference internal" href="#equation-poisson0">(3.42.1.1)</a> becomes:</p>
 <div class="math" id="equation-poisson-example-l">
@@ -209,7 +208,7 @@ the space <img class="math" src="../_images/math/f089456ca4424c9ffcb0445b3dd9f46
 <p>The Neumann boundary condition is imposed variationally due to the surface term
 in the weak form <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a>.</p>
 <section id="summary">
-<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h4>
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h4>
 <p>We have shown above that there are three equivalent formulations which
 fully and uniquely determine the solution and boundary conditions (both
 Dirichlet and Neumann):</p>
@@ -224,7 +223,7 @@ conditions <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da62067
 <p>Let us write down the three formulations in detail.</p>
 </section>
 <section id="variational-formulation">
-<h4>Variational Formulation<a class="headerlink" href="#variational-formulation" title="Permalink to this headline">¶</a></h4>
+<h4>Variational Formulation<a class="headerlink" href="#variational-formulation" title="Permalink to this heading">¶</a></h4>
 <p>The variational formulation is the formulation 1. above.</p>
 <div class="math">
 <p><img src="../_images/math/b693b2136eddb3b8a78c8d2bf7c39f8fc57b9b01.svg" alt="L[u] = \int_a^b \left[ \half u'^2(x) - f(x) u(x) \right] \d x - g u(b)\,."/></p>
@@ -234,7 +233,7 @@ conditions <img class="math" src="../_images/math/5d064ef0da1ca67fbb769e6da62067
 <p><img src="../_images/math/150344506c01e481480b92133e79075e5016dd10.svg" alt="U := \{u : u \in H^1(a,b), u(a)=u_0\}\,."/></p>
 </div></section>
 <section id="weak-formulation">
-<h4>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this headline">¶</a></h4>
+<h4>Weak Formulation<a class="headerlink" href="#weak-formulation" title="Permalink to this heading">¶</a></h4>
 <p>Weak formulation is the formulation 2. above, and it is customary to
 write <img class="math" src="../_images/math/d9f84de6f9eed576b4ae8dd8c2f1b662cc0f7f27.svg" alt="w(x) \equiv \delta u(x)"/> in the weak form
 <a class="reference internal" href="#equation-poisson-example-weak-form">(3.42.1.11)</a>:</p>
@@ -256,7 +255,7 @@ b(w)   &amp;= \int_a^b f(x) w(x) \d x + g w(b)"/></p>
 <p><img src="../_images/math/22d37ece14d512491604b28a0ceae4023a109a21.svg" alt="a(u,w) = b(w)\,."/></p>
 </div></section>
 <section id="strong-formulation">
-<h4>Strong Formulation<a class="headerlink" href="#strong-formulation" title="Permalink to this headline">¶</a></h4>
+<h4>Strong Formulation<a class="headerlink" href="#strong-formulation" title="Permalink to this heading">¶</a></h4>
 <p>Strong formulation is the formulation 3. above. We are solving the equation:</p>
 <div class="math">
 <p><img src="../_images/math/76f4dda36a6a5d05563984125032e1785c66c0e7.svg" alt="u''(x) + f(x) = 0"/></p>
@@ -265,7 +264,7 @@ b(w)   &amp;= \int_a^b f(x) w(x) \d x + g w(b)"/></p>
 </section>
 </section>
 <section id="radial-schrodinger-equation">
-<h2><span class="section-number">3.42.2. </span>Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.42.2. </span>Radial Schrödinger Equation<a class="headerlink" href="#radial-schrodinger-equation" title="Permalink to this heading">¶</a></h2>
 <p>The derivation is similar as for the Poisson equation, except that we have
 <img class="math" src="../_images/math/462aac6f96dd69047537bb5f37013a5b1cc560a5.svg" alt="g(x) = 0"/> based on physical reasoning (that we cannot set the derivative
 to a given value, or, alternatively, that we require the operator to be
@@ -366,7 +365,7 @@ term.</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -390,7 +389,7 @@ term.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2011, Ondřej Čertík.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
     </div>
   </body>
 </html>
